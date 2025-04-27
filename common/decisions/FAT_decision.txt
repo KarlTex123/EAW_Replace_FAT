@@ -1,0 +1,19 @@
+FAT_balance_of_power_category = {
+	test = {
+		icon = ?
+		visible = {
+			is_debug = yes
+			has_power_balance = {
+				id = FAT_power_balance
+			}
+		}
+		available = {
+			has_power_balance = {
+				id = FAT_power_balance
+			}
+		}
+	}
+}
+
+
+

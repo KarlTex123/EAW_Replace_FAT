@@ -1,0 +1,164 @@
+focus_tree = {
+	id = FAT_start_tree #第一阶段国策树
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FAT
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2600 y = 2050 }
+	focus = {
+		id = damn_our_country_die #共和国之殇
+		icon = GFX_focu_unknown
+		cost = 0
+		x = 4
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = control_news_media #控制新闻媒体
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = damn_our_country_die 
+		prerequisite = {
+			focus = damn_our_country_die
+		}
+		mutually_exclusive = {
+			
+		}
+		x = 0
+		y = 2
+		completion_reward = { }
+	}
+
+
+	##左线
+	focus = {
+		id = my_mind_my_heart #理想与本心
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = damn_our_country_die
+		prerequisite = {
+			focus = damn_our_country_die
+		}
+		mutually_exclusive = {
+			focus = realism_political
+		}
+		x = -2
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = friendship_can_solve_all #与艾勒斯特和解
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = my_mind_my_heart
+		prerequisite = {
+			focus = my_mind_my_heart
+		}
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = hit_bad_army_leader #降职不忠诚军官
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = friendship_can_solve_all
+		prerequisite = {
+			focus = friendship_can_solve_all
+		}
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = future_of_our_country #共和国的未来
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = control_news_media
+		prerequisite = {
+			focus = hit_bad_army_leader
+			focus = threat_government_official
+		}
+		prerequisite = {
+			focus = control_news_media
+		}
+		x = 0
+		y = 2
+		completion_reward = { }
+	}
+
+	#右线
+	focus = {
+		id = realism_political #现实政治
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = damn_our_country_die
+		prerequisite = {
+			focus = damn_our_country_die
+		}
+		mutually_exclusive = {
+			focus = my_mind_my_heart
+		}
+		mutually_exclusive = {
+
+		}
+		x = 2
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = come_here_radical_army #拉拢军队激进派
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = realism_political
+		prerequisite = {
+			focus = realism_political
+		}
+		mutually_exclusive = {
+			
+		}
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = threat_government_official #恐吓政府官员
+		icon = GFX_focu_unknown
+		cost = 0
+		relative_position_id = come_here_radical_army
+		prerequisite = {
+			focus = come_here_radical_army
+		}
+		mutually_exclusive = {
+			
+		}
+		x = 0
+		y = 1
+		completion_reward = { }
+	}
+	
+	
+	
+}
+
+#通用模板
+focus = {
+	id = x
+	icon = GFX_focu_unknown
+	cost = 0
+	relative_position_id = x
+	prerequisite = {
+		focus = x
+	}
+	mutually_exclusive = {
+		
+	}
+	x = x
+	y = x
+	completion_reward = { }
+}
+

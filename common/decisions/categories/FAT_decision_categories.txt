@@ -1,0 +1,15 @@
+FAT_balance_of_power_category = {
+	icon = x
+	visible_when_empty = yes
+	allowed = {
+		original_tag = FAT
+	}
+	visible = {
+		has_power_balance = {
+			id = FAT_power_balance
+		}
+	}
+}
+
+
+

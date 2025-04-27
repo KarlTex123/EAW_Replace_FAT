@@ -1,0 +1,161 @@
+
+FAT_power_balance = {
+	initial_value = 0
+	left_side = FAT_democratic_side	
+	right_side = FAT_nationalism_side
+	decision_category = FAT_balance_of_power_category
+
+	### 处于中间值
+	range = {
+		id = FAT_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+	
+
+	### 偏左
+	side = {
+		id = FAT_democratic_side	
+		icon = GFX_bop_FAT_democratic_side
+
+		range = {
+			id = ITA_grand_council_low_control_range
+			min = -0.3
+			max = -0.1
+			modifier = {
+				
+			}
+			on_activate = {
+				#set_power_balance_gfx = {	#权力斗争icon变化
+				#	id = 哪个权力平衡
+				#	side = 哪边
+				#	gfx = 变成哪张图像
+				#}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = ITA_grand_council_medium_control_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = ITA_grand_council_high_control_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = ITA_grand_council_total_control_range
+			min = -1
+			max = -0.9
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### 偏右
+	side = {
+		id = FAT_nationalism_side
+		icon = GFX_bop_FAT_nationalism_side
+
+		range = {
+			id = ITA_mussolini_low_control_range
+			min = 0.1
+			max = 0.3
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = ITA_mussolini_medium_control_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = ITA_mussolini_high_control_range
+			min = 0.6
+			max = 0.9
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = ITA_mussolini_total_control_range
+			min = 0.9
+			max = 1
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+}
+
