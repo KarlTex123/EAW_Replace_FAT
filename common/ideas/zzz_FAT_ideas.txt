@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		FAT_republican_struggle = {
+		FAT_republican_struggle = {  #共和国的抗争
 			allowed = {
 				always = no
 			}
@@ -404,7 +404,7 @@ ideas = {
 		}
 	}
 	country = {
-		FAT_The_Cloudburian_Minority_idea = {
+		FAT_The_Cloudburian_Minority_idea = {  #语言鸿沟
 			picture = unhappy_army_3
 			allowed = {
 				always = no
@@ -420,9 +420,10 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				conscription_factor = -0.12
-				stability_factor = -0.075
-				army_org_factor = -0.085
+				#stability_factor = -0.075
+				#army_org_factor = -0.085
 				political_power_gain = -0.05
+				research_speed_factor = -0.05
 			}
 		}
 	}
