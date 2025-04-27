@@ -2,12 +2,12 @@
 oob = "FAT_1007"
 set_research_slots = 3
 
-##重置新增↓
+##修改新增↓
 set_power_balance = {
     id = FAT_power_balance
     set_default = yes
 }
-##重置新增↑
+##修改新增↑
 set_technology = {
 	griffon_race = 1
 	tech_griffon_army = 1
