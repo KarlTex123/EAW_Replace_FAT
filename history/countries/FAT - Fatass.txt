@@ -7,6 +7,7 @@ set_power_balance = {
     id = FAT_power_balance
     set_default = yes
 }
+
 ##修改新增↑
 set_technology = {
 	griffon_race = 1
@@ -149,9 +150,9 @@ add_ideas = {
 	FAT_republican_struggle
 	outdated_industry
 	FAT_The_Cloudburian_Minority_idea
-	FAT_Chaos_idea
+	#FAT_Chaos_idea #修改
 	FAT_unruly_army_idea
-	GRW_risk_of_famine
+	#GRW_risk_of_famine #修改
 	limited_conscription
 	lack_of_scientists1
 	poverty3
