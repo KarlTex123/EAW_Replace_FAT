@@ -27,11 +27,13 @@ FAT_power_balance = {
 		icon = GFX_bop_FAT_democratic_side
 
 		range = {
-			id = ITA_grand_council_low_control_range
+			id = FAT_democratic_low_control_range
 			min = -0.3
 			max = -0.1
 			modifier = {
-				
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.02
 			}
 			on_activate = {
 				#set_power_balance_gfx = {	#权力斗争icon变化
@@ -46,11 +48,14 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = ITA_grand_council_medium_control_range
-			min = -0.6
+			id = FAT_democratic_medium_control_range
+			min = -0.55
 			max = -0.3
 			modifier = {
-				
+				political_power_gain = 0.07
+				stability_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.04
 			}
 			on_activate = {
 
@@ -61,11 +66,14 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = ITA_grand_council_high_control_range
-			min = -0.9
-			max = -0.6
+			id = FAT_democratic_high_control_range
+			min = -0.7
+			max = -0.55
 			modifier = {
-				
+				political_power_gain = 0.1
+				stability_factor = 0.12
+				production_factory_efficiency_gain_factor = 0.08
+				production_factory_max_efficiency_factor = 0.06
 			}
 			on_activate = {
 				
@@ -74,16 +82,37 @@ FAT_power_balance = {
 				
 			}
 		}
+		range = {
+			id = FAT_democratic_higher_control_range
+			min = -0.9
+			max = -0.7
+			modifier = {
+				political_power_gain = 0.12
+				stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.08
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+				
+			}
+		}
 
 		range = {
-			id = ITA_grand_council_total_control_range
+			id = FAT_democratic_total_control_range
 			min = -1
 			max = -0.9
 			modifier = {
-				
+				political_power_gain = 0.12
+				stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.08
 			}
 			on_activate = {
-				
+				set_country_flag = sure_FAT_political
+				set_country_flag = FAT_democratic_win
 			}
 			on_deactivate = {
 				

@@ -48,7 +48,6 @@ ideas = {
 		}
 		FAT_unstable_army_idea = { #军队高层动荡
 			picture = ""
-			removal_cost = 180
 			modifier = {
 				experience_gain_army = -0.02
 				army_org_factor = -0.1

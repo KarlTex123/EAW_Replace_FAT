@@ -1,10 +1,15 @@
 ﻿l_simp_chinese:
 #权利斗争相关
 FAT_power_balance: "狮鹫尼亚的政治斗争"
-FAT_democratic_side: "谐律派"
-FAT_nationalism_side: "民族派"
+FAT_democratic_side: "§4谐律派§!"
+FAT_nationalism_side: "§R民族派§!" 
 
 FAT_balance_range: "势均力敌"
+FAT_democratic_low_control_range: "谐律派略占上风"
+FAT_democratic_medium_control_range: "谐律派广泛影响"
+FAT_democratic_high_control_range: "谐律派颇具影响"
+FAT_democratic_higher_control_range: "谐律派占据主导"
+FAT_democratic_total_control_range: "谐律派完全胜利"
 
 
 
@@ -13,6 +18,8 @@ recall_revolution_idea: "重申革命理想"
 with_socialism_together: "争取社会主义者的合作"
 slow_down_army_please: "驱散军队中的激进情绪"
 publication_benefit_to_us: "发表亲谐律刊物"
+end_FAT_bop_system: "政治斗争"
+end_FAT_bop_system_t: "若不作出决定，§4谐律派§!将直接取得胜利"
 
 sure_FAT_political: "共和国的政治斗争已尘埃落定"
 

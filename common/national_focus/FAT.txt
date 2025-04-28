@@ -37,7 +37,7 @@ focus_tree = {
 		y = 2
 		completion_reward = { 
 			add_political_power = 50
-			set_stability = 0.05
+			add_stability = 0.05
 			unlock_decision_tooltip = publication_benefit_to_us
 		}
 	}
@@ -59,7 +59,7 @@ focus_tree = {
 		y = 1
 		completion_reward = { 
 			add_political_power = 25
-			set_stability = 0.05
+			add_stability = 0.05
 			unlock_decision_tooltip = recall_revolution_idea
 		}
 	}
@@ -75,11 +75,11 @@ focus_tree = {
 		y = 1
 		completion_reward = { 
 			add_popularity = { 
-				ideology = communist
-				popularity = 3
+				ideology = communism
+				popularity = 0.03 
 			}
 			add_political_power = 25
-			set_stability = -0.02
+			add_stability = -0.02
 			country_event = FAT_start.7
 			unlock_decision_tooltip = with_socialism_together
 
@@ -96,7 +96,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = { 
-			add_ideas = FAT_unstable_army_idea
+			add_timed_idea = {
+				idea = FAT_unstable_army_idea
+				days = 180
+			}
 			unlock_decision_tooltip = slow_down_army_please
 		}
 	}

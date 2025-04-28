@@ -8,7 +8,9 @@ country_event = { #开局政局介绍
 	is_triggered_only = yes
 	option = {
 		name = FAT_start.1.1
-		country_event = FAT_start.101
+		hidden_effect = {
+			country_event = FAT_start.101	
+		}
 	}
 	option = {
 		name = FAT_start.1.2
@@ -23,16 +25,27 @@ country_event = { #政党信息
 	is_triggered_only = yes
 	option = {
 		name = FAT_start.101.1 
+		hidden_effect = {
+			country_event = FAT_start.10101
+		}
 	}
 	option = {
 		name = FAT_start.101.2 
+		hidden_effect = {
+			country_event = FAT_start.10102
+		}
 	}
 	option = {
 		name = FAT_start.101.3
+		hidden_effect = {
+			country_event = FAT_start.10103
+		}
 	}
 	option = {
 		name = FAT_start.101.4 #返回
-		country_event = FAT_start.1
+		hidden_effect = {
+			country_event = FAT_start.1
+		}
 	}
 
 }
@@ -44,7 +57,9 @@ country_event = { #国民共和党
 	is_triggered_only = yes
 	option = {
 		name = FAT_start.101.4
-		country_event = FAT_start.101
+		hidden_effect = {
+			country_event = FAT_start.101
+		}
 	}
 
 }
@@ -56,7 +71,9 @@ country_event = { #民族阵线
 	is_triggered_only = yes
 	option = {
 		name = FAT_start.101.4
-		country_event = FAT_start.101
+		hidden_effect = {
+			country_event = FAT_start.101
+		}
 	}
 
 }
@@ -68,7 +85,9 @@ country_event = { #民主社会党
 	is_triggered_only = yes
 	option = {
 		name = FAT_start.101.4
-		country_event = FAT_start.101
+		hidden_effect = {
+			country_event = FAT_start.101
+		}
 	}
 }
 
