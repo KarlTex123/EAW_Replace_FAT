@@ -1,0 +1,15 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FAT = {
+				country_event = FAT_start.1
+				country_event = {
+					id = FAT_start.6
+					days = 100
+				}
+			}
+		}
+	}
+}
+
+

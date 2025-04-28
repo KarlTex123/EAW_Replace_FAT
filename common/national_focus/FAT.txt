@@ -15,7 +15,13 @@ focus_tree = {
 		cost = 0
 		x = 4
 		y = 0
-		completion_reward = { }
+		completion_reward = { 
+			country_event = {
+				id = FAT_start.2
+				days = 1
+			}
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = control_news_media #控制新闻媒体
@@ -26,11 +32,14 @@ focus_tree = {
 			focus = damn_our_country_die
 		}
 		mutually_exclusive = {
-			
 		}
 		x = 0
 		y = 2
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = 50
+			set_stability = 0.05
+			unlock_decision_tooltip = publication_benefit_to_us
+		}
 	}
 
 
@@ -48,7 +57,11 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = 25
+			set_stability = 0.05
+			unlock_decision_tooltip = recall_revolution_idea
+		}
 	}
 	focus = {
 		id = friendship_can_solve_all #与艾勒斯特和解
@@ -60,7 +73,17 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		completion_reward = { }
+		completion_reward = { 
+			add_popularity = { 
+				ideology = communist
+				popularity = 3
+			}
+			add_political_power = 25
+			set_stability = -0.02
+			country_event = FAT_start.7
+			unlock_decision_tooltip = with_socialism_together
+
+		}
 	}
 	focus = {
 		id = hit_bad_army_leader #降职不忠诚军官
@@ -72,13 +95,19 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = FAT_unstable_army_idea
+			unlock_decision_tooltip = slow_down_army_please
+		}
 	}
 	focus = {
 		id = future_of_our_country #共和国的未来
 		icon = GFX_focu_unknown
 		cost = 0
 		relative_position_id = control_news_media
+		available = {
+			has_country_flag = sure_FAT_political #该country_flag在权利平衡达到规定数值后获得
+		}
 		prerequisite = {
 			focus = hit_bad_army_leader
 			focus = threat_government_official
@@ -88,7 +117,23 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		completion_reward = { }
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = FAT_democratic_win
+				}
+				country_event = FAT_start.3
+			}
+			else_if = {
+				limit = {
+					has_country_flag = FAT_nationalism_win
+				}
+				country_event = FAT_start.4
+			}
+			else = {
+				custom_effect_tooltip = future_of_our_country_t
+			}
+		}
 	}
 
 	#右线

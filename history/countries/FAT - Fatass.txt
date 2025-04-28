@@ -3,10 +3,6 @@ oob = "FAT_1007"
 set_research_slots = 3
 
 ##修改新增↓
-set_power_balance = {
-    id = FAT_power_balance
-    set_default = yes
-}
 
 ##修改新增↑
 set_technology = {
@@ -151,7 +147,7 @@ add_ideas = {
 	outdated_industry
 	FAT_The_Cloudburian_Minority_idea
 	#FAT_Chaos_idea #修改
-	FAT_unruly_army_idea
+	#FAT_unruly_army_idea #修改
 	#GRW_risk_of_famine #修改
 	limited_conscription
 	lack_of_scientists1

@@ -1,0 +1,163 @@
+﻿add_namespace = FAT_start
+
+country_event = { #开局政局介绍
+	id = FAT_start.1
+	picture = ""
+	title = FAT_start.1.t
+	desc = FAT_start.1.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.1.1
+		country_event = FAT_start.101
+	}
+	option = {
+		name = FAT_start.1.2
+	}
+
+}
+country_event = { #政党信息
+	id = FAT_start.101
+	picture = ""
+	title = FAT_start.101.t
+	desc = FAT_start.101.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.101.1 
+	}
+	option = {
+		name = FAT_start.101.2 
+	}
+	option = {
+		name = FAT_start.101.3
+	}
+	option = {
+		name = FAT_start.101.4 #返回
+		country_event = FAT_start.1
+	}
+
+}
+country_event = { #国民共和党
+	id = FAT_start.10101
+	picture = ""
+	title = FAT_start.10101.t
+	desc = FAT_start.110101.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.101.4
+		country_event = FAT_start.101
+	}
+
+}
+country_event = { #民族阵线
+	id = FAT_start.10102
+	picture = ""
+	title = FAT_start.10102.t
+	desc = FAT_start.10102.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.101.4
+		country_event = FAT_start.101
+	}
+
+}
+country_event = { #民主社会党
+	id = FAT_start.10103
+	picture = ""
+	title = FAT_start.10103.t
+	desc = FAT_start.10103.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.101.4
+		country_event = FAT_start.101
+	}
+}
+
+country_event = { #开启权力平衡
+	id = FAT_start.2
+	picture = ""
+	title = FAT_start.2.t
+	desc = FAT_start.2.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.2.1
+		set_power_balance = {
+			id = FAT_power_balance
+		}
+	}
+}
+country_event = { #民族阵线的终结
+	id = FAT_start.3
+	picture = ""
+	title = FAT_start.3.t
+	desc = FAT_start.3.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.3.1
+	}
+}
+country_event = { #冰冻三尺非一日之寒
+	id = FAT_start.4
+	picture = ""
+	title = FAT_start.4.t
+	desc = FAT_start.4.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.4.1
+	}
+}
+country_event = { #军队激进思潮的消退
+	id = FAT_start.5
+	picture = ""
+	title = FAT_start.5.t
+	desc = FAT_start.5.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.5.1
+	}
+}
+country_event = { #韦迪纳的暴力镇压
+	id = FAT_start.6
+	picture = ""
+	title = FAT_start.6.t
+	desc = FAT_start.6.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.6.1
+		country_event = {
+			id = FAT_start.601
+			days = 3
+		}
+	}
+	option = {
+		name = FAT_start.6.2
+	}
+}
+country_event = { #武装干涉
+	id = FAT_start.601
+	picture = ""
+	title = FAT_start.601.t
+	desc = FAT_start.601.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.601.1
+		add_political_power = -50
+		set_stability = -0.1
+		add_state_core = 584
+		transfer_state = 584
+	}
+}
+country_event = { #与漫云市长的会面
+	id = FAT_start.7
+	picture = ""
+	title = FAT_start.7.t
+	desc = FAT_start.7.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.7.1
+	}
+}
+
+
+
+
+

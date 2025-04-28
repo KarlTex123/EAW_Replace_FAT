@@ -7,9 +7,63 @@ FAT_balance_of_power_category = {
 				id = FAT_power_balance
 			}
 		}
-		available = {
-			has_power_balance = {
+	}
+	recall_revolution_idea = { #重申革命理想
+		icon = ?
+		visible = {
+			has_completed_focus = my_mind_my_heart
+		}
+		cost = 50
+		remove_effect = {
+			add_power_balance_value = {
 				id = FAT_power_balance
+				value = -0.2
+				tooltip_side = FAT_democratic_side
+			}
+		}
+	}
+	with_socialism_together = { #争取社会主义者的合作
+		icon = ?
+		visible = {
+			has_completed_focus = friendship_can_solve_all
+		}
+		cost = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.2
+				tooltip_side = FAT_democratic_side
+			}
+		}
+	}
+	slow_down_army_please = { #驱散军队中的激进情绪
+		icon = ?
+		visible = {
+			has_completed_focus = hit_bad_army_leader
+		}
+		cost = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.2
+				tooltip_side = FAT_democratic_side
+			}
+			hidden_effect = {
+				country_event = FAT_start.5
+			}
+		}
+	}
+	publication_benefit_to_us = { #发布有利于我们的刊物
+		icon = ?
+		visible = {
+			has_completed_focus = control_news_media
+		}
+		cost = 50
+		remove_effect = {
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.2
+				tooltip_side = FAT_democratic_side
 			}
 		}
 	}
