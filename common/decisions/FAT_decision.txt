@@ -113,6 +113,9 @@ FAT_vs_HAU_category = {
 		icon = ?
 		allowed = {}
 		available = {
+			has_equipment = {
+				infantry_equipment > 199
+			}
 		}
 		visible = {}
 		fire_only_once = no
@@ -171,7 +174,6 @@ FAT_vs_HAU_category = {
 		fire_only_once = no
 		days_remove = 14
 		days_re_enable = 45
-		cost = 10
 		complete_effect = {
 			add_command_power = -5
 		}
@@ -201,6 +203,11 @@ FAT_vs_HAU_category = {
 				HAU.FAT_vs_influence = 10
 			}
 			custom_effect_tooltip = oppose_of_bad_official_t
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = start_of_FAT_vs_HAU
+			}
 		}
 	}
 	end_FAT_revolution_at_HAU = { #革命终局

@@ -3,6 +3,7 @@
 FAT_vs_HAU_category: "豪克兰的海外博弈"
 FAT_vs_HAU_category_desc: "由于豪克兰孤悬海外，共和国想要直接干预非常困难，而直接干预也极有可能暴露我们的军事实力、触动君主派的敏感神经。\n但是，为了共和之光普照狮鹫尼亚，我们必须支援豪克兰的革命，我们将给予革命军需要的物资和顾问。同时，我们也必须非常谨慎，§Y麦耶§!在豪克兰的势力不容小觑，他会竭尽全力维护自己的统治——如果这次失败，豪克兰的革命时机可能不会再有了。\n\n§Y[FAT.GetNameWithFlag]§!在豪克兰的影响力：[?FAT.FAT_vs_influence|G]\n§Y[HAU.GetRulingParty]§!在豪克兰的影响力：[?HAU.FAT_vs_influence|R]" 
 #§Y[HAU.GetNameWithFlag]§!
+start_of_FAT_vs_HAU: "§Y[FAT.GetName]§!与§Y[HAU.GetRulingParty]§!在豪克兰的博弈正在进行"
 
 talk_to_fly_bird_horse: "游说飞行员"
 talk_to_fly_bird_horse_t: "§Y[FAT.GetNameWithFlag]§!在豪克兰的影响力§G+5§!。"
