@@ -143,14 +143,16 @@ FAT_vs_HAU_category = {
 		icon = ?
 		allowed = {}
 		available = {
-
+			command_power > 5
 		}
 		visible = {
 		}
 		fire_only_once = no
 		days_remove = 28
 		days_re_enable = 45
-		cost = 10
+		complete_effect = {
+			add_command_power = -5
+		}
 		remove_effect = {
 			add_to_variable = {
 				FAT.FAT_vs_influence = 15
@@ -162,7 +164,7 @@ FAT_vs_HAU_category = {
 		icon = ?
 		allowed = {}
 		available = {
-
+			command_power > 5
 		}
 		visible = {
 		}
@@ -170,9 +172,15 @@ FAT_vs_HAU_category = {
 		days_remove = 14
 		days_re_enable = 45
 		cost = 10
+		complete_effect = {
+			add_command_power = -5
+		}
 		remove_effect = {
 			add_to_variable = {
 				HAU.FAT_vs_influence = -5
+			}
+			HAU = {
+				add_manpower = -1
 			}
 			custom_effect_tooltip = kill_bad_official_t
 		}

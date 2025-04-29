@@ -186,8 +186,13 @@ country_event = { #豪克兰博弈机制
 		name = FAT_start.8.1
 		set_variable = { FAT.FAT_vs_influence = 4 }
 		set_variable = { HAU.FAT_vs_influence = 58 }
-		custom_effect_tooltip = FAT_start.8_tt
+		custom_effect_tooltip = FAT_start.8.1_t
 		set_country_flag = start_of_FAT_vs_HAU
+	}
+	option = {
+		name = FAT_start.8.2
+		add_stability = -0.05
+		add_war_support = -0.05
 	}
 }
 
