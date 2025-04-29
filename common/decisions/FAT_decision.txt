@@ -89,5 +89,156 @@ FAT_balance_of_power_category = {
 	}
 }
 
+FAT_vs_HAU_category = {
+	talk_to_fly_bird_horse = { #游说飞行员
+		icon = ?
+		allowed = {}
+		available = {
+
+		}
+		visible = {
+		}
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 30
+		cost = 10
+		remove_effect = {
+			add_to_variable = {
+				FAT.FAT_vs_influence = 5
+			}
+			custom_effect_tooltip = talk_to_fly_bird_horse_t
+		}
+	}
+	arm_revolution_army = { #武装革命军
+		icon = ?
+		allowed = {}
+		available = {
+		}
+		visible = {}
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 30
+		remove_effect = {
+			add_to_variable = {
+				FAT.FAT_vs_influence = 10
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 200
+				target = HAU
+			}
+			custom_effect_tooltip = arm_revolution_army_t
+			hidden_effect = {
+				HAU = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -100
+						producer = FAT
+					}
+				}
+			}
+		}
+	}
+	send_republicans = { #派遣共和党员
+		icon = ?
+		allowed = {}
+		available = {
+
+		}
+		visible = {
+		}
+		fire_only_once = no
+		days_remove = 28
+		days_re_enable = 45
+		cost = 10
+		remove_effect = {
+			add_to_variable = {
+				FAT.FAT_vs_influence = 15
+			}
+			custom_effect_tooltip = send_republicans_t
+		}
+	}
+	kill_bad_official = { #刺杀迈耶亲信
+		icon = ?
+		allowed = {}
+		available = {
+
+		}
+		visible = {
+		}
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 45
+		cost = 10
+		remove_effect = {
+			add_to_variable = {
+				HAU.FAT_vs_influence = -5
+			}
+			custom_effect_tooltip = kill_bad_official_t
+		}
+	}
+	oppose_of_bad_official = { #迈耶的反扑
+		days_mission_timeout = 30
+		allowed = {}
+		available = {
+			always = no
+		}
+		activation = {
+			has_country_flag = start_of_FAT_vs_HAU
+		}   
+		fire_only_once = no
+		is_good = no
+		timeout_effect = {
+			add_to_variable = {
+				HAU.FAT_vs_influence = 10
+			}
+			custom_effect_tooltip = oppose_of_bad_official_t
+		}
+	}
+	end_FAT_revolution_at_HAU = { #革命终局
+		days_mission_timeout = 240
+		allowed = {}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = end_FAT_revolution_at_HAU_tt
+				check_variable = {
+					FAT.FAT_vs_influence > HAU.FAT_vs_influence
+				}
+			}
+			check_variable = {
+				FAT.FAT_vs_influence > HAU.FAT_vs_influence
+			}
+		}
+		activation = {
+			has_country_flag = start_of_FAT_vs_HAU
+		}  
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {                      
+			country_event = FAT_start.802
+		}
+		complete_effect = {                    
+			country_event = FAT_start.801
+		}
+	}
+	test_win = {
+		icon = ?
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {
+			is_debug = yes
+		}
+		fire_only_once = no
+		cost = 0
+		remove_effect = {
+			add_to_variable = {
+				FAT.FAT_vs_influence = 100
+			}
+		}
+	}
+}
+
 
 

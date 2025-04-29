@@ -176,6 +176,74 @@ country_event = { #与漫云市长的会面
 	}
 }
 
+country_event = { #豪克兰博弈机制
+	id = FAT_start.8
+	picture = ""
+	title = FAT_start.8.t
+	desc = FAT_start.8.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.8.1
+		set_variable = { FAT.FAT_vs_influence = 4 }
+		set_variable = { HAU.FAT_vs_influence = 58 }
+		custom_effect_tooltip = FAT_start.8_tt
+		set_country_flag = start_of_FAT_vs_HAU
+	}
+}
+
+country_event = { #共和军获胜
+	id = FAT_start.801
+	picture = ""
+	title = FAT_start.801.t
+	desc = FAT_start.801.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.801.1
+		clr_country_flag = start_of_FAT_vs_HAU
+		#custom_effect_tooltip = FAT_start.801_tt
+		every_state = {
+			limit = {
+				is_controlled_by = HAU
+			}
+			add_core_of = FAT
+		}
+		annex_country = {
+			target = HAU
+			transfer_troops = yes
+		}
+		country_event = {
+			id = FAT_start.80101
+			days = 1
+		}
+	}
+}
+country_event = { #审判迈耶
+	id = FAT_start.80101
+	picture = ""
+	title = FAT_start.80101.t
+	desc = FAT_start.80101.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.80101.1
+	}
+}
+
+country_event = { #迈耶获胜
+	id = FAT_start.802
+	picture = ""
+	title = FAT_start.802.t
+	desc = FAT_start.802.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.802.1
+		clr_country_flag = start_of_FAT_vs_HAU
+		custom_effect_tooltip = FAT_start.802_tt
+		add_political_power = -50
+		add_stability = -0.1
+	}
+}
+
+
 
 
 

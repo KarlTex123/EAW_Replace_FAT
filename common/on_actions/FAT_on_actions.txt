@@ -7,6 +7,10 @@ on_actions = {
 					id = FAT_start.6
 					days = 100
 				}
+				country_event = {
+					id = FAT_start.8
+					days = 5
+				}
 				
 			}
 		}
