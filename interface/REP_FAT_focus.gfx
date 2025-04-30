@@ -1,0 +1,15 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_focu_damn_our_country_die"
+		texturefile = "gfx\interface\goals\damn_our_country_die.png" 
+	}
+
+	
+	
+	
+	
+}
+
+
+
+

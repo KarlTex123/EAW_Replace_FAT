@@ -195,7 +195,7 @@ FAT_vs_HAU_category = {
 		}
 		activation = {
 			has_country_flag = start_of_FAT_vs_HAU
-		}   
+		}  
 		fire_only_once = no
 		is_good = no
 		timeout_effect = {

@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 2600 y = 2050 }
 	focus = {
 		id = damn_our_country_die #共和国之殇
-		icon = GFX_focu_unknown
+		icon = GFX_focu_damn_our_country_die
 		cost = 0
 		x = 4
 		y = 0
