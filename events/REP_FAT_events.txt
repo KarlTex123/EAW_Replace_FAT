@@ -1,4 +1,5 @@
 ﻿add_namespace = FAT_start
+add_namespace = REP_FAT_history
 
 country_event = { #开局政局介绍
 	id = FAT_start.1
@@ -245,6 +246,87 @@ country_event = { #迈耶获胜
 		custom_effect_tooltip = FAT_start.802_tt
 		add_political_power = -50
 		add_stability = -0.1
+	}
+}
+
+country_event = { #历史介绍
+	id = REP_FAT_history.1
+	picture = ""
+	title = REP_FAT_history.1.t
+	desc = REP_FAT_history.1.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.1.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.2
+	picture = ""
+	title = REP_FAT_history.2.t
+	desc = REP_FAT_history.2.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.2.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.3
+	picture = ""
+	title = REP_FAT_history.3.t
+	desc = REP_FAT_history.3.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.3.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.4
+	picture = ""
+	title = REP_FAT_history.4.t
+	desc = REP_FAT_history.4.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.4.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.5
+	picture = ""
+	title = REP_FAT_history.5.t
+	desc = REP_FAT_history.5.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.5.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.6
+	picture = ""
+	title = REP_FAT_history.6.t
+	desc = REP_FAT_history.6.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.6.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.7
+	picture = ""
+	title = REP_FAT_history.7.t
+	desc = REP_FAT_history.7.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.7.1
+	}
+}
+country_event = { #
+	id = REP_FAT_history.8
+	picture = ""
+	title = REP_FAT_history.8.t
+	desc = REP_FAT_history.8.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.8.1
 	}
 }
 

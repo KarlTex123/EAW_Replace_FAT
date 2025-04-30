@@ -236,7 +236,32 @@ FAT_vs_HAU_category = {
 			country_event = FAT_start.801
 		}
 	}
-	test_win = {
+}
+
+REP_FAT_test_category = {
+	FAT_start_annex_VED = {
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {}
+		fire_only_once = no
+		remove_effect = {
+			country_event = FAT_start.6
+		}
+	}
+	FAT_start_annex_HAU = {
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {}
+		fire_only_once = no
+		remove_effect = {
+			country_event = FAT_start.8
+		}
+	}
+	REP_FAT_vs_HAU_test_win = {
 		icon = ?
 		allowed = {}
 		available = {
@@ -244,6 +269,7 @@ FAT_vs_HAU_category = {
 		}
 		visible = {
 			is_debug = yes
+			has_country_flag = start_of_FAT_vs_HAU
 		}
 		fire_only_once = no
 		cost = 0

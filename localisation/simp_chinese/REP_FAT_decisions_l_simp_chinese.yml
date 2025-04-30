@@ -1,0 +1,38 @@
+﻿l_simp_chinese:
+
+FAT_vs_HAU_category: "豪克兰的海外博弈"
+FAT_vs_HAU_category_desc: "豪克兰作为链接狮鹫大陆和小马大陆的关键地区，其战略重要性不言而喻。直到978大革命以前，这里还是狮鹫帝国的殖民地，大革命以后，共和国的叛徒麦耶带走了我们的空军叛逃到了豪克兰，并在这里建立了他的独裁统治。共和国不会原谅他的背叛，等待他的只有审判，而现在这个机会已经到来了，一批依然对共和主义保持信念的老兵已经掀起了对麦耶的反叛，我们必须支援他们的革命。\n由于豪克兰孤悬海外，以共和国现有的海空军直接干预非常困难，直接干预也有可能暴露我们的实力触动君主派的神经。为此，我们必须间接支援豪克兰的革命，给与革命军需要的物资和顾问，我们必须非常谨慎，麦耶在豪克兰的势力不容小觑，他会竭尽全力加强自己的统治，如果这次失败，染指豪克兰的机会可能不会再有了。\n\n§Y[FAT.GetName]§!在豪克兰的影响力：[?FAT.FAT_vs_influence|G]\n§Y[HAU.GetRulingParty]§!在豪克兰的影响力：[?HAU.FAT_vs_influence|R]" 
+#§Y[HAU.GetNameWithFlag]§!
+start_of_FAT_vs_HAU: "§Y[FAT.GetName]§!与§Y[HAU.GetRulingParty]§!在豪克兰的博弈正在进行"
+
+talk_to_fly_bird_horse: "游说飞行员"
+talk_to_fly_bird_horse_t: "§Y[FAT.GetNameWithFlag]§!在豪克兰的影响力§G+5§!。"
+
+arm_revolution_army: "武装革命军"
+arm_revolution_army_t: "§Y[FAT.GetNameWithFlag]§!在豪克兰的影响力§G+10§!。"
+
+send_republicans: "派遣共和党员"
+send_republicans_t: "§Y[FAT.GetNameWithFlag]§!在豪克兰的影响力§G+15§!。"
+
+kill_bad_official: "刺杀迈耶亲信"
+kill_bad_official_t: "§Y[HAU.GetRulingParty]§!在豪克兰的影响力§R-5§!。"
+
+oppose_of_bad_official: "迈耶的反扑"
+oppose_of_bad_official_t: "§Y[HAU.GetRulingParty]§!在豪克兰的影响力§R+10§!。"
+end_FAT_revolution_at_HAU: "革命终局"
+end_FAT_revolution_at_HAU_tt: "我们支持的革命军影响力大于迈耶的亲信集团"
+
+REP_FAT_history_decision_1: "长征漫云"
+REP_FAT_history_decision_2: "漫云新政"
+REP_FAT_history_decision_3: "漫云争论"
+REP_FAT_history_decision_4: "瑰翼叛变"
+REP_FAT_history_decision_5: "克梅斯凯—谢罗夫宣言"
+REP_FAT_history_decision_6: "改组国民共和党"
+REP_FAT_history_decision_7: "黄金时期"
+REP_FAT_history_decision_8: "隐忧"
+
+REP_FAT_test_category: "机制测试"
+FAT_start_annex_VED: "吞并韦迪纳地块"
+FAT_start_annex_HAU: "开启豪克兰博弈机制"
+REP_FAT_vs_HAU_test_win: "取得豪克兰博弈胜利"
+ 

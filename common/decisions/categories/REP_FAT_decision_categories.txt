@@ -1,6 +1,6 @@
 FAT_balance_of_power_category = {
 	icon = x
-	visible_when_empty = yes
+	visible_when_empty = no
 	allowed = {
 		original_tag = FAT
 	}
@@ -19,6 +19,17 @@ FAT_vs_HAU_category = {
 	priority = 1000
 	visible = {
 		has_country_flag = start_of_FAT_vs_HAU
+	}
+}
+
+REP_FAT_test_category = {
+	icon = x
+	allowed = {
+		original_tag = FAT
+	}
+	priority = 10000
+	visible = {
+		is_debug = yes
 	}
 }
 
