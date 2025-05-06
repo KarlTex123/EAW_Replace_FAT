@@ -1,0 +1,847 @@
+focus_tree = {
+	id = FAT_natinal_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = FAT
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 1000
+		y = 1200
+	}
+	focus = { #三十年共和之梦
+		id = FAT_sanshiniangonghemeng
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 21
+		y = 1
+	}
+	focus = { #民权
+		id = FAT_minquan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = FAT_sanshiniangonghemeng
+		}
+	}
+	focus = { #国民主权
+		id = FAT_guominzhuquan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_minquan
+		}
+		relative_position_id = FAT_minquan
+	}
+	focus = { #总统元帅
+		id = FAT_zongtongyuanshuai
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = FAT_minquan
+		}
+		relative_position_id = FAT_minquan
+	}
+	focus = { #戡乱动员法令
+		id = FAT_kanluandongyuanfaling
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FAT_zongtongyuanshuai
+		}
+		relative_position_id = FAT_zongtongyuanshuai
+	}
+	focus = { #理性化政府
+		id = FAT_lixinghuazhengfu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = FAT_minquan
+		}
+		relative_position_id = FAT_minquan
+	}
+	focus = { #民生
+		id = FAT_minsheng
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 42
+		y = 2
+		prerequisite = {
+			focus = FAT_sanshiniangonghemeng
+		}
+	}
+	focus = { #计划经济委员会
+		id = FAT_jingjijihuaweiyuanhui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		mutually_exclusive = {
+			focus = FAT_gongheyinhang
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #民主
+		id = FAT_minzhu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 21
+		y = 2
+		prerequisite = {
+			focus = FAT_sanshiniangonghemeng
+		}
+	}
+	focus = { #打破天花板
+		id = FAT_dapotianhuaban
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = FAT_minzhu
+		}
+		mutually_exclusive = {
+			focus = FAT_fanshijiuzhilu
+		}
+		relative_position_id = FAT_minzhu
+	}
+	focus = { #共和银行
+		id = FAT_gongheyinhang
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		mutually_exclusive = {
+			focus = FAT_jingjijihuaweiyuanhui
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #新建中小学
+		id = FAT_xinjianzhongxiaoxue
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 9
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #训政期限
+		id = FAT_xunzhengqixian
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FAT_zongtongyuanshuai
+		}
+		relative_position_id = FAT_zongtongyuanshuai
+	}
+	focus = { #种族政策
+		id = FAT_zhongzuzhengce
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_guominzhuquan
+		}
+		relative_position_id = FAT_guominzhuquan
+	}
+	focus = { #选举大法官
+		id = FAT_xuanjudafaguan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FAT_lixinghuazhengfu
+		}
+		relative_position_id = FAT_lixinghuazhengfu
+	}
+	focus = { #总理府
+		id = FAT_zonglifu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FAT_lixinghuazhengfu
+		}
+		relative_position_id = FAT_lixinghuazhengfu
+	}
+	focus = { #革命恐怖
+		id = FAT_gemingkongbu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FAT_xunzhengqixian
+		}
+		relative_position_id = FAT_xunzhengqixian
+	}
+	focus = { #重申领土完整
+		id = FAT_chongshenlingtuwanzheng
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FAT_kanluandongyuanfaling
+		}
+		prerequisite = {
+			focus = FAT_xunzhengqixian
+		}
+		relative_position_id = FAT_kanluandongyuanfaling
+	} 
+	focus = { #选举权
+		id = FAT_xuanjuquan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_zhongzuzhengce
+		}
+		relative_position_id = FAT_zhongzuzhengce
+	}
+	focus = { #坚持立法统一
+		id = FAT_jianchilifatongyi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FAT_zonglifu
+		}
+		prerequisite = {
+			focus = FAT_xuanjudafaguan
+		}
+		relative_position_id = FAT_xuanjudafaguan
+	}
+	focus = { #监察院
+		id = FAT_jianchayuan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FAT_zonglifu
+		}
+		relative_position_id = FAT_zonglifu
+	}
+	focus = { #狮鹫共和国宪法草案
+		id = FAT_xianfacaoan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_xuanjuquan
+		}
+		prerequisite = {
+			focus = FAT_jianchilifatongyi
+		}
+		prerequisite = {
+			focus = FAT_chongshenlingtuwanzheng
+		}
+		relative_position_id = FAT_xuanjuquan
+	}
+	focus = { #泛狮鹫之路
+		id = FAT_fanshijiuzhilu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = FAT_minzhu
+		}
+		mutually_exclusive = {
+			focus = FAT_dapotianhuaban
+		}
+		relative_position_id = FAT_minzhu
+	}
+	focus = { #新革命党
+		id = FAT_xingemingdang
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_minzhu
+		}
+		relative_position_id = FAT_minzhu
+	}
+	focus = { #元老评议会
+		id = FAT_yuanlaopingyihui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FAT_xingemingdang
+		}
+		relative_position_id = FAT_xingemingdang
+	}
+	focus = { #中央执政委员会
+		id = FAT_zhongyangzhiweihui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FAT_xingemingdang
+		}
+		relative_position_id = FAT_xingemingdang
+	}
+	focus = { #三民主义研究会
+		id = FAT_yanjiuhui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_yuanlaopingyihui
+		}
+		relative_position_id = FAT_yuanlaopingyihui
+	}
+	focus = { #军事委员会
+		id = FAT_junweihui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_zhongyangzhiweihui
+		}
+		relative_position_id = FAT_zhongyangzhiweihui
+	}
+	focus = { #改造或改组
+		id = FAT_gaizaohuogaizu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FAT_yanjiuhui
+		}
+		prerequisite = {
+			focus = FAT_junweihui
+		}
+		relative_position_id = FAT_yanjiuhui
+	}
+	focus = { #狮鹫共和电台
+		id = FAT_gonghegdiantai
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_fanshijiuzhilu
+		}
+		relative_position_id = FAT_fanshijiuzhilu
+	}
+	focus = { #泛狮鹫国家框架
+		id = FAT_guojiakuangjia
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_gonghegdiantai
+		}
+		relative_position_id = FAT_gonghegdiantai
+	}
+	focus = { #编篡克梅斯凯文集
+		id = FAT_biancuanwenji
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_gonghegdiantai
+		}
+		relative_position_id = FAT_gonghegdiantai
+	}
+	focus = { #漫云特别市
+		id = FAT_manyuntebieshi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_guojiakuangjia
+		}
+		relative_position_id = FAT_guojiakuangjia
+	}
+	focus = { #狮鹫尼亚标准语
+		id = FAT_bianzhunyu
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_biancuanwenji
+		}
+		relative_position_id = FAT_biancuanwenji
+	}
+	focus = { #重审瑰翼叛乱
+		id = FAT_chongshenpanluan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_dapotianhuaban
+		}
+		relative_position_id = FAT_dapotianhuaban
+	}
+	focus = { #扩大省议会权力
+		id = FAT_kuodashengquanli
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_chongshenpanluan
+		}
+		relative_position_id = FAT_chongshenpanluan
+	}
+	focus = { #漫云文化协会
+		id = FAT_wenxiehui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_chongshenpanluan
+		}
+		relative_position_id = FAT_chongshenpanluan
+	}
+	focus = { #给予方言地位
+		id = FAT_jiyufangyandiwei
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_wenxiehui
+		}
+		relative_position_id = FAT_wenxiehui
+	}
+	focus = { #补选流亡议会
+		id = FAT_buxuanliuwangyihui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_kuodashengquanli
+		}
+		relative_position_id = FAT_kuodashengquanli
+	}
+	focus = { #漫云体制
+		id = FAT_manyuntizhi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_manyuntebieshi
+		}
+		prerequisite = {
+			focus = FAT_bianzhunyu
+		}
+		prerequisite = {
+			focus = FAT_gaizaohuogaizu
+		}
+		prerequisite = {
+			focus = FAT_jiyufangyandiwei
+		}
+		prerequisite = {
+			focus = FAT_buxuanliuwangyihui
+		}
+		relative_position_id = FAT_gaizaohuogaizu
+	}
+	focus = { #社会主义者的联盟
+		id = FAT_shehzhuyilianmeng
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #扩大自由言论
+		id = FAT_kuodayanlunziyou
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		mutually_exclusive = {
+			focus = FAT_gonghezuojialianmeng
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #共和作家联盟
+		id = FAT_gonghezuojialianmeng
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		mutually_exclusive = {
+			focus = FAT_kuodayanlunziyou
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #农民协会地位
+		id = FAT_nongxiediwei
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_shehzhuyilianmeng
+		}
+		prerequisite = {
+			focus = FAT_gonghezuojialianmeng
+		}
+		relative_position_id = FAT_shehzhuyilianmeng
+	}
+	focus = { #鼓励革命文学
+		id = FAT_guligemingwenxue
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_gonghezuojialianmeng
+		}
+		relative_position_id = FAT_gonghezuojialianmeng
+	}
+	focus = { #工会法
+		id = FAT_gonghuifa
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_shehzhuyilianmeng
+		}
+		prerequisite = {
+			focus = FAT_jingjijihuaweiyuanhui
+		}
+		relative_position_id = FAT_shehzhuyilianmeng
+	}
+	focus = { #社会主义者地位
+		id = FAT_shehuizhuyizhediwei
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_shehzhuyilianmeng
+		}
+		relative_position_id = FAT_shehzhuyilianmeng
+	}
+	focus = { #生产宪法
+		id = FAT_shengchanxianfa
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_jingjijihuaweiyuanhui
+		}
+		relative_position_id = FAT_jingjijihuaweiyuanhui
+	}
+	focus = { #新课本
+		id = FAT_xinkeben
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_xinjianzhongxiaoxue
+		}
+		relative_position_id = FAT_xinjianzhongxiaoxue
+	}
+	focus = { #流亡共和派教师
+		id = FAT_liuwanggongjiaoshi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_xinjianzhongxiaoxue
+		}
+		relative_position_id = FAT_xinjianzhongxiaoxue
+	}
+	focus = {
+		id = FAT_tongyikaoshi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_xinjianzhongxiaoxue
+		}
+		relative_position_id = FAT_xinjianzhongxiaoxue
+	}
+	focus = { #拓展工鹫夜校
+		id = FAT_kuozhangongjiuyexiao
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_xinkeben
+		}
+		relative_position_id = FAT_xinkeben
+	}
+	focus = { #共和学生联合会
+		id = FAT_gonghexueshenglianhehui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_liuwanggongjiaoshi
+		}
+		relative_position_id = FAT_liuwanggongjiaoshi
+	}
+	focus = { #国立漫云大学
+		id = FAT_guolidaxue
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_tongyikaoshi
+		}
+		relative_position_id = FAT_tongyikaoshi
+	}
+	focus = { #乡村建设运动
+		id = FAT_xiangcunjiansheyundong
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_nongxiediwei
+		}
+		relative_position_id = FAT_nongxiediwei
+	}
+	focus = { #修订土地法
+		id = FAT_xiudingtudifa
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = FAT_nongxiediwei
+		}
+		relative_position_id = FAT_nongxiediwei
+	}
+	focus = { #工业发展法
+		id = FAT_gongyejianshefa
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_gonghuifa
+		}
+		relative_position_id = FAT_gonghuifa
+	}
+	focus = { #工伤保险及失业保障
+		id = FAT_gongshangbaoxiejishiyebaozheng
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = FAT_gonghuifa
+		}
+		relative_position_id = FAT_gonghuifa
+	}
+	focus = { #新生活运动
+		id = FAT_xinshenghuoyundong
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -9
+		y = 1
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = { #共和家庭关系
+		id = FAT_gonghejiatingguanxi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_xinshenghuoyundong
+		}
+		relative_position_id = FAT_xinshenghuoyundong
+	}
+	focus = { #语言改革
+		id = FAT_yuyangaige
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_xinshenghuoyundong
+		}
+		relative_position_id = FAT_xinshenghuoyundong
+	}
+	focus = { #支援贫困
+		id = FAT_zhiyuaninkun
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_xinshenghuoyundong
+		}
+		relative_position_id = FAT_xinshenghuoyundong
+	}
+	focus = { #狮鹫童子军
+		id = FAT_tongzijun
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_gonghejiatingguanxi
+		}
+		relative_position_id = FAT_gonghejiatingguanxi
+	}
+	focus = { #革命仪式
+		id = FAT_gemingyishi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_yuyangaige
+		}
+		relative_position_id = FAT_yuyangaige
+	}
+	focus = { #启蒙社会
+		id = FAT_qimengshehui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_zhiyuaninkun
+		}
+		relative_position_id = FAT_zhiyuaninkun
+	}
+	focus = { #共和信仰
+		id = FAT_gonghexinyang
+		icon = GFX_goal_unknown
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_tongzijun
+		}
+		prerequisite = {
+			focus = FAT_gemingyishi
+		}
+		prerequisite = {
+			focus = FAT_qimengshehui
+		}
+		relative_position_id = FAT_qimengshehui
+	}
+	focus = { #何为民生主义
+		id = FAT_heweimishengzhuyi
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_shehuizhuyizhediwei
+		}
+		prerequisite = {
+			focus = FAT_xiangcunjiansheyundong
+		}
+		prerequisite = {
+			focus = FAT_xiudingtudifa
+		}
+		prerequisite = {
+			focus = FAT_gongyejianshefa
+		}
+		prerequisite = {
+			focus = FAT_gongshangbaoxiejishiyebaozheng
+		}
+		relative_position_id = FAT_shehuizhuyizhediwei
+	}
+	focus = { #设立考试院
+		id = FAT_shelikaoshiyuan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_kuozhangongjiuyexiao
+		}
+		prerequisite = {
+			focus = FAT_gonghexueshenglianhehui
+		}
+		prerequisite = {
+			focus = FAT_guolidaxue
+		}
+		relative_position_id = FAT_kuozhangongjiuyexiao
+	}
+	focus = { #国民共和党全会
+		id = FAT_guomingonghedangquanhui
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 21
+		y = 8
+		prerequisite = {
+			focus = FAT_manyuntizhi
+		}
+		prerequisite = {
+			focus = FAT_xianfacaoan
+		}
+		prerequisite = {
+			focus = FAT_heweimishengzhuyi
+		}
+	}
+}
