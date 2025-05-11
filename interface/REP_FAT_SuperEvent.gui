@@ -1,0 +1,61 @@
+guiTypes = {
+	containerWindowType = {
+		name = "REP_FAT_SuperEvent_ui_window"
+		position = { x = -554 y = -420 }
+		size = { width = 1108 height = 840 } 
+		orientation= CENTER
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = no
+		iconType = {
+			name = "REP_FAT_SuperEvent_picture"
+			#centerposition = yes 
+			#quadTextureSprite = "[SuperEvent_background_picture]" #图标采用的图像（动态或多帧）
+			centerposition = no #设置位置时是否以图标的正中心为基准
+			position = { x= -521 y = -350 } #图标位置
+			Orientation = CENTER #设置位置的原点（和centerposition类似但是更具体），这里是以左上角为基准点确定位置
+		}
+		iconType = {
+			name = "REP_FAT_SuperEvent_background"
+			quadTextureSprite = "GFX_SuperEvent_background" #图标采用的图像（动态或多帧）
+			centerposition = no #设置位置时是否以图标的正中心为基准
+			position = { x= 0 y = 0 } #图标位置
+			Orientation = "UPPER_LEFT" #设置位置的原点（和centerposition类似但是更具体），这里是以左上角为基准点确定位置
+		}
+		instantTextBoxType = {
+			name = "REP_FAT_SuperEvent_text" #窗口名称（最好独一无二）
+			position = { x = 140 y = 730 } #窗口位置
+			font = "hoi_18mbs" #文本窗口内部用什么字体
+			borderSize = {x = 0 y = 0} #文本框的边界框
+			text = [SuperEvent_text_t] #文本内容，用此处来进行本地化
+			maxWidth = 820 #文本最大宽度，大于后文字会提行
+			maxHeight = 24 #文本最大高度，大于后字就被挤出去了
+			fixedsize = no #如果文字挤出去了，是否截断越位的文字
+			format = centre #对齐方式（这里是居中对齐）
+		} 
+		instantTextBoxType = {  
+			name = "REP_FAT_SuperEvent_title" #窗口名称（最好独一无二）
+			position = { x = 0 y = 15 } #窗口位置
+			font = "hoi_30header" #文本窗口内部用什么字体
+			borderSize = {x = 0 y = 0} #文本框的边界框
+			text = [SuperEvent_title_t] #文本内容，用此处来进行本地化
+			maxWidth = 1108
+			maxHeight = 500
+			fixedsize = no 
+			format = centre 
+		}
+		buttonType = {
+			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			centerPosition = yes
+			orientation = CENTER
+			centerposition = yes
+			position = { x= 0 y = 260 } #位置
+			quadTextureSprite = "GFX_button_123x34" #按钮元素
+			buttonText = [SuperEvent_close_t] #按钮文字
+			buttonFont = "hoi_18mbs" #文字字体
+			clicksound = click_default #点击时的音效
+		}
+	}
+}
+

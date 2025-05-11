@@ -1,0 +1,25 @@
+scripted_gui = {
+	REP_FAT_SuperEvent_ui = {
+		window_name = "REP_FAT_SuperEvent_ui_window"
+		context_type = player_context
+		visible = {
+			has_country_flag = REP_FAT_SuperEvent_ui_flag
+		}
+		effects = {
+			REP_FAT_SuperEvent_close_click = { #元素名称_click 此处写左键点击某个元素时触发的效果
+				clr_country_flag = REP_FAT_SuperEvent_ui_flag
+				###以下清除特定超事件的国家flag
+				clr_country_flag = test_SuperEvent_flag
+            }
+		}
+		ai_enabled = {
+			always = no
+		}
+		properties = {
+            REP_FAT_SuperEvent_picture = {
+                image = [SuperEvent_background_picture]
+            }
+        }
+	}
+	
+}

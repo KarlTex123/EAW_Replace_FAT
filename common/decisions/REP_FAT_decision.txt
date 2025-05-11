@@ -279,6 +279,22 @@ REP_FAT_test_category = {
 			}
 		}
 	}
+	超事件UI测试 = {
+		icon = ?
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {
+			is_debug = yes
+		}
+		fire_only_once = no
+		cost = 0
+		remove_effect = {
+			set_country_flag = REP_FAT_SuperEvent_ui_flag
+			set_country_flag = test_SuperEvent_flag
+		}
+	}
 }
 
 

@@ -1,0 +1,43 @@
+defined_text = {
+	name = SuperEvent_text_t
+	text = {
+		trigger = {
+			has_country_flag = test_SuperEvent_flag
+		}
+		localization_key = SuperEvent_text_t_test
+	}
+}
+defined_text = {
+	name = SuperEvent_title_t
+	text = {
+		trigger = {
+			has_country_flag = test_SuperEvent_flag
+		}
+		localization_key = SuperEvent_title_t_test
+	}
+}
+defined_text = {
+	name = SuperEvent_close_t
+	text = {
+		trigger = {
+			has_country_flag = test_SuperEvent_flag
+		}
+		localization_key = SuperEvent_close_t_test
+	}
+}
+defined_text = {
+	name = SuperEvent_background_picture
+	text = {
+		trigger = {
+			has_country_flag = test_SuperEvent_flag
+		}
+		localization_key = GFX_SuperEvent_picture_test
+	}
+}
+
+
+
+
+
+
+

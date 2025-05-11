@@ -1,0 +1,22 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_SuperEvent_screen"
+		texturefile = "gfx\interface\SuperEvent\UI\SuperEvent_screen.png" 
+	}
+	SpriteType = { 
+		name = "GFX_SuperEvent_text"
+		texturefile = "gfx\interface\SuperEvent\UI\SuperEvent_text.png"    
+	}
+	SpriteType = { 
+		name = "GFX_SuperEvent_background"
+		texturefile = "gfx\interface\SuperEvent\UI\SuperEvent_background.png"    
+	}
+	SpriteType = { 
+		name = "GFX_SuperEvent_picture_test"
+		texturefile = "gfx\interface\SuperEvent\SuperEvent_test.png"    
+	}
+}
+
+
+
+
