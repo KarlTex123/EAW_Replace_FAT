@@ -26,7 +26,8 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "REP_FAT_SuperEvent_text" #窗口名称（最好独一无二）
 			position = { x = 140 y = 730 } #窗口位置
-			font = "hoi_18mbs" #文本窗口内部用什么字体
+			#font = "hoi_18mbs" #文本窗口内部用什么字体
+			font = "hoi_24header"
 			borderSize = {x = 0 y = 0} #文本框的边界框
 			text = [SuperEvent_text_t] #文本内容，用此处来进行本地化
 			maxWidth = 820 #文本最大宽度，大于后文字会提行
@@ -49,11 +50,11 @@ guiTypes = {
 			name = "REP_FAT_SuperEvent_close" #按钮框名称
 			centerPosition = yes
 			orientation = CENTER
-			centerposition = yes
-			position = { x= 0 y = 260 } #位置
+			position = { x= 40 y = 265 } #位置 
 			quadTextureSprite = "GFX_button_123x34" #按钮元素
 			buttonText = [SuperEvent_close_t] #按钮文字
-			buttonFont = "hoi_18mbs" #文字字体
+			#buttonFont = "hoi_18mbs" #文字字体
+			buttonFont = "hoi_24header" #文字字体
 			clicksound = click_default #点击时的音效
 		}
 	}
