@@ -4,7 +4,9 @@ FAT_Foreign_decision_categories = {
 		original_tag = FAT
 	}
 	visible = {
-		has_country_flag = FAT_Foreign_decision_categories
+		has_country_flag = FAT_Foreign_decision_categories 
 	}
 	priority = 10
 }
+
+
