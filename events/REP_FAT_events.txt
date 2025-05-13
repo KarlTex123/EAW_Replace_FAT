@@ -1,5 +1,6 @@
 ﻿add_namespace = FAT_start
 add_namespace = REP_FAT_history
+add_namespace = FAT_FP
 
 country_event = { #开局政局介绍
 	id = FAT_start.1
@@ -327,6 +328,170 @@ country_event = { #
 	is_triggered_only = yes
 	option = {
 		name = REP_FAT_history.8.1
+	}
+}
+
+
+country_event = { #来自狮鹫共和国的最后通牒
+	id = FAT_FP.1
+	picture = FAT_FP.1.p
+	title = FAT_FP.1.t
+	desc = FAT_FP.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.1.a
+
+		FAT = {
+			country_event = {
+				id = FAT_FP.2 
+			}
+		}
+	}
+
+	option = {
+		name = FAT_FP.1.b
+
+		FAT = {
+			country_event = {
+				id = FAT_FP.3
+			}
+		}
+	}
+}
+
+
+country_event = { #北方小马拥抱共和
+	id = FAT_FP.2
+	picture = FAT_FP.2.p
+	title = FAT_FP.2.t
+	desc = FAT_FP.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.2.a
+		annex_country = {
+			target = NTR
+			transfer_troops = yes
+		}
+		add_stability = 0.05
+		add_political_power = 25
+		#获得全部核心
+	}
+}
+
+country_event = { #北方小马的顽抗
+	id = FAT_FP.3
+	picture = FAT_FP.3.p
+	title = FAT_FP.3.t
+	desc = FAT_FP.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.2.a
+		create_wargoal = {
+			target = NTR
+			type = take_state
+		}
+		
+		unlock_decision_tooltip = FAT_ZHENGHEXIAOMA
+		set_country_flag = FAT_ZHENGHEXIAOMA
+	}
+}
+
+
+country_event = { #来自狮鹫共和国的最后通牒
+	id = FAT_FP.4
+	picture = FAT_FP.4.p
+	title = FAT_FP.4.t
+	desc = FAT_FP.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.4.a
+
+		FAT = {
+			country_event = {
+				id = FAT_FP.5
+			}
+		}
+	}
+
+	option = {
+		name = FAT_FP.4.b
+
+		FAT = {
+			country_event = {
+				id = FAT_FP.6
+			}
+		}
+	}
+}
+
+country_event = { #韦迪纳和平革命
+	id = FAT_FP.5
+	picture = FAT_FP.5.p
+	title = FAT_FP.5.t
+	desc = FAT_FP.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.5.a
+		annex_country = {
+			target = VED
+			transfer_troops = yes
+		}
+		add_stability = 0.1
+		add_political_power = 50
+		#获得全部核心
+	}
+}
+
+country_event = { #韦迪纳暴力革命
+	id = FAT_FP.6
+	picture = FAT_FP.6.p
+	title = FAT_FP.6.t
+	desc = FAT_FP.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.6.a
+		unlock_decision_tooltip = FAT_GANYUNEIZHAN
+	}
+}
+
+country_event = { #瞬息万变的世界格局
+	id = FAT_FP.7
+	picture = FAT_FP.7.p
+	title = FAT_FP.7.t
+	desc = FAT_FP.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.7.a
+	}
+}
+
+country_event = { #卢娜的公开叛乱
+	id = FAT_FP.8
+	picture = FAT_FP.8.p
+	title = FAT_FP.8.t
+	desc = FAT_FP.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.8.a
+		#开始内战
+		unlock_decision_tooltip = FAT_BANGZHULUNA
+		set_country_flag = FAT_BANGZHULUNA
 	}
 }
 

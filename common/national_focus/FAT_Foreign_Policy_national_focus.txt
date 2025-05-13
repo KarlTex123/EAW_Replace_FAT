@@ -1,0 +1,152 @@
+focus_tree = {
+	id = FAT_Foreign_Policy_national_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FAT
+		}
+	}
+	default = no
+	focus = { #新世界之梦
+		id = FAT_XINSHIJIEZHIEMENG
+		icon = GFX_goal_FAT_XINSHIJIEZHIEMENG
+		cost = 10
+		x = 7
+		y = 0
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			unlock_decision_category_tooltip = FAT_Foreign_decision_categories
+			set_country_flag = FAT_Foreign_decision_categories
+
+			country_event = {
+				id = FAT_FP.7
+			}
+		}
+	}
+	focus = { #共和国公约
+		id = FAT_GONGHEGUOGONGYUE
+		icon = GFX_goal_FAT_GONGHEGUOGONGYUE
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FAT_XINSHIJIEZHIEMENG
+
+		prerequisite = {
+			focus = FAT_XINSHIJIEZHIEMENG
+		}
+
+		completion_reward = {
+			create_faction = FAT_GONGHEGUOGONGYUE
+		}
+	}
+	focus = { #联络南方共和党
+		id = FAT_LIANLUENANFANG
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_GONGHEGUOGONGYUE
+		}
+		relative_position_id = FAT_GONGHEGUOGONGYUE
+
+		completion_reward = {
+			#机制解锁
+		}
+
+		
+	}
+	focus = { #击日者的命运
+		id = FAT_JIRIZHEMINGYUN
+		icon = GFX_goal_FAT_JIRIZHEMINGYUN
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_LIANLUENANFANG
+		}
+		relative_position_id = FAT_LIANLUENANFANG
+
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.8
+			}
+		}
+	}
+	focus = { #小马大陆的朋友
+		id = FAT_XIAOMAPENGYOU
+		icon = GFX_goal_FAT_XIAOMAPENGYOU
+		cost = 10
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = FAT_XINSHIJIEZHIEMENG
+		}
+		relative_position_id = FAT_XINSHIJIEZHIEMENG
+
+		completion_reward = {
+			unlock_decision_tooltip = FAT_YUSIDALINGELEHEZUO
+			unlock_decision_tooltip = FAT_HUIMIANLINGDAOREN
+			unlock_decision_tooltip = FAT_YOUYIXUANYAN
+			set_country_flag = FAT_YUSIDALINGELEHEZUO
+			set_country_flag = FAT_HUIMIANLINGDAOREN
+			set_country_flag = FAT_YOUYIXUANYAN
+		}
+	}
+	focus = { #民主不是公主
+		id = FAT_MINZHUFEIGONGZHU
+		icon = GFX_goal_FAT_MINZHUFEIGONGZHU
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_LIANLUENANFANG
+		}
+		relative_position_id = FAT_LIANLUENANFANG
+
+		completion_reward = {
+			NTR = {
+				id = FAT_FP.1
+			}
+		}
+	}
+	focus = { #韦迪纳的革命
+		id = FAT_WEIDINAGAIGE
+		icon = GFX_goal_FAT_WEIDINAGAIGE
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_LIANLUENANFANG
+		}
+		relative_position_id = FAT_LIANLUENANFANG
+
+		completion_reward = {
+			VED = {
+				country_event = {
+					id = FAT_FP.4
+				}
+			}
+		}
+	}
+	focus = { #击碎皇冠
+		id = FAT_JISUIHUANGGUAN
+		icon = GFX_goal_FAT_JISUIHUANGGUAN
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_MINZHUFEIGONGZHU
+		}
+		prerequisite = {
+			focus = FAT_JIRIZHEMINGYUN
+		}
+		prerequisite = {
+			focus = FAT_WEIDINAGAIGE
+		}
+		relative_position_id = FAT_WEIDINAGAIGE
+	}
+}

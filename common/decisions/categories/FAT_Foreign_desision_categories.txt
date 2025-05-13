@@ -1,0 +1,10 @@
+FAT_Foreign_decision_categories = {
+	icon = FAT_Foreign_decision_pic
+	allowed = {
+		original_tag = FAT
+	}
+	visible = {
+		has_country_flag = FAT_Foreign_decision_categories
+	}
+	priority = 10
+}
