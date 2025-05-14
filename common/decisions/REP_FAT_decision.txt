@@ -244,7 +244,9 @@ REP_FAT_test_category = {
 		available = {
 			is_debug = yes
 		}
-		visible = {}
+		visible = {
+			original_tag = FAT
+		}
 		fire_only_once = no
 		remove_effect = {
 			country_event = FAT_start.6
@@ -254,6 +256,7 @@ REP_FAT_test_category = {
 		allowed = {}
 		available = {
 			is_debug = yes
+			original_tag = FAT
 		}
 		visible = {}
 		fire_only_once = no
@@ -269,6 +272,7 @@ REP_FAT_test_category = {
 		}
 		visible = {
 			is_debug = yes
+			original_tag = FAT
 			has_country_flag = start_of_FAT_vs_HAU
 		}
 		fire_only_once = no
@@ -295,6 +299,55 @@ REP_FAT_test_category = {
 			set_country_flag = test_SuperEvent_flag
 		}
 	}
+	加载外交国策树 = {
+		icon = ?
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {
+			is_debug = yes
+			original_tag = FAT
+		}
+		fire_only_once = no
+		cost = 0
+		remove_effect = {
+			load_focus_tree = FAT_Foreign_Policy_national_focus
+		}
+	}
+	加载政治国策树 = {
+		icon = ?
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {
+			is_debug = yes
+			original_tag = FAT
+		}
+		fire_only_once = no
+		cost = 0
+		remove_effect = {
+			load_focus_tree = FAT_natinal_focus
+		}
+	}
+	加载权力平衡国策树 = {
+		icon = ?
+		allowed = {}
+		available = {
+			is_debug = yes
+		}
+		visible = {
+			is_debug = yes
+			original_tag = FAT
+		}
+		fire_only_once = no
+		cost = 0
+		remove_effect = {
+			load_focus_tree = FAT_start_tree
+		}
+	}
+
 }
 
 

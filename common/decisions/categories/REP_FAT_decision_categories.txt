@@ -25,11 +25,12 @@ FAT_vs_HAU_category = {
 REP_FAT_test_category = {
 	icon = x
 	allowed = {
-		original_tag = FAT
+		is_debug = yes
 	}
 	priority = 10000
 	visible = {
 		is_debug = yes
+		is_ai = no
 	}
 }
 
