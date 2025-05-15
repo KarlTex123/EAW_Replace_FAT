@@ -48,15 +48,16 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "REP_FAT_SuperEvent_close" #按钮框名称
-			centerPosition = yes
+			#centerPosition = yes
 			orientation = CENTER
-			position = { x= 40 y = 265 } #位置 
-			quadTextureSprite = "GFX_button_123x34" #按钮元素
-			buttonText = [SuperEvent_close_t] #按钮文字
-			#buttonFont = "hoi_18mbs" #文字字体
-			buttonFont = "hoi_24header" #文字字体
+			position = { x= -151 y = 243 } #位置 
+			quadTextureSprite = "GFX_SuperEvent_close_button" #按钮元素
 			clicksound = click_default #点击时的音效
+			buttonText = [SuperEvent_close_t] #按钮文字
+			buttonFont = "hoi_24header" #文字字体
 		}
 	}
 }
+
+
 

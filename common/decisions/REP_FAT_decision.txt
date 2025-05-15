@@ -297,7 +297,9 @@ REP_FAT_test_category = {
 		remove_effect = {
 			set_country_flag = REP_FAT_SuperEvent_ui_flag
 			set_country_flag = test_SuperEvent_flag
+			scoped_play_song = Song_of_Civil_Revolution
 		}
+		
 	}
 	加载外交国策树 = {
 		icon = ?
