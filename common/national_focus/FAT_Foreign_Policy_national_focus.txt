@@ -130,6 +130,12 @@ focus_tree = {
 					id = FAT_FP.4
 				}
 			}
+			set_variable_to_random = {
+				var = global.ramdom_iloveyou
+				min = 1
+				max = 10
+				integer = yes
+			} #用于后续随机判定内战还是直接吞并
 		}
 	}
 	focus = { #击碎皇冠

@@ -408,27 +408,33 @@ country_event = { #来自狮鹫共和国的最后通牒
 	picture = FAT_FP.4.p
 	title = FAT_FP.4.t
 	desc = FAT_FP.4.d
-
+	
 	is_triggered_only = yes
 
 	option = {
+		trigger = {
+			OR = {
+				is_ai = no
+				check_variable = {
+					global.ramdom_iloveyou >5
+				}
+			}
+		}
 		name = FAT_FP.4.a
-
 		FAT = {
 			country_event = {
 				id = FAT_FP.5
 			}
 		}
+		clear_variable = global.ramdom_iloveyou
 	}
 
 	option = {
 		name = FAT_FP.4.b
-
-		FAT = {
-			country_event = {
-				id = FAT_FP.6
-			}
+		country_event = {
+			id = FAT_FP.6
 		}
+		clear_variable = global.ramdom_iloveyou
 	}
 }
 
@@ -459,10 +465,27 @@ country_event = { #韦迪纳暴力革命
 	desc = FAT_FP.6.d
 
 	is_triggered_only = yes
-
+	immediate = {
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = ROOT
+			size = 0.4
+			capital = 430
+			states = {
+				430 483 575
+			}
+			keep_unit_leaders = {
+				673
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+	}
 	option = {
 		name = FAT_FP.6.a
-		unlock_decision_tooltip = FAT_GANYUNEIZHAN
+		FAT = {
+			unlock_decision_tooltip = FAT_GANYUNEIZHAN
+		}
 	}
 }
 
