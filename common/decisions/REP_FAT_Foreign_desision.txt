@@ -41,10 +41,6 @@ FAT_Foreign_decision_categories = {
 		}
 	}
 
-	FAT_ZHENGHEXIAOMA = {
-
-	}
-
 	FAT_ZHENGHEXIAOMA = { #整合北方的小马
 		
 		icon = GFX_FAT_ZHENGHEXIAOMA
@@ -53,15 +49,25 @@ FAT_Foreign_decision_categories = {
 		days_remove = 7
 		
 		fire_only_once = yes
-
 		visible = {
 			has_country_flag = FAT_ZHENGHEXIAOMA
 		}
-
+		available = {
+			NTR = {
+				all_core_state = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
 		remove_effect = {
 			add_stability = 0.05
 			add_political_power = 25
-			#获得全部核心
+			every_state = {
+				limit = {
+					is_core_of = NTR
+				}
+				add_core_of = ROOT
+			}
 		}
 	}
 
@@ -81,6 +87,20 @@ FAT_Foreign_decision_categories = {
 			#FAT = {
 			#    add_to_faction = #韦迪纳革命军的TAG
 		    #}
+			every_country = {
+				limit = {
+					has_civil_war = yes
+					has_war_with = VED
+				}
+				FAT = {
+					add_to_faction = PREV
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = VED
+						hostility_reason = FAT_JOIN_WAR_TT
+					}
+				}
+			}
 			unlock_decision_tooltip = FAT_HEBINGJUNDUI
 			set_country_flag = FAT_HEBINGJUNDUI
 		}
@@ -101,9 +121,23 @@ FAT_Foreign_decision_categories = {
 		visible = {
 			has_country_flag = FAT_HEBINGJUNDUI
 		}
-
+		available = {
+			VED = {
+				has_government = democratic
+				has_civil_war = no
+			}
+		}
 		remove_effect = {
-			#获得韦迪纳革命军全部核心
+			every_state = {
+				limit = {
+					is_core_of = VED
+				}
+				add_core_of = ROOT
+			}
+			annex_country = {
+				target = VED
+				transfer_troops = yes
+			}
 			add_stability = 0.1
 			add_political_power = 50
 		}
@@ -125,8 +159,23 @@ FAT_Foreign_decision_categories = {
 			#FAT = {
 			#    add_to_faction = #韦迪纳革命军的TAG
 		    #}
+			every_country = {
+				limit = {
+					has_civil_war = yes
+					has_war_with = MNC
+				}
+				FAT = {
+					add_to_faction = PREV
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = MNC
+						hostility_reason = FAT_JOIN_WAR_TT
+					}
+				}
+			}
 			unlock_decision_tooltip = FAT_YONGBAOLUNA
 			set_country_flag = FAT_YONGBAOLUNA
+			clr_country_flag = FAT_BANGZHULUNA
 		}
 	}
 
@@ -141,13 +190,29 @@ FAT_Foreign_decision_categories = {
 		ai_will_do = {
 		    factor = 10000000
 	    }
-
+		
 		visible = {
 			has_country_flag = FAT_YONGBAOLUNA
 		}
-
+		available = {
+			MNC = {
+				has_government = democratic
+				has_civil_war = no
+			}
+		}
 		remove_effect = {
-			#获得卢娜革命军全部核心
+			clr_country_flag = FAT_YONGBAOLUNA
+			
+			every_state = {
+				limit = {
+					is_core_of = MNC
+				}
+				add_core_of = ROOT
+			}
+			annex_country = {
+				target = MNC
+				transfer_troops = yes
+			}
 			add_stability = 0.1
 			add_political_power = 50
 		}

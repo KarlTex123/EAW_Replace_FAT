@@ -352,8 +352,10 @@ country_event = { #来自狮鹫共和国的最后通牒
 	is_triggered_only = yes
 
 	option = {
+		ai_chance = {
+			base = 5
+		}
 		name = FAT_FP.1.a
-
 		FAT = {
 			country_event = {
 				id = FAT_FP.2 
@@ -363,7 +365,9 @@ country_event = { #来自狮鹫共和国的最后通牒
 
 	option = {
 		name = FAT_FP.1.b
-
+		ai_chance = {
+			base = 5
+		}
 		FAT = {
 			country_event = {
 				id = FAT_FP.3
@@ -383,13 +387,14 @@ country_event = { #北方小马拥抱共和
 
 	option = {
 		name = FAT_FP.2.a
+		add_stability = 0.05
+		add_political_power = 25
 		annex_country = {
 			target = NTR
 			transfer_troops = yes
 		}
-		add_stability = 0.05
-		add_political_power = 25
-		#获得全部核心
+		unlock_decision_tooltip = FAT_ZHENGHEXIAOMA
+		set_country_flag = FAT_ZHENGHEXIAOMA
 	}
 }
 
@@ -407,7 +412,6 @@ country_event = { #北方小马的顽抗
 			target = NTR
 			type = take_state
 		}
-		
 		unlock_decision_tooltip = FAT_ZHENGHEXIAOMA
 		set_country_flag = FAT_ZHENGHEXIAOMA
 	}
@@ -423,13 +427,8 @@ country_event = { #来自狮鹫共和国的最后通牒
 	is_triggered_only = yes
 
 	option = {
-		trigger = {
-			OR = {
-				is_ai = no
-				check_variable = {
-					global.ramdom_iloveyou >5
-				}
-			}
+		ai_chance = {
+			base = 5
 		}
 		name = FAT_FP.4.a
 		FAT = {
@@ -437,15 +436,16 @@ country_event = { #来自狮鹫共和国的最后通牒
 				id = FAT_FP.5
 			}
 		}
-		clear_variable = global.ramdom_iloveyou
 	}
 
 	option = {
+		ai_chance = {
+			base = 5
+		}
 		name = FAT_FP.4.b
 		country_event = {
 			id = FAT_FP.6
 		}
-		clear_variable = global.ramdom_iloveyou
 	}
 }
 
@@ -465,7 +465,12 @@ country_event = { #韦迪纳和平革命
 		}
 		add_stability = 0.1
 		add_political_power = 50
-		#获得全部核心
+		every_state = {
+			limit = {
+				is_controlled_by = VED
+			}
+			add_core_of = ROOT
+		}
 	}
 }
 
@@ -478,15 +483,12 @@ country_event = { #韦迪纳暴力革命
 	is_triggered_only = yes
 	immediate = {
 		start_civil_war = {
-			ruling_party = democratic
-			ideology = ROOT
+			#ruling_party = democratic
+			ideology = democratic
 			size = 0.4
 			capital = 430
 			states = {
 				430 483 575
-			}
-			keep_unit_leaders = {
-				673
 			}
 			keep_political_leader = yes
 			keep_political_party_members = yes
@@ -496,6 +498,7 @@ country_event = { #韦迪纳暴力革命
 		name = FAT_FP.6.a
 		FAT = {
 			unlock_decision_tooltip = FAT_GANYUNEIZHAN
+			set_country_flag = FAT_GANYUNEIZHAN
 		}
 	}
 }
@@ -518,12 +521,26 @@ country_event = { #卢娜的公开叛乱
 	picture = FAT_FP.8.p
 	title = FAT_FP.8.t
 	desc = FAT_FP.8.d
+	immediate = {
+		MNC = {
+			start_civil_war = {
+				#ruling_party = democratic
+				ideology = democratic
+				size = 0.4
+				capital = 475
+				states = {
+					475
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+	}
 
 	is_triggered_only = yes
 
 	option = {
 		name = FAT_FP.8.a
-		#开始内战
 		unlock_decision_tooltip = FAT_BANGZHULUNA
 		set_country_flag = FAT_BANGZHULUNA
 	}
