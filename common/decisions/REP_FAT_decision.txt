@@ -310,6 +310,9 @@ REP_FAT_test_category = {
 		visible = {
 			is_debug = yes
 			original_tag = FAT
+			NOT = {
+				has_focus_tree = FAT_Foreign_Policy_national_focus
+			}
 		}
 		fire_only_once = no
 		cost = 0
@@ -326,6 +329,9 @@ REP_FAT_test_category = {
 		visible = {
 			is_debug = yes
 			original_tag = FAT
+			NOT = {
+				has_focus_tree = FAT_natinal_focus
+			}
 		}
 		fire_only_once = no
 		cost = 0
@@ -342,6 +348,9 @@ REP_FAT_test_category = {
 		visible = {
 			is_debug = yes
 			original_tag = FAT
+			NOT = {
+				has_focus_tree = FAT_start_tree
+			}
 		}
 		fire_only_once = no
 		cost = 0

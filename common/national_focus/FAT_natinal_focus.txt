@@ -14,14 +14,14 @@ focus_tree = {
 	}
 	focus = { #三十年共和之梦
 		id = FAT_sanshiniangonghemeng
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_sanshiniangonghemeng
 		cost = 10
 		x = 21
 		y = 1
 	}
 	focus = { #民权
 		id = FAT_minquan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_minquan
 		cost = 10
 		x = 6
 		y = 2
@@ -31,7 +31,7 @@ focus_tree = {
 	}
 	focus = { #国民主权
 		id = FAT_guominzhuquan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_guominzhuquan
 		cost = 10
 		x = 0
 		y = 1
@@ -42,7 +42,7 @@ focus_tree = {
 	}
 	focus = { #总统元帅
 		id = FAT_zongtongyuanshuai
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_zongtongyuanshuai
 		cost = 10
 		x = -3
 		y = 1
@@ -53,7 +53,7 @@ focus_tree = {
 	}
 	focus = { #戡乱动员法令
 		id = FAT_kanluandongyuanfaling
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_kanluandongyuanfaling
 		cost = 10
 		x = 1
 		y = 1
@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	focus = { #理性化政府
 		id = FAT_lixinghuazhengfu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_lixinghuazhengfu
 		cost = 10
 		x = 3
 		y = 1
@@ -75,7 +75,7 @@ focus_tree = {
 	}
 	focus = { #民生
 		id = FAT_minsheng
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_minsheng
 		cost = 10
 		x = 42
 		y = 2
@@ -85,7 +85,7 @@ focus_tree = {
 	}
 	focus = { #计划经济委员会
 		id = FAT_jingjijihuaweiyuanhui
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_jingjijihuaweiyuanhui
 		cost = 10
 		x = 4
 		y = 1
@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = { #民主
 		id = FAT_minzhu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_minzhu
 		cost = 10
 		x = 21
 		y = 2
@@ -109,7 +109,7 @@ focus_tree = {
 	}
 	focus = { #打破天花板
 		id = FAT_dapotianhuaban
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_dapotianhuaban
 		cost = 10
 		x = 4
 		y = 1
@@ -123,7 +123,7 @@ focus_tree = {
 	}
 	focus = { #共和银行
 		id = FAT_gongheyinhang
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_gongheyinhang
 		cost = 10
 		x = 6
 		y = 1
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = { #新建中小学
 		id = FAT_xinjianzhongxiaoxue
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_xinjianzhongxiaoxue
 		cost = 10
 		x = 9
 		y = 1
@@ -148,7 +148,7 @@ focus_tree = {
 	}
 	focus = { #训政期限
 		id = FAT_xunzhengqixian
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_xunzhengqixian
 		cost = 10
 		x = -1
 		y = 1
@@ -159,7 +159,7 @@ focus_tree = {
 	}
 	focus = { #种族政策
 		id = FAT_zhongzuzhengce
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_zhongzuzhengce
 		cost = 10
 		x = 0
 		y = 1
@@ -170,7 +170,7 @@ focus_tree = {
 	}
 	focus = { #选举大法官
 		id = FAT_xuanjudafaguan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_xuanjudafaguan
 		cost = 10
 		x = -1
 		y = 1
@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = { #总理府
 		id = FAT_zonglifu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_zonglifu
 		cost = 10
 		x = 1
 		y = 1
@@ -192,7 +192,7 @@ focus_tree = {
 	}
 	focus = { #革命恐怖
 		id = FAT_gemingkongbu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_gemingkongbu
 		cost = 10
 		x = -1
 		y = 1
@@ -203,7 +203,7 @@ focus_tree = {
 	}
 	focus = { #重申领土完整
 		id = FAT_chongshenlingtuwanzheng
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_chongshenlingtuwanzheng
 		cost = 10
 		x = -1
 		y = 1
@@ -217,7 +217,7 @@ focus_tree = {
 	} 
 	focus = { #选举权
 		id = FAT_xuanjuquan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_xuanjuquan
 		cost = 10
 		x = 0
 		y = 1
@@ -228,7 +228,7 @@ focus_tree = {
 	}
 	focus = { #坚持立法统一
 		id = FAT_jianchilifatongyi
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_jianchilifatongyi
 		cost = 10
 		x = 1
 		y = 1
@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = { #监察院
 		id = FAT_jianchayuan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_jianchayuan
 		cost = 10
 		x = 1
 		y = 1
@@ -253,7 +253,7 @@ focus_tree = {
 	}
 	focus = { #狮鹫共和国宪法草案
 		id = FAT_xianfacaoan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_xianfacaoan
 		cost = 10
 		x = 0
 		y = 2
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 	focus = { #泛狮鹫之路
 		id = FAT_fanshijiuzhilu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_fanshijiuzhilu
 		cost = 10
 		x = -4
 		y = 1
@@ -284,7 +284,7 @@ focus_tree = {
 	}
 	focus = { #新革命党
 		id = FAT_xingemingdang
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_xingemingdang
 		cost = 10
 		x = 0
 		y = 1
@@ -295,7 +295,7 @@ focus_tree = {
 	}
 	focus = { #元老评议会
 		id = FAT_yuanlaopingyihui
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_yuanlaopingyihui
 		cost = 10
 		x = -1
 		y = 1
@@ -306,7 +306,7 @@ focus_tree = {
 	}
 	focus = { #中央执政委员会
 		id = FAT_zhongyangzhiweihui
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_zhongyangzhiweihui
 		cost = 10
 		x = 1
 		y = 1
@@ -317,7 +317,7 @@ focus_tree = {
 	}
 	focus = { #三民主义研究会
 		id = FAT_yanjiuhui
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_yanjiuhui
 		cost = 10
 		x = 0
 		y = 1
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = { #军事委员会
 		id = FAT_junweihui
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_junweihui
 		cost = 10
 		x = 0
 		y = 1
@@ -339,7 +339,7 @@ focus_tree = {
 	}
 	focus = { #改造或改组
 		id = FAT_gaizaohuogaizu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_gaizaohuogaizu
 		cost = 10
 		x = 1
 		y = 1
@@ -353,7 +353,7 @@ focus_tree = {
 	}
 	focus = { #狮鹫共和电台
 		id = FAT_gonghegdiantai
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gonghegdiantai
 		cost = 10
 		x = 0
 		y = 1
@@ -364,7 +364,7 @@ focus_tree = {
 	}
 	focus = { #泛狮鹫国家框架
 		id = FAT_guojiakuangjia
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_guojiakuangjia
 		cost = 10
 		x = -2
 		y = 1
@@ -375,7 +375,7 @@ focus_tree = {
 	}
 	focus = { #编篡克梅斯凯文集
 		id = FAT_biancuanwenji
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_biancuanwenji
 		cost = 10
 		x = 0
 		y = 1
@@ -386,7 +386,7 @@ focus_tree = {
 	}
 	focus = { #漫云特别市
 		id = FAT_manyuntebieshi
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_manyuntebieshi
 		cost = 10
 		x = 0
 		y = 1
@@ -397,7 +397,7 @@ focus_tree = {
 	}
 	focus = { #狮鹫尼亚标准语
 		id = FAT_bianzhunyu
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_bianzhunyu
 		cost = 10
 		x = 0
 		y = 1
@@ -408,7 +408,7 @@ focus_tree = {
 	}
 	focus = { #重审瑰翼叛乱
 		id = FAT_chongshenpanluan
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_chongshenpanluan
 		cost = 10
 		x = 0
 		y = 1
@@ -419,7 +419,7 @@ focus_tree = {
 	}
 	focus = { #扩大省议会权力
 		id = FAT_kuodashengquanli
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_kuodashengquanli
 		cost = 10
 		x = 2
 		y = 1
@@ -430,7 +430,7 @@ focus_tree = {
 	}
 	focus = { #漫云文化协会
 		id = FAT_wenxiehui
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_wenxiehui
 		cost = 10
 		x = 0
 		y = 1
@@ -441,7 +441,7 @@ focus_tree = {
 	}
 	focus = { #给予方言地位
 		id = FAT_jiyufangyandiwei
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_jiyufangyandiwei
 		cost = 10
 		x = 0
 		y = 1
@@ -452,7 +452,7 @@ focus_tree = {
 	}
 	focus = { #补选流亡议会
 		id = FAT_buxuanliuwangyihui
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_buxuanliuwangyihui
 		cost = 10
 		x = 0
 		y = 1
@@ -463,7 +463,7 @@ focus_tree = {
 	}
 	focus = { #漫云体制
 		id = FAT_manyuntizhi
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_manyuntizhi
 		cost = 10
 		x = 0
 		y = 1
@@ -486,7 +486,7 @@ focus_tree = {
 	}
 	focus = { #社会主义者的联盟
 		id = FAT_shehzhuyilianmeng
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_shehzhuyilianmeng
 		cost = 10
 		x = 0
 		y = 1
@@ -497,7 +497,7 @@ focus_tree = {
 	}
 	focus = { #扩大自由言论
 		id = FAT_kuodayanlunziyou
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_kuodayanlunziyou
 		cost = 10
 		x = -6
 		y = 1
@@ -511,7 +511,7 @@ focus_tree = {
 	}
 	focus = { #共和作家联盟
 		id = FAT_gonghezuojialianmeng
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gonghezuojialianmeng
 		cost = 10
 		x = -4
 		y = 1
@@ -525,7 +525,7 @@ focus_tree = {
 	}
 	focus = { #农民协会地位
 		id = FAT_nongxiediwei
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_nongxiediwei
 		cost = 10
 		x = -2
 		y = 1
@@ -539,7 +539,7 @@ focus_tree = {
 	}
 	focus = { #鼓励革命文学
 		id = FAT_guligemingwenxue
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_guligemingwenxue
 		cost = 10
 		x = 0
 		y = 1
@@ -550,7 +550,7 @@ focus_tree = {
 	}
 	focus = { #工会法
 		id = FAT_gonghuifa
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gonghuifa
 		cost = 10
 		x = 2
 		y = 1
@@ -564,7 +564,7 @@ focus_tree = {
 	}
 	focus = { #社会主义者地位
 		id = FAT_shehuizhuyizhediwei
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_shehuizhuyizhediwei
 		cost = 10
 		x = 0
 		y = 2
@@ -575,7 +575,7 @@ focus_tree = {
 	}
 	focus = { #生产宪法
 		id = FAT_shengchanxianfa
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_shengchanxianfa
 		cost = 10
 		x = 0
 		y = 1
@@ -586,7 +586,7 @@ focus_tree = {
 	}
 	focus = { #新课本
 		id = FAT_xinkeben
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_xinkeben
 		cost = 10
 		x = -2
 		y = 1
@@ -597,7 +597,7 @@ focus_tree = {
 	}
 	focus = { #流亡共和派教师
 		id = FAT_liuwanggongjiaoshi
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_liuwanggongjiaoshi
 		cost = 10
 		x = 0
 		y = 1
@@ -606,10 +606,10 @@ focus_tree = {
 		}
 		relative_position_id = FAT_xinjianzhongxiaoxue
 	}
-	focus = {
+	focus = { #统一高校考试
 		id = FAT_tongyikaoshi
-		icon = GFX_goal_unknown
-		cost = 10
+        icon = GFX_goal_FAT_tongyikaoshi
+		cost = 10 
 		x = 2
 		y = 1
 		prerequisite = {
@@ -619,7 +619,7 @@ focus_tree = {
 	}
 	focus = { #拓展工鹫夜校
 		id = FAT_kuozhangongjiuyexiao
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_kuozhangongjiuyexiao
 		cost = 10
 		x = 0
 		y = 1
@@ -630,7 +630,7 @@ focus_tree = {
 	}
 	focus = { #共和学生联合会
 		id = FAT_gonghexueshenglianhehui
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gonghexueshenglianhehui
 		cost = 10
 		x = 0
 		y = 1
@@ -641,7 +641,7 @@ focus_tree = {
 	}
 	focus = { #国立漫云大学
 		id = FAT_guolidaxue
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_guolidaxue
 		cost = 10
 		x = 0
 		y = 1
@@ -652,7 +652,7 @@ focus_tree = {
 	}
 	focus = { #乡村建设运动
 		id = FAT_xiangcunjiansheyundong
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_xiangcunjiansheyundong
 		cost = 10
 		x = 0
 		y = 2
@@ -663,7 +663,7 @@ focus_tree = {
 	}
 	focus = { #修订土地法
 		id = FAT_xiudingtudifa
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_xiudingtudifa
 		cost = 10
 		x = -2
 		y = 2
@@ -674,7 +674,7 @@ focus_tree = {
 	}
 	focus = { #工业发展法
 		id = FAT_gongyejianshefa
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gongyejianshefa
 		cost = 10
 		x = 0
 		y = 2
@@ -685,7 +685,7 @@ focus_tree = {
 	}
 	focus = { #工伤保险及失业保障
 		id = FAT_gongshangbaoxiejishiyebaozheng
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gongshangbaoxiejishiyebaozheng
 		cost = 10
 		x = 2
 		y = 2
@@ -696,7 +696,7 @@ focus_tree = {
 	}
 	focus = { #新生活运动
 		id = FAT_xinshenghuoyundong
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_xinshenghuoyundong
 		cost = 10
 		x = -9
 		y = 1
@@ -707,7 +707,7 @@ focus_tree = {
 	}
 	focus = { #共和家庭关系
 		id = FAT_gonghejiatingguanxi
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gonghejiatingguanxi
 		cost = 10
 		x = -2
 		y = 1
@@ -718,7 +718,7 @@ focus_tree = {
 	}
 	focus = { #语言改革
 		id = FAT_yuyangaige
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_yuyangaige
 		cost = 10
 		x = 0
 		y = 1
@@ -729,7 +729,7 @@ focus_tree = {
 	}
 	focus = { #支援贫困
 		id = FAT_zhiyuaninkun
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_zhiyuaninkun
 		cost = 10
 		x = 2
 		y = 1
@@ -740,7 +740,7 @@ focus_tree = {
 	}
 	focus = { #狮鹫童子军
 		id = FAT_tongzijun
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_tongzijun
 		cost = 10
 		x = 0
 		y = 1
@@ -751,7 +751,7 @@ focus_tree = {
 	}
 	focus = { #革命仪式
 		id = FAT_gemingyishi
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gemingyishi
 		cost = 10
 		x = 0
 		y = 1
@@ -762,7 +762,7 @@ focus_tree = {
 	}
 	focus = { #启蒙社会
 		id = FAT_qimengshehui
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_qimengshehui
 		cost = 10
 		x = 0
 		y = 1
@@ -773,7 +773,7 @@ focus_tree = {
 	}
 	focus = { #共和信仰
 		id = FAT_gonghexinyang
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_gonghexinyang
 		cost = 10
 		x = -2
 		y = 1
@@ -790,7 +790,7 @@ focus_tree = {
 	}
 	focus = { #何为民生主义
 		id = FAT_heweimishengzhuyi
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_heweimishengzhuyi
 		cost = 10
 		x = 0
 		y = 2
@@ -811,9 +811,9 @@ focus_tree = {
 		}
 		relative_position_id = FAT_shehuizhuyizhediwei
 	}
-	focus = { #设立考试院
+	focus = { #设立考试院 
 		id = FAT_shelikaoshiyuan
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_shelikaoshiyuan
 		cost = 10
 		x = 2
 		y = 1
@@ -830,7 +830,7 @@ focus_tree = {
 	}
 	focus = { #国民共和党全会
 		id = FAT_guomingonghedangquanhui
-		icon = GFX_goal_unknown
+        icon = GFX_goal_FAT_guomingonghedangquanhui
 		cost = 10
 		x = 21
 		y = 8
