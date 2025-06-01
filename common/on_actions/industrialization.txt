@@ -1,0 +1,33 @@
+on_actions = {
+	on_weekly_FAT = {
+		effect = {
+			if = {
+				limit = {
+					num_of_factories > 50
+				}
+				swap_ideas = {
+					remove_idea = the_first_step_of_industrialization
+					add_idea = Moderately_developed_industrialization
+				}
+			}
+			if = {
+				limit = {
+					num_of_factories > 80
+				}
+				swap_ideas = {
+					remove_idea = Moderately_developed_industrialization
+					add_idea = Booming_industrialization
+				}
+			}
+			if = {
+				limit = {
+					num_of_factories > 150
+				}
+				swap_ideas = {
+					remove_idea = Booming_industrialization
+					add_idea = Industrial_heart
+				}
+			}
+		}
+	}
+}

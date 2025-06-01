@@ -140,7 +140,6 @@ set_country_flag = has_custom_spymaster
 add_ideas = {
 
 	###修改
-	FAT_start_industrialization_idea
 	FAT_walk_on_cloud_army_school_idea
 	###
 	FAT_republican_struggle
@@ -153,6 +152,7 @@ add_ideas = {
 	lack_of_scientists1
 	poverty3
 	low_economic_mobilisation
+	the_first_step_of_industrialization
 }
 set_stability = 0.30
 set_war_support = 0.2
