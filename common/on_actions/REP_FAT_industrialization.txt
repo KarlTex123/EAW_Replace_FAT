@@ -1,5 +1,5 @@
 on_actions = {
-	on_weekly_FAT = {
+	on_weekly = {
 		effect = {
 			if = {
 				limit = {
@@ -9,6 +9,7 @@ on_actions = {
 					remove_idea = the_first_step_of_industrialization
 					add_idea = Moderately_developed_industrialization
 				}
+				country_event = {id = FAT_start.9}
 			}
 			if = {
 				limit = {
@@ -18,6 +19,7 @@ on_actions = {
 					remove_idea = Moderately_developed_industrialization
 					add_idea = Booming_industrialization
 				}
+				country_event = {id = FAT_start.9}
 			}
 			if = {
 				limit = {
@@ -27,6 +29,7 @@ on_actions = {
 					remove_idea = Booming_industrialization
 					add_idea = Industrial_heart
 				}
+				country_event = {id = FAT_start.9}
 			}
 		}
 	}
