@@ -261,6 +261,17 @@ country_event = { #迈耶获胜
 	}
 }
 
+country_event = { #工业化通用
+	id = FAT_start.9
+	picture = ""
+	title = FAT_start.9.t
+	desc = FAT_start.9.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.9.1
+	}
+}
+
 country_event = { #历史介绍
 	id = REP_FAT_history.1
 	picture = ""
