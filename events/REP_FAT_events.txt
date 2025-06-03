@@ -557,6 +557,254 @@ country_event = { #卢娜的公开叛乱
 	}
 }
 
+country_event = { #二阶段结局
+	id = FAT_FP.9
+	picture = FAT_FP.9.p
+	title = FAT_FP.9.t
+	desc = FAT_FP.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.9.a
+		annex_country = {
+  		    target = VED
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = WNG
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = MNC
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = SIC
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FAL
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = VED
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = TAL
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FRN
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = ARA
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = BOI
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = BAN
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = CYA
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = BRF
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = STW
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = GRU
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = GRY
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = LUS
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = JFT
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = JER
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = VIN
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = JRR
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = LUS
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = POM
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = ERI
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = EYR
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = AVI
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FLO
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = HEL
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = AET
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FEZ
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = TRD
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = ANG
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = YAL
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = PYT
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = BRZ
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FEA
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = GRI
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = KAT
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FBK	
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = GRW
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = JEB
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = LNS
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = HLQ
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = HAU
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = NTR
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = FIR
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = HAU
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = WAT
+    		transfer_troops = no
+		}
+		annex_country = {
+  		    target = LAK
+    		transfer_troops = no
+		}
+		set_cosmetic_tag = FAT_UFA
+
+		HLR = {
+			annex_country = {
+  			    target = DED
+    			transfer_troops = no
+			}			
+		}
+		RCT = {
+			annex_country = {
+  			    target = BAK
+    			transfer_troops = no
+			}
+			annex_country = {
+  			    target = DMT
+    			transfer_troops = no
+			}
+			annex_country = {
+  			    target = DEP
+    			transfer_troops = no
+			}				
+			annex_country = {
+  			    target = LCT
+    			transfer_troops = no
+			}	
+			annex_country = {
+  			    target = WIT
+    			transfer_troops = no
+			}
+			annex_country = {
+  			    target = FRE
+    			transfer_troops = no
+			}
+			annex_country = {
+  			    target = NIM
+    			transfer_troops = no
+			}				
+		}
+	}
+}
+
+
 
 
 
