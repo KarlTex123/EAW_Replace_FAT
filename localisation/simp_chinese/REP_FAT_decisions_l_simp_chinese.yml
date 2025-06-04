@@ -46,5 +46,9 @@ FAT_HEBINGJUNDUI:"合并韦迪纳革命军"
 FAT_BANGZHULUNA:"帮助卢娜革命军"
 FAT_YONGBAOLUNA:"拥抱我们的卢娜同志"
 
-
+ REP_FAT_Establish_C_category: "成立狮鹫尼亚合众国决议组名称"
+ REP_FAT_Establish_C_category_desc: "成立狮鹫尼亚合众国的描述"
+ REP_FAT_Establish_C: "成立狮鹫尼亚合众国决议名称"
+ REP_FAT_Establish_C_tt: "拥有成立§Y$FAT_UFA$§!所需的所有地区"
+ REP_FAT_Establish_C_map_area: "如果想要建立§Y$FAT_UFA$§!，还需控制这些地区"
  
