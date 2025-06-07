@@ -47,7 +47,11 @@ FAT_GANYUNEIZHAN:"干预韦迪纳内战"
 FAT_HEBINGJUNDUI:"合并韦迪纳革命军"
 FAT_BANGZHULUNA:"帮助卢娜革命军"
 FAT_YONGBAOLUNA:"拥抱我们的卢娜同志"
-
+ REP_FAT_Establish_C_category: "成立狮鹫尼亚合众国决议组名称"
+ REP_FAT_Establish_C_category_desc: "成立狮鹫尼亚合众国的描述"
+ REP_FAT_Establish_C: "成立狮鹫尼亚合众国决议名称"
+ REP_FAT_Establish_C_tt: "拥有成立§Y$FAT_UFA$§!所需的所有地区"
+ REP_FAT_Establish_C_map_area: "如果想要建立§Y$FAT_UFA$§!，还需控制这些地区"
 
 the_setuation_of_the_state_desc_1:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
 the_setuation_of_the_state_desc_2:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"

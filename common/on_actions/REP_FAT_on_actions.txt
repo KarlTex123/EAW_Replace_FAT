@@ -13,6 +13,32 @@ on_actions = {
 				}
 				
 			}
+			every_state = {
+				limit = {
+					is_on_continent = asia
+					NOT = {
+						OR = {
+							is_owned_by = DED
+							is_owned_by = HLR
+							is_owned_by = EQC
+							is_owned_by = MIT
+							is_owned_by = OLV
+							is_owned_by = BAR
+							is_owned_by = ZES
+							is_owned_by = NCH
+							is_owned_by = LCT
+							is_owned_by = DEP
+							is_owned_by = DMT
+							is_owned_by = BAK
+							is_owned_by = RCT
+							is_owned_by = WIT
+							is_owned_by = FRE
+							is_owned_by = NIM
+						}
+					}
+				}
+				add_to_array = { FAT.REP_formables_states_array = THIS.id } #将符合条件的州添加到FAT.REP_formables_states_array数组中
+			}
 		}
 	}
 }
