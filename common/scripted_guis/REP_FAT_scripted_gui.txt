@@ -21,5 +21,38 @@ scripted_gui = {
             }
         }
 	}
-	
+	REP_FAT_the_south_event_ui = {
+		window_name = "REP_FAT_the_south_event_ui_window"
+		context_type = player_context
+		
+		visible = {
+			has_country_flag = REP_FAT_the_south_event_ui_window_flag
+		}
+		effects = {
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 1 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 2 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 3 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 4 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 5 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 6 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 7 }}
+			REP_FAT_SuperEvent_close_click = { 
+				set_variable = { cheak_the_state_number = 8 }}
+		}
+		ai_enabled = {
+			always = no
+		}
+		properties = {
+            REP_FAT_SuperEvent_picture = {
+                image = [SuperEvent_background_picture]
+            }
+        }
+	}
 }

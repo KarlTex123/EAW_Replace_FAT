@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
 
+the_setuation_of_the_state_desc:0 "[the_setuation_of_the_state_desc]"
+
 FAT_vs_HAU_category: "豪克兰的海外博弈"
 FAT_vs_HAU_category_desc: "豪克兰作为链接狮鹫大陆和小马大陆的关键地区，其战略重要性不言而喻。直到978大革命以前，这里还是狮鹫帝国的殖民地，大革命以后，共和国的叛徒麦耶带走了我们的空军叛逃到了豪克兰，并在这里建立了他的独裁统治。共和国不会原谅他的背叛，等待他的只有审判，而现在这个机会已经到来了，一批依然对共和主义保持信念的老兵已经掀起了对麦耶的反叛，我们必须支援他们的革命。\n由于豪克兰孤悬海外，以共和国现有的海空军直接干预非常困难，直接干预也有可能暴露我们的实力触动君主派的神经。为此，我们必须间接支援豪克兰的革命，给与革命军需要的物资和顾问，我们必须非常谨慎，麦耶在豪克兰的势力不容小觑，他会竭尽全力加强自己的统治，如果这次失败，染指豪克兰的机会可能不会再有了。\n\n§Y[FAT.GetName]§!在豪克兰的影响力：[?FAT.FAT_vs_influence|G]\n§Y[HAU.GetRulingParty]§!在豪克兰的影响力：[?HAU.FAT_vs_influence|R]" 
 #§Y[HAU.GetNameWithFlag]§!
@@ -46,5 +48,14 @@ FAT_HEBINGJUNDUI:"合并韦迪纳革命军"
 FAT_BANGZHULUNA:"帮助卢娜革命军"
 FAT_YONGBAOLUNA:"拥抱我们的卢娜同志"
 
+
+the_setuation_of_the_state_desc_1:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_2:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_3:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_4:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_5:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_6:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_7:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+the_setuation_of_the_state_desc_8:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
 
  

@@ -1,0 +1,13 @@
+defined_text = { 
+	name = the_setuation_of_the_state_desc
+		
+	text = { trigger = { check_variable = { cheak_the_state_number = 1 } } localization_key = the_setuation_of_the_state_desc_1 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 2 } } localization_key = the_setuation_of_the_state_desc_2 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 3 } } localization_key = the_setuation_of_the_state_desc_3 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 4 } } localization_key = the_setuation_of_the_state_desc_4 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 5 } } localization_key = the_setuation_of_the_state_desc_5 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 6 } } localization_key = the_setuation_of_the_state_desc_6 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 7 } } localization_key = the_setuation_of_the_state_desc_7 }
+	text = { trigger = { check_variable = { cheak_the_state_number = 8 } } localization_key = the_setuation_of_the_state_desc_8 }
+
+}

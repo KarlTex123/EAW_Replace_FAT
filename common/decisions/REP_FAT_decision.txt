@@ -264,6 +264,20 @@ REP_FAT_test_category = {
 			country_event = FAT_start.8
 		}
 	}
+	REP_FAT_the_south_event_ui_window_flag = { #测试 
+		
+		icon = GFX_FAT_HUIMIANLINGDAOREN
+
+		available = {
+			is_debug = yes
+			original_tag = FAT
+		}
+
+		remove_effect = {
+			set_country_flag = REP_FAT_the_south_event_ui_flag
+			country_event = { id = REP_FAT_history.9 }
+		}
+	}
 	REP_FAT_vs_HAU_test_win = {
 		icon = ?
 		allowed = {}

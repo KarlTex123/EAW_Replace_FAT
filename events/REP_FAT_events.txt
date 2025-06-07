@@ -353,6 +353,18 @@ country_event = { #
 	}
 }
 
+country_event = { #
+	id = REP_FAT_history.9
+	picture = ""
+	title = REP_FAT_history.9.t
+	desc = REP_FAT_history.9.d
+	is_triggered_only = yes
+	option = {
+		name = REP_FAT_history.9.1
+		set_country_flag = REP_FAT_the_south_event_ui_window_flag
+	}
+}
+
 
 country_event = { #来自狮鹫共和国的最后通牒
 	id = FAT_FP.1
