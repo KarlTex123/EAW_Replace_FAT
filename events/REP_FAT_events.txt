@@ -816,9 +816,44 @@ country_event = { #二阶段结局
 	}
 }
 
+country_event = { #克梅斯凯的新年致辞
+	id = FAT_FP.10
+	picture = FAT_FP.10.p
+	title = FAT_FP.10.t
+	desc = FAT_FP.10.d
 
+	is_triggered_only = yes
 
+	option = {
+		name = FAT_FP.10.a
+	}
+}
 
+country_event = { #总统权力讨论
+	id = FAT_FP.11
+	picture = FAT_FP.11.p
+	title = FAT_FP.11.t
+	desc = FAT_FP.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.11.a
+	}
+}
+
+country_event = { #训政争论
+	id = FAT_FP.12
+	picture = FAT_FP.12.p
+	title = FAT_FP.12.t
+	desc = FAT_FP.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.12.a
+	}
+}
 
 
 

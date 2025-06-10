@@ -18,6 +18,15 @@ focus_tree = {
 		cost = 10
 		x = 21
 		y = 1
+		completion_reward = {
+			add_political_power = 150
+			country_event = FAT_FP.10 #克梅斯凯的新年致辞
+			set_power_balance = {
+				id = FAT_power_balance
+				left_side = FAT_democratic_side
+				right_side = FAT_nationalism_side
+			}
+		}
 	}
 	focus = { #民权
 		id = FAT_minquan
@@ -47,9 +56,13 @@ focus_tree = {
 		x = -3
 		y = 1
 		prerequisite = {
-			focus = FAT_minquan
+			focus = FAT_minquan 
 		}
 		relative_position_id = FAT_minquan
+		completion_reward = {
+			country_event = FAT_FP.11 #总统权力讨论
+		}
+		
 	}
 	focus = { #戡乱动员法令
 		id = FAT_kanluandongyuanfaling
@@ -156,6 +169,9 @@ focus_tree = {
 			focus = FAT_zongtongyuanshuai
 		}
 		relative_position_id = FAT_zongtongyuanshuai
+		completion_reward = {
+			country_event = FAT_FP.12 #训政争论
+		}
 	}
 	focus = { #种族政策
 		id = FAT_zhongzuzhengce
