@@ -129,9 +129,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_minzhu
 		}
-		mutually_exclusive = {
-			focus = FAT_fanshijiuzhilu
+		available = {
+			NOT = {
+				has_completed_focus = FAT_fanshijiuzhilu
+			}
 		}
+		#mutually_exclusive = {
+		#	focus = FAT_fanshijiuzhilu
+		#}
 		relative_position_id = FAT_minzhu
 	}
 	focus = { #共和银行
@@ -293,9 +298,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_minzhu
 		}
-		mutually_exclusive = {
-			focus = FAT_dapotianhuaban
+		available = {
+			NOT = {
+				has_completed_focus = FAT_dapotianhuaban
+			}
 		}
+		#mutually_exclusive = {
+		#	focus = FAT_dapotianhuaban
+		#}
 		relative_position_id = FAT_minzhu
 	}
 	focus = { #新革命党
