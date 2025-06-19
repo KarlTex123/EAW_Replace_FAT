@@ -18,6 +18,15 @@ focus_tree = {
 		cost = 10
 		x = 21
 		y = 1
+		completion_reward = {
+			add_political_power = 150
+			country_event = FAT_FP.10 #克梅斯凯的新年致辞
+			set_power_balance = {
+				id = FAT_power_balance
+				left_side = FAT_democratic_side
+				right_side = FAT_nationalism_side
+			}
+		}
 	}
 	focus = { #民权
 		id = FAT_minquan
@@ -47,9 +56,13 @@ focus_tree = {
 		x = -3
 		y = 1
 		prerequisite = {
-			focus = FAT_minquan
+			focus = FAT_minquan 
 		}
 		relative_position_id = FAT_minquan
+		completion_reward = {
+			country_event = FAT_FP.11 #总统权力讨论
+		}
+		
 	}
 	focus = { #戡乱动员法令
 		id = FAT_kanluandongyuanfaling
@@ -84,7 +97,7 @@ focus_tree = {
 		}
 	}
 	focus = { #计划经济委员会
-		id = FAT_jingjijihuaweiyuanhui
+		id = FAT_jingjijihuaweiyuanhui #现在是经济计划委员会
 		icon = GFX_goal_FAT_jingjijihuaweiyuanhui
 		cost = 10
 		x = 4
@@ -116,9 +129,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_minzhu
 		}
-		mutually_exclusive = {
-			focus = FAT_fanshijiuzhilu
+		available = {
+			NOT = {
+				has_completed_focus = FAT_fanshijiuzhilu
+			}
 		}
+		#mutually_exclusive = {
+		#	focus = FAT_fanshijiuzhilu
+		#}
 		relative_position_id = FAT_minzhu
 	}
 	focus = { #共和银行
@@ -156,6 +174,9 @@ focus_tree = {
 			focus = FAT_zongtongyuanshuai
 		}
 		relative_position_id = FAT_zongtongyuanshuai
+		completion_reward = {
+			country_event = FAT_FP.12 #训政争论
+		}
 	}
 	focus = { #种族政策
 		id = FAT_zhongzuzhengce
@@ -277,9 +298,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_minzhu
 		}
-		mutually_exclusive = {
-			focus = FAT_dapotianhuaban
+		available = {
+			NOT = {
+				has_completed_focus = FAT_dapotianhuaban
+			}
 		}
+		#mutually_exclusive = {
+		#	focus = FAT_dapotianhuaban
+		#}
 		relative_position_id = FAT_minzhu
 	}
 	focus = { #新革命党
@@ -294,7 +320,7 @@ focus_tree = {
 		relative_position_id = FAT_minzhu
 	}
 	focus = { #元老评议会
-		id = FAT_yuanlaopingyihui
+		id = FAT_yuanlaopingyihui #现在是监察委员会
 		icon = GFX_goal_FAT_yuanlaopingyihui
 		cost = 10
 		x = -1
@@ -305,7 +331,7 @@ focus_tree = {
 		relative_position_id = FAT_xingemingdang
 	}
 	focus = { #中央执政委员会
-		id = FAT_zhongyangzhiweihui
+		id = FAT_zhongyangzhiweihui #现在是执行委员会
 		icon = GFX_goal_FAT_zhongyangzhiweihui
 		cost = 10
 		x = 1
@@ -316,7 +342,7 @@ focus_tree = {
 		relative_position_id = FAT_xingemingdang
 	}
 	focus = { #三民主义研究会
-		id = FAT_yanjiuhui
+		id = FAT_yanjiuhui #现在是民众运动部
 		icon = GFX_goal_FAT_yanjiuhui
 		cost = 10
 		x = 0
@@ -338,7 +364,7 @@ focus_tree = {
 		relative_position_id = FAT_zhongyangzhiweihui
 	}
 	focus = { #改造或改组
-		id = FAT_gaizaohuogaizu
+		id = FAT_gaizaohuogaizu #现在是强化基层党部
 		icon = GFX_goal_FAT_gaizaohuogaizu
 		cost = 10
 		x = 1
