@@ -1,0 +1,10 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_REP_FAT_the_south_event_ui_window_background"
+		texturefile = "gfx\interface\the_south_public\the_south_public_background.dds" 
+	}
+}
+
+
+
+

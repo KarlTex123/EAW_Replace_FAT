@@ -9,7 +9,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_transparent"
+			quadTextureSprite ="GFX_REP_FAT_the_south_event_ui_window_background"
 		}	
 
 		instantTextBoxType = { #文字介绍
