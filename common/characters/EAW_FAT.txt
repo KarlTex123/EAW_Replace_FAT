@@ -1,0 +1,21 @@
+characters={
+	FAT_Garibaldi_Giuseppe = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/FAT/Portrait_Garibaldi_Giuseppe.png"
+			}
+		}
+		corps_commander = {
+			desc = "FAT_Garibaldi_Giuseppe_desc"
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			traits = {
+				media_personality naval_invader inspirational_leader war_hero
+			}
+		}
+	}
+}
+	
