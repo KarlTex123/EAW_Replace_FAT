@@ -4,6 +4,6 @@ FAT_National_Republic_party = { #民族共和党
 	icon = GFX_idea_Twilight_theory
 
 	stability_factor = FAT_National_Republic_party_union_democratic
-	industrial_capacity_factory = FAT_National_Republic_party_union_neutrality
+	line_change_production_efficiency_factor = FAT_National_Republic_party_union_neutrality
 	political_power_gain = FAT_National_Republic_party_union_communism
 }

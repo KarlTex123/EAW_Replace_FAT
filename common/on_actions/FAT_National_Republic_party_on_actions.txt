@@ -12,7 +12,9 @@ on_actions = {
 					limit = {
 						has_country_flag = FAT_National_Republic_party_democratic_in_union
 					}
-					set_variable = { FAT_National_Republic_party_union_democratic = ROOT.party_popularity@democratic }
+					set_variable = { FAT_National_Republic_party_union_democratic = FAT.party_popularity_100@democratic }
+					multiply_variable = { FAT_National_Republic_party_union_democratic = 0.01 }
+					multiply_variable = { FAT_National_Republic_party_union_democratic = 0.25 }
 					clamp_variable = {
 						var = FAT_National_Republic_party_union_democratic
 						min = 0
@@ -34,7 +36,9 @@ on_actions = {
 					limit = {
 						has_country_flag = FAT_National_Republic_party_neutrality_in_union
 					}
-					set_variable = { FAT_National_Republic_party_union_neutrality = ROOT.party_popularity@neutrality }
+					set_variable = { FAT_National_Republic_party_union_neutrality = FAT.party_popularity_100@neutrality }
+					multiply_variable = { FAT_National_Republic_party_union_neutrality = 0.01 }
+					multiply_variable = { FAT_National_Republic_party_union_neutrality = 0.2 }
 					clamp_variable = {
 						var = FAT_National_Republic_party_union_neutrality
 						min = 0
@@ -56,8 +60,8 @@ on_actions = {
 					limit = {
 						has_country_flag = FAT_National_Republic_party_communism_in_union
 					}
-					set_variable = { FAT_National_Republic_party_union_communism = ROOT.party_popularity@communism }
-					multiply_variable = { FAT_National_Republic_party_union_communism = 4 }
+					set_variable = { FAT_National_Republic_party_union_communism = FAT.party_popularity_100@communism }
+					multiply_variable = { FAT_National_Republic_party_union_communism = 0.04 }
 					clamp_variable = {
 						var = FAT_National_Republic_party_union_communism
 						min = 0
@@ -85,7 +89,9 @@ on_actions = {
 					limit = {
 						has_country_flag = FAT_National_Republic_party_democratic_in_union
 					}
-					set_variable = { FAT_National_Republic_party_union_democratic = ROOT.party_popularity@democratic }
+					set_variable = { FAT_National_Republic_party_union_democratic = FAT.party_popularity_100@democratic }
+					multiply_variable = { FAT_National_Republic_party_union_democratic = 0.01 }
+					multiply_variable = { FAT_National_Republic_party_union_democratic = 0.25 }
 					clamp_variable = {
 						var = FAT_National_Republic_party_union_democratic
 						min = 0
@@ -107,7 +113,9 @@ on_actions = {
 					limit = {
 						has_country_flag = FAT_National_Republic_party_neutrality_in_union
 					}
-					set_variable = { FAT_National_Republic_party_union_neutrality = ROOT.party_popularity@neutrality }
+					set_variable = { FAT_National_Republic_party_union_neutrality = FAT.party_popularity_100@neutrality }
+					multiply_variable = { FAT_National_Republic_party_union_neutrality = 0.01 }
+					multiply_variable = { FAT_National_Republic_party_union_neutrality = 0.2 }
 					clamp_variable = {
 						var = FAT_National_Republic_party_union_neutrality
 						min = 0
@@ -129,8 +137,8 @@ on_actions = {
 					limit = {
 						has_country_flag = FAT_National_Republic_party_communism_in_union
 					}
-					set_variable = { FAT_National_Republic_party_union_communism = ROOT.party_popularity@communism }
-					multiply_variable = { FAT_National_Republic_party_union_communism = 4 }
+					set_variable = { FAT_National_Republic_party_union_communism = FAT.party_popularity_100@communism }
+					multiply_variable = { FAT_National_Republic_party_union_communism = 0.04 }
 					clamp_variable = {
 						var = FAT_National_Republic_party_union_communism
 						min = 0
