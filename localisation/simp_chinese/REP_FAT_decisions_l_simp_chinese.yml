@@ -38,6 +38,7 @@ FAT_start_annex_VED: "吞并韦迪纳地块"
 FAT_start_annex_HAU: "开启豪克兰博弈机制"
 REP_FAT_vs_HAU_test_win: "取得豪克兰博弈胜利"
 FAT_set_FAT_democracy_socialist_END_test: "测试成立狮鹫尼亚联盟"
+REP_FAT_Establish_SD_map_area: "如果想要建立§Y$FAT_democracy_socialist_END$§!，还需控制这些地区" 
 
 
 

@@ -43,6 +43,21 @@ REP_FAT_test_category = {
 		is_debug = yes
 		is_ai = no
 	}
+	on_map_area = {
+		target_array = FAT.REP_formables_states_array  #成立狮鹫尼亚需要的州的数组
+		name = REP_FAT_Establish_SD_map_area 
+		zoom = 300 #缩放系数
+		target_root_trigger = {
+			tag = FAT
+		}
+		target_trigger = {
+			from = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+	}
 }
 
 REP_FAT_Establish_C_category = { #成立新国家决议组

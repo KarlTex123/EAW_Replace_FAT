@@ -373,22 +373,6 @@ REP_FAT_test_category = { #测试决议
 		}
 	}
 	FAT_set_FAT_democracy_socialist_END_test = {
-		icon = ?
-		allowed = {}
-		available = {
-			
-		}
-		visible = {
-			is_debug = yes
-			original_tag = FAT
-		}
-		fire_only_once = no
-		cost = 0
-		remove_effect = {
-			set_cosmetic_tag = FAT_democracy_socialist_END
-		}
-	}
-	FAT_set_FAT_democracy_socialist_END_test = {
 		icon = scroll
 		allowed = {
 		}
@@ -405,7 +389,7 @@ REP_FAT_test_category = { #测试决议
 				}
 			}
 		}
-		remove_effect = {
+		complete_effect = {
 			set_cosmetic_tag = FAT_democracy_socialist_END
 			every_state = {
 				limit = {
