@@ -37,6 +37,8 @@ REP_FAT_test_category: "机制测试"
 FAT_start_annex_VED: "吞并韦迪纳地块"
 FAT_start_annex_HAU: "开启豪克兰博弈机制"
 REP_FAT_vs_HAU_test_win: "取得豪克兰博弈胜利"
+FAT_set_FAT_democracy_socialist_END_test: "测试成立狮鹫尼亚联盟"
+
 
 
 FAT_YUSIDALINGELEHEZUO:"与嘶大林格勒的深化合作"
@@ -61,5 +63,9 @@ the_setuation_of_the_state_desc_5:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合
 the_setuation_of_the_state_desc_6:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
 the_setuation_of_the_state_desc_7:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
 the_setuation_of_the_state_desc_8:0 "[AAA.GetRulingParty] [AAA.GetLeader] 可合作势力状态：%d 共和国当地力量：%d"
+
+
+FAT_democracy_socialist_END: "狮鹫尼亚联盟"
+FAT_democracy_socialist_END_DEF: "狮鹫尼亚联盟"
 
  

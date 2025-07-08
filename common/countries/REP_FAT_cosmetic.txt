@@ -1,0 +1,5 @@
+FAT_democracy_socialist_END = { #修改
+	color = rgb { 219 90 110 }
+	color_ui = rgb { 219 90 110 }
+}
+

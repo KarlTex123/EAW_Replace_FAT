@@ -238,7 +238,7 @@ FAT_vs_HAU_category = {
 	}
 }
 
-REP_FAT_test_category = {
+REP_FAT_test_category = { #测试决议
 	FAT_start_annex_VED = {
 		allowed = {}
 		available = {
@@ -370,6 +370,55 @@ REP_FAT_test_category = {
 		cost = 0
 		remove_effect = {
 			load_focus_tree = FAT_start_tree
+		}
+	}
+	FAT_set_FAT_democracy_socialist_END_test = {
+		icon = ?
+		allowed = {}
+		available = {
+			
+		}
+		visible = {
+			is_debug = yes
+			original_tag = FAT
+		}
+		fire_only_once = no
+		cost = 0
+		remove_effect = {
+			set_cosmetic_tag = FAT_democracy_socialist_END
+		}
+	}
+	FAT_set_FAT_democracy_socialist_END_test = {
+		icon = scroll
+		allowed = {
+		}
+		visible = {
+			is_debug = yes
+			original_tag = FAT
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = REP_FAT_Establish_C_tt
+				all_of_scopes = {
+					array = FAT.REP_formables_states_array #成立狮鹫尼亚需要的州的数组
+					is_owned_by = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			set_cosmetic_tag = FAT_democracy_socialist_END
+			every_state = {
+				limit = {
+					is_in_array = {
+						array = FAT.REP_formables_states_array #成立狮鹫尼亚需要的州的数组
+						value = THIS.id
+					}
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_core_of = root
+			}
 		}
 	}
 
