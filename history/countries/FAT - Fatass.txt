@@ -209,6 +209,7 @@ recruit_character = FAT_chaos_maxwell
 recruit_character = FAT_spymaster
 
 recruit_character = FAT_Blue_Time
+recruit_character = XUR_weiguang
 recruit_character = FAT_Garibaldi_Giuseppe
 
 set_rule = {

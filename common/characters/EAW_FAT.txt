@@ -20,8 +20,8 @@ characters={
 	FAT_Blue_Time = {
 		portraits = {
 			civilian = {
-				large = gfx/leaders/FAT/FAT_Blue_Time.dds
-				small = gfx/interface/ideas/FAT_Blue_Time.dds
+				large = gfx/leaders/FAT/FAT_Blue_Time.png
+				small = gfx/leaders/FAT/FAT_Blue_Time.png
 			}
 		}
 		advisor = {
@@ -30,6 +30,22 @@ characters={
 			slot = high_command
 			allowed = { original_tag = FAT }
 			traits = { FAT_Tri_service_coordination }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	XUR_weiguang = {
+		portraits = {
+			civilian = {
+				large = gfx/leaders/FAT/XUR_weiguang.png
+				small = gfx/leaders/FAT/XUR_weiguang.png
+			}
+		}
+		advisor = {
+			desc = "FAT_XUR_weiguang_desc"
+			cost = 200
+			slot = political_advisor
+			allowed = { original_tag = FAT }
+			traits = { FAT_military_expert }
 			ai_will_do = { factor = 1 }
 		}
 	}
