@@ -49,5 +49,22 @@ characters={
 			ai_will_do = { factor = 1 }
 		}
 	}
+	FAT_star_wind = {
+	    portraits = {
+	    	army = {
+	    		large = gfx/leaders/FAT/FAT_star_wind.dds
+	    		small = GFX_portrait_FAT_star_wind_small
+	    	}
+	    }
+		corps_commander = {
+            traits = { panzer_leader panzer_expert kirin_race_trait nirik }
+            skill = 3
+            attack_skill = 5
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+	    	legacy_id = -1
+        }
+	}
 }
 	
