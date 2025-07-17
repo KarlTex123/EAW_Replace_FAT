@@ -1,5 +1,5 @@
 leader_traits = {
-	nirik= { #逆鳞
+	nirik= { #逆麟
 		type = land
 		trait_type = personality_trait
 		
