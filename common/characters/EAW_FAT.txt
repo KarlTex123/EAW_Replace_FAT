@@ -57,6 +57,7 @@ characters={
 	    	}
 	    }
 		corps_commander = {
+			desc = "FAT_star_wind_desc"
             traits = { panzer_leader panzer_expert kirin_race_trait nirik }
             skill = 3
             attack_skill = 5
