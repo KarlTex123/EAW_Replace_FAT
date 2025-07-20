@@ -58,9 +58,6 @@ scripted_gui = {
             REP_FAT_the_south_leader_porits_picture = {
                 image = [the_second_leader_picture]
             }
-            REP_FAT_the_setuation_of_the_state_5_1_pic = { #罗马多拆分
-                image = [the_setuation_of_the_state_5_1_pic]
-            }
             REP_FAT_the_setuation_of_the_state_1 = {
                 image = [the_buttom_turn_red_1]
             }

@@ -42,12 +42,6 @@ defined_text = {
 	text = { trigger = { NOT  = {check_variable = { cheak_the_state_number = 5 } } } localization_key = "GFX_REP_FAT_the_setuation_of_the_state_5_button" }
 }
 
-defined_text = {
-	name = the_setuation_of_the_state_5_1_pic
-	text = { trigger = { check_variable = { cheak_the_state_number = 5 } } localization_key = "GFX_REP_FAT_the_setuation_of_the_state_5_1_pic" }
-	text = { trigger = { NOT  = {check_variable = { cheak_the_state_number = 5 } } }localization_key = "GFX_REP_FAT_the_setuation_of_the_state_5_button" }
-}
-
 defined_text = { 
 	name = the_buttom_turn_red_6
 	text = { trigger = { check_variable = { cheak_the_state_number = 6 } } localization_key = "GFX_REP_FAT_the_setuation_of_the_state_6_red_button" }

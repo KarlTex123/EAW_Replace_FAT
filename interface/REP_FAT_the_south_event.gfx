@@ -36,10 +36,6 @@ spriteTypes = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_5_button"
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_button.dds" 		
 	}
-	spriteType = { #罗马垛拆分
-		name = "GFX_REP_FAT_the_setuation_of_the_state_5_1_pic"
-		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_1_pic.dds" 		
-	}
 	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_6_button"
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_6_button.dds" 		

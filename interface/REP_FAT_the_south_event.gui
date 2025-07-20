@@ -20,19 +20,12 @@ guiTypes = {
 			Orientation = CENTER 
 		}
 
-		iconType = { #罗马拆分
-			name = "REP_FAT_the_setuation_of_the_state_5_1_pic"
-			position = { x = -730 y = -730 } 
-			Orientation = CENTER 
-			alwaystransparent = yes		
-		}
-
 		instantTextBoxType = { #地区概况文本
 			name = "REP_FAT_the_place_setuation_text" 
 			position = { x = 300 y = 700 } 
 			font = "hoi_24header"
 			text = "the_setuation_of_the_state_desc"
-			maxWidth = 800
+			maxWidth = 750
 			maxHeight = 300
 			fixedsize = no 
 			format = center #对齐方式
@@ -91,14 +84,14 @@ guiTypes = {
 			name = "REP_FAT_the_setuation_of_the_state_8" #按钮框名称
 			orientation = CENTER
 			position = { x= 31 y = -773 } #位置 
-			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_8_button" 
+			spriteType = "GFX_REP_FAT_the_setuation_of_the_state_8_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
 			name = "REP_FAT_the_setuation_of_the_state_9" #按钮框名称
 			orientation = CENTEr
 			position = { x= -180 y = -679 } #位置 
-			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_9_button" 
+			spriteType = "GFX_REP_FAT_the_setuation_of_the_state_9_button" 
 			clicksound = click_default 
 		}
 		buttonType = {
