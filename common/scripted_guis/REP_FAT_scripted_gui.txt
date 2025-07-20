@@ -73,6 +73,9 @@ scripted_gui = {
             REP_FAT_the_setuation_of_the_state_5 = {
                 image = [the_buttom_turn_red_5]
             }
+            REP_FAT_the_setuation_of_the_state_5_1_pic = { #罗马多拆分
+                image = [the_setuation_of_the_state_5_1_pic]
+            }
             REP_FAT_the_setuation_of_the_state_6 = {
                 image = [the_buttom_turn_red_6]
             }

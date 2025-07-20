@@ -37,8 +37,16 @@ spriteTypes = {
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_button.dds" 		
 	}
 	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_5_123_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_123_button.dds" 		
+	}
+	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_6_button"
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_6_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_6_1_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_6_1_button.dds" 		
 	}
 	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_7_button"
@@ -49,8 +57,16 @@ spriteTypes = {
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_8_button.dds" 		
 	}
 	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_8_1_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_8_1_button.dds" 		
+	}
+	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_9_button"
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_9_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_9_1_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_9_1_button.dds" 		
 	}
 #############红色的###############
 	spriteType = {
@@ -72,6 +88,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_5_red_button"
 		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_5_red_button.dds" 		
+	}
+	spriteType = { #罗马垛拆分
+		name = "GFX_REP_FAT_the_setuation_of_the_state_5_1_pic"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_1_pic.dds" 		
 	}
 	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_6_red_button"
