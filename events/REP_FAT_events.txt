@@ -271,6 +271,17 @@ country_event = { #工业化通用
 		name = FAT_start.9.1
 	}
 }
+country_event = { #NANFANG 测试南方 换领导人
+	id = FAT_start.10
+	picture = ""
+	title = FAT_start.10.t
+	desc = FAT_start.10.d
+	is_triggered_only = yes
+	option = {
+		name = FAT_start.10.1
+		add_to_variable = {FAT_REP_THE_S_L = 1}
+	}
+}
 
 country_event = { #历史介绍
 	id = REP_FAT_history.1

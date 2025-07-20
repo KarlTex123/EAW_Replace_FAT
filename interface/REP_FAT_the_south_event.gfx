@@ -1,7 +1,97 @@
 spriteTypes = {
-	SpriteType = { 
+	SpriteType = {  #总背板
 		name = "GFX_REP_FAT_the_south_event_ui_window_background"
 		texturefile = "gfx\interface\the_south_public\the_south_public_background.dds" 
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_Little_Kemerskai" #领导人
+		texturefile = "gfx\interface\the_south_public\Little_Kemerskai.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_Gabriella" #领导人
+		texturefile = "gfx\interface\the_south_public\Gabriella.dds" 		
+	}
+	spriteType = { #决议背板
+		name = "GFX_REP_FAT_the_south_decisions_picture" 
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_south_decisions_picture.png" 		
+	}
+#######################地块########################################3
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_1_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_1_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_2_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_2_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_3_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_3_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_4_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_4_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_5_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_button.dds" 		
+	}
+	spriteType = { #罗马垛拆分
+		name = "GFX_REP_FAT_the_setuation_of_the_state_5_1_pic"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_1_pic.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_6_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_6_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_7_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_7_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_8_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_8_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_9_button"
+		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_9_button.dds" 		
+	}
+#############红色的###############
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_1_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_1_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_2_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_2_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_3_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_3_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_4_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_4_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_5_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_5_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_6_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_6_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_7_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_7_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_8_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_8_red_button.dds" 		
+	}
+	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_9_red_button"
+		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_9_red_button.dds" 		
 	}
 }
 

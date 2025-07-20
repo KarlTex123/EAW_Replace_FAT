@@ -29,29 +29,64 @@ scripted_gui = {
 			has_country_flag = REP_FAT_the_south_event_ui_window_flag
 		}
 		effects = {
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_1_click = { 
 				set_variable = { cheak_the_state_number = 1 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_2_click = { 
 				set_variable = { cheak_the_state_number = 2 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_3_click = { 
 				set_variable = { cheak_the_state_number = 3 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_4_click = { 
 				set_variable = { cheak_the_state_number = 4 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_5_click = { 
 				set_variable = { cheak_the_state_number = 5 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_6_click = { 
 				set_variable = { cheak_the_state_number = 6 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_7_click = { 
 				set_variable = { cheak_the_state_number = 7 }}
-			REP_FAT_SuperEvent_close_click = { 
+			REP_FAT_the_setuation_of_the_state_8_click = { 
 				set_variable = { cheak_the_state_number = 8 }}
+			REP_FAT_the_setuation_of_the_state_9_click = { 
+				set_variable = { cheak_the_state_number = 9 }}
+            close_button_click = {
+                clr_country_flag = REP_FAT_the_south_event_ui_window_flag
+            }
 		}
 		ai_enabled = {
 			always = no
 		}
 		properties = {
-            REP_FAT_SuperEvent_picture = {
-                image = [SuperEvent_background_picture]
+            REP_FAT_the_south_leader_porits_picture = {
+                image = [the_second_leader_picture]
+            }
+            REP_FAT_the_setuation_of_the_state_5_1_pic = { #罗马多拆分
+                image = [the_setuation_of_the_state_5_1_pic]
+            }
+            REP_FAT_the_setuation_of_the_state_1 = {
+                image = [the_buttom_turn_red_1]
+            }
+            REP_FAT_the_setuation_of_the_state_2 = {
+                image = [the_buttom_turn_red_2]
+            }
+            REP_FAT_the_setuation_of_the_state_3 = {
+                image = [the_buttom_turn_red_3]
+            }
+            REP_FAT_the_setuation_of_the_state_4 = {
+                image = [the_buttom_turn_red_4]
+            }
+            REP_FAT_the_setuation_of_the_state_5 = {
+                image = [the_buttom_turn_red_5]
+            }
+            REP_FAT_the_setuation_of_the_state_6 = {
+                image = [the_buttom_turn_red_6]
+            }
+            REP_FAT_the_setuation_of_the_state_7 = {
+                image = [the_buttom_turn_red_7]
+            }
+            REP_FAT_the_setuation_of_the_state_8 = {
+                image = [the_buttom_turn_red_8]
+            }
+            REP_FAT_the_setuation_of_the_state_9 = {
+                image = [the_buttom_turn_red_9]
             }
         }
 	}

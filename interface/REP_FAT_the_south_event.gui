@@ -2,8 +2,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "REP_FAT_the_south_event_ui_window"
-		position = { x = -554 y = 300 }
-		size = { width = 1000 height = 1000 } 
+		position = { x = 0 y = 0 }
+		size = { width = 2000 height = 2000 } 
+		horizontal = 2
 		orientation= CENTER
 		moveable = yes
 
@@ -12,86 +13,101 @@ guiTypes = {
 			quadTextureSprite ="GFX_REP_FAT_the_south_event_ui_window_background"
 		}	
 
-		instantTextBoxType = { #文字介绍
-			name = "REP_FAT_the_south_event_introduct_text" 
-			position = { x = 0 y = 0 } 
-			font = "hoi_24header"
-			borderSize = {x = 0 y = 0} 
-			Orientation = centre
-			text = "文字介绍"
-		} 
 		iconType = { #南方领导人肖像
 			name = "REP_FAT_the_south_leader_porits_picture"
 			centerposition = no 
-			position = { x= 0 y = 150 } 
+			position = { x = -670 y = -875 } 
 			Orientation = CENTER 
 		}
+
+		iconType = { #罗马拆分
+			name = "REP_FAT_the_setuation_of_the_state_5_1_pic"
+			position = { x = -730 y = -730 } 
+			Orientation = CENTER 
+			alwaystransparent = yes		
+		}
+
 		instantTextBoxType = { #地区概况文本
 			name = "REP_FAT_the_place_setuation_text" 
-			position = { x = 50 y = 120 } 
+			position = { x = 300 y = 700 } 
 			font = "hoi_24header"
 			text = "the_setuation_of_the_state_desc"
-			maxWidth = 820 
-			maxHeight = 24 
+			maxWidth = 800
+			maxHeight = 300
 			fixedsize = no 
-			format = centre #对齐方式（这里是居中对齐）
+			format = center #对齐方式
 		} 
 
 		buttonType = { #按钮
-			name = "REP_FAT_" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_1" #按钮框名称
+			position = { x= 341 y = -782 } #位置 
 			orientation = CENTER
-			position = { x= 0 y = 120 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_1_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_2" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 429 y = -332 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_2_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_3" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 248 y = -414 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_3_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_4" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 449 y = -459 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_4_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_5" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 263 y = -378 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_5_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_6" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 113 y =-415 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_6_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_7" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 288 y = -537 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_7_button" 
 			clicksound = click_default 
 		}
 		buttonType = { #按钮
-			name = "REP_FAT_SuperEvent_close" #按钮框名称
+			name = "REP_FAT_the_setuation_of_the_state_8" #按钮框名称
 			orientation = CENTER
-			position = { x= -151 y = 243 } #位置 
-			quadTextureSprite = "GFX_SuperEvent_close_button" 
+			position = { x= 31 y = -773 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_8_button" 
 			clicksound = click_default 
+		}
+		buttonType = { #按钮
+			name = "REP_FAT_the_setuation_of_the_state_9" #按钮框名称
+			orientation = CENTEr
+			position = { x= -180 y = -679 } #位置 
+			quadTextureSprite = "GFX_REP_FAT_the_setuation_of_the_state_9_button" 
+			clicksound = click_default 
+		}
+		buttonType = {
+			name = "close_button"
+			position = {x= -35 y = 0 }
+			spriteType = "GFX_closebutton"
+			orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			shortcut = "ESCAPE"
 		}
 	}
 }
