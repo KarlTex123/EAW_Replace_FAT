@@ -94,6 +94,10 @@ spriteTypes = {
 		texturefile = "gfx\interface\the_south_public\REP_FAT_the_setuation_of_the_state_5_1_pic.dds" 		
 	}
 	spriteType = {
+		name = "GFX_REP_FAT_the_setuation_of_the_state_repalce_5_button"
+		texturefile = "gfx\interface\the_south_public\repalce_the_luoma.png" 
+	}
+	spriteType = {
 		name = "GFX_REP_FAT_the_setuation_of_the_state_6_red_button"
 		texturefile = "gfx\interface\the_south_public\seleted\REP_FAT_the_setuation_of_the_state_6_red_button.dds" 		
 	}

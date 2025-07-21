@@ -29,7 +29,7 @@ guiTypes = {
 
 		instantTextBoxType = { #地区概况文本
 			name = "REP_FAT_the_place_setuation_text" 
-			position = { x = 300 y = 700 } 
+			position = { x = 310 y = 700 } 
 			font = "hoi_24header"
 			text = "the_setuation_of_the_state_desc"
 			maxWidth = 750

@@ -45,7 +45,7 @@ defined_text = {
 defined_text = {
 	name = the_setuation_of_the_state_5_1_pic
 	text = { trigger = { check_variable = { cheak_the_state_number = 5 } } localization_key = "GFX_REP_FAT_the_setuation_of_the_state_5_1_pic" }
-	text = { trigger = { NOT  = {check_variable = { cheak_the_state_number = 5 } } }localization_key = "GFX_REP_FAT_the_setuation_of_the_state_5_button" }
+	text = { trigger = { NOT  = {check_variable = { cheak_the_state_number = 5 } } }localization_key = "GFX_REP_FAT_the_setuation_of_the_state_repalce_5_button" }
 }
 
 defined_text = { 
