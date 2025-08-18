@@ -866,5 +866,57 @@ country_event = { #训政争论
 	}
 }
 
+country_event = { #克梅斯凯就小马内战发表演讲
+	id = FAT_FP.13
+	picture = FAT_FP.13.p
+	title = FAT_FP.13.t
+	desc = FAT_FP.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.13.a
+	}
+}
+
+country_event = { #克梅斯凯就暗月帝国获得胜利发表演讲
+	id = FAT_FP.14
+	picture = FAT_FP.14.p
+	title = FAT_FP.14.t
+	desc = FAT_FP.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.14.a
+	}
+}
+
+country_event = { #克梅斯凯就伟大战争发表演讲
+	id = FAT_FP.15
+	picture = FAT_FP.15.p
+	title = FAT_FP.15.t
+	desc = FAT_FP.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.15.a
+	}
+}
+
+country_event = { #克梅斯凯评论狮鹫帝国摄政嘉比蕾拉
+	id = FAT_FP.16
+	picture = FAT_FP.16.p
+	title = FAT_FP.16.t
+	desc = FAT_FP.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.16.a
+	}
+}
+
 
 
