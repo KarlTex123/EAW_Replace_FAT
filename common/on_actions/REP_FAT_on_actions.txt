@@ -42,6 +42,56 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly = {
+    	effect = {
+    	   if = {
+     	       limit = { 
+    	            CHN = {
+						has_completed_focus = demand_equestria
+					}
+   	         	}
+				FAT = {
+            		country_event = { id = FAT_FP.15}
+				}
+        	}
+    	}
+	    effect = {
+    	   if = {
+     	       limit = { 
+    	            GRI = { 
+						has_completed_focus = GRI_eagleclaw 
+					}
+   	         	}
+				FAT = {
+            		country_event = { id = FAT_FP.16}
+				}
+        	}
+    	}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = EQS
+					FROM = NLR
+				}
+				fat = {
+					country_event = { id = FAT_FP.13 }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					ROOT = NLR
+					FROM = EQS
+				}
+				fat = {
+					country_event = { id = FAT_FP.14 }
+				}
+			}
+		}
+	}
 }
 
 
