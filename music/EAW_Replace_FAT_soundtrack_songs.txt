@@ -48,6 +48,30 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "EWA_rep_7"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_8"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_9"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
 
 
 
