@@ -14,4 +14,150 @@ leader_traits = {
 		industrial_capacity_dockyard = 0.1
 		resistance_growth_on_our_occupied_states = -0.03
 	}
+
+	Marshal_of_the_Republican_Army = {
+
+	}
+	
+	Marshal_of_the_Republican_Army_3 = {
+		name = Marshal_of_he_Republican_Army
+		land_doctrine_cost_factor = 0.5
+		experience_gain_army = 0.3
+		army_artillery_attack_factor = 0.05
+	}
+	Marshal_of_the_Republican_Army_2 = {
+		name = Marshal_of_he_Republican_Army
+		land_doctrine_cost_factor = 0.2
+		army_artillery_attack_factor = 0.05
+		army_artillery_defence_factor = 0.05
+		experience_gain_army = 0.3
+		
+
+		equipment_bonus = {
+			artillery_brigade = {
+				soft_attack = 0.05
+			}
+		}
+	}
+	Marshal_of_the_Republican_Army_1 = {
+		name = Marshal_of_he_Republican_Army
+		land_doctrine_cost_factor = 0.1
+		army_artillery_attack_factor = 0.05
+		army_artillery_defence_factor = 0.05
+		experience_gain_army = 0.3
+		cat_superior_firepower_cost_factor = -0.3
+
+		equipment_bonus = {
+			artillery_brigade = {
+				soft_attack = 0.05
+			}
+		}
+	}
+
+	Marshal_of_the_Republican_Army_l = {
+		name = Marshal_of_he_Republican_Army
+		army_artillery_attack_factor = 0.05
+		equipment_bonus = {
+			artillery_brigade = {
+				max_organisation = 0.05
+				soft_attack = 0.1
+			}
+		}
+	}
+
+
+	Prime_Minister_of_the_Republican_Party = {
+
+	}
+	Prime_Minister_of_the_Republican_Party_3 = {
+		name = Prime_Minister_of_the_Republican_Party
+		party_popularity_stability_factor = 0.1
+		political_power_factor = -0.05
+	}
+	Prime_Minister_of_the_Republican_Party_2 = {
+		name = Prime_Minister_of_the_Republican_Party
+		political_power_factor = -0.05
+		stability_factor = 0.05
+		war_support_factor = 0.05
+	}
+	Prime_Minister_of_the_Republican_Party_1 = {
+		name = Prime_Minister_of_the_Republican_Party
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		war_support_factor = 0.1
+		compliance_gain = 0.01
+		send_volunteer_size = 2
+	}
+	Prime_Minister_of_the_Republican_Party_l = {
+		name = Prime_Minister_of_the_Republican_Party
+
+		political_advisor_cost_factor = -0.5
+		political_power_factor = 0.05
+		war_support_factor = 0.1
+		compliance_gain = 0.01
+	}
+
+	FAT_artillery_genius = {
+		random = no
+		
+		equipment_bonus = {
+			artillery_brigade = {
+				max_organisation = 0.05
+				soft_attack = 0.3
+			}
+		}
+	}
+	FAT_artillery_genius_3 = {
+		random = no
+		name = FAT_artillery_genius
+		max_planning = -0.1
+		planning_speed = -0.2
+
+		equipment_bonus = {
+			artillery_brigade = {
+				max_organisation = 0.05
+				
+			}
+		}
+	}
+	FAT_artillery_genius_2 = {
+		random = no
+		name = FAT_artillery_genius
+		max_planning = 0.1
+		experience_gain_army = 0.3
+		army_org_regain = 0.05
+
+		equipment_bonus = {
+			artillery_brigade = {
+				soft_attack = 0.1
+			}
+		}
+	}
+	FAT_artillery_genius_1 = {
+		random = no
+		name = FAT_artillery_genius
+
+		max_planning = 0.1
+		experience_gain_army = 0.3
+		army_org_regain = 0.1
+
+		equipment_bonus = {
+			artillery_brigade = {
+				max_organisation = 0.05
+				soft_attack = 0.1
+			}
+		}
+	}
+	FAT_artillery_genius_l = {
+		name = FAT_artillery_genius
+		random = no
+		sprite = 16
+		
+		equipment_bonus = {
+			artillery_brigade = {
+				max_organisation = 0.05
+				soft_attack = 0.1
+			}
+		}
+	}
 }

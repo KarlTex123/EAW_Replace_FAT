@@ -1,0 +1,27 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_idea_FAT_walk_on_cloud_army_school_idea"
+		texturefile = "gfx\interface\ideas\漫云军校.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_Twilight_theory"
+		texturefile = "gfx\interface\ideas\政党联盟.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_the_first_step_of_industrialization"
+		texturefile = "gfx\interface\ideas\工业化1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_Moderately_developed_industrialization"
+		texturefile = "gfx\interface\ideas\工业化2.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_Booming_industrialization"
+		texturefile = "gfx\interface\ideas\工业化3.png" 
+	}
+	
+}
+
+
+
+

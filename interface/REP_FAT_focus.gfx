@@ -276,6 +276,45 @@ spriteTypes={
 	texturefile="gfx\interface\goals\FAT\国民共和党全会.png"
 	}
 
+
+	SpriteType={
+	name="GFX_goal_FAT_XINSHIJIEZHIEMENG"
+	texturefile="gfx\interface\goals\FAT\新世界之梦.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_GONGHEGUOGONGYUE"
+	texturefile="gfx\interface\goals\FAT\共和国公约.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_LIANLUENANFANG"
+	texturefile="gfx\interface\goals\FAT\联系南方共和党.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_JIRIZHEMINGYUN"
+	texturefile="gfx\interface\goals\FAT\日击者的末路.png"
+	}
+
+	SpriteType={
+	name="GFX_goal_FAT_XIAOMAPENGYOU"
+	texturefile="gfx\interface\goals\FAT\小马大陆的朋友.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_HEIJIANPOBIN" 
+	texturefile="gfx\interface\goals\FAT\河间破冰.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_WEIDINAGAIGE"
+	texturefile="gfx\interface\goals\FAT\韦迪纳的革命.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_JISUIHUANGGUAN"
+	texturefile="gfx\interface\goals\FAT\击碎王冠.png"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_XIELVZHIBEI"
+	texturefile="gfx\interface\goals\FAT\韵律之北.png"
+	}
+
 }
 
 

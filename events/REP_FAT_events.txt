@@ -1,7 +1,19 @@
 ﻿add_namespace = FAT_start
 add_namespace = REP_FAT_history
 add_namespace = FAT_FP
-
+add_namespace = test_FAT_start
+add_namespace = FAT_alexander_kemerskai_trait
+news_event = {
+	id = test_FAT_start.1 
+	title = test_FAT_start.1.title 
+	desc = test_FAT_start.1.d
+	picture = GFX_news_event_generic_pony_diplomacy
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = test_FAT_start.1.a
+	}
+}
 country_event = { #开局政局介绍
 	id = FAT_start.1
 	picture = ""
@@ -918,5 +930,68 @@ country_event = { #克梅斯凯评论狮鹫帝国摄政嘉比蕾拉
 	}
 }
 
+country_event = { 
+	id = FAT_alexander_kemerskai_trait.1
+	hidden = yes
+	is_triggered_only = yes
 
+	immediate = {
+		NO_FAT_alexander_kemerskai_traits = yes
+		add_to_variable = {
+			FAT_alexander_kemerskai_advisor = 1
+		}
+		get_FAT_alexander_kemerskai_traits = yes
+		if = {
+			limit = { 
+				has_idea = FAT_alexander_kemerskai_army_chief
+			}
+			remove_country_leader_trait = FAT_artillery_genius_l
+		}
+		if = {
+			limit = { 
+				has_idea = FAT_alexander_kemerskai_2_theorist
+			}
+			remove_country_leader_trait = Marshal_of_the_Republican_Army_l
+		}
+		if = {
+			limit = { 
+				has_idea = FAT_alexander_kemerskai_3_political_advisor
+			}
+			remove_country_leader_trait = Prime_Minister_of_the_Republican_Party_l
+		}
+	}
+}
+
+country_event = { 
+	id = FAT_alexander_kemerskai_trait.2
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		NO_FAT_alexander_kemerskai_traits = yes
+		add_to_variable = {
+			FAT_alexander_kemerskai_advisor = -1
+		}
+		get_FAT_alexander_kemerskai_traits = yes
+
+		if = {
+			limit = { 
+				NOT = {has_idea = FAT_alexander_kemerskai_army_chief}
+			}
+			add_country_leader_trait = FAT_artillery_genius_l
+		}
+		if = {
+			limit = { 
+				NOT = {has_idea = FAT_alexander_kemerskai_2_theorist}
+			}
+			add_country_leader_trait = Marshal_of_the_Republican_Army_l
+		}
+		if = {
+			limit = { 
+				NOT = {has_idea = FAT_alexander_kemerskai_3_political_advisor}
+			}
+			add_country_leader_trait = Prime_Minister_of_the_Republican_Party_l
+		}
+	}
+}
 

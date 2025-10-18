@@ -160,6 +160,8 @@ add_manpower = 100000
 set_country_flag = have_regular_puppets
 
 recruit_character = FAT_alexander_kemerskai
+recruit_character = FAT_alexander_kemerskai_2
+recruit_character = FAT_alexander_kemerskai_3
 recruit_character = FAT_reinhard_suntail
 recruit_character = FAT_rikard_astler
 recruit_character = FAT_moe_sparrowsbane

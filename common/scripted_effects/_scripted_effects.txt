@@ -1,0 +1,51 @@
+get_FAT_alexander_kemerskai_traits = {
+	meta_effect = {
+		text = {
+			FAT_alexander_kemerskai = {
+				add_trait = {
+					trait = FAT_artillery_genius_[GetTrait]
+					slot = army_chief
+				}
+			}
+			FAT_alexander_kemerskai_2 = {
+				add_trait = {
+					trait = Marshal_of_the_Republican_Army_[GetTrait]
+					slot = theorist
+				}
+			}
+			FAT_alexander_kemerskai_3 = {
+				add_trait = {
+					trait = Prime_Minister_of_the_Republican_Party_[GetTrait]
+					slot = political_advisor
+				}
+			}
+		}
+		GetTrait = "[?ROOT.FAT_alexander_kemerskai_advisor]"
+	}
+}
+NO_FAT_alexander_kemerskai_traits = {
+	meta_effect = {
+		text = {
+			FAT_alexander_kemerskai = {
+				remove_trait = {
+					trait = FAT_artillery_genius_[GetTrait]
+					slot = army_chief
+				}
+			}
+			FAT_alexander_kemerskai_2 = {
+				remove_trait = {
+					trait = Marshal_of_the_Republican_Army_[GetTrait]
+					slot = theorist
+				}
+			}
+			FAT_alexander_kemerskai_3 = {
+				remove_trait = {
+					trait = Prime_Minister_of_the_Republican_Party_[GetTrait]
+					slot = political_advisor
+				}
+			}
+		}
+		GetTrait = "[?ROOT.FAT_alexander_kemerskai_advisor]"
+	}
+}
+

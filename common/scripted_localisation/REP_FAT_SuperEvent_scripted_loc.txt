@@ -34,6 +34,16 @@ defined_text = {
 		localization_key = GFX_SuperEvent_picture_test
 	}
 }
+defined_text = {
+	name = Getneweventnewsbg
+	text = {
+		trigger = {
+			TAG = FAT
+		}
+		localization_key = GFX_new_event_news_bg
+	}
+}
+
 
 
 

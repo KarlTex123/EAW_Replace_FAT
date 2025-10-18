@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = FAT
 		}
 	}
@@ -44,7 +44,7 @@ focus_tree = {
 	}
 	focus = { #联络南方共和党
 		id = FAT_LIANLUENANFANG
-		icon = GFX_goal_unknown
+		icon = GFX_goal_FAT_LIANLUENANFANG
 		cost = 10
 		x = 0
 		y = 1
@@ -96,9 +96,9 @@ focus_tree = {
 			set_country_flag = FAT_YOUYIXUANYAN
 		}
 	}
-	focus = { #民主不是公主
-		id = FAT_MINZHUFEIGONGZHU
-		icon = GFX_goal_FAT_MINZHUFEIGONGZHU
+	focus = { #河间破冰
+		id = FAT_HEIJIANPOBIN
+		icon = GFX_goal_FAT_HEIJIANPOBIN
 		cost = 10
 		x = -2
 		y = 1
@@ -108,9 +108,7 @@ focus_tree = {
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
-			NTR = {
-				country_event = FAT_FP.1
-			}
+			
 		}
 	}
 	focus = { #韦迪纳的革命
@@ -118,7 +116,7 @@ focus_tree = {
 		icon = GFX_goal_FAT_WEIDINAGAIGE
 		cost = 10
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {
 			focus = FAT_LIANLUENANFANG
 		}
@@ -132,20 +130,31 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { #击碎皇冠
-		id = FAT_JISUIHUANGGUAN
-		icon = GFX_goal_FAT_JISUIHUANGGUAN
+	focus = { #协律之北
+		id = FAT_XIELVZHIBEI
+		icon = GFX_goal_FAT_XIELVZHIBEI
 		cost = 10
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = FAT_MINZHUFEIGONGZHU
+			focus = FAT_HEIJIANPOBIN
 		}
 		prerequisite = {
 			focus = FAT_JIRIZHEMINGYUN
 		}
 		prerequisite = {
 			focus = FAT_WEIDINAGAIGE
+		}
+		relative_position_id = FAT_WEIDINAGAIGE
+	}
+	focus = { #击碎皇冠
+		id = FAT_JISUIHUANGGUAN
+		icon = GFX_goal_FAT_JISUIHUANGGUAN
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_XIELVZHIBEI
 		}
 		relative_position_id = FAT_WEIDINAGAIGE
 	}

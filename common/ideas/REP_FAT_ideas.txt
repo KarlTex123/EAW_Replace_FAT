@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		FAT_walk_on_cloud_army_school_idea = { #漫云军校
-			picture = ""
+			picture = FAT_walk_on_cloud_army_school_idea
 			allowed = {
 				always = no
 			}
@@ -17,28 +17,28 @@ ideas = {
 			}
 		}
 		VED_influence_from_FAT_idea = { #来自共和国的影响
-			picture = ""
+			picture = VED_influence_from_FAT_idea
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 		}
 		MNC_very_bad_luna_oppose_army_idea = { #卢娜共和军叛乱
-			picture = ""
+			picture = MNC_very_bad_luna_oppose_army_idea
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 		}
 		FAT_unstable_army_idea = { #军队高层动荡
-			picture = ""
+			picture = FAT_unstable_army_idea
 			modifier = {
 				experience_gain_army = -0.02
 				army_org_factor = -0.1
 			}
 		}
 		the_first_step_of_industrialization = { #初步工业化
-			picture = ""
+			picture = the_first_step_of_industrialization
 			allowed = {
 				always = no
 			}
@@ -51,7 +51,7 @@ ideas = {
 			}
 		}
 		Moderately_developed_industrialization = { #中度
-			picture = ""
+			picture = Moderately_developed_industrialization
 			allowed = {
 				always = no
 			}
@@ -64,7 +64,7 @@ ideas = {
 			}
 		}
 		Booming_industrialization = { #蓬勃
-			picture = ""
+			picture = Booming_industrialization
 			allowed = {
 				always = no
 			}
@@ -77,7 +77,7 @@ ideas = {
 			}
 		}
 		Industrial_heart = { #心脏
-			picture = ""
+			picture = Industrial_heart
 			allowed = {
 				always = no
 			}
