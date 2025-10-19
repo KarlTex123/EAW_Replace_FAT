@@ -1,0 +1,1028 @@
+#覆盖
+########    ###    ##    ## ##    ##  ######  
+   ##      ## ##   ###   ## ##   ##  ##    ## 
+   ##     ##   ##  ####  ## ##  ##   ##       
+   ##    ##     ## ## ## ## #####     ######  
+   ##    ######### ##  #### ##  ##         ## 
+   ##    ##     ## ##   ### ##   ##  ##    ## 
+   ##    ##     ## ##    ## ##    ##  ######
+
+FAT_squark_tank_factory_organization = {
+	name = FAT_squark_tank_factory
+	#include = generic_mobile_tank_organization
+	icon = GFX_idea_FAT_squark_tank_factory
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 582
+		}
+	}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+	}
+}
+
+FAT_cockade_factory_organization = {
+	name = FAT_cockade_factory
+	include = generic_medium_tank_organization
+	icon = GFX_idea_FAT_cockade_factory			
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 485
+		}
+	}
+}
+
+FAT_ring_motors_organization = {
+	name = FAT_ring_motors
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_FAT_ring_motors
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 485
+		}
+	}
+}
+
+ ######  ##     ## #### ########   ######  
+##    ## ##     ##  ##  ##     ## ##    ## 
+##       ##     ##  ##  ##     ## ##       
+ ######  #########  ##  ########   ######  
+      ## ##     ##  ##  ##              ## 
+##    ## ##     ##  ##  ##        ##    ## 
+ ######  ##     ## #### ##         ######
+
+FAT_republican_shipbuilding_union_organization = {
+	name = FAT_republican_shipbuilding_union
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_FAT_republican_shipbuilding_union
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+}
+
+FAT_river_boats_of_bleakspire_organization = {
+	name = FAT_river_boats_of_bleakspire
+	include = generic_escort_ship_organization
+	icon = GFX_idea_FAT_river_boats_of_bleakspire
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 432
+			owns_state = 449
+		}
+	}
+}
+
+FAT_shipyards_of_winghagen_organization = {
+	name = FAT_shipyards_of_winghagen
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_FAT_shipyards_of_winghagen
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 432
+		}
+	}
+	
+    tree_header_text = {
+        text = mio_header_systems
+        x = 1
+    }
+
+    tree_header_text = {
+        text = mio_header_weapons
+        x = 4
+    }
+
+    tree_header_text = {
+        text = mio_header_production
+        x = 7.5
+    }
+
+    override_trait = {
+        token = generic_mio_trait_secondary_fire_director_control
+        position = { x=4 y=0 }
+    }
+
+    override_trait = {
+        token = generic_mio_trait_primary_fire_director_control
+        position = { x=2 y=0 }
+    }
+
+
+    add_trait = { 
+        token = FAT_mio_trait_coastal_defense_ship_modernization
+        name = DEN_mio_trait_coastal_defense_ship_modernization
+        icon = GFX_generic_mio_department_icon_ship_general
+        special_trait_background = yes
+
+        position = { x=1.5 y=0 }
+        relative_position_id = generic_mio_trait_primary_fire_director_control
+
+        
+        limit_to_equipment_type = { ship_hull_cruiser_coastal_defense_ship }
+
+        visible = {
+            owner = {
+                has_dlc = "Man the Guns"
+            }
+        }
+
+        equipment_bonus = {
+            naval_speed = 0.05
+            fuel_consumption = -0.05
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.1
+            production_resource_need_factor = -0.05
+            production_conversion_speed_factor = 0.1
+        }
+    }
+
+    add_trait = { 
+        token = FAT_mio_trait_engine_optimization
+        name = generic_mio_engine_optimization
+        icon = GFX_generic_mio_trait_icon_naval_speed
+        special_trait_background = yes
+
+        position = { x=2.5 y=0 }
+        relative_position_id = generic_mio_trait_primary_fire_director_control
+
+        equipment_bonus = {
+            fuel_consumption = -0.02
+            naval_speed = 0.02
+            naval_range = 0.02
+        }
+    }
+
+    add_trait = { 
+        token = FAT_mio_trait_refit_civilian_ships
+        name = generic_mio_trait_efficient_scrap_recycling
+        icon = GFX_generic_mio_department_icon_ship_general_conversion
+        special_trait_background = yes
+
+        all_parents = {
+            FAT_mio_trait_engine_optimization
+        }
+
+        position = { x=-1 y=1 }
+        relative_position_id = FAT_mio_trait_engine_optimization
+
+        production_bonus = {
+            production_conversion_speed_factor = 0.1
+            production_resource_need_factor = -0.05
+        }
+    }
+
+    add_trait = { 
+        token = FAT_mio_trait_ship_efficient_scrap_recycling
+        name = generic_mio_trait_efficient_scrap_recycling
+        icon = GFX_generic_mio_department_icon_ship_general_production
+        special_trait_background = yes
+
+        all_parents = {
+            FAT_mio_trait_engine_optimization
+        }
+
+        position = { x=0 y=1 }
+        relative_position_id = FAT_mio_trait_engine_optimization
+
+        production_bonus = {
+            production_cost_factor = -0.05
+            production_capacity_factor = 0.05
+            production_resource_penalty_factor = -0.05
+        }
+    }
+}
+ 
+########  ##          ###    ##    ## ########  ######  
+##     ## ##         ## ##   ###   ## ##       ##    ## 
+##     ## ##        ##   ##  ####  ## ##       ##       
+########  ##       ##     ## ## ## ## ######    ######  
+##        ##       ######### ##  #### ##             ## 
+##        ##       ##     ## ##   ### ##       ##    ## 
+##        ######## ##     ## ##    ## ########  ######
+
+FAT_squark_birds_of_steel_organization = {
+	name = FAT_squark_birds_of_steel
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_FAT_squark_birds_of_steel
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 582
+		}
+	}
+}	
+
+FAT_blue_and_white_organization = {
+	name = FAT_blue_and_white
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_FAT_blue_and_white
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 485
+		}
+	}	
+}
+
+FAT_whitestar_aircraft_organization = {
+	name = FAT_whitestar_aircraft
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_FAT_whitestar_aircraft
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 485
+		}
+	}	
+}
+
+##     ##    ###    ######## ######## ########  #### ######## ##       
+###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
+#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
+## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
+##     ## #########    ##    ##       ##   ##    ##  ##       ##       
+##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
+##     ## ##     ##    ##    ######## ##     ## #### ######## ########
+
+FAT_cloudbury_arsenal_company_organization = {
+	name = FAT_cloudbury_arsenal_company
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_FAT_cloudbury_arsenal
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 485
+		}
+	}
+
+	add_trait = { 
+		token = FAT_mio_trait_weibel_development
+		name = DEN_mio_trait_weibel_development
+		icon = GFX_generic_mio_department_icon_infantry_offense
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_reinforced_stocks
+
+		all_parents = {
+			generic_mio_trait_reinforced_stocks
+		}
+		
+		available = {
+			owner = {
+				has_idea = modern_society
+			}
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.02
+			breakthrough = 0.02
+			defense = 0.02
+		}
+	}
+
+	add_trait = { 
+		token = FAT_mio_trait_madsen_heavy_machine_gun
+		name = DEN_mio_trait_madsen_heavy_machine_gun
+		icon = GFX_generic_mio_department_icon_infantry_offense
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_heavy_anti_armor_ammunition
+
+		all_parents = {
+			generic_mio_trait_heavy_anti_armor_ammunition
+		}
+
+		available = {
+			owner = {
+				has_idea = modern_society
+			}
+		}
+
+		equipment_bonus = {
+			ap_attack = 0.03
+			hard_attack = 0.02
+			breakthrough = 0.03
+		}
+	}	
+}
+
+FAT_broby_armaments_organization = { #修改#火炮类军火商
+	name = FAT_broby_armaments
+	include = FAT_artillery_equipment_organization
+	icon = GFX_idea_FAT_broby_armaments
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}
+	available = {
+		owner = {
+			owns_state = 548
+		}
+	}	
+	equipment_type = {
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+	}
+	research_categories = {   
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+	}
+	tree_header_text = {#上方header栏的提示文字
+		text = FAT_mio_1
+		x = 2
+	}
+	tree_header_text = {
+		text = FAT_mio_2
+		x = 7
+	}
+	initial_trait = {#初始属性，既可作用于研究又可作用于生产
+		name = FAT_mio_artillery_equipment_organization 
+		equipment_bonus = {
+			build_cost_ic = -0.03
+		}
+		production_bonus ={#对生产线的加成
+			production_efficiency_gain_factor = 0.03
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+	trait = {
+		token = mio_add_study_money #增加科研经费
+		name = mio_add_study_money
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=7 y=0 }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+	trait = {
+		token = mio_high_standard_paojing #高规格炮镜
+		name = mio_high_standard_paojing
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=-1 y=1 }
+		relative_position_id = mio_add_study_money
+		all_parents = { 
+			mio_add_study_money
+		}
+		mutually_exclusive = { 
+			mio_automate_product_update
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+
+	}
+	trait = {
+		token = mio_automate_product_update #自动化流水线升级
+		name = mio_automate_product_update
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=1 y=1 }
+		relative_position_id = mio_add_study_money
+		all_parents = { 
+			mio_add_study_money
+		}
+		mutually_exclusive = { 
+			mio_high_standard_paojing
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+		production_bonus ={#对生产线的加成
+			production_efficiency_gain_factor = 0.3
+			production_efficiency_cap_factor = 0.15
+		}
+	}
+	trait = {
+		token = mio_allowed_change_pipe #可更换炮管
+		name = mio_allowed_change_pipe
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=0 y=1 }
+		relative_position_id = mio_high_standard_paojing
+		any_parent = { 
+			mio_automate_product_update
+			mio_high_standard_paojing
+		}
+		mutually_exclusive = { 
+			mio_common_product_line
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_resource_need_factor = 0.03
+		}
+	}
+	trait = {
+		token = mio_common_product_line #通用生产线
+		name = mio_common_product_line
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=0 y=1 }
+		relative_position_id = mio_automate_product_update
+		any_parent = { 
+			mio_automate_product_update
+			mio_high_standard_paojing
+		}
+		mutually_exclusive = { 
+			mio_allowed_change_pipe
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+		production_bonus = {
+			production_conversion_speed_factor = -0.05
+		}
+	}
+	trait = {
+		token = mio_super_boomer #超级炸弹
+		name = mio_super_boomer
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=0 y=1 }
+		relative_position_id = mio_allowed_change_pipe
+		any_parent = { 
+			mio_common_product_line
+			mio_allowed_change_pipe
+		}
+		mutually_exclusive = { 
+			mio_extend_artillery_product
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.03
+		}
+	}
+	trait = {
+		token = mio_extend_artillery_product #扩大火炮生产规模
+		name = mio_extend_artillery_product
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=0 y=1 }
+		relative_position_id = mio_common_product_line
+		any_parent = { 
+			mio_allowed_change_pipe
+			mio_common_product_line
+		}
+		mutually_exclusive = { 
+			mio_super_boomer
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.03
+			production_cost_factor = -0.03
+		}
+	}
+	trait = {
+		token = mio_extend_company #扩大生产商企业规模
+		name = mio_extend_company
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		position = { x=2 y=0 }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+			military_industrial_organization_size_up_requirement = -0.25
+		}
+	}
+	trait = {
+		token = mio_update_fire #升级协议：火力
+		name = mio_update_fire
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_extend_company
+		position = {
+			x = -1
+			y = 1
+		}
+		mutually_exclusive = {
+			mio_update_product
+		}
+		all_parents = {
+			mio_extend_company
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15
+		}
+	}
+	trait = {
+		token = mio_update_product #升级协议：生产
+		name = mio_update_product
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_extend_company
+		position = {
+			x = 1
+			y = 1
+		}
+		mutually_exclusive = {
+			mio_update_product
+		}
+		all_parents = {
+			mio_extend_company
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15
+		}
+		production_bonus ={#对生产线的加成
+			production_cost_factor = -0.05
+		}
+	}
+	trait = {
+		token = mio_fast_cold_system #速射冷却系统
+		name = mio_fast_cold_system
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_update_fire
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_update_fire
+		}
+		equipment_bonus = {
+			soft_attack = 0.1
+			hard_attack = 0.08
+			build_cost_ic = 0.03
+		}
+	}
+	trait = {
+		token = mio_wu_hejin_chuanjiadan #钨合金穿甲弹头
+		name = mio_wu_hejin_chuanjiadan
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_fast_cold_system
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_fast_cold_system
+		}
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+			build_cost_ic = 0.03
+		}
+	}
+	trait = {
+		token = mio_big_anti_air_pipe #大口径防空炮
+		name = mio_big_anti_air_pipe
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_wu_hejin_chuanjiadan
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_wu_hejin_chuanjiadan
+		}
+		equipment_bonus = {
+			air_attack = 0.07
+			hard_attack = 0.06
+		}
+	}
+	trait = {
+		token = mio_high_push_pipe #高膛压炮管
+		name = mio_high_push_pipe
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_update_fire
+		position = {
+			x = -1
+			y = 0
+		}
+		all_parents = {
+			mio_update_fire
+		}
+		equipment_bonus = {
+			breakthrough = 0.1
+			soft_attack = 0.1
+			build_cost_ic = 0.05
+		}
+	}
+	trait = {
+		token = mio_enhance_anti_air_defence #增加防空炮炮盾盾面积
+		name = mio_enhance_anti_air_defence
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_high_push_pipe
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_high_push_pipe
+		}
+		equipment_bonus = {
+			anti_air_attack = 0.08
+			defense = 0.03
+		}
+	}
+	trait = {
+		token = mio_nice_pipe_with_ge #镀铬炮膛
+		name = mio_nice_pipe_with_ge
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_enhance_anti_air_defence
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_enhance_anti_air_defence
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.03
+			soft_attack = 0.1
+		}
+		production_bonus ={#对生产线的加成
+			production_resource_need_factor = 0.03
+		}
+	}
+	trait = {
+		token = mio_yeya_houzuo_system #液压后座系统
+		name = mio_yeya_houzuo_system
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_nice_pipe_with_ge
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_nice_pipe_with_ge
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+	trait = {
+		token = mio_new_anti_air_jing #先进防空炮炮镜
+		name = mio_new_anti_air_jing
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_update_product
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_update_product
+		}
+		equipment_bonus = {
+			anti_air_attack = 0.08
+			soft_attack = 0.08
+		}
+	}
+	trait = {
+		token = mio_enlong_pipe #加长炮管
+		name = mio_enlong_pipe
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_new_anti_air_jing
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_new_anti_air_jing
+		}
+		equipment_bonus = {
+			hard_attack = 0.03
+			breakthrough = 0.05
+		}
+	}
+	trait = {
+		token = mio_mobanhua_product #模版化生产
+		name = mio_mobanhua_product
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_enlong_pipe
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_enlong_pipe
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.03
+		}
+	}
+	trait = {
+		token = mio_huadong_hinder #滑动障壁块
+		name = mio_huadong_hinder
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_update_product
+		position = {
+			x = 1
+			y = 0
+		}
+		all_parents = {
+			mio_update_product
+		}
+		equipment_bonus = {
+			breakthrough = 0.05
+			soft_attack = 0.02
+		}
+	}
+	trait = {
+		token = mio_improve_product_step #优化生产流程
+		name = mio_improve_product_step
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_huadong_hinder
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_huadong_hinder
+		}
+		equipment_bonus = {
+			reliability = 0.02
+			build_cost_ic = -0.08
+		}
+	}
+	trait = {
+		token = mio_flexible_product_line #灵活生产线
+		name = mio_flexible_product_line
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_improve_product_step
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_improve_product_step
+		}
+		production_bonus = {
+			production_resource_penalty_factor = -0.15
+		}
+	}
+	trait = {
+		token = mio_feiqi_huishou #废弃材料回收
+		name = mio_feiqi_huishou
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		relative_position_id = mio_flexible_product_line
+		position = {
+			x = 0
+			y = 1
+		}
+		all_parents = {
+			mio_flexible_product_line
+		}
+		production_bonus = {
+			production_resource_need_factor = -0.1
+		}
+	}
+	
+}
+
+FAT_ignis_car_factory_organization = {
+	name = FAT_ignis_car_factory
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_FAT_ignis_car_factory
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}
+	}	
+	tree_header_text = {
+		text = mio_header_motorized
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_mechanized
+		x = 6
+	}
+
+	tree_header_text = {
+		text = mio_header_production_department
+		x = 8.5
+	}
+
+	override_trait = {
+		token = generic_mio_trait_steel_cargo_bed
+
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_composite_cargo_bed
+	}
+
+	override_trait = {
+		token = generic_mio_trait_high_powered_engine
+
+		position = { x=1 y=0 }
+		relative_position_id = generic_mio_trait_attached_wood_gas_generator
+	}
+
+	override_trait = {
+		token = generic_mio_trait_medium_machinegun_mounts
+
+		position = { x=1 y=0 }
+		relative_position_id = generic_mio_trait_steel_cargo_bed
+	}
+
+	override_trait = {
+		token = generic_mio_trait_advanced_artillery_racks
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_armored_pulpit_mount
+	}
+
+	override_trait = {
+		token = generic_mio_trait_heavy_machinegun_mount
+
+		position = { x=1 y=0 }
+		relative_position_id = generic_mio_trait_advanced_artillery_racks
+	}
+
+	override_trait = {
+		token = generic_mio_trait_open_chassi
+
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_medium_machinegun_mounts
+	}
+	
+	override_trait = {
+		token = generic_mio_trait_land_mine_racks
+
+		position = { x=1 y=0 }
+		relative_position_id = generic_mio_trait_light_flame_projectors
+	}
+
+	add_trait = { 
+		token = FAT_mio_trait_truck_mass_production
+		name = generic_mio_trait_mass_production
+		icon = GFX_generic_mio_department_icon_motorized_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			owner = {
+				has_idea = modern_society
+			}
+		}
+
+		limit_to_equipment_type = {
+			motorized_equipment
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = FAT_mio_trait_repurpose_triangel_factories
+		name = DEN_mio_trait_repurpose_triangel_factories
+		icon = GFX_generic_mio_department_icon_mechanized_production
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = FAT_mio_trait_truck_mass_production
+
+		all_parents = { FAT_mio_trait_truck_mass_production }
+
+		limit_to_equipment_type = {
+			mechanized_equipment
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = FAT_mio_trait_standardized_production_trucks_and_mechs
+		name = generic_mio_initial_trait_standardized_production
+		icon = GFX_generic_mio_department_icon_motorized_mechanized_technology
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = FAT_mio_trait_repurpose_triangel_factories
+
+		all_parents = { FAT_mio_trait_repurpose_triangel_factories }
+		
+		limit_to_equipment_type = {
+			motorized_equipment
+			mechanized_equipment
+		}
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = 0.05
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
+
+FAT_squark_tank_factory_armored_cars_organization = {
+	name = FAT_squark_tank_factory_armored_cars
+	include = generic_armored_car_organization
+	icon = GFX_idea_FAT_squark_tank_factory
+
+	allowed = {
+		has_dlc = "La Resistance"
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = FAT
+			original_tag = FAW
+		}	
+	}
+	available = {
+		owner = {
+			owns_state = 582
+		}
+	}
+}
