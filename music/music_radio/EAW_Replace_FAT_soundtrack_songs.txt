@@ -72,6 +72,70 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "EWA_rep_s7"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s8"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s9"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s10"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s11"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s12"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s13"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "EWA_rep_s14"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
 
 
 
