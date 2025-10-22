@@ -124,8 +124,8 @@ spriteTypes={
 	texturefile="gfx\interface\goals\FAT\泛狮鹫国家框架.png"
 	}
 	SpriteType={
-	name="GFX_goal_FAT_biancuanwenji"
-	texturefile="gfx\interface\goals\FAT\编篡克梅斯凯文集.png"
+		name="GFX_goal_FAT_biancuanwenji"
+		texturefile="gfx\interface\goals\FAT\编篡克梅斯凯文集.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_manyuntebieshi"
