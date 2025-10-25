@@ -1,4 +1,4 @@
-version="v0.1.0"
+version="0.1.0"
 tags={
 	"Alternative History"
 	"Events"
@@ -11,5 +11,6 @@ dependencies={
 	"EaW-CN"
 }
 supported_version="1.16.*"
+picture="thumbnail.png"
 remote_file_id="3470936374"
 
