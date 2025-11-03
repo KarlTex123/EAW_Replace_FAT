@@ -92,6 +92,12 @@ on_actions = {
 			}
 		}
 	}
+	on_monthly_FAT = {
+		effect = {
+			FAT_check_set_buff_factor = yes
+			FAT_set_faction_buff = yes
+		}
+	}
 }
 
 
