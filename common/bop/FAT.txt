@@ -171,7 +171,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = ITA_mussolini_total_control_range
+			id = ITA_mussolini_higher_control_range
 			min = 0.9
 			max = 1
 			modifier = {
@@ -185,6 +185,5 @@ FAT_power_balance = {
 			}
 		}
 	}
-
 }
 

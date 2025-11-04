@@ -862,6 +862,10 @@ country_event = { #总统权力讨论
 
 	option = {
 		name = FAT_FP.11.a
+		
+	}
+	option = {
+		name = FAT_FP.11.b
 	}
 }
 

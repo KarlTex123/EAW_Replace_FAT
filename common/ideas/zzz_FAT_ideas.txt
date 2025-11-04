@@ -1781,6 +1781,30 @@ ideas = {
 		}
 	}
 	country = {
+		FAT_Liberty = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+		}
+	}
+	country = {
 		FAT_Liberty_idea1 = {
 			picture = generic_democratic_drift_bonus
 			allowed = {
