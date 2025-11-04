@@ -86,3 +86,13 @@ REP_FAT_Establish_C_category = { #成立新国家决议组
 		}
 	}
 }
+REP_FAT_political_decision = { #狮鹫共和国政治派别决议
+	icon = x 
+	allowed = {
+		original_tag = FAT   
+	}
+	priority = 10000 
+	visible_when_empty = yes
+	scripted_gui = REP_FAT_political_decision_ui 
+
+}

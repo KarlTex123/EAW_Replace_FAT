@@ -90,4 +90,11 @@ scripted_gui = {
             }
         }
 	}
+	REP_FAT_political_decision_ui = { #狮鹫共和国政治派别决议GUI
+		window_name = "FAT_political_faction"
+        context_type = decision_category
+		triggers = {
+			#123 
+		}
+	}
 }

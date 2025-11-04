@@ -1,4 +1,4 @@
-version="v0.1.0"
+version="0.1.0"
 tags={
 	"Alternative History"
 	"Events"
@@ -10,6 +10,6 @@ dependencies={
 	"Equestria at War"
 	"EaW-CN"
 }
+picture="thumbnail.png"
 supported_version="1.16.*"
 remote_file_id="3470936374"
-

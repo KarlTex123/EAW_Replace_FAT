@@ -1,0 +1,89 @@
+#检查派系所支持的意识形态是否在执政联盟 > 设置倍率
+FAT_check_set_buff_factor = {
+	for_each_loop = {
+		array = FAT_government_union
+		value = ideo
+		if = {
+			limit = {
+				check_variable = {
+					ideo = 1
+				}
+			}
+			set_temp_variable = {
+				support_number = var:party_popularity@democratic
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					ideo = 2
+				}
+			}
+			set_temp_variable = {
+				support_number = var:party_popularity@communism
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					ideo = 3
+				}
+			}
+			set_temp_variable = {
+				support_number = var:party_popularity@fascism
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					ideo = 4
+				}
+			}
+			set_temp_variable = {
+				support_number = var:party_popularity@neutrality
+			}
+		}
+		else = {
+			set_temp_variable = {
+				support_number = 0
+			}
+		}
+		for_each_loop = {
+			array = FAT_faction_ideo
+			value = faction_ideo
+			index = faction
+			if = {
+				limit = {
+					check_variable = {
+						faction_ideo = ideo
+					}
+				}
+				set_variable = {
+					FAT_faction_ideo_buff_factor^faction = support_number
+				}
+			}
+			else = {
+				set_variable = {
+					FAT_faction_ideo_buff_factor^faction = 0
+				}
+			}
+		}
+	}
+}
+FAT_set_faction_buff = {
+	for_each_loop = {
+		array = FAT_faction_ideo_buff
+		index = faction
+		set_variable = {
+			FAT_faction_ideo_buff^faction = FAT_faction_ideo_buff_base^faction
+		}
+		multiply_variable = {
+			FAT_faction_ideo_buff^faction = FAT_faction_ideo_buff_factor^faction
+		}
+	}
+}
+
+
+
+
+

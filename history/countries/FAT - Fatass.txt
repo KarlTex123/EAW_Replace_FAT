@@ -292,3 +292,144 @@ if = {
 		}
 	}
 }
+#政治派系系统
+#意识形态变量，1-谐律，2-共产，3-霸权，4-中立
+#执政联盟
+add_to_array = { #用来保存当前执政联盟的意识形态
+	array = FAT_government_union
+	value = 4
+}
+add_to_array = {
+	array = FAT_government_union
+	value = 1
+}
+add_to_array = {
+	array = FAT_government_union
+	value = 2
+}
+#设立各个派系支持的意识形态
+add_to_array = { #0议会共和
+	array = FAT_faction_ideo
+	value = 1
+}
+add_to_array = { #1军校军官团
+	array = FAT_faction_ideo
+	value = 4
+}
+add_to_array = { #2工会
+	array = FAT_faction_ideo
+	value = 2
+}
+add_to_array = { #3学生团体
+	array = FAT_faction_ideo
+	value = 1
+}
+add_to_array = { #4海外共和之友
+	array = FAT_faction_ideo
+	value = 1
+}
+add_to_array = { #5老共和军
+	array = FAT_faction_ideo
+	value = 4
+}
+add_to_array = { #6商业联合会
+	array = FAT_faction_ideo
+	value = 4
+}
+add_to_array = { #7南方共和党
+	array = FAT_faction_ideo
+	value = 4
+}
+add_to_array = { #8漫云官僚
+	array = FAT_faction_ideo
+	value = 4
+}
+add_to_array = { #9漫云黑爪党网络
+	array = FAT_faction_ideo
+	value = 3
+}
+add_to_array = { #10农会
+	array = FAT_faction_ideo
+	value = 2
+}
+add_to_array = { #11金融集团
+	array = FAT_faction_ideo
+	value = 3
+}
+add_to_array = { #12共和作家联盟
+	array = FAT_faction_ideo
+	value = 0
+}
+add_to_array = { #13克梅斯凯学会
+	array = FAT_faction_ideo
+	value = 4
+}
+add_to_array = { #14小马公民委员会
+	array = FAT_faction_ideo
+	value = 1
+}
+resize_array = { #设置各个派系buff的因数
+	array = FAT_faction_ideo_buff_factor
+	value = 0
+	size = 15
+}
+resize_array = { #设置各个派系buff的数值
+	array = FAT_faction_ideo_buff
+	value = 0
+	size = 15
+}
+resize_array = { #设置各个派系buff的数值基数
+	array = FAT_faction_ideo_buff_base
+	value = 0
+	size = 15
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^0 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^1 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^2 = 0.15
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^3 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^4 = 500
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^5 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^6 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^7 = -0.25
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^8 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^9 = 0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^10 = -0.1
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^11 = 0
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^12 = 0
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^13 = 0
+}
+set_variable = {
+	FAT_faction_ideo_buff_base^14 = 0
+}
+#buff数值= buff基数 * buff因数
+FAT_check_set_buff_factor = yes
+FAT_set_faction_buff = yes
+
+

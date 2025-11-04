@@ -482,7 +482,7 @@ REP_FAT_Establish_C_category = {  #成立狮鹫尼亚合众国
 				}
 			}
 		}
-		complete_effect = {
+		complete_effect = { 
 			every_state = {
 				limit = {
 					is_in_array = {
@@ -492,10 +492,13 @@ REP_FAT_Establish_C_category = {  #成立狮鹫尼亚合众国
 					NOT = {
 						is_core_of = ROOT
 					}
-				}
+				}  
 				add_core_of = root
 			}
 		}
 	}
+}
+REP_FAT_political_decision = { #狮鹫共和国政治派别决议
+  
 }
 
