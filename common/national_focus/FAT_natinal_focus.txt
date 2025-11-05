@@ -77,6 +77,16 @@ focus_tree = {
 			focus = FAT_zongtongyuanshuai
 		}
 		relative_position_id = FAT_zongtongyuanshuai
+
+		completion_reward = {
+			country_event = FAT_FP.17
+			custom_effect_tooltip = FAT_kanluandongyuanfaling_jiesuo
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
+			}
+		}
 	}
 	focus = { #理性化政府
 		id = FAT_lixinghuazhengfu
@@ -224,6 +234,15 @@ focus_tree = {
 			focus = FAT_xunzhengqixian
 		}
 		relative_position_id = FAT_xunzhengqixian
+		completion_reward = {
+			add_ideas = Revolutionary_Terror
+			custom_effect_tooltip = FAT_gemingkongbu_jiesuo
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.05
+				tooltip_side = FAT_democratic_side
+			}
+		}
 	}
 	focus = { #重申领土完整
 		id = FAT_chongshenlingtuwanzheng
@@ -238,6 +257,28 @@ focus_tree = {
 			focus = FAT_xunzhengqixian
 		}
 		relative_position_id = FAT_kanluandongyuanfaling
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.2
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_1
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_1
+					add_idea = FAT_Liberty_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_2
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_2
+					add_idea = FAT_Liberty_4
+				}
+			}
+		}
 	} 
 	focus = { #选举权
 		id = FAT_xuanjuquan

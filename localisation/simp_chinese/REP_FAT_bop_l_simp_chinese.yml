@@ -27,6 +27,8 @@ end_FAT_bop_system: "政治斗争"
 Principal_s_Symposium:"校长座谈会"
 Assign_officers:"安排军官"
 end_FAT_bop_system_t: "若不作出决定，§4谐律派§!将直接取得胜利"
+FAT_kanluandongyuanfaling_jiesuo:"解锁§R民族革命委员会§!  §Y部署军事警察§!"
+FAT_gemingkongbu_jiesuo:"解锁§R共和党中央§!  §Y召开革命法庭§!"
 
  decision_cost_CP_30: "£command_power  §Y30§!"
  decision_cost_CP_30_blocked: "£command_power  §Y30§!"

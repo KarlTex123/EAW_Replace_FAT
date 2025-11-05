@@ -1805,6 +1805,113 @@ ideas = {
 		}
 	}
 	country = {
+		FAT_Liberty_1 = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+			}
+		}
+		FAT_Liberty_3 = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				training_time_army_factor = -0.1
+			}
+		}
+	}
+	country = {
+		FAT_Liberty_2 = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.01
+			}
+		}
+		FAT_Liberty_4 = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.01
+				training_time_army_factor = -0.1
+			}
+		}
+	}
+
+	country = {
 		FAT_Liberty_idea1 = {
 			picture = generic_democratic_drift_bonus
 			allowed = {

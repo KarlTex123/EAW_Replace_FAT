@@ -862,10 +862,27 @@ country_event = { #总统权力讨论
 
 	option = {
 		name = FAT_FP.11.a
-		
+			swap_ideas = {
+				remove_idea = FAT_Liberty
+				add_idea = FAT_Liberty_1
+			}
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.05
+				tooltip_side = FAT_democratic_side
+			}
 	}
 	option = {
 		name = FAT_FP.11.b
+			swap_ideas = {
+				remove_idea = FAT_Liberty
+				add_idea = FAT_Liberty_2
+			}
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
+			}
 	}
 }
 
@@ -879,6 +896,31 @@ country_event = { #训政争论
 
 	option = {
 		name = FAT_FP.12.a
+			add_popularity = {
+				ideology = communism #共产主义
+			    popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism #霸权主义
+			    popularity = 0.05
+			}
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
+			}
+	}
+	option = {
+		name = FAT_FP.12.b
+			add_popularity = {
+				ideology = democratic #谐律主义
+			    popularity = 0.05
+			}		
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.05
+				tooltip_side = FAT_democratic_side
+			}
 	}
 }
 
@@ -931,6 +973,20 @@ country_event = { #克梅斯凯评论狮鹫帝国摄政嘉比蕾拉
 
 	option = {
 		name = FAT_FP.16.a
+	}
+}
+
+country_event = { #签署戡乱动员令
+	id = FAT_FP.17
+	picture = FAT_FP.17.p
+	title = FAT_FP.17.t
+	desc = FAT_FP.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.17.a
+		add_ideas = Proclamation_of_Civil_War_Mobilization
 	}
 }
 

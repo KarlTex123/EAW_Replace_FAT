@@ -1,5 +1,39 @@
 ideas = {
 	country = {
+		Revolutionary_Terror = {
+			picture = MNC_very_bad_luna_oppose_army_idea
+			allowed = {
+				if = {
+					limit = {
+						country_exists = GRI
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+				political_power_gain = 0.01
+				resistance_damage_to_garrison = -0.15
+			}
+		}
+		Proclamation_of_Civil_War_Mobilization = { #戡乱动员法令
+			picture = Proclamation_of_Civil_War_Mobilization
+			allowed = {
+				if = {
+					limit = {
+						country_exists = GRI
+					}
+				}
+			}
+			targeted_modifier = {
+    				tag = GRI   
+    				attack_bonus_against = 0.1
+				}
+			modifier = {
+				conscription = 0.02
+				army_org_factor = 0.05
+			}
+		}
 		FAT_walk_on_cloud_army_school_idea = { #漫云军校
 			picture = FAT_walk_on_cloud_army_school_idea
 			allowed = {
