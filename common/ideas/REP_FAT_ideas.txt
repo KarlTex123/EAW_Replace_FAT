@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		Revolutionary_Terror = {
-			picture = MNC_very_bad_luna_oppose_army_idea
+			picture = Revolutionary_Terror_idea
 			allowed = {
 				if = {
 					limit = {
@@ -14,6 +14,58 @@ ideas = {
 				stability_factor = 0.2
 				political_power_gain = 0.01
 				resistance_damage_to_garrison = -0.15
+			}
+		}
+		Socialist_Constitution = { #社会主义宪法
+			picture = Socialist_Constitution_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.01
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.2
+				communism_acceptance = 70
+			}
+		}
+		The_firm_Free_Republic = { #坚定的自由共和国
+			picture = The_firm_Free_Republic_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.25
+				democratic_drift = 0.01
+				political_power_factor = 0.15
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+		Declaration_of_multi_party_compromise = { #多方妥协的宣告
+			picture = Declaration_of_multi_party_compromise_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				neutrality_drift = 0.01
+				TRADE_OPINION_FACTOR = 0.33
+				research_speed_factor = 0.1
+			}
+		}
+		The_homeland_of_all_griffin_tribes = { #所有狮鹫民族的家园
+			picture = The_homeland_of_all_griffin_tribes_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_acceptance = 70
+				fascism_drift = 0.01
+				conscription = 0.02
+				army_core_attack_factor = 0.1
 			}
 		}
 		Proclamation_of_Civil_War_Mobilization = { #戡乱动员法令

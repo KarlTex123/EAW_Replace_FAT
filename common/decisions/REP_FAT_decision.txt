@@ -84,6 +84,20 @@ FAT_balance_of_power_category = {
 			}
 		}
 	}
+	Supreme_Court_ruling_2 = {#最高法院裁决(zuo)
+		icon = ?
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = 0.1
+				tooltip_side = FAT_democratic_side
+			}
+		}
+	}
 	Deploy_military_police = {#部署军事警察
 		icon = ?
 		fire_only_once = yes
@@ -148,6 +162,20 @@ FAT_balance_of_power_category = {
 			}
 		}
 	}
+	Supreme_Court_ruling_1 = {#最高法院裁决(you)
+		icon = ?
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = 0.1
+				tooltip_side = FAT_nationalism_side
+			}
+		}
+	}
 	Encourage_publicity = { #鼓励宣传
 		icon = ?
 		fire_only_once = yes
@@ -167,6 +195,170 @@ FAT_balance_of_power_category = {
 	}	
 }
 
+REP_FAT_TAKE_NTR = {
+	take_state_NTR_1 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			NOT = {
+				country_exists = NTR
+			}
+			compliance > 60
+		}
+		visible = {
+			controls_state = 677
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			677 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+	take_state_NTR_2 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			NOT = {
+				country_exists = NTR
+			}
+			compliance > 60
+		}
+		visible = {
+			controls_state = 562
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			562 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+	take_state_NTR_3 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			NOT = {
+				country_exists = NTR
+			}
+			compliance > 60
+		}
+		visible = {
+			controls_state = 567
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			567 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+	take_state_NTR_4 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			NOT = {
+				country_exists = NTR
+			}
+			compliance > 60
+		}
+		visible = {
+			controls_state = 563
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			563 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+	take_state_NTR_5 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			NOT = {
+				country_exists = NTR
+			}
+			compliance > 60
+		}
+		visible = {
+			controls_state = 602
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			602 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+	take_state_NTR_6 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			compliance > 60
+			NOT = {
+				country_exists = NTR
+			}
+		}
+		visible = {
+			controls_state = 574
+			compliance > 60
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			574 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+	take_state_NTR_7 = {
+		icon = ?
+		allowed = {
+			compliance > 60
+		}
+		available = {
+			compliance > 60
+			NOT = {
+				country_exists = NTR
+			}
+		}
+		visible = {
+			controls_state = 573
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 10
+		remove_effect = {
+			573 = {
+				add_core_of = FAT
+			}
+		}		
+	}
+}
 FAT_vs_HAU_category = {
 	talk_to_fly_bird_horse = { #游说飞行员
 		icon = ?

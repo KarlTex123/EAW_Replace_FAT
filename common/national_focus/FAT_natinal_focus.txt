@@ -51,6 +51,9 @@ focus_tree = {
 			focus = FAT_minquan
 		}
 		relative_position_id = FAT_minquan
+		completion_reward = {
+			#民族效果追加
+		}
 	}
 	focus = { #总统元帅
 		id = FAT_zongtongyuanshuai
@@ -98,6 +101,9 @@ focus_tree = {
 			focus = FAT_minquan
 		}
 		relative_position_id = FAT_minquan
+		completion_reward = {
+			country_event = FAT_FP.21
+		}
 	}
 	focus = { #民生
 		id = FAT_minsheng
@@ -201,6 +207,9 @@ focus_tree = {
 			focus = FAT_guominzhuquan
 		}
 		relative_position_id = FAT_guominzhuquan
+		completion_reward = {
+			country_event = FAT_FP.18
+		}
 	}
 	focus = { #选举大法官
 		id = FAT_xuanjudafaguan
@@ -212,6 +221,10 @@ focus_tree = {
 			focus = FAT_lixinghuazhengfu
 		}
 		relative_position_id = FAT_lixinghuazhengfu
+
+		completion_reward = {
+			country_event = FAT_FP.22
+		}
 	}
 	focus = { #总理府
 		id = FAT_zonglifu
@@ -290,6 +303,10 @@ focus_tree = {
 			focus = FAT_zhongzuzhengce
 		}
 		relative_position_id = FAT_zhongzuzhengce
+		completion_reward = {
+			add_political_power = 150
+			country_event = FAT_FP.20
+		}
 	}
 	focus = { #坚持立法统一
 		id = FAT_jianchilifatongyi
@@ -304,6 +321,10 @@ focus_tree = {
 			focus = FAT_xuanjudafaguan
 		}
 		relative_position_id = FAT_xuanjudafaguan
+
+		completion_reward = {
+			#待定
+		}
 	}
 	focus = { #监察院
 		id = FAT_jianchayuan
@@ -315,6 +336,10 @@ focus_tree = {
 			focus = FAT_zonglifu
 		}
 		relative_position_id = FAT_zonglifu
+
+		completion_reward = {
+			country_event = FAT_FP.25
+		}
 	}
 	focus = { #狮鹫共和国宪法草案
 		id = FAT_xianfacaoan
@@ -332,6 +357,10 @@ focus_tree = {
 			focus = FAT_chongshenlingtuwanzheng
 		}
 		relative_position_id = FAT_xuanjuquan
+
+		completion_reward = {
+			country_event = FAT_FP.26
+		}
 	}
 	focus = { #泛狮鹫之路
 		id = FAT_fanshijiuzhilu
