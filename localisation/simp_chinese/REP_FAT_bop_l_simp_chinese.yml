@@ -1,20 +1,20 @@
 ﻿l_simp_chinese:
 #权利斗争相关
 FAT_power_balance: "狮鹫尼亚的政治斗争"
-FAT_democratic_side: "§4民族革命同志会§!"
-FAT_nationalism_side: "§R国民共和党中央§!" 
+FAT_democratic_side: "§R国民共和党中央§!"
+FAT_nationalism_side: "§R民族革命同志会§!" 
 
 FAT_balance_range: "势均力敌"
-FAT_democratic_low_control_range: "民族革命同志会略占上风"
-FAT_democratic_medium_control_range: "民族革命同志会广泛影响"
-FAT_democratic_high_control_range: "民族革命同志会颇具影响"
-FAT_democratic_higher_control_range: "民族革命同志会占据主导"
-FAT_democratic_total_control_range: "民族革命同志会派完全胜利"
+FAT_democratic_low_control_range: "国民共和党中央略占上风"
+FAT_democratic_medium_control_range: "国民共和党中央广泛影响"
+FAT_democratic_high_control_range: "国民共和党中央颇具影响"
+FAT_democratic_higher_control_range: "国民共和党中央占据主导"
+FAT_democratic_total_control_range: "国民共和党中央派完全胜利"
 
-ITA_mussolini_low_control_range:"国民共和党中央略占上风"
-ITA_mussolini_medium_control_range:"国民共和党中央广泛影响"
-ITA_mussolini_high_control_range:"国民共和党中央占据主导"
-ITA_mussolini_higher_control_range:"国民共和党中央完全胜利"
+FAT_nationalismc_low_control_range:"民族革命同志会略占上风"
+FAT_nationalism_medium_control_range:"民族革命同志会广泛影响"
+FAT_nationalism_high_control_range:"民族革命同志会占据主导"
+FAT_nationalism_higher_control_range:"民族革命同志会完全胜利"
 
 
 
