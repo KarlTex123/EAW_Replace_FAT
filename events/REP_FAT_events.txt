@@ -868,8 +868,8 @@ country_event = { #总统权力讨论
 			}
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
 			}
 	}
 	option = {
@@ -880,8 +880,8 @@ country_event = { #总统权力讨论
 			}
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = 0.05
-				tooltip_side = FAT_nationalism_side
+				value = -0.05
+				tooltip_side = FAT_democratic_side
 			}
 	}
 }
@@ -906,8 +906,8 @@ country_event = { #训政争论
 			}
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = 0.05
-				tooltip_side = FAT_nationalism_side
+				value = -0.05
+				tooltip_side = FAT_democratic_side
 			}
 	}
 	option = {
@@ -918,8 +918,8 @@ country_event = { #训政争论
 			}		
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
 			}
 	}
 }

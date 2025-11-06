@@ -1,8 +1,8 @@
 
 FAT_power_balance = {
 	initial_value = 0
-	left_side = FAT_democratic_side	
-	right_side = FAT_nationalism_side
+	left_side = FAT_nationalism_side
+	right_side = FAT_democratic_side
 	decision_category = FAT_balance_of_power_category
 
 	### 处于中间值
@@ -23,11 +23,11 @@ FAT_power_balance = {
 
 	### 偏左
 	side = {
-		id = FAT_democratic_side	
-		icon = GFX_bop_FAT_democratic_side
+		id = FAT_nationalism_side	
+		icon = GFX_bop_FAT_nationalism_side
 
 		range = {
-			id = FAT_democratic_low_control_range
+			id = FAT_nationalismc_low_control_range
 			min = -0.3
 			max = -0.1
 			modifier = {
@@ -48,7 +48,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = FAT_democratic_medium_control_range
+			id = FAT_nationalism_medium_control_range
 			min = -0.55
 			max = -0.3
 			modifier = {
@@ -66,7 +66,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = FAT_democratic_high_control_range
+			id = FAT_nationalism_high_control_range
 			min = -0.7
 			max = -0.55
 			modifier = {
@@ -83,7 +83,7 @@ FAT_power_balance = {
 			}
 		}
 		range = {
-			id = FAT_democratic_higher_control_range
+			id = FAT_nationalism_higher_control_range
 			min = -0.9
 			max = -0.7
 			modifier = {
@@ -101,7 +101,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = FAT_democratic_total_control_range
+			id = FAT_nationalism_total_control_range
 			min = -1
 			max = -0.9
 			modifier = {
@@ -112,7 +112,7 @@ FAT_power_balance = {
 			}
 			on_activate = {
 				set_country_flag = sure_FAT_political
-				set_country_flag = FAT_democratic_win
+				set_country_flag = FAT_nationalism_win
 			}
 			on_deactivate = {
 				
@@ -122,11 +122,11 @@ FAT_power_balance = {
 
 	### 偏右
 	side = {
-		id = FAT_nationalism_side
-		icon = GFX_bop_FAT_nationalism_side
+		id = FAT_democratic_side
+		icon = GFX_bop_FAT_democratic_side
 
 		range = {
-			id = ITA_mussolini_low_control_range
+			id = FAT_democratic_side_low_control_range
 			min = 0.1
 			max = 0.3
 			modifier = {
@@ -141,7 +141,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = ITA_mussolini_medium_control_range
+			id = FAT_democratic_side_medium_control_range
 			min = 0.3
 			max = 0.6
 			modifier = {
@@ -156,7 +156,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = ITA_mussolini_high_control_range
+			id = FAT_democratic_side_high_control_range
 			min = 0.6
 			max = 0.9
 			modifier = {
@@ -171,7 +171,7 @@ FAT_power_balance = {
 		}
 
 		range = {
-			id = ITA_mussolini_higher_control_range
+			id = FAT_democratic_side_higher_control_range
 			min = 0.9
 			max = 1
 			modifier = {

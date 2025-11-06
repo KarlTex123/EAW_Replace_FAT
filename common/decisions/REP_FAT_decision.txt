@@ -70,7 +70,7 @@ FAT_balance_of_power_category = {
 			}
 		}
 	}
-	####左###
+	####右###
 	Principal_s_Symposium = { #校长座谈会
 		icon = ?
 		fire_only_once = yes
@@ -79,8 +79,8 @@ FAT_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
 			}
 		}
 	}
@@ -94,7 +94,7 @@ FAT_balance_of_power_category = {
 			add_power_balance_value = {
 				id = FAT_power_balance
 				value = 0.1
-				tooltip_side = FAT_democratic_side
+				tooltip_side = FAT_nationalism_side
 			}
 		}
 	}
@@ -108,8 +108,8 @@ FAT_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
 			}
 		}
 	}
@@ -129,12 +129,12 @@ FAT_balance_of_power_category = {
 			}
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
+				value = 0.05
+				tooltip_side = FAT_nationalism_side
 			}
 		}
 	}
-	###右#####
+	###左#####
 	Hold_a_Republican_Memorial_Week = { #召开共和党纪念周
 		icon = ?
 		fire_only_once = yes
@@ -142,8 +142,8 @@ FAT_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = 0.05
-				tooltip_side = FAT_nationalism_side
+				value = -0.05
+				tooltip_side = FAT_democratic_side
 			}
 		}
 	}	
@@ -157,8 +157,8 @@ FAT_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = 0.05
-				tooltip_side = FAT_nationalism_side
+				value = -0.05
+				tooltip_side = FAT_democratic_side
 			}
 		}
 	}
@@ -172,7 +172,7 @@ FAT_balance_of_power_category = {
 			add_power_balance_value = {
 				id = FAT_power_balance
 				value = 0.1
-				tooltip_side = FAT_nationalism_side
+				tooltip_side = FAT_democratic_side
 			}
 		}
 	}
@@ -182,14 +182,15 @@ FAT_balance_of_power_category = {
 		custom_cost_trigger = {
 			stability_factor > 0.02
 		}
+		
 		custom_cost_text = decision_cost_sta_2
 
 		complete_effect = {
 			add_stability = -0.02
 			add_power_balance_value = {
 				id = FAT_power_balance
-				value = 0.05
-				tooltip_side = FAT_nationalism_side
+				value = -0.05
+				tooltip_side = FAT_democratic_side
 			}
 		}
 	}	
