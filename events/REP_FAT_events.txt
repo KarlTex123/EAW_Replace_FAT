@@ -862,7 +862,25 @@ country_event = { #总统权力讨论
 
 	option = {
 		name = FAT_FP.11.a
-			add_ideas = FAT_Liberty_1 #民权承诺 1
+		if = {
+			limit = {
+				has_idea = FAT_Liberty_7
+			}
+			swap_ideas = {
+				remove_idea = FAT_Liberty_7
+				add_idea = FAT_Liberty_5 #民权承诺 5
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = FAT_Liberty_5
+					has_idea = FAT_Liberty_6
+					has_idea = FAT_Liberty_7
+				}
+			}
+			add_ideas = FAT_Liberty_1 #民权承诺1
+		}
 			add_power_balance_value = {
 				id = FAT_power_balance
 				value = 0.05
@@ -871,7 +889,25 @@ country_event = { #总统权力讨论
 	}
 	option = {
 		name = FAT_FP.11.b
+		if = {
+			limit = {
+				has_idea = FAT_Liberty_7
+			}
+			swap_ideas = {
+				remove_idea = FAT_Liberty_7
+				add_idea = FAT_Liberty_6 #民权承诺 6
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = FAT_Liberty_5
+					has_idea = FAT_Liberty_6
+					has_idea = FAT_Liberty_7
+				}
+			}
 			add_ideas = FAT_Liberty_2 #民权承诺2
+		}
 			add_power_balance_value = {
 				id = FAT_power_balance
 				value = -0.05

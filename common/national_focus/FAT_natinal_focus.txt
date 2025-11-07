@@ -52,7 +52,35 @@ focus_tree = {
 		}
 		relative_position_id = FAT_minquan
 		completion_reward = {
-			#民族效果追加
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_Liberty_1
+						has_idea = FAT_Liberty_2
+						has_idea = FAT_Liberty_3
+						has_idea = FAT_Liberty_4
+					}
+				}
+				add_ideas = FAT_Liberty_7
+			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_1
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_1
+					add_idea = FAT_Liberty_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_2
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_2
+					add_idea = FAT_Liberty_6
+				}
+			}
 		}
 	}
 	focus = { #总统元帅
@@ -299,6 +327,24 @@ focus_tree = {
 					add_idea = FAT_Liberty_4
 				}
 			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_5
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_5
+					add_idea = FAT_Liberty_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_6
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_6
+					add_idea = FAT_Liberty_9
+				}
+			}
 		}
 	} 
 	focus = { #选举权
@@ -372,6 +418,28 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = FAT_FP.26
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_9
+				}
+				swap_ideas = {
+					remove_ideas = FAT_Liberty
+					remove_ideas = the_institute
+					remove_ideas = FAT_Liberty_9
+					remove_ideas = Republican_regime_3
+					add_ideas = FAT_Liberty_10
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_8
+				}
+				remove_ideas = FAT_Liberty
+				remove_ideas = the_institute
+				remove_ideas = FAT_Liberty_8
+				remove_ideas = Republican_regime_3
+				add_ideas = FAT_Liberty_11
+			}
 		}
 	}
 	focus = { #泛狮鹫之路
