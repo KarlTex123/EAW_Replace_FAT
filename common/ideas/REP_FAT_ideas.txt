@@ -16,6 +16,63 @@ ideas = {
 				resistance_damage_to_garrison = -0.15
 			}
 		}
+		the_institute = { #监察院
+			picture = the_institute_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.15
+				intel_network_gain_factor = 0.25
+				LOCAL_INTEL_TO_ENEMIES = -0.25
+			}
+		}		
+		Republican_regime = { #共和政权
+			picture = Republican_regime_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				compliance_growth = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		Republican_regime_2 = { #共和政权
+			picture = Republican_regime_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				political_advisor_cost_factor = -0.1
+				compliance_growth = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		Republican_regime_3 = { #共和政权
+			picture = Republican_regime_idea
+			allowed = {
+				tag = FAT
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				political_advisor_cost_factor = -0.1
+				compliance_growth = 0.1
+				production_speed_buildings_factor = 0.05
+
+				war_stability_factor = 0.4
+				mobilization_laws_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+			}
+		}
 		Socialist_Constitution = { #社会主义宪法
 			picture = Socialist_Constitution_idea
 			allowed = {

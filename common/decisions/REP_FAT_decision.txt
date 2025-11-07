@@ -154,6 +154,7 @@ FAT_balance_of_power_category = {
 		visible = {
 			has_completed_focus = FAT_kanluandongyuanfaling
 		}
+		cost = 30
 		complete_effect = {
 			add_power_balance_value = {
 				id = FAT_power_balance
