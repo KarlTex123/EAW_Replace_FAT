@@ -3,6 +3,7 @@ add_namespace = REP_FAT_history
 add_namespace = FAT_FP
 add_namespace = test_FAT_start
 add_namespace = FAT_alexander_kemerskai_trait
+add_namespace = FAT_DIP_Focus
 news_event = {
 	id = test_FAT_start.1 
 	title = test_FAT_start.1.title 
@@ -1291,4 +1292,107 @@ country_event = {
 		}
 	}
 }
+#外交国策树事件
+country_event = { #共和国公约的宣言
+	id = FAT_DIP_Focus.1
+	picture = FAT_DIP_Focus.1.p
+	title = FAT_DIP_Focus.1.t
+	desc = FAT_DIP_Focus.1.d
 
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.1.a
+	}
+}
+
+country_event = { #赫兹兰的同志
+	id = FAT_DIP_Focus.2
+	picture = FAT_DIP_Focus.2.p
+	title = FAT_DIP_Focus.2.t
+	desc = FAT_DIP_Focus.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.2.a
+	}
+}
+
+country_event = { #将革命带入群山
+	id = FAT_DIP_Focus.3
+	picture = FAT_DIP_Focus.3.p
+	title = FAT_DIP_Focus.3.t
+	desc = FAT_DIP_Focus.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.3.a
+	}
+}
+
+country_event = { #革命将至
+	id = FAT_DIP_Focus.4
+	picture = FAT_DIP_Focus.4.p
+	title = FAT_DIP_Focus.4.t
+	desc = FAT_DIP_Focus.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.4.a
+	}
+}
+
+country_event = { #卡梅莉塔歌后在河间地的巡回演出
+	id = FAT_DIP_Focus.5
+	picture = FAT_DIP_Focus.5.p
+	title = FAT_DIP_Focus.5.t
+	desc = FAT_DIP_Focus.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.5.a
+	}
+}
+
+country_event = { #致韦迪纳帝国政府及诸邦之最后通牒
+	id = FAT_DIP_Focus.6
+	picture = FAT_DIP_Focus.6.p
+	title = FAT_DIP_Focus.6.t
+	desc = FAT_DIP_Focus.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.6.a
+	}
+}
+
+country_event = { #来自狮鹫共和国的最后通牒
+	id = FAT_DIP_Focus.7
+	picture = FAT_DIP_Focus.7.p
+	title = FAT_DIP_Focus.7.t
+	desc = FAT_DIP_Focus.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.7.a
+	}
+}
+
+country_event = { #击碎暴君的皇冠
+	id = FAT_DIP_Focus.8
+	picture = FAT_DIP_Focus.8.p
+	title = FAT_DIP_Focus.8.t
+	desc = FAT_DIP_Focus.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.8.a
+	}
+}

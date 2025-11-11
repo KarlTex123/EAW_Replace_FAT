@@ -41,7 +41,7 @@ focus_tree = {
 			create_faction = FAT_GONGHEGUOGONGYUE
 			add_threat = 5
 			country_event = {
-				id = FAT_FP.7
+				id = FAT_DIP_Focus.1
 			}
 		}
 	}
@@ -60,7 +60,7 @@ focus_tree = {
 			#解锁南方共和党机制
 			add_political_power = 50
 			country_event = {
-				id = FAT_FP.7
+				id = FAT_DIP_Focus.2
 			}
 		}
 
@@ -79,11 +79,11 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = FAT_FP.8
+				id = FAT_DIP_Focus.3
 			}
 			MNC = {
 				country_event = {
-					id = FAT_FP.4
+					id = FAT_DIP_Focus.4
 				}
 			}
 		}
@@ -101,7 +101,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = FAT_FP.7
+				id = FAT_DIP_Focus.5
 			}
 		}
 	}
@@ -117,12 +117,9 @@ focus_tree = {
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
-			country_event = {
-				id = FAT_FP.7
-			}
 			VED = {
 				country_event = {
-					id = FAT_FP.4
+					id = FAT_DIP_Focus.7
 				}
 			}
 		}
@@ -159,6 +156,11 @@ focus_tree = {
 			focus = FAT_XIELVZHIBEI
 		}
 		relative_position_id = FAT_WEIDINAGAIGE
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.8
+			}
+		}
 	}
 	#focus = { #小马大陆的朋友
 	#	id = FAT_XIAOMAPENGYOU
