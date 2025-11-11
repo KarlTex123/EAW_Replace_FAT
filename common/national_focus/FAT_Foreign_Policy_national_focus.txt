@@ -11,16 +11,15 @@ focus_tree = {
 	focus = { #新世界之梦
 		id = FAT_XINSHIJIEZHIEMENG
 		icon = GFX_goal_FAT_XINSHIJIEZHIEMENG
-		cost = 10
+		cost = 2
 		x = 7
 		y = 0
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_political_power = 50
+			add_political_power = 100
 			unlock_decision_category_tooltip = FAT_Foreign_decision_categories
 			set_country_flag = FAT_Foreign_decision_categories
-
 			country_event = {
 				id = FAT_FP.7
 			}
@@ -29,7 +28,7 @@ focus_tree = {
 	focus = { #共和国公约
 		id = FAT_GONGHEGUOGONGYUE
 		icon = GFX_goal_FAT_GONGHEGUOGONGYUE
-		cost = 10
+		cost = 1
 		x = 0
 		y = 1
 		relative_position_id = FAT_XINSHIJIEZHIEMENG
@@ -40,12 +39,16 @@ focus_tree = {
 
 		completion_reward = {
 			create_faction = FAT_GONGHEGUOGONGYUE
+			add_threat = 5
+			country_event = {
+				id = FAT_FP.7
+			}
 		}
 	}
 	focus = { #联络南方共和党
 		id = FAT_LIANLUENANFANG
 		icon = GFX_goal_FAT_LIANLUENANFANG
-		cost = 10
+		cost = 3.5
 		x = 0
 		y = 1
 		prerequisite = {
@@ -54,7 +57,11 @@ focus_tree = {
 		relative_position_id = FAT_GONGHEGUOGONGYUE
 
 		completion_reward = {
-			#机制解锁
+			#解锁南方共和党机制
+			add_political_power = 50
+			country_event = {
+				id = FAT_FP.7
+			}
 		}
 
 		
@@ -62,7 +69,7 @@ focus_tree = {
 	focus = { #击日者的命运
 		id = FAT_JIRIZHEMINGYUN
 		icon = GFX_goal_FAT_JIRIZHEMINGYUN
-		cost = 10
+		cost = 3.5
 		x = 2
 		y = 1
 		prerequisite = {
@@ -74,32 +81,17 @@ focus_tree = {
 			country_event = {
 				id = FAT_FP.8
 			}
-		}
-	}
-	focus = { #小马大陆的朋友
-		id = FAT_XIAOMAPENGYOU
-		icon = GFX_goal_FAT_XIAOMAPENGYOU
-		cost = 10
-		x = -4
-		y = 1
-		prerequisite = {
-			focus = FAT_XINSHIJIEZHIEMENG
-		}
-		relative_position_id = FAT_XINSHIJIEZHIEMENG
-
-		completion_reward = {
-			unlock_decision_tooltip = FAT_YUSIDALINGELEHEZUO
-			unlock_decision_tooltip = FAT_HUIMIANLINGDAOREN
-			unlock_decision_tooltip = FAT_YOUYIXUANYAN
-			set_country_flag = FAT_YUSIDALINGELEHEZUO
-			set_country_flag = FAT_HUIMIANLINGDAOREN
-			set_country_flag = FAT_YOUYIXUANYAN
+			MNC = {
+				country_event = {
+					id = FAT_FP.4
+				}
+			}
 		}
 	}
 	focus = { #河间破冰
 		id = FAT_HEIJIANPOBIN
 		icon = GFX_goal_FAT_HEIJIANPOBIN
-		cost = 10
+		cost = 3.5
 		x = -2
 		y = 1
 		prerequisite = {
@@ -108,13 +100,15 @@ focus_tree = {
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
-			
+			country_event = {
+				id = FAT_FP.7
+			}
 		}
 	}
 	focus = { #韦迪纳的革命
 		id = FAT_WEIDINAGAIGE
 		icon = GFX_goal_FAT_WEIDINAGAIGE
-		cost = 10
+		cost = 3.5
 		x = 0
 		y = 1
 		prerequisite = {
@@ -123,6 +117,9 @@ focus_tree = {
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
+			country_event = {
+				id = FAT_FP.7
+			}
 			VED = {
 				country_event = {
 					id = FAT_FP.4
@@ -133,7 +130,7 @@ focus_tree = {
 	focus = { #协律之北
 		id = FAT_XIELVZHIBEI
 		icon = GFX_goal_FAT_XIELVZHIBEI
-		cost = 10
+		cost = 5
 		x = 0
 		y = 1
 		prerequisite = {
@@ -146,11 +143,16 @@ focus_tree = {
 			focus = FAT_WEIDINAGAIGE
 		}
 		relative_position_id = FAT_WEIDINAGAIGE
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.2
+			add_political_power = 50
+		}
 	}
 	focus = { #击碎皇冠
 		id = FAT_JISUIHUANGGUAN
 		icon = GFX_goal_FAT_JISUIHUANGGUAN
-		cost = 10
+		cost = 7
 		x = 0
 		y = 2
 		prerequisite = {
@@ -158,4 +160,23 @@ focus_tree = {
 		}
 		relative_position_id = FAT_WEIDINAGAIGE
 	}
+	#focus = { #小马大陆的朋友
+	#	id = FAT_XIAOMAPENGYOU
+	#	icon = GFX_goal_FAT_XIAOMAPENGYOU
+	#	cost = 10
+	#	x = -4
+	#	y = 1
+	#	prerequisite = {
+	#		focus = FAT_XINSHIJIEZHIEMENG
+	#	}
+	#	relative_position_id = FAT_XINSHIJIEZHIEMENG
+	#	completion_reward = {
+	#		unlock_decision_tooltip = FAT_YUSIDALINGELEHEZUO
+	#		unlock_decision_tooltip = FAT_HUIMIANLINGDAOREN
+	#		unlock_decision_tooltip = FAT_YOUYIXUANYAN
+	#		set_country_flag = FAT_YUSIDALINGELEHEZUO
+	#		set_country_flag = FAT_HUIMIANLINGDAOREN
+	#		set_country_flag = FAT_YOUYIXUANYAN
+	#	}
+	#}
 }
