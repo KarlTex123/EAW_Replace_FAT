@@ -1304,7 +1304,7 @@ country_event = { #共和国公约的宣言
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.1.a
+		name = FAT_DIP_Focus.1.1
 	}
 }
 
@@ -1317,7 +1317,7 @@ country_event = { #赫兹兰的同志
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.2.a
+		name = FAT_DIP_Focus.2.1
 	}
 }
 
@@ -1330,7 +1330,7 @@ country_event = { #将革命带入群山
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.3.a
+		name = FAT_DIP_Focus.3.1
 	}
 }
 
@@ -1343,7 +1343,10 @@ country_event = { #革命将至
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.4.a
+		name = FAT_DIP_Focus.4.1
+	}
+	option = {
+		name = FAT_DIP_Focus.4.2
 	}
 }
 
@@ -1356,7 +1359,7 @@ country_event = { #卡梅莉塔歌后在河间地的巡回演出
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.5.a
+		name = FAT_DIP_Focus.5.1
 	}
 }
 
@@ -1369,7 +1372,7 @@ country_event = { #致韦迪纳帝国政府及诸邦之最后通牒
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.6.a
+		name = FAT_DIP_Focus.6.1
 	}
 }
 
@@ -1382,7 +1385,10 @@ country_event = { #来自狮鹫共和国的最后通牒
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.7.a
+		name = FAT_DIP_Focus.7.1
+	}
+	option = {
+		name = FAT_DIP_Focus.7.2
 	}
 }
 
@@ -1395,7 +1401,7 @@ country_event = { #击碎暴君的皇冠
 	is_triggered_only = yes
 
 	option = {
-		name = FAT_DIP_Focus.8.a
+		name = FAT_DIP_Focus.8.1
 	}
 }
 

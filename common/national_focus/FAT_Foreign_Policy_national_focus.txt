@@ -14,7 +14,9 @@ focus_tree = {
 		cost = 2
 		x = 7
 		y = 0
-
+		available = {
+			date > 1007.12.31	
+		}
 		completion_reward = {
 			add_war_support = 0.05
 			add_political_power = 100
@@ -156,6 +158,9 @@ focus_tree = {
 			focus = FAT_XIELVZHIBEI
 		}
 		relative_position_id = FAT_WEIDINAGAIGE
+		available = {
+			date > 1010.07.31	
+		}
 		completion_reward = {
 			country_event = {
 				id = FAT_DIP_Focus.8
