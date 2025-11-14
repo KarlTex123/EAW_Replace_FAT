@@ -1,4 +1,86 @@
 spriteTypes={
+	SpriteType = {
+		name = "GFX_goal_FAT_biancuanwenji"
+		texturefile = "gfx/interface/goals/newone/GFX_goal_FAT_biancuanwenji.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_buxuanliuwangyihui"
+		texturefile = "gfx/interface/goals/newone/GFX_goal_FAT_buxuanliuwangyihui.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_AOR_FRA_The_world_and_the_Union"
+		texturefile = "gfx/interface/goals/newone/AOR_FRA_The_world_and_the_Union.png"			
+	}
+
+##########################################
 	SpriteType={
 	name="GFX_goal_FAT_sanshiniangonghemeng"
 	texturefile="gfx\interface\goals\FAT\三十年共和之梦.png"

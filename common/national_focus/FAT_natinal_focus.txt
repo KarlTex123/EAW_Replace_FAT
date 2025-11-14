@@ -579,6 +579,7 @@ focus_tree = {
 		}
 		relative_position_id = FAT_gonghegdiantai
 	}
+	
 	focus = { #漫云特别市
 		id = FAT_manyuntebieshi
         icon = GFX_goal_FAT_manyuntebieshi
