@@ -117,20 +117,17 @@ FAT_the_war_in_the_north = { #北方战争
 			original_tag = FAT
 			original_tag = NTR
 		}
-		has_country_flag = THE_lefts_resovlion
 	}
 	visible = {
 		NTR = {
 			exists = yes
 			is_subject = no
 			has_civil_war = no
-			has_country_flag = THE_lefts_resovlion
 		}
 		FAT = {
 			exists = yes
 			is_subject = no
 			has_civil_war = no
-			has_country_flag = THE_lefts_resovlion
 		}
 	}
 	priority = {

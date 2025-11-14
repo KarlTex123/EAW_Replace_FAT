@@ -4,6 +4,18 @@ spriteTypes = {
 		texturefile = "gfx\interface\ideas\漫云军校.png" 
 	}
 	SpriteType = { 
+		name = "GFX_idea_Revolutionary_Terror"
+		texturefile = "gfx\interface\ideas\Revolutionary_Terror.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_liberty"
+		texturefile = "gfx\interface\ideas\FAT_liberty.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_Proclamation_of_Civil_War_Mobilization"
+		texturefile = "gfx\interface\ideas\Proclamation_of_Civil_War_Mobilization.png" 
+	}
+	SpriteType = { 
 		name = "GFX_idea_Twilight_theory"
 		texturefile = "gfx\interface\ideas\政党联盟.png" 
 	}

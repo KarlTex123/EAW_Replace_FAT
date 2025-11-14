@@ -1045,8 +1045,8 @@ country_event = { #事件：执委会种族问题会议
 	}
 	option = {
 		name = FAT_FP.18.c
-		custom_effect_tooltip = THE_lefts_resovlion_tt
-		set_country_flag = THE_lefts_resovlion
+		unlock_decision_tooltip = FAT_the_war_in_the_north
+		set_country_flag = thr_lefts_solvion
 	}
 }
 

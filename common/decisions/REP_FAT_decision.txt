@@ -739,6 +739,7 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
+
 			NOT = { has_country_flag = FAT_northwar_skirmish_timeout }
 			owns_state = 561
 			FROM = {
@@ -842,6 +843,7 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
+
 			NOT = { has_country_flag = FAT_northwar_skirmish_timeout }
 			owns_state = 677
 			FROM = {
@@ -945,6 +947,7 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
+
 			NOT = { has_country_flag = FAT_northwar_skirmish_2_timeout }
 			owns_state = 601
 			FROM = {
@@ -1048,6 +1051,7 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
+
 			NOT = { has_country_flag = FAT_northwar_skirmish_2_timeout }
 			owns_state = 562
 			FROM = {
