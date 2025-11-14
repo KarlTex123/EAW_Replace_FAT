@@ -1045,6 +1045,8 @@ country_event = { #事件：执委会种族问题会议
 	}
 	option = {
 		name = FAT_FP.18.c
+		custom_effect_tooltip = THE_lefts_resovlion_tt
+		set_country_flag = THE_lefts_resovlion
 	}
 }
 
@@ -1394,5 +1396,88 @@ country_event = { #击碎暴君的皇冠
 
 	option = {
 		name = FAT_DIP_Focus.8.a
+	}
+}
+
+country_event = {
+	id = fat_borderwar.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fat_borderwar.3"}
+	title = fat_borderwar.3.t
+	desc = fat_borderwar.3.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = fat_borderwar.3.a
+		add_political_power = 100
+	}
+}
+
+## attacker ## defeat! ##
+country_event = {
+	id = fat_borderwar.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fat_borderwar.4"}
+	title = fat_borderwar.4.t
+	desc = fat_borderwar.4.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = fat_borderwar.4.a
+		add_stability = -0.05
+		add_political_power = -100
+	}
+}
+
+## defender-attacker ## timeout! ##
+country_event = {
+	id = fat_borderwar.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fat_borderwar.5"}
+	title = fat_borderwar.5.t
+	desc = fat_borderwar.5.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = fat_borderwar.5.a
+		random_list = {
+			50 = {
+				add_political_power = 10
+			}
+			50 = {
+				add_political_power = -10
+			}
+		}
+	}
+}
+
+## defender ## victory! ##
+country_event = {
+	id = fat_borderwar.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fat_borderwar.6"}
+	title = fat_borderwar.6.t
+	desc = fat_borderwar.6.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = fat_borderwar.6.a
+		add_political_power = 50
+	}
+}
+
+## defender ## defeat! ##
+country_event = {
+	id = fat_borderwar.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fat_borderwar.7"}
+	title = fat_borderwar.7.t
+	desc = fat_borderwar.7.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+
+	option = {
+		name = fat_borderwar.7.a
+		add_stability = -0.05
+		add_political_power = -50
 	}
 }

@@ -723,3 +723,417 @@ REP_FAT_political_decision = { #狮鹫共和国政治派别决议
   
 }
 
+FAT_the_war_in_the_north = {
+	FAT_border_skirmish= {
+		icon = rifles
+		allowed = {
+			tag = FAT
+		}
+		targets = { NTR }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				original_tag = NTR
+			}
+		}
+		visible = {
+			has_war = no
+			is_subject = no
+			NOT = { has_country_flag = FAT_northwar_skirmish_timeout }
+			owns_state = 561
+			FROM = {
+				owns_state = 677
+				original_tag = NTR
+				can_have_border_war_with_ROOT = yes
+			}
+			561 = { has_border_war = no }
+			677 = { has_border_war = no }
+		}
+		available = {
+			561 = { has_border_war = no }
+			562 = { has_border_war = no }
+			677 = { has_border_war = no }
+			601 = { has_border_war = no }
+			FROM = {
+				has_civil_war = no
+			}
+		}
+		cost = 50
+
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 150
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 561
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FAT_border_skirmish target: [From.GetName]"
+			hidden_effect = {
+				activate_targeted_decision = {
+					target = ROOT
+					decision = FAT_border_skirmish_timeout
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 561
+					num_provinces = 6
+					on_win = FAT_borderwar.3
+					on_lose = FAT_borderwar.4
+					on_cancel = FAT_borderwar.5
+				}
+
+				defender = {
+					state = 677
+					num_provinces = 5
+					on_win = FAT_borderwar.6
+					on_lose = FAT_borderwar.7
+					on_cancel = FAT_borderwar.5
+				}
+			}
+			set_country_flag = { flag = FAT_northwar_skirmish_timeout value = 1 days = 50 }
+		}
+	}
+	FAT_border_skirmish_timeout = {
+		icon = border_war
+		allowed = { always = no }
+		available = {
+			561 = { has_border_war = no }
+			677 = { has_border_war = no }
+		}
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 561
+				state = 677
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		days_mission_timeout = 30
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout FAT_border_skirmish_timeout"
+			cancel_border_war = {
+				defender = 677
+				attacker = 561
+			}
+		}
+	}
+	NTR_border_skirmish= {
+		icon = rifles
+		allowed = {
+			tag = NTR
+		}
+		targets = { FAT }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				original_tag = FAT
+			}
+		}
+		visible = {
+			has_war = no
+			is_subject = no
+			NOT = { has_country_flag = FAT_northwar_skirmish_timeout }
+			owns_state = 677
+			FROM = {
+				owns_state = 561
+				original_tag = FAT
+				can_have_border_war_with_ROOT = yes
+			}
+			561 = { has_border_war = no }
+			677 = { has_border_war = no }
+		}
+		available = {
+			561 = { has_border_war = no }
+			562 = { has_border_war = no }
+			677 = { has_border_war = no }
+			601 = { has_border_war = no }
+			FROM = {
+				has_civil_war = no
+			}
+		}
+		cost = 50
+
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 150
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 677
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NTR_border_skirmish target: [From.GetName]"
+			hidden_effect = {
+				activate_targeted_decision = {
+					target = ROOT
+					decision = NTR_border_skirmish_timeout
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 677
+					num_provinces = 5
+					on_win = FAT_borderwar.3
+					on_lose = FAT_borderwar.4
+					on_cancel = FAT_borderwar.5
+				}
+
+				defender = {
+					state = 561
+					num_provinces = 6
+					on_win = FAT_borderwar.6
+					on_lose = FAT_borderwar.7
+					on_cancel = FAT_borderwar.5
+				}
+			}
+			set_country_flag = { flag = FAT_northwar_skirmish_timeout value = 1 days = 50 }
+		}
+	}
+	NTR_border_skirmish_timeout = {
+		icon = border_war
+		allowed = { always = no }
+		available = {
+			561 = { has_border_war = no }
+			677 = { has_border_war = no }
+		}
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 561
+				state = 677
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		days_mission_timeout = 30
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout NTR_border_skirmish_timeout"
+			cancel_border_war = {
+				defender = 561
+				attacker = 677
+			}
+		}
+	}
+	FAT_border_skirmish_2= {
+		icon = rifles
+		allowed = {
+			tag = FAT
+		}
+		targets = { NTR }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				original_tag = NTR
+			}
+		}
+		visible = {
+			has_war = no
+			is_subject = no
+			NOT = { has_country_flag = FAT_northwar_skirmish_2_timeout }
+			owns_state = 601
+			FROM = {
+				owns_state = 562
+				original_tag = NTR
+				can_have_border_war_with_ROOT = yes
+			}
+			601 = { has_border_war = no }
+			562 = { has_border_war = no }
+		}
+		available = {
+			561 = { has_border_war = no }
+			562 = { has_border_war = no }
+			677 = { has_border_war = no }
+			601 = { has_border_war = no }
+			FROM = {
+				has_civil_war = no
+			}
+		}
+		cost = 50
+
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 150
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 601
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FAT_border_skirmish_2 target: [From.GetName]"
+			hidden_effect = {
+				activate_targeted_decision = {
+					target = ROOT
+					decision = FAT_border_skirmish_2_timeout
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 601
+					num_provinces = 5
+					on_win = FAT_borderwar.3
+					on_lose = FAT_borderwar.4
+					on_cancel = FAT_borderwar.5
+				}
+
+				defender = {
+					state = 562
+					num_provinces = 5
+					on_win = FAT_borderwar.6
+					on_lose = FAT_borderwar.7
+					on_cancel = FAT_borderwar.5
+				}
+			}
+			set_country_flag = { flag = FAT_northwar_skirmish_2_timeout value = 1 days = 50 }
+		}
+	}
+	FAT_border_skirmish_2_timeout = {
+		icon = border_war
+		allowed = { always = no }
+		available = {
+			601 = { has_border_war = no }
+			562 = { has_border_war = no }
+		}
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 601
+				state = 562
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		days_mission_timeout = 30
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout FAT_border_skirmish_2_timeout"
+			cancel_border_war = {
+				attacker = 601
+				defender = 562
+			}
+		}
+	}
+	NTR_border_skirmish_2= {
+		icon = rifles
+		allowed = {
+			tag = NTR
+		}
+		targets = { FAT }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				original_tag = FAT
+			}
+		}
+		visible = {
+			has_war = no
+			is_subject = no
+			NOT = { has_country_flag = FAT_northwar_skirmish_2_timeout }
+			owns_state = 562
+			FROM = {
+				owns_state = 601
+				original_tag = FAT
+				can_have_border_war_with_ROOT = yes
+			}
+			601 = { has_border_war = no }
+			562 = { has_border_war = no }
+		}
+		available = {
+			561 = { has_border_war = no }
+			562 = { has_border_war = no }
+			677 = { has_border_war = no }
+			601 = { has_border_war = no }
+			FROM = {
+				has_civil_war = no
+			}
+		}
+		cost = 50
+
+		ai_will_do = {
+			factor = 20
+		}
+		days_re_enable = 150
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 562
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NTR_border_skirmish_2 target: [From.GetName]"
+			hidden_effect = {
+				activate_targeted_decision = {
+					target = ROOT
+					decision = NTR_border_skirmish_2_timeout
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 562
+					num_provinces = 5
+					on_win = FAT_borderwar.3
+					on_lose = FAT_borderwar.4
+					on_cancel = FAT_borderwar.5
+				}
+
+				defender = {
+					state = 601
+					num_provinces = 5
+					on_win = FAT_borderwar.6
+					on_lose = FAT_borderwar.7
+					on_cancel = FAT_borderwar.5
+				}
+			}
+			set_country_flag = { flag = FAT_northwar_skirmish_2_timeout value = 1 days = 50 }
+		}
+	}
+	NTR_border_skirmish_2_timeout = {
+		icon = border_war
+		allowed = { always = no }
+		available = {
+			601 = { has_border_war = no }
+			562 = { has_border_war = no }
+		}
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 601
+				state = 562
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		days_mission_timeout = 30
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout NTR_border_skirmish_2_timeout"
+			cancel_border_war = {
+				defender = 601
+				attacker = 562
+			}
+		}
+	}
+}
