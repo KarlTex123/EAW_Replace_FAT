@@ -81,6 +81,24 @@ focus_tree = {
 					add_idea = FAT_Liberty_6
 				}
 			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_3
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_3
+					add_idea = FAT_Liberty_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_Liberty_4
+				}
+				swap_ideas = {
+					remove_idea = FAT_Liberty_4
+					add_idea = FAT_Liberty_9
+				}
+			}
 		}
 	}
 	focus = { #总统元帅
@@ -422,13 +440,11 @@ focus_tree = {
 				limit = {
 					has_idea = FAT_Liberty_9
 				}
-				swap_ideas = {
 					remove_ideas = FAT_Liberty
 					remove_ideas = the_institute
 					remove_ideas = FAT_Liberty_9
 					remove_ideas = Republican_regime_3
 					add_ideas = FAT_Liberty_10
-				}
 			}
 			if = {
 				limit = {
