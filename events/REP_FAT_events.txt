@@ -4,6 +4,8 @@ add_namespace = FAT_FP
 add_namespace = test_FAT_start
 add_namespace = FAT_alexander_kemerskai_trait
 add_namespace = FAT_DIP_Focus
+add_namespace = FAT_VED_REV
+add_namespace = FAT_DIP_News
 news_event = {
 	id = test_FAT_start.1 
 	title = test_FAT_start.1.title 
@@ -1305,6 +1307,21 @@ country_event = { #共和国公约的宣言
 
 	option = {
 		name = FAT_DIP_Focus.1.1
+		news_event = {
+			id = FAT_DIP_News.1
+		}
+	}
+}
+news_event = { #共和国公约的宣言的新闻
+	id = FAT_DIP_News.1
+	picture = FAT_DIP_News.1
+	title = FAT_DIP_News.1.t
+	desc = FAT_DIP_News.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_News.1.1
 	}
 }
 
@@ -1331,6 +1348,11 @@ country_event = { #将革命带入群山
 
 	option = {
 		name = FAT_DIP_Focus.3.1
+		MNC = {
+			country_event = {
+				id = FAT_DIP_Focus.4
+			}
+		}
 	}
 }
 
@@ -1360,6 +1382,21 @@ country_event = { #卡梅莉塔歌后在河间地的巡回演出
 
 	option = {
 		name = FAT_DIP_Focus.5.1
+		news_event = {
+			id = FAT_DIP_News.2
+		}
+	}
+}
+news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
+	id = FAT_DIP_News.2
+	picture = FAT_DIP_News.2
+	title = FAT_DIP_News.2.t
+	desc = FAT_DIP_News.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_News.2.1
 	}
 }
 
@@ -1373,6 +1410,62 @@ country_event = { #致韦迪纳帝国政府及诸邦之最后通牒
 
 	option = {
 		name = FAT_DIP_Focus.6.1
+		VED = {
+			country_event = {
+				id = FAT_DIP_Focus.7
+			}
+		}
+	}
+}
+
+country_event = { #韦迪纳的革命事件链
+	id = FAT_VED_REV.1
+	picture = FAT_VED_REV.1.p
+	title = FAT_VED_REV.1.t
+	desc = FAT_VED_REV.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_VED_REV.1.1
+		FAT = {
+			country_event = {
+				id = FAT_VED_REV.2
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = { #韦迪纳的革命事件链
+	id = FAT_VED_REV.2
+	picture = FAT_VED_REV.2.p
+	title = FAT_VED_REV.2.t
+	desc = FAT_VED_REV.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_VED_REV.2.1
+		FAT = {
+			country_event = {
+				id = FAT_VED_REV.3
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = { #韦迪纳的革命事件链
+	id = FAT_VED_REV.3
+	picture = FAT_VED_REV.3.p
+	title = FAT_VED_REV.3.t
+	desc = FAT_VED_REV.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_VED_REV.3.1
 	}
 }
 
@@ -1402,6 +1495,21 @@ country_event = { #击碎暴君的皇冠
 
 	option = {
 		name = FAT_DIP_Focus.8.1
+		news_event = {
+			id = FAT_DIP_News.3
+		}
+	}
+}
+news_event = { #击碎暴君的皇冠的新闻
+	id = FAT_DIP_News.3
+	picture = FAT_DIP_News.3
+	title = FAT_DIP_News.3.t
+	desc = FAT_DIP_News.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_News.3.1
 	}
 }
 

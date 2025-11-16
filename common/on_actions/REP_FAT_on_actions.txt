@@ -11,7 +11,10 @@ on_actions = {
 					id = FAT_start.8
 					days = 400
 				}
-				
+				country_event = {
+					id = FAT_VED_REV.1
+					days = 500
+				}
 			}
 			every_state = {
 				limit = {
