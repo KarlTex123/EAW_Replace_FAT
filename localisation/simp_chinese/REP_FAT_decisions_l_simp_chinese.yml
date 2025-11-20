@@ -69,7 +69,7 @@ the_setuation_of_the_state_desc_9:0 "帝国最富庶的公国，宪政派运动�
 FAT_democracy_socialist_END: "狮鹫尼亚联盟"
 FAT_democracy_socialist_END_DEF: "狮鹫尼亚联盟"
 
-REP_FAT_political_decision: "共和国政治派系"
+REP_FAT_political_decision: "共和国派系政治"
 REP_FAT_political_decision_desc: "由于共和党长达30年的斗争历史与数次转型，党内不可避免的存在许多派系，这些派系代表着背后的社会力量，对政治局势发挥着重要作用。"
 faction_yihui_gonghe: "§Y议会共和派§!\n该派别对国家的影响为：§R无影响§!"
 faction_yihui_gonghe_desc: "这里是派别介绍~"
