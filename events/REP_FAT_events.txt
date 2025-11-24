@@ -1366,9 +1366,31 @@ country_event = { #革命将至
 
 	option = {
 		name = FAT_DIP_Focus.4.1
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}
+		FAT = {
+			country_event = {
+				id = FAT_DIP_Focus.9
+			}
+		}
+		}
+		ai_chance = {
+			base = 90
+		}
 	}
 	option = {
 		name = FAT_DIP_Focus.4.2
+		FAT = {
+			country_event = {
+				id = FAT_DIP_Focus.10
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
 	}
 }
 
@@ -1479,9 +1501,25 @@ country_event = { #来自狮鹫共和国的最后通牒
 
 	option = {
 		name = FAT_DIP_Focus.7.1
+		FAT = {
+			country_event = {
+				id = FAT_DIP_Focus.11
+			}
+		}
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = {
 		name = FAT_DIP_Focus.7.2
+		FAT = {
+			country_event = {
+				id = FAT_DIP_Focus.12
+			}
+		}
+		ai_chance = {
+			base = 95
+		}
 	}
 }
 
@@ -1510,6 +1548,74 @@ news_event = { #击碎暴君的皇冠的新闻
 
 	option = {
 		name = FAT_DIP_News.3.1
+	}
+}
+
+country_event = { #击日者选项1
+	id = FAT_DIP_Focus.9
+	picture = FAT_DIP_Focus.9.p
+	title = FAT_DIP_Focus.9.t
+	desc = FAT_DIP_Focus.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.9.1
+		annex_country = { 
+		    target = MNC 
+		    transfer_troops = yes 
+		}
+	}
+}
+
+country_event = { #击日者选项2
+	id = FAT_DIP_Focus.10
+	picture = FAT_DIP_Focus.10.p
+	title = FAT_DIP_Focus.10.t
+	desc = FAT_DIP_Focus.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.10.1
+		declare_war_on = { 
+    		target = MNC 
+    		type = annex_everything 
+		}
+	}
+}
+
+country_event = { #维迪纳选项1
+	id = FAT_DIP_Focus.11
+	picture = FAT_DIP_Focus.11.p
+	title = FAT_DIP_Focus.11.t
+	desc = FAT_DIP_Focus.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.11.1
+		annex_country = { 
+		    target = VED 
+		    transfer_troops = yes 
+		}
+	}
+}
+
+country_event = { #维迪纳选项2
+	id = FAT_DIP_Focus.12
+	picture = FAT_DIP_Focus.12.p
+	title = FAT_DIP_Focus.12.t
+	desc = FAT_DIP_Focus.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.12.1
+		declare_war_on = { 
+    		target = VED 
+    		type = annex_everything 
+		}
 	}
 }
 
