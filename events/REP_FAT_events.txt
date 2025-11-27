@@ -1232,6 +1232,77 @@ country_event = { #任命新总理？
 	}
 }
 
+country_event = { #军队的现状
+	id = FAT_FP.28
+	picture = FAT_FP.28.p
+	title = FAT_FP.28.t
+	desc = FAT_FP.28.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.28.a
+	}
+}
+country_event = { #国民革命军的未来
+	id = FAT_FP.29
+	picture = FAT_FP.29.p
+	title = FAT_FP.29.t
+	desc = FAT_FP.29.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.29.a
+		set_country_flag = route_artillery
+	}
+	option = {
+		name = FAT_FP.29.b
+		set_country_flag = route_tank
+	}
+}
+
+country_event = { #新时代的骑士
+	id = FAT_FP.30
+	picture = FAT_FP.30.p
+	title = FAT_FP.30.t
+	desc = FAT_FP.30.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.30.a
+	}
+}
+
+country_event = { #装甲的主攻方向
+	id = FAT_FP.31
+	picture = FAT_FP.31.p
+	title = FAT_FP.31.t
+	desc = FAT_FP.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.31.a
+		custom_effect_tooltip = FAT_complete_armored_support_vehicle
+		hidden_effect = {
+			complete_special_project = {
+				project = sp:sp_land_military_engineering_vehicles
+			}
+		}		
+	}
+	option = {
+		name = FAT_FP.31.b
+		custom_effect_tooltip = FAT_complete_tank
+		hidden_effect = {
+			complete_special_project = {
+				project = sp:sp_land_flamethrower_tank
+			}
+		}
+	}
+}
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes

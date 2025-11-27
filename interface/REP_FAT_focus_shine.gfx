@@ -61,12 +61,13 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+#############################################################################
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_National_Revolutionary_Army_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_National_Revolutionary_Army.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_National_Revolutionary_Army.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79,7 +80,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_National_Revolutionary_Army.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -93,11 +94,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Expand_the_Manyun_Military_Academy_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Expand_the_Manyun_Military_Academy.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Expand_the_Manyun_Military_Academy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -110,7 +111,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Expand_the_Manyun_Military_Academy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -124,11 +125,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_The_establishment_of_the_General_Staff_Headquarters_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -141,7 +142,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -155,11 +156,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_The_Advantage_of_Artillery_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Advantage_of_Artillery.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Advantage_of_Artillery.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -172,7 +173,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Advantage_of_Artillery.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -186,11 +187,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Precise_fire_control_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Precise_fire_control.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Precise_fire_control.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -203,7 +204,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Precise_fire_control.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -217,11 +218,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Establish_a_rapid_collaborative_force_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Establish_a_rapid_collaborative_force.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Establish_a_rapid_collaborative_force.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -234,7 +235,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Establish_a_rapid_collaborative_force.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -248,11 +249,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Emphasize_artillery_technology_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Emphasize_artillery_technology.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Emphasize_artillery_technology.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -265,7 +266,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Emphasize_artillery_technology.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -279,11 +280,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Kemeskey_s_artillery_theory_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Kemeskey_s_artillery_theory.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Kemeskey_s_artillery_theory.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -296,7 +297,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Kemeskey_s_artillery_theory.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -310,11 +311,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_The_Harmonic_Crusade_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Harmonic_Crusade.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Harmonic_Crusade.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -327,7 +328,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Harmonic_Crusade.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -341,11 +342,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_The_Might_of_the_Tank_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Might_of_the_Tank.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Might_of_the_Tank.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -358,7 +359,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Might_of_the_Tank.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -372,11 +373,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Establish_a_new_type_of_armored_unit_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Establish_a_new_type_of_armored_unit.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Establish_a_new_type_of_armored_unit.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -389,7 +390,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Establish_a_new_type_of_armored_unit.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -403,11 +404,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Emphasize_armored_technology_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Emphasize_armored_technology.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Emphasize_armored_technology.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -420,7 +421,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Emphasize_armored_technology.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -434,11 +435,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_Learning_from_stalliongrad_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_Learning_from_stalliongrad.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Learning_from_stalliongrad.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -451,7 +452,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_Learning_from_stalliongrad.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -465,11 +466,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_suntail_s_Armor_Theory_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_suntail_s_Armor_Theory.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_suntail_s_Armor_Theory.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -482,7 +483,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_suntail_s_Armor_Theory.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -496,11 +497,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX__shine"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		name = "GFX_FAT_The_Harmonic_Crusade_1_shine"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Harmonic_Crusade_1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Harmonic_Crusade_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -513,7 +514,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"
+			animationmaskfile = "gfx/interface/goals/FAT_The_Harmonic_Crusade_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

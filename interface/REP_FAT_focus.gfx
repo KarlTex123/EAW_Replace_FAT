@@ -1,4 +1,71 @@
 spriteTypes={
+
+	####################################军事线########################################################
+
+	SpriteType = {
+		name = "GFX_goal_FAT_National_Revolutionary_Army"
+		texturefile = "gfx/interface/goals/newone/FAT_National_Revolutionary_Army.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Expand_the_Manyun_Military_Academy"
+		texturefile = "gfx/interface/goals/newone/FAT_Expand_the_Manyun_Military_Academy.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_The_establishment_of_the_General_Staff_Headquarters"
+		texturefile = "gfx/interface/goals/newone/FAT_The_establishment_of_the_General_Staff_Headquarters.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_The_Advantage_of_Artillery"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Advantage_of_Artillery.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Precise_fire_control"
+		texturefile = "gfx/interface/goals/newone/FAT_Precise_fire_control.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Establish_a_rapid_collaborative_force"
+		texturefile = "gfx/interface/goals/newone/FAT_Establish_a_rapid_collaborative_force.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Emphasize_artillery_technology"
+		texturefile = "gfx/interface/goals/newone/FAT_Emphasize_artillery_technology.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Kemeskey_s_artillery_theory"
+		texturefile = "gfx/interface/goals/newone/FAT_Kemeskey_s_artillery_theory.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_The_Harmonic_Crusade"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Harmonic_Crusade.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_The_Might_of_the_Tank"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Might_of_the_Tank.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Establish_a_new_type_of_armored_unit"
+		texturefile = "gfx/interface/goals/newone/FAT_Establish_a_new_type_of_armored_unit.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Emphasize_armored_technology"
+		texturefile = "gfx/interface/goals/newone/FAT_Emphasize_armored_technology.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_Learning_from_stalliongrad"
+		texturefile = "gfx/interface/goals/newone/FAT_Learning_from_stalliongrad.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_suntail_s_Armor_Theory"
+		texturefile = "gfx/interface/goals/newone/FAT_suntail_s_Armor_Theory.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_The_Harmonic_Crusade_1"
+		texturefile = "gfx/interface/goals/newone/FAT_The_Harmonic_Crusade_1.png"			
+	}
+
+
+	#######################################################################################################
+
 	SpriteType = {
 		name = "GFX_goal_FAT_biancuanwenji"
 		texturefile = "gfx/interface/goals/newone/GFX_goal_FAT_biancuanwenji.png"			

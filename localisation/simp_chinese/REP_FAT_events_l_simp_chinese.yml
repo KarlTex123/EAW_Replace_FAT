@@ -172,6 +172,26 @@ FAT_FP.27.a:0"选择翔日作为总理"
 FAT_FP.27.b:0"选择金羽作为总理"
 FAT_FP.27.c:0"选择翼展作为总理"
 
+FAT_FP.28.t:0"军队的现状"
+FAT_FP.28.d:0""
+FAT_FP.28.a:0""
+
+FAT_FP.29.t:0"国民革命军的未来"
+FAT_FP.29.d:0""
+FAT_FP.29.a:0"选项1"
+FAT_FP.29.b:0"选项2"
+
+FAT_FP.30.t:0"新时代的骑士"
+FAT_FP.30.d:0""
+FAT_FP.30.a:0""
+
+FAT_FP.31.t:0"装甲的主攻方向"
+FAT_FP.31.d:0""
+FAT_FP.31.a:0"选项1"
+FAT_FP.31.b:0"选项2"
+FAT_complete_armored_support_vehicle:0 "§Y直接完成装甲支援车§!"
+FAT_complete_tank:0 "§Y直接完成先进喷火坦克§!"
+
 FAT_DIP_Focus.1.t:0"共和国公约的宣言"
 FAT_DIP_Focus.1.d:0"芝士文本"
 FAT_DIP_Focus.1.1:0"芝士选项"

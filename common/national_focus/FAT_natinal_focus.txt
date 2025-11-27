@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	continuous_focus_position = {
 		x = 1000
-		y = 1200
+		y = 3000
 	}
 	focus = { #三十年共和之梦
 		id = FAT_sanshiniangonghemeng
@@ -1040,4 +1040,566 @@ focus_tree = {
 			focus = FAT_heweimishengzhuyi
 		}
 	}
+	#########################军事线###################
+	focus = {
+		id = FAT_National_Revolutionary_Army #国民革命军
+		icon = GFX_goal_FAT_National_Revolutionary_Army
+		cost = 2
+		x = 6
+		y = 9
+		completion_reward = {
+			country_event = FAT_FP.28
+			add_ideas = FAT_National_Revolutionary_Army_1
+			army_experience = 50
+			add_command_power = 30
+		}
+	}
+	focus = {
+		id = FAT_Expand_the_Manyun_Military_Academy #拓展漫云军校
+		icon = GFX_goal_FAT_Expand_the_Manyun_Military_Academy
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_National_Revolutionary_Army
+		}
+
+		relative_position_id = FAT_National_Revolutionary_Army
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_walk_on_cloud_army_school_idea
+				add_idea = FAT_walk_on_cloud_army_school_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = FAT_The_establishment_of_the_General_Staff_Headquarters #参谋总部的建立
+		icon = GFX_goal_FAT_The_establishment_of_the_General_Staff_Headquarters
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_Expand_the_Manyun_Military_Academy
+		}
+
+		relative_position_id = FAT_Expand_the_Manyun_Military_Academy
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+			country_event = FAT_FP.29
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FAT_The_Advantage_of_Artillery #火炮之利
+		icon = GFX_goal_FAT_The_Advantage_of_Artillery
+		cost = 3
+
+		available = {
+			has_country_flag = route_artillery
+		}
+
+		mutually_exclusive = {
+			focus = FAT_The_Might_of_the_Tank
+		}		
+
+		prerequisite = {
+			focus = FAT_The_establishment_of_the_General_Staff_Headquarters
+		}
+
+		relative_position_id = FAT_The_establishment_of_the_General_Staff_Headquarters
+
+		X = -3
+		Y = 1
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = artillery_equipment
+    			amount = 200
+    			producer = FAT
+			}
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_1
+				add_idea = FAT_National_Revolutionary_Army_3
+			}
+			add_mastery_bonus = {
+				name = JUNO_invite_american_army_advisors
+				bonus = 0.2
+				days = 400
+				track = combat_support
+			}
+		}
+	}
+
+	focus = {
+		id = FAT_Precise_fire_control #精准火控
+		icon = GFX_goal_FAT_Precise_fire_control
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+
+		relative_position_id = FAT_The_Advantage_of_Artillery
+
+		X = -2
+		Y = 1
+
+		completion_reward = {
+			mio:FAT_broby_armaments_organization = {
+				add_mio_funds = 500
+				add_mio_funds_gain_factor = 0.15
+				add_mio_research_bonus = 0.05
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_5
+						has_idea = FAT_National_Revolutionary_Army_6
+						has_idea = FAT_National_Revolutionary_Army_9
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_3
+					add_idea = FAT_National_Revolutionary_Army_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_5
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_5
+					add_idea = FAT_National_Revolutionary_Army_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_6
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_6
+					add_idea = FAT_National_Revolutionary_Army_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_9
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_9
+					add_idea = FAT_National_Revolutionary_Army_10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FAT_Establish_a_rapid_collaborative_force #建立快速协同部队
+		icon = GFX_goal_FAT_Establish_a_rapid_collaborative_force
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+
+		relative_position_id = FAT_The_Advantage_of_Artillery
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_tech
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_4
+						has_idea = FAT_National_Revolutionary_Army_6
+						has_idea = FAT_National_Revolutionary_Army_8
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_3
+					add_idea = FAT_National_Revolutionary_Army_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_4
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_4
+					add_idea = FAT_National_Revolutionary_Army_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_6
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_6
+					add_idea = FAT_National_Revolutionary_Army_9
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_8
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_8
+					add_idea = FAT_National_Revolutionary_Army_10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FAT_Emphasize_artillery_technology #重视火炮科技
+		icon = GFX_goal_FAT_Emphasize_artillery_technology
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+
+		relative_position_id = FAT_The_Advantage_of_Artillery
+
+		X = 2
+		Y = 1
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = artillery_equipment
+    			amount = 200
+    			producer = FAT
+			}
+			add_tech_bonus = {
+				bonus = 0.750 #研究加成100%
+				ahead_reduction = 2 #超前研究2年
+				uses = 2
+				category = artillery 
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_4
+						has_idea = FAT_National_Revolutionary_Army_5
+						has_idea = FAT_National_Revolutionary_Army_7
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_3
+					add_idea = FAT_National_Revolutionary_Army_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_4
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_4
+					add_idea = FAT_National_Revolutionary_Army_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_5
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_5
+					add_idea = FAT_National_Revolutionary_Army_9
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_7
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_7
+					add_idea = FAT_National_Revolutionary_Army_10
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_Kemeskey_s_artillery_theory #克梅斯凯的火炮理论
+		icon = GFX_goal_FAT_Kemeskey_s_artillery_theory
+		cost = 5
+
+		prerequisite = {focus = FAT_Emphasize_artillery_technology}
+		prerequisite = {focus = FAT_Establish_a_rapid_collaborative_force}
+		prerequisite = {focus = FAT_Precise_fire_control}
+
+		relative_position_id = FAT_The_Advantage_of_Artillery
+
+		X = 0
+		Y = 2
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = motorized_equipment
+    			amount = 300
+    			producer = FAT
+			}
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_10
+				add_idea = FAT_National_Revolutionary_Army_11
+			}			
+		}
+	}
+	focus = {
+		id = FAT_The_Harmonic_Crusade #谐律十字军
+		icon = GFX_goal_FAT_The_Harmonic_Crusade
+		cost = 5
+
+		prerequisite = {
+			focus = FAT_Kemeskey_s_artillery_theory
+		}
+
+		relative_position_id = FAT_The_Advantage_of_Artillery
+
+		X = 0
+		Y = 3
+
+		completion_reward = {
+			add_war_support = 0.1
+			country_event = FAT_FP.30
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					The_Harmonic_Crusade = 1
+				}
+			}
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_11
+				add_idea = FAT_National_Revolutionary_Army_12
+			}		
+		}
+	}
+	########################右#####################
+
+	focus = {
+		id = FAT_The_Might_of_the_Tank #坦克之威
+		icon = GFX_goal_FAT_The_Might_of_the_Tank
+		cost = 3
+
+		available = {
+			has_country_flag = route_tank
+		}
+
+		mutually_exclusive = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+
+		prerequisite = {
+			focus = FAT_The_establishment_of_the_General_Staff_Headquarters
+		}
+
+		relative_position_id = FAT_The_establishment_of_the_General_Staff_Headquarters
+
+		X = 3
+		Y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5 #研究加成100%
+				ahead_reduction = 1 #超前研究1年
+				uses = 1
+				category = artillery
+			}
+			army_experience = 30			
+		}
+	}
+
+
+	focus = {
+		id = FAT_Establish_a_new_type_of_armored_unit #组建新式装甲部队
+		icon = GFX_goal_FAT_Establish_a_new_type_of_armored_unit
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+
+		relative_position_id = FAT_The_Might_of_the_Tank
+
+		X = -2
+		Y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1 #研究加成100%
+				uses = 1
+				category = armor 				
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_14
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_1
+					add_idea = FAT_National_Revolutionary_Army_13
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_14
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_14
+					add_idea = FAT_National_Revolutionary_Army_15
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_Emphasize_armored_technology #重视装甲科技
+		icon = GFX_goal_FAT_Emphasize_armored_technology
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+
+		relative_position_id = FAT_The_Might_of_the_Tank
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+			army_experience = 30
+			country_event = FAT_FP.31 
+			add_mastery_bonus = {
+				bonus = 0.2
+				days = 180
+				track = armor
+			}
+			add_mastery = {
+				amount = 50
+				track = armor
+			}
+		}
+	}
+	focus = {
+		id = FAT_Learning_from_stalliongrad #学习嘶大林格勒
+		icon = GFX_goal_FAT_Learning_from_stalliongrad
+		cost = 3
+
+		prerequisite = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+
+		relative_position_id = FAT_The_Might_of_the_Tank
+
+		X = 2
+		Y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1 #研究加成100%
+				uses = 1
+				category = armor 				
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_13
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_1
+					add_idea = FAT_National_Revolutionary_Army_14
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_13
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_13
+					add_idea = FAT_National_Revolutionary_Army_15
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_suntail_s_Armor_Theory #曜尾的装甲理论
+		icon = GFX_goal_FAT_suntail_s_Armor_Theory
+		cost = 5
+
+		prerequisite = {focus = FAT_Establish_a_new_type_of_armored_unit}
+		prerequisite = {focus = FAT_Emphasize_armored_technology}
+		prerequisite = {focus = FAT_Learning_from_stalliongrad}
+
+		relative_position_id = FAT_The_Might_of_the_Tank
+
+		X = 0
+		Y = 2
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_15
+				add_idea = FAT_National_Revolutionary_Army_16
+			}		
+			mio:FAT_cockade_factory_organization = {
+				add_mio_funds =  500
+			}	
+			mio:FAT_ring_motors_organization = {
+				add_mio_funds = 500
+			}
+			mio:FAT_squark_tank_factory_organization = {
+				add_mio_funds = 500
+			}
+			mio:SRS_punch_a_hole_organization = {
+				add_mio_funds = 500
+			}
+		}
+	}
+	focus = {
+		id = FAT_The_Harmonic_Crusade_1 #谐律十字军
+		icon = GFX_goal_FAT_The_Harmonic_Crusade_1
+		cost = 5
+
+		prerequisite = {
+			focus = FAT_suntail_s_Armor_Theory
+		}
+
+		relative_position_id = FAT_The_Might_of_the_Tank
+
+		X = 0
+		Y = 3
+
+		completion_reward = {
+                add_equipment_bonus = {
+                    bonus = {
+                        armor = { #Valid for BBA and not BBA
+                            armor_value = 0.1 # HP = BASE_TRAIN_HP + armor_value
+                            instant = yes
+                        }
+                    }
+                }
+			add_war_support = 0.1
+			country_event = FAT_FP.30
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_16
+				add_idea = FAT_National_Revolutionary_Army_17
+			}			
+		}
+	}
 }
+
