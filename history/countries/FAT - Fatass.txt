@@ -1,5 +1,5 @@
 ﻿capital = 485 #### The Griffon Republic
-oob = "FAT_1007"
+oob = "EAW_REP_FAT_1007"
 set_research_slots = 3
 
 ##修改新增↓

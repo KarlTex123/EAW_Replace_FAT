@@ -1,0 +1,222 @@
+﻿division_template = {
+	name = "国民革命军主力师"			#Infantry Division - kek
+	division_names_group = FAT_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "国民革命军普通师团"			#Gotta go fast
+	division_names_group = FAT_MOT_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "国民革命军新兵师"
+	division_names_group = FAT_GAR_01
+	priority = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	#######主力师#############
+	division = {
+		name = "国民革命军主力师第一师"
+		location = 7146
+		division_template = "国民革命军主力师"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "国民革命军主力师第二师"
+		location = 7146
+		division_template = "国民革命军主力师"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "国民革命军主力师第三师"
+		location = 6029
+		division_template = "国民革命军主力师"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+	###########普通师#################
+	division = {
+		name = "国民革命军普通师团第一师"
+		location = 4563
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5 
+	}
+	division = {
+		name = "国民革命军普通师团第二师"
+		location = 4563
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.48 }
+	division = {
+		name = "国民革命军普通师团第三师"
+		location = 10605
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.48 }
+	division = {
+		name = "国民革命军普通师团第四师"
+		location = 12366
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.47 }
+	division = {
+		name = "国民革命军普通师团第五师"
+		location = 12676
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.53 }
+	division = {
+		name = "国民革命军普通师团第六师"
+		location = 4255
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.52 }
+	division = {
+		name = "国民革命军普通师团第七师"
+		location = 4255
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5 }
+	division = {
+		name = "国民革命军普通师团第八师"
+		location = 6029
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5 }
+	division = {
+		name = "国民革命军普通师团第九师"
+		location = 7146
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.5 }
+	division = {
+		name = "国民革命军普通师团第十师"
+		location = 7146
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.19
+		start_equipment_factor = 0.51 }
+	division = {
+		name = "国民革命军普通师团第十一师"
+		location = 4255
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.49 }
+	division = {
+		name = "国民革命军普通师团第十二师"
+		location = 7146
+		division_template = "国民革命军普通师团"
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.51
+	}
+	##########新兵师团####################
+	division = {
+		name = "国民革命军新兵师第一师"
+		location = 6029
+		division_template = "国民革命军新兵师"
+		start_experience_factor = 0
+		start_equipment_factor = 0.65 
+	}
+	division = {
+		name = "国民革命军新兵师第二师"
+		location = 6029
+		division_template = "国民革命军新兵师"
+		start_experience_factor = 0
+		start_equipment_factor = 0.67 
+	}
+	division = {
+		name = "国民革命军新兵师第三师"
+		location = 1581
+		division_template = "国民革命军新兵师"
+		start_experience_factor = 0
+		start_equipment_factor = 0.7 
+	}
+	division = {
+		name = "国民革命军新兵师第四师"
+		location = 4862
+		division_template = "国民革命军新兵师"
+		start_experience_factor = 0
+		start_equipment_factor = 0.69
+	}
+	division = {
+		name = "国民革命军新兵师第五师"
+		location = 1601
+		division_template = "国民革命军新兵师"
+		start_experience_factor = 0
+		start_equipment_factor = 0.67
+	}
+	division = {
+		name = "国民革命军新兵师第六师"
+		location = 1601
+		division_template = "国民革命军新兵师"
+		start_experience_factor = 0
+		start_equipment_factor = 0.65
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "FAT"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+		industrial_manufacturer = mio:FAT_cloudbury_arsenal_company_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 35
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 40
+		industrial_manufacturer = mio:FAT_broby_armaments_organization
+	}
+}
