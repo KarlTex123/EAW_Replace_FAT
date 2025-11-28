@@ -34,8 +34,10 @@ country_event = { #开局政局介绍
 	}
 	option = {
 		name = FAT_start.1.2
+		hidden_effect = {
+            country_lock_all_division_template = no			
+		}
 	}
-
 }
 country_event = { #政党信息
 	id = FAT_start.101
