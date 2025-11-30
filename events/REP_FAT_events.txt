@@ -1442,16 +1442,16 @@ country_event = { #革命将至
 
 	option = {
 		name = FAT_DIP_Focus.4.1
-		trigger = {
-			OR = {
-				has_government = communism
-				has_government = democratic
-			}
 		FAT = {
 			country_event = {
 				id = FAT_DIP_Focus.9
 			}
 		}
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}
 		}
 		ai_chance = {
 			base = 90
@@ -1564,6 +1564,9 @@ country_event = { #韦迪纳的革命事件链
 
 	option = {
 		name = FAT_VED_REV.3.1
+		FAT = {
+			set_country_flag = FAT_DIP_ITSTIME
+		}
 	}
 }
 
@@ -1611,6 +1614,20 @@ country_event = { #击碎暴君的皇冠
 		name = FAT_DIP_Focus.8.1
 		news_event = {
 			id = FAT_DIP_News.3
+		}
+		FAT = {
+			set_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
+		}
+		every_country = {
+			limit = {
+			    is_in_faction_with = GRI
+			}
+        	FAT = {
+            	declare_war_on = {
+            	    target = PREV
+            	    type = annex_everything
+            	}
+        	}
 		}
 	}
 }

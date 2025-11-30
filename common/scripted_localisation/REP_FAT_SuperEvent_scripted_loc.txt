@@ -26,6 +26,33 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SuperEvent_text_t
+	text = {
+		trigger = {
+			has_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
+		}
+		localization_key = FAT_JISUIHUANGGUAN_SuperEvent_text_t
+	}
+}
+defined_text = {
+	name = SuperEvent_title_t
+	text = {
+		trigger = {
+			has_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
+		}
+		localization_key = FAT_JISUIHUANGGUAN_SuperEvent_title_t
+	}
+}
+defined_text = {
+	name = SuperEvent_close_t
+	text = {
+		trigger = {
+			has_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
+		}
+		localization_key = FAT_JISUIHUANGGUAN_SuperEvent_close_t
+	}
+}
+defined_text = {
 	name = SuperEvent_background_picture
 	text = {
 		trigger = {

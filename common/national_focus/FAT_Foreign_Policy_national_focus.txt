@@ -94,11 +94,36 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_LIANLUENANFANG
 		}
+		available = {
+			RCT = {
+				is_faction_leader = yes
+				OR = {
+					has_country_leader = {
+						ruling_only = yes
+						character = RCT_river_swirl
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = RCT_nova_whirl
+					}
+				}
+			}
+		}
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
 			country_event = {
 				id = FAT_DIP_Focus.5
+			}
+			every_country = {
+			    limit = {
+			        is_in_faction_with = RCT
+			    }
+			    diplomatic_relation = {
+    			    country = FAT
+    			    relation = non_aggression_pact
+    			    active = yes
+			    }
 			}
 		}
 	}
@@ -111,13 +136,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_LIANLUENANFANG
 		}
+		available = {
+			has_country_flag = FAT_DIP_ITSTIME	
+		}
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
-			VED = {
-				country_event = {
-					id = FAT_DIP_Focus.7
-				}
+			country_event = {
+				id = FAT_DIP_Focus.6
 			}
 		}
 	}
@@ -141,6 +167,17 @@ focus_tree = {
 			add_war_support = 0.2
 			add_stability = 0.2
 			add_political_power = 50
+			every_state = {
+			    limit = {
+					OR = {
+						is_core_of = VED
+						is_core_of = MNC
+					}
+			    }
+			    add_core_of = FAT
+				remove_core_of = VED
+				remove_core_of = MNC
+			}
 		}
 	}
 	focus = { #击碎皇冠
