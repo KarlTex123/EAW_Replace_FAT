@@ -1,0 +1,46 @@
+FAT_Foreign_decision_categories = {
+	FAT_DIP_Decision_1 = { #与阿奎莱亚共和国结盟
+		cost = 100
+		days_remove = 14
+		fire_only_once = yes
+		available = {
+			JER = {
+				has_completed_focus = JER_the_triumph
+			}
+		}
+		remove_effect = {
+			add_to_faction = JER
+		}
+	}
+	FAT_DIP_Decision_2 = { #与天落贸易联邦结盟
+		cost = 100
+		days_remove = 14
+		fire_only_once = yes
+		available = {
+			TRD = {
+				has_government = democratic
+			}
+		}
+		remove_effect = {
+			add_to_faction = TRD
+		}
+	}
+	FAT_DIP_Decision_3 = { #与山地小马建立联系
+		cost = 100
+		days_remove = 20
+		fire_only_once = yes
+		available = {
+		}
+		remove_effect = {
+		}
+	}
+	FAT_DIP_Decision_4 = { #与大江共和国建立共同防御体系
+		cost = 100
+		days_remove = 20
+		fire_only_once = yes
+		available = {
+		}
+		remove_effect = {
+		}
+	}
+}
