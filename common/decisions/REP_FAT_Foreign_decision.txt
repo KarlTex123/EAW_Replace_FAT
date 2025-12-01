@@ -1,6 +1,6 @@
 FAT_Foreign_decision_categories = {
 	FAT_DIP_Decision_1 = { #与阿奎莱亚共和国结盟
-		cost = 100
+		cost = 0
 		days_remove = 14
 		fire_only_once = yes
 		available = {
@@ -13,7 +13,7 @@ FAT_Foreign_decision_categories = {
 		}
 	}
 	FAT_DIP_Decision_2 = { #与天落贸易联邦结盟
-		cost = 100
+		cost = 0
 		days_remove = 14
 		fire_only_once = yes
 		available = {
@@ -25,22 +25,31 @@ FAT_Foreign_decision_categories = {
 			add_to_faction = TRD
 		}
 	}
-	FAT_DIP_Decision_3 = { #与山地小马建立联系
+	FAT_DIP_Decision_3 = { #与全大陆共和主义者联合起来
 		cost = 100
-		days_remove = 20
+		days_remove = 14
 		fire_only_once = yes
 		available = {
+			has_war_with = GRI
 		}
 		remove_effect = {
+			add_war_support = 0.15
+			add_stability = 0.15
+			add_manpower = 50000
 		}
 	}
-	FAT_DIP_Decision_4 = { #与大江共和国建立共同防御体系
+	FAT_DIP_Decision_4 = { #与帝国的最后一战
 		cost = 100
-		days_remove = 20
+		days_remove = 14
 		fire_only_once = yes
 		available = {
+			has_war_with = GRI
 		}
 		remove_effect = {
+			add_timed_idea = {
+			    idea = FAT_DIP_4_idea
+			    days = 200
+			}
 		}
 	}
 }
