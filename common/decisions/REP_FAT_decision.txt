@@ -739,7 +739,7 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
-
+			has_idea = FAT_FP_18_idea
 			NOT = { has_country_flag = FAT_northwar_skirmish_timeout }
 			owns_state = 561
 			FROM = {
@@ -781,7 +781,7 @@ FAT_the_war_in_the_north = {
 				}
 			}
 			start_border_war = {
-				change_state_after_war = no
+				change_state_after_war = yes
 				attacker = {
 					state = 561
 					num_provinces = 6
@@ -843,7 +843,6 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
-
 			NOT = { has_country_flag = FAT_northwar_skirmish_timeout }
 			owns_state = 677
 			FROM = {
@@ -885,7 +884,7 @@ FAT_the_war_in_the_north = {
 				}
 			}
 			start_border_war = {
-				change_state_after_war = no
+				change_state_after_war = yes
 				attacker = {
 					state = 677
 					num_provinces = 5
@@ -947,7 +946,7 @@ FAT_the_war_in_the_north = {
 		visible = {
 			has_war = no
 			is_subject = no
-
+			has_idea = FAT_FP_18_idea
 			NOT = { has_country_flag = FAT_northwar_skirmish_2_timeout }
 			owns_state = 601
 			FROM = {
@@ -989,7 +988,7 @@ FAT_the_war_in_the_north = {
 				}
 			}
 			start_border_war = {
-				change_state_after_war = no
+				change_state_after_war = yes
 				attacker = {
 					state = 601
 					num_provinces = 5
@@ -1093,7 +1092,7 @@ FAT_the_war_in_the_north = {
 				}
 			}
 			start_border_war = {
-				change_state_after_war = no
+				change_state_after_war = yes
 				attacker = {
 					state = 562
 					num_provinces = 5
