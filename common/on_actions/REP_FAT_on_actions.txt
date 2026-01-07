@@ -1,6 +1,11 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			play_song = "EWA_rep_s14"
+		}
+	}
+	on_startup = {
+		effect = {
 			FAT = {
 				country_event = FAT_start.1
 				country_event = {

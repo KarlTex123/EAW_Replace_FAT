@@ -1601,5 +1601,358 @@ focus_tree = {
 			}			
 		}
 	}
+
+	###############海军##########################
+	focus = {
+		id = FAT_The_Republic_Navy #共和国海军
+		icon = GFX_goal_FAT_The_Republic_Navy
+		cost = 2
+		x = 16
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Strengthen_the_coastal_defense_line #巩固海岸防线
+		icon = GFX_goal_FAT_Strengthen_the_coastal_defense_line
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_The_Republic_Navy
+		}
+
+		relative_position_id = FAT_The_Republic_Navy
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Expand_the_shipyard #扩大船坞
+		icon = GFX_goal_FAT_Expand_the_shipyard
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_The_Republic_Navy
+		}
+
+		relative_position_id = FAT_The_Republic_Navy
+
+		X = -2
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Gazing_at_the_Blue_Ocean #眺望蓝海
+		icon = GFX_goal_FAT_Expand_the_shipyard
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Expand_the_shipyard
+		}
+
+		mutually_exclusive = {
+			focus = FAT_Heavy_commercial_direction
+		}
+
+		relative_position_id = FAT_Expand_the_shipyard
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Fighting_Sailor  #海上斗士
+		icon = GFX_goal_FAT_Fighting_Sailor
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Gazing_at_the_Blue_Ocean
+		}
+
+		relative_position_id = FAT_Gazing_at_the_Blue_Ocean
+
+		X = 0
+		Y = 2
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Mobile_Island  #移动岛屿
+		icon = GFX_goal_FAT_Mobile_Island
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Fighting_Sailor
+		}
+
+		relative_position_id = FAT_Fighting_Sailor
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_the_Expansion_of_Trade_Fleet #贸易船队扩大
+		icon = GFX_goal_FAT_the_Expansion_of_Trade_Fleet
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_The_Republic_Navy
+		}
+
+		relative_position_id = FAT_The_Republic_Navy
+
+		X = 2
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Heavy_commercial_direction #重商方向
+		icon = GFX_goal_FAT_Heavy_commercial_direction
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_the_Expansion_of_Trade_Fleet
+		}
+
+		mutually_exclusive = {
+			focus = FAT_Gazing_at_the_Blue_Ocean
+		}
+
+		relative_position_id = FAT_the_Expansion_of_Trade_Fleet
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_coastal_defense #海岸防御
+		icon = GFX_goal_FAT_coastal_defense
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Heavy_commercial_direction
+		}
+
+		relative_position_id = FAT_Heavy_commercial_direction
+
+		X = 1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Attacking_trade #袭击贸易
+		icon = GFX_goal_FAT_Attacking_trade
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_coastal_defense
+		}
+
+		relative_position_id = FAT_coastal_defense
+
+		X = -1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Expand_flight_routes #拓展航线
+		icon = GFX_goal_FAT_Expand_flight_routes
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_coastal_defense
+		}
+
+		relative_position_id = FAT_coastal_defense
+
+		X = 1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+###################空军#######################
+	focus = {
+		id = FAT_Republic_Air_Force #共和国空军
+		icon = GFX_goal_FAT_Republic_Air_Force
+		cost = 2
+		x = 26
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Expand_Cloudbury_Aviation_School #扩建漫云航校
+		icon = GFX_goal_FAT_Expand_Cloudbury_Aviation_School
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Republic_Air_Force
+		}
+
+		relative_position_id = FAT_Republic_Air_Force
+
+		X = 0
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Establish_an_autonomous_system #建立自主体系
+		icon = GFX_goal_FAT_Establish_an_autonomous_system
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Expand_Cloudbury_Aviation_School
+		}
+	
+		mutually_exclusive = {
+			focus = FAT_Introducing_the_stalliongrad_production_line
+		}
+
+		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
+
+		X = -1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Introducing_the_stalliongrad_production_line #引进嘶大林格勒生产线
+		icon = GFX_goal_FAT_Introducing_the_stalliongrad_production_line
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Expand_Cloudbury_Aviation_School
+		}
+	
+		mutually_exclusive = {
+			focus = FAT_Establish_an_autonomous_system
+		}
+
+		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
+
+		X = 1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Air_Force_Module_Progress #空军模块进步
+		icon = GFX_goal_FAT_Air_Force_Module_Progress
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Establish_an_autonomous_system
+			focus = FAT_Introducing_the_stalliongrad_production_line
+		}
+
+		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
+
+		X = 0
+		Y = 2
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Priority_support #支援优先
+		icon = GFX_goal_FAT_Priority_support
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Air_Force_Module_Progress
+		}
+
+		mutually_exclusive = {
+			focus = FAT_Maintain_deterrence
+		}
+
+		relative_position_id = FAT_Air_Force_Module_Progress
+
+		X = -1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Maintain_deterrence #保持威慑
+		icon = GFX_goal_FAT_Maintain_deterrence
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Air_Force_Module_Progress
+		}
+
+		relative_position_id = FAT_Air_Force_Module_Progress
+
+		mutually_exclusive = {
+			focus = FAT_Priority_support
+		}
+
+		X = 1
+		Y = 1
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_Ideal_touches_the_sky #理想触及天空
+		icon = GFX_goal_FAT_Ideal_touches_the_sky
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Priority_support
+			focus = FAT_Maintain_deterrence
+		}
+
+		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
+
+		X = 0
+		Y = 4
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FAT_air_defense_training #防空训练
+		icon = GFX_goal_air_defense_training
+		cost = 2
+
+		prerequisite = {
+			focus = FAT_Republic_Air_Force
+		}
+
+		relative_position_id = FAT_Republic_Air_Force
+
+		X = -3
+		Y = 1
+
+		completion_reward = {
+		}
+	}
 }
 

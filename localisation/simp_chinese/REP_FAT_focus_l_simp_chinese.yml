@@ -217,3 +217,86 @@ FAT_suntail_s_Armor_Theory:0 "曜尾的装甲理论"
 FAT_suntail_s_Armor_Theory_desc:0 "漫云军校的校长曜尾将军提出了一种全新的，适应于现代战争的装甲理论，我们可以采纳他的理论来武装国民革命军"
 FAT_The_Harmonic_Crusade_1:0 "谐律十字军"
 FAT_The_Harmonic_Crusade_1_desc:0 "旧时代的骑士只为了贵族老爷和皇室服务，而我们的军队将化身成为现代的，只为革命理想和劳苦大众服务的谐律骑士，就如同向格罗弗二世雕像发起冲锋的唐吉鹫德一般，我们将会把共和民主带向整个大陆"
+
+
+####################海军################
+FAT_The_Republic_Navy:0 "共和国海军"
+FAT_Strengthen_the_coastal_defense_line:0 "巩固海岸防线"
+FAT_Expand_the_shipyard:0 "扩建船坞"
+FAT_Gazing_at_the_Blue_Ocean:0 "眺望蓝海"
+FAT_Fighting_Sailor:0 "海上斗士"
+FAT_Mobile_Island:0 "移动岛屿"
+FAT_the_Expansion_of_Trade_Fleet:0 "贸易船队的扩大"
+FAT_Heavy_commercial_direction:0 "重商方向"
+FAT_coastal_defense:0 "海岸防御"
+FAT_Attacking_trade:0 "袭击贸易"
+FAT_Expand_flight_routes:0 "拓展航线"
+
+FAT_The_Republic_Navy_desc:0 "共和国海军"
+FAT_Strengthen_the_coastal_defense_line_desc:0 "巩固海岸防线"
+FAT_Expand_the_shipyard_desc:0 "扩建船坞"
+FAT_Gazing_at_the_Blue_Ocean_desc:0 "眺望蓝海"
+FAT_Fighting_Sailor_desc:0 "海上斗士"
+FAT_Mobile_Island_desc:0 "移动岛屿"
+FAT_the_Expansion_of_Trade_Fleet_desc:0 "贸易船队的扩大"
+FAT_Heavy_commercial_direction_desc:0 "重商方向"
+FAT_coastal_defense_desc:0 "海岸防御"
+FAT_Attacking_trade_desc:0 "袭击贸易"
+FAT_Expand_flight_routes_desc:0 "拓展航线"
+
+####################空军################
+FAT_Republic_Air_Force:0 "共和国空军"
+FAT_Expand_Cloudbury_Aviation_School:0 "扩建漫云航校"
+FAT_air_defense_training:0 "防空训练"
+FAT_Establish_an_autonomous_system:0 "建立自主体系"
+FAT_Introducing_the_stalliongrad_production_line:0 "引进嘶大林格勒生产线"
+FAT_Air_Force_Module_Progress:0 "空军模块进步"
+FAT_Priority_support:0 "支援优先"
+FAT_Maintain_deterrence:0 "保持威慑"
+FAT_Ideal_touches_the_sky:0 "理想触及天空"
+
+FAT_Republic_Air_Force_desc:0 "让迈耶付出代价的一天终于来了，经过了数年的准备，通过购买嘶大林格勒战机，引入共和派志愿者，共和国重新拥有了一支稚嫩的空军，下一次我们听到敌机来袭的警报，共和国的雏鹰将升空击败那些空匪叛徒。"
+FAT_Expand_Cloudbury_Aviation_School_desc:0 "我们不能浪费那些初出茅庐的飞行员，漫云航校将重新聘用参与了天际湾空战的飞行员作为教官，作为空军的种子保障我们的空军破土发芽。"
+FAT_air_defense_training_desc:0 "共和军不应该让他们的头顶毫无防备，但当下我们不可能凭空拿出一只庞大空军保护每个鹫的头顶。作为权宜之计，我们将训练士兵如何迅速疏散躲避敌人的空袭，如何用简易材料制作掩体，让士兵在作战时不会惧怕头顶的炸弹。"
+FAT_Establish_an_autonomous_system_desc:0 "无论现状如何，我们最终都要建立自己的空军研究生产体系。面对共和军的需要与狮鹫尼亚的现状，一昧引进外国设备并不可取。现在就应当为未来做好准备，从设计到生产到训练，我们将摸索出一条属于共和空军的道路。"
+FAT_Introducing_the_stalliongrad_production_line_desc:0 "嘶大林格勒的盟友非常慷慨的共享了他们的战机设计，并愿意帮助我们在漫云建立工厂生产战机，唯一的条件时要求我们共享实战数据以便他们后续改进，这样丰厚的条件我们当然不能拒绝，共和空军将迅速获得成长。"
+FAT_Air_Force_Module_Progress_desc:0 "经过努力，我们的生产线正在高效的运转，为了能够在贫瘠的北狮鹫尼亚建立一支完成革命任务的部队，共和国的工程师将改进设计出更适应战场的战斗机"
+FAT_Priority_support_desc:0 "共和空军最重要的不是拿着仅有的战斗机同敌人缠斗打出漂亮的战损比，而是确保能够成为陆军部队的掩护与支援，以局部的牺牲换来整体的胜利"
+FAT_Maintain_deterrence_desc:0 "将战斗机浪费在不合适的任务中是不明智的，空中的战斗必须优先保证自己的生存。我们需要确保机队的数量，时刻保持空中威慑以限制敌人的空中活动。"
+FAT_Ideal_touches_the_sky_desc:0 "我们的空军将会把我们的理想带入蓝天之上！共和空军羽翼丰满战备充足，飞行员斗志昂扬，时刻准备对抗任何来犯敌人。"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
