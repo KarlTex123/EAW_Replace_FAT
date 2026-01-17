@@ -1,11 +1,11 @@
 spriteTypes = {
 	SpriteType = { 
 		name = "GFX_bop_FAT_democratic_side"
-		texturefile = "gfx\interface\bop\FAT_left_side.png" 
+		texturefile = "gfx/interface/bop/FAT_left_side.png" 
 	}
 	SpriteType = { 
 		name = "GFX_bop_FAT_nationalism_side"
-		texturefile = "gfx\interface\bop\FAT_right_side.png"    
+		texturefile = "gfx/interface/bop/FAT_right_side.png"    
 	}
 	
 }

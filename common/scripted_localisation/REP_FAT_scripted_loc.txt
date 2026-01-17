@@ -1,0 +1,355 @@
+defined_text = {
+	name = tupian_FAT_faction
+	text = {
+		trigger = {
+			tag = F00
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F01
+		}
+		localization_key = "GFX_idea_faction_junxiao_junguan"
+	}
+	text = {
+		trigger = {
+			tag = F02
+		}
+		localization_key = "GFX_idea_faction_gonghui"
+	}
+	text = {
+		trigger = {
+			tag = F03
+		}
+		localization_key = "GFX_idea_faction_student_tuanti"
+	}
+	text = {
+		trigger = {
+			tag = F04
+		}
+		localization_key = "GFX_idea_faction_haiwai_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F05
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F06
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F07
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F08
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F09
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F10
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F11
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F12
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F13
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+	text = {
+		trigger = {
+			tag = F14
+		}
+		localization_key = "GFX_idea_faction_yihui_gonghe"
+	}
+}
+defined_text = {
+	name = FAT_political_faction_name_tt
+	text = {
+		trigger = {
+			check_variable = {
+				THIS.if_in_union = 0
+			}
+		}
+		localization_key = faction_no_loc
+	}
+	text = {
+		trigger = {
+			tag = F00
+		}
+		localization_key = faction_0_loc
+	}
+	text = {
+		trigger = {
+			tag = F01
+		}
+		localization_key = faction_1_loc
+	}
+	text = {
+		trigger = {
+			tag = F02
+		}
+		localization_key = faction_2_loc
+	}
+	text = {
+		trigger = {
+			tag = F03
+		}
+		localization_key = faction_3_loc
+	}
+	text = {
+		trigger = {
+			tag = F04
+		}
+		localization_key = faction_4_loc
+	}
+	text = {
+		trigger = {
+			tag = F05
+		}
+		localization_key = faction_5_loc
+	}
+	text = {
+		trigger = {
+			tag = F06
+		}
+		localization_key = faction_6_loc
+	}
+	text = {
+		trigger = {
+			tag = F07
+		}
+		localization_key = faction_7_loc
+	}
+	text = {
+		trigger = {
+			tag = F08
+		}
+		localization_key = faction_8_loc
+	}
+	text = {
+		trigger = {
+			tag = F09
+		}
+		localization_key = faction_9_loc
+	}
+	text = {
+		trigger = {
+			tag = F10
+		}
+		localization_key = faction_10_loc
+	}
+	text = {
+		trigger = {
+			tag = F11
+		}
+		localization_key = faction_11_loc
+	}
+	text = {
+		trigger = {
+			tag = F12
+		}
+		localization_key = faction_12_loc
+	}
+	text = {
+		trigger = {
+			tag = F13
+		}
+		localization_key = faction_13_loc
+	}
+	text = {
+		trigger = {
+			tag = F14
+		}
+		localization_key = faction_14_loc
+	}
+}
+defined_text = {
+	name = FAT_political_faction_desc_tt
+	text = {
+		trigger = {
+			is_debug = yes
+		}
+		localization_key = faction_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F00
+		}
+		localization_key = faction_0_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F01
+		}
+		localization_key = faction_1_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F02
+		}
+		localization_key = faction_2_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F03
+		}
+		localization_key = faction_3_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F04
+		}
+		localization_key = faction_4_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F05
+		}
+		localization_key = faction_5_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F06
+		}
+		localization_key = faction_6_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F07
+		}
+		localization_key = faction_7_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F08
+		}
+		localization_key = faction_8_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F09
+		}
+		localization_key = faction_9_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F10
+		}
+		localization_key = faction_10_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F11
+		}
+		localization_key = faction_11_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F12
+		}
+		localization_key = faction_12_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F13
+		}
+		localization_key = faction_13_loc_desc
+	}
+	text = {
+		trigger = {
+			tag = F14
+		}
+		localization_key = faction_14_loc_desc
+	}
+}
+defined_text = { 
+	name = FAT_government_union_1_loc
+	text = {
+		trigger = {
+			is_in_array = { 
+				array = FAT.FAT_government_union
+				value = 1
+			}
+		}
+		localization_key = FAT_government_union_1_yes_loc
+	}
+	text = {
+		localization_key = FAT_government_union_no_loc
+	}
+}
+defined_text = { 
+	name = FAT_government_union_2_loc
+	text = {
+		trigger = {
+			is_in_array = { 
+				array = FAT.FAT_government_union
+				value = 2
+			}
+		}
+		localization_key = FAT_government_union_2_yes_loc
+	}
+	text = {
+		localization_key = FAT_government_union_no_loc
+	}
+}
+defined_text = { 
+	name = FAT_government_union_3_loc
+	text = {
+		trigger = {
+			is_in_array = { 
+				array = FAT.FAT_government_union
+				value = 3
+			}
+		}
+		localization_key = FAT_government_union_3_yes_loc
+	}
+	text = {
+		localization_key = FAT_government_union_no_loc
+	}
+}
+defined_text = { 
+	name = FAT_government_union_4_loc
+	text = {
+		trigger = {
+			is_in_array = { 
+				array = FAT.FAT_government_union
+				value = 4
+			}
+		}
+		localization_key = FAT_government_union_4_yes_loc
+	}
+	text = {
+		localization_key = FAT_government_union_no_loc
+	}
+}
+
+

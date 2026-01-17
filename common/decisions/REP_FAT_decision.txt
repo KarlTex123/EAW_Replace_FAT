@@ -13,12 +13,12 @@ FAT_balance_of_power_category = {
 				id = FAT_power_balance
 				value = -0.2
 				tooltip_side = FAT_democratic_side
-			}
+			}  
 		}
-	}
+	}    
 	with_socialism_together = { #争取社会主义者的合作
 		icon = ?
-		allowed = {}
+		allowed = {}    
 		available = {}
 		visible = { 
 			has_completed_focus = friendship_can_solve_all
@@ -647,7 +647,7 @@ REP_FAT_test_category = { #测试决议
 	FAT_set_FAT_democracy_socialist_END_test = {
 		icon = scroll
 		allowed = {
-		}
+		} 
 		visible = {
 			is_debug = yes
 			original_tag = FAT
@@ -677,9 +677,15 @@ REP_FAT_test_category = { #测试决议
 			}
 		}
 	}
-
+	test_dont_know = { 
+		complete_effect = {
+			var:FAT_faction_array^4 = { 
+				custom_effect_tooltip = test_dont_know_tt
+			}
+		}
+	} 
 }
-
+  
 REP_FAT_Establish_C_category = {  #成立狮鹫尼亚合众国
 	REP_FAT_Establish_C = {
 		icon = scroll
@@ -720,9 +726,9 @@ REP_FAT_Establish_C_category = {  #成立狮鹫尼亚合众国
 	}
 }
 REP_FAT_political_decision = { #狮鹫共和国政治派别决议
-  
+    
 }  
-
+ 
 FAT_the_war_in_the_north = {
 	FAT_border_skirmish= {
 		icon = rifles
@@ -732,7 +738,7 @@ FAT_the_war_in_the_north = {
 		targets = { NTR }
 		targets_dynamic = yes
 		target_trigger = {
-			FROM = {
+			FROM = { 
 				original_tag = NTR
 			}
 		}
@@ -1034,7 +1040,7 @@ FAT_the_war_in_the_north = {
 				defender = 562
 			}
 		}
-	}
+	} 
 	NTR_border_skirmish_2= {
 		icon = rifles
 		allowed = {
@@ -1139,4 +1145,4 @@ FAT_the_war_in_the_north = {
 			}
 		}
 	}
-}
+} 
