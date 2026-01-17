@@ -60,13 +60,13 @@ guiTypes = {
 	containerWindowType = {
 		name = "FAT_political_faction"
 		position = { x = 0 y = 0 }
-		size = { width = 510 height = 200 } 
+		size = { width = 510 height = 220 } 
 		orientation= UPPER_LEFT
 		#background = {
 		#	name = "Background"
 		#	quadTextureSprite ="GFX_tiled_bg"
 		#}
-		iconType = {
+		iconType = { 
 			name = "FAT_faction_yihui_gonghe"
 			quadTextureSprite = "GFX_idea_faction_yihui_gonghe" #图标采用的图像（动态或多帧）
 			centerposition = yes
@@ -113,12 +113,93 @@ guiTypes = {
 		}
 		iconType = {
 			name = "FAT_faction_old_gonghejun"
-			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe" #图标采用的图像（动态或多帧）
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
 			centerposition = yes
-			position = { x= 55 y = 110 } #图标位置
+			position = { x= 55 y = 110 }
 			Orientation = UPPER_LEFT
-			pdx_tooltip = "faction_old_gonghejun" #鼠标悬停于这个图标时，产生的悬停页面有什么文字
+			pdx_tooltip = "faction_old_gonghejun" 
 			pdx_tooltip_delayed = "faction_old_gonghejun_desc"
+		}
+		iconType = {
+			name = "FAT_faction_shangye_lianhe"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 150 y = 110 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_shangye_lianhe" 
+			pdx_tooltip_delayed = "faction_shangye_lianhe_desc"
+		}
+		iconType = {
+			name = "FAT_faction_south_gonghe"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 245 y = 110 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_south_gonghe" 
+			pdx_tooltip_delayed = "faction_south_gonghe_desc"
+		}
+		iconType = {
+			name = "FAT_faction_manyun_official"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 340 y = 110 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_manyun_official" 
+			pdx_tooltip_delayed = "faction_manyun_official_desc"
+		}
+		iconType = {
+			name = "FAT_faction_manyun_hezhua"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 435 y = 110 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_manyun_hezhua" 
+			pdx_tooltip_delayed = "faction_manyun_hezhua_desc"
+		}
+		iconType = {
+			name = "FAT_faction_nonghui"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 55 y = 180 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_nonghui" 
+			pdx_tooltip_delayed = "faction_nonghui_desc"
+		}
+		iconType = {
+			name = "FAT_faction_jinrong_jituan"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 150 y = 180 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_jinrong_jituan"
+			pdx_tooltip_delayed = "faction_jinrong_jituan_desc"
+		}
+		iconType = {
+			name = "FAT_faction_writer_lianmeng"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 245 y = 180 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_writer_lianmeng" 
+			pdx_tooltip_delayed = "faction_writer_lianmeng_desc"
+		}
+		iconType = {
+			name = "FAT_faction_kemeisikai_xuehui"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 340 y = 180 }
+			Orientation = UPPER_LEFT
+			pdx_tooltip = "faction_kemeisikai_xuehui" 
+			pdx_tooltip_delayed = "faction_kemeisikai_xuehui_desc"
+		}
+		iconType = {
+			name = "FAT_faction_gongmin_weiyuan"
+			quadTextureSprite = "GFX_idea_faction_haiwai_gonghe"
+			centerposition = yes
+			position = { x= 435 y = 180 }
+			Orientation = UPPER_LEFT 
+			pdx_tooltip = "faction_gongmin_weiyuan" 
+			pdx_tooltip_delayed = "faction_gongmin_weiyuan_desc"
 		}
 	}
 }

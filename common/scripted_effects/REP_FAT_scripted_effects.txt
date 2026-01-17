@@ -1,8 +1,21 @@
 #检查派系所支持的意识形态是否在执政联盟 > 设置倍率
 FAT_check_set_buff_factor = {
 	for_each_loop = {
-		array = FAT_government_union
+		array = FAT.FAT_faction_ideo_buff_factor
+		index = faction
+		set_variable = {
+			FAT.FAT_faction_ideo_buff_factor^faction = 0
+		}
+		set_variable = {
+			FAT.FAT_faction_if_in_union^faction = 0
+		}
+	}
+	for_each_loop = {
+		array = FAT.FAT_government_union
 		value = ideo
+		set_temp_variable = {
+			support_number = 0
+		}
 		if = {
 			limit = {
 				check_variable = {
@@ -10,7 +23,7 @@ FAT_check_set_buff_factor = {
 				}
 			}
 			set_temp_variable = {
-				support_number = var:party_popularity@democratic
+				support_number = party_popularity@democratic
 			}
 		}
 		else_if = {
@@ -20,7 +33,7 @@ FAT_check_set_buff_factor = {
 				}
 			}
 			set_temp_variable = {
-				support_number = var:party_popularity@communism
+				support_number = party_popularity@communism
 			}
 		}
 		else_if = {
@@ -30,7 +43,7 @@ FAT_check_set_buff_factor = {
 				}
 			}
 			set_temp_variable = {
-				support_number = var:party_popularity@fascism
+				support_number = party_popularity@fascism
 			}
 		}
 		else_if = {
@@ -40,16 +53,11 @@ FAT_check_set_buff_factor = {
 				}
 			}
 			set_temp_variable = {
-				support_number = var:party_popularity@neutrality
-			}
-		}
-		else = {
-			set_temp_variable = {
-				support_number = 0
+				support_number = party_popularity@neutrality
 			}
 		}
 		for_each_loop = {
-			array = FAT_faction_ideo
+			array = FAT.FAT_faction_ideo
 			value = faction_ideo
 			index = faction
 			if = {
@@ -59,12 +67,10 @@ FAT_check_set_buff_factor = {
 					}
 				}
 				set_variable = {
-					FAT_faction_ideo_buff_factor^faction = support_number
+					FAT.FAT_faction_if_in_union^faction = 1
 				}
-			}
-			else = {
 				set_variable = {
-					FAT_faction_ideo_buff_factor^faction = 0
+					FAT.FAT_faction_ideo_buff_factor^faction = support_number
 				}
 			}
 		}
@@ -72,13 +78,25 @@ FAT_check_set_buff_factor = {
 }
 FAT_set_faction_buff = {
 	for_each_loop = {
-		array = FAT_faction_ideo_buff
+		array = FAT.FAT_faction_ideo_buff
 		index = faction
+		set_temp_variable = {
+			factor = FAT.FAT_faction_ideo_buff_base^faction
+		}
 		set_variable = {
-			FAT_faction_ideo_buff^faction = FAT_faction_ideo_buff_base^faction
+			FAT.FAT_faction_ideo_buff^faction = factor
+		}
+		set_temp_variable = {
+			factor = FAT.FAT_faction_ideo_buff_factor^faction
 		}
 		multiply_variable = {
-			FAT_faction_ideo_buff^faction = FAT_faction_ideo_buff_factor^faction
+			FAT.FAT_faction_ideo_buff^faction = factor
+		}
+		set_temp_variable = {
+			factor = FAT.FAT_faction_ideo_buff_factor_more^faction
+		}
+		multiply_variable = {
+			FAT.FAT_faction_ideo_buff^faction = factor
 		}
 	}
 }

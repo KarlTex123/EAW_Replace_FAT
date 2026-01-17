@@ -114,7 +114,34 @@ scripted_gui = {
 		window_name = "FAT_political_faction"
         context_type = decision_category
 		triggers = {
-			#123 
+			FAT_faction_jinrong_jituan_visible = {
+				NOT = {
+					check_variable = {
+						FAT.FAT_faction_ideo_buff_base^11 = 0
+					}
+				}
+            }
+			FAT_faction_writer_lianmeng_visible = {
+				NOT = {
+					check_variable = {
+						FAT.FAT_faction_ideo_buff_base^12 = 0
+					}
+				}
+            } 
+			FAT_faction_kemeisikai_xuehui_visible = {
+				NOT = {
+					check_variable = {
+						FAT.FAT_faction_ideo_buff_base^13 = 0
+					}
+				}
+            }
+			FAT_faction_gongmin_weiyuan_visible = {
+				NOT = {
+					check_variable = {
+						FAT.FAT_faction_ideo_buff_base^14 = 0
+					}
+				}
+            }
 		}
 	}
 }

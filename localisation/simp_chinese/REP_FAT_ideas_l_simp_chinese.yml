@@ -53,7 +53,8 @@ MNC_very_bad_luna_oppose_army_idea_desc: "狮鹫共和国所支持的卢娜暗�
 VED_influence_from_FAT_idea: "来自共和国的影响"
 VED_influence_from_FAT_idea_desc: "狮鹫共和国的谐律思想已在我国广泛传播，他们的间谍也正在不断对我们的行政、媒体开展渗透行动。在动荡的当下，如果放任谐律主义在民众间的传播与拥护，我们很可能面临一次政治暴动。"
 FAT_National_Republic_party: "民族共和党"
-FAT_National_Republic_party_desc: "谐律支持率：[?party_popularity@democratic]，共产支持率：[?party_popularity@communism]，霸权支持率：[?party_popularity@fascism]，中立支持率：[?party_popularity@neutrality]\n议会共和党"
+FAT_National_Republic_party_desc: ""
+#谐律支持率：[?party_popularity@democratic]，共产支持率：[?party_popularity@communism]，霸权支持率：[?party_popularity@fascism]，中立支持率：[?party_popularity@neutrality]
 FAT_unstable_army_idea: "军队高层动荡" 
 
 

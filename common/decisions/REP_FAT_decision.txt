@@ -625,7 +625,7 @@ REP_FAT_test_category = { #测试决议
 			load_focus_tree = FAT_natinal_focus
 		}
 	}
-	加载权力平衡国策树 = {
+	加载权力平衡国策树 = { 
 		icon = ?
 		allowed = {}
 		available = {
@@ -721,12 +721,12 @@ REP_FAT_Establish_C_category = {  #成立狮鹫尼亚合众国
 }
 REP_FAT_political_decision = { #狮鹫共和国政治派别决议
   
-}
+}  
 
 FAT_the_war_in_the_north = {
 	FAT_border_skirmish= {
 		icon = rifles
-		allowed = {
+		allowed = { 
 			tag = FAT
 		}
 		targets = { NTR }

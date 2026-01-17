@@ -150,318 +150,318 @@ spriteTypes={
 ##########################################
 	SpriteType={
 	name="GFX_goal_FAT_sanshiniangonghemeng"
-	texturefile="gfx\interface\goals\FAT\三十年共和之梦.png"
+	texturefile="gfx/interface/goals/FAT/三十年共和之梦.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_minquan"
-	texturefile="gfx\interface\goals\FAT\民权.png"
+	texturefile="gfx/interface/goals/FAT/民权.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_guominzhuquan"
-	texturefile="gfx\interface\goals\FAT\国民主权.png"
+	texturefile="gfx/interface/goals/FAT/国民主权.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_zongtongyuanshuai"
-	texturefile="gfx\interface\goals\FAT\总统元帅.png"
+	texturefile="gfx/interface/goals/FAT/总统元帅.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_kanluandongyuanfaling"
-	texturefile="gfx\interface\goals\FAT\戡乱动员法令.png"
+	texturefile="gfx/interface/goals/FAT/戡乱动员法令.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_lixinghuazhengfu"
-	texturefile="gfx\interface\goals\FAT\理性化政府.png"
+	texturefile="gfx/interface/goals/FAT/理性化政府.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_minsheng"
-	texturefile="gfx\interface\goals\FAT\民生.png"
+	texturefile="gfx/interface/goals/FAT/民生.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_jingjijihuaweiyuanhui"
-	texturefile="gfx\interface\goals\FAT\计划经济委员会.png"
+	texturefile="gfx/interface/goals/FAT/计划经济委员会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_minzhu"
-	texturefile="gfx\interface\goals\FAT\民主.png"
+	texturefile="gfx/interface/goals/FAT/民主.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_dapotianhuaban"
-	texturefile="gfx\interface\goals\FAT\打破天花板.png"
+	texturefile="gfx/interface/goals/FAT/打破天花板.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gongheyinhang"
-	texturefile="gfx\interface\goals\FAT\共和银行.png"
+	texturefile="gfx/interface/goals/FAT/共和银行.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xinjianzhongxiaoxue"
-	texturefile="gfx\interface\goals\FAT\新建中小学.png"
+	texturefile="gfx/interface/goals/FAT/新建中小学.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xunzhengqixian"
-	texturefile="gfx\interface\goals\FAT\训政期限.png"
+	texturefile="gfx/interface/goals/FAT/训政期限.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_zhongzuzhengce"
-	texturefile="gfx\interface\goals\FAT\种族政策.png"
+	texturefile="gfx/interface/goals/FAT/种族政策.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xuanjudafaguan"
-	texturefile="gfx\interface\goals\FAT\选举大法官.png"
+	texturefile="gfx/interface/goals/FAT/选举大法官.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_zonglifu"
-	texturefile="gfx\interface\goals\FAT\总理府.png"
+	texturefile="gfx/interface/goals/FAT/总理府.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gemingkongbu"
-	texturefile="gfx\interface\goals\FAT\革命恐怖.png"
+	texturefile="gfx/interface/goals/FAT/革命恐怖.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_chongshenlingtuwanzheng"
-	texturefile="gfx\interface\goals\FAT\重申领土完整.png"
+	texturefile="gfx/interface/goals/FAT/重申领土完整.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xuanjuquan"
-	texturefile="gfx\interface\goals\FAT\选举权.png"
+	texturefile="gfx/interface/goals/FAT/选举权.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_jianchilifatongyi"
-	texturefile="gfx\interface\goals\FAT\坚持立法统一.png"
+	texturefile="gfx/interface/goals/FAT/坚持立法统一.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_jianchayuan"
-	texturefile="gfx\interface\goals\FAT\监察院.png"
+	texturefile="gfx/interface/goals/FAT/监察院.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xianfacaoan"
-	texturefile="gfx\interface\goals\FAT\狮鹫共和国宪法草案.png"
+	texturefile="gfx/interface/goals/FAT/狮鹫共和国宪法草案.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_fanshijiuzhilu"
-	texturefile="gfx\interface\goals\FAT\泛狮鹫之路.png"
+	texturefile="gfx/interface/goals/FAT/泛狮鹫之路.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xingemingdang"
-	texturefile="gfx\interface\goals\FAT\新革命党.png"
+	texturefile="gfx/interface/goals/FAT/新革命党.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_yuanlaopingyihui"
-	texturefile="gfx\interface\goals\FAT\元老评议会.png"
+	texturefile="gfx/interface/goals/FAT/元老评议会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_zhongyangzhiweihui"
-	texturefile="gfx\interface\goals\FAT\中央执政委员会.png"
+	texturefile="gfx/interface/goals/FAT/中央执政委员会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_yanjiuhui"
-	texturefile="gfx\interface\goals\FAT\三民主义研究会.png"
+	texturefile="gfx/interface/goals/FAT/三民主义研究会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_junweihui"
-	texturefile="gfx\interface\goals\FAT\军事委员会.png"
+	texturefile="gfx/interface/goals/FAT/军事委员会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gaizaohuogaizu"
-	texturefile="gfx\interface\goals\FAT\改造或改组.png"
+	texturefile="gfx/interface/goals/FAT/改造或改组.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gonghegdiantai"
-	texturefile="gfx\interface\goals\FAT\狮鹫共和电台.png"
+	texturefile="gfx/interface/goals/FAT/狮鹫共和电台.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_guojiakuangjia"
-	texturefile="gfx\interface\goals\FAT\泛狮鹫国家框架.png"
+	texturefile="gfx/interface/goals/FAT/泛狮鹫国家框架.png"
 	}
 	SpriteType={
 		name="GFX_goal_FAT_biancuanwenji"
-		texturefile="gfx\interface\goals\FAT\编篡克梅斯凯文集.png"
+		texturefile="gfx/interface/goals/FAT/编篡克梅斯凯文集.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_manyuntebieshi"
-	texturefile="gfx\interface\goals\FAT\漫云特别市.png"
+	texturefile="gfx/interface/goals/FAT/漫云特别市.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_bianzhunyu"
-	texturefile="gfx\interface\goals\FAT\狮鹫尼亚标准语.png"
+	texturefile="gfx/interface/goals/FAT/狮鹫尼亚标准语.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_chongshenpanluan"
-	texturefile="gfx\interface\goals\FAT\重审瑰翼叛乱.png"
+	texturefile="gfx/interface/goals/FAT/重审瑰翼叛乱.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_kuodashengquanli"
-	texturefile="gfx\interface\goals\FAT\扩大省议会权力.png"
+	texturefile="gfx/interface/goals/FAT/扩大省议会权力.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_wenxiehui"
-	texturefile="gfx\interface\goals\FAT\漫云文化协会.png"
+	texturefile="gfx/interface/goals/FAT/漫云文化协会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_jiyufangyandiwei"
-	texturefile="gfx\interface\goals\FAT\给予方言地位.png"
+	texturefile="gfx/interface/goals/FAT/给予方言地位.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_buxuanliuwangyihui"
-	texturefile="gfx\interface\goals\FAT\补选流亡议会.png"
+	texturefile="gfx/interface/goals/FAT/补选流亡议会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_manyuntizhi"
-	texturefile="gfx\interface\goals\FAT\漫云体制.png"
+	texturefile="gfx/interface/goals/FAT/漫云体制.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_shehzhuyilianmeng"
-	texturefile="gfx\interface\goals\FAT\社会主义者的联盟.png"
+	texturefile="gfx/interface/goals/FAT/社会主义者的联盟.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_kuodayanlunziyou"
-	texturefile="gfx\interface\goals\FAT\扩大自由言论.png"
+	texturefile="gfx/interface/goals/FAT/扩大自由言论.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gonghezuojialianmeng"
-	texturefile="gfx\interface\goals\FAT\共和作家联盟.png"
+	texturefile="gfx/interface/goals/FAT/共和作家联盟.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_nongxiediwei"
-	texturefile="gfx\interface\goals\FAT\农民协会地位.png"
+	texturefile="gfx/interface/goals/FAT/农民协会地位.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_guligemingwenxue"
-	texturefile="gfx\interface\goals\FAT\鼓励革命文学.png"
+	texturefile="gfx/interface/goals/FAT/鼓励革命文学.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gonghuifa"
-	texturefile="gfx\interface\goals\FAT\工会法.png"
+	texturefile="gfx/interface/goals/FAT/工会法.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_shehuizhuyizhediwei"
-	texturefile="gfx\interface\goals\FAT\社会主义者地位.png"
+	texturefile="gfx/interface/goals/FAT/社会主义者地位.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_shengchanxianfa"
-	texturefile="gfx\interface\goals\FAT\生产宪法.png"
+	texturefile="gfx/interface/goals/FAT/生产宪法.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xinkeben"
-	texturefile="gfx\interface\goals\FAT\新课本.png"
+	texturefile="gfx/interface/goals/FAT/新课本.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_liuwanggongjiaoshi"
-	texturefile="gfx\interface\goals\FAT\流亡共和派教师.png"
+	texturefile="gfx/interface/goals/FAT/流亡共和派教师.png"
 	} 
 	SpriteType={
 	name="GFX_goal_FAT_tongyikaoshi" 
-	texturefile="gfx\interface\goals\FAT\统一高校考试.png"
+	texturefile="gfx/interface/goals/FAT/统一高校考试.png"
 	}
 	SpriteType={ 
 	name="GFX_goal_FAT_kuozhangongjiuyexiao"
-	texturefile="gfx\interface\goals\FAT\拓展工鹫夜校.png"
+	texturefile="gfx/interface/goals/FAT/拓展工鹫夜校.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gonghexueshenglianhehui"
-	texturefile="gfx\interface\goals\FAT\共和学生联合会.png"
+	texturefile="gfx/interface/goals/FAT/共和学生联合会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_guolidaxue"
-	texturefile="gfx\interface\goals\FAT\国立漫云大学.png"
+	texturefile="gfx/interface/goals/FAT/国立漫云大学.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xiangcunjiansheyundong"
-	texturefile="gfx\interface\goals\FAT\乡村建设运动.png"
+	texturefile="gfx/interface/goals/FAT/乡村建设运动.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xiudingtudifa"
-	texturefile="gfx\interface\goals\FAT\修订土地法.png"
+	texturefile="gfx/interface/goals/FAT/修订土地法.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gongyejianshefa"
-	texturefile="gfx\interface\goals\FAT\工业发展法.png"
+	texturefile="gfx/interface/goals/FAT/工业发展法.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gongshangbaoxiejishiyebaozheng"
-	texturefile="gfx\interface\goals\FAT\工伤保险及失业保障.png"
+	texturefile="gfx/interface/goals/FAT/工伤保险及失业保障.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_xinshenghuoyundong"
-	texturefile="gfx\interface\goals\FAT\新生活运动.png"
+	texturefile="gfx/interface/goals/FAT/新生活运动.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gonghejiatingguanxi"
-	texturefile="gfx\interface\goals\FAT\共和家庭关系.png"
+	texturefile="gfx/interface/goals/FAT/共和家庭关系.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_yuyangaige"
-	texturefile="gfx\interface\goals\FAT\语言改革.png"
+	texturefile="gfx/interface/goals/FAT/语言改革.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_zhiyuaninkun"
-	texturefile="gfx\interface\goals\FAT\支援贫困.png"
+	texturefile="gfx/interface/goals/FAT/支援贫困.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_tongzijun"
-	texturefile="gfx\interface\goals\FAT\狮鹫童子军.png"
+	texturefile="gfx/interface/goals/FAT/狮鹫童子军.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gemingyishi"
-	texturefile="gfx\interface\goals\FAT\革命仪式.png"
+	texturefile="gfx/interface/goals/FAT/革命仪式.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_qimengshehui"
-	texturefile="gfx\interface\goals\FAT\启蒙社会.png"
+	texturefile="gfx/interface/goals/FAT/启蒙社会.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_gonghexinyang"
-	texturefile="gfx\interface\goals\FAT\共和信仰.png"
+	texturefile="gfx/interface/goals/FAT/共和信仰.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_heweimishengzhuyi"
-	texturefile="gfx\interface\goals\FAT\何为民生主义.png"
+	texturefile="gfx/interface/goals/FAT/何为民生主义.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_shelikaoshiyuan"
-	texturefile="gfx\interface\goals\FAT\设立考试院.png"
+	texturefile="gfx/interface/goals/FAT/设立考试院.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_guomingonghedangquanhui"
-	texturefile="gfx\interface\goals\FAT\国民共和党全会.png"
+	texturefile="gfx/interface/goals/FAT/国民共和党全会.png"
 	}
 
 
 	SpriteType={
 	name="GFX_goal_FAT_XINSHIJIEZHIEMENG"
-	texturefile="gfx\interface\goals\FAT\新世界之梦.png"
+	texturefile="gfx/interface/goals/FAT/新世界之梦.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_GONGHEGUOGONGYUE"
-	texturefile="gfx\interface\goals\FAT\共和国公约.png"
+	texturefile="gfx/interface/goals/FAT/共和国公约.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_LIANLUENANFANG"
-	texturefile="gfx\interface\goals\FAT\联系南方共和党.png"
+	texturefile="gfx/interface/goals/FAT/联系南方共和党.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_JIRIZHEMINGYUN"
-	texturefile="gfx\interface\goals\FAT\日击者的末路.png"
+	texturefile="gfx/interface/goals/FAT/日击者的末路.png"
 	}
 
 	SpriteType={
 	name="GFX_goal_FAT_XIAOMAPENGYOU"
-	texturefile="gfx\interface\goals\FAT\小马大陆的朋友.png"
+	texturefile="gfx/interface/goals/FAT/小马大陆的朋友.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_HEIJIANPOBIN" 
-	texturefile="gfx\interface\goals\FAT\河间破冰.png"
+	texturefile="gfx/interface/goals/FAT/河间破冰.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_WEIDINAGAIGE"
-	texturefile="gfx\interface\goals\FAT\韦迪纳的革命.png"
+	texturefile="gfx/interface/goals/FAT/韦迪纳的革命.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_JISUIHUANGGUAN"
-	texturefile="gfx\interface\goals\FAT\击碎王冠.png"
+	texturefile="gfx/interface/goals/FAT/击碎王冠.png"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_XIELVZHIBEI"
-	texturefile="gfx\interface\goals\FAT\韵律之北.png"
+	texturefile="gfx/interface/goals/FAT/韵律之北.png"
 	}
 
 }
