@@ -1,0 +1,8 @@
+FAT_industry_decision_category_1 = {
+	icon = generic_propaganda
+	picture = GFX_bank_money_decisions
+	visible = {
+		TAG = FAT
+	}
+	priority = 10
+}

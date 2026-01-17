@@ -1,0 +1,30 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_bank_gold_icon"
+        texturefile = "gfx/interface/decisions/gold_texticon.dds" # Must use / for folder separation
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_bank_money_icon"
+        texturefile = "gfx/interface/decisions/money_texticon.dds" # Must use / for folder separation
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_bank_build_icon"
+        texturefile = "gfx/interface/decisions/build_texticon.dds" # Must use / for folder separation
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_bank_money_decisions"
+        texturefile = "gfx/interface/decisions/money_decisions_texticon.dds" # Must use / for folder separation
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_bank_money_decisions_icon"
+        texturefile = "gfx/interface/decisions/money_decisions_texticon_icon.dds" # Must use / for folder separation
+        legacy_lazy_load = no
+    }
+}

@@ -1,0 +1,8 @@
+industry_decision_category_1 = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_generic_mefo_bills
+	visible = {
+	
+	}
+	priority = 10
+}

@@ -1310,6 +1310,19 @@ country_event = { #装甲的主攻方向
 	}
 }
 
+country_event = { #共产主义者的膨胀——与镰爪的会谈——
+	id = FAT_FP.32
+	picture = FAT_FP.32.p
+	title = FAT_FP.32.t
+	desc = FAT_FP.32.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.32.a
+	}
+}
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes

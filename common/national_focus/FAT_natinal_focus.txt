@@ -161,6 +161,10 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_sanshiniangonghemeng
 		}
+		completion_reward = {
+			add_ideas = FAT_minsheng
+			custom_effect_tooltip = FAT_minsheng_tt
+		}
 	}
 	focus = { #计划经济委员会
 		id = FAT_jingjijihuaweiyuanhui #现在是经济计划委员会
@@ -690,6 +694,18 @@ focus_tree = {
 			focus = FAT_minsheng
 		}
 		relative_position_id = FAT_minsheng
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism #社会主义
+				popularity = 0.1
+			}	
+			country_event = { id = FAT_FP.32 }
+			remove_idea = {
+				remove_idea = FAT_minsheng
+				add_idea = FAT_minsheng_1
+			}
+		}
 	}
 	focus = { #扩大自由言论
 		id = FAT_kuodayanlunziyou

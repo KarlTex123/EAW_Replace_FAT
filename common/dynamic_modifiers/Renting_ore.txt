@@ -1,0 +1,22 @@
+renting_ore_eqs = {
+	enable = { always = yes }
+	icon = GFX_modifiers_increased_metal_production
+	industrial_factory_donations = local_offsite_building_eqs
+	consumer_goods_factor = local_additional_effects_eqs
+}
+renting_ore_stg = {
+	enable = { always = yes }
+	icon = GFX_modifiers_increased_metal_production
+	industrial_factory_donations = local_offsite_building_stg
+	production_speed_buildings_factor = local_additional_effects_stg
+}
+state_had_rent_ore_eqs = {
+	enable = { always = yes }
+	icon = GFX_modifiers_increased_metal_production
+	state_resources_factor = 0.1
+}
+state_had_rent_ore_stg = {
+	enable = { always = yes }
+	icon = GFX_modifiers_increased_metal_production
+	state_resources_factor = 0.1
+}

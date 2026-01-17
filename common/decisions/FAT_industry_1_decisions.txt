@@ -1,0 +1,1613 @@
+FAT_industry_decision_category_1= {
+	debug_gain_idea = {
+		icon = generic_construction
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+		cost = 0
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = FAT_bank_modifier
+			}
+			add_dynamic_modifier = {
+				modifier = FAT_loan_modifier
+			}
+		}
+	}
+
+	debug_gain_money_idea = {
+		icon = generic_construction
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+		cost = 0
+		complete_effect = {
+			add_to_variable = {FAT_money = 300000}
+		}
+	}
+
+	debug_lose_money_idea = {
+		icon = generic_construction
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+		cost = 0
+		complete_effect = {
+			add_to_variable = {FAT_money = -300000}
+		}
+	}
+
+	lend_money = {#借贷
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+
+		}
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		complete_effect = {
+			add_to_variable = {FAT_money = FAT_a_loan_amount}
+			add_to_variable = {FAT_loan = FAT_a_loan_amount}
+
+		}
+	}
+	repayment_1 = {#还一笔钱
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = { FAT_loan > 0 }
+		}
+		available = {
+			is_ai = no
+		}
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > FAT_a_loan_amount }
+				check_variable = { FAT_money = FAT_a_loan_amount }
+			}
+		}
+		custom_cost_text = repayment
+		complete_effect = {
+			subtract_from_variable = {FAT_money = FAT_a_loan_amount}
+			subtract_from_variable = {FAT_loan = FAT_a_loan_amount}
+
+		}
+	}
+	repayment_all = {#还所有钱
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = { FAT_loan > 0 }
+		}
+		available = {
+			check_variable = { FAT_loan > 0 }
+		}
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > FAT_loan }
+				check_variable = { FAT_money = FAT_loan }
+			}
+		}
+		custom_cost_text = repayment_money_all
+		complete_effect = {
+			subtract_from_variable = {FAT_money = FAT_loan}
+			set_variable = {FAT_loan = 0}
+
+		}
+	}
+	increase_military_spending = {#增加军队维护费
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = {FAT_military_factories_cost_level < 2}
+		}
+		available = {
+			check_variable = {FAT_military_factories_cost_level < 2}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {FAT_military_factories_cost_level = 1}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_military_factories_cost_level = 1}
+					add_to_variable = {FAT_military_factories_cost_rate = 1}
+					#修改修正
+
+					add_to_variable = {FAT_production_factory_max_efficiency_factor = 0.1}
+					add_to_variable = {FAT_industrial_capacity_factory = 0.15}
+					add_to_variable = {FAT_industrial_capacity_dockyard = 0.15}
+					add_to_variable = {FAT_production_factory_efficiency_gain_factor = 0.1}
+
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {FAT_military_factories_cost_level = 0}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_military_factories_cost_level = 1}
+					add_to_variable = {FAT_military_factories_cost_rate = 0.5}
+					#修改修正
+
+					add_to_variable = {FAT_production_factory_max_efficiency_factor = 0.1}
+					add_to_variable = {FAT_industrial_capacity_factory = 0.1}
+					add_to_variable = {FAT_industrial_capacity_dockyard = 0.1}
+					add_to_variable = {FAT_production_factory_efficiency_gain_factor = 0.25}
+				}
+			}
+		}
+	}
+	reduce_military_spending = {#减少军队维护费
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = {FAT_military_factories_cost_level > 0}
+		}
+		available = {
+			check_variable = {FAT_military_factories_cost_level > 0}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {FAT_military_factories_cost_level = 2}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_military_factories_cost_level = -1}
+					add_to_variable = {FAT_military_factories_cost_rate = -1}
+					#修改修正
+
+					add_to_variable = {FAT_production_factory_max_efficiency_factor = -0.1}
+					add_to_variable = {FAT_industrial_capacity_factory = -0.15}
+					add_to_variable = {FAT_industrial_capacity_dockyard = -0.15}
+					add_to_variable = {FAT_production_factory_efficiency_gain_factor = -0.1}
+
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {FAT_military_factories_cost_level = 1}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_military_factories_cost_level = -1}
+					add_to_variable = {FAT_military_factories_cost_rate = -0.5}
+
+					#修改修正
+					add_to_variable = {FAT_production_factory_max_efficiency_factor = -0.1}
+					add_to_variable = {FAT_industrial_capacity_factory = -0.1}
+					add_to_variable = {FAT_industrial_capacity_dockyard = -0.1}
+					add_to_variable = {FAT_production_factory_efficiency_gain_factor = -0.25}
+				}
+			}
+		}
+	}
+
+	increase_civilian_spending = {#增加民事维护费
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = {FAT_civilian_factories_cost_level < 2}
+		}
+		available = {
+			check_variable = {FAT_civilian_factories_cost_level < 2}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {FAT_civilian_factories_cost_level = 1}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_civilian_factories_cost_level = 1}
+					add_to_variable = {FAT_civilian_factories_get_rate = -2}
+					#修改修正
+
+					add_to_variable = {FAT_consumer_goods_factor = -0.15}
+					add_to_variable = {FAT_political_power_gain = 0.2}
+					add_to_variable = {FAT_production_speed_buildings_factor = 0.1}
+
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {FAT_civilian_factories_cost_level = 0}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_civilian_factories_cost_level = 1}
+					add_to_variable = {FAT_civilian_factories_get_rate = -2}
+					#修改修正
+
+					add_to_variable = {FAT_consumer_goods_factor = -0.2}
+					add_to_variable = {FAT_political_power_gain = 0.1}
+					add_to_variable = {FAT_production_speed_buildings_factor = 0.1}
+				}
+			}
+		}
+	}
+	reduce_civilian_spending = {#减少民事维护费
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = {FAT_civilian_factories_cost_level > 0}
+		}
+		available = {
+			check_variable = {FAT_civilian_factories_cost_level > 0}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {FAT_civilian_factories_cost_level = 2}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_civilian_factories_cost_level = -1}
+					add_to_variable = {FAT_civilian_factories_get_rate = 2}
+					#修改修正
+					add_to_variable = {FAT_consumer_goods_factor = 0.15}
+					add_to_variable = {FAT_political_power_gain = -0.2}
+					add_to_variable = {FAT_production_speed_buildings_factor = -0.1}
+
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {FAT_civilian_factories_cost_level = 1}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_civilian_factories_cost_level = -1}
+					add_to_variable = {FAT_civilian_factories_get_rate = 2}
+
+					#修改修正
+					add_to_variable = {FAT_consumer_goods_factor = 0.2}
+					add_to_variable = {FAT_political_power_gain = -0.1}
+					add_to_variable = {FAT_production_speed_buildings_factor = -0.1}
+				}
+			}
+		}
+	}
+
+	increase_army_spending = {#增加军队维护费
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = {FAT_army_cost_level < 2}
+		}
+		available = {
+			check_variable = {FAT_army_cost_level < 2}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {FAT_army_cost_level = 1}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_army_cost_level = 1}
+					add_to_variable = {FAT_army_cost_rate = 0.03}
+					#修改修正
+
+					add_to_variable = {FAT_training_time_army_factor = -0.2}
+					add_to_variable = {FAT_conscription = 0.01}
+					add_to_variable = {FAT_conscription_factor = 0.2}
+					add_to_variable = {FAT_experience_loss_factor = -0.25}
+					add_to_variable = {FAT_army_org_factor = 0.1}
+					add_to_variable = {FAT_army_morale_factor = 0.1}
+
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {FAT_army_cost_level = 0}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_army_cost_level = 1}
+					add_to_variable = {FAT_army_cost_rate = 0.02}
+					#修改修正
+					add_to_variable = {FAT_training_time_army_factor = -0.3}
+					add_to_variable = {FAT_conscription = 0.01}
+					add_to_variable = {FAT_conscription_factor = 0.2}
+					add_to_variable = {FAT_experience_loss_factor = -0.25}
+					add_to_variable = {FAT_army_org_factor = 0.05}
+					add_to_variable = {FAT_army_morale_factor = 0.15}
+				}
+			}
+		}
+	}
+	reduce_army_spending = {#减少军队维护费
+		icon = GFX_bank_money_decisions_icon
+		visible = {
+			check_variable = {FAT_army_cost_level > 0}
+		}
+		available = {
+			check_variable = {FAT_army_cost_level > 0}
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {FAT_army_cost_level = 2}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_army_cost_level = -1}
+					add_to_variable = {FAT_army_cost_rate = -0.03}
+					#修改修正
+					add_to_variable = {FAT_training_time_army_factor = 0.2}
+					add_to_variable = {FAT_conscription = -0.01}
+					add_to_variable = {FAT_conscription_factor = -0.2}
+					add_to_variable = {FAT_experience_loss_factor = 0.25}
+					add_to_variable = {FAT_army_org_factor = -0.1}
+					add_to_variable = {FAT_army_morale_factor = -0.1}
+
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {FAT_army_cost_level = 1}
+				}
+				FROM = {
+					#修改维护费等级和维护费
+					add_to_variable = {FAT_army_cost_level = -1}
+					add_to_variable = {FAT_army_cost_rate = -0.02}
+
+					#修改修正
+					add_to_variable = {FAT_training_time_army_factor = 0.3}
+					add_to_variable = {FAT_conscription = -0.01}
+					add_to_variable = {FAT_conscription_factor = -0.2}
+					add_to_variable = {FAT_experience_loss_factor = 0.25}
+					add_to_variable = {FAT_army_org_factor = -0.05}
+					add_to_variable = {FAT_army_morale_factor = -0.15}
+				}
+			}
+		}
+	}
+	develop_432 = {
+		#扩建翼哈根造船厂
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 432
+			}
+		}
+		available = {
+			owns_state = 432
+			has_full_control_of_state = 432
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 500 }
+				check_variable = { FAT_money = 500 }
+			}
+		}
+		custom_cost_text = cost_money_500
+		days_remove = 30
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 500}
+		}
+		remove_effect = {
+			FROM = {
+#				add_building_construction = {
+#					type = industrial_complex 
+#					level = 1
+#					instant_build = yes
+#				}
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 1
+#					instant_build = yes
+#				}
+#				set_state_category = city 
+#			
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	FAT_help_farmer = {#帮助农民
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 500 }
+				check_variable = { FAT_money = 500 }
+			}
+		}
+
+		available = {
+			owns_state = 432
+			has_full_control_of_state = 432
+		}
+		remove_effect = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_manpower = 15000
+		}
+		custom_cost_text = cost_money_500
+		days_remove = 80
+		
+		fire_only_once = yes
+
+	}
+	develop_485 = {
+		#漫云工业区
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 485
+			}
+		}
+		available = {
+			owns_state = 485
+			has_full_control_of_state = 485
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1000 }
+				check_variable = { FAT_money = 1000 }
+			}
+		}
+		custom_cost_text = cost_money_1000
+		days_remove = 80
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1000}
+		}
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			
+			}
+		}
+	}
+	develop_474_601 = {
+		#失落之门老龙镇铁路
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 474
+			has_full_control_of_state = 474
+			owns_state = 601
+			has_full_control_of_state = 601
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 250 }
+				check_variable = { FAT_money = 250 }
+			}
+		}
+		custom_cost_text = cost_money_250
+		days_remove = 50
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 250}
+		}
+		remove_effect = {
+			build_railway = {
+				path = { 745 10273 4413 13067 7853 }
+			}
+			474 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 20
+				producer = FAT
+			}
+		}
+	}
+	develop_581_477 = {
+		#雁之喙苍须铁路
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 581
+			has_full_control_of_state = 581
+			owns_state = 477
+			has_full_control_of_state = 477
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 250 }
+				check_variable = { FAT_money = 250 }
+			}
+		}
+		custom_cost_text = cost_money_250
+		days_remove = 50
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 250}
+		}
+		remove_effect = {
+			build_railway = {
+				path = { 7823 10708 9271 11256 3385 10183 }
+			}
+			581 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			477 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 20
+				producer = FAT
+			}
+		}
+	}
+	develop_522_561_601_585 = {
+		#开发北境
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 522
+			has_full_control_of_state = 522
+			owns_state = 561
+			has_full_control_of_state = 561
+			owns_state = 601
+			has_full_control_of_state = 601
+			owns_state = 585
+			has_full_control_of_state = 585
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1500 }
+				check_variable = { FAT_money = 1500 }
+			}
+		}
+		custom_cost_text = cost_money_1500
+		days_remove = 100
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1500}
+		}
+		remove_effect = {
+			522 = {#天际纳维亚
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			561 = {#欧斯特弗洛伊
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			601 = {#布郎劳斯
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			585 = {#小狮鹫群山
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	develop_582 = {
+		#斯卡克工业区
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 582
+			has_full_control_of_state = 582
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1000 }
+				check_variable = { FAT_money = 1000 }
+			}
+		}
+		custom_cost_text = cost_money_1000
+		days_remove = 80
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1000}
+		}
+		remove_effect = {
+			582 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex 
+					level = 3
+					instant_build = yes
+				}
+			
+			}
+		}
+	}
+	develop_576 = {
+		#发展哈尔姆斯塔德石油业
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 576
+			has_full_control_of_state = 576
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1000 }
+				check_variable = { FAT_money = 1000 }
+			}
+		}
+		custom_cost_text = cost_money_1000
+		days_remove = 50
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1000}
+		}
+		remove_effect = {
+			576 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 576
+			}
+		}
+	}
+	develop_581_477_476 = {
+		#深入雁之喙群山
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 581
+			has_full_control_of_state = 581
+			owns_state = 477
+			has_full_control_of_state = 477
+			owns_state = 476
+			has_full_control_of_state = 476
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1500 }
+				check_variable = { FAT_money = 1500 }
+			}
+		}
+		custom_cost_text = cost_money_1500
+		days_remove = 100
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1500}
+		}
+		remove_effect = {
+			581 = {#雁之喙
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			477 = {#苍须
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			476 = {#丝号
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	develop_574 = {
+		#发展精灵湖
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 574
+			has_full_control_of_state = 574
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1000 }
+				check_variable = { FAT_money = 1000 }
+			}
+		}
+		custom_cost_text = cost_money_1000
+		days_remove = 100
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1000}
+		}
+		remove_effect = {
+			576 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex 
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = chromium
+				amount = 20
+				state = 576
+			}
+		}
+	}
+	develop_429 = {
+		#发展鸿运港
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 429
+			has_full_control_of_state = 429
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1000 }
+				check_variable = { FAT_money = 1000 }
+			}
+		}
+		custom_cost_text = cost_money_1000
+		days_remove = 60
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1000}
+		}
+		remove_effect = {
+			429 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	develop_FAT_state = {
+		#发展地区
+		icon = GFX_bank_build_icon
+		visible = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				OR = {
+					has_state_category = pastoral
+					has_state_category = rural 
+				}
+			}
+		}
+		available = {
+			owns_state = FROM
+			has_full_control_of_state = FROM
+
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 250 }
+				check_variable = { FAT_money = 250 }
+			}
+		}
+		custom_cost_text = cost_money_500
+		days_remove = 60
+
+		
+		complete_effect = {
+			add_to_variable = {FAT_money = -250}
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				if = {
+					limit = { 
+						has_state_category = pastoral
+					}
+					set_state_category = rural
+				}
+				else_if = {
+					limit = {
+						has_state_category = rural
+					}
+					set_state_category = town
+				}
+				
+			}
+		}
+	}
+	FAT_establish_cooperative = {#成立合作社
+	icon = GFX_bank_build_icon
+	visible = {
+		
+	}
+	ai_will_do = {
+		factor = 30
+	}
+	custom_cost_trigger = {
+		OR = {
+			check_variable = { FAT_money > 1000 }
+			check_variable = { FAT_money = 1000 }
+		}
+	}
+
+	available = {
+		owns_state = 485
+		has_full_control_of_state = 485
+	}
+	complete_effect = {
+		add_to_variable = {FAT_money = -1000}
+	}
+	remove_effect = {
+		485 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex 
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = FAT_cooperative
+		}
+		add_to_variable = {FAT_cooperative_consumer_goods_factor = 0.1}
+		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
+
+	}
+	custom_cost_text = cost_money_1000
+	days_remove = 100
+
+	fire_only_once = yes
+
+	}
+
+	FAT_establish_cooperative_2 = {#共和国建设总局
+	icon = GFX_bank_build_icon
+	visible = {
+		has_dynamic_modifier = {
+			modifier = FAT_cooperative
+		}
+	}
+	ai_will_do = {
+		factor = 30
+	}
+	custom_cost_trigger = {
+		OR = {
+			check_variable = { FAT_money > 1500 }
+			check_variable = { FAT_money = 1500 }
+		}
+	}
+
+	available = {
+		has_dynamic_modifier = {
+			modifier = FAT_cooperative
+		}
+	}
+	complete_effect = {
+		add_to_variable = {FAT_money = -1500}
+	}
+	remove_effect = {
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_to_variable = {FAT_cooperative_production_speed_buildings_factor = 0.1}
+		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
+
+	}
+	custom_cost_text = cost_money_1500
+	days_remove = 50
+
+	fire_only_once = yes
+
+	}
+	develop_450_582 = {#发展斯卡克和凹穴采煤业
+		#发展鸿运港
+		icon = GFX_bank_build_icon
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			owns_state = 450
+			has_full_control_of_state = 450
+			owns_state = 582
+			has_full_control_of_state = 582
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1500 }
+				check_variable = { FAT_money = 1500 }
+			}
+		}
+		custom_cost_text = cost_money_1500
+		days_remove = 60
+
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1500}
+		}
+		remove_effect = {
+			add_resource = {
+				type = coal
+				amount = 10
+				state = 450
+			}
+			450 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = coal
+				amount = 12
+				state = 582
+			}
+			582 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	rent_ore_eqs = {
+		#出租矿物给小马里亚
+		icon = generic_construction
+		visible = {
+			NOT = {
+				has_country_flag = FAT_has_rent_ore_eqs
+			}
+			country_exists = EQS
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		state_target = yes
+		available = {
+			#蠢驴矿物不是实时结算的，不加这个会出同一片矿反复租借的BUG
+			FROM = {
+				OR = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = oil
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = crystals
+						amount > 20
+						delivered = yes
+					}
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				#判断任意资源大于20
+				OR = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = oil
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = crystals
+						amount > 20
+						delivered = yes
+					}
+					#这个修正保证在持续期间内不会丢失决议目标省份
+					has_dynamic_modifier = {
+						modifier = state_had_rent_ore_eqs
+					}
+				}
+			}
+		}
+
+		cost = 40
+		days_remove = 7
+
+		complete_effect = {
+			set_country_flag = FAT_has_rent_ore_eqs
+			set_variable = {local_resource_ = 0}
+			#计算资源
+			add_to_variable = { local_resource_ = FROM.resource@steel }
+			add_to_variable = { local_resource_ = FROM.resource@aluminium }
+			add_to_variable = { local_resource_ = FROM.resource@oil }
+			add_to_variable = { local_resource_ = FROM.resource@tungsten }
+			add_to_variable = { local_resource_ = FROM.resource@rubber }
+			add_to_variable = { local_resource_ = FROM.resource@chromium }
+			add_to_variable = { local_resource_ = FROM.resource@crystals }
+			#计算额外工厂和BUFF
+			#local_additional_effects_eqs是BUFF
+			#local_offsite_building_eqs是工厂数
+			set_variable = {local_additional_effects_eqs = local_resource_}
+			set_variable = {local_offsite_building_eqs = local_resource_}
+			multiply_variable = {local_additional_effects_eqs = -0.003}
+			divide_variable = {local_offsite_building_eqs = 7}
+			round_variable = local_offsite_building_eqs
+			add_dynamic_modifier = {
+				modifier = renting_ore_eqs
+			} 
+			THIS = {
+				give_resource_rights = {
+					receiver = EQS
+					state = FROM
+				}
+			}
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = state_had_rent_ore_eqs
+				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		modifier = {
+			
+	   	}
+		remove_effect = {
+			clr_country_flag = FAT_has_rent_ore_eqs
+			remove_dynamic_modifier = {
+				modifier = renting_ore_eqs
+			}
+			EQS = {
+				remove_resource_rights = FROM
+			}
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = state_had_rent_ore_eqs
+				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = -1
+			}
+		}
+	}
+	rent_ore_stg = {
+		#出租矿物给斯大林格勒
+		icon = generic_construction
+		visible = {
+			NOT = {
+				has_country_flag = FAT_has_rent_ore_stg
+			}
+			country_exists = STG
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		
+		state_target = yes
+		available = {
+			#蠢驴矿物不是实时结算的，不加这个会出同一片矿反复租借的BUG
+			FROM = {
+				OR = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = oil
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = crystals
+						amount > 20
+						delivered = yes
+					}
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				OR = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = oil
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 20
+						delivered = yes
+					}
+					has_resources_amount = {
+						resource = crystals
+						amount > 20
+						delivered = yes
+					}
+					has_dynamic_modifier = {
+						modifier = state_had_rent_ore_stg
+					}
+				}
+			}
+		}
+
+		cost = 40
+		days_remove = 7
+
+		complete_effect = {
+			set_country_flag = FAT_has_rent_ore_stg
+			set_variable = {local_resource_ = 0}
+			add_to_variable = { local_resource_ = FROM.resource@steel }
+			add_to_variable = { local_resource_ = FROM.resource@aluminium }
+			add_to_variable = { local_resource_ = FROM.resource@oil }
+			add_to_variable = { local_resource_ = FROM.resource@tungsten }
+			add_to_variable = { local_resource_ = FROM.resource@rubber }
+			add_to_variable = { local_resource_ = FROM.resource@chromium }
+			add_to_variable = { local_resource_ = FROM.resource@crystals }
+			set_variable = {local_additional_effects_stg = local_resource_}
+			set_variable = {local_offsite_building_stg = local_resource_}
+			multiply_variable = {local_additional_effects_stg = 0.002}
+			divide_variable = {local_offsite_building_stg = 7}
+			round_variable = local_offsite_building_stg
+			add_dynamic_modifier = {
+				modifier = renting_ore_stg
+			} 
+			THIS = {
+				give_resource_rights = {
+					receiver = STG
+					state = FROM
+				}
+			}
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = state_had_rent_ore_stg
+				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		modifier = {
+			
+	   	}
+		remove_effect = {
+			clr_country_flag = FAT_has_rent_ore_stg
+			remove_dynamic_modifier = {
+				modifier = renting_ore_eqs
+			}
+			STG = {
+				remove_resource_rights = FROM
+			}
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = state_had_rent_ore_stg
+				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = -1
+			}
+		}
+	}
+	industry_decision_1 = {
+		#密集工业区
+		icon = GFX_bank_build_icon
+		visible = {
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		on_map_mode = map_only
+		fire_only_once = yes
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				infrastructure = 5
+				OR = {
+					arms_factory > 7
+					industrial_complex > 7
+				}
+				
+			}
+		}
+		available = {
+			
+		}
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 3000 }
+				check_variable = { FAT_money = 3000 }
+			}
+		}
+		custom_cost_text = cost_money_3000
+
+		
+		complete_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = industry_modifier_1
+				}
+			}
+			
+		}
+		
+	}
+	industry_decision_2 = {
+		#大型矿区
+		icon = GFX_bank_build_icon
+		visible = {
+		}
+		ai_will_do = {
+			factor = 30
+		}
+
+		on_map_mode = map_only
+		fire_only_once = yes
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				infrastructure = 5
+				OR = {
+					has_resources_amount = { resource = oil amount > 0 delivered = yes }
+					has_resources_amount = { resource = rubber amount > 0 delivered = yes }
+					has_resources_amount = { resource = steel amount > 0 delivered = yes }
+					has_resources_amount = { resource = tungsten amount > 0 delivered = yes }
+					has_resources_amount = { resource = chromium amount > 0 delivered = yes }
+					has_resources_amount = { resource = aluminium amount > 0 delivered = yes }
+				}
+				
+			}
+		}
+		available = {
+			
+		}
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 3000 }
+				check_variable = { FAT_money = 3000 }
+			}
+		}
+		custom_cost_text = cost_money_3000
+
+		
+		complete_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = industry_modifier_2
+				}
+			}
+			
+		}
+		
+	}
+}

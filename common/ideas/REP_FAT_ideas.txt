@@ -1,5 +1,24 @@
 ideas = {
 	country = {
+		FAT_minsheng = {
+			picture = GFX_idea_FAT_FAT_minsheng
+
+			removal_cost = -1
+
+			modifier = {
+				#空
+			}
+		}
+		FAT_minsheng_1 = {
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.025
+			}
+		}
 		##开始计算##    ###不要再写这种追加的东西了
 		FAT_National_Revolutionary_Army_1 = {
 			picture = GFX_idea_FAT_National_Revolutionary_Army_1

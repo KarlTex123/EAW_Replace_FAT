@@ -1,0 +1,58 @@
+industry_modifier_1 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_increased_metal_production
+
+	local_building_slots = 3 #最大工业值
+	local_building_slots_factor = 0.5 #最大工业值百分比
+	state_production_speed_buildings_factor = -0.1 #建造速度
+	local_factories = 0.2 #本地工厂数
+}
+
+industry_modifier_2 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+
+	local_building_slots_factor = -0.6 #最大工业值百分比
+	local_resources_factor = 0.3
+}
+
+FAT_bank_modifier = {
+	enable = { always = yes }
+	icon = ger_mefo_bills
+	#民事部分
+	consumer_goods_factor = FAT_consumer_goods_factor #消费品
+	political_power_gain = FAT_political_power_gain #政治点每日获取，不是百分比
+	production_speed_buildings_factor = FAT_production_speed_buildings_factor #建筑建造速度
+	#军队部分
+	training_time_army_factor = FAT_training_time_army_factor #军队训练时间
+	conscription = FAT_conscription #黄字人力
+	conscription_factor = FAT_conscription_factor #征兵人口修正
+	experience_loss_factor = FAT_experience_loss_factor #有经验的士兵损失
+	army_org_factor = FAT_army_org_factor #陆军组织度
+	army_morale_factor = FAT_army_morale_factor #组织度恢复
+	#军工部分
+	production_factory_max_efficiency_factor = FAT_production_factory_max_efficiency_factor #生产效率
+	industrial_capacity_factory = FAT_industrial_capacity_factory #工厂产出
+	industrial_capacity_dockyard = FAT_industrial_capacity_dockyard #船坞产出
+	production_factory_efficiency_gain_factor = FAT_production_factory_efficiency_gain_factor #工厂效率增长
+
+}
+FAT_loan_modifier = {
+	enable = { always = yes }
+	icon = ger_mefo_bills
+
+	political_power_factor = FAT_loan_pp_factor
+	consumer_goods_factor = FAT_loan_consumer_goods_factor
+
+}
+FAT_cooperative = {#合作社
+	#			picture = 
+	
+				modifier = {
+					consumer_goods_factor = FAT_cooperative_consumer_goods_factor
+					stability_factor = FAT_cooperative_stability_factor
+					industrial_capacity_factory = FAT_cooperative_industrial_capacity_factory
+					production_speed_buildings_factor = FAT_cooperative_production_speed_buildings_factor
+				}
+}
+

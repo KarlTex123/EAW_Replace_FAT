@@ -1,0 +1,112 @@
+on_actions = {
+	on_startup = {
+			effect = {
+				FAT = {
+					set_variable = { FAT_money = 1000}#国家资金数
+					set_variable = { FAT_civilian_factories_get_rate = 10}#民用工厂资金获取数比例，单位每个民工x资金
+					set_variable = { FAT_military_factories_cost_rate = 2}#军工资金消耗数，单位每个军工x资金
+					set_variable = { FAT_resource_exported_get_rate = 1}#出口资源资金获取数量，单位每个资源x资金
+					set_variable = { FAT_army_cost_rate = 0.1}#军队资金消耗数，单位每千人力x资金
+
+
+					set_variable = { FAT_army_cost_level = 1 }#军队花费等级
+					set_variable = { FAT_military_factories_cost_level = 1 }#军工维护等级
+					set_variable = { FAT_civilian_factories_cost_level = 1 }#民工维护等级
+
+					#动态修正部分（均为中等也就是1级维护费的数值）
+					#民事
+					set_variable = { FAT_consumer_goods_factor = 0 }#消费品
+					set_variable = { FAT_political_power_gain = 0.05 }#政治点每日获取，不是百分比
+					set_variable = { FAT_production_speed_buildings_factor = 0 }#建筑建造速度
+					#军队
+					set_variable = { FAT_training_time_army_factor = -0.05 }#军队训练时间
+					set_variable = { FAT_conscription = 0.01 }#黄字人力
+					set_variable = { FAT_conscription_factor = 0 }#征兵人口修正
+					set_variable = { FAT_experience_loss_factor = 0 }#有经验的士兵损失
+					set_variable = { FAT_army_org_factor = 0 }#陆军组织度
+					set_variable = { FAT_army_morale_factor = 0 }#组织度恢复
+
+					#军工
+					set_variable = { FAT_production_factory_max_efficiency_factor = 0 }#生产效率
+					set_variable = { FAT_industrial_capacity_factory = 0 }#工厂产出
+					set_variable = { FAT_industrial_capacity_dockyard = 0 }#船坞产出
+					set_variable = { FAT_production_factory_efficiency_gain_factor = 0.05 }#工厂效率增长
+
+					#贷款
+					set_variable = { FAT_loan = 0}#当前国家贷款总数
+					set_variable = { FAT_a_loan_amount = 3000}#一笔贷款的额度
+					set_variable = { FAT_loan_max = 30000}#国家贷款上限
+					set_variable = { FAT_loan_rate = 0.02}#国家贷款利率
+				}
+			}
+		}
+
+	on_monthly_FAT = {
+			effect = {
+					set_variable = { FAT_money_cost = 0 }#资金消耗数
+					set_variable = { FAT_money_get = 0 }#资金获取数
+					set_variable = { FAT_civilian_factories_get = 0}#民用工厂资金获取数
+					#set_variable = { civilian_factorie_get_rate = 4}#民用工厂资金获取数比例，单位每个民工x资金
+
+					set_variable = { FAT_military_factories_cost = 0}#军工资金消耗数
+					#set_variable = { military_factories_cost_rate = 1}#军工资金消耗数，单位每个军工x资金
+
+					set_variable = { FAT_resource_exported_get = 0}#出口资源资金获取数量
+					#set_variable = { resource_exported_get_rate = 0}#出口资源资金获取数量，单位每个资源x资金
+
+					set_variable = { FAT_army_cost = 0}#军队资金消耗数
+					#set_variable = { army_cost = 0}#军队资金消耗数，单位每千人力x资金
+
+					add_to_variable = {FAT_civilian_factories_get = THIS.num_of_civilian_factories}#获取民用工厂数
+					add_to_variable = {FAT_military_factories_cost = THIS.num_of_military_factories}#获取军用工厂数
+					multiply_variable = {FAT_civilian_factories_get = FAT_civilian_factories_get_rate}#获取民工资金获取数
+					multiply_variable = {FAT_military_factories_cost = FAT_military_factories_cost_rate}#获取军工资金消耗数
+					
+					#计算所有资源的出口数量
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@steel}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@aluminium}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@oil}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@tungsten}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@rubber}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@chromium}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@crystals}
+					add_to_variable = {FAT_resource_exported_get = THIS.resource_exported@coal}
+
+					multiply_variable = {FAT_resource_exported_get = FAT_resource_exported_get_rate}#获取资源出口资金获取数
+
+					#计算所有军队数量，不算后备和训练人力，只算已经部署的，均以k为单位
+					add_to_variable = {FAT_army_cost = THIS.deployed_army_manpower_k }#获取陆军部署人力
+					add_to_variable = {FAT_army_cost = THIS.deployed_airforce_manpower_k }#获取空军部署人力
+					add_to_variable = {FAT_army_cost = THIS.deployed_navy_manpower_k }#获取海军部署人力
+					
+					round_variable = FAT_army_cost #取整
+					multiply_variable = {FAT_army_cost = FAT_army_cost_rate}#获取军队资金消耗数
+
+
+					#计算贷款
+					set_variable = {FAT_loan_cost = FAT_loan}#获取贷款总数
+					multiply_variable = {FAT_loan_cost = FAT_loan_rate}#乘上利率
+
+					#计算贷款的花费
+					set_variable = {FAT_loan_pp_factor = FAT_loan}#获取贷款总数
+					divide_variable = {FAT_loan_pp_factor = FAT_a_loan_amount}#获取一共有多少笔贷款
+
+					set_variable = {FAT_loan_consumer_goods_factor = FAT_loan_pp_factor}
+					multiply_variable = {FAT_loan_consumer_goods_factor = 0.02}#每笔贷款增加2%的消费品
+					multiply_variable = {FAT_loan_pp_factor = -0.01}#每笔贷款减少1%的政治点获取
+					#将资金获取全部加在一起
+					add_to_variable = {FAT_money_get = FAT_civilian_factories_get}#民用工厂资金获取
+					add_to_variable = {FAT_money_get = FAT_resource_exported_get}#资源资金获取
+
+					#将资金消耗加在一起
+					add_to_variable = {FAT_money_cost = FAT_military_factories_cost}#军工
+					add_to_variable = {FAT_money_cost = FAT_army_cost}#军队
+					add_to_variable = {FAT_money_cost = FAT_loan_cost}#贷款利息
+
+					#更新资金
+					add_to_variable = {FAT_money = FAT_money_get}
+					subtract_from_variable = {FAT_money = FAT_money_cost}
+				}
+			
+		}
+}
