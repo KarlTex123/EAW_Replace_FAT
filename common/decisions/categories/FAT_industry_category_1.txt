@@ -3,6 +3,7 @@ FAT_industry_decision_category_1 = {
 	picture = GFX_bank_money_decisions
 	visible = {
 		TAG = FAT
+		has_idea = FAT_FP_jingji_idea
 	}
 	priority = 10
 }

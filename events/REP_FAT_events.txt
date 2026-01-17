@@ -1323,6 +1323,86 @@ country_event = { #共产主义者的膨胀——与镰爪的会谈——
 	}
 }
 
+country_event = { #共和党第六届党员大会
+	id = FAT_FP.33
+	picture = FAT_FP.33.p
+	title = FAT_FP.33.t
+	desc = FAT_FP.33.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.33.a
+		custom_effect_tooltip = baquanzhuyijianshao_tt
+		set_temp_variable = { 
+			var = fat_fascism_var
+			value = party_popularity@fascism 
+		}
+		multiply_temp_variable = {
+			var = fat_fascism_var
+			value = -1
+		}
+		hidden_effect = {
+			add_stability = fat_fascism_var
+			add_popularity = {
+				ideology = fascism #霸权主义
+			    popularity = -1
+			}
+		}
+		add_power_balance_value = {
+			id = FAT_power_balance
+			value = -0.2
+			tooltip_side = FAT_democratic_side
+		}
+		country_event = { id = FAT_FP.34}
+	}
+	option = {
+		name = FAT_FP.33.b
+		add_power_balance_value = {
+			id = FAT_power_balance
+			value = 0.2
+			tooltip_side = FAT_nationalism_side
+		}
+		set_temp_variable = { 
+			var = fat_communism_var
+			value = party_popularity@communism 
+		}
+		multiply_temp_variable = {
+			var = fat_communism_var
+			value = -1
+		}
+		hidden_effect = {
+			add_stability = fat_communism_var
+		}
+		country_event = { id = FAT_FP.35}
+	}
+}
+
+country_event = { #新三民主义诠释成为主流
+	id = FAT_FP.34
+	title = FAT_FP.34.t
+	desc = FAT_FP.34.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.34.a
+	}
+}
+
+country_event = { #新三民主义诠释成为主流
+	id = FAT_FP.35
+	title = FAT_FP.35.t
+	desc = FAT_FP.35.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.35.a
+	}
+}
+
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes

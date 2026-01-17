@@ -14,7 +14,19 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+	}
+	hidden_ideas = {
 		FAT_FP_18_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			remove_cost = -1
+			hidden = yes
+		}
+		FAT_FP_jingji_idea = {
 			allowed = {
 				always = no
 			}

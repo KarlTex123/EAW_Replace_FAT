@@ -2,7 +2,8 @@ industry_decision_category_1 = {
 	icon = generic_propaganda
 	picture = GFX_decision_cat_generic_mefo_bills
 	visible = {
-	
+		has_idea = FAT_FP_jingji_idea
+		tag = FAT
 	}
 	priority = 10
 }

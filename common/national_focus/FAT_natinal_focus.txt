@@ -162,6 +162,9 @@ focus_tree = {
 			focus = FAT_sanshiniangonghemeng
 		}
 		completion_reward = {
+			hidden_effect = {
+				add_ideas = FAT_FP_jingji_idea
+			}
 			add_ideas = FAT_minsheng
 			custom_effect_tooltip = FAT_minsheng_tt
 		}
@@ -701,7 +704,7 @@ focus_tree = {
 				popularity = 0.1
 			}	
 			country_event = { id = FAT_FP.32 }
-			remove_idea = {
+			swap_ideas = {
 				remove_idea = FAT_minsheng
 				add_idea = FAT_minsheng_1
 			}
@@ -784,6 +787,10 @@ focus_tree = {
 			focus = FAT_shehzhuyilianmeng
 		}
 		relative_position_id = FAT_shehzhuyilianmeng
+
+		completion_reward = {
+			country_event = { id = FAT_FP.33}
+		}
 	}
 	focus = { #生产宪法
 		id = FAT_shengchanxianfa
