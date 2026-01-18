@@ -1403,7 +1403,7 @@ country_event = { #整理党务决议
 	}
 }
 
-country_event = { #新三民主义诠释成为主流
+country_event = { #银行业密会
 	id = FAT_FP.36
 	title = FAT_FP.36.t
 	desc = FAT_FP.36.d
@@ -1415,6 +1415,282 @@ country_event = { #新三民主义诠释成为主流
 	}
 }
 
+country_event = { #工会模式
+	id = FAT_FP.37
+	title = FAT_FP.37.t
+	desc = FAT_FP.37.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.37.a
+		set_country_flag = gonghuimoshi_1
+	}
+	option = {
+		name = FAT_FP.37.b
+		set_country_flag = gonghuimoshi_2
+	}
+}
+
+country_event = { #农协暴力案
+	id = FAT_FP.38
+	title = FAT_FP.38.t
+	desc = FAT_FP.38.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.38.a
+		add_stability = -0.1
+		country_event = { id = FAT_FP.39 days = 5 } #农协抗议
+		set_country_flag = ngxie_1
+	}
+	option = {
+		name = FAT_FP.38.b
+		add_stability = -0.15
+		country_event = { id = FAT_FP.40 days = 5 } #地主外逃	
+		set_country_flag = ngxie_2	
+	}
+}
+
+country_event = { #农协抗议
+	id = FAT_FP.39
+	title = FAT_FP.39.t
+	desc = FAT_FP.39.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.39.a
+		add_manpower = -5000
+		add_power_balance_value = {
+			id = FAT_power_balance
+			value = 0.1
+			tooltip_side = FAT_nationalism_side
+		}
+	}
+}
+
+country_event = { #地主外逃
+	id = FAT_FP.40
+	title = FAT_FP.40.t
+	desc = FAT_FP.40.d
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = FAT_FP.40.a
+		add_manpower = -1000
+		if = {
+			limit = {
+				has_idea = FAT_minsheng_1
+			}
+			swap_ideas = {
+				remove_idea = FAT_minsheng_1
+				add_idea = FAT_minsheng_4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = FAT_minsheng_3
+			}
+			swap_ideas = {
+				remove_idea = FAT_minsheng_3
+				add_idea = FAT_minsheng_7
+			}
+		}
+	}
+}
+
+country_event = { #农协暴力案
+	id = FAT_FP.41
+	title = FAT_FP.41.t
+	desc = FAT_FP.41.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.41.a
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = ngxie_2
+				}
+			}
+			add_ideas = FAT_Land_collectivization
+		}
+		else = {
+			add_ideas = FAT_Land_collectivization_1
+		}
+	}
+	option = {
+		name = FAT_FP.41.b
+		add_ideas = FAT_Reduce_rent_and_interest	
+		if = {
+			limit = {
+				has_country_flag = ngxie_1
+			}
+			decrease_poverty = yes	
+		}
+		#在农协协地位中选择选项1 农会政治倾向改变为中立
+	}
+}
+
+country_event = { #民生主义的内涵
+	id = FAT_FP.42
+	title = FAT_FP.42.t
+	desc = FAT_FP.42.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.42.a #民生主义就是社会主义
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_1
+					}
+				}
+				add_ideas = FAT_minsheng_8
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_11
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_12
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_1
+					}
+				}
+				add_ideas = FAT_minsheng_10
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_13
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_14
+			}
+			remove_ideas = FAT_minsheng_1
+			remove_ideas = FAT_minsheng_2
+			remove_ideas = FAT_minsheng_3
+			remove_ideas = FAT_minsheng_4
+			remove_ideas = FAT_minsheng_7
+			remove_ideas = FAT_education_reform_idea_3
+			remove_ideas = Republican_faith
+			remove_ideas = FAT_industrialization_3
+			remove_ideas = FAT_Land_collectivization_1
+			remove_ideas = FAT_Land_collectivization_2
+			remove_ideas = FAT_Reduce_rent_and_interest_1
+			remove_ideas = FAT_industrialization_4
+	}
+	option = {
+		name = FAT_FP.42.b
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_1
+					}
+				}
+				add_ideas = FAT_minsheng_15
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_18
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_19
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_1
+					}
+				}
+				add_ideas = FAT_minsheng_9
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_16
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_7
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_17
+			}
+			remove_ideas = FAT_minsheng_7
+			remove_ideas = FAT_education_reform_idea_3
+			remove_ideas = Republican_faith
+			remove_ideas = FAT_industrialization_3
+			remove_ideas = FAT_Land_collectivization_1
+			remove_ideas = FAT_Land_collectivization_2
+			remove_ideas = FAT_Reduce_rent_and_interest_1
+			remove_ideas = FAT_industrialization_4
+	}
+}
 
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1

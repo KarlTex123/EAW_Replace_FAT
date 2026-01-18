@@ -523,8 +523,7 @@ FAT_industry_decision_category_1= {
 					type = infrastructure
 					level = 2
 					instant_build = yes
-				}
-			
+				}		
 			}
 		}
 	}

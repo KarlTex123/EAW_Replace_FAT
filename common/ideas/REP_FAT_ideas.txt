@@ -56,34 +56,6 @@ ideas = {
 				communism_drift = 0.33
 			}
 		}
-		FAT_minsheng_5 = { ##1+3+4
-			picture = GFX_idea_FAT_FAT_minsheng
-			
-			removal_cost = -1
-
-			modifier = {
-				production_speed_buildings_factor = 0.225
-				industrial_capacity_factory = 0.025
-				mobilization_speed = 0.5
-				resistance_target = -0.1
-				communism_drift = 0.35
-			}
-		}
-		FAT_minsheng_6 = { ##1+3+5
-			picture = GFX_idea_FAT_FAT_minsheng
-			
-			removal_cost = -1
-
-			modifier = {
-				production_speed_buildings_factor = 0.025
-				industrial_capacity_factory = 0.025
-				consumer_goods_factor = 0.1
-				compliance_growth = 0.1
-				monthly_population = 0.4
-				communism_drift = 0.33
-				democratic_drift = 0.02
-			}
-		}
 		FAT_minsheng_7 = { ##1+2+3
 			picture = GFX_idea_FAT_FAT_minsheng
 			
@@ -100,42 +72,536 @@ ideas = {
 
 			}
 		}
-		FAT_minsheng_8 = { ##1+2+3+4
+		FAT_minsheng_8 = { ##1+2+3+4 +工业3+农业0
 			picture = GFX_idea_FAT_FAT_minsheng
 			
 			removal_cost = -1
 
 			modifier = {
 				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 				line_change_production_efficiency_factor = 0.025
 				production_speed_buildings_factor = 0.225
-				industrial_capacity_factory = 0.025
-				mobilization_speed = 0.5
+				industrial_capacity_factory = 0.175
+				mobilization_speed = 1.5
 				resistance_target = -0.1
 				communism_drift = 0.35
+				conscription = 0.045
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.45
+				stability_factor = 0.25
+				monthly_population = 0.4
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.03
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05		
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
 			}
 		}
-		FAT_minsheng_9 = { ##1+2+3+5
+		FAT_minsheng_11 = { ##1+2+3+4 +工业3+农业1
 			picture = GFX_idea_FAT_FAT_minsheng
 			
 			removal_cost = -1
 
 			modifier = {
 				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 				line_change_production_efficiency_factor = 0.025
-				production_speed_buildings_factor = 0.025
-				industrial_capacity_factory = 0.025
-				compliance_growth = 0.1
-				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.225
+				industrial_capacity_factory = 0.175
+				mobilization_speed = 1.5
+				resistance_target = -0.1
+				communism_drift = 0.35
+				conscription = 0.045
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.2
+				research_speed_factor = 0.45
+				stability_factor = 0.25
 				monthly_population = 0.4
-				communism_drift = 0.33
-				democratic_drift = 0.02
-
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.03
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05		
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
 			}
 		}
-		FAT_kuodayanlunziyou_idea = {
+		FAT_minsheng_12 = { ##1+2+3+4 +工业3+农业2
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.225
+				industrial_capacity_factory = 0.175
+				mobilization_speed = 1.5
+				resistance_target = -0.1
+				communism_drift = 0.35
+				conscription = 0.045
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.45
+				stability_factor = 0.5
+				monthly_population = 0.4
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.03
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05		
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.2
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+
+		FAT_minsheng_10 = { ##1+2+3+4 +工业4+农业0
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.225
+				industrial_capacity_factory = 0.175
+				mobilization_speed = 1.5
+				resistance_target = -0.1
+				communism_drift = 0.35
+				conscription = 0.045
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.45
+				stability_factor = 0.3
+				monthly_population = 0.4
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.03
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05		
+				production_speed_industrial_complex_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_13 = { ##1+2+3+4 +工业4+农业1
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.225
+				industrial_capacity_factory = 0.175
+				mobilization_speed = 1.5
+				resistance_target = -0.1
+				communism_drift = 0.35
+				conscription = 0.045
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.2
+				research_speed_factor = 0.45
+				stability_factor = 0.3
+				monthly_population = 0.4
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.03
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05		
+				production_speed_industrial_complex_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_14 = { ##1+2+3+4 +工业4+农业2
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.225
+				industrial_capacity_factory = 0.175
+				mobilization_speed = 1.5
+				resistance_target = -0.1
+				communism_drift = 0.35
+				conscription = 0.045
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.45
+				stability_factor = 0.55
+				monthly_population = 0.4
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.03
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05		
+				production_speed_industrial_complex_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.2
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_9 = { ##1+2+3+5 +工业4+农业0
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.175
+				compliance_growth = 0.11
+				monthly_population = 0.8
+				communism_drift = 0.33
+				conscription = 0.045
+				mobilization_speed = 1
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.45
+				stability_factor = 0.3
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.05
+				required_garrison_factor = -0.33
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_16 = { ##1+2+3+5 +工业4+农业1
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.175
+				compliance_growth = 0.11
+				monthly_population = 0.8
+				communism_drift = 0.33
+				conscription = 0.045
+				mobilization_speed = 1
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.45
+				stability_factor = 0.3
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.05
+				required_garrison_factor = -0.33
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_17 = { ##1+2+3+5 +工业4+农业2
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.175
+				compliance_growth = 0.11
+				monthly_population = 0.8
+				communism_drift = 0.33
+				conscription = 0.045
+				mobilization_speed = 1
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.45
+				stability_factor = 0.55
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.05
+				required_garrison_factor = -0.33
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.2
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_15 = { ##1+2+3+5 +工业3+农业0
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.175
+				compliance_growth = 0.11
+				monthly_population = 0.8
+				communism_drift = 0.33
+				conscription = 0.045
+				mobilization_speed = 1
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.45
+				stability_factor = 0.25
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.05
+				required_garrison_factor = -0.33
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_18 = { ##1+2+3+5 +工业3+农业1
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.175
+				compliance_growth = 0.11
+				monthly_population = 0.8
+				communism_drift = 0.33
+				conscription = 0.045
+				mobilization_speed = 1
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.45
+				stability_factor = 0.25
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.05
+				required_garrison_factor = -0.33
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.3
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_19 = { ##1+2+3+5 +工业3+农业2
+			picture = GFX_idea_FAT_FAT_minsheng
+			
+			removal_cost = -1
+
+			modifier = {
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.025
+				industrial_capacity_factory = 0.175
+				compliance_growth = 0.11
+				monthly_population = 0.8
+				communism_drift = 0.33
+				conscription = 0.045
+				mobilization_speed = 1
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.45
+				stability_factor = 0.5
+				army_morale_factor = 0.05
+				political_power_factor = 0.2
+				democratic_drift = 0.05
+				required_garrison_factor = -0.33
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				special_project_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.2
+				experience_loss_factor = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_minsheng_20 = { #1+4工业3+农业0
+
+		}
+		FAT_minsheng_21 = { #1+4工业3+农业1
+
+		}
+		FAT_minsheng_22 = { #1+4工业3+农业2
+
+		}
+		FAT_minsheng_23 = { #1+4工业4+农业0
+
+		}
+		FAT_minsheng_24 = { #1+4工业4+农业1
+
+		}
+		FAT_minsheng_25 = { #1+4工业4+农业2
+
+		}
+#############################################################
+		FAT_minsheng_26 = { #1+2+4工业3+农业0
+
+		}
+		FAT_minsheng_27 = { #1+2+4工业3+农业1
+
+		}
+		FAT_minsheng_28 = { #1+2+4工业3+农业2
+
+		}
+		FAT_minsheng_29 = { #1+2+4工业4+农业0
+
+		}
+		FAT_minsheng_30 = { #1+2+4工业4+农业1
+
+		}
+		FAT_minsheng_31 = { #1+2+4工业4+农业2
+
+		}
+
+###########################################################
+		FAT_minsheng_32 = { #1+3+4工业3+农业0
+
+		}
+		FAT_minsheng_33 = { #1+3+4工业3+农业1
+
+		}
+		FAT_minsheng_34 = { #1+3+4工业3+农业2
+
+		}
+		FAT_minsheng_35 = { #1+3+4工业4+农业0
+
+		}
+		FAT_minsheng_36 = { #1+3+4工业4+农业1
+
+		}
+		FAT_minsheng_37 = { #1+3+4工业4+农业2
+
+		}
+#############################################################
+		FAT_minsheng_38 = { #1+2+5工业3+农业0
+
+		}
+		FAT_minsheng_39 = { #1+2+5工业3+农业1
+
+		}
+		FAT_minsheng_40 = { #1+2+5工业3+农业2
+
+		}
+		FAT_minsheng_41 = { #1+2+5工业4+农业0
+
+		}
+		FAT_minsheng_42 = { #1+2+5工业4+农业1
+
+		}
+		FAT_minsheng_43 = { #1+2+5工业4+农业2
+
+		}
+#############################################################
+		FAT_minsheng_44 = { #1+3+5工业3+农业0
+
+		}
+		FAT_minsheng_45 = { #1+3+5工业3+农业1
+
+		}
+		FAT_minsheng_46 = { #1+3+5工业3+农业2
+
+		}
+		FAT_minsheng_47 = { #1+3+5工业4+农业0
+
+		}
+		FAT_minsheng_48 = { #1+3+5工业4+农业1
+
+		}
+		FAT_minsheng_49 = { #1+3+5工业4+农业2
+
+		}
+###############################################################
+		FAT_kuodayanlunziyou_idea = { #扩大言论自由
 			picture = GFX_idea_FAT_kuodayanlunziyou_idea
 
 			removal_cost = -1
@@ -146,7 +612,7 @@ ideas = {
 				democratic_drift = 0.33
 			}			
 		}
-		FAT_gonghezuojialianmeng_idea = {
+		FAT_gonghezuojialianmeng_idea = { #共和作家联盟
 			picture = GFX_idea_FAT_gonghezuojialianmeng_idea
 
 			removal_cost = -1
@@ -173,7 +639,7 @@ ideas = {
 				communism_drift = 0.33
 			}				
 		}
-		FAT_jingjijihuaweiyuanhui_idea = {
+		FAT_jingjijihuaweiyuanhui_idea = { #经济委员会
 
 			picture = GFX_idea_FAT_jingjijihuaweiyuanhui_idea
 
@@ -185,7 +651,7 @@ ideas = {
 				line_change_production_efficiency_factor = 0.05
 			}
 		}
-		FAT_jingjijihuaweiyuanhui_idea_1 = {
+		FAT_jingjijihuaweiyuanhui_idea_1 = { 
 
 			picture = GFX_idea_FAT_jingjijihuaweiyuanhui_idea
 
@@ -199,6 +665,245 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+
+		The_New_Life_Movement = { #新生活运动
+			picture = GFX_idea_The_New_Life_Movement
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				monthly_population = 0.1
+			}
+		}
+		The_New_Life_Movement_1 = {
+			picture = GFX_idea_The_New_Life_Movement
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				monthly_population = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		The_New_Life_Movement_2 = { 
+			picture = GFX_idea_The_New_Life_Movement
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				monthly_population = 0.1
+				research_speed_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		FAT_education_reform_idea = { #教育改革
+			picture = GFX_idea_FAT_education_reform_idea
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		FAT_education_reform_idea_1 = {
+			picture = GFX_idea_FAT_education_reform_idea
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.05
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+			}
+		}
+		FAT_education_reform_idea_2 = {
+			picture = GFX_idea_FAT_education_reform_idea
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				industrial_capacity_factory = 0.05
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				conscription = 0.005
+				mobilization_speed = 0.5
+			}
+		}
+		FAT_education_reform_idea_3 = {
+			picture = GFX_idea_FAT_education_reform_idea
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.15
+				research_speed_factor = 0.25
+				industrial_capacity_factory = 0.1
+				required_garrison_factor = -0.33
+				compliance_growth = 0.01
+				WEEKLY_CASUALTIES_WAR_SUPPORT = 0.003
+				conscription = 0.005
+				mobilization_speed = 0.5
+				special_project_speed_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		FAT_college_system_idea = { #大学系统
+			picture = GFX_idea_FAT_college_system_idea
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				special_project_speed_factor = 0.1
+			}			
+		}
+		FAT_Literacy_Campaign = { #
+			picture = GFX_idea_FAT_Literacy_Campaign
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+			}			
+		}
+		FAT_Literacy_Campaign_1 = {
+			picture = GFX_idea_FAT_Literacy_Campaign
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}			
+		}
+		The_Republican_Home = { #共和之家
+			picture = GFX_idea_The_Republican_Home
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				conscription = 0.01
+				industrial_capacity_factory = 0.05
+			}			
+		}
+		The_Republican_Home_1 = {
+			picture = GFX_idea_The_Republican_Home
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				conscription = 0.02
+				industrial_capacity_factory = 0.05
+				mobilization_speed = 0.25
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+			}			
+		}
+		FAT_social_transformation = { #社会改造
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}			
+		}
+		FAT_social_transformation_1 = {
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				research_speed_factor = 0.15
+			}			
+		}
+		Republican_faith = { #共和信仰
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				conscription = 0.04
+				industrial_capacity_factory = 0.05
+				mobilization_speed = 0.5
+				WAR_SUPPORT_WEEKLY_FACTOR = 0.01
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.2
+				stability_factor = 0.3
+				monthly_population = 0.1
+				army_morale_factor = 0.05
+				political_power_factor = 0.1
+				democratic_drift = 0.03
+			}			
+		}	
+		FAT_industrialization_1 = { #工业化1
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}			
+		}	
+		FAT_industrialization_2 = { #工业化2
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}			
+		}
+		FAT_industrialization_3 = { #工业化3
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				monthly_population = 0.3
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.1
+				experience_loss_factor = -0.2
+			}			
+		}	
+		FAT_industrialization_4 = { #工业化4
+			picture = GFX_idea_FAT_social_transformation
+			removal_cost = -1
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				monthly_population = 0.3
+				political_power_gain = -0.1
+				local_building_slots_factor = 0.1
+				experience_loss_factor = -0.2
+			}			
+		}
+		FAT_Land_collectivization = { #土地集体化
+			picture = GFX_idea_FAT_Land_collectivization
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				local_building_slots_factor = 0.2
+			}				
+		}
+		FAT_Land_collectivization_1 = {
+			picture = GFX_idea_FAT_Land_collectivization
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				local_building_slots_factor = 0.2
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_Land_collectivization_2 = {
+			picture = GFX_idea_FAT_Land_collectivization
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				local_building_slots_factor = 0.2
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.2
+			}
+		}
+		FAT_Reduce_rent_and_interest = { #减租减息
+			picture = GFX_idea_FAT_Reduce_rent_and_interest
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				local_building_slots_factor = 0.1
+				local_resources_factor = 0.2
+			}
+		}		
 		##开始计算##    ###不要再写这种追加的东西了
 		FAT_National_Revolutionary_Army_1 = {
 			picture = GFX_idea_FAT_National_Revolutionary_Army_1
