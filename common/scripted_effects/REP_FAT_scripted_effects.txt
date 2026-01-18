@@ -1,107 +1,89 @@
 #检查派系所支持的意识形态是否在执政联盟 > 设置倍率
-FAT_check_set_buff_factor = {
-	for_each_loop = {
-		array = FAT.FAT_faction_ideo_buff_factor
-		index = faction
+FAT_check_set_buff_ideo_factor = {
+	for_each_scope_loop = {
+		array = FAT.FAT_faction_array
 		set_variable = {
-			FAT.FAT_faction_ideo_buff_factor^faction = 0
+			if_in_union = 0
 		}
 		set_variable = {
-			FAT.FAT_faction_if_in_union^faction = 0
-		}
-	}
-	for_each_loop = {
-		array = FAT.FAT_government_union
-		value = ideo
-		set_temp_variable = {
-			support_number = 0
+			buff_ideo_factor = 0
 		}
 		if = {
 			limit = {
-				check_variable = {
-					ideo = 1
+				is_in_array = {
+					array = FAT.FAT_government_union
+					value = support_ideology
 				}
 			}
-			set_temp_variable = {
-				support_number = party_popularity@democratic
+			set_variable = {
+				if_in_union = 1
 			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					ideo = 2
-				}
-			}
-			set_temp_variable = {
-				support_number = party_popularity@communism
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					ideo = 3
-				}
-			}
-			set_temp_variable = {
-				support_number = party_popularity@fascism
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					ideo = 4
-				}
-			}
-			set_temp_variable = {
-				support_number = party_popularity@neutrality
-			}
-		}
-		for_each_loop = {
-			array = FAT.FAT_faction_ideo
-			value = faction_ideo
-			index = faction
 			if = {
 				limit = {
 					check_variable = {
-						faction_ideo = ideo
+						support_ideology = 1
 					}
 				}
 				set_variable = {
-					FAT.FAT_faction_if_in_union^faction = 1
+					buff_ideo_factor = FAT.party_popularity@democratic
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 2
+					}
 				}
 				set_variable = {
-					FAT.FAT_faction_ideo_buff_factor^faction = support_number
+					buff_ideo_factor = FAT.party_popularity@communism
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 3
+					}
+				}
+				set_variable = {
+					buff_ideo_factor = FAT.party_popularity@fascism
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 4
+					}
+				}
+				set_variable = {
+					buff_ideo_factor = FAT.party_popularity@neutrality
 				}
 			}
 		}
 	}
 }
 FAT_set_faction_buff = {
-	for_each_loop = {
-		array = FAT.FAT_faction_ideo_buff
-		index = faction
-		set_temp_variable = {
-			factor = FAT.FAT_faction_ideo_buff_base^faction
-		}
+	for_each_scope_loop = {
+		array = FAT_faction_array
 		set_variable = {
-			FAT.FAT_faction_ideo_buff^faction = factor
-		}
-		set_temp_variable = {
-			factor = FAT.FAT_faction_ideo_buff_factor^faction
+			buff = buff_base
 		}
 		multiply_variable = {
-			FAT.FAT_faction_ideo_buff^faction = factor
-		}
-		set_temp_variable = {
-			factor = FAT.FAT_faction_ideo_buff_factor_more^faction
+			buff = buff_ideo_factor
 		}
 		multiply_variable = {
-			FAT.FAT_faction_ideo_buff^faction = factor
+			buff = buff_factor
+		}
+	}
+	for_each_loop = {
+		array = FAT_faction_array
+		value = v
+		index = i
+		var:v = {
+			set_variable = {
+				FAT.FAT_faction_buff_array^i = buff
+			}
 		}
 	}
 }
-
-
-
 
 

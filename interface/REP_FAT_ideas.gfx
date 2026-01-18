@@ -1,96 +1,96 @@
 spriteTypes = {
 	SpriteType = { 
 		name = "GFX_idea_FAT_walk_on_cloud_army_school_idea"
-		texturefile = "gfx\interface\ideas\漫云军校.png" 
+		texturefile = "gfx/interface/ideas/漫云军校.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_Revolutionary_Terror"
-		texturefile = "gfx\interface\ideas\Revolutionary_Terror.png" 
+		texturefile = "gfx/interface/ideas/Revolutionary_Terror.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_FAT_liberty"
-		texturefile = "gfx\interface\ideas\FAT_liberty.png" 
+		texturefile = "gfx/interface/ideas/FAT_liberty.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_Proclamation_of_Civil_War_Mobilization"
-		texturefile = "gfx\interface\ideas\Proclamation_of_Civil_War_Mobilization.png" 
+		texturefile = "gfx/interface/ideas/Proclamation_of_Civil_War_Mobilization.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_Twilight_theory"
-		texturefile = "gfx\interface\ideas\政党联盟.png" 
+		texturefile = "gfx/interface/ideas/政党联盟.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_the_first_step_of_industrialization"
-		texturefile = "gfx\interface\ideas\工业化1.png" 
+		texturefile = "gfx/interface/ideas/工业化1.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_Moderately_developed_industrialization"
-		texturefile = "gfx\interface\ideas\工业化2.png" 
+		texturefile = "gfx/interface/ideas/工业化2.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_Booming_industrialization"
-		texturefile = "gfx\interface\ideas\工业化3.png" 
+		texturefile = "gfx/interface/ideas/工业化3.png" 
 	}
 	#政治派别图标↓
 	SpriteType = { 
 		name = "GFX_idea_faction_yihui_gonghe"
-		texturefile = "gfx\interface\political_factions\议会共和派.png" 
+		texturefile = "gfx/interface/political_factions/0.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_junxiao_junguan"
-		texturefile = "gfx\interface\political_factions\军校军官团.png" 
+		texturefile = "gfx/interface/political_factions/1.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_gonghui"
-		texturefile = "gfx\interface\political_factions\工会.png" 
+		texturefile = "gfx/interface/political_factions/2.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_student_tuanti"
-		texturefile = "gfx\interface\political_factions\学生团体.png" 
+		texturefile = "gfx/interface/political_factions/3.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_haiwai_gonghe"
-		texturefile = "gfx\interface\political_factions\海外共和之友.png" 
+		texturefile = "gfx/interface/political_factions/4.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_old_gonghejun"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_shangye_lianhe"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_south_gonghe"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_manyun_official"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_manyun_hezhua"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_nonghui"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_jinrong_jituan"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_writer_lianmeng"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_kemeisikai_xuehui"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_faction_gongmin_weiyuan"
-		texturefile = "gfx\interface\political_factions\1.民权主义.png" 
+		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
 	}
 	
 	
