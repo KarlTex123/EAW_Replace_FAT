@@ -1358,6 +1358,7 @@ country_event = { #共和党第六届党员大会
 	}
 	option = {
 		name = FAT_FP.33.b
+		custom_effect_tooltip = shehuizhuyijianshao_tt
 		add_power_balance_value = {
 			id = FAT_power_balance
 			value = 0.2
@@ -1390,7 +1391,7 @@ country_event = { #新三民主义诠释成为主流
 	}
 }
 
-country_event = { #新三民主义诠释成为主流
+country_event = { #整理党务决议
 	id = FAT_FP.35
 	title = FAT_FP.35.t
 	desc = FAT_FP.35.d
@@ -1399,6 +1400,18 @@ country_event = { #新三民主义诠释成为主流
 
 	option = {
 		name = FAT_FP.35.a
+	}
+}
+
+country_event = { #新三民主义诠释成为主流
+	id = FAT_FP.36
+	title = FAT_FP.36.t
+	desc = FAT_FP.36.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.36.a
 	}
 }
 

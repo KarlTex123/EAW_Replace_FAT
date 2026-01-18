@@ -1042,7 +1042,7 @@ FAT_industry_decision_category_1= {
 	FAT_establish_cooperative = {#成立合作社
 	icon = GFX_bank_build_icon
 	visible = {
-		
+		has_country_flag = FAT_shengchanxianfa_flag
 	}
 	ai_will_do = {
 		factor = 30
@@ -1091,6 +1091,7 @@ FAT_industry_decision_category_1= {
 		has_dynamic_modifier = {
 			modifier = FAT_cooperative
 		}
+		has_country_flag = FAT_shengchanxianfa_flag
 	}
 	ai_will_do = {
 		factor = 30
@@ -1140,7 +1141,7 @@ FAT_industry_decision_category_1= {
 		#发展鸿运港
 		icon = GFX_bank_build_icon
 		visible = {
-			
+			has_country_flag = FAT_shengchanxianfa_flag			
 		}
 		ai_will_do = {
 			factor = 30

@@ -165,11 +165,11 @@ focus_tree = {
 			hidden_effect = {
 				add_ideas = FAT_FP_jingji_idea
 			}
-			add_ideas = FAT_minsheng
+			add_ideas = FAT_minsheng_0
 			custom_effect_tooltip = FAT_minsheng_tt
 		}
 	}
-	focus = { #计划经济委员会
+	focus = { #
 		id = FAT_jingjijihuaweiyuanhui #现在是经济计划委员会
 		icon = GFX_goal_FAT_jingjijihuaweiyuanhui
 		cost = 10
@@ -182,6 +182,15 @@ focus_tree = {
 			focus = FAT_gongheyinhang
 		}
 		relative_position_id = FAT_minsheng
+
+		completion_reward = {
+			add_ideas = FAT_jingjijihuaweiyuanhui_idea
+			decrease_poverty = yes
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
 	}
 	focus = { #民主
 		id = FAT_minzhu
@@ -225,6 +234,54 @@ focus_tree = {
 			focus = FAT_jingjijihuaweiyuanhui
 		}
 		relative_position_id = FAT_minsheng
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism #霸权
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality #中立
+				popularity = 0.1
+			}
+			country_event = { id = FAT_FP.36}
+			if = {
+				limit = {
+					has_idea = FAT_minsheng_0
+				}
+				swap_ideas = {
+					remove_idea = FAT_minsheng_0
+					add_idea = FAT_minsheng_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_minsheng_1
+				}
+				swap_ideas = {
+					remove_idea = FAT_minsheng_1
+					add_idea = FAT_minsheng_3
+				}
+			}	
+			if = {
+				limit = {
+					has_idea = FAT_minsheng_1
+				}
+				swap_ideas = {
+					remove_idea = FAT_minsheng_1
+					add_idea = FAT_minsheng_3
+				}
+			}	
+			if = {
+				limit = {
+					has_idea = FAT_minsheng_4
+				}
+				swap_ideas = {
+					remove_idea = FAT_minsheng_4
+					add_idea = FAT_minsheng_7
+				}
+			}	
+		}
 	}
 	focus = { #新建中小学
 		id = FAT_xinjianzhongxiaoxue
@@ -704,9 +761,23 @@ focus_tree = {
 				popularity = 0.1
 			}	
 			country_event = { id = FAT_FP.32 }
-			swap_ideas = {
-				remove_idea = FAT_minsheng
-				add_idea = FAT_minsheng_1
+			if = {
+				limit = {
+					has_idea = FAT_minsheng_0
+				}
+				swap_ideas = {
+					remove_idea = FAT_minsheng_0
+					add_idea = FAT_minsheng_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_minsheng_2
+				}
+				swap_ideas = {
+					remove_idea = FAT_minsheng_2
+					add_idea = FAT_minsheng_3
+				}
 			}
 		}
 	}
@@ -723,6 +794,19 @@ focus_tree = {
 			focus = FAT_gonghezuojialianmeng
 		}
 		relative_position_id = FAT_minsheng
+
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_ideas = FAT_kuodayanlunziyou_idea
+			add_popularity = {
+				ideology = fascism #霸权
+				popularity = 0.05
+			}	
+			add_popularity = {
+				ideology = democratic #谐律主义
+				popularity = 0.1
+			}
+		}
 	}
 	focus = { #共和作家联盟
 		id = FAT_gonghezuojialianmeng
@@ -737,6 +821,15 @@ focus_tree = {
 			focus = FAT_kuodayanlunziyou
 		}
 		relative_position_id = FAT_minsheng
+
+		completion_reward = {
+			add_ideas = FAT_gonghezuojialianmeng_idea
+			add_power_balance_value = {
+				id = FAT_power_balance
+				value = -0.05
+				tooltip_side = FAT_democratic_side
+			}
+		}
 	}
 	focus = { #农民协会地位
 		id = FAT_nongxiediwei
@@ -746,9 +839,6 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = FAT_shehzhuyilianmeng
-		}
-		prerequisite = {
-			focus = FAT_gonghezuojialianmeng
 		}
 		relative_position_id = FAT_shehzhuyilianmeng
 	}
@@ -762,6 +852,14 @@ focus_tree = {
 			focus = FAT_gonghezuojialianmeng
 		}
 		relative_position_id = FAT_gonghezuojialianmeng
+
+		completion_reward = {
+			decrease_illiteracy = yes
+			swap_ideas = {
+				remove_idea = FAT_gonghezuojialianmeng_idea
+				add_idea = FAT_gonghezuojialianmeng_idea_1
+			}
+		}
 	}
 	focus = { #工会法
 		id = FAT_gonghuifa
@@ -771,9 +869,6 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = FAT_shehzhuyilianmeng
-		}
-		prerequisite = {
-			focus = FAT_jingjijihuaweiyuanhui
 		}
 		relative_position_id = FAT_shehzhuyilianmeng
 	}
@@ -802,6 +897,18 @@ focus_tree = {
 			focus = FAT_jingjijihuaweiyuanhui
 		}
 		relative_position_id = FAT_jingjijihuaweiyuanhui
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_jingjijihuaweiyuanhui_idea
+				add_idea = FAT_jingjijihuaweiyuanhui_idea_1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			set_country_flag = FAT_shengchanxianfa_flag
+		}
 	}
 	focus = { #新课本
 		id = FAT_xinkeben
@@ -1013,6 +1120,13 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 2
+
+		available = {
+			OR = {
+				has_completed_focus = FAT_gongheyinhang
+				has_completed_focus = FAT_shengchanxianfa
+			}
+		}
 		prerequisite = {
 			focus = FAT_shehuizhuyizhediwei
 		}
@@ -1029,6 +1143,10 @@ focus_tree = {
 			focus = FAT_gongshangbaoxiejishiyebaozheng
 		}
 		relative_position_id = FAT_shehuizhuyizhediwei
+
+		completion_reward = {
+
+		}
 	}
 	focus = { #设立考试院 
 		id = FAT_shelikaoshiyuan
