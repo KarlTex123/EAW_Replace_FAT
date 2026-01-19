@@ -1,14 +1,24 @@
 sbuff_change = {
 	#对于名为“<sbuff_name>”的dynamic_modifier，请同时生成一个名为“<sbuff_name>_ik”的idea
 	#动态修正的修正数值读取的变量名（必须严格遵守规则） = <sbuff_name>_ik_<sbuff_type>
-	#需要准备的参数，以temp_variable存储
+	#需要准备的参数，以temp_variable存储，每项变更都需要加上后缀例如_0，_1……
 		#sbuff_name = 动态修正对应的idea（token）
 		#sbuff_type = 修正类型（token）
 		#sbuff_number = 修正数值
 		#sbuff_number_type = 数值类型（可选）
 		##1正值百分比（默认），-1反值百分比，2正值常数，-2反值常数
 
-	custom_effect_tooltip = sbuff_effect_0_tt #显示效果
+	custom_effect_tooltip = sbuff_change_tt
+	set_temp_variable = {
+		sbuff_type = sbuff_type_0
+	}
+	set_temp_variable = {
+		sbuff_number = sbuff_number_0
+	}
+	set_temp_variable = {
+		sbuff_number_type = sbuff_number_type_0
+	}
+	custom_effect_tooltip = sbuff_change_tt_0 #显示效果
 	meta_effect = {
 		text = {
 			add_to_variable = {
@@ -19,7 +29,17 @@ sbuff_change = {
 		sbuff_name_meta = "[?sbuff_name.GetTokenKey]"
 		sbuff_type_meta = "[?sbuff_type.GetTokenKey]"
 	}
-	custom_effect_tooltip = sbuff_effect_0_tt_1
+
+	set_temp_variable = {
+		sbuff_type = sbuff_type_1
+	}
+	set_temp_variable = {
+		sbuff_number = sbuff_number_1
+	}
+	set_temp_variable = {
+		sbuff_number_type = sbuff_number_type_1
+	}
+	custom_effect_tooltip = sbuff_change_tt_1
 	if = {
 		limit = {
 			has_variable = sbuff_type_1
@@ -28,14 +48,24 @@ sbuff_change = {
 			text = {
 				add_to_variable = {
 					var = [sbuff_name_meta]_[sbuff_type_meta]
-					value = sbuff_number_1
+					value = sbuff_number
 				}
 			}
 			sbuff_name_meta = "[?sbuff_name.GetTokenKey]"
-			sbuff_type_meta = "[?sbuff_type_1.GetTokenKey]"
+			sbuff_type_meta = "[?sbuff_type.GetTokenKey]"
 		}
 	}
-	custom_effect_tooltip = sbuff_effect_0_tt_2
+
+	set_temp_variable = {
+		sbuff_type = sbuff_type_2
+	}
+	set_temp_variable = {
+		sbuff_number = sbuff_number_2
+	}
+	set_temp_variable = {
+		sbuff_number_type = sbuff_number_type_2
+	}
+	custom_effect_tooltip = sbuff_change_tt_1
 	if = {
 		limit = {
 			has_variable = sbuff_type_2
@@ -44,14 +74,24 @@ sbuff_change = {
 			text = {
 				add_to_variable = {
 					var = [sbuff_name_meta]_[sbuff_type_meta]
-					value = sbuff_number_2
+					value = sbuff_number
 				}
 			}
 			sbuff_name_meta = "[?sbuff_name.GetTokenKey]"
-			sbuff_type_meta = "[?sbuff_type_2.GetTokenKey]"
+			sbuff_type_meta = "[?sbuff_type.GetTokenKey]"
 		}
 	}
-	custom_effect_tooltip = sbuff_effect_0_tt_3
+
+	set_temp_variable = {
+		sbuff_type = sbuff_type_3
+	}
+	set_temp_variable = {
+		sbuff_number = sbuff_number_3
+	}
+	set_temp_variable = {
+		sbuff_number_type = sbuff_number_type_3
+	}
+	custom_effect_tooltip = sbuff_change_tt_1
 	if = {
 		limit = {
 			has_variable = sbuff_type_3
@@ -60,14 +100,24 @@ sbuff_change = {
 			text = {
 				add_to_variable = {
 					var = [sbuff_name_meta]_[sbuff_type_meta]
-					value = sbuff_number_3
+					value = sbuff_number
 				}
 			}
 			sbuff_name_meta = "[?sbuff_name.GetTokenKey]"
-			sbuff_type_meta = "[?sbuff_type_3.GetTokenKey]"
+			sbuff_type_meta = "[?sbuff_type.GetTokenKey]"
 		}
 	}
-	custom_effect_tooltip = sbuff_effect_0_tt_4
+
+	set_temp_variable = {
+		sbuff_type = sbuff_type_4
+	}
+	set_temp_variable = {
+		sbuff_number = sbuff_number_4
+	}
+	set_temp_variable = {
+		sbuff_number_type = sbuff_number_type_4
+	}
+	custom_effect_tooltip = sbuff_change_tt_1
 	if = {
 		limit = {
 			has_variable = sbuff_type_4
@@ -76,11 +126,11 @@ sbuff_change = {
 			text = {
 				add_to_variable = {
 					var = [sbuff_name_meta]_[sbuff_type_meta]
-					value = sbuff_number_4
+					value = sbuff_number
 				}
 			}
 			sbuff_name_meta = "[?sbuff_name.GetTokenKey]"
-			sbuff_type_meta = "[?sbuff_type_4.GetTokenKey]"
+			sbuff_type_meta = "[?sbuff_type.GetTokenKey]"
 		}
 	}
 }

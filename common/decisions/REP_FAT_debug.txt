@@ -165,11 +165,38 @@ REP_FAT_test_category = { #测试决议
 			}
 		}
 	}
+	动态修正说明 = {
+		#对于名为“<sbuff_name>”的dynamic_modifier，请同时写一个名为“<sbuff_name>_ik”的idea
+		#动态修正的修正数值读取的变量名（必须严格遵守规则） = <sbuff_name>_ik_<sbuff_type>
+		complete_effect = {
+			#需要输入的参数如下
+			set_temp_variable = { #sbuff_name = 动态修正对应的idea（token）
+				sbuff_name = token:<sbuff_name>_ik
+			}
+
+			set_temp_variable = { #sbuff_type = 修正类型（token）
+				sbuff_type_0 = token:political_power_factor #政治点数modifier
+			}
+			set_temp_variable = { #sbuff_number = 修正数值
+				sbuff_number_0 = 0.1 #政治点数+10%
+			}
+			set_temp_variable = { #sbuff_number_type = 数值类型（可选）
+				sbuff_number_type_0 = 1 #1正值百分比（默认），-1反值百分比，2正值常数，-2反值常数
+			}
+
+			set_temp_variable = {
+				sbuff_type_1 = token:army_org #组织度modifier
+			}
+			set_temp_variable = {
+				sbuff_number_1 = 0.5 #组织度+0.5
+			}
+			set_temp_variable = {
+				sbuff_number_type_1 = 2 #组织度是正向加成的小数，故选2
+			}
+		}
+	}
 	test_dont_know = { 
 		complete_effect = {
-			var:FAT_faction_array^4 = { 
-				custom_effect_tooltip = test_dont_know_tt
-			}
 		}
 	}
 }
