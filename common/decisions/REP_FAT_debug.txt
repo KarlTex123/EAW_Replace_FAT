@@ -193,6 +193,8 @@ REP_FAT_test_category = { #测试决议
 			set_temp_variable = {
 				sbuff_number_type_1 = 2 #组织度是正向加成的小数，故选2
 			}
+
+			sbuff_change = yes #最重要的，别忘记调用scripted effect了
 		}
 	}
 	test_dont_know = { 
