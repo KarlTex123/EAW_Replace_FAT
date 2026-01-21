@@ -1195,18 +1195,74 @@ country_event = { #制宪定稿
 	option = {
 		name = FAT_FP.26.a
 		add_ideas = Socialist_Constitution
+		for_each_scope_loop = {
+			array = FAT_faction_array
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 2
+					}
+				}
+				multiply_variable = {
+					buff_factor = 2
+				}
+			}
+		}
+		custom_effect_tooltip = FAT_FP.26.a_tt
 	}
 	option = {
 		name = FAT_FP.26.b
 		add_ideas = The_firm_Free_Republic
+		for_each_scope_loop = {
+			array = FAT_faction_array
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 1
+					}
+				}
+				multiply_variable = {
+					buff_factor = 2
+				}
+			}
+		}
+		custom_effect_tooltip = FAT_FP.26.b_tt
 	}
 	option = {
 		name = FAT_FP.26.c
 		add_ideas = Declaration_of_multi_party_compromise
+		for_each_scope_loop = {
+			array = FAT_faction_array
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 4
+					}
+				}
+				multiply_variable = {
+					buff_factor = 2
+				}
+			}
+		}
+		custom_effect_tooltip = FAT_FP.26.c_tt
 	}
 	option = {
 		name = FAT_FP.26.e
 		add_ideas = The_homeland_of_all_griffin_tribes
+		for_each_scope_loop = {
+			array = FAT_faction_array
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 3
+					}
+				}
+				multiply_variable = {
+					buff_factor = 2
+				}
+			}
+		}
+		custom_effect_tooltip = FAT_FP.26.e_tt
 	}
 }
 

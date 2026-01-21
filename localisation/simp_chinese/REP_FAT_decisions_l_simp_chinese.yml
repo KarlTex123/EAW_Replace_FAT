@@ -76,25 +76,26 @@ REP_FAT_political_decision: "共和国派系政治"
   FAT_government_union_2_yes_loc: "§t共产主义§!"
   FAT_government_union_3_yes_loc: "§R霸权主义§!"
   FAT_government_union_4_yes_loc: "§g中立主义§!"
-  F00: "议会共和党"
-  F01: "军校军官团"
-  F02: "工会"
-  F03: "学生团体"
-  F04: "海外共和之友"
+
+  F00: "议会共和党"#
+  F01: "军校军官团"#
+  F02: "工会"#
+  F03: "学生团体"#
+  F04: "海外共和之友"#
   F05: "老共和军"
   F06: "商业联合会"
   F07: "南方共和党"
   F08: "漫云官僚"
-  F09: "漫云黑爪党网络"
+  F09: "漫云黑爪党网络"#
   F10: "农会"
   F11: "金融集团"
   F12: "共和作家联盟"
   F13: "克梅斯凯学会"
   F14: "小马公民委员会"
   FAT_government_union_no_loc: "未参政"
-  FAT_political_faction_name: "§Y[THIS.GetName]§!\n[FAT_political_faction_name_tt]"
+  FAT_political_faction_name: "§Y[THIS.GetName]§!\n政治倾向：[FAT_faction_love_ideo]\n[FAT_political_faction_name_tt]"
   FAT_political_faction_desc: "[FAT_political_faction_desc_tt]"
-  faction_loc_desc: "政治倾向：[?THIS.support_ideology]，是否在执政联盟内：[?THIS.if_in_union]，基础buff数值：[?THIS.buff_base]，政党支持率系数：[?THIS.buff_ideo_factor]，额外系数：[?THIS.buff_factor]，buff数值：[?THIS.buff]"
+  faction_loc_desc: "是否在执政联盟内：[?THIS.if_in_union]，基础buff数值：[?THIS.buff_base]，政党支持率系数：[?THIS.buff_ideo_factor]，额外系数：[?THIS.buff_factor]，buff数值：[?THIS.buff]"
   faction_no_loc: "§R不在执政联盟内§!\n该派系对国家的影响为：\n§R无影响§!"
   faction_0_loc: "§G处于执政联盟内§!\n该派系对国家的影响为：\n稳定度[?buff|=+%]"
   faction_1_loc: "§G处于执政联盟内§!\n该派系对国家的影响为：\n陆军师组织度恢复速率[?buff|=+%]"

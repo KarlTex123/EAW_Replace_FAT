@@ -1,97 +1,97 @@
-defined_text = {
+defined_text = { #派系icon
 	name = tupian_FAT_faction
 	text = {
 		trigger = {
 			tag = F00
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F00"
 	}
 	text = {
 		trigger = {
 			tag = F01
 		}
-		localization_key = "GFX_idea_faction_junxiao_junguan"
+		localization_key = "GFX_idea_faction_F01"
 	}
 	text = {
 		trigger = {
 			tag = F02
 		}
-		localization_key = "GFX_idea_faction_gonghui"
+		localization_key = "GFX_idea_faction_F02"
 	}
 	text = {
 		trigger = {
 			tag = F03
 		}
-		localization_key = "GFX_idea_faction_student_tuanti"
+		localization_key = "GFX_idea_faction_F03"
 	}
 	text = {
 		trigger = {
 			tag = F04
 		}
-		localization_key = "GFX_idea_faction_haiwai_gonghe"
+		localization_key = "GFX_idea_faction_F04"
 	}
 	text = {
 		trigger = {
 			tag = F05
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F05"
 	}
 	text = {
 		trigger = {
 			tag = F06
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F06"
 	}
 	text = {
 		trigger = {
 			tag = F07
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F07"
 	}
 	text = {
 		trigger = {
 			tag = F08
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F08"
 	}
 	text = {
 		trigger = {
 			tag = F09
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F09"
 	}
 	text = {
 		trigger = {
 			tag = F10
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F10"
 	}
 	text = {
 		trigger = {
 			tag = F11
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F11"
 	}
 	text = {
 		trigger = {
 			tag = F12
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F12"
 	}
 	text = {
 		trigger = {
 			tag = F13
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F13"
 	}
 	text = {
 		trigger = {
 			tag = F14
 		}
-		localization_key = "GFX_idea_faction_yihui_gonghe"
+		localization_key = "GFX_idea_faction_F14"
 	}
 }
-defined_text = {
+defined_text = { #派系影响
 	name = FAT_political_faction_name_tt
 	text = {
 		trigger = {
@@ -192,7 +192,7 @@ defined_text = {
 		localization_key = faction_14_loc
 	}
 }
-defined_text = {
+defined_text = { #派系介绍
 	name = FAT_political_faction_desc_tt
 	text = {
 		trigger = {
@@ -291,7 +291,7 @@ defined_text = {
 		localization_key = faction_14_loc_desc
 	}
 }
-defined_text = { 
+defined_text = { #执政联盟-谐律
 	name = FAT_government_union_1_loc
 	text = {
 		trigger = {
@@ -306,7 +306,7 @@ defined_text = {
 		localization_key = FAT_government_union_no_loc
 	}
 }
-defined_text = { 
+defined_text = { #执政联盟-谐律
 	name = FAT_government_union_2_loc
 	text = {
 		trigger = {
@@ -321,7 +321,7 @@ defined_text = {
 		localization_key = FAT_government_union_no_loc
 	}
 }
-defined_text = { 
+defined_text = { #执政联盟-霸权
 	name = FAT_government_union_3_loc
 	text = {
 		trigger = {
@@ -336,7 +336,7 @@ defined_text = {
 		localization_key = FAT_government_union_no_loc
 	}
 }
-defined_text = { 
+defined_text = { #执政联盟-中立
 	name = FAT_government_union_4_loc
 	text = {
 		trigger = {
@@ -349,6 +349,41 @@ defined_text = {
 	}
 	text = {
 		localization_key = FAT_government_union_no_loc
+	}
+}
+defined_text = { #派系支持的意识形态
+	name = FAT_faction_love_ideo
+	text = {
+		trigger = {
+			check_variable = {
+				support_ideology = 1
+			}
+		}
+		localization_key = FAT_government_union_1_yes_loc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				support_ideology = 2
+			}
+		}
+		localization_key = FAT_government_union_2_yes_loc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				support_ideology = 3
+			}
+		}
+		localization_key = FAT_government_union_3_yes_loc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				support_ideology = 4
+			}
+		}
+		localization_key = FAT_government_union_4_yes_loc
 	}
 }
 

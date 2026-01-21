@@ -33,64 +33,64 @@ spriteTypes = {
 	}
 	#政治派别图标↓
 	SpriteType = { 
-		name = "GFX_idea_faction_yihui_gonghe"
+		name = "GFX_idea_faction_F00"
 		texturefile = "gfx/interface/political_factions/0.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_junxiao_junguan"
+		name = "GFX_idea_faction_F01"
 		texturefile = "gfx/interface/political_factions/1.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_gonghui"
+		name = "GFX_idea_faction_F02"
 		texturefile = "gfx/interface/political_factions/2.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_student_tuanti"
+		name = "GFX_idea_faction_F03"
 		texturefile = "gfx/interface/political_factions/3.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_haiwai_gonghe"
+		name = "GFX_idea_faction_F04"
 		texturefile = "gfx/interface/political_factions/4.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_old_gonghejun"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F05"
+		texturefile = "gfx/interface/political_factions/5.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_shangye_lianhe"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F06"
+		texturefile = "gfx/interface/political_factions/6.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_south_gonghe"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F07"
+		texturefile = "gfx/interface/political_factions/0.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_manyun_official"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F08"
+		texturefile = "gfx/interface/political_factions/8.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_manyun_hezhua"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F09"
+		texturefile = "gfx/interface/political_factions/9.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_nonghui"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F10"
+		texturefile = "gfx/interface/political_factions/10.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_jinrong_jituan"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F11"
+		texturefile = "gfx/interface/political_factions/11.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_writer_lianmeng"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F12"
+		texturefile = "gfx/interface/political_factions/12.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_kemeisikai_xuehui"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F13"
+		texturefile = "gfx/interface/political_factions/13.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_faction_gongmin_weiyuan"
-		texturefile = "gfx/interface/political_factions/1.民权主义.png" 
+		name = "GFX_idea_faction_F14"
+		texturefile = "gfx/interface/political_factions/14.png" 
 	}
 	
 	
