@@ -1,14 +1,15 @@
 FAT_National_Republic_party = { #民族共和党
 	enable = { always = yes }
 	icon = GFX_idea_Twilight_theory
+	#stability_factor = FAT_National_Republic_party_union_democratic
+	#line_change_production_efficiency_factor = FAT_National_Republic_party_union_neutrality
+	#political_power_gain = FAT_National_Republic_party_union_communism
 
-	stability_factor = FAT_National_Republic_party_union_democratic
-	line_change_production_efficiency_factor = FAT_National_Republic_party_union_neutrality
-	political_power_gain = FAT_National_Republic_party_union_communism
+
 	#派系加成
 	stability_factor = FAT_faction_buff_array^0
 	army_morale_factor = FAT_faction_buff_array^1
-	industrial_capacity_factory = FFAT_faction_buff_array^2
+	industrial_capacity_factory = FAT_faction_buff_array^2
 	political_power_factor = FAT_faction_buff_array^3
 	weekly_manpower = FAT_faction_buff_array^4
 	army_org_factor = FAT_faction_buff_array^5

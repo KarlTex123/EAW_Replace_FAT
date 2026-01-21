@@ -102,7 +102,7 @@ on_actions = {
 			}
 		}
 	}
-	on_monthly_FAT = {
+	on_weekly_FAT = {
 		effect = {
 			FAT_check_set_buff_ideo_factor = yes
 			FAT_set_faction_buff = yes

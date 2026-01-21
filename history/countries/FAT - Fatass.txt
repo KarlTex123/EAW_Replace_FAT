@@ -292,6 +292,9 @@ if = {
 	}
 }
 #政治派系系统
+add_dynamic_modifier = { #对应动态修正
+	modifier = FAT_National_Republic_party
+}
 #意识形态变量，1-谐律，2-共产，3-霸权，4-中立
 #执政联盟
 add_to_array = {
