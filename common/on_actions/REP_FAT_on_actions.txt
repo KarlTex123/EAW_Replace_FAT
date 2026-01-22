@@ -18,6 +18,11 @@ on_actions = {
 					id = FAT_start.8
 					days = 400
 				}
+				add_ideas = {
+					FAT_alexander_kemerskai_army_chief
+					FAT_alexander_kemerskai_2_theorist
+					FAT_alexander_kemerskai_3_political_advisor
+				}
 				country_event = {
 					id = FAT_VED_REV.1
 					days = 500
