@@ -37,6 +37,9 @@ on_actions = {
 					set_variable = { FAT_a_loan_amount = 3000}#一笔贷款的额度
 					set_variable = { FAT_loan_max = 30000}#国家贷款上限
 					set_variable = { FAT_loan_rate = 0.02}#国家贷款利率
+
+					#额外收入
+					set_variable = { FAT_extra_money = 100}#额外资金收入
 				}
 			}
 		}
@@ -97,6 +100,7 @@ on_actions = {
 					#将资金获取全部加在一起
 					add_to_variable = {FAT_money_get = FAT_civilian_factories_get}#民用工厂资金获取
 					add_to_variable = {FAT_money_get = FAT_resource_exported_get}#资源资金获取
+					add_to_variable = {FAT_money_get = FAT_extra_money}#额外资金获取
 
 					#将资金消耗加在一起
 					add_to_variable = {FAT_money_cost = FAT_military_factories_cost}#军工

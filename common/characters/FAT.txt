@@ -13,12 +13,10 @@ characters={
 			slot = army_chief
 			idea_token = FAT_alexander_kemerskai_army_chief
 			traits = { 
-				
 			}
 			can_be_fired = no
 			on_add = {
 				ROOT = {
-					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.1 }
 					}

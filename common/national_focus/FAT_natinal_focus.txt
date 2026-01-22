@@ -1337,7 +1337,7 @@ focus_tree = {
 			add_ideas = FAT_social_transformation
 			decrease_poverty = yes
 			custom_effect_tooltip = FAT_zhiyuaninkun_tt
-			add_to_variable = {FAT_money = 3000}						
+			add_to_variable = { FAT_extra_money = 100}						
 		}
 	}
 	focus = { #狮鹫童子军

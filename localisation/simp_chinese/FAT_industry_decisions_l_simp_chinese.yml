@@ -16,7 +16,7 @@
  add_pot: "111"
  
  FAT_industry_decision_category_1: "共和国经济委员会"
- FAT_industry_decision_category_1_desc: "资金总数 [?FAT_money]§! £bank_money_icon  \n 上个月资金详情：资金收入 [?FAT_money_get]§!  民工收入 [?FAT_civilian_factories_get]§!  资源出口收入 [?FAT_resource_exported_get]§!  资金消耗 [?FAT_money_cost]§!  军队资金消耗 [?FAT_army_cost]§!  军工资金消耗 [?FAT_military_factories_cost]§! \n\n  民用工厂资金产出系数[?FAT_civilian_factories_get_rate]§! 军用工厂维护费系数[?FAT_military_factories_cost_rate]§! 军队维护费系数[?FAT_army_cost_rate]§! 矿石资金获取系数[?FAT_resource_exported_get_rate]§! \n\n 贷款总数 [?FAT_loan]§!  贷款上限 [?FAT_loan_max]§!  贷款利率 [?FAT_loan_rate]§! 上个月贷款利息 [?FAT_loan_cost]§!"
+ FAT_industry_decision_category_1_desc: "资金总数 [?FAT_money]§! £bank_money_icon  \n 上个月资金详情：资金收入 [?FAT_money_get]§!  民工收入 [?FAT_civilian_factories_get]§!  资源出口收入 [?FAT_resource_exported_get]§! 资金额外收入 [?FAT_extra_money]§! 资金消耗 [?FAT_money_cost]§!  军队资金消耗 [?FAT_army_cost]§!  军工资金消耗 [?FAT_military_factories_cost]§! \n\n  民用工厂资金产出系数[?FAT_civilian_factories_get_rate]§! 军用工厂维护费系数[?FAT_military_factories_cost_rate]§! 军队维护费系数[?FAT_army_cost_rate]§! 矿石资金获取系数[?FAT_resource_exported_get_rate]§! \n\n 贷款总数 [?FAT_loan]§!  贷款上限 [?FAT_loan_max]§!  贷款利率 [?FAT_loan_rate]§! 上个月贷款利息 [?FAT_loan_cost]§!"
 
  lend_money: "借一笔贷款"
  repayment_1: "还一笔贷款"
