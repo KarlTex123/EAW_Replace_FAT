@@ -1,0 +1,137 @@
+add_namespace = Battle_of_New_Griffonia
+
+country_event = { # 大洋彼岸的革命
+    id = Battle_of_New_Griffonia.1
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.1" }
+    title = Battle_of_New_Griffonia.1.t
+    desc = Battle_of_New_Griffonia.1.desc
+    picture = GFX_Battle_of_New_Griffonia_1
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 革命之火熊熊燃烧
+        name = Battle_of_New_Griffonia.1.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 海峡对岸的同志
+    id = Battle_of_New_Griffonia.2
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.2" }
+    title = Battle_of_New_Griffonia.2.t
+    desc = Battle_of_New_Griffonia.2.desc
+    picture = GFX_Battle_of_New_Griffonia_2
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 烙馍在这里卖萌
+        name = Battle_of_New_Griffonia.2.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 莫名其妙的爆炸案
+    id = Battle_of_New_Griffonia.3
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.3" }
+    title = Battle_of_New_Griffonia.3.t
+    desc = Battle_of_New_Griffonia.3.desc
+    picture = GFX_Battle_of_New_Griffonia_3
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 烙馍在这里卖萌
+        name = Battle_of_New_Griffonia.3.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 嘶大林格勒的外交事件，可以暂时占位，以后补上
+    id = Battle_of_New_Griffonia.4
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.4" }
+    title = Battle_of_New_Griffonia.4.t
+    desc = Battle_of_New_Griffonia.4.desc
+    picture = GFX_Battle_of_New_Griffonia_4
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 嘶大林格勒的外交事件，可以暂时占位，以后补上
+        name = Battle_of_New_Griffonia.4.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 嘶大林格勒的外交事件，可以暂时占位，以后补上
+    id = Battle_of_New_Griffonia.5
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.5" }
+    title = Battle_of_New_Griffonia.5.t
+    desc = Battle_of_New_Griffonia.5.desc
+    picture = GFX_Battle_of_New_Griffonia_5
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 嘶大林格勒的外交事件，可以暂时占位，以后补上
+        name = Battle_of_New_Griffonia.5.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 嘶大林格勒的外交事件，可以暂时占位，以后补上
+    id = Battle_of_New_Griffonia.6
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.6" }
+    title = Battle_of_New_Griffonia.6.t
+    desc = Battle_of_New_Griffonia.6.desc
+    picture = GFX_Battle_of_New_Griffonia_6
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 嘶大林格勒的外交事件，可以暂时占位，以后补上
+        name = Battle_of_New_Griffonia.6.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 点燃革命
+    id = Battle_of_New_Griffonia.7
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.7" }
+    title = Battle_of_New_Griffonia.7.t
+    desc = Battle_of_New_Griffonia.7.desc
+    picture = GFX_Battle_of_New_Griffonia_7
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 干杯！
+        name = Battle_of_New_Griffonia.7.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 革命终熄
+    id = Battle_of_New_Griffonia.8
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.8" }
+    title = Battle_of_New_Griffonia.8.t
+    desc = Battle_of_New_Griffonia.8.desc
+    picture = GFX_Battle_of_New_Griffonia_8
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 哦，天哪
+        name = Battle_of_New_Griffonia.8.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { # 革命僵局
+    id = Battle_of_New_Griffonia.9
+    immediate = { log = "[GetDateText]: [Root.GetName]: event Battle_of_New_Griffonia.9" }
+    title = Battle_of_New_Griffonia.9.t
+    desc = Battle_of_New_Griffonia.9.desc
+    picture = GFX_Battle_of_New_Griffonia_9
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 我们不能再浪费精力了
+        name = Battle_of_New_Griffonia.9.a
+        ai_chance = { factor = 1 }
+    }
+}
+

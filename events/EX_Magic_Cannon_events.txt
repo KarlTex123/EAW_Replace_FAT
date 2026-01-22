@@ -1,0 +1,57 @@
+add_namespace = EX_Magic_Cannon
+
+country_event = { # 新武器的测试
+    id = EX_Magic_Cannon.1
+    immediate = { log = "[GetDateText]: [Root.GetName]: event EX_Magic_Cannon.1" }
+    title = EX_Magic_Cannon.1.t
+    desc = EX_Magic_Cannon.1.desc
+    picture = GFX_EX_Magic_Cannon_1
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # 答案呼之欲出
+        name = EX_Magic_Cannon.1.a
+        ai_chance = { factor = 1 }
+        hidden_effect = {
+            country_event = {id = EX_Magic_Cannon.2 days = 10 }
+        }
+    }
+}
+
+country_event = { # 魔法科技
+    id = EX_Magic_Cannon.2
+    immediate = { log = "[GetDateText]: [Root.GetName]: event EX_Magic_Cannon.2" }
+    title = EX_Magic_Cannon.2.t
+    desc = EX_Magic_Cannon.2.desc
+    picture = GFX_EX_Magic_Cannon_2
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # “共和国需要这种装备来弥补火力上的缺陷”
+        name = EX_Magic_Cannon.2.a
+        ai_chance = { factor = 1 }
+        hidden_effect = {
+            country_event = {id = EX_Magic_Cannon.3 days = 10 }
+        }
+    }
+}
+
+country_event = { # 大获成功
+    id = EX_Magic_Cannon.3
+    immediate = { log = "[GetDateText]: [Root.GetName]: event EX_Magic_Cannon.3" }
+    title = EX_Magic_Cannon.3.t
+    desc = EX_Magic_Cannon.3.desc
+    picture = GFX_EX_Magic_Cannon_3
+    is_triggered_only = yes
+    hidden = no
+    timeout_days = 14
+    option = { # “测试结果：成功”
+        name = EX_Magic_Cannon.3.a
+        ai_chance = { factor = 1 }
+        set_technology = {
+            EX_Magic_Cannon = 1
+            popup = no
+        }
+    }
+}
+
