@@ -160,8 +160,8 @@ characters={
 			id=-1
 		}
 		advisor={
-			slot = political_advisor
-			idea_token = FAT_political_6
+			slot = army_chief
+			idea_token = FAT_reinhard_suntail_FAT_political_6
 			allowed = {
 				OR = {
 					original_tag = FAT
@@ -200,7 +200,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FAT_political_3
+			idea_token = FAT_rikard_astler_FAT_political_3
 			allowed = {
 				OR = {
 					original_tag = FAT

@@ -1444,6 +1444,8 @@ country_event = { #新三民主义诠释成为主流
 
 	option = {
 		name = FAT_FP.34.a
+		deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor	
+		activate_advisor = FAT_rikard_astler_FAT_political_3
 	}
 }
 
@@ -1456,6 +1458,8 @@ country_event = { #整理党务决议
 
 	option = {
 		name = FAT_FP.35.a
+		deactivate_advisor = FAT_alexander_kemerskai_army_chief
+		activate_advisor = FAT_reinhard_suntail_FAT_political_6
 	}
 }
 
