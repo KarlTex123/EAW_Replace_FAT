@@ -1436,9 +1436,13 @@ focus_tree = {
 		y = 2
 
 		available = {
-			OR = {
-				has_completed_focus = FAT_gongheyinhang
-				has_completed_focus = FAT_shengchanxianfa
+			AND = {
+				OR = {
+					has_completed_focus = FAT_gongheyinhang
+					has_completed_focus = FAT_shengchanxianfa
+				}
+				has_completed_focus = FAT_shelikaoshiyuan
+				has_completed_focus = FAT_gonghexinyang  			
 			}
 		}
 		prerequisite = {
