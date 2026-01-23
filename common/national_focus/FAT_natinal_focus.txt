@@ -1051,6 +1051,15 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_idea = FAT_Land_collectivization
+				}
+				swap_ideas = {
+					remove_idea = FAT_Land_collectivization
+					add_idea = FAT_Land_collectivization_3
+				}
+			}
+			if = {
+				limit = {
 					has_idea = FAT_Reduce_rent_and_interest
 				}
 				swap_ideas = {

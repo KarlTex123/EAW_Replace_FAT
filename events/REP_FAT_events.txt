@@ -1611,7 +1611,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_3
-						has_idea = FAT_Land_collectivization_1
+						has_idea = FAT_Land_collectivization_2
 					}
 				}
 				add_ideas = FAT_minsheng_8
@@ -1621,7 +1621,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_3
-						has_idea = FAT_Land_collectivization_2
+						has_idea = FAT_Land_collectivization_3
 					}
 				}
 				add_ideas = FAT_minsheng_11
@@ -1641,7 +1641,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_4
-						has_idea = FAT_Land_collectivization_1
+						has_idea = FAT_Land_collectivization_2
 					}
 				}
 				add_ideas = FAT_minsheng_10
@@ -1651,7 +1651,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_4
-						has_idea = FAT_Land_collectivization_2
+						has_idea = FAT_Land_collectivization_3
 					}
 				}
 				add_ideas = FAT_minsheng_13
@@ -1666,8 +1666,191 @@ country_event = { #民生主义的内涵
 				}
 				add_ideas = FAT_minsheng_14
 			}
+			#####################################################################
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_20
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_21
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_22
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_23
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_24
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_25
+			}
+			#######################################################################
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_26
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_27
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_28
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_29
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_30
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_31
+			}
+######################################################################################################	
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_32
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_33
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_34
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_35
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_36
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_37
+			}
+######################################################################################################
 			remove_ideas = FAT_minsheng_1
-			remove_ideas = FAT_minsheng_2
 			remove_ideas = FAT_minsheng_3
 			remove_ideas = FAT_minsheng_4
 			remove_ideas = FAT_minsheng_7
@@ -1741,6 +1924,193 @@ country_event = { #民生主义的内涵
 				}
 				add_ideas = FAT_minsheng_17
 			}
+##########################################################################################
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_50
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_51
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_52
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_53
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_54
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_1
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_55
+			}
+######################################################################################################
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_38
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_39
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_40
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_41
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_42
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_3
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_43
+			}
+##############################################################################################################
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_44
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_45
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_3
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_46
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_2
+					}
+				}
+				add_ideas = FAT_minsheng_47
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Land_collectivization_3
+					}
+				}
+				add_ideas = FAT_minsheng_48
+			}
+			if = {
+				limit = {
+					AND = {
+						has_idea = FAT_minsheng_4
+						has_idea = FAT_industrialization_4
+						has_idea = FAT_Reduce_rent_and_interest_1
+					}
+				}
+				add_ideas = FAT_minsheng_49
+			}
+##################################################################################################################
+			remove_ideas = FAT_minsheng_1
+			remove_ideas = FAT_minsheng_3
+			remove_ideas = FAT_minsheng_4
 			remove_ideas = FAT_minsheng_7
 			remove_ideas = FAT_education_reform_idea_3
 			remove_ideas = Republican_faith
