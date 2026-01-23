@@ -395,6 +395,7 @@ FAT_industry_decision_category_1= {
 		fire_only_once = yes
 		
 		state_target = yes
+
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
@@ -486,6 +487,7 @@ FAT_industry_decision_category_1= {
 		fire_only_once = yes
 		
 		state_target = yes
+
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
@@ -538,6 +540,7 @@ FAT_industry_decision_category_1= {
 		}
 
 		fire_only_once = yes
+
 		
 		available = {
 			owns_state = 474
@@ -642,7 +645,7 @@ FAT_industry_decision_category_1= {
 		}
 	}
 	develop_522_561_601_585 = {
-		#开发北境
+		#北方大开发
 		icon = GFX_bank_build_icon
 		visible = {
 			
@@ -662,6 +665,10 @@ FAT_industry_decision_category_1= {
 			has_full_control_of_state = 601
 			owns_state = 585
 			has_full_control_of_state = 585
+			has_country_flag = FAT_shengchanxianfa_flag
+			has_dynamic_modifier = {
+				modifier = FAT_cooperative
+			}
 		}
 
 		custom_cost_trigger = {
@@ -678,6 +685,10 @@ FAT_industry_decision_category_1= {
 			subtract_from_variable = {FAT_money = 1500}
 		}
 		remove_effect = {
+			custom_effect_tooltip = develop_522_561_601_585_tt
+			add_to_variable = {FAT_cooperative_stability_factor = 0.05}
+			add_to_variable = {FAT_production_speed_buildings_factor = 0.1}
+			add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.1}
 			522 = {#天际纳维亚
 				add_building_construction = {
 					type = industrial_complex 
@@ -733,6 +744,16 @@ FAT_industry_decision_category_1= {
 		}
 
 		fire_only_once = yes
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 582
+			}
+		}
 		
 		available = {
 			owns_state = 582
@@ -775,6 +796,16 @@ FAT_industry_decision_category_1= {
 		}
 
 		fire_only_once = yes
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 576
+			}
+		}
 		
 		available = {
 			owns_state = 576
@@ -887,6 +918,16 @@ FAT_industry_decision_category_1= {
 		}
 
 		fire_only_once = yes
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 574
+			}
+		}
 		
 		available = {
 			owns_state = 574
@@ -938,6 +979,16 @@ FAT_industry_decision_category_1= {
 		}
 
 		fire_only_once = yes
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 429
+			}
+		}
 		
 		available = {
 			owns_state = 429
@@ -986,6 +1037,7 @@ FAT_industry_decision_category_1= {
 		fire_only_once = yes
 		
 		state_target = yes
+
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
@@ -1041,7 +1093,6 @@ FAT_industry_decision_category_1= {
 	FAT_establish_cooperative = {#成立合作社
 	icon = GFX_bank_build_icon
 	visible = {
-		has_country_flag = FAT_shengchanxianfa_flag
 	}
 	ai_will_do = {
 		factor = 30
@@ -1053,9 +1104,20 @@ FAT_industry_decision_category_1= {
 		}
 	}
 
+	state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				state = 485
+			}
+		}
+
 	available = {
 		owns_state = 485
 		has_full_control_of_state = 485
+		has_country_flag = FAT_shengchanxianfa_flag
 	}
 	complete_effect = {
 		add_to_variable = {FAT_money = -1000}
@@ -1069,10 +1131,13 @@ FAT_industry_decision_category_1= {
 				instant_build = yes
 			}
 		}
-		add_dynamic_modifier = {
-			modifier = FAT_cooperative
+		custom_effect_tooltip = FAT_establish_cooperative_tt
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = FAT_cooperative
+			}		
 		}
-		add_to_variable = {FAT_cooperative_consumer_goods_factor = 0.1}
+		add_to_variable = {FAT_cooperative_consumer_goods_factor = -0.1}
 		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
 		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
 
@@ -1087,10 +1152,6 @@ FAT_industry_decision_category_1= {
 	FAT_establish_cooperative_2 = {#共和国建设总局
 	icon = GFX_bank_build_icon
 	visible = {
-		has_dynamic_modifier = {
-			modifier = FAT_cooperative
-		}
-		has_country_flag = FAT_shengchanxianfa_flag
 	}
 	ai_will_do = {
 		factor = 30
@@ -1106,6 +1167,7 @@ FAT_industry_decision_category_1= {
 		has_dynamic_modifier = {
 			modifier = FAT_cooperative
 		}
+		has_country_flag = FAT_shengchanxianfa_flag
 	}
 	complete_effect = {
 		add_to_variable = {FAT_money = -1500}
@@ -1125,6 +1187,7 @@ FAT_industry_decision_category_1= {
 				instant_build = yes
 			}
 		}
+		custom_effect_tooltip = FAT_establish_cooperative_2_tt
 		add_to_variable = {FAT_cooperative_production_speed_buildings_factor = 0.1}
 		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
 		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
@@ -1139,20 +1202,24 @@ FAT_industry_decision_category_1= {
 	develop_450_582 = {#发展斯卡克和凹穴采煤业
 		#发展鸿运港
 		icon = GFX_bank_build_icon
-		visible = {
-			has_country_flag = FAT_shengchanxianfa_flag			
+		visible = {		
 		}
 		ai_will_do = {
 			factor = 30
 		}
 
 		fire_only_once = yes
+
 		
 		available = {
 			owns_state = 450
 			has_full_control_of_state = 450
 			owns_state = 582
 			has_full_control_of_state = 582
+			has_country_flag = FAT_shengchanxianfa_flag
+			has_dynamic_modifier = {
+				modifier = FAT_cooperative
+			}
 		}
 
 		custom_cost_trigger = {

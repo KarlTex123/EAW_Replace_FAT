@@ -1366,7 +1366,7 @@ country_event = { #装甲的主攻方向
 	}
 }
 
-country_event = { #共产主义者的膨胀——与镰爪的会谈——
+country_event = { #共产主义者的膨胀
 	id = FAT_FP.32
 	picture = FAT_FP.32.p
 	title = FAT_FP.32.t
@@ -1376,6 +1376,7 @@ country_event = { #共产主义者的膨胀——与镰爪的会谈——
 
 	option = {
 		name = FAT_FP.32.a
+		country_event = { id = FAT_FP.43 days = 3}
 	}
 }
 
@@ -1850,6 +1851,7 @@ country_event = { #民生主义的内涵
 				add_ideas = FAT_minsheng_37
 			}
 ######################################################################################################
+		hidden_effect = {
 			remove_ideas = FAT_minsheng_1
 			remove_ideas = FAT_minsheng_3
 			remove_ideas = FAT_minsheng_4
@@ -1857,10 +1859,12 @@ country_event = { #民生主义的内涵
 			remove_ideas = FAT_education_reform_idea_3
 			remove_ideas = Republican_faith
 			remove_ideas = FAT_industrialization_3
-			remove_ideas = FAT_Land_collectivization_1
 			remove_ideas = FAT_Land_collectivization_2
+			remove_ideas = FAT_Land_collectivization_3
 			remove_ideas = FAT_Reduce_rent_and_interest_1
 			remove_ideas = FAT_industrialization_4
+		}
+		custom_effect_tooltip = zhenghezhenghe_1
 	}
 	option = {
 		name = FAT_FP.42.b
@@ -2108,6 +2112,7 @@ country_event = { #民生主义的内涵
 				add_ideas = FAT_minsheng_49
 			}
 ##################################################################################################################
+		hidden_effect = {
 			remove_ideas = FAT_minsheng_1
 			remove_ideas = FAT_minsheng_3
 			remove_ideas = FAT_minsheng_4
@@ -2115,10 +2120,25 @@ country_event = { #民生主义的内涵
 			remove_ideas = FAT_education_reform_idea_3
 			remove_ideas = Republican_faith
 			remove_ideas = FAT_industrialization_3
-			remove_ideas = FAT_Land_collectivization_1
 			remove_ideas = FAT_Land_collectivization_2
+			remove_ideas = FAT_Land_collectivization_3
 			remove_ideas = FAT_Reduce_rent_and_interest_1
 			remove_ideas = FAT_industrialization_4
+		}
+		custom_effect_tooltip = zhenghezhenghe_2
+	}
+}
+
+country_event = { #共产主义者的膨胀
+	id = FAT_FP.43
+	picture = FAT_FP.43.p
+	title = FAT_FP.43.t
+	desc = FAT_FP.43.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.43.a
 	}
 }
 

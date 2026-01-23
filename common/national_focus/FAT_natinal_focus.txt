@@ -508,11 +508,11 @@ focus_tree = {
 				limit = {
 					has_idea = FAT_Liberty_9
 				}
-					remove_ideas = FAT_Liberty
-					remove_ideas = the_institute
-					remove_ideas = FAT_Liberty_9
-					remove_ideas = Republican_regime_3
-					add_ideas = FAT_Liberty_10
+				remove_ideas = FAT_Liberty
+				remove_ideas = the_institute
+				remove_ideas = FAT_Liberty_9
+				remove_ideas = Republican_regime_3
+				add_ideas = FAT_Liberty_10
 			}
 			if = {
 				limit = {
@@ -760,6 +760,8 @@ focus_tree = {
 		relative_position_id = FAT_minsheng
 
 		completion_reward = {
+			set_country_flag = FAT_shengchanxianfa_flag
+			custom_effect_tooltip = FAT_shengchanxianfa_flag_tt
 			add_popularity = {
 				ideology = communism #社会主义
 				popularity = 0.1
@@ -918,7 +920,6 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.1
 			}
-			set_country_flag = FAT_shengchanxianfa_flag
 		}
 	}
 	focus = { #新课本
