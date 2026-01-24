@@ -1038,6 +1038,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_nongxiediwei
 		}
+		available = {
+			has_completed_focus = FAT_xiudingtudifa			
+		}
 		relative_position_id = FAT_nongxiediwei
 		completion_reward = {
 			decrease_poverty = yes
@@ -1208,7 +1211,7 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = FAT_nongxiediwei
-		}
+		}		
 		relative_position_id = FAT_nongxiediwei
 		completion_reward = {
 			country_event = { id = FAT_FP.41}
@@ -1248,6 +1251,9 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = FAT_gonghuifa
+		}
+		available = {
+			has_completed_focus = FAT_gongyejianshefa
 		}
 		relative_position_id = FAT_gonghuifa
 		completion_reward = {

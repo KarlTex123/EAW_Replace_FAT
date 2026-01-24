@@ -1913,7 +1913,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_3
-						has_idea = FAT_Land_collectivization_1
+						has_idea = FAT_Land_collectivization_2
 					}
 				}
 				add_ideas = FAT_minsheng_15
@@ -1923,7 +1923,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_3
-						has_idea = FAT_Land_collectivization_2
+						has_idea = FAT_Land_collectivization_3
 					}
 				}
 				add_ideas = FAT_minsheng_18
@@ -1943,7 +1943,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_4
-						has_idea = FAT_Land_collectivization_1
+						has_idea = FAT_Land_collectivization_2
 					}
 				}
 				add_ideas = FAT_minsheng_9
@@ -1953,7 +1953,7 @@ country_event = { #民生主义的内涵
 					AND = {
 						has_idea = FAT_minsheng_7
 						has_idea = FAT_industrialization_4
-						has_idea = FAT_Land_collectivization_2
+						has_idea = FAT_Land_collectivization_3
 					}
 				}
 				add_ideas = FAT_minsheng_16
