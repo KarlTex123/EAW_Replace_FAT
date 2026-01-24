@@ -148,9 +148,9 @@ REP_FAT_political_decision: "共和国派系政治"
  NTR_border_skirmish_2_timeout:0 "边境冲突超时"
 
 
- FAT_establish_cooperative_tt:0 "§Y获得民族精神§!  §Y工农合作社§! \n§G生活消费品减10%§!\n§G基础稳定度+5%§!\n§G工厂产出+5%§!"
- FAT_establish_cooperative_2_tt:0 "§Y工农合作社§! 追加效果  \n§G基础稳定度+5%§!\n§G工厂产出+5%§!\n§G建造速度+10%§!"
- develop_522_561_601_585_tt:0 "§Y工农合作社§! 追加效果  \n§G基础稳定度+5%§!\n§G工厂产出+10%§!\n§G建造速度+10%§!"
+ FAT_establish_cooperative_tt:0 "§Y获得民族精神§!  §Y工农合作社§! \n生活消费品§G-10%§!\n基础稳定度§G+5%§!\n工厂产出§G+5%§!"
+ FAT_establish_cooperative_2_tt:0 "§Y工农合作社§! 追加效果  \n基础稳定度§G+5%§!\n工厂产出§G+5%§!\n建造速度§G+10%§!"
+ develop_522_561_601_585_tt:0 "§Y工农合作社§! 追加效果  \n基础稳定度§G+5%§!\n工厂产出§G+10%§!\n建造速度§G+10%§!"
 
 FAT_Foreign_decision_categories: "外交决议"
 FAT_DIP_Decision_1: "与阿奎莱亚共和国结盟"
