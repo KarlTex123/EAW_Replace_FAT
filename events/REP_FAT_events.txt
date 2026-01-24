@@ -1581,7 +1581,7 @@ country_event = { #地主外逃
 	}
 }
 
-country_event = { #农协暴力案
+country_event = { #土地争议法
 	id = FAT_FP.41
 	title = FAT_FP.41.t
 	desc = FAT_FP.41.d
@@ -1592,14 +1592,29 @@ country_event = { #农协暴力案
 		name = FAT_FP.41.a
 		if = {
 			limit = {
-				NOT = {
+				AND = {
+					has_country_flag = ngxie_1
+					has_completed_focus = FAT_xiangcunjiansheyundong
+				}
+			}
+			add_ideas = FAT_Land_collectivization_3
+		}
+		if = {
+			limit = {
+				AND = {
 					has_country_flag = ngxie_2
+					has_completed_focus = FAT_xiangcunjiansheyundong
+				}
+			}
+			add_ideas = FAT_Land_collectivization_2
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = FAT_xiangcunjiansheyundong
 				}
 			}
 			add_ideas = FAT_Land_collectivization
-		}
-		else = {
-			add_ideas = FAT_Land_collectivization_1
 		}
 	}
 	option = {

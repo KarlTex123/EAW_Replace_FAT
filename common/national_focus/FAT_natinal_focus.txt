@@ -1038,15 +1038,15 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_nongxiediwei
 		}
-		available = {
-			has_completed_focus = FAT_xiudingtudifa			
-		}
 		relative_position_id = FAT_nongxiediwei
 		completion_reward = {
 			decrease_poverty = yes
 			if = {
 				limit = {
-					has_idea = FAT_Land_collectivization_1
+					AND = {
+						has_idea = FAT_Land_collectivization_1
+						has_completed_focus = FAT_xiudingtudifa
+					}
 				}
 				swap_ideas = {
 					remove_idea = FAT_Land_collectivization_1
@@ -1055,7 +1055,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_idea = FAT_Land_collectivization
+					AND = {
+						has_idea = FAT_Land_collectivization
+						has_completed_focus = FAT_xiudingtudifa
+					}
 				}
 				swap_ideas = {
 					remove_idea = FAT_Land_collectivization
@@ -1064,12 +1067,24 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_idea = FAT_Reduce_rent_and_interest
+					AND = {
+						has_idea = FAT_Reduce_rent_and_interest
+						has_completed_focus = FAT_xiudingtudifa
+					}
 				}
 				swap_ideas = {
 					remove_idea = FAT_Reduce_rent_and_interest
 					add_idea = FAT_Reduce_rent_and_interest_1
 				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = FAT_xiudingtudifa
+					}
+				}
+				set_country_flag = FAT_xiangcunjiansheyundong
+				custom_effect_tooltip = FAT_xiangcunjiansheyundong_tt
 			}
 			if = {
 				limit = {
@@ -1252,10 +1267,10 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_gonghuifa
 		}
+		relative_position_id = FAT_gonghuifa
 		available = {
 			has_completed_focus = FAT_gongyejianshefa
 		}
-		relative_position_id = FAT_gonghuifa
 		completion_reward = {
 			if = {
 				limit = {
