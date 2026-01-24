@@ -1447,6 +1447,7 @@ country_event = { #新三民主义诠释成为主流
 		name = FAT_FP.34.a
 		deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor	
 		activate_advisor = FAT_rikard_astler_FAT_political_3
+		set_country_flag = sanminzhuyi
 	}
 }
 
@@ -1461,6 +1462,7 @@ country_event = { #整理党务决议
 		name = FAT_FP.35.a
 		deactivate_advisor = FAT_alexander_kemerskai_army_chief
 		activate_advisor = FAT_reinhard_suntail_FAT_political_6
+		set_country_flag = zhengdundangwu
 	}
 }
 
@@ -1866,8 +1868,31 @@ country_event = { #民生主义的内涵
 		}
 		custom_effect_tooltip = zhenghezhenghe_1
 	}
+}
+
+country_event = { #共产主义者的膨胀
+	id = FAT_FP.43
+	picture = FAT_FP.43.p
+	title = FAT_FP.43.t
+	desc = FAT_FP.43.d
+
+	is_triggered_only = yes
+
 	option = {
-		name = FAT_FP.42.b
+		name = FAT_FP.43.a
+	}
+}
+
+country_event = { #民生主义的内涵
+	id = FAT_FP.44
+	picture = FAT_FP.44.p
+	title = FAT_FP.44.t
+	desc = FAT_FP.44.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.44.a
 			if = {
 				limit = {
 					AND = {
@@ -2126,19 +2151,6 @@ country_event = { #民生主义的内涵
 			remove_ideas = FAT_industrialization_4
 		}
 		custom_effect_tooltip = zhenghezhenghe_2
-	}
-}
-
-country_event = { #共产主义者的膨胀
-	id = FAT_FP.43
-	picture = FAT_FP.43.p
-	title = FAT_FP.43.t
-	desc = FAT_FP.43.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = FAT_FP.43.a
 	}
 }
 

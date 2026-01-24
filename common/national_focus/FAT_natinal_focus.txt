@@ -1468,7 +1468,18 @@ focus_tree = {
 		relative_position_id = FAT_shehuizhuyizhediwei
 
 		completion_reward = {
-			country_event = { id = FAT_FP.42}
+			if = {
+				limit = {
+					has_country_flag = sanminzhuyi
+				}
+				country_event = { id = FAT_FP.42 }
+			}
+			if = {
+				limit = {
+					has_country_flag = zhengdundangwu
+				}
+				country_event = { id = FAT_FP.44 }
+			}
 		}
 	}
 	focus = { #设立考试院 
