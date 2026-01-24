@@ -1072,8 +1072,7 @@ focus_tree = {
 				limit = {
 					has_country_flag = ngxie_1
 				}
-				FAT = {
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1085,7 +1084,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1097,7 +1096,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1109,7 +1108,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1120,15 +1119,13 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				}
 				}
 			}
 			if = {
 				limit = {
 					has_country_flag = ngxie_2
 				}
-				FAT = {
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1140,7 +1137,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1152,7 +1149,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1164,7 +1161,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1176,7 +1173,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1188,7 +1185,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_state = {
+				random_owned_state = {
     				add_building_construction = {
 						type = industrial_complex 
 						level = 1
@@ -1199,7 +1196,6 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				}
 				}
 			}			
 		}
