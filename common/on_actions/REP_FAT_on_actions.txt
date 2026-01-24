@@ -113,26 +113,6 @@ on_actions = {
 			FAT_set_faction_buff = yes
 		}
 	}
-	on_monthly_FAT = {
-		effect = {
-			if = {
-				limit = {
-					has_idea = FAT_FP_jingji_idea
-				}
-				set_variable = { the_Countdown_of_30 = 30}
-			}
-		}
-	}
-	on_daily_FAT = {
-		effect = {
-			if = {
-				limit = {
-					has_idea = FAT_FP_jingji_idea
-				}
-				add_to_variable = { the_Countdown_of_30 = -1}
-			}
-		}
-	}
 }
 
 

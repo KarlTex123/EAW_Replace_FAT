@@ -1,4 +1,18 @@
 FAT_industry_decision_category_1= {
+	the_Countdown = {
+    	activation = {
+			has_idea = FAT_FP_jingji_idea
+    	}
+		cancel_trigger = {
+        	always = no
+    	}
+		available = {
+			always = no
+		}
+    	days_mission_timeout = 30
+		selectable_mission = yes
+		is_good = yes
+	}
 	debug_gain_idea = {
 		icon = generic_construction
 		visible = {

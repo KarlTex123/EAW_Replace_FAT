@@ -215,7 +215,6 @@ recruit_character = FAT_star_wind
 recruit_character = FAT_Garibaldi_Giuseppe
 
 set_variable = { FAT_REP_THE_S_L = 1 } 
-set_variable = { the_Countdown_of_30 = 30}
 
 set_rule = {
 	can_generate_female_aces = yes
