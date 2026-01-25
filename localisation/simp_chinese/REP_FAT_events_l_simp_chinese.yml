@@ -212,14 +212,17 @@ shehuizhuyijianshao_tt:0 "左翼派系移除出执政联盟\n 减少与共产主
 FAT_FP.34.t:0"新三民主义诠释成为主流"
 FAT_FP.34.d:0""
 FAT_FP.34.a:0"选项"
+sanminzhuyi_tt:0 "漫云官僚倾向改变为§Y谐律§! 名称改变为§Y共和国公务员§! 学生团体倾向改变为§Y左翼§! 议会共和派倾向改变为§Y左翼§!"
 
 FAT_FP.35.t:0"整理党务决议"
 FAT_FP.35.d:0""
 FAT_FP.35.a:0"选项"
+zhengdundangwu_tt:0 "漫云官僚倾向改变为§Y霸权§! 议会共和派改变倾向为§Y霸权§! 商业联合会改变倾向为§Y霸权§! §Y霸权主义§!加入执政联盟"
 
 FAT_FP.36.t:0"银行业密会"
 FAT_FP.36.d:0""
 FAT_FP.36.a:0"选项"
+yinghangmihui_tt:0 "银行网络作为政治势力增加到政治系统中"
 
 FAT_FP.37.t:0"工会模式"
 FAT_FP.37.d:0""
@@ -245,6 +248,7 @@ FAT_FP.41.t:0"土地法争议"
 FAT_FP.41.d:0""
 FAT_FP.41.a:0"进一步推进土地集体化"
 FAT_FP.41.b:0"保持耕者有其田即可"
+ngxie_zhongli_tt:0 "农会政治倾向改变为§Y中立§!"
 
 FAT_FP.42.t:0"民生主义的内涵"
 FAT_FP.42.d:0""

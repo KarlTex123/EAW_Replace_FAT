@@ -1427,10 +1427,24 @@ country_event = { #共和党第六届党员大会
 		}
 		multiply_temp_variable = {
 			var = fat_communism_var
-			value = -1
+			value = -0.5
 		}
 		hidden_effect = {
 			add_stability = fat_communism_var
+		}
+		for_each_scope_loop = {
+			array = FAT_faction_array
+			if = {
+				limit = {
+					check_variable = {
+						support_ideology = 2
+					}
+				}
+				remove_from_array = {
+    				array = FAT.FAT_faction_array
+					index = 2
+				}
+			}
 		}
 		country_event = { id = FAT_FP.35}
 	}
@@ -1448,6 +1462,7 @@ country_event = { #新三民主义诠释成为主流
 		deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor	
 		activate_advisor = FAT_rikard_astler_FAT_political_3
 		set_country_flag = sanminzhuyi
+		custom_effect_tooltip = sanminzhuyi_tt
 		F08 = {
 			set_variable = {
 				support_ideology = 1
@@ -1479,6 +1494,26 @@ country_event = { #整理党务决议
 		deactivate_advisor = FAT_alexander_kemerskai_army_chief
 		activate_advisor = FAT_reinhard_suntail_FAT_political_6
 		set_country_flag = zhengdundangwu
+		F00 = {
+			set_variable = {
+				support_ideology = 3
+			}
+		}	
+		F08 = {
+			set_variable = {
+				support_ideology = 3
+			}
+		}	
+		F06 = {
+			set_variable = {
+				support_ideology = 3
+			}
+		}	
+		add_to_array = {
+			array = FAT_government_union
+			value = 3
+		}
+		custom_effect_tooltip = zhengdundangwu_tt
 	}
 }
 
@@ -1491,7 +1526,13 @@ country_event = { #银行业密会
 
 	option = {
 		name = FAT_FP.36.a
-
+		custom_effect_tooltip = yinghangmihui_tt
+		F11 = {
+			add_to_array = {
+				array = FAT.FAT_faction_array
+				value = THIS
+			}
+		}
 	}
 }
 
@@ -1650,6 +1691,7 @@ country_event = { #土地争议法
 				support_ideology = 4
 			}
 		}
+		custom_effect_tooltip = ngxie_zhongli_tt
 	}
 }
 

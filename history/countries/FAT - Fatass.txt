@@ -513,7 +513,7 @@ F10 = {
 		buff_factor = 1
 	}
 }
-FAT_faction_11 = {
+F11 = {
 	set_variable = {
 		support_ideology = 3
 	}
@@ -524,7 +524,7 @@ FAT_faction_11 = {
 		buff_factor = 1
 	}
 }
-FAT_faction_12 = {
+F12 = {
 	set_variable = {
 		support_ideology = 1
 	}
@@ -535,7 +535,7 @@ FAT_faction_12 = {
 		buff_factor = 1
 	}
 }
-FAT_faction_13 = {
+F13 = {
 	set_variable = {
 		support_ideology = 3
 	}
@@ -546,7 +546,7 @@ FAT_faction_13 = {
 		buff_factor = 1
 	}
 }
-FAT_faction_14 = {
+F14 = {
 	set_variable = {
 		support_ideology = 1
 	}
@@ -559,4 +559,5 @@ FAT_faction_14 = {
 }
 FAT_check_set_buff_ideo_factor = yes
 FAT_set_faction_buff = yes
+FAT_check_and_remove = yes
 

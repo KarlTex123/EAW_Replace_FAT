@@ -111,6 +111,7 @@ on_actions = {
 		effect = {
 			FAT_check_set_buff_ideo_factor = yes
 			FAT_set_faction_buff = yes
+			FAT_check_and_remove = yes
 		}
 	}
 }
