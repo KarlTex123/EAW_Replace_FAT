@@ -1490,6 +1490,7 @@ country_event = { #银行业密会
 
 	option = {
 		name = FAT_FP.36.a
+
 	}
 }
 
@@ -1503,10 +1504,31 @@ country_event = { #工会模式
 	option = {
 		name = FAT_FP.37.a
 		set_country_flag = gonghuimoshi_1
+		F02 = {
+			set_variable = {
+				support_ideology = 4
+			}
+		}
+		F02 = {
+			add_dynamic_modifier = {
+				modifiers = {
+					stability_factor = FAT_faction_buff_array^2
+				}
+			}
+		}
+		custom_effect_tooltip = gonghuimoshi_1_tt
 	}
 	option = {
 		name = FAT_FP.37.b
 		set_country_flag = gonghuimoshi_2
+		F02 = {
+			add_dynamic_modifier = {
+				modifiers = {
+					industry_free_repair_factor = FAT_faction_buff_array^2
+				}
+			}
+		}
+		custom_effect_tooltip = gonghuimoshi_2_tt
 	}
 }
 
@@ -1626,7 +1648,11 @@ country_event = { #土地争议法
 			}
 			decrease_poverty = yes	
 		}
-		#在农协协地位中选择选项1 农会政治倾向改变为中立
+		F10 = {
+			set_variable = {
+				support_ideology = 4
+			}
+		}
 	}
 }
 
