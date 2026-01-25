@@ -199,6 +199,7 @@ REP_FAT_test_category = { #测试决议
 	}
 	test_dont_know = { 
 		complete_effect = {
+			country_event = FAT_FP.37
 		}
 	}
 }

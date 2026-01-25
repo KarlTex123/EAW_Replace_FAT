@@ -18,6 +18,9 @@ FAT_National_Republic_party = { #民族共和党
 	production_speed_buildings_factor = FAT_faction_buff_array^8
 	industrial_capacity_factory = FAT_faction_buff_array^9
 	consumer_goods_factor = FAT_faction_buff_array^10
+
+	stability_factor = F02_gonghuimoshi_1_var
+	industry_free_repair_factor = F02_gonghuimoshi_2_var
 }
 
 

@@ -1509,26 +1509,22 @@ country_event = { #工会模式
 				support_ideology = 4
 			}
 		}
-		F02 = {
-			add_dynamic_modifier = {
-				modifiers = {
-					stability_factor = FAT_faction_buff_array^2
-				}
-			}
+		set_variable = {
+			F02_gonghuimoshi_1_var = 0.1
 		}
 		custom_effect_tooltip = gonghuimoshi_1_tt
+		#FAT_check_set_buff_ideo_factor = yes
+		#FAT_set_faction_buff = yes
 	}
 	option = {
 		name = FAT_FP.37.b
 		set_country_flag = gonghuimoshi_2
-		F02 = {
-			add_dynamic_modifier = {
-				modifiers = {
-					industry_free_repair_factor = FAT_faction_buff_array^2
-				}
-			}
+		set_variable = {
+			F02_gonghuimoshi_2_var = 1
 		}
 		custom_effect_tooltip = gonghuimoshi_2_tt
+		#FAT_check_set_buff_ideo_factor = yes
+		#FAT_set_faction_buff = yes
 	}
 }
 

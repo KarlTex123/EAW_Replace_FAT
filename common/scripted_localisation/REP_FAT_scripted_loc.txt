@@ -116,6 +116,24 @@ defined_text = { #派系影响
 	text = {
 		trigger = {
 			tag = F02
+			FAT = {
+				has_variable = F02_gonghuimoshi_1_var
+			}
+		}
+		localization_key = faction_2_loc_1
+	}
+	text = {
+		trigger = {
+			tag = F02
+			FAT = {
+				has_variable = F02_gonghuimoshi_2_var
+			}
+		}
+		localization_key = faction_2_loc_2
+	}
+	text = {
+		trigger = {
+			tag = F02
 		}
 		localization_key = faction_2_loc
 	}

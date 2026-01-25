@@ -450,10 +450,10 @@ F07 = {
 		support_ideology = 4
 	}
 	set_variable = {
-		buff_base = 0
+		buff_base = -0.25
 	}
 	set_variable = {
-		buff_ideo_factor = -0.25
+		buff_ideo_factor = 0
 	}
 	set_variable = {
 		buff_factor = 1
