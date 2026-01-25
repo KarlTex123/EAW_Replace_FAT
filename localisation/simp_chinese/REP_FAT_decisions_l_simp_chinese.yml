@@ -85,7 +85,8 @@ REP_FAT_political_decision: "共和国派系政治"
   F05: "老共和军"
   F06: "商业联合会"
   F07: "南方共和党"
-  F08: "漫云官僚"
+  F08_democratic: "漫云官僚"
+  F08_democratic_change: "共和国公务员"#
   F09: "漫云黑爪党网络"#
   F10: "农会"
   F11: "金融集团"

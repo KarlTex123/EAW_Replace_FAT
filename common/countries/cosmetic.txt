@@ -1,4 +1,3 @@
-
 FAT_UFA = {
     color = rgb { 53 150 255 }
 	color_ui = rgb { 53 150 255 }
