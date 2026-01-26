@@ -707,13 +707,36 @@ political_actions = {
 			factor = 10
 		}
 	}
+
+	FAT_Kemsky_Comments_on_the_Regent_Gabriella_of_the_Griffin_Empire = {
+		icon = eng_propaganda_campaigns
+		allowed = {
+		    tag = FAT
+		}
+		visible = {
+            GRI = { 
+            	has_completed_focus = GRI_eagleclaw 
+			}
+		}
+		cost = 5
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FAT_Kemsky_Comments_on_the_Regent_Gabriella_of_the_Griffin_Empire"
+			country_event = FAT_FP.16
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 	
 	FAT_react_to_the_aquileian_revolution = {
 		icon = eng_propaganda_campaigns
 		allowed = {
 		    tag = FAT
 		}
-		visible  = {
+		visible = {
 			JER = { 
 			    has_government = democratic 
 			}

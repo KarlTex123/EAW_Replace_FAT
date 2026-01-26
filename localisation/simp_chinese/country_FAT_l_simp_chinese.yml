@@ -2296,3 +2296,6 @@ l_simp_chinese:
  FAT_core_ARA_FRN_TAL_WNG_FAL_SIC_CYA_tp:0 "§Y南狮鹫尼亚的狮鹫国家§!处于§Y共和国§!控制之下\n"
  FAT_core_HLQ_LNS_LSM_LSC_LUS_GRW_BRF_GRY_GRU_tp:0 "§Y普里文§!已经被摧毁，§Y门界§!、§Y埃维河谷§!均处于§Y帝国§!控制下\n"
  FAT_temporary_supply_bonus:0 "额外补给"
+
+ FAT_Kemsky_Comments_on_the_Regent_Gabriella_of_the_Griffin_Empire:0 "克梅斯凯评论狮鹫帝国摄政嘉比蕾拉"
+ FAT_Kemsky_Comments_on_the_Regent_Gabriella_of_the_Griffin_Empire_desc:0 "嘉比蕾拉,当年反革命军队中最有号召力的一位狮鹫,成为了帝国的摄政王,我们需要尽快决定我们的立场。"
