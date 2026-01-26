@@ -162,6 +162,9 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = FAT_reinhard_suntail_FAT_political_6
+			visible = {
+				has_completed_focus = FAT_shehuizhuyizhediwei
+			}
 			allowed = {
 				OR = {
 					original_tag = FAT
@@ -211,10 +214,7 @@ characters={
 				NOT = {
 					has_country_flag = FAT_we_purged_you
 				}
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
+				has_completed_focus = FAT_shehuizhuyizhediwei
 			}
 			available = {
 				NOT = {
@@ -227,10 +227,6 @@ characters={
 					NOT = {
 						has_country_flag = FAT_we_purged_you
 					}
-				}
-				OR = {
-					has_government = communism
-					has_government = democratic
 				}
 			}
 			traits = {

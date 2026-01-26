@@ -559,5 +559,5 @@ F14 = {
 }
 FAT_check_set_buff_ideo_factor = yes
 FAT_set_faction_buff = yes
-FAT_check_and_remove = yes
+check_has_focus_tree_to_switch_to_communism = no
 
