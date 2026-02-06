@@ -371,6 +371,7 @@ focus_tree = {
 		relative_position_id = FAT_xunzhengqixian
 		completion_reward = {
 			add_ideas = Revolutionary_Terror
+			country_event = { id = FAT_FP.45} #断头台下
 			custom_effect_tooltip = FAT_gemingkongbu_jiesuo
 			add_power_balance_value = {
 				id = FAT_power_balance
