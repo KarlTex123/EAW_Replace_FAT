@@ -2265,6 +2265,70 @@ country_event = { #断头台下
 	}
 }
 
+country_event = { #棋局之中
+	id = FAT_FP.46
+	title = FAT_FP.46.t
+	desc = FAT_FP.46.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.3.1
+	}
+
+	option = {
+		name = FAT_FP.46.a
+	}
+}
+
+country_event = { #乡村怪鹫
+	id = FAT_FP.47
+	title = FAT_FP.47.t
+	desc = FAT_FP.47.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.6.1
+	}
+
+	option = {
+		name = FAT_FP.47.a
+	}
+}
+
+country_event = { #隔阂
+	id = FAT_FP.48
+	title = FAT_FP.48.t
+	desc = FAT_FP.48.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.9.1
+	}
+
+	option = {
+		name = FAT_FP.48.a
+	}
+}
+
+country_event = { #天际纳维亚之光
+	id = FAT_FP.49
+	title = FAT_FP.49.t
+	desc = FAT_FP.49.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.12.1
+	}
+
+	option = {
+		name = FAT_FP.49.a
+	}
+}
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes
