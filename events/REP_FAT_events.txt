@@ -2329,6 +2329,84 @@ country_event = { #天际纳维亚之光
 	}
 }
 
+country_event = { #新时代的骑士_2
+	id = FAT_FP.50
+	picture = FAT_FP.50.p
+	title = FAT_FP.50.t
+	desc = FAT_FP.50.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.50.a
+	}
+}
+
+country_event = { # 友谊何处去
+	id = FAT_FP.51
+	title = FAT_FP.51.t
+	desc = FAT_FP.51.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.3.1
+	}
+
+	option = {
+		name = FAT_FP.51.a
+	}
+}
+
+country_event = { # 宣传攻势
+	id = FAT_FP.52
+	title = FAT_FP.52.t
+	desc = FAT_FP.52.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.6.1
+	}
+
+	option = {
+		name = FAT_FP.52.a
+	}
+}
+
+country_event = { # 歌曲的力量
+	id = FAT_FP.53
+	title = FAT_FP.53.t
+	desc = FAT_FP.53.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.9.1
+	}
+
+	option = {
+		name = FAT_FP.53.a
+	}
+}
+
+country_event = { #一场悲剧
+	id = FAT_FP.54
+	title = FAT_FP.54.t
+	desc = FAT_FP.54.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1008.12.1
+	}
+
+	option = {
+		name = FAT_FP.54.a
+		add_manpower = -1
+	}
+}
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes

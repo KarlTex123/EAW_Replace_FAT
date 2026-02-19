@@ -2095,7 +2095,7 @@ focus_tree = {
                     }
                 }
 			add_war_support = 0.1
-			country_event = FAT_FP.30
+			country_event = FAT_FP.50
 			swap_ideas = {
 				remove_idea = FAT_National_Revolutionary_Army_16
 				add_idea = FAT_National_Revolutionary_Army_17
