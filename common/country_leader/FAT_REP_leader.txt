@@ -6,6 +6,7 @@ leader_traits = {
 		GROUND_ATTACK_FACTOR = 0.05
 		NAVAL_COORDINATION = 0.05
 	}
+
 	FAT_military_expert = {
 		random = no
 		stability_factor = -0.08
@@ -17,6 +18,14 @@ leader_traits = {
 
 	Marshal_of_the_Republican_Army = {
 
+	}
+
+	FAT_Tri_FAT_yizhan = {
+		stability_factor = 0.1
+		neutrality_drift = 0.01
+		mobilization_laws_cost_factor = -0.33
+		trade_laws_cost_factor = -0.33
+		economy_cost_factor = -0.33
 	}
 	
 	Marshal_of_the_Republican_Army_3 = {

@@ -213,6 +213,7 @@ recruit_character = FAT_Blue_Time
 recruit_character = XUR_weiguang
 recruit_character = FAT_star_wind
 recruit_character = FAT_Garibaldi_Giuseppe
+recruit_character = FAT_yizhan
 
 set_variable = { FAT_REP_THE_S_L = 1 } 
 

@@ -44,6 +44,22 @@ characters={
 			}
 		}
 	}
+	FAT_yizhan = {
+		portraits = {
+			civilian = {
+				large = gfx/leaders/FAT/FAT_yizhan.png
+				small = gfx/leaders/FAT/FAT_yizhan.png
+			}
+		}
+		advisor = {
+			desc = "FAT_yizhan_desc"
+			cost = 200
+			slot = political_advisor
+			allowed = { original_tag = FAT }
+			traits = { FAT_Tri_FAT_yizhan }
+			ai_will_do = { factor = 1 }
+		}
+	}
 	XUR_weiguang = {
 		portraits = {
 			civilian = {

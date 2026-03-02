@@ -2103,357 +2103,216 @@ focus_tree = {
 		}
 	}
 
-	###############海军##########################
-	focus = {
-		id = FAT_The_Republic_Navy #共和国海军
-		icon = GFX_goal_FAT_The_Republic_Navy
+#
+	focus = { #新世界之梦
+		id = FAT_XINSHIJIEZHIEMENG
+		icon = GFX_goal_FAT_XINSHIJIEZHIEMENG
 		cost = 2
-		x = 16
-		y = 9
+		x = 58
+		y = 1
+		available = {
+			date > 1007.12.31	
+		}
 		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+			unlock_decision_category_tooltip = FAT_Foreign_decision_categories
+			set_country_flag = FAT_Foreign_decision_categories
+			country_event = {
+				id = FAT_FP.7
+			}
 		}
 	}
-	focus = {
-		id = FAT_Strengthen_the_coastal_defense_line #巩固海岸防线
-		icon = GFX_goal_FAT_Strengthen_the_coastal_defense_line
-		cost = 2
+	focus = { #共和国公约
+		id = FAT_GONGHEGUOGONGYUE
+		icon = GFX_goal_FAT_GONGHEGUOGONGYUE
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = FAT_XINSHIJIEZHIEMENG
 
 		prerequisite = {
-			focus = FAT_The_Republic_Navy
+			focus = FAT_XINSHIJIEZHIEMENG
 		}
-
-		relative_position_id = FAT_The_Republic_Navy
-
-		X = 0
-		Y = 1
 
 		completion_reward = {
+			create_faction = FAT_GONGHEGUOGONGYUE
+			add_threat = 5
+			country_event = {
+				id = FAT_DIP_Focus.1
+			}
 		}
 	}
-	focus = {
-		id = FAT_Expand_the_shipyard #扩大船坞
-		icon = GFX_goal_FAT_Expand_the_shipyard
-		cost = 2
-
+	focus = { #联络南方共和党
+		id = FAT_LIANLUENANFANG
+		icon = GFX_goal_FAT_LIANLUENANFANG
+		cost = 3.5
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = FAT_The_Republic_Navy
+			focus = FAT_GONGHEGUOGONGYUE
 		}
-
-		relative_position_id = FAT_The_Republic_Navy
-
-		X = -2
-		Y = 1
+		relative_position_id = FAT_GONGHEGUOGONGYUE
 
 		completion_reward = {
+			#解锁南方共和党机制
+			add_political_power = 50
+			country_event = {
+				id = FAT_DIP_Focus.2
+			}
 		}
-	}
-	focus = {
-		id = FAT_Gazing_at_the_Blue_Ocean #眺望蓝海
-		icon = GFX_goal_FAT_Expand_the_shipyard
-		cost = 2
 
+		
+	}
+	focus = { #击日者的命运
+		id = FAT_JIRIZHEMINGYUN
+		icon = GFX_goal_FAT_JIRIZHEMINGYUN
+		cost = 3.5
+		x = 2
+		y = 1
 		prerequisite = {
-			focus = FAT_Expand_the_shipyard
+			focus = FAT_LIANLUENANFANG
 		}
-
-		mutually_exclusive = {
-			focus = FAT_Heavy_commercial_direction
-		}
-
-		relative_position_id = FAT_Expand_the_shipyard
-
-		X = 0
-		Y = 1
+		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.3
+			}
 		}
 	}
-	focus = {
-		id = FAT_Fighting_Sailor  #海上斗士
-		icon = GFX_goal_FAT_Fighting_Sailor
-		cost = 2
-
+	focus = { #河间破冰
+		id = FAT_HEIJIANPOBIN
+		icon = GFX_goal_FAT_HEIJIANPOBIN
+		cost = 3.5
+		x = -2
+		y = 1
 		prerequisite = {
-			focus = FAT_Gazing_at_the_Blue_Ocean
+			focus = FAT_LIANLUENANFANG
 		}
-
-		relative_position_id = FAT_Gazing_at_the_Blue_Ocean
-
-		X = 0
-		Y = 2
+		available = {
+			RCT = {
+				is_faction_leader = yes
+				OR = {
+					has_country_leader = {
+						ruling_only = yes
+						character = RCT_river_swirl
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = RCT_nova_whirl
+					}
+				}
+			}
+		}
+		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.5
+			}
+			every_country = {
+			    limit = {
+			        is_in_faction_with = RCT
+			    }
+			    diplomatic_relation = {
+    			    country = FAT
+    			    relation = non_aggression_pact
+    			    active = yes
+			    }
+			}
 		}
 	}
-	focus = {
-		id = FAT_Mobile_Island  #移动岛屿
-		icon = GFX_goal_FAT_Mobile_Island
-		cost = 2
-
+	focus = { #韦迪纳的革命
+		id = FAT_WEIDINAGAIGE
+		icon = GFX_goal_FAT_WEIDINAGAIGE
+		cost = 3.5
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = FAT_Fighting_Sailor
+			focus = FAT_LIANLUENANFANG
 		}
-
-		relative_position_id = FAT_Fighting_Sailor
-
-		X = 0
-		Y = 1
+		available = {
+			has_country_flag = FAT_DIP_ITSTIME	
+		}
+		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.6
+			}
 		}
 	}
-	focus = {
-		id = FAT_the_Expansion_of_Trade_Fleet #贸易船队扩大
-		icon = GFX_goal_FAT_the_Expansion_of_Trade_Fleet
-		cost = 2
-
+	focus = { #协律之北
+		id = FAT_XIELVZHIBEI
+		icon = GFX_goal_FAT_XIELVZHIBEI
+		cost = 5
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = FAT_The_Republic_Navy
+			focus = FAT_HEIJIANPOBIN
 		}
-
-		relative_position_id = FAT_The_Republic_Navy
-
-		X = 2
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Heavy_commercial_direction #重商方向
-		icon = GFX_goal_FAT_Heavy_commercial_direction
-		cost = 2
-
 		prerequisite = {
-			focus = FAT_the_Expansion_of_Trade_Fleet
+			focus = FAT_JIRIZHEMINGYUN
 		}
-
-		mutually_exclusive = {
-			focus = FAT_Gazing_at_the_Blue_Ocean
-		}
-
-		relative_position_id = FAT_the_Expansion_of_Trade_Fleet
-
-		X = 0
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_coastal_defense #海岸防御
-		icon = GFX_goal_FAT_coastal_defense
-		cost = 2
-
 		prerequisite = {
-			focus = FAT_Heavy_commercial_direction
+			focus = FAT_WEIDINAGAIGE
 		}
-
-		relative_position_id = FAT_Heavy_commercial_direction
-
-		X = 1
-		Y = 1
-
+		relative_position_id = FAT_WEIDINAGAIGE
 		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.2
+			add_political_power = 50
+			every_state = {
+			    limit = {
+					OR = {
+						is_core_of = VED
+						is_core_of = MNC
+					}
+			    }
+			    add_core_of = FAT
+				remove_core_of = VED
+				remove_core_of = MNC
+			}
 		}
 	}
-	focus = {
-		id = FAT_Attacking_trade #袭击贸易
-		icon = GFX_goal_FAT_Attacking_trade
-		cost = 2
-
+	focus = { #击碎皇冠
+		id = FAT_JISUIHUANGGUAN
+		icon = GFX_goal_FAT_JISUIHUANGGUAN
+		cost = 7
+		x = 0
+		y = 2
 		prerequisite = {
-			focus = FAT_coastal_defense
+			focus = FAT_XIELVZHIBEI
 		}
-
-		relative_position_id = FAT_coastal_defense
-
-		X = -1
-		Y = 1
-
+		relative_position_id = FAT_WEIDINAGAIGE
+		available = {
+			date > 1010.07.31	
+		}
 		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.8
+			}
 		}
 	}
-	focus = {
-		id = FAT_Expand_flight_routes #拓展航线
-		icon = GFX_goal_FAT_Expand_flight_routes
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_coastal_defense
-		}
-
-		relative_position_id = FAT_coastal_defense
-
-		X = 1
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-###################空军#######################
-	focus = {
-		id = FAT_Republic_Air_Force #共和国空军
-		icon = GFX_goal_FAT_Republic_Air_Force
-		cost = 2
-		x = 26
-		y = 9
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Expand_Cloudbury_Aviation_School #扩建漫云航校
-		icon = GFX_goal_FAT_Expand_Cloudbury_Aviation_School
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Republic_Air_Force
-		}
-
-		relative_position_id = FAT_Republic_Air_Force
-
-		X = 0
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Establish_an_autonomous_system #建立自主体系
-		icon = GFX_goal_FAT_Establish_an_autonomous_system
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Expand_Cloudbury_Aviation_School
-		}
-	
-		mutually_exclusive = {
-			focus = FAT_Introducing_the_stalliongrad_production_line
-		}
-
-		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
-
-		X = -1
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Introducing_the_stalliongrad_production_line #引进嘶大林格勒生产线
-		icon = GFX_goal_FAT_Introducing_the_stalliongrad_production_line
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Expand_Cloudbury_Aviation_School
-		}
-	
-		mutually_exclusive = {
-			focus = FAT_Establish_an_autonomous_system
-		}
-
-		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
-
-		X = 1
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Air_Force_Module_Progress #空军模块进步
-		icon = GFX_goal_FAT_Air_Force_Module_Progress
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Establish_an_autonomous_system
-			focus = FAT_Introducing_the_stalliongrad_production_line
-		}
-
-		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
-
-		X = 0
-		Y = 2
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Priority_support #支援优先
-		icon = GFX_goal_FAT_Priority_support
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Air_Force_Module_Progress
-		}
-
-		mutually_exclusive = {
-			focus = FAT_Maintain_deterrence
-		}
-
-		relative_position_id = FAT_Air_Force_Module_Progress
-
-		X = -1
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Maintain_deterrence #保持威慑
-		icon = GFX_goal_FAT_Maintain_deterrence
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Air_Force_Module_Progress
-		}
-
-		relative_position_id = FAT_Air_Force_Module_Progress
-
-		mutually_exclusive = {
-			focus = FAT_Priority_support
-		}
-
-		X = 1
-		Y = 1
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_Ideal_touches_the_sky #理想触及天空
-		icon = GFX_goal_FAT_Ideal_touches_the_sky
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Priority_support
-			focus = FAT_Maintain_deterrence
-		}
-
-		relative_position_id = FAT_Expand_Cloudbury_Aviation_School
-
-		X = 0
-		Y = 4
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FAT_air_defense_training #防空训练
-		icon = GFX_goal_air_defense_training
-		cost = 2
-
-		prerequisite = {
-			focus = FAT_Republic_Air_Force
-		}
-
-		relative_position_id = FAT_Republic_Air_Force
-
-		X = -3
-		Y = 1
-
-		completion_reward = {
-		}
-	}
+	#focus = { #小马大陆的朋友
+	#	id = FAT_XIAOMAPENGYOU
+	#	icon = GFX_goal_FAT_XIAOMAPENGYOU
+	#	cost = 10
+	#	x = -4
+	#	y = 1
+	#	prerequisite = {
+	#		focus = FAT_XINSHIJIEZHIEMENG
+	#	}
+	#	relative_position_id = FAT_XINSHIJIEZHIEMENG
+	#	completion_reward = {
+	#		unlock_decision_tooltip = FAT_YUSIDALINGELEHEZUO
+	#		unlock_decision_tooltip = FAT_HUIMIANLINGDAOREN
+	#		unlock_decision_tooltip = FAT_YOUYIXUANYAN
+	#		set_country_flag = FAT_YUSIDALINGELEHEZUO
+	#		set_country_flag = FAT_HUIMIANLINGDAOREN
+	#		set_country_flag = FAT_YOUYIXUANYAN
+	#	}
+	#}
 }
 

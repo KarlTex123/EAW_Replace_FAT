@@ -217,8 +217,8 @@ country_event = { #豪克兰博弈机制
 	is_triggered_only = yes
 	option = {
 		name = FAT_start.8.1
-		set_variable = { FAT.FAT_vs_influence = 4 }
-		set_variable = { HAU.FAT_vs_influence = 58 }
+		set_variable = { FAT.FAT_vs_influence = 10 }
+		set_variable = { HAU.FAT_vs_influence = 10 }
 		custom_effect_tooltip = FAT_start.8.1_t
 		set_country_flag = start_of_FAT_vs_HAU
 	}
@@ -2350,7 +2350,7 @@ country_event = { # 友谊何处去
 	is_triggered_only = yes
 
 	trigger = {
-		date > 1008.3.1
+		date > 1009.3.1
 	}
 
 	option = {
@@ -2366,7 +2366,7 @@ country_event = { # 宣传攻势
 	is_triggered_only = yes
 
 	trigger = {
-		date > 1008.6.1
+		date > 1009.6.1
 	}
 
 	option = {
@@ -2382,7 +2382,7 @@ country_event = { # 歌曲的力量
 	is_triggered_only = yes
 
 	trigger = {
-		date > 1008.9.1
+		date > 1009.9.1
 	}
 
 	option = {
@@ -2398,12 +2398,74 @@ country_event = { #一场悲剧
 	is_triggered_only = yes
 
 	trigger = {
-		date > 1008.12.1
+		date > 1009.12.1
 	}
 
 	option = {
 		name = FAT_FP.54.a
 		add_manpower = -1
+	}
+}
+
+country_event = { #爪停喙停
+	id = FAT_FP.55
+	title = FAT_FP.55.t
+	desc = FAT_FP.55.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1007.1.1
+	}
+
+	option = {
+		name = FAT_FP.55.a
+	}
+}
+
+country_event = { #一场悲剧
+	id = FAT_FP.56
+	title = FAT_FP.56.t
+	desc = FAT_FP.56.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1007.3.1
+	}
+
+	option = {
+		name = FAT_FP.56.a
+	}
+}
+country_event = { #一场悲剧
+	id = FAT_FP.57
+	title = FAT_FP.57.t
+	desc = FAT_FP.57.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1007.6.1
+	}
+
+	option = {
+		name = FAT_FP.57.a
+	}
+}
+country_event = { #一场悲剧
+	id = FAT_FP.58
+	title = FAT_FP.58.t
+	desc = FAT_FP.58.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1007.9.1
+	}
+
+	option = {
+		name = FAT_FP.58.a
 	}
 }
 
