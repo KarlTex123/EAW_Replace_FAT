@@ -424,8 +424,6 @@ spriteTypes={
 	name="GFX_goal_FAT_guomingonghedangquanhui"
 	texturefile="gfx/interface/goals/FAT/国民共和党全会.png"
 	}
-
-
 	SpriteType={
 	name="GFX_goal_FAT_XINSHIJIEZHIEMENG"
 	texturefile="gfx/interface/goals/FAT/新世界之梦.png"
