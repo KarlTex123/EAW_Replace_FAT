@@ -2270,9 +2270,10 @@ country_event = { #棋局之中
 	title = FAT_FP.46.t
 	desc = FAT_FP.46.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1008.3.1
 	}
 
@@ -2286,9 +2287,10 @@ country_event = { #乡村怪鹫
 	title = FAT_FP.47.t
 	desc = FAT_FP.47.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1008.6.1
 	}
 
@@ -2302,9 +2304,10 @@ country_event = { #隔阂
 	title = FAT_FP.48.t
 	desc = FAT_FP.48.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1008.9.1
 	}
 
@@ -2318,9 +2321,10 @@ country_event = { #天际纳维亚之光
 	title = FAT_FP.49.t
 	desc = FAT_FP.49.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1008.12.1
 	}
 
@@ -2347,9 +2351,10 @@ country_event = { # 友谊何处去
 	title = FAT_FP.51.t
 	desc = FAT_FP.51.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1009.3.1
 	}
 
@@ -2363,9 +2368,10 @@ country_event = { # 宣传攻势
 	title = FAT_FP.52.t
 	desc = FAT_FP.52.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1009.6.1
 	}
 
@@ -2379,9 +2385,10 @@ country_event = { # 歌曲的力量
 	title = FAT_FP.53.t
 	desc = FAT_FP.53.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1009.9.1
 	}
 
@@ -2395,9 +2402,10 @@ country_event = { #一场悲剧
 	title = FAT_FP.54.t
 	desc = FAT_FP.54.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = FAT
 		date > 1009.12.1
 	}
 
@@ -2412,10 +2420,11 @@ country_event = { #爪停喙停
 	title = FAT_FP.55.t
 	desc = FAT_FP.55.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
-		date > 1007.1.1
+		tag = FAT
+		date > 1007.3.1
 	}
 
 	option = {
@@ -2428,10 +2437,11 @@ country_event = { #一场悲剧
 	title = FAT_FP.56.t
 	desc = FAT_FP.56.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
-		date > 1007.3.1
+		tag = FAT
+		date > 1007.6.1
 	}
 
 	option = {
@@ -2443,10 +2453,11 @@ country_event = { #一场悲剧
 	title = FAT_FP.57.t
 	desc = FAT_FP.57.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
-		date > 1007.6.1
+		tag = FAT
+		date > 1007.9.1
 	}
 
 	option = {
@@ -2458,10 +2469,11 @@ country_event = { #一场悲剧
 	title = FAT_FP.58.t
 	desc = FAT_FP.58.d
 
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
-		date > 1007.9.1
+		tag = FAT
+		date > 1007.12.1
 	}
 
 	option = {

@@ -1,10 +1,10 @@
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_goal_FAT_biancuanwenji_shine"
-		texturefile = "gfx/interface/goals/GFX_goal_FAT_biancuanwenji.png"
+		name = "GFX_goal_FAT_xunzhengqixian_shine"
+		texturefile = "gfx/interface/goals/FAT/训政期限.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_goal_FAT_biancuanwenji.png"
+			animationmaskfile = "gfx/interface/goals/FAT/训政期限.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -17,7 +17,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_goal_FAT_biancuanwenji.png"
+			animationmaskfile = "gfx/interface/goals/FAT/训政期限.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -32,10 +32,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_FAT_buxuanliuwangyihui_shine"
-		texturefile = "gfx/interface/goals/GFX_goal_FAT_buxuanliuwangyihui.dds"
+		texturefile = "gfx/interface/goals/FAT/补选流亡议会.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_goal_FAT_buxuanliuwangyihui.dds"
+			animationmaskfile = "gfx/interface/goals/FAT/补选流亡议会.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -48,7 +48,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_goal_FAT_buxuanliuwangyihui.dds"
+			animationmaskfile = "gfx/interface/goals/FAT/补选流亡议会.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -67,7 +67,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/newone/FAT_National_Revolutionary_Army.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT_National_Revolutionary_Army.png"
+			animationmaskfile = "gfx/interface/goals/newone/FAT_National_Revolutionary_Army.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -80,7 +80,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT_National_Revolutionary_Army.png"
+			animationmaskfile = "gfx/interface/goals/newone/FAT_National_Revolutionary_Army.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -98,7 +98,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/newone/FAT_Expand_the_Manyun_Military_Academy.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT_Expand_the_Manyun_Military_Academy.png"
+			animationmaskfile = "gfx/interface/goals/newone/FAT_Expand_the_Manyun_Military_Academy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -111,7 +111,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT_Expand_the_Manyun_Military_Academy.png"
+			animationmaskfile = "gfx/interface/goals/newone/FAT_Expand_the_Manyun_Military_Academy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -129,7 +129,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/newone/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
+			animationmaskfile = "gfx/interface/goals/newone/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -142,7 +142,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
+			animationmaskfile = "gfx/interface/goals/newone/FAT_The_establishment_of_the_General_Staff_Headquarters.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -744,7 +744,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_LIANLUENANFANG_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/联系南方共和党.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/联系南方共和党.png"
@@ -774,7 +774,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_JIRIZHEMINGYUN_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/日击者的末路.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/日击者的末路.png"
@@ -804,7 +804,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_XIAOMAPENGYOU_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/小马大陆的朋友.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/小马大陆的朋友.png"
@@ -834,7 +834,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_HEIJIANPOBIN_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/河间破冰.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/河间破冰.png"
@@ -864,7 +864,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_WEIDINAGAIGE_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/韦迪纳的革命.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/韦迪纳的革命.png"
@@ -894,7 +894,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_JISUIHUANGGUAN_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/击碎王冠.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/击碎王冠.png"
@@ -924,7 +924,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_XIELVZHIBEI_shine"
-		texturefile = "gfx/interface/goals/FAT/新世界之梦.png"
+		texturefile = "gfx/interface/goals/FAT/韵律之北.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/FAT/韵律之北.png"
