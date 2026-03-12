@@ -19,6 +19,10 @@ spriteTypes = {
 		name = "GFX_SuperEvent_picture_test"
 		texturefile = "gfx/interface/SuperEvent/SuperEvent_test.png"    
 	}
+	SpriteType = { 
+		name = "GFX_SuperEvent_picture_JISUIHUANGGUAN"
+		texturefile = "gfx/interface/SuperEvent/JISUIHUANGGUAN.png"    
+	}
 }
 
 

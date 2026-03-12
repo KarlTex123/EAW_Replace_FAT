@@ -26,6 +26,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SuperEvent_background_picture
+	text = {
+		trigger = {
+			has_country_flag = test_SuperEvent_flag
+		}
+		localization_key = GFX_SuperEvent_picture_test
+	}
+}
+defined_text = {
 	name = SuperEvent_text_t
 	text = {
 		trigger = {
@@ -56,9 +65,9 @@ defined_text = {
 	name = SuperEvent_background_picture
 	text = {
 		trigger = {
-			has_country_flag = test_SuperEvent_flag
+			has_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
 		}
-		localization_key = GFX_SuperEvent_picture_test
+		localization_key = GFX_SuperEvent_picture_JISUIHUANGGUAN
 	}
 }
 defined_text = {

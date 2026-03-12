@@ -2790,6 +2790,7 @@ country_event = { #击碎暴君的皇冠
 		}
 		FAT = {
 			set_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
+			scoped_play_song = JISUIHUANGGUAN
 		}
 		every_country = {
 			limit = {
