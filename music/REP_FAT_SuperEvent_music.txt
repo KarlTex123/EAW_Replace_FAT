@@ -4,7 +4,9 @@ music_station = "REP_FAT_SuperEvent_music"
 music = {
 	song = "Song_of_Civil_Revolution"
 }
-
+music = {
+	song = "JISUIHUANGGUAN"
+}
 
 
 
