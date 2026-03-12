@@ -9,6 +9,25 @@ on_actions = {
 	on_startup = {
 		effect = {
 			FAT = {
+				set_variable = {FAT_democracy_f_stability_factor = 0}
+				set_variable = {FAT_democracy_f_mobilization_laws_cost_factor = 0}
+				set_variable = {FAT_democracy_f_trade_laws_cost_factor = 0}
+				set_variable = {FAT_democracy_f_economy_cost_factor = 0}
+				set_variable = {FAT_democracy_f_max_command_power = 0}
+				set_variable = {FAT_democracy_f_global_building_slots_factor = 0}
+				set_variable = {FAT_democracy_f_command_power_gain_mult = 0}
+				set_variable = {FAT_democracy_f_production_speed_buildings_factor = 0}
+				set_variable = {FAT_democracy_f_production_factory_efficiency_gain_factor = 0}
+				set_variable = {FAT_democracy_f_line_change_production_efficiency_factor = 0}
+				set_variable = {FAT_democracy_f_political_power_factor = 0}
+				set_variable = {FAT_democracy_f_weekly_manpower = 0}
+				set_variable = {FAT_democracy_f_MINIMUM_TRAINING_LEVEL = 0}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			FAT = {
 				country_event = FAT_start.1
 				country_event = {
 					id = FAT_start.6
