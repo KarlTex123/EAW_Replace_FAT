@@ -2481,7 +2481,7 @@ country_event = { #一场悲剧
 	}
 }
 
-country_event = { #单一制的联邦
+country_event = { #单一制的共和国
 	id = FAT_FP.59
 	title = FAT_FP.59.t
 	desc = FAT_FP.59.d
@@ -2490,9 +2490,7 @@ country_event = { #单一制的联邦
 
 	option = {
 		name = FAT_FP.59.a
-	}
-	option = {
-		name = FAT_FP.59.b
+		set_country_flag = unlock_core_the_state
 	}
 }
 
