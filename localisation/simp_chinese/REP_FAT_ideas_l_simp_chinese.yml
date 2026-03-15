@@ -150,5 +150,8 @@ FAT_National_Republic_party_desc: ""
 #谐律支持率：[?party_popularity@democratic]，共产支持率：[?party_popularity@communism]，霸权支持率：[?party_popularity@fascism]，中立支持率：[?party_popularity@neutrality]
 FAT_unstable_army_idea: "军队高层动荡" 
 
+FAT_manyun_city_modifier:0 "开发漫云城"
+FAT_other_city_modifier:0 "开发地方"
+
 
 

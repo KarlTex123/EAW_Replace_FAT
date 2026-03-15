@@ -2985,6 +2985,162 @@ ideas = {
 				training_time_army_factor = -0.1
 			}
 		}
+		###########################################################################
+		##############################################################################
+		FAT_The_Cloudburian_Minority_idea3 = {  #语言鸿沟3
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.12
+				research_speed_factor = -0.05
+			}
+		}
+		FAT_The_Cloudburian_Minority_idea4 = {  #语言鸿沟4
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.12
+				weekly_manpower = 1000
+				research_speed_factor = -0.05
+			}
+		}
+		FAT_The_Cloudburian_Minority_idea5 = {  #语言鸿沟5
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.12
+				weekly_manpower = 1000
+			}
+		}
+		FAT_The_Cloudburian_Minority_idea6 = {
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.12
+				political_power_gain = 0.05
+				research_speed_factor = -0.05
+			}			
+		}
+		FAT_The_Cloudburian_Minority_idea7 = {
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = -0.05
+			}			
+		}
+		FAT_The_Cloudburian_Minority_idea8 = {
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				research_speed_factor = -0.05
+			}			
+		}
+		FAT_Language_confusion = { #语言混乱
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}		
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				conscription_factor = -0.06
+			}	
+		}	
+		FAT_Language_confusion2 = { #语言混乱
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			    NOT = {
+				    has_country_flag = JER_puppet
+				}
+			}		
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.05
+			}	
+		}	
 	}
 }
 

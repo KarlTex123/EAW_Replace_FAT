@@ -23,6 +23,39 @@ FAT_National_Republic_party = { #民族共和党
 	stability_factor = F02_gonghuimoshi_1_var
 	industry_free_repair_factor = F02_gonghuimoshi_2_var
 }
+###################懒得新开了 民精（民主）一些修正就写在这里#####################################
+FAT_manyun_city_modifier = { #漫云地区修正
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_railways
+
+	production_speed_buildings_factor = 0.2
+	LOCAL_BUILDING_SLOTS_FACTOR = 0.15
+}
+FAT_other_city_modifier = { #非漫云地区修正
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_railways
+
+	production_speed_buildings_factor = 0.1
+}
+
+FAT_democracy_f = {
+	enable = { always = yes }
+	icon = GFX_modifiers_gFAT_democracy_f
+
+	stability_factor = FAT_democracy_f_stability_factor
+	mobilization_laws_cost_factor = FAT_democracy_f_mobilization_laws_cost_factor
+	trade_laws_cost_factor = FAT_democracy_f_trade_laws_cost_factor
+	economy_cost_factor = FAT_democracy_f_economy_cost_factor
+	max_command_power = FAT_democracy_f_max_command_power
+	global_building_slots_factor = FAT_democracy_f_global_building_slots_factor
+	command_power_gain_mult = FAT_democracy_f_command_power_gain_mult
+	production_speed_buildings_factor = FAT_democracy_f_production_speed_buildings_factor
+	production_factory_efficiency_gain_factor = FAT_democracy_f_production_factory_efficiency_gain_factor
+	line_change_production_efficiency_factor = FAT_democracy_f_line_change_production_efficiency_factor
+	political_power_factor = FAT_democracy_f_political_power_factor
+	weekly_manpower = FAT_democracy_f_weekly_manpower
+	MINIMUM_TRAINING_LEVEL = FAT_democracy_f_MINIMUM_TRAINING_LEVEL
+}
 
 
 

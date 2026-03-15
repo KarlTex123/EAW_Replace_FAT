@@ -2481,6 +2481,66 @@ country_event = { #一场悲剧
 	}
 }
 
+country_event = { #单一制的共和国
+	id = FAT_FP.59
+	title = FAT_FP.59.t
+	desc = FAT_FP.59.d
+
+	fire_only_once = yes
+
+	option = {
+		name = FAT_FP.59.a
+		set_country_flag = unlock_core_the_state
+	}
+}
+
+country_event = { #议员
+	id = FAT_FP.60
+	title = FAT_FP.60.t
+	desc = FAT_FP.60.d
+
+	fire_only_once = yes
+
+	option = {
+		name = FAT_FP.60.a
+	}
+}
+
+country_event = { #漫云喊话
+	id = FAT_FP.61
+	title = FAT_FP.61.t
+	desc = FAT_FP.61.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FAT
+		date > 1007.4.1
+	}
+
+	option = {
+		name = FAT_FP.61.a
+	}
+}
+
+country_event = { #送别
+	id = FAT_FP.62
+	title = FAT_FP.62.t
+	desc = FAT_FP.62.d
+
+	fire_only_once = yes
+
+	trigger = {
+		JER = {
+			has_war = yes
+		}
+	}
+
+	option = {
+		name = FAT_FP.62.a
+	}
+}
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes

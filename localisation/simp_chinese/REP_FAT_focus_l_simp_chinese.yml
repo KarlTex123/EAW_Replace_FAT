@@ -162,7 +162,14 @@ FAT_guomingonghedangquanhui:"国民共和党全会"
 FAT_guomingonghedangquanhui_desc:""
 
 FAT_xiangcunjiansheyundong_tt:0 "农村相关民族精神追加：资源获取效率 §G+10%§!"
-
+FAT_manyuntebieshi_tt:0 "在经济建设决议中增加§Y开发漫云城§!决议"
+FAT_kuodashengyihuiquanli_tt:0 "在经济建设中增加§Y开发地方§!决议"
+FAT_xingemingdang_tt:0 "§Y民主主义§!获得效果：\n法案花费§G-15%§! 稳定度§G+15%§!"
+FAT_FAT_zhongyangzhiweihui_tt:0 "§Y民主主义§!获得效果：\n指挥点数上限§G+50§! 地区最大工厂数§G+10%§!"
+FAT_yanjiuhui_tt:0 "§Y民主主义§!获得效果：\n每周马力§G+200§! 最小训练度§G-20%§!"
+FAT_junweihui_tt:0 "§Y民主主义§!获得效果：\n指挥点数增长§G+50§!"
+FAT_gaizaohuogaizu_tt:0 "§Y民主主义§!获得效果：\n生产效率增长§G+10%§! 建造速度§G+10%§! 生产效率保持§G+10%§!"
+FAT_manyuntizhi_tt:0 "§Y民主主义§!获得效果：\n政治点数§G+15%§! 稳定度§G+10%§!"
 
 
 FAT_XINSHIJIEZHIEMENG: "新世界之梦"

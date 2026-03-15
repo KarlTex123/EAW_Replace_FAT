@@ -1074,7 +1074,7 @@ FAT_industry_decision_category_1= {
 				check_variable = { FAT_money = 250 }
 			}
 		}
-		custom_cost_text = cost_money_500
+		custom_cost_text = cost_money_250
 		days_remove = 60
 
 		
@@ -1212,6 +1212,77 @@ FAT_industry_decision_category_1= {
 
 	fire_only_once = yes
 
+	}
+	develop_485_2 = { #开发漫云城
+		icon = GFX_bank_build_icon
+		visible = {
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
+			has_completed_focus = FAT_manyuntebieshi
+		}
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 1000 }
+				check_variable = { FAT_money = 1000 }
+			}
+
+		}
+		custom_cost_text = cost_money_1000
+		days_remove = 60
+		
+		complete_effect = {
+			subtract_from_variable = {FAT_money = 1000}
+		}	
+		remove_effect = {
+			485 = {
+				add_building_construction = {
+					type = industrial_complex 
+					level = 3
+					instant_build = yes
+				}
+			}
+		}	
+	}
+	develop_FAT_state_2 = {
+		#开发地方2
+		icon = GFX_bank_build_icon
+		ai_will_do = {
+			factor = 30
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		
+		state_target = yes
+
+		available = {
+			has_completed_focus = FAT_kuodashengquanli
+		}
+
+		custom_cost_trigger = {
+			OR = {
+				check_variable = { FAT_money > 500 }
+				check_variable = { FAT_money = 500 }
+			}
+		}
+		custom_cost_text = cost_money_500
+		days_remove = 60
+
+		
+		complete_effect = {
+			add_to_variable = {FAT_money = -500}
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}				
+			}
+		}
 	}
 	develop_450_582 = {#发展斯卡克和凹穴采煤业
 		#发展鸿运港
