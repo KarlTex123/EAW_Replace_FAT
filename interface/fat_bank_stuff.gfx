@@ -27,4 +27,12 @@ spriteTypes = {
         texturefile = "gfx/interface/decisions/money_decisions_texticon_icon.dds" # Must use / for folder separation
         legacy_lazy_load = no
     }
+    spriteType = {
+		name = "GFX_FAT_propaganda_strip"
+		texturefile = "gfx/interface/propaganda/FAT_propaganda_strip.png"
+		legacy_lazy_load = no
+		noOfFrames = 7
+	}
 }
+
+

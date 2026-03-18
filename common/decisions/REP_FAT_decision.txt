@@ -968,5 +968,238 @@ FAT_the_war_in_the_north = {
 				attacker = 562
 			}
 		}
-	}
+	} 
 } 
+
+REP_FAT_political_billing = {
+	clear_political_billing = {
+		icon = x
+		allowed = {
+			is_debug = yes
+		}
+		cost = 0
+		days_remove = 1
+		fire_only_once = no
+		complete_effect = {
+			set_variable = {
+				FAT_poster_left_icon_frame = 0
+			}
+			set_variable = {
+				FAT_poster_center_icon_frame = 0
+			}
+			set_variable = {
+				FAT_poster_right_icon_frame = 0
+			}
+			set_variable = {
+				how_many_billing_slots_using = 0
+			}
+			set_country_flag = clear_political_billing_flag
+		}
+		remove_effect = {
+			clr_country_flag = clear_political_billing_flag
+		}
+	}
+	under_the_leadership_of_republic_party= {
+		icon = x
+		allowed = {}
+		available = {
+			check_variable = {
+				how_many_billing_slots_using < 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = billing_slots_number_trigger
+				check_variable = {
+					how_many_billing_slots_using < 3
+				}
+			} 
+		}
+		visible = {}
+		cost = 50
+		days_remove = 180
+		fire_only_once = no
+		modifier = {
+			political_power_factor = 0.05
+			stability_weekly = 0.002
+			war_support_weekly = 0.003
+			land_reinforce_rate = 0.05
+		}
+		complete_effect = {
+			set_temp_variable = {
+				which_frame_will_use = 2
+			}
+			FAT_billing_icon_frame_use_effect = yes
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				which_frame_will_use = 2
+			}
+			FAT_billing_icon_frame_over_effect = yes
+		}
+		cancel_trigger = {
+			has_country_flag = clear_political_billing_flag
+		}
+	}
+	revolution_friendship_10000 = {
+		icon = x
+		allowed = {}
+		available = {
+			check_variable = {
+				how_many_billing_slots_using < 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = billing_slots_number_trigger
+				check_variable = {
+					how_many_billing_slots_using < 3
+				}
+			} 
+		}
+		visible = {}
+		cost = 50
+		days_remove = 180
+		fire_only_once = no
+		modifier = {
+			opinion_gain_monthly_factor = 0.25
+			trade_opinion_factor =0.3
+			license_purchase_cost = -0.45
+			license_production_speed = 0.15
+		}
+		complete_effect = {
+			set_temp_variable = {
+				which_frame_will_use = 3
+			}
+			FAT_billing_icon_frame_use_effect = yes
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				which_frame_will_use = 3
+			}
+			FAT_billing_icon_frame_over_effect = yes
+		}
+		cancel_trigger = {
+			has_country_flag = clear_political_billing_flag
+		}
+	}
+	stand_with_together = {
+		icon = x
+		allowed = {}
+		available = {
+			check_variable = {
+				how_many_billing_slots_using < 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = billing_slots_number_trigger
+				check_variable = {
+					how_many_billing_slots_using < 3
+				}
+			} 
+		}
+		visible = {}
+		cost = 50
+		days_remove = 180
+		fire_only_once = no
+		modifier = {
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.1
+			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+		}
+		complete_effect = {
+			set_temp_variable = {
+				which_frame_will_use = 4
+			}
+			FAT_billing_icon_frame_use_effect = yes
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				which_frame_will_use = 4
+			}
+			FAT_billing_icon_frame_over_effect = yes
+		}
+		cancel_trigger = {
+			has_country_flag = clear_political_billing_flag
+		}
+	}
+	bevelive_nationalism_love_country = {
+		icon = x
+		allowed = {}
+		available = {
+			check_variable = {
+				how_many_billing_slots_using < 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = billing_slots_number_trigger
+				check_variable = {
+					how_many_billing_slots_using < 3
+				}
+			} 
+		}
+		visible = {}
+		cost = 50
+		days_remove = 180
+		fire_only_once = no
+		modifier = {
+			weekly_manpower = 200
+			army_org_factor = 0.1
+			offence = 0.1
+			breakthrough_factor = 0.05
+		}
+		complete_effect = {
+			set_temp_variable = {
+				which_frame_will_use = 5
+			}
+			FAT_billing_icon_frame_use_effect = yes
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				which_frame_will_use = 5
+			}
+			FAT_billing_icon_frame_over_effect = yes
+		}
+		cancel_trigger = {
+			has_country_flag = clear_political_billing_flag
+		}
+	}
+	be_careful_fascism_party = {
+		icon = x
+		allowed = {}
+		available = {
+			check_variable = {
+				how_many_billing_slots_using < 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = billing_slots_number_trigger
+				check_variable = {
+					how_many_billing_slots_using < 3
+				}
+			} 
+		}
+		visible = {}
+		cost = 50
+		days_remove = 180
+		fire_only_once = no
+		modifier = {
+			foreign_subversive_activites = -0.25
+			intelligence_agency_defense = 2
+			enemy_operative_detection_chance_factor = 0.3
+			enemy_operative_capture_chance_factor = 0.3
+			drift_defence_factor = 0.5
+		}
+		complete_effect = {
+			set_temp_variable = {
+				which_frame_will_use = 6
+			}
+			FAT_billing_icon_frame_use_effect = yes
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				which_frame_will_use = 6 
+			}
+			FAT_billing_icon_frame_over_effect = yes
+		}
+		cancel_trigger = {
+			has_country_flag = clear_political_billing_flag
+		}
+	}
+}
+
+
