@@ -1,0 +1,21 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			random_country = {
+				limit = {
+					is_ai = no
+				}
+				resize_array = {
+					array = character_frame_array
+					value = 1
+					size = 5
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

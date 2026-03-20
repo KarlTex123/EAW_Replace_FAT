@@ -1,0 +1,141 @@
+defined_text = {
+	name = CUI_ui_character_name_0
+	text = {
+		trigger = {
+			check_variable = {
+				character_frame_array^0 = 1
+			}
+		}
+		localization_key = CUI_ui_character_name_n
+	}
+	text = {
+		localization_key = CUI_ui_character_name_y0
+	}
+}
+defined_text = {
+	name = CUI_ui_character_name_1
+	text = {
+		trigger = {
+			check_variable = {
+				character_frame_array^1 = 1
+			}
+		}
+		localization_key = CUI_ui_character_name_n
+	}
+	text = {
+		localization_key = CUI_ui_character_name_y1
+	}
+}
+defined_text = { #分流，根据country_flag来确定启用哪段对话
+	name = CUI_ui_chat_say_t
+	text = {
+		trigger = {
+			has_country_flag = test_chat_1_flag
+		}
+		localization_key = [CUI_ui_chat_say_t_1]
+	}
+}
+
+defined_text = {
+	name = CUI_ui_chat_say_t_1
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 0
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 1
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 2
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 3
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 4
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 5
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_5
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 6 
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_6
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 7
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_7
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 8
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_8
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 9
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_9
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 10 
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_10
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				chat_ui_step = 11
+			}
+		}
+		localization_key = CUI_ui_chat_say_t_1_11
+	}
+}
+
+
+
+

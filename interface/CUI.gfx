@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_CUI_background"
+		textureFile = "gfx/chat_ui/ui/background.png"
+	}
+	spriteType = {
+		name = "GFX_character_npca"
+		textureFile = "gfx/chat_ui/character/m.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_character_npcb"
+		textureFile = "gfx/chat_ui/character/y.png"
+		noOfFrames = 2
+	}
+}
+
+
+
+
+
+
+
+
+
+

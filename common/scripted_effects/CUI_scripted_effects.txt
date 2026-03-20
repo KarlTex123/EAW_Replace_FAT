@@ -1,0 +1,11 @@
+CUI_clean_chat = {
+	clear_array = character_frame_array
+	resize_array = {
+		array = character_frame_array
+		value = 1
+		size = 5
+	}
+}
+
+
+

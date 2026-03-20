@@ -1,0 +1,66 @@
+guiTypes = {
+	containerWindowType = {
+		name = "CUI_chat_ui_window"
+		position = {x=0 y=0}
+		size = {width=100% height = 0}
+		clipping = no
+		orientation = LOWER_LEFT
+		origo = lower_left
+		containerWindowType = {
+			name = "CUI_chat_ui_character_icon_window"
+			orientation = LOWER_LEFT
+			origo = upper_left
+			position = {
+				x=250 y=-900
+			}
+			
+			iconType = {
+				name = "CUI_character_icon_npca_ui"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "CUI_character_icon_npcb_ui"
+				alwaystransparent = yes
+			}
+		}
+		iconType = {
+			name = "CUI_background"
+			position = {
+				x=0 y=-410
+			}
+			quadTextureSprite = "GFX_CUI_background"
+			pdx_tooltip = "CUI_background_tip"
+		}
+		instantTextBoxType = {
+			name = "CUI_ui_character_name"
+			position = {
+				x =400 y = -280
+			}
+			format = left
+			text = "CUI_ui_character_name_t"
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0} #文本框的边界框
+			maxWidth = 300 #文本最大宽度，大于后文字会提行
+			maxHeight = 100 #文本最大高度，大于后字就被挤出去了
+			fixedsize = no #如果文字挤出去了，是否截断越位的文字
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "CUI_ui_chat_say"
+			position = {
+				x = 400 y = -220
+			}
+			format = left
+			text = "[CUI_ui_chat_say_t]"
+			font = "hoi_30header"
+			maxWidth = 1200 
+			maxHeight = 100 
+			fixedsize = no 
+			alwaystransparent = yes
+		}
+
+	}
+	containerWindowType = {
+		name = "the_duhufu_of_YAN_ui_entry"
+	}
+}

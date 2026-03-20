@@ -1,0 +1,316 @@
+scripted_gui = {
+	CUI_chat_ui = {
+		window_name = "CUI_chat_ui_window"
+		context_type = player_context
+		visible = {
+			check_variable = {
+				use_chat_ui_var = 1
+			}
+		}
+		effects = {
+			CUI_background_click = { #左键下一句
+				CUI_clean_chat = yes #下一步前先清理当前人物立绘
+				add_to_variable = {
+					chat_ui_step = 1
+				}
+				if = { #一个情境写一个大if
+					limit = {
+						has_country_flag = test_chat_1_flag
+					}
+					if = { #1接下来负责编排哪些角色上场
+						limit = {
+							check_variable = {
+								chat_ui_step = 1
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+					}
+					else_if = { #2
+						limit = {
+							check_variable = {
+								chat_ui_step = 2
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+					}
+					else_if = { #3
+						limit = {
+							check_variable = {
+								chat_ui_step = 3
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+					}
+					else_if = { #4
+						limit = {
+							check_variable = {
+								chat_ui_step = 4
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+					}
+					else_if = { #5
+						limit = {
+							check_variable = {
+								chat_ui_step = 5
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 6
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 7
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 8
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 9
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 10
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 11
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+						
+					}
+					else_if = { #7 #最后一步，不包含任何文字信息，重置所有回到初始即可
+						limit = {
+							check_variable = {
+								chat_ui_step = 12
+							}
+						}
+						set_variable = { #关闭UI
+							use_chat_ui_var = 0
+						}
+						set_variable = { #清空步数
+							chat_ui_step = 0
+						}
+						clr_country_flag = test_chat_1_flag
+					}
+				}
+			}
+			CUI_background_right_click = { #右键上一句
+				CUI_clean_chat = yes
+				if = { #倒退必须要加点限定条件，不然能倒退到姥姥家去
+					limit = {
+						check_variable = {
+							chat_ui_step > 0
+						}
+					}
+					add_to_variable = {
+						chat_ui_step = -1
+					}
+				}
+				if = { #直接复制上面的if就行，不用重新写，非常方便
+					limit = {
+						has_country_flag = test_chat_1_flag
+					}
+					if = { #1接下来负责编排哪些角色上场
+						limit = {
+							check_variable = {
+								chat_ui_step = 1
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+					}
+					else_if = { #2
+						limit = {
+							check_variable = {
+								chat_ui_step = 2
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+					}
+					else_if = { #3
+						limit = {
+							check_variable = {
+								chat_ui_step = 3
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+					}
+					else_if = { #4
+						limit = {
+							check_variable = {
+								chat_ui_step = 4
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+					}
+					else_if = { #5
+						limit = {
+							check_variable = {
+								chat_ui_step = 5
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 6
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 7
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 8
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 9
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 10
+							}
+						}
+						set_variable = {
+							character_frame_array^0 = 2
+						}
+						
+					}
+					else_if = { #6
+						limit = {
+							check_variable = {
+								chat_ui_step = 11
+							}
+						}
+						set_variable = {
+							character_frame_array^1 = 2
+						}
+						
+					}
+					else_if = { #7 #最后一步，不包含任何文字信息，重置所有回到初始即可
+						limit = {
+							check_variable = {
+								chat_ui_step = 12
+							}
+						}
+						set_variable = { #关闭UI
+							use_chat_ui_var = 0
+						}
+						set_variable = { #清空步数
+							chat_ui_step = 0
+						}
+						clr_country_flag = test_chat_1_flag
+					}
+				}
+			}
+		}
+		#triggers = {}
+		properties = {
+			CUI_character_icon_npca_ui = {
+				image = "GFX_character_npca"
+				frame = character_frame_array^0
+			}
+			CUI_character_icon_npcb_ui = {
+				image = "GFX_character_npcb"
+				frame = character_frame_array^1
+			}
+		}
+		ai_enabled = {
+			always = no
+		}
+	}
+}

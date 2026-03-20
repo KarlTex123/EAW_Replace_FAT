@@ -204,6 +204,57 @@ REP_FAT_test_category = { #测试决议
 	}
 }
 
+CUI_test_category = {
+	CUI_turn_on = {
+		complete_effect = {
+			set_variable = {
+				use_chat_ui_var = 1
+			}
+		}
+	}
+	CUI_turn_off = {
+		complete_effect = {
+			set_variable = {
+				use_chat_ui_var = 0
+			}
+		}
+	}
+	CUI_test_chat_1 = {
+		complete_effect = {
+			set_variable = {
+				use_chat_ui_var = 1
+			}
+			set_country_flag = test_chat_1_flag
+		}
+	}
+	CUI_use_npca = {
+		complete_effect = {
+			set_variable = {
+				character_frame_array^0 = 2
+			}
+		}
+	}
+	CUI_use_npcb = {
+		complete_effect = {
+			set_variable = {
+				character_frame_array^1 = 2
+			}
+		}
+	}
+	CUI_clear_all_character = {
+		complete_effect = {
+			CUI_clean_chat = yes
+		}
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
