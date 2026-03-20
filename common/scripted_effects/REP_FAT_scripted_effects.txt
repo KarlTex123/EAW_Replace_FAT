@@ -86,4 +86,86 @@ FAT_set_faction_buff = {
 	}
 }
 
+FAT_billing_icon_frame_use_effect = {
+	if = {
+		limit = {
+			check_variable = {
+				FAT_poster_left_icon_frame = 0
+			}
+		}
+		set_variable = {
+			FAT_poster_left_icon_frame = which_frame_will_use
+		}
+		add_to_variable = {
+			how_many_billing_slots_using = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				FAT_poster_center_icon_frame = 0
+			}
+		}
+		set_variable = {
+			FAT_poster_center_icon_frame = which_frame_will_use
+		}
+		add_to_variable = {
+			how_many_billing_slots_using = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				FAT_poster_right_icon_frame = 0
+			}
+		}
+		set_variable = {
+			FAT_poster_right_icon_frame = which_frame_will_use
+		}
+		add_to_variable = {
+			how_many_billing_slots_using = 1
+		}
+	}
+}
+FAT_billing_icon_frame_over_effect = {
+	if = {
+		limit = {
+			check_variable = {
+				FAT_poster_left_icon_frame = which_frame_will_use
+			}
+		}
+		set_variable = {
+			FAT_poster_left_icon_frame = 0
+		}
+		add_to_variable = {
+			how_many_billing_slots_using = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				FAT_poster_center_icon_frame = which_frame_will_use
+			}
+		}
+		set_variable = {
+			FAT_poster_center_icon_frame = 0
+		}
+		add_to_variable = {
+			how_many_billing_slots_using = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				FAT_poster_right_icon_frame = which_frame_will_use
+			}
+		}
+		set_variable = {
+			FAT_poster_right_icon_frame = 0
+		}
+		add_to_variable = {
+			how_many_billing_slots_using = -1
+		}
+	}
+}
 

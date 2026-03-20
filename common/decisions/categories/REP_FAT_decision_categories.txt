@@ -109,6 +109,20 @@ REP_FAT_political_decision = { #狮鹫共和国政治派别决议
 	scripted_gui = REP_FAT_political_decision_ui 
 }
 
+REP_FAT_political_billing = { #政治宣传栏
+	icon = x
+	allowed = {
+		original_tag = FAT
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+	priority = 9000 
+	visible_when_empty = yes
+	scripted_gui = REP_FAT_propaganda_campaigns_ui 
+}
+
 REP_FAT_core_the_state = { #整合地区决议
 
 	icon = x

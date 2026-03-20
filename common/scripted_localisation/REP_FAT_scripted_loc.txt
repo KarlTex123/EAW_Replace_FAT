@@ -404,5 +404,17 @@ defined_text = { #派系支持的意识形态
 		localization_key = FAT_government_union_4_yes_loc
 	}
 }
+defined_text = {
+	name = GetPropagandaCenterSlotAge
+	text = {
+		trigger = {
+			has_country_flag = SOV_propaganda_center_slot_is_old_flag
+		}
+		localization_key = GFX_SOV_propaganda_strip_aged_2
+	}
+	text = {
+		localization_key = GFX_FAT_propaganda_strip
+	}
+}
 
 
