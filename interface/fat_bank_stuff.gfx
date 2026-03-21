@@ -31,7 +31,7 @@ spriteTypes = {
 		name = "GFX_FAT_propaganda_strip"
 		texturefile = "gfx/interface/propaganda/FAT_propaganda_strip.png"
 		legacy_lazy_load = no
-		noOfFrames = 7
+		noOfFrames = 6
 	}
 }
 

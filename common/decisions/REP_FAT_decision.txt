@@ -1025,13 +1025,13 @@ REP_FAT_political_billing = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				which_frame_will_use = 2
+				which_frame_will_use = 5
 			}
 			FAT_billing_icon_frame_use_effect = yes
 		}
 		remove_effect = {
 			set_temp_variable = { 
-				which_frame_will_use = 2
+				which_frame_will_use = 5
 			}
 			FAT_billing_icon_frame_over_effect = yes
 		}
@@ -1065,13 +1065,13 @@ REP_FAT_political_billing = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				which_frame_will_use = 3
+				which_frame_will_use = 6
 			}
 			FAT_billing_icon_frame_use_effect = yes
 		}
 		remove_effect = {
 			set_temp_variable = { 
-				which_frame_will_use = 3
+				which_frame_will_use = 6
 			}
 			FAT_billing_icon_frame_over_effect = yes
 		}
@@ -1105,13 +1105,13 @@ REP_FAT_political_billing = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				which_frame_will_use = 4
+				which_frame_will_use = 3
 			}
 			FAT_billing_icon_frame_use_effect = yes
 		}
 		remove_effect = {
 			set_temp_variable = { 
-				which_frame_will_use = 4
+				which_frame_will_use = 3
 			}
 			FAT_billing_icon_frame_over_effect = yes
 		}
@@ -1145,13 +1145,13 @@ REP_FAT_political_billing = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				which_frame_will_use = 5
+				which_frame_will_use = 2
 			}
 			FAT_billing_icon_frame_use_effect = yes
 		}
 		remove_effect = {
 			set_temp_variable = { 
-				which_frame_will_use = 5
+				which_frame_will_use = 2
 			}
 			FAT_billing_icon_frame_over_effect = yes
 		}
@@ -1186,13 +1186,13 @@ REP_FAT_political_billing = {
 		}
 		complete_effect = {
 			set_temp_variable = {
-				which_frame_will_use = 6
+				which_frame_will_use = 4
 			}
 			FAT_billing_icon_frame_use_effect = yes
 		}
 		remove_effect = {
 			set_temp_variable = { 
-				which_frame_will_use = 6 
+				which_frame_will_use = 4
 			}
 			FAT_billing_icon_frame_over_effect = yes
 		}
@@ -1201,5 +1201,7 @@ REP_FAT_political_billing = {
 		}
 	}
 }
+
+
 
 
