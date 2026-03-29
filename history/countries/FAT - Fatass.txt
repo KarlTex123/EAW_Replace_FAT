@@ -214,10 +214,21 @@ recruit_character = FAT_Garibaldi_Giuseppe
 recruit_character = FAT_yizhan
 
 set_variable = { FAT_REP_THE_S_L = 1 } 
+set_variable = { cheak_the_page_number = 1 } 
+set_variable = { pulic_power_change = 3 }
+set_variable = { public_power_1 = 0}
+set_variable = { public_power_2 = 0}
+set_variable = { public_power_3 = 0}
+set_variable = { public_power_4 = 0}
+set_variable = { public_power_5 = 0}
+set_variable = { public_power_6 = 0}
+set_variable = { public_power_7 = 0}
+set_variable = { public_power_8 = 0}
+set_variable = { public_power_9 = 0}
 
 set_rule = {
 	can_generate_female_aces = yes
-	can_generate_female_unit_leaders  = yes
+	can_generate_female_unit_leaders = yes
 	can_generate_female_country_leaders = yes
 }
 if = {

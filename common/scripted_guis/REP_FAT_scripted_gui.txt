@@ -49,6 +49,17 @@ scripted_gui = {
 			has_country_flag = REP_FAT_the_south_event_ui_window_flag
 		}
 		effects = {
+			#换页
+			REP_FAT_the_south_decisions_change_page_button_1_click = {
+				set_variable = {cheak_the_page_number = 2}
+			}
+			REP_FAT_the_south_decisions_change_page_button_2_click = {
+				set_variable = {cheak_the_page_number = 3}
+			}
+			REP_FAT_the_south_decisions_change_page_button_3_click = {
+				set_variable = {cheak_the_page_number = 1}
+			}
+			#####################################
 			REP_FAT_the_setuation_of_the_state_1_click = { 
 				set_variable = { cheak_the_state_number = 1 }}
 			REP_FAT_the_setuation_of_the_state_2_click = { 
@@ -70,9 +81,199 @@ scripted_gui = {
             close_button_click = {
                 clr_country_flag = REP_FAT_the_south_event_ui_window_flag
             }
+
+			#############################
+			REP_FAT_the_south_decisions_selete_button_1_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = add_every_public_power
+						}
+					}
+					add_to_variable = { public_power_1 = 3 }
+				}
+				else = {
+					add_to_variable = { public_power_1 = 4 }
+				}
+				add_political_power = -25
+			}
+			REP_FAT_the_south_decisions_selete_button_2_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = add_every_public_power
+						}
+					}
+					add_to_variable = { public_power_1 = 3 }
+				}
+				else = {
+					add_to_variable = { public_power_1 = 4 }
+				}
+				add_manpower = -250
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+    				producer = FAT
+				}
+			}
+			REP_FAT_the_south_decisions_selete_button_3_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = add_every_public_power
+						}
+					}
+					add_to_variable = { public_power_1 = 3 }
+				}
+				else = {
+					add_to_variable = { public_power_1 = 4 }
+				}
+				add_timed_idea = {
+					idea = FAT_the_south_decisions_use_factory
+					days = 30
+				}
+			}
+			REP_FAT_the_south_decisions_selete_button_4_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = add_every_public_power
+						}
+					}
+					add_to_variable = { public_power_1 = 3 }
+				}
+				else = {
+					add_to_variable = { public_power_1 = 4 }
+				}
+				add_command_power = -10
+			}
+			REP_FAT_the_south_decisions_selete_button_5_click = {
+				add_political_power = -30
+				add_timed_idea = {
+					idea = stop_the_decray_a
+					days = 60
+				}
+			}
+			REP_FAT_the_south_decisions_selete_button_6_click = {
+				set_country_flag = add_every_public_power
+				add_ideas = search_tongling
+				add_to_variable = { pulic_power_change = 1 }
+			}
+####################################################################################
+			REP_FAT_the_south_decisions_selete_button_7_click = {
+				add_to_variable = { public_power_1 = 3 }
+			}
+			REP_FAT_the_south_decisions_selete_button_8_click = {
+				add_to_variable = { public_power_1 = 3 }
+				add_command_power = -10
+			}
+#####################################################################################
+			REP_FAT_the_south_decisions_selete_button_9_click = {
+				add_to_variable = { public_power_2 = 3 }
+				add_political_power = -25
+			}
+			REP_FAT_the_south_decisions_selete_button_10_click = {
+				add_to_variable = { public_power_2 = 3 }
+				add_manpower = -250
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = -100
+    				producer = FAT
+				}
+			}
+			REP_FAT_the_south_decisions_selete_button_11_click = {
+				add_to_variable = { public_power_2 = 3 }
+				add_timed_idea = {
+					idea = FAT_the_south_decisions_use_factory
+					days = 30
+				}
+			}
+			REP_FAT_the_south_decisions_selete_button_12_click = {
+				add_to_variable = { public_power_2 = 3 }
+				add_command_power = -10
+			}
+			REP_FAT_the_south_decisions_selete_button_13_click = {
+				add_political_power = -30
+				add_timed_idea = {
+					idea = stop_the_decray_b
+					days = 60
+				}
+			}
+#############################################################################################
+			REP_FAT_the_south_decisions_selete_button_14_click = {
+				add_power_balance_value = {
+					id = FAT_power_balance
+					value = 0.1
+					tooltip_side = FAT_nationalism_side
+				}
+				add_popularity = {
+					ideology = fascism #霸权
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = neutrality #中立
+					popularity = 0.1
+				}
+			}
+			REP_FAT_the_south_decisions_selete_button_15_click = {
+				if = {
+					limit = {
+						ANG = {
+							has_government = democratic
+						}
+					}
+					add_ideas = stop_the_decray_b
+				}
+				country_event  = { id = FAT.}
+			}
+			REP_FAT_the_south_decisions_selete_button_16_click = {
+				add_to_variable = { public_power_2 = 3 }
+				add_command_power = -10
+			}
+############################################################################################
+		}
+        triggers = {
+			##############这是换页按钮##########################
+			REP_FAT_the_south_decisions_change_page_button_1_visible = {check_variable = {cheak_the_page_number = 1}}
+			REP_FAT_the_south_decisions_change_page_button_2_visible = {check_variable = {cheak_the_page_number = 2}}
+			REP_FAT_the_south_decisions_change_page_button_3_visible = {check_variable = {cheak_the_page_number = 3}}
+			###############这是效果按钮########################
+            REP_FAT_the_south_decisions_selete_button_1_click_enabled = {has_completed_focus = FAT_xingemingdang}
+            REP_FAT_the_south_decisions_selete_button_1_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_2_click_enabled = {has_completed_focus = FAT_junweihui}
+            REP_FAT_the_south_decisions_selete_button_2_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_3_click_enabled = {has_completed_focus = FAT_zhongyangzhiweihui}
+            REP_FAT_the_south_decisions_selete_button_3_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_4_click_enabled = {has_completed_focus = FAT_yanjiuhui}
+            REP_FAT_the_south_decisions_selete_button_4_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_5_click_enabled = {has_completed_focus = FAT_gaizaohuogaizu}
+            REP_FAT_the_south_decisions_selete_button_5_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 2}}}
+			REP_FAT_the_south_decisions_selete_button_6_click_enabled = {check_variable = {public_power_1>25}}
+            REP_FAT_the_south_decisions_selete_button_6_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 3}}}
+			REP_FAT_the_south_decisions_selete_button_7_click_enabled = {check_variable = {public_power_1>50}}
+            REP_FAT_the_south_decisions_selete_button_7_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 3}}}
+			REP_FAT_the_south_decisions_selete_button_8_click_enabled = {check_variable = {public_power_1>80}}
+            REP_FAT_the_south_decisions_selete_button_8_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 3}}}
+            REP_FAT_the_south_decisions_selete_button_9_click_enabled = {has_completed_focus = FAT_xingemingdang}
+            REP_FAT_the_south_decisions_selete_button_9_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_10_click_enabled = {has_completed_focus = FAT_junweihui}
+            REP_FAT_the_south_decisions_selete_button_10_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 2}}}
+			REP_FAT_the_south_decisions_selete_button_11_click_enabled = {has_completed_focus = FAT_zhongyangzhiweihui}
+            REP_FAT_the_south_decisions_selete_button_11_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_12_click_enabled = {has_completed_focus = FAT_yanjiuhui}
+            REP_FAT_the_south_decisions_selete_button_12_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_13_click_enabled = {has_completed_focus = FAT_gaizaohuogaizu}
+            REP_FAT_the_south_decisions_selete_button_13_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 1}}}
+			REP_FAT_the_south_decisions_selete_button_14_click_enabled = {check_variable = {public_power_2>25}}
+            REP_FAT_the_south_decisions_selete_button_14_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 3}}}
+			REP_FAT_the_south_decisions_selete_button_15_click_enabled = {check_variable = {public_power_2>50}}
+            REP_FAT_the_south_decisions_selete_button_15_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 3}}}
+			REP_FAT_the_south_decisions_selete_button_16_click_enabled = {check_variable = {public_power_2>80}}
+            REP_FAT_the_south_decisions_selete_button_16_visible = {AND = {check_variable = {cheak_the_state_number = 2} check_variable = {cheak_the_page_number = 3}}}
+
 		}
 		ai_enabled = {
-			always = no
+			always = yes
 		}
 		properties = {
             REP_FAT_the_south_leader_porits_picture = {

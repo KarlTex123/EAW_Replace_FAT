@@ -11,6 +11,35 @@ defined_text = {
 	text = { trigger = { check_variable = { cheak_the_state_number = 8 } } localization_key = the_setuation_of_the_state_desc_8 }
 	text = { trigger = { check_variable = { cheak_the_state_number = 9 } } localization_key = the_setuation_of_the_state_desc_9 }
 }
+defined_text = {
+	name = REP_FAT_the_south_decisions_text_1_desc
+
+	text = { trigger = { check_variable = { cheak_the_page_number = 1 } } localization_key = the_decision_of_the_state_desc_1_1 }
+	text = { trigger = { check_variable = { cheak_the_page_number = 2 } } localization_key = the_decision_of_the_state_desc_1_2 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 1} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_1_3 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 2} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_1_4 }
+}
+defined_text = {
+	name = REP_FAT_the_south_decisions_text_2_desc
+
+	text = { trigger = { check_variable = { cheak_the_page_number = 1 } } localization_key = the_decision_of_the_state_desc_2_1 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 1} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_2_3 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 2} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_2_4 }
+
+}
+defined_text = {
+	name = REP_FAT_the_south_decisions_text_3_desc
+
+	text = { trigger = { check_variable = { cheak_the_page_number = 1 } } localization_key = the_decision_of_the_state_desc_3_1 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 1} check_variable = { cheak_the_page_number = 3 } } }localization_key = the_decision_of_the_state_desc_3_3 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 2} check_variable = { cheak_the_page_number = 3 } } }localization_key = the_decision_of_the_state_desc_3_4 }
+
+}
+defined_text = {
+	name = REP_FAT_the_south_decisions_text_4_desc
+
+	text = { trigger = {check_variable = { cheak_the_page_number = 1 } } localization_key = the_decision_of_the_state_desc_4_1 }
+}
 
 defined_text = { 
 	name = the_buttom_turn_red_1

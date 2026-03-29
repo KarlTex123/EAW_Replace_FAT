@@ -36,5 +36,57 @@ ideas = {
 			remove_cost = -1
 			hidden = yes
 		}
+		FAT_the_south_decisions_use_factory = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			remove_cost = -1
+			hidden = yes
+			modifier = {
+				CIVILIAN_FACTORY_USE = 1
+			}
+		}
+		search_tongling = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			remove_cost = -1
+			hidden = yes
+			modifier = {
+				army_speed_factor = 0.1
+				breakthrough_factor = 0.1
+				terrain_penalty_reduction = 0.1
+			}			
+		}
+		stop_the_decray_a = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			remove_cost = -1
+			hidden = yes
+			modifier = {
+			}			
+		}
+		stop_the_decray_b = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			remove_cost = -1
+			hidden = yes
+			modifier = {
+			}			
+		}
 	}
 }

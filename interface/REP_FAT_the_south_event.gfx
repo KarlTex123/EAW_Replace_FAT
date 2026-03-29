@@ -3,6 +3,10 @@ spriteTypes = {
 		name = "GFX_REP_FAT_the_south_event_ui_window_background"
 		texturefile = "gfx/interface/the_south_public/the_south_public_background.dds" 
 	}
+	SpriteType = {  #选择按钮
+		name = "GFX_REP_FAT_the_south_decisons_selet_button"
+		texturefile = "gfx/interface/the_south_public/GFX_REP_FAT_the_south_decisons_selet_button.png" 
+	}
 	spriteType = {
 		name = "GFX_REP_FAT_Little_Kemerskai" #领导人
 		texturefile = "gfx/interface/the_south_public/Little_Kemerskai.dds" 		

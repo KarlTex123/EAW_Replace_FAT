@@ -90,6 +90,33 @@ on_actions = {
         	}
     	}
 	}
+	on_monthly_FAT = {
+		effect = {
+			public_power_1 = -1
+			public_power_2 = -1
+			public_power_3 = -1
+			public_power_4 = -1
+			public_power_5 = -1
+			public_power_6 = -1
+			public_power_7 = -1
+			public_power_8 = -1
+			public_power_9 = -1
+		}
+		effect = {
+			if = {
+				limit = {
+					has_idea = stop_the_decray_a
+				}
+				add_to_variable = { public_power_1 = 1 }
+			}
+			if = {
+				limit = {
+					has_idea = stop_the_decray_b
+				}
+				add_to_variable = { public_power_2 = 1 }
+			}
+		}
+	}
 	on_peaceconference_ended = {
 		effect = {
 			if = {
