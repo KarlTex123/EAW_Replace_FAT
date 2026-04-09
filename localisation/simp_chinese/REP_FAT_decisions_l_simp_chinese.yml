@@ -79,12 +79,19 @@ the_decision_of_the_state_desc_1_2:0 "指导党部改组                        
 
 the_decision_of_the_state_desc_1_3:0 "勘探铜岭地形"
 the_decision_of_the_state_desc_1_4:0 "改编南方共和军"
+the_decision_of_the_state_desc_1_5:0 "共和派学生组织"
+the_decision_of_the_state_desc_1_6:0 "发动农民运动"
 
 the_decision_of_the_state_desc_2_3:0 "建立统一战线"
 the_decision_of_the_state_desc_2_4:0 "查明黑爪组织"
+the_decision_of_the_state_desc_2_5:0 "耶鲁党支部"
+the_decision_of_the_state_desc_2_6:0 "反贵族联盟"
+
 
 the_decision_of_the_state_desc_3_3:0 "重建钻石狗共和军"
 the_decision_of_the_state_desc_3_4:0 "改组安江共和党支部"
+the_decision_of_the_state_desc_3_5:0 "共和派舆论霸权"
+the_decision_of_the_state_desc_3_6:0 "共和党骑士团"
 
 
 REP_FAT_the_south_decisions_selete_button_1_PT:0 "要求国策:§Y新革命党§!完成 \n获得 §Y[?pulic_power_change]%§!共和力量"
@@ -98,7 +105,12 @@ REP_FAT_the_south_decisions_selete_button_8_PT:0 "要求:§Y80%共和力量§! \
 REP_FAT_the_south_decisions_selete_button_9_PT:0 "要求:§Y25%共和力量§! \n可在安江组织共和军 安江共和军为(6营山地师一工兵) 每次决议可获得1山地师共和军与2普通共和军 上限可获得9共和军 \n民族革命委员会权力平衡增加§Y10%§! 共和国中立主义与霸权主义支持率增加§Y10%§! \n能够与无政府主义者结盟."
 REP_FAT_the_south_decisions_selete_button_10_PT:0 "要求:§Y50%共和力量§! \n如果安江社民党上台将不再获得共和力量衰减 \n§Y触发事件§!：安江社民党真面目 \n能够与社民党外围组织结盟"
 REP_FAT_the_south_decisions_selete_button_11_PT:0 "要求:§Y80%共和力量§! \n如果布卢姆上台，共和国获得§Y安江核心§! \n§Y触发事件§!：布卢姆宣誓服从中央 \n如果布卢姆没有掌权 §Y触发事件§!：布卢姆抵达漫云城 共和国§Y获得§!将领与顾问布卢姆 安江获得§Y共和党抵抗§! \n能够与 基彭博格派联盟"
-
+REP_FAT_the_south_decisions_selete_button_12_PT:0 "要求:§Y25%共和力量§! \n能够与新光闪耀运动结盟"
+REP_FAT_the_south_decisions_selete_button_13_PT:0 "要求:§Y50%共和力量§! \n在卡特琳获得合作政府 如果卡特琳不存在则获得初始顺从度与低抵抗度"
+REP_FAT_the_south_decisions_selete_button_14_PT:0 "要求:§Y80%共和力量§! \n能够与中立大学结盟  获得合作政府  \n如果耶鲁不存在则地区顺从度提升抵抗度下降 \n共和国获得民族精神“舆论支持”战争对稳定度影响-10% \n部队移动中组织度损失-10% 主动性+10%"
+REP_FAT_the_south_decisions_selete_button_15_PT:0 "要求:§Y25%共和力量§! \n能够与宗教社会主义力量结盟"
+REP_FAT_the_south_decisions_selete_button_16_PT:0 "要求:§Y50%共和力量§! \n能够与先锋队结盟 在耶鲁解锁组建共和军决议"
+REP_FAT_the_south_decisions_selete_button_17_PT:0 "要求:§Y80%共和力量§! \n在卡特琳解锁组建共和军决议 卡特琳共和军编制为6营骑士一工兵支援连一炮兵支援连 每一次组建共和军获得一骑士团一普通共和军 最高获得6共和军"
 
 
 

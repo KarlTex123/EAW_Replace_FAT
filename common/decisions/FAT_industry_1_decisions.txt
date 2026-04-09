@@ -1062,10 +1062,10 @@ FAT_industry_decision_category_1= {
 				}
 			}
 		}
+
 		available = {
 			owns_state = FROM
 			has_full_control_of_state = FROM
-
 		}
 
 		custom_cost_trigger = {
@@ -1257,8 +1257,22 @@ FAT_industry_decision_category_1= {
 		
 		state_target = yes
 
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+			}
+			NOT = {
+				FROM = {
+					state = 485
+				}
+			}
+		}
+
 		available = {
 			has_completed_focus = FAT_kuodashengquanli
+			owns_state = FROM
+			has_full_control_of_state = FROM
 		}
 
 		custom_cost_trigger = {

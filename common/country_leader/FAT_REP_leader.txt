@@ -6,6 +6,19 @@ leader_traits = {
 		GROUND_ATTACK_FACTOR = 0.05
 		NAVAL_COORDINATION = 0.05
 	}
+	FAT_Advanced_revolutionary_entrepreneurs = {
+		random = no
+		LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR = 0.05
+		PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = 0.05
+		industrial_capacity_factory = 0.05
+	}
+	FAT_the_Shadow = {
+		random = no
+		CONSUMER_GOODS_FACTOR = -0.05
+		min_export = 0.2
+		stability_factor = -0.1
+		custom_modifier_tooltip = FAT_the_Shadow_tt
+	}
 
 	FAT_military_expert = {
 		random = no
