@@ -2688,6 +2688,17 @@ news_event = { #共和国公约的宣言的新闻
 
 	option = {
 		name = FAT_DIP_News.1.1
+		trigger = {
+			original_tag = FAT
+		}
+	}
+	option = {
+		name = FAT_DIP_News.1.2
+		trigger = {
+			NOT = {
+				original_tag = FAT
+			}
+		}
 	}
 }
 
@@ -2783,8 +2794,19 @@ news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 
 	is_triggered_only = yes
 
-	option = {
+		option = {
 		name = FAT_DIP_News.2.1
+		trigger = {
+			original_tag = FAT
+		}
+	}
+	option = {
+		name = FAT_DIP_News.2.2
+		trigger = {
+			NOT = {
+				original_tag = FAT
+			}
+		}
 	}
 }
 
@@ -2930,8 +2952,19 @@ news_event = { #击碎暴君的皇冠的新闻
 
 	is_triggered_only = yes
 
-	option = {
+		option = {
 		name = FAT_DIP_News.3.1
+		trigger = {
+			original_tag = FAT
+		}
+	}
+	option = {
+		name = FAT_DIP_News.3.2
+		trigger = {
+			NOT = {
+				original_tag = FAT
+			}
+		}
 	}
 }
 
