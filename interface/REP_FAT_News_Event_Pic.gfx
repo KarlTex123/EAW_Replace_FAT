@@ -1,0 +1,14 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "GFX_FAT_DIP_News.1"
+		texturefile = "gfx\interface\News_Event_Pic\FAT_DIP_News.1.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_FAT_DIP_News.2"
+		texturefile = "gfx\interface\News_Event_Pic\FAT_DIP_News.2.dds"    
+	}
+}
+
+
+
+

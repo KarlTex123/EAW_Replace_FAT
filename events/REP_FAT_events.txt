@@ -2623,7 +2623,7 @@ country_event = { #共和国公约的宣言
 }
 news_event = { #共和国公约的宣言的新闻
 	id = FAT_DIP_News.1
-	picture = FAT_DIP_News.1
+	picture = GFX_FAT_DIP_News.1
 	title = FAT_DIP_News.1.t
 	desc = FAT_DIP_News.1.d
 
@@ -2720,7 +2720,7 @@ country_event = { #卡梅莉塔歌后在河间地的巡回演出
 }
 news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 	id = FAT_DIP_News.2
-	picture = FAT_DIP_News.2
+	picture = GFX_FAT_DIP_News.2
 	title = FAT_DIP_News.2.t
 	desc = FAT_DIP_News.2.d
 
@@ -2867,7 +2867,7 @@ country_event = { #击碎暴君的皇冠
 }
 news_event = { #击碎暴君的皇冠的新闻
 	id = FAT_DIP_News.3
-	picture = FAT_DIP_News.3
+	picture = GFX_FAT_DIP_News.3
 	title = FAT_DIP_News.3.t
 	desc = FAT_DIP_News.3.d
 
