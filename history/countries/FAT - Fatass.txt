@@ -208,6 +208,8 @@ recruit_character = FAT_chaos_maxwell
 recruit_character = FAT_spymaster
 
 recruit_character = FAT_Blue_Time
+recruit_character = FAT_Rosa_Claudia
+recruit_character = FAT_Lime_Mousse
 recruit_character = XUR_weiguang
 recruit_character = FAT_star_wind
 recruit_character = FAT_Garibaldi_Giuseppe

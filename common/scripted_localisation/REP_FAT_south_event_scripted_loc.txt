@@ -18,6 +18,9 @@ defined_text = {
 	text = { trigger = { check_variable = { cheak_the_page_number = 2 } } localization_key = the_decision_of_the_state_desc_1_2 }
 	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 1} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_1_3 }
 	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 2} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_1_4 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 3} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_1_5 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 4} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_1_6 }
+
 }
 defined_text = {
 	name = REP_FAT_the_south_decisions_text_2_desc
@@ -25,6 +28,9 @@ defined_text = {
 	text = { trigger = { check_variable = { cheak_the_page_number = 1 } } localization_key = the_decision_of_the_state_desc_2_1 }
 	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 1} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_2_3 }
 	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 2} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_2_4 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 3} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_2_5 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 4} check_variable = { cheak_the_page_number = 3 } } } localization_key = the_decision_of_the_state_desc_2_6 }
+
 
 }
 defined_text = {
@@ -33,6 +39,9 @@ defined_text = {
 	text = { trigger = { check_variable = { cheak_the_page_number = 1 } } localization_key = the_decision_of_the_state_desc_3_1 }
 	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 1} check_variable = { cheak_the_page_number = 3 } } }localization_key = the_decision_of_the_state_desc_3_3 }
 	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 2} check_variable = { cheak_the_page_number = 3 } } }localization_key = the_decision_of_the_state_desc_3_4 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 3} check_variable = { cheak_the_page_number = 3 } } }localization_key = the_decision_of_the_state_desc_3_5 }
+	text = { trigger = { AND = { check_variable = { cheak_the_state_number = 4} check_variable = { cheak_the_page_number = 3 } } }localization_key = the_decision_of_the_state_desc_3_6 }
+
 
 }
 defined_text = {

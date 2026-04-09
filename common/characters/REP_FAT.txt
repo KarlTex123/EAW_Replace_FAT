@@ -20,8 +20,8 @@ characters={
 	FAT_Blue_Time = {
 		portraits = {
 			civilian = {
-				large = gfx/leaders/FAT/FAT_Blue_Time.png
-				small = gfx/leaders/FAT/FAT_Blue_Time.png
+				large = gfx/leaders/FAT/FAT_Blue_Time.dds
+				small = gfx/leaders/FAT/FAT_Blue_Time.dds
 			}
 		}
 		advisor = {
@@ -30,6 +30,38 @@ characters={
 			slot = high_command
 			allowed = { original_tag = FAT }
 			traits = { FAT_Tri_service_coordination }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	FAT_Lime_Mousse = {
+		portraits = {
+			civilian = {
+				large = gfx/leaders/FAT/FAT_Lime_Mousse.dds
+				small = gfx/leaders/FAT/FAT_Lime_Mousse.dds
+			}
+		}
+		advisor = {
+			desc = "FAT_Lime_Mousse_desc"
+			cost = 200
+			slot = political_advisor
+			allowed = { original_tag = FAT }
+			traits = { FAT_Advanced_revolutionary_entrepreneurs }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	FAT_Rosa_Claudia = {
+		portraits = {
+			civilian = {
+				large = gfx/leaders/FAT/FAT_Rosa_Claudia.dds
+				small = gfx/leaders/FAT/FAT_Rosa_Claudia.dds
+			}
+		}
+		advisor = {
+			desc = "FAT_Rosa_Claudia_desc"
+			cost = 200
+			slot = political_advisor
+			allowed = { original_tag = FAT }
+			traits = { FAT_the_Shadow }
 			ai_will_do = { factor = 1 }
 		}
 	}
