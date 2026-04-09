@@ -287,6 +287,9 @@ country_event = { #工业化通用
 	title = FAT_start.9.t
 	desc = FAT_start.9.d
 	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	option = {
 		name = FAT_start.9.1
 	}
