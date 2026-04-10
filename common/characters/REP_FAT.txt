@@ -50,6 +50,7 @@ characters={
 		}
 	}
 	FAT_Rosa_Claudia = {
+		name = FAT_Rosa_Claudia
 		portraits = {
 			civilian = {
 				large = gfx/leaders/FAT/FAT_Rosa_Claudia.dds
