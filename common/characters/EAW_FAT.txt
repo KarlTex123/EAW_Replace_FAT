@@ -20,8 +20,8 @@ characters={
 	FAT_Blue_Time = {
 		portraits = {
 			civilian = {
-				large = gfx/leaders/FAT/FAT_Blue_Time.dds
-				small = gfx/leaders/FAT/FAT_Blue_Time.dds
+				large = gfx/leaders/FAT/FAT_Blue_Time.png
+				small = gfx/leaders/FAT/FAT_Blue_Time.png
 			}
 		}
 		advisor = {

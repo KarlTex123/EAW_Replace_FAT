@@ -136,7 +136,7 @@ characters={
 		name=FAT_reinhard_suntail
 		portraits={
 			army={
-				small=GFX_idea_FAT_political_6
+				large = "gfx/leaders/FAT/FAT_reinhard_suntail.png"
 			}
 			civilian={
 				large="gfx/leaders/FAT/warlord_1.tga"

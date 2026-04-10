@@ -1,6 +1,8 @@
 leader_traits = {
 	FAT_Tri_service_coordination = {
 		random = no
+		experience_gain_army = 0.05
+		command_cap_increase = 10
 		ARMY_ATTACK_FACTOR = 0.1
 		ARMY_DEFENCE_FACTOR = 0.1
 		GROUND_ATTACK_FACTOR = 0.05
