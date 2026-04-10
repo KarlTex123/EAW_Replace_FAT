@@ -2598,6 +2598,27 @@ country_event = { #布鲁姆抵达漫云城
 	}
 }
 
+country_event = { #加地图外工厂
+	id = FAT_FP.65
+	title = FAT_FP.65.t
+	desc = FAT_FP.65.d
+
+	fire_only_once = yes
+
+	trigger = {
+		FAT = {
+			has_character = FAT_Rosa_Claudia
+		}
+	}
+
+	immediate = {
+		add_offsite_building = {
+		type = industrial_complex
+		level = 2
+		}
+	}
+}
+
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
 	hidden = yes
