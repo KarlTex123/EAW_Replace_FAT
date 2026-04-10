@@ -324,7 +324,7 @@ add_to_array = {
 resize_array = {
 	array = FAT_faction_buff_array
 	size = 30
-	value = 1
+	value = 0
 }
 
 F00 = { 
