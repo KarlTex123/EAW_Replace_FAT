@@ -1972,7 +1972,7 @@ country_event = { #民生主义的内涵
 	}
 }
 
-country_event = { #共产主义者的膨胀
+country_event = { #与镰爪的会谈
 	id = FAT_FP.43
 	picture = FAT_FP.43.p
 	title = FAT_FP.43.t
