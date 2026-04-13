@@ -36,6 +36,16 @@ ideas = {
 			remove_cost = -1
 			hidden = yes
 		}
+		FAT_minzhu_unlock = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			remove_cost = -1
+			hidden = yes
+		}
 		FAT_the_south_decisions_use_factory = {
 			allowed = {
 				always = no

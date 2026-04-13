@@ -2601,11 +2601,9 @@ country_event = { #布鲁姆抵达漫云城
 country_event = { #加地图外工厂
 	id = FAT_FP.66
 	title = FAT_FP.66.t
-	desc = FAT_FP.66.d
+	desc = FAT_FP.6.d
 
 	fire_only_once = yes
-
-	
 
 	trigger = {
 		has_character = FAT_Rosa_Claudia

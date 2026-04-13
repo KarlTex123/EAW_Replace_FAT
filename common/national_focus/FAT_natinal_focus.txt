@@ -202,7 +202,10 @@ focus_tree = {
 			focus = FAT_sanshiniangonghemeng
 		}
 		completion_reward = {
-			add_ideas = FAT_democracy_f
+			hidden_effect = {
+				add_ideas = FAT_democracy_f
+			}
+			custom_effect_tooltip = FAT_minzhu_tt
 		}
 	}
 	focus = { #打破天花板
@@ -576,6 +579,9 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = FAT_xingemingdang_tt
+			hidden_effect = {
+				add_ideas = FAT_minzhu_unlock
+			}			
 			add_to_variable = {FAT_democracy_f_stability_factor = 0.15}
 			add_to_variable = {FAT_democracy_f_mobilization_laws_cost_factor = -0.15}
 			add_to_variable = {FAT_democracy_f_trade_laws_cost_factor = -0.15}

@@ -358,7 +358,7 @@ scripted_gui = {
 			REP_FAT_the_south_decisions_change_page_button_2_visible = {check_variable = {cheak_the_page_number = 2}}
 			REP_FAT_the_south_decisions_change_page_button_3_visible = {check_variable = {cheak_the_page_number = 3}}
 			###############这是效果按钮########################
-            REP_FAT_the_south_decisions_selete_button_1_click_enabled = {AND = {has_completed_focus = FAT_xingemingdang politicla_power > 25}}
+            REP_FAT_the_south_decisions_selete_button_1_click_enabled = {AND = {has_completed_focus = FAT_xingemingdang politicla_power > 25 }}
             REP_FAT_the_south_decisions_selete_button_1_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 1}}}
 			REP_FAT_the_south_decisions_selete_button_2_click_enabled = {AND = {has_completed_focus = FAT_junweihui manpower > 250 infantry_equipment > 200}}
             REP_FAT_the_south_decisions_selete_button_2_visible = {AND = {check_variable = {cheak_the_state_number = 1} check_variable = {cheak_the_page_number = 1}}}
