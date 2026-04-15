@@ -5,7 +5,6 @@ tags={
 	"National Focuses"
 }
 name="EAW:狮鹫共和国重置"
-replace_path="common/characters/FAT.txt"
 dependencies={
 	"Equestria at War"
 	"EaW-CN"
