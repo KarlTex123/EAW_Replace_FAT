@@ -13,6 +13,7 @@ leader_traits = {
 		LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR = 0.05
 		PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = 0.05
 		industrial_capacity_factory = 0.05
+		custom_modifier_tooltip = FAT_Advanced_revolutionary_entrepreneurs_tt
 	}
 	FAT_the_Shadow = {
 		random = no

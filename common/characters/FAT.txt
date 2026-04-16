@@ -8,11 +8,19 @@ characters={
 		}
 		advisor = {
 			desc = "FAT_Lime_Mousse_desc"
-			cost = 200
+			idea_token = FAT_Lime_Mousse_advisor
+			cost = 150
 			slot = political_advisor
 			allowed = { original_tag = FAT }
 			traits = { FAT_Advanced_revolutionary_entrepreneurs }
 			ai_will_do = { factor = 1 }
+			on_add = {
+				ROOT = {
+					hidden_effect = {
+						country_event = { id = FAT_FP.67 }
+					}
+				}
+			}
 		}
 	}
 	FAT_Rosa_Claudia = {
@@ -25,7 +33,8 @@ characters={
 		}
 		advisor = {
 			desc = "FAT_Rosa_Claudia_desc"
-			cost = 200
+			idea_token = FAT_Rosa_Claudia_advisor
+			cost = 75
 			slot = political_advisor
 			allowed = { original_tag = FAT }
 			traits = { FAT_the_Shadow }
@@ -59,7 +68,8 @@ characters={
 		}
 		advisor = {
 			desc = "FAT_Blue_Time_desc"
-			cost = 200
+			idea_token = FAT_Blue_Time_advisor
+			cost = 150
 			slot = high_command
 			allowed = { original_tag = FAT }
 			traits = { FAT_Tri_service_coordination }
@@ -86,7 +96,8 @@ characters={
 		}
 		advisor = {
 			desc = "FAT_yizhan_desc"
-			cost = 200
+			idea_token = FAT_yizhan_advisor
+			cost = 150
 			slot = political_advisor
 			allowed = { original_tag = FAT }
 			traits = { FAT_Tri_FAT_yizhan }
@@ -102,7 +113,8 @@ characters={
 		}
 		advisor = {
 			desc = "FAT_XUR_weiguang_desc"
-			cost = 200
+			idea_token = XUR_weiguang_advisor
+			cost = 150
 			slot = political_advisor
 			allowed = { original_tag = FAT }
 			traits = { FAT_military_expert }

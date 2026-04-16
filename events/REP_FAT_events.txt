@@ -2601,7 +2601,7 @@ country_event = { #布鲁姆抵达漫云城
 country_event = { #加地图外工厂
 	id = FAT_FP.66
 	title = FAT_FP.66.t
-	desc = FAT_FP.6.d
+	desc = FAT_FP.66.d
 
 	fire_only_once = yes
 
@@ -2609,11 +2609,112 @@ country_event = { #加地图外工厂
 		has_character = FAT_Rosa_Claudia
 	}
 
+	hidden = yes
+
 	immediate = {
 		add_offsite_building = {
 			type = industrial_complex
 			level = 2
 		}
+	}
+}
+
+country_event = { #一日
+	id = FAT_FP.67
+	title = FAT_FP.67.t
+	desc = FAT_FP.67.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.67.a
+		hidden_effect = {
+			country_event = { id = FAT_FP.68}
+		}
+	}
+}
+
+country_event = { #一日
+	id = FAT_FP.68
+	title = FAT_FP.68.t
+	desc = FAT_FP.68.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.68.a
+		hidden_effect = {
+			country_event = { id = FAT_FP.69}
+		}
+	}
+}
+
+country_event = { #一日
+	id = FAT_FP.69
+	title = FAT_FP.69.t
+	desc = FAT_FP.69.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.69.a
+	}
+}
+
+country_event = { #边境冲突
+	id = FAT_FP.70
+	title = FAT_FP.70.t
+	desc = FAT_FP.70.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FAT
+		date > 1010.6.1		
+	}
+
+	option = {
+		name = FAT_FP.70.a
+	}
+}
+
+country_event = { #边境冲突
+	id = FAT_FP.71
+	title = FAT_FP.71.t
+	desc = FAT_FP.71.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FAT
+		date > 1010.4.1		
+	}
+
+	option = {
+		name = FAT_FP.71.a
+	}
+}
+
+country_event = { #边境冲突
+	id = FAT_FP.72
+	title = FAT_FP.72.t
+	desc = FAT_FP.72.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FAT
+		date > 1010.1.1		
+	}
+
+	option = {
+		name = FAT_FP.72.a
 	}
 }
 
