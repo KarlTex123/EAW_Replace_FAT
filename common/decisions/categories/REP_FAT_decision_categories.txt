@@ -115,9 +115,10 @@ REP_FAT_political_billing = { #政治宣传栏
 		original_tag = FAT
 	}
 	visible = {
-		is_debug = yes
-		is_ai = no
-		has_idea = FAT_minzhu_unlock
+		OR = {
+			has_completed_focus = FAT_yanjiuhui
+			is_debug = yes
+		}
 	}
 	priority = 9000 
 	visible_when_empty = yes

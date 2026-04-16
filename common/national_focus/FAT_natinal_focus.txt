@@ -627,6 +627,7 @@ focus_tree = {
 		relative_position_id = FAT_yuanlaopingyihui
 		completion_reward = {
 			custom_effect_tooltip = FAT_yanjiuhui_tt
+			unlock_decision_category_tooltip = REP_FAT_political_billing
 			add_to_variable = {FAT_democracy_f_weekly_manpower = 200}
 			add_to_variable = {FAT_democracy_f_MINIMUM_TRAINING_LEVEL = -0.2}			
 		}
@@ -643,6 +644,7 @@ focus_tree = {
 		relative_position_id = FAT_zhongyangzhiweihui
 		completion_reward = {
 			custom_effect_tooltip = FAT_junweihui_tt
+			unlock_decision_tooltip = bevelive_nationalism_love_country
 			add_to_variable = {FAT_democracy_f_command_power_gain_mult = 1.5}
 			add_to_variable = {FAT_democracy_f_global_building_slots_factor = 0.1}
 		}

@@ -1148,7 +1148,9 @@ REP_FAT_political_billing = {
 				}
 			} 
 		}
-		visible = {}
+		visible = {
+			has_completed_focus = FAT_junweihui
+		}
 		cost = 50
 		days_remove = 180
 		fire_only_once = no
