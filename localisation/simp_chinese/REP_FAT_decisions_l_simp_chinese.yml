@@ -20,7 +20,9 @@ kill_bad_official_t: "§Y[HAU.GetRulingParty]§!在豪克兰的影响力§R-5§!
 oppose_of_bad_official: "迈耶的反扑"
 oppose_of_bad_official_t: "§Y[HAU.GetRulingParty]§!在豪克兰的影响力§R+10§!。"
 end_FAT_revolution_at_HAU: "革命终局"
-end_FAT_revolution_at_HAU_tt: "我们支持的革命军影响力大于迈耶的亲信集团"
+end_FAT_revolution_at_HAU_tt: "等待一切尘埃落定……"
+end_FAT_revolution_at_HAU_tt_1: "若我们支持的§4革命军§!影响力大于§R迈耶的亲信集团§!，则"
+end_FAT_revolution_at_HAU_tt_2: "若我们支持的§4革命军§!影响力不如§R迈耶的亲信集团§!，则" 
 
 REP_FAT_history_decision_1: "长征漫云"
 REP_FAT_history_decision_2: "漫云新政"

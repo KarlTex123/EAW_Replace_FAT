@@ -488,12 +488,10 @@ FAT_vs_HAU_category = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = end_FAT_revolution_at_HAU_tt
-				check_variable = {
-					FAT.FAT_vs_influence > HAU.FAT_vs_influence
-				}
+				always = no
 			}
-			check_variable = {
-				FAT.FAT_vs_influence > HAU.FAT_vs_influence
+			hidden_trigger = {
+				always = no
 			}
 		}
 		activation = {
@@ -501,11 +499,28 @@ FAT_vs_HAU_category = {
 		}  
 		fire_only_once = yes
 		is_good = no
-		timeout_effect = {                      
-			country_event = FAT_start.802
+		timeout_effect = {
+			effect_tooltip = {
+				custom_effect_tooltip = end_FAT_revolution_at_HAU_tt_1
+				country_event = FAT_start.801
+				custom_effect_tooltip = end_FAT_revolution_at_HAU_tt_2
+				country_event = FAT_start.802
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							FAT.FAT_vs_influence > HAU.FAT_vs_influence
+						}
+					}
+					country_event = FAT_start.801
+				}
+				else = {
+					country_event = FAT_start.802
+				}
+			}
 		}
-		complete_effect = {                    
-			country_event = FAT_start.801
+		complete_effect = {
 		}
 	}
 }
