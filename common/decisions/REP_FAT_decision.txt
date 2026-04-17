@@ -1067,6 +1067,12 @@ REP_FAT_political_billing = {
 					how_many_billing_slots_using < 3
 				}
 			} 
+			STG = {
+				has_opinion = {
+					target = ROOT
+					value > 39
+				}
+			}
 		}
 		visible = {}
 		cost = 50
