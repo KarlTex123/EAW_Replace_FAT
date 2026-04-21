@@ -1618,6 +1618,7 @@ focus_tree = {
 		relative_position_id = FAT_shehuizhuyizhediwei
 
 		completion_reward = {
+			custom_effect_tooltip = FAT_heweimishengzhuyi_tt
 			if = {
 				limit = {
 					has_country_flag = sanminzhuyi
