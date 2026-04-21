@@ -193,7 +193,6 @@ country_event = { #武装干涉
 	option = {
 		name = FAT_start.601.1
 		add_political_power = -50
-		set_stability = -0.1
 		add_state_core = 584
 		transfer_state = 584
 	}

@@ -492,6 +492,14 @@ scripted_gui = {
 			}
 		}
 	}
+
+	FAT_industry_decision_category_1_ui = { #狮鹫共和国经济系统决议GUI
+		window_name = "FAT_industry_decision_category_1"
+        context_type = decision_category
+		triggers = {
+		}
+	}
+
 	REP_FAT_propaganda_campaigns_ui = {
 		context_type = decision_category
 		window_name = "FAT_propaganda_campaigns_ui_window"

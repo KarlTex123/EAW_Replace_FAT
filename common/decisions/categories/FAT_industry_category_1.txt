@@ -1,9 +1,10 @@
 FAT_industry_decision_category_1 = {
-	icon = generic_propaganda
-	picture = GFX_bank_money_decisions
+	icon = x
 	visible = {
 		TAG = FAT
 		has_idea = FAT_FP_jingji_idea
 	}
+	visible_when_empty = yes
+	scripted_gui = 	FAT_industry_decision_category_1_ui 
 	priority = 10
 }
