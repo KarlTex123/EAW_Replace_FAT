@@ -1,0 +1,14 @@
+music_station = "REP_FAT_musicstation"
+
+music = {
+	song = "EWA_rep_1"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+
+
+
