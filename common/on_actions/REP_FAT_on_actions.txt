@@ -76,6 +76,15 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			FAT = {
+				country_event = {
+					id = REP_FAT_Difficult_Select.1
+				}
+			}
+		}
+	}
 	on_weekly = {
     	effect = {
     	   if = {

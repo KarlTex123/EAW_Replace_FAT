@@ -1,0 +1,66 @@
+add_namespace = REP_FAT_Difficult_Select
+
+country_event = {
+	id = REP_FAT_Difficult_Select.1
+    title = REP_FAT_Difficult_Select.1.t
+    desc = REP_FAT_Difficult_Select.1.desc
+    is_triggered_only = yes
+    hidden = no
+    option = { # 正常难度
+        name = REP_FAT_Difficult_Select.1.a
+		custom_effect_tooltip = REP_FAT_Difficult_Select.1.a.desc
+	}
+	option = { # 烙馍难度
+        name = REP_FAT_Difficult_Select.2.a
+		custom_effect_tooltip = REP_FAT_Difficult_Select.2.a.desc
+		GRI = {
+			add_ideas = REP_FAT_GRI_UP_1
+    	}
+    }
+	option = { # 小羊难度
+        name = REP_FAT_Difficult_Select.3.a
+		custom_effect_tooltip = REP_FAT_Difficult_Select.3.a.desc
+		GRI = {
+			add_ideas = REP_FAT_GRI_UP_2
+    	}
+    }
+	option = { # 好孩子难度
+        name = REP_FAT_Difficult_Select.4.a
+		custom_effect_tooltip = REP_FAT_Difficult_Select.4.a.desc
+		GRI = {
+			add_ideas = REP_FAT_GRI_UP_3
+			annex_country = {
+  		    target = KAT
+    		transfer_troops = no
+			}
+			annex_country = {
+  		    target = ANG
+    		transfer_troops = no
+			}
+			annex_country = {
+  		    target = PYT
+    		transfer_troops = no
+			}
+			annex_country = {
+  		    target = FEA
+    		transfer_troops = no
+			}
+			annex_country = {
+  		    target = STW
+    		transfer_troops = no
+			}
+			annex_country = {
+  		    target = BRZ
+    		transfer_troops = no
+			}
+			annex_country = {
+  		    target = YAL
+    		transfer_troops = no
+			}
+			annex_country = {
+			target = ROU
+			transfer_troops = no
+			}
+    	}
+    }
+}

@@ -17,112 +17,92 @@ news_event = {
 		name = test_FAT_start.1.a
 	}
 }
-country_event = { #开局政局介绍
-	id = FAT_start.1
-	picture = ""
-	title = FAT_start.1.t
-	desc = FAT_start.1.d
-	is_triggered_only = yes
-	option = {
-		name = FAT_start.1.1
-		hidden_effect = {
-			country_event = FAT_start.101	
-		}
-		hidden_effect = {
-            country_lock_all_division_template = no			
-		}
-	}
-	option = {
-		name = FAT_start.1.2
-		hidden_effect = {
-            country_lock_all_division_template = no			
-		}
-	}
-}
-country_event = { #政党信息
-	id = FAT_start.101
-	picture = ""
-	title = FAT_start.101.t
-	desc = FAT_start.101.d
-	is_triggered_only = yes
-	option = {
-		name = FAT_start.101.1 
 
-		country_event = FAT_start.10101
-		
-	}
-	option = {
-		name = FAT_start.101.2 
-
-		country_event = FAT_start.10102
-
-	}
-	option = {
-		name = FAT_start.101.3
-
-		country_event = FAT_start.10103
-	}
-	option = {
-		name = FAT_start.101.5 
-
-		country_event = FAT_start.10104
-	}
-
-}
-country_event = { #霸权主义
-	id = FAT_start.10101
-	picture = ""
-	title = FAT_start.10101.t
-	desc = FAT_start.10101.d
-	is_triggered_only = yes
-	option = {
-		name = FAT_start.10101.1
-		hidden_effect = {
-			country_event = FAT_start.1
-		}
-	}
-
-}
-country_event = { #社会主义
-	id = FAT_start.10102
-	picture = ""
-	title = FAT_start.10102.t
-	desc = FAT_start.10102.d
-	is_triggered_only = yes
-	option = {
-		name = FAT_start.101.4
-		hidden_effect = {
-			country_event = FAT_start.1
-		}
-	}
-
-}
-country_event = { #谐律主义
-	id = FAT_start.10103
-	picture = ""
-	title = FAT_start.10103.t
-	desc = FAT_start.10103.d
-	is_triggered_only = yes
-	option = {
-		name = FAT_start.101.4
-		hidden_effect = {
-			country_event = FAT_start.1
-		}
-	}
-}
-country_event = { #中立主义
-	id = FAT_start.10104
-	picture = ""
-	title = FAT_start.10104.t
-	desc = FAT_start.10104.d
-	is_triggered_only = yes
-	option = {
-		name = FAT_start.101.4
-		hidden_effect = {
-			country_event = FAT_start.1
-		}
-	}
-}
+#注：烙馍没说不敢删，所以注释了。坚决服从馍指导的命令！
+#country_event = { #政党信息
+#	id = FAT_start.101
+#	picture = ""
+#	title = FAT_start.101.t
+#	desc = FAT_start.101.d
+#	is_triggered_only = yes
+#	option = {
+#		name = FAT_start.101.1 
+#
+#		country_event = FAT_start.10101
+#		
+#	}
+#	option = {
+#		name = FAT_start.101.2 
+#
+#		country_event = FAT_start.10102
+#
+#	}
+#	option = {
+#		name = FAT_start.101.3
+#
+#		country_event = FAT_start.10103
+#	}
+#	option = {
+#		name = FAT_start.101.5 
+#
+#		country_event = FAT_start.10104
+#	}
+#
+#}
+#country_event = { #霸权主义
+#	id = FAT_start.10101
+#	picture = ""
+#	title = FAT_start.10101.t
+#	desc = FAT_start.10101.d
+#	is_triggered_only = yes
+#	option = {
+#		name = FAT_start.10101.1
+#		hidden_effect = {
+#			country_event = FAT_start.1
+#		}
+#	}
+#
+#}
+#country_event = { #社会主义
+#	id = FAT_start.10102
+#	picture = ""
+#	title = FAT_start.10102.t
+#	desc = FAT_start.10102.d
+#	is_triggered_only = yes
+#	option = {
+#		name = FAT_start.101.4
+#		hidden_effect = {
+#			country_event = FAT_start.1
+#		}
+#	}
+#
+#}
+#country_event = { #谐律主义
+#	id = FAT_start.10103
+#	picture = ""
+#	title = FAT_start.10103.t
+#	desc = FAT_start.10103.d
+#	is_triggered_only = yes
+#	option = {
+#		name = FAT_start.101.4
+#		hidden_effect = {
+#			country_event = FAT_start.1
+#		}
+#	}
+#}
+#country_event = { #中立主义
+#	id = FAT_start.10104
+#	picture = ""
+#	title = FAT_start.10104.t
+#	desc = FAT_start.10104.d
+#	is_triggered_only = yes
+#	option = {
+#		name = FAT_start.101.4
+#		hidden_effect = {
+#			country_event = FAT_start.1
+#		}
+#	}
+#}
 
 country_event = { #开启权力平衡
 	id = FAT_start.2

@@ -1,5 +1,59 @@
 ideas = {
 	country = {
+		####################难度修正#######################
+		REP_FAT_GRI_UP_1 = {
+			picture = GFX_idea_FAT_GRI_UP_1
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.50
+				production_factory_max_efficiency_factor = 0.50
+				supply_consumption_factor = -0.30
+
+			}
+			targeted_modifier = {
+				tag = FAT
+				attack_bonus_against = 0.30
+				breakthrough_bonus_against = 0.30
+				defense_bonus_against = 0.30
+			}
+		}
+		REP_FAT_GRI_UP_2 = {
+			picture = GFX_idea_FAT_GRI_UP_2
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.75
+				production_factory_max_efficiency_factor = 0.75
+				supply_consumption_factor = -0.50
+
+			}
+			targeted_modifier = {
+				tag = FAT
+				attack_bonus_against = 0.50
+				breakthrough_bonus_against = 0.50
+				defense_bonus_against = 0.50
+			}
+
+		}
+		REP_FAT_GRI_UP_3 = {
+			picture = GFX_idea_FAT_GRI_UP_3
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 1
+				production_factory_max_efficiency_factor = 1
+				supply_consumption_factor = -0.7
+
+			}
+			targeted_modifier = {
+				tag = FAT
+				attack_bonus_against = 0.70
+				breakthrough_bonus_against = 0.70
+				defense_bonus_against = 0.70
+			}
+		}
+
 		####################开始计算#######################
 		FAT_minsheng_0 = {
 			picture = GFX_idea_FAT_minsheng

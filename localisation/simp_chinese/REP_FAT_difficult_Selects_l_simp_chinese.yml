@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+    REP_FAT_GRI_UP_1: "烙馍式加强"
+    REP_FAT_GRI_UP_1_desc: "烙馍是谁？一个打PVP放空气墙的神人玩家"
+    REP_FAT_GRI_UP_2: "小羊式加强"
+    REP_FAT_GRI_UP_2_desc: "小羊是谁？和烙馍PVP被放空气墙气笑了的玩家"
+    REP_FAT_GRI_UP_3: "好孩子式加强"
+    REP_FAT_GRI_UP_3_desc: "好孩子是谁？一个教会烙馍打AI放空气墙，但是被其带入PVP的玩家"
+
+    REP_FAT_Difficult_Select.1.t: "共和国与帝国的抉择"
+    REP_FAT_Difficult_Select.1.desc: "这个事件专门为了喜欢挑战自己的大佬而准备，如果您只想体验剧情,那么您可以选择正常难度"
+    REP_FAT_Difficult_Select.1.a: "正常难度（我只是来体验剧情的）"
+    REP_FAT_Difficult_Select.1.a.desc: "帝国将不会得到任何加强"
+    REP_FAT_Difficult_Select.2.a: "烙馍难度（帝国会得到较大的加强）"
+    REP_FAT_Difficult_Select.2.a.desc: "烙馍是谁？一个打PVP放空气墙的神人玩家"
+    REP_FAT_Difficult_Select.3.a: "小羊难度（帝国会得到大加强）"
+    REP_FAT_Difficult_Select.3.a.desc: "小羊是谁？和烙馍PVP被放空气墙气笑了的玩家"
+    REP_FAT_Difficult_Select.4.a: "好孩子难度（帝国会得到大加强并且开局统一赫兹兰）"
+    REP_FAT_Difficult_Select.4.a.desc: "好孩子是谁？一个教会烙馍打AI放空气墙，但是被其带入PVP的玩家"
