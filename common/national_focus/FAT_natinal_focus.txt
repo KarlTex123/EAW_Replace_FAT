@@ -21,11 +21,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150 
 			country_event = FAT_FP.10 #克梅斯凯的新年致辞
-			set_power_balance = {
-				id = FAT_power_balance
-				left_side = FAT_democratic_side
-				right_side = FAT_nationalism_side
-			}
 		}
 	}
 	focus = { #民权
@@ -386,11 +381,6 @@ focus_tree = {
 			add_ideas = Revolutionary_Terror
 			country_event = { id = FAT_FP.45} #断头台下
 			custom_effect_tooltip = FAT_gemingkongbu_jiesuo
-			add_power_balance_value = {
-				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
-			}
 		}
 	}
 	focus = { #重申领土完整
@@ -963,11 +953,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FAT_gonghezuojialianmeng_idea
-			add_power_balance_value = {
-				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
-			}
 		}
 	}
 	focus = { #农协地位

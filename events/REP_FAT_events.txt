@@ -898,11 +898,6 @@ country_event = { #总统权力讨论
 			}
 			add_ideas = FAT_Liberty_2 #民权承诺2
 		}
-			add_power_balance_value = {
-				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
-			}
 	}
 }
 
@@ -923,11 +918,6 @@ country_event = { #训政争论
 			add_popularity = {
 				ideology = fascism #霸权主义
 			    popularity = 0.05
-			}
-			add_power_balance_value = {
-				id = FAT_power_balance
-				value = -0.05
-				tooltip_side = FAT_democratic_side
 			}
 	}
 	option = {
@@ -1115,11 +1105,6 @@ country_event = { #选举大法官
 			id = FAT_FP.24
 			days = 5
 		}
-		add_power_balance_value = {
-			id = FAT_power_balance
-			value = -0.05
-			tooltip_side = FAT_democratic_side
-		}
 	}
 }
 
@@ -1262,22 +1247,12 @@ country_event = { #任命新总理？
 
 	option = {
 		name = FAT_FP.27.a
-		add_power_balance_value = {
-			id = FAT_power_balance
-			value = -0.05
-			tooltip_side = FAT_democratic_side
-		}
 	}
 	option = {
 		name = FAT_FP.27.b
 	}
 	option = {
 		name = FAT_FP.27.c
-		add_power_balance_value = {
-			id = FAT_power_balance
-			value = 0.05
-			tooltip_side = FAT_nationalism_side
-		}
 	}
 }
 
@@ -1391,11 +1366,6 @@ country_event = { #共和党第六届党员大会
 				ideology = fascism #霸权主义
 			    popularity = -1
 			}
-		}
-		add_power_balance_value = {
-			id = FAT_power_balance
-			value = -0.2
-			tooltip_side = FAT_democratic_side
 		}
 		country_event = { id = FAT_FP.34}
 	}
