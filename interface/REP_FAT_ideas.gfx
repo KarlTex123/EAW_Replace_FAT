@@ -242,19 +242,7 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_idea_FAT_Land_collectivization_3"
 		texturefile = "gfx/interface/ideas/FAT_Land_collectivization.png" 
-	}	
-	SpriteType = { 
-		name = "GFX_idea_Republican_regime"
-		texturefile = "gfx/interface/ideas/Republican_regime.png" 
-	}	
-	SpriteType = { 
-		name = "GFX_idea_Republican_regime_2"
-		texturefile = "gfx/interface/ideas/Republican_regime.png" 
-	}	
-	SpriteType = { 
-		name = "GFX_idea_Republican_regime_3"
-		texturefile = "gfx/interface/ideas/Republican_regime.png" 
-	}	
+	}		
 	SpriteType = { 
 		name = "GFX_idea_FAT_Literacy_Campaign"
 		texturefile = "gfx/interface/ideas/FAT_Literacy_Campaign.png" 

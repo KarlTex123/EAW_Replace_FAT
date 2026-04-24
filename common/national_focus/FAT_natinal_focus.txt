@@ -47,53 +47,10 @@ focus_tree = {
 		}
 		relative_position_id = FAT_minquan
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_idea = FAT_Liberty_1
-						has_idea = FAT_Liberty_2
-						has_idea = FAT_Liberty_3
-						has_idea = FAT_Liberty_4
-					}
-				}
-				add_ideas = FAT_Liberty_7
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_1
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_1
-					add_idea = FAT_Liberty_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_2
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_2
-					add_idea = FAT_Liberty_6
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_3
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_3
-					add_idea = FAT_Liberty_8
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_4
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_4
-					add_idea = FAT_Liberty_9
-				}
-			}
+			custom_effect_tooltip = FAT_guominzhuquan_tt
+			add_to_variable = { FAT_liberty_political_power_gain = 0.01 }
+			add_to_variable = { resistance_target_on_our_occupied_states = 0.1 }
+			add_to_variable = { ARMY_CORE_DEFENCE_FACTOR = 0.1 }
 		}
 	}
 	focus = { #总统元帅
@@ -124,12 +81,6 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = FAT_FP.17
-			custom_effect_tooltip = FAT_kanluandongyuanfaling_jiesuo
-			add_power_balance_value = {
-				id = FAT_power_balance
-				value = 0.05
-				tooltip_side = FAT_nationalism_side
-			}
 		}
 	}
 	focus = { #理性化政府
@@ -143,7 +94,10 @@ focus_tree = {
 		}
 		relative_position_id = FAT_minquan
 		completion_reward = {
-			add_ideas = Republican_regime
+			add_to_variable = { FAT_liberty_political_advisor_cost_factor = -0.1 }
+			add_to_variable = {FAT_liberty_compliance_growth = 0.1}
+			add_to_variable = {FAT_liberty_production_speed_buildings_factor = 0.05}
+			custom_effect_tooltip = FAT_lixinghuazhengfu_tt
 			country_event = FAT_FP.21
 		}
 	}
@@ -346,10 +300,9 @@ focus_tree = {
 		relative_position_id = FAT_lixinghuazhengfu
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Republican_regime
-				add_idea = Republican_regime_2
-			}
+			add_to_variable = { FAT_liberty_stability_factor_factor = 0.05}
+			add_to_variable = { FAT_liberty_drift_defence_factor = 0.15}
+			custom_effect_tooltip = FAT_xuanjudafaguan_tt
 			country_event = FAT_FP.22
 		}
 	}
@@ -380,7 +333,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = Revolutionary_Terror
 			country_event = { id = FAT_FP.45} #断头台下
-			custom_effect_tooltip = FAT_gemingkongbu_jiesuo
 		}
 	}
 	focus = { #重申领土完整
@@ -399,42 +351,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_war_support = 0.2
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_1
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_1
-					add_idea = FAT_Liberty_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_2
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_2
-					add_idea = FAT_Liberty_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_5
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_5
-					add_idea = FAT_Liberty_8
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_6
-				}
-				swap_ideas = {
-					remove_idea = FAT_Liberty_6
-					add_idea = FAT_Liberty_9
-				}
-			}
+			add_to_variable = { FAT_liberty_training_time_army_factor = -0.1}
+			custom_effect_tooltip = FAT_chongshenlingtuwanzheng_tt
 		}
 	} 
 	focus = { #选举权
@@ -467,10 +385,11 @@ focus_tree = {
 		relative_position_id = FAT_xuanjudafaguan
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Republican_regime_2
-				add_idea = Republican_regime_3
-			}
+			add_to_variable = { FAT_liberty_war_stability_factor = 0.4}
+			add_to_variable = {FAT_liberty_mobilization_laws_cost_factor = -0.25}
+			add_to_variable = {FAT_liberty_trade_laws_cost_factor = -0.25}
+			add_to_variable = {FAT_liberty_economy_cost_factor = -0.25}
+			custom_effect_tooltip = FAT_jianchilifatongyi_tt
 		}
 	}
 	focus = { #监察院
@@ -485,8 +404,11 @@ focus_tree = {
 		relative_position_id = FAT_zonglifu
 
 		completion_reward = {
-			add_ideas = the_institute
+			add_to_variable = { FAT_liberty_intel_network_gain_factor = 0.25 }
+			add_to_variable = { FAT_liberty_drift_defence_factor = 0.15 }
+			add_to_variable = {FAT_liberty_LOCAL_INTEL_TO_ENEMIES = -0.25}
 			country_event = FAT_FP.25
+			custom_effect_tooltip = FAT_jianchayuan_tt
 		}
 	}
 	focus = { #狮鹫共和国宪法草案
@@ -508,26 +430,6 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = FAT_FP.26
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_9
-				}
-				remove_ideas = FAT_Liberty
-				remove_ideas = the_institute
-				remove_ideas = FAT_Liberty_9
-				remove_ideas = Republican_regime_3
-				add_ideas = FAT_Liberty_10
-			}
-			if = {
-				limit = {
-					has_idea = FAT_Liberty_8
-				}
-				remove_ideas = FAT_Liberty
-				remove_ideas = the_institute
-				remove_ideas = FAT_Liberty_8
-				remove_ideas = Republican_regime_3
-				add_ideas = FAT_Liberty_11
-			}
 		}
 	}
 	focus = { #泛狮鹫之路

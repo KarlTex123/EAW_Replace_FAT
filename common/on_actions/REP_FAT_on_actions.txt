@@ -9,6 +9,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			FAT = {
+				####################民主#####################################
 				set_variable = {FAT_democracy_f_stability_factor = 0}
 				set_variable = {FAT_democracy_f_mobilization_laws_cost_factor = 0}
 				set_variable = {FAT_democracy_f_trade_laws_cost_factor = 0}
@@ -22,6 +23,24 @@ on_actions = {
 				set_variable = {FAT_democracy_f_political_power_factor = 0}
 				set_variable = {FAT_democracy_f_weekly_manpower = 0}
 				set_variable = {FAT_democracy_f_MINIMUM_TRAINING_LEVEL = 0}
+
+				####################民权##################################
+				set_variable = { FAT_liberty_stability_factor_factor = 0}
+				set_variable = { FAT_liberty_drift_defence_factor = 0}
+				set_variable = { FAT_liberty_political_advisor_cost_factor = 0}
+				set_variable = { FAT_liberty_compliance_growth = 0}
+				set_variable = { FAT_liberty_production_speed_buildings_factor = 0}
+				set_variable = { FAT_liberty_war_stability_factor = 0}
+				set_variable = { FAT_liberty_mobilization_laws_cost_factor = 0}
+				set_variable = { FAT_liberty_trade_laws_cost_factor = 0}
+				set_variable = { FAT_liberty_economy_cost_factor = 0}
+				set_variable = { FAT_liberty_stability_weekly = 0}
+				set_variable = { FAT_liberty_intel_network_gain_factor = 0}
+				set_variable = { FAT_liberty_LOCAL_INTEL_TO_ENEMIES = 0}
+				set_variable = { FAT_liberty_political_power_gain = 0}
+				set_variable = { FAT_liberty_ARMY_CORE_DEFENCE_FACTOR = 0}
+				set_variable = { FAT_liberty_resistance_target_on_our_occupied_states = 0}
+				set_variable = { FAT_liberty_training_time_army_factor = 0}
 			}
 		}
 	}

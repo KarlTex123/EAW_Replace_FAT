@@ -56,6 +56,27 @@ FAT_democracy_f = {
 	weekly_manpower = FAT_democracy_f_weekly_manpower
 	MINIMUM_TRAINING_LEVEL = FAT_democracy_f_MINIMUM_TRAINING_LEVEL
 }
+FAT_liberty = {
+	enable = { always = yes }
+	icon = GFX_idea_FAT_liberty
+	
+	stability_factor = FAT_liberty_stability_factor_factor
+	drift_defence_factor = FAT_liberty_drift_defence_factor
+	political_advisor_cost_factor = FAT_liberty_political_advisor_cost_factor
+	compliance_growth = FAT_liberty_compliance_growth
+	production_speed_buildings_factor = FAT_liberty_production_speed_buildings_factor
+	war_stability_factor = FAT_liberty_war_stability_factor
+	mobilization_laws_cost_factor = FAT_liberty_mobilization_laws_cost_factor
+	trade_laws_cost_factor = FAT_liberty_trade_laws_cost_factor
+	economy_cost_factor = FAT_liberty_economy_cost_factor
+	stability_weekly = FAT_liberty_stability_weekly
+	intel_network_gain_factor = FAT_liberty_intel_network_gain_factor
+	LOCAL_INTEL_TO_ENEMIES = FAT_liberty_LOCAL_INTEL_TO_ENEMIES
+	political_power_gain = FAT_liberty_political_power_gain
+	ARMY_CORE_DEFENCE_FACTOR = FAT_liberty_ARMY_CORE_DEFENCE_FACTOR
+	resistance_target_on_our_occupied_states = FAT_liberty_resistance_target_on_our_occupied_states
+	training_time_army_factor = FAT_liberty_training_time_army_factor
+}
 
 
 
