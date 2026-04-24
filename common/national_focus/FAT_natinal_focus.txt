@@ -33,6 +33,7 @@ focus_tree = {
 			focus = FAT_sanshiniangonghemeng
 		}
 		completion_reward = {
+			custom_effect_tooltip = FAT_minquan_tt
 			add_ideas = FAT_liberty
 		}
 	}
