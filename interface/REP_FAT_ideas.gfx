@@ -349,7 +349,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Revolutionary_Terror.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_FAT_liberty"
+		name = "GFX_modifiers_FAT_liberty"
 		texturefile = "gfx/interface/ideas/FAT_liberty.png" 
 	}
 	SpriteType = { 

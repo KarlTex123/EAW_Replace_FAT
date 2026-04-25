@@ -40,7 +40,7 @@ FAT_other_city_modifier = { #非漫云地区修正
 
 FAT_democracy_f = {
 	enable = { always = yes }
-	icon = GFX_modifiers_gFAT_democracy_f
+	icon = GFX_modifiers_FAT_democracy_f
 
 	stability_factor = FAT_democracy_f_stability_factor
 	mobilization_laws_cost_factor = FAT_democracy_f_mobilization_laws_cost_factor
@@ -58,7 +58,7 @@ FAT_democracy_f = {
 }
 FAT_liberty = {
 	enable = { always = yes }
-	icon = GFX_idea_FAT_liberty
+	icon = GFX_modifiers_FAT_liberty
 	
 	stability_factor = FAT_liberty_stability_factor_factor
 	drift_defence_factor = FAT_liberty_drift_defence_factor

@@ -34,7 +34,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = FAT_minquan_tt
-			add_ideas = FAT_liberty
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = FAT_liberty}
+			}
 		}
 	}
 	focus = { #国民主权
@@ -153,7 +155,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_ideas = FAT_democracy_f
+				add_dynamic_modifier = { modifier = FAT_democracy_f}
 			}
 			custom_effect_tooltip = FAT_minzhu_tt
 		}

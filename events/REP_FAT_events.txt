@@ -970,13 +970,6 @@ country_event = { #事件：执委会种族问题会议
 
 	option = {
 		name = FAT_FP.18.a
-		hidden_effect = {
-			country_event = {
-    			id = FAT_FP.19
-    			days = 30
-			}
-		}
-		custom_effect_tooltip = FAT_FP_19_war
 	}
 	option = {
 		name = FAT_FP.18.b
@@ -987,24 +980,6 @@ country_event = { #事件：执委会种族问题会议
 		custom_effect_tooltip = FAT_the_war_in_the_north_tt_1
 		hidden_effect = {
 			add_ideas = FAT_FP_18_idea
-		}
-	}
-}
-
-country_event = { #北方部落开战
-	id = FAT_FP.19
-	picture = FAT_FP.19.p
-	title = FAT_FP.19.t
-	desc = FAT_FP.19.d
-
-	is_triggered_only = yes
-	hidden = yes
-
-	option = {
-		name = FAT_FP.19.a
-		declare_war_on = {
-    		target = NTR
-    		type = annex_everything
 		}
 	}
 }
