@@ -2793,6 +2793,21 @@ ideas = {
 				research_speed_factor = -0.05
 			}	
 		}	
+
+		the_support_form_fat = {
+			picture = unhappy_army_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}		
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.15
+			}			
+		}
 	}
 }
 

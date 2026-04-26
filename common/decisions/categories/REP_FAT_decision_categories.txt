@@ -135,41 +135,6 @@ REP_FAT_core_the_state = { #整合地区决议
 	visible_when_empty = no
 }
 
-FAT_the_war_in_the_north = { #北方战争
-	icon = border_war
-	allowed = {
-		OR = {
-			original_tag = FAT
-			original_tag = NTR
-		}
-	}
-	visible = {
-		NTR = {
-			exists = yes
-			is_subject = no
-			has_civil_war = no
-		}
-		FAT = {
-			exists = yes
-			is_subject = no
-			has_civil_war = no
-		}
-	}
-	priority = {
-		base = 70
-		modifier = {
-			add = -50
-			tag = NTR
-			has_government = democratic
-		}
-		modifier = {
-			add = 50
-			tag = NTR
-			has_government = neutrality
-		}
-	}
-}
-
 CUI_test_category = {
 	priority = 10000
 	visible = {
@@ -177,6 +142,24 @@ CUI_test_category = {
 		is_debug = yes
 	}
 	visible_when_empty = yes
+}
+
+REP_FAT_annex_NTR = {
+	priority = 10000
+	visible = {
+		NTR = {
+			exists = yes
+			has_idea = the_support_form_fat
+		} 
+	}
+	visible_when_empty = no
+}
+REP_FAT_annex_NTR_1 = {
+	priority = 10000
+	visible = {
+		has_country_flag = zhongzuweiyuanhui_111
+	}
+	visible_when_empty = no
 }
 
 

@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	
+	relationship_with_NTR = {
+		value = 100
+	}
+}

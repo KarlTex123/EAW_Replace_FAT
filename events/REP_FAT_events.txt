@@ -970,6 +970,23 @@ country_event = { #事件：执委会种族问题会议
 
 	option = {
 		name = FAT_FP.18.a
+		add_opinion_modifier = {
+			target = NTR
+			modifier = relationship_with_NTR
+		}
+		NTR = {
+			add_opinion_modifier = {
+				target = FAT
+				modifier = relationship_with_NTR
+			}
+		}
+		diplomatic_relation = { 
+			country = NTR
+			relation = non_aggression_pact 
+			active = yes
+		}
+		set_country_flag = zhongzuweiyuanhui_111	
+		custom_effect_tooltip = jiaru_1_tt
 	}
 	option = {
 		name = FAT_FP.18.b
@@ -977,10 +994,10 @@ country_event = { #事件：执委会种族问题会议
 	}
 	option = {
 		name = FAT_FP.18.c
-		custom_effect_tooltip = FAT_the_war_in_the_north_tt_1
-		hidden_effect = {
-			add_ideas = FAT_FP_18_idea
+		NTR = {
+			add_ideas = the_support_form_fat
 		}
+		custom_effect_tooltip = jiaru_2_tt
 	}
 }
 

@@ -198,15 +198,14 @@ REP_FAT_political_decision: "共和国派系政治"
   stand_with_together: "站到工鹫队伍中去"
   bevelive_nationalism_love_country: "弘扬爱国主义"
   be_careful_fascism_party: "警惕帝党！"
-
- FAT_the_war_in_the_north:"北方的战争"
- FAT_the_war_in_the_north_tt:"§Y北方的战争§!"
- FAT_the_war_in_the_north_tt_1:0 "解锁§Y北方的战争§!决议组"
- REP_FAT_TAKE_NTR: "§Y整合北方部落地块§!"
- THE_lefts_resovlion_tt:0 "§Y解决北方部落问题§!"
- FAT_the_war_in_the_north:0 "§Y北方的战争§!"
- FAT_the_war_in_the_north_desc:0 "自狮鹫革命者占领漫云以来，共和国继续向北方扩张以拓展革命根据地，不可避免的导致了与本地小马部落的冲突，经过会议决定，共和国将保持平稳速度推进北方苔原纳入共和国版图。\n\n对左翼共和党鹫来说，他们希望能够在废除古老部落建立公社体制与保障少数种族平等之间建立平衡"
  
+ REP_FAT_annex_NTR:0 "左翼方案"
+ annex_the_NTR:0 "北方部落加入共和国"
+ REP_FAT_annex_NTR_1:0 "克梅斯凯的方案"
+ annex_the_NTR_1:0 "北方部落加入共和国"
+ zhongzuweiyuanhui_111:0 "统一北方"
+
+
  FAT_border_skirmish:0 "欧斯特弗洛伊前线"
  FAT_border_skirmish_2:0 "布劳恩斯前线"
  NTR_border_skirmish:0 "萤火虫森林前线"

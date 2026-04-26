@@ -51,9 +51,8 @@ focus_tree = {
 		relative_position_id = FAT_minquan
 		completion_reward = {
 			custom_effect_tooltip = FAT_guominzhuquan_tt
-			add_to_variable = { FAT_liberty_political_power_gain = 0.01 }
-			add_to_variable = { resistance_target_on_our_occupied_states = 0.1 }
-			add_to_variable = { ARMY_CORE_DEFENCE_FACTOR = 0.1 }
+			add_to_variable = { FAT_liberty_political_power_gain = 0.1 }
+			add_to_variable = { FAT_liberty_ARMY_CORE_DEFENCE_FACTOR = 0.1 }
 		}
 	}
 	focus = { #总统元帅
@@ -117,7 +116,7 @@ focus_tree = {
 			hidden_effect = {
 				add_ideas = FAT_FP_jingji_idea
 			}
-			add_ideas = FAT_minsheng_0
+			add_dynamic_modifier = { modifier = FAT_minsheng_0}
 			custom_effect_tooltip = FAT_minsheng_tt
 		}
 	}
@@ -285,6 +284,16 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = FAT_guominzhuquan
+		}
+		available = {
+			NTR = {
+				exists = yes
+			}
+		}
+		bypass = {
+			NTR = {
+				exists = no
+			}			
 		}
 		relative_position_id = FAT_guominzhuquan
 		completion_reward = {
