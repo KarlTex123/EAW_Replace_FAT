@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+
+ sbuff_change_tt: "§Y[?sbuff_name.GetTokenLocalizedKey]§!效果变化："
+ sbuff_change_tt_0: "[?sbuff_type.GetTokenLocalizedKey][sbuff_number_type_loc]"
+ sbuff_change_tt_1: "[if_sbuff_change_tt_1]"
+ no_sbuff_change_tt_1: ""
+ yes_sbuff_change_tt_1: "[?sbuff_type.GetTokenLocalizedKey][sbuff_number_type_loc]"
+ sbuff_number_type_loc_1: "[?sbuff_number|=+%]"
+ sbuff_number_type_loc_01: "[?sbuff_number|=-%]"
+ sbuff_number_type_loc_2: "[?sbuff_number|=+]"
+ sbuff_number_type_loc_02: "[?sbuff_number|=-]"
