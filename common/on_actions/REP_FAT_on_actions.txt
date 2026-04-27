@@ -41,6 +41,20 @@ on_actions = {
 				set_variable = { FAT_liberty_ARMY_CORE_DEFENCE_FACTOR = 0}
 				set_variable = { FAT_liberty_resistance_target_on_our_occupied_states = 0}
 				set_variable = { FAT_liberty_training_time_army_factor = 0}
+
+				####################民生##################################
+				set_variable = { FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0}
+				set_variable = { FAT_minsheng_0_production_factory_efficiency_gain_factor = 0}
+				set_variable = { FAT_minsheng_0_line_change_production_efficiency_factor = 0}
+				set_variable = { FAT_minsheng_0_production_speed_buildings_factor = 0}
+				set_variable = { FAT_minsheng_0_industrial_capacity_factory = 0}
+				set_variable = { FAT_minsheng_0_consumer_goods_factor = 0 }
+				set_variable = {FAT_minsheng_0_communism_drift = 0}
+				set_variable = {FAT_minsheng_0_mobilization_speed = 0}
+				set_variable = {FAT_minsheng_0_resistance_target = 0}
+				set_variable = {FAT_minsheng_0_compliance_gain = 0}
+				set_variable = {FAT_minsheng_0_monthly_population = 0}
+				set_variable = {FAT_minsheng_0_democratic_drift = 0}
 			}
 		}
 	}
