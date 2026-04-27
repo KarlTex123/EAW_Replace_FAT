@@ -115,8 +115,8 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_ideas = FAT_FP_jingji_idea
+				add_dynamic_modifier = { modifier = FAT_minsheng_0}
 			}
-			add_dynamic_modifier = { modifier = FAT_minsheng_0}
 			custom_effect_tooltip = FAT_minsheng_tt
 		}
 	}
@@ -209,42 +209,10 @@ focus_tree = {
 				popularity = 0.1
 			}
 			country_event = { id = FAT_FP.36}
-			if = {
-				limit = {
-					has_idea = FAT_minsheng_0
-				}
-				swap_ideas = {
-					remove_idea = FAT_minsheng_0
-					add_idea = FAT_minsheng_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_minsheng_1
-				}
-				swap_ideas = {
-					remove_idea = FAT_minsheng_1
-					add_idea = FAT_minsheng_3
-				}
-			}	
-			if = {
-				limit = {
-					has_idea = FAT_minsheng_5
-				}
-				swap_ideas = {
-					remove_idea = FAT_minsheng_5
-					add_idea = FAT_minsheng_3
-				}
-			}	
-			if = {
-				limit = {
-					has_idea = FAT_minsheng_4
-				}
-				swap_ideas = {
-					remove_idea = FAT_minsheng_4
-					add_idea = FAT_minsheng_7
-				}
-			}	
+			custom_effect_tooltip = FAT_gongheyinhang_tt
+			add_to_variable = { FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05 }
+			add_to_variable = { FAT_minsheng_0_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { FAT_minsheng_0_line_change_production_efficiency_factor = 0.025 }
 		}
 	}
 	focus = { #新建中小学
@@ -804,24 +772,8 @@ focus_tree = {
 				popularity = 0.1
 			}	
 			country_event = { id = FAT_FP.32 }
-			if = {
-				limit = {
-					has_idea = FAT_minsheng_0
-				}
-				swap_ideas = {
-					remove_idea = FAT_minsheng_0
-					add_idea = FAT_minsheng_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = FAT_minsheng_2
-				}
-				swap_ideas = {
-					remove_idea = FAT_minsheng_2
-					add_idea = FAT_minsheng_3
-				}
-			}
+			add_to_variable = {FAT_minsheng_0_production_speed_buildings_factor = 0.025}
+			add_to_variable = {FAT_minsheng_0_industrial_capacity_factory = 0.025}
 		}
 	}
 	focus = { #扩大自由言论
@@ -915,6 +867,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = { id = FAT_FP.37}
+
 		}
 	}
 	focus = { #社会主义者地位
@@ -950,7 +903,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = communism
-				popularity = 0.1
+				popularity = 0.05
 			}
 		}
 	}
@@ -970,6 +923,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
+			add_research_slot = 1
 		}
 	}
 	focus = { #流亡共和派教师
@@ -1073,182 +1027,8 @@ focus_tree = {
 		relative_position_id = FAT_nongxiediwei
 		completion_reward = {
 			decrease_poverty = yes
-			if = {
-				limit = {
-					AND = {
-						has_idea = FAT_Land_collectivization_1
-						has_completed_focus = FAT_xiudingtudifa
-					}
-				}
-				swap_ideas = {
-					remove_idea = FAT_Land_collectivization_1
-					add_idea = FAT_Land_collectivization_2
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						has_idea = FAT_Land_collectivization
-						has_completed_focus = FAT_xiudingtudifa
-					}
-				}
-				swap_ideas = {
-					remove_idea = FAT_Land_collectivization
-					add_idea = FAT_Land_collectivization_3
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						has_idea = FAT_Reduce_rent_and_interest
-						has_completed_focus = FAT_xiudingtudifa
-					}
-				}
-				swap_ideas = {
-					remove_idea = FAT_Reduce_rent_and_interest
-					add_idea = FAT_Reduce_rent_and_interest_1
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = FAT_xiudingtudifa
-					}
-				}
-				set_country_flag = FAT_xiangcunjiansheyundong
-				custom_effect_tooltip = FAT_xiangcunjiansheyundong_tt
-			}
-			if = {
-				limit = {
-					has_country_flag = ngxie_1
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = ngxie_2
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_state = {
-    				add_building_construction = {
-						type = industrial_complex 
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}			
-		}
+			add_political_power = 50
+		}			
 	}
 	focus = { #修订土地法
 		id = FAT_xiudingtudifa
@@ -1398,9 +1178,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FAT_social_transformation
-			decrease_poverty = yes
-			custom_effect_tooltip = FAT_zhiyuaninkun_tt
-			add_to_variable = { FAT_extra_money = 100}						
+			decrease_poverty = yes					
 		}
 	}
 	focus = { #狮鹫童子军
@@ -1456,6 +1234,7 @@ focus_tree = {
 				remove_idea = FAT_social_transformation
 				add_idea = FAT_social_transformation_1
 			}
+			decrease_illiteracy = yes
 		}
 	}
 	focus = { #共和信仰
@@ -1476,9 +1255,6 @@ focus_tree = {
 		relative_position_id = FAT_qimengshehui
 
 		completion_reward = {
-			remove_ideas = The_New_Life_Movement_2
-			remove_ideas = The_Republican_Home_1
-			remove_ideas = FAT_social_transformation_1
 			add_ideas = Republican_faith
 		}
 	}
@@ -1549,8 +1325,6 @@ focus_tree = {
 		}
 		relative_position_id = FAT_kuozhangongjiuyexiao
 		completion_reward = {
-			remove_ideas = FAT_college_system_idea
-			remove_ideas = FAT_Literacy_Campaign_1
 			swap_ideas = {
 				remove_idea = FAT_education_reform_idea_2
 				add_idea = FAT_education_reform_idea_3

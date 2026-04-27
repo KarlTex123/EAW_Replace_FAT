@@ -78,5 +78,24 @@ FAT_liberty = {
 	training_time_army_factor = FAT_liberty_training_time_army_factor
 }
 
+FAT_minsheng_0 = {
+	enable = { always = yes }
+	icon = GFX_modifiers_FAT_liberty
+	
+				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR
+				production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor
+				line_change_production_efficiency_factor = FAT_minsheng_0_line_change_production_efficiency_factor
+				production_speed_buildings_factor = FAT_minsheng_0_production_speed_buildings_factor
+				industrial_capacity_factory = FAT_minsheng_0_industrial_capacity_factory
+				consumer_goods_factor = FAT_minsheng_0_consumer_goods_factor
+				communism_drift = FAT_minsheng_0_communism_drift
+				mobilization_speed = FAT_minsheng_0_mobilization_speed
+				resistance_target = FAT_minsheng_0_resistance_target
+				compliance_gain = FAT_minsheng_0_compliance_gain
+				monthly_population = FAT_minsheng_0_monthly_population
+				democratic_drift = FAT_minsheng_0_democratic_drift
+}
+
+
 
 
