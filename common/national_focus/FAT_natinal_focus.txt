@@ -115,7 +115,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_ideas = FAT_FP_jingji_idea
-				add_dynamic_modifier = { modifier = FAT_minsheng_0}
+				add_dynamic_modifier = { modifier = FAT_prosperity_f}
 			}
 			custom_effect_tooltip = FAT_minsheng_tt
 		}

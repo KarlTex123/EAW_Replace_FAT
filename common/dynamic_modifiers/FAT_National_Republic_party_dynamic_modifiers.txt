@@ -90,7 +90,7 @@ FAT_liberty = {
 	training_time_army_factor = FAT_liberty_training_time_army_factor
 }
 
-FAT_minsheng_0 = {
+FAT_prosperity_f = {
 	enable = { always = yes }
 	icon = GFX_modifiers_FAT_liberty
 	
