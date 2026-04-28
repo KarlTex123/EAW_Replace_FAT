@@ -9,14 +9,14 @@ FAT_National_Republic_party = { #民族共和党
 	#派系加成
 	stability_factor = FAT_faction_buff_array^0
 	army_morale_factor = FAT_faction_buff_array^1
-	industrial_capacity_factory = FAT_faction_buff_array^2
+	industrial_capacity_factor = FAT_faction_buff_array^2
 	political_power_factor = FAT_faction_buff_array^3
 	weekly_manpower = FAT_faction_buff_array^4
 	army_org_factor = FAT_faction_buff_array^5
 	production_factory_start_efficiency_factor = FAT_faction_buff_array^6
 	supply_consumption_factor = FAT_faction_buff_array^7
 	production_speed_buildings_factor = FAT_faction_buff_array^8
-	industrial_capacity_factory = FAT_faction_buff_array^9
+	industrial_capacity_factor = FAT_faction_buff_array^9
 	consumer_goods_factor = FAT_faction_buff_array^10
 	consumer_goods_factor = FAT_faction_buff_array^11
 
@@ -46,7 +46,6 @@ FAT_democracy_f = {
 	mobilization_laws_cost_factor = FAT_democracy_f_mobilization_laws_cost_factor
 	trade_laws_cost_factor = FAT_democracy_f_trade_laws_cost_factor
 	economy_cost_factor = FAT_democracy_f_economy_cost_factor
-	max_command_power = FAT_democracy_f_max_command_power
 	global_building_slots_factor = FAT_democracy_f_global_building_slots_factor
 	command_power_gain_mult = FAT_democracy_f_command_power_gain_mult
 	production_speed_buildings_factor = FAT_democracy_f_production_speed_buildings_factor
@@ -55,6 +54,19 @@ FAT_democracy_f = {
 	political_power_factor = FAT_democracy_f_political_power_factor
 	weekly_manpower = FAT_democracy_f_weekly_manpower
 	MINIMUM_TRAINING_LEVEL = FAT_democracy_f_MINIMUM_TRAINING_LEVEL
+	consumer_goods_factor = FAT_democracy_f_consumer_goods_factor
+	industrial_capacity_factor = FAT_democracy_f_industrial_capacity_factor
+
+	planning_speed = FAT_democracy_f_planning_speed
+	max_planning = FAT_democracy_f_max_planning
+	stability_weekly = FAT_democracy_f_stability_weekly
+	factory_max_efficiency_factor = FAT_democracy_f_factory_max_efficiency_factor
+	communism_drift = FAT_democracy_f_communism_drift
+	fascism_drift = FAT_democracy_f_fascism_drift
+	democratic_drift = FAT_democracy_f_democratic_drift
+	enemy_operative_capture_chance_factor = FAT_democracy_f_enemy_operative_capture_chance_factor
+	OPINION_GAIN_MONTHLY_FACTOR = FAT_democracy_f_OPINION_GAIN_MONTHLY_FACTOR
+
 }
 FAT_liberty = {
 	enable = { always = yes }
@@ -86,7 +98,7 @@ FAT_minsheng_0 = {
 				production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor
 				line_change_production_efficiency_factor = FAT_minsheng_0_line_change_production_efficiency_factor
 				production_speed_buildings_factor = FAT_minsheng_0_production_speed_buildings_factor
-				industrial_capacity_factory = FAT_minsheng_0_industrial_capacity_factory
+				industrial_capacity_factor = FAT_minsheng_0_industrial_capacity_factor
 				consumer_goods_factor = FAT_minsheng_0_consumer_goods_factor
 				communism_drift = FAT_minsheng_0_communism_drift
 				mobilization_speed = FAT_minsheng_0_mobilization_speed

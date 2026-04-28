@@ -2052,7 +2052,7 @@ country_event = { #边境冲突
 	}
 }
 
-country_event = { #边境冲突
+country_event = { #军队中的演唱会
 	id = FAT_FP.71
 	title = FAT_FP.71.t
 	desc = FAT_FP.71.d
@@ -2069,7 +2069,7 @@ country_event = { #边境冲突
 	}
 }
 
-country_event = { #边境冲突
+country_event = { #共和国特色议会
 	id = FAT_FP.72
 	title = FAT_FP.72.t
 	desc = FAT_FP.72.d
@@ -2083,6 +2083,51 @@ country_event = { #边境冲突
 
 	option = {
 		name = FAT_FP.72.a
+	}
+}
+
+country_event = { #民主与民族问题
+	id = FAT_FP.73
+	title = FAT_FP.73.t
+	desc = FAT_FP.73.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.73.a
+		complcomplete_national_focus = FAT_fanshijiuzhilu
+	}
+	option = {
+		name = FAT_FP.73.b
+		complcomplete_national_focus = FAT_dapotianhuaban
+	}
+}
+country_event = { #执行委员会的讨论
+	id = FAT_FP.74
+	title = FAT_FP.74.t
+	desc = FAT_FP.74.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.74.a
+	}
+}
+country_event = { #体制龃龉
+	id = FAT_FP.75
+	title = FAT_FP.75.t
+	desc = FAT_FP.75.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.75.a
 	}
 }
 

@@ -28,7 +28,7 @@ on_actions = {
 
 					#军工
 					set_variable = { FAT_production_factory_max_efficiency_factor = 0 }#生产效率
-					set_variable = { FAT_industrial_capacity_factory = 0 }#工厂产出
+					set_variable = { FAT_industrial_capacity_factor = 0 }#工厂产出
 					set_variable = { FAT_industrial_capacity_dockyard = 0 }#船坞产出
 					set_variable = { FAT_production_factory_efficiency_gain_factor = 0.05 }#工厂效率增长
 

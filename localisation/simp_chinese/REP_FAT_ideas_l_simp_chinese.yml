@@ -77,8 +77,14 @@ FAT_National_Republic_party_desc: ""
 #谐律支持率：[?party_popularity@democratic]，共产支持率：[?party_popularity@communism]，霸权支持率：[?party_popularity@fascism]，中立支持率：[?party_popularity@neutrality]
 FAT_unstable_army_idea: "军队高层动荡" 
 
-FAT_Language_confusion:0 "语言混乱"
-FAT_Language_confusion2:0 "语言混乱"
+FAT_Language_confusion:0 "文化多元"
+FAT_fanshijiulixiang_idea_1:0 "泛狮鹫理想"
+FAT_fanshijiulixiang_idea_2:0 "泛狮鹫理想"
+FAT_fanshijiulixiang_idea_3:0 "泛狮鹫理想"
+FAT_guofujingshen:0 "国父精神"
+FAT_heerzhizhi:0 "和而治之"
+FAT_heerbutong:0 "和而不同"
+FAT_shiduquanlixiafang:0 "适度权利下方"
 
 FAT_manyun_city_modifier:0 "开发漫云城"
 FAT_other_city_modifier:0 "开发地方"

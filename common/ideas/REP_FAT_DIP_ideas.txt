@@ -11,7 +11,7 @@ ideas = {
 			remove_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factor = 0.1
 			}
 		}
 	}
