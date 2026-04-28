@@ -173,12 +173,13 @@
 
 FAT_xiangcunjiansheyundong_tt:0 "农村相关民族精神追加：资源获取效率 §G+10%§!"
 FAT_manyuntebieshi_tt:0 "在经济建设决议中增加§Y开发漫云城§!决议"
-FAT_xingemingdang_tt:0 "§Y民主主义§!追加效果：\n法案花费 §G-15%§! 稳定度 §G+15%§! \n解锁 §Y宣传栏§! 决议"
+FAT_xingemingdang_tt:0 "§Y民主主义§!追加效果：\n法案花费 §G-15%§!\n稳定度 §G+15%§!"
 FAT_FAT_zhongyangzhiweihui_tt:0 "§Y民主主义§!追加效果：\n生活消费品 §G-10%§! 工厂产出 §G+10%§!"
-FAT_yanjiuhui_tt:0 "§Y民主主义§!追加效果：\n生活消费品 §G-5%§! 政治点数修正 §G+10%§!"
+FAT_yanjiuhui_tt:0 "§Y民主主义§!追加效果：\n生活消费品 §G-5%§!\n政治点数修正 §G+10%§!\n解锁 §Y宣传栏§! 决议"
 FAT_junweihui_tt:0 "§Y民主主义§!追加效果：\n计划速度 §G+10%§!\n计划上限 §G+10%§!"
 FAT_gaizaohuogaizu_tt:0 "§Y民主主义§!追加效果：\n每周稳定度增长 §G+0.5%§!\n生产效率增长 §G+10%§!\n建造速度 §G+10%§!\n生产效率保持 §G+20%§!"
-FAT_manyuntizhi_tt:0 "§Y民主主义§!追加效果：\n生产效率上限 §G+15%§!\n每日谐律 霸权 康米 支持度 §G+0.1§!"
+FAT_manyuntizhi_tt:0 "§Y民主主义§!追加效果：\n生产效率上限 §G+15%§!\n每日社会主义支持率 §G+0.1%§!\n每日霸权主义支持度 §G+0.1%§!\n每日谐律主义支持度 §G+0.1%§!"
+FAT_yuanlaopingyihui_tt:0 "§Y民主主义§!追加效果：\n敌方特工被捕几率 §G+25%§!\n改善关系效率 §G+50%§!"
 
 
 FAT_XINSHIJIEZHIEMENG: "新世界之梦"

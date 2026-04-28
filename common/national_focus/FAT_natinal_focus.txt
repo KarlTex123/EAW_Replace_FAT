@@ -486,7 +486,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = FAT_FAT_zhongyangzhiweihui_tt
 			add_to_variable = {FAT_democracy_f_consumer_goods_factor = -0.1}
-			add_to_variable = {FAT_democracy_f_industrial_capacity_factor = 0.1}
+			add_to_variable = {FAT_democracy_f_industrial_capacity_factory = 0.1}
 			country_event = { id = FAT_FP.74}
 		}		
 	}
@@ -647,8 +647,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = FAT_heerzhizhi_2
-				add_idea = FAT_heerzhizhi_3
+				remove_idea = FAT_heerzhizhi
+				add_idea = FAT_heerzhizhi_2
 			}
 			add_political_power = 50
 		}
@@ -681,8 +681,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea7
-				add_idea = FAT_The_Cloudburian_Minority_idea8
+				remove_idea = FAT_heerzhizhi_2
+				add_idea = FAT_heerzhizhi_3
 			}
 		}		
 	}
@@ -723,20 +723,22 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
-		prerequisite = {
-			focus = FAT_manyuntebieshi
-		}
-		prerequisite = {
-			focus = FAT_bianzhunyu
-		}
+
+		prerequisite = {focus = FAT_manyuntebieshi focus = FAT_bianzhunyu focus = FAT_jiyufangyandiwei focus = FAT_buxuanliuwangyihui} 
 		prerequisite = {
 			focus = FAT_gaizaohuogaizu
 		}
-		prerequisite = {
-			focus = FAT_jiyufangyandiwei
-		}
-		prerequisite = {
-			focus = FAT_buxuanliuwangyihui
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = FAT_manyuntebieshi
+					has_completed_focus = FAT_bianzhunyu
+				}
+				AND = {
+					has_completed_focus = FAT_jiyufangyandiwei
+					has_completed_focus = FAT_buxuanliuwangyihui					
+				}
+			}
 		}
 		relative_position_id = FAT_gaizaohuogaizu
 		completion_reward = {
@@ -768,7 +770,7 @@ focus_tree = {
 			}	
 			country_event = { id = FAT_FP.32 }
 			add_to_variable = {FAT_minsheng_0_production_speed_buildings_factor = 0.025}
-			add_to_variable = {FAT_minsheng_0_industrial_capacity_factor = 0.025}
+			add_to_variable = {FAT_minsheng_0_industrial_capacity_factory = 0.025}
 		}
 	}
 	focus = { #扩大自由言论

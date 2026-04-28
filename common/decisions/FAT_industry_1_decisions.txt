@@ -144,7 +144,7 @@ FAT_industry_decision_category_1= {
 					#修改修正
 
 					add_to_variable = {FAT_production_factory_max_efficiency_factor = 0.1}
-					add_to_variable = {FAT_industrial_capacity_factor = 0.15}
+					add_to_variable = {FAT_industrial_capacity_factory = 0.15}
 					add_to_variable = {FAT_industrial_capacity_dockyard = 0.15}
 					add_to_variable = {FAT_production_factory_efficiency_gain_factor = 0.1}
 
@@ -161,7 +161,7 @@ FAT_industry_decision_category_1= {
 					#修改修正
 
 					add_to_variable = {FAT_production_factory_max_efficiency_factor = 0.1}
-					add_to_variable = {FAT_industrial_capacity_factor = 0.1}
+					add_to_variable = {FAT_industrial_capacity_factory = 0.1}
 					add_to_variable = {FAT_industrial_capacity_dockyard = 0.1}
 					add_to_variable = {FAT_production_factory_efficiency_gain_factor = 0.25}
 				}
@@ -189,7 +189,7 @@ FAT_industry_decision_category_1= {
 					#修改修正
 
 					add_to_variable = {FAT_production_factory_max_efficiency_factor = -0.1}
-					add_to_variable = {FAT_industrial_capacity_factor = -0.15}
+					add_to_variable = {FAT_industrial_capacity_factory = -0.15}
 					add_to_variable = {FAT_industrial_capacity_dockyard = -0.15}
 					add_to_variable = {FAT_production_factory_efficiency_gain_factor = -0.1}
 
@@ -206,7 +206,7 @@ FAT_industry_decision_category_1= {
 
 					#修改修正
 					add_to_variable = {FAT_production_factory_max_efficiency_factor = -0.1}
-					add_to_variable = {FAT_industrial_capacity_factor = -0.1}
+					add_to_variable = {FAT_industrial_capacity_factory = -0.1}
 					add_to_variable = {FAT_industrial_capacity_dockyard = -0.1}
 					add_to_variable = {FAT_production_factory_efficiency_gain_factor = -0.25}
 				}
@@ -702,7 +702,7 @@ FAT_industry_decision_category_1= {
 			custom_effect_tooltip = develop_522_561_601_585_tt
 			add_to_variable = {FAT_cooperative_stability_factor = 0.05}
 			add_to_variable = {FAT_production_speed_buildings_factor = 0.1}
-			add_to_variable = {FAT_cooperative_industrial_capacity_factor = 0.1}
+			add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.1}
 			522 = {#天际纳维亚
 				add_building_construction = {
 					type = industrial_complex 
@@ -1087,7 +1087,7 @@ FAT_industry_decision_category_1= {
 		}
 		add_to_variable = {FAT_cooperative_consumer_goods_factor = -0.1}
 		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
-		add_to_variable = {FAT_cooperative_industrial_capacity_factor = 0.05}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
 
 	}
 	custom_cost_text = cost_money_1000
@@ -1138,7 +1138,7 @@ FAT_industry_decision_category_1= {
 		custom_effect_tooltip = FAT_establish_cooperative_2_tt
 		add_to_variable = {FAT_cooperative_production_speed_buildings_factor = 0.1}
 		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
-		add_to_variable = {FAT_cooperative_industrial_capacity_factor = 0.05}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
 
 	}
 	custom_cost_text = cost_money_1500

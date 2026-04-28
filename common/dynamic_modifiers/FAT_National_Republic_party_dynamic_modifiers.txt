@@ -9,14 +9,14 @@ FAT_National_Republic_party = { #民族共和党
 	#派系加成
 	stability_factor = FAT_faction_buff_array^0
 	army_morale_factor = FAT_faction_buff_array^1
-	industrial_capacity_factor = FAT_faction_buff_array^2
+	industrial_capacity_factory = FAT_faction_buff_array^2
 	political_power_factor = FAT_faction_buff_array^3
 	weekly_manpower = FAT_faction_buff_array^4
 	army_org_factor = FAT_faction_buff_array^5
 	production_factory_start_efficiency_factor = FAT_faction_buff_array^6
 	supply_consumption_factor = FAT_faction_buff_array^7
 	production_speed_buildings_factor = FAT_faction_buff_array^8
-	industrial_capacity_factor = FAT_faction_buff_array^9
+	industrial_capacity_factory = FAT_faction_buff_array^9
 	consumer_goods_factor = FAT_faction_buff_array^10
 	consumer_goods_factor = FAT_faction_buff_array^11
 
@@ -55,7 +55,7 @@ FAT_democracy_f = {
 	weekly_manpower = FAT_democracy_f_weekly_manpower
 	MINIMUM_TRAINING_LEVEL = FAT_democracy_f_MINIMUM_TRAINING_LEVEL
 	consumer_goods_factor = FAT_democracy_f_consumer_goods_factor
-	industrial_capacity_factor = FAT_democracy_f_industrial_capacity_factor
+	industrial_capacity_factory = FAT_democracy_f_industrial_capacity_factory
 
 	planning_speed = FAT_democracy_f_planning_speed
 	max_planning = FAT_democracy_f_max_planning
@@ -98,7 +98,7 @@ FAT_prosperity_f = {
 				production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor
 				line_change_production_efficiency_factor = FAT_minsheng_0_line_change_production_efficiency_factor
 				production_speed_buildings_factor = FAT_minsheng_0_production_speed_buildings_factor
-				industrial_capacity_factor = FAT_minsheng_0_industrial_capacity_factor
+				industrial_capacity_factory = FAT_minsheng_0_industrial_capacity_factory
 				consumer_goods_factor = FAT_minsheng_0_consumer_goods_factor
 				communism_drift = FAT_minsheng_0_communism_drift
 				mobilization_speed = FAT_minsheng_0_mobilization_speed

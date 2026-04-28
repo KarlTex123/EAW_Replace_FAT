@@ -32,7 +32,7 @@ FAT_bank_modifier = {
 	army_morale_factor = FAT_army_morale_factor #组织度恢复
 	#军工部分
 	production_factory_max_efficiency_factor = FAT_production_factory_max_efficiency_factor #生产效率
-	industrial_capacity_factor = FAT_industrial_capacity_factor #工厂产出
+	industrial_capacity_factory = FAT_industrial_capacity_factory #工厂产出
 	industrial_capacity_dockyard = FAT_industrial_capacity_dockyard #船坞产出
 	production_factory_efficiency_gain_factor = FAT_production_factory_efficiency_gain_factor #工厂效率增长
 
@@ -51,7 +51,7 @@ FAT_cooperative = {#合作社
 				modifier = {
 					consumer_goods_factor = FAT_cooperative_consumer_goods_factor
 					stability_factor = FAT_cooperative_stability_factor
-					INDUSTRIAL_CAPACITY_FACTOR = FAT_cooperative_industrial_capacity_factor
+					industrial_capacity_factory = FAT_cooperative_industrial_capacity_factory
 					production_speed_buildings_factor = FAT_cooperative_production_speed_buildings_factor
 				}
 }
