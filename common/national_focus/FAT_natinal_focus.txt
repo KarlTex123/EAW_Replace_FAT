@@ -1939,7 +1939,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_faction = FAT_GONGHEGUOGONGYUE
+			create_faction_from_template = FAT_GONGHEGUOGONGYUE
 			add_threat = 5
 			country_event = {
 				id = FAT_DIP_Focus.1
@@ -1976,6 +1976,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_LIANLUENANFANG
 		}
+		bypass = {
+			MNC = {
+				exists = no
+			}
+		}
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
@@ -2004,6 +2009,27 @@ focus_tree = {
 					has_country_leader = {
 						ruling_only = yes
 						character = RCT_nova_whirl
+					}
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				RCT = {
+					exists = no
+				}
+				RCT = {
+					OR = {
+						NOT = {
+							has_country_leader = {
+								ruling_only = yes
+								character = RCT_river_swirl
+							}
+							has_country_leader = {
+								ruling_only = yes
+								character = RCT_nova_whirl
+							}
+						}
 					}
 				}
 			}
@@ -2037,6 +2063,11 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = FAT_DIP_ITSTIME	
+		}
+		bypass = {
+			VED = {
+				exists = no
+			}
 		}
 		relative_position_id = FAT_LIANLUENANFANG
 
