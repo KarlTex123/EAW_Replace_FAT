@@ -20,21 +20,6 @@ FAT_Foreign_decision_categories = {
 	}
 	priority = 10
 }
-
-REP_FAT_TAKE_NTR = {
-	icon = REP_FAT_TAKE_NTR_pic
-	allowed = {
-		original_tag = FAT
-	}
-	visible = {
-		NOT = {
-			country_exists = NTR
-		}
-	}
-	priority = 10
-}
-
-
 FAT_vs_HAU_category = {
 	icon = x
 	allowed = {

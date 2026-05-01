@@ -170,9 +170,7 @@ focus_tree = {
 			focus = FAT_minzhu
 		}
 		available = {
-			NOT = {
-				has_completed_focus = FAT_fanshijiuzhilu
-			}
+			has_country_flag = FAT_dapotianhuaban_flag
 		}
 		#mutually_exclusive = {
 		#	focus = FAT_fanshijiuzhilu
@@ -420,9 +418,7 @@ focus_tree = {
 			focus = FAT_minzhu
 		}
 		available = {
-			NOT = {
-				has_completed_focus = FAT_dapotianhuaban
-			}
+			has_country_flag = FAT_fanshijiuzhilu_flag
 		}
 		#mutually_exclusive = {
 		#	focus = FAT_dapotianhuaban

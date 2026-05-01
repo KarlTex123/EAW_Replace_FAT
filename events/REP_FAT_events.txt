@@ -2097,11 +2097,13 @@ country_event = { #民主与民族问题
 
 	option = {
 		name = FAT_FP.73.a
-		complcomplete_national_focus = FAT_fanshijiuzhilu
+		complete_national_focus = FAT_fanshijiuzhilu
+		set_country_flag = FAT_fanshijiuzhilu_flag
 	}
 	option = {
 		name = FAT_FP.73.b
-		complcomplete_national_focus = FAT_dapotianhuaban
+		complete_national_focus = FAT_dapotianhuaban
+		set_country_flag = FAT_dapotianhuaban_flag
 	}
 }
 country_event = { #执行委员会的讨论

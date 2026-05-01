@@ -43,6 +43,17 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 	}
 }
+division_template = {
+	name = "Local Levy"
+	division_names_group = ABY_INF_01
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
 units = {
 	#######主力师#############
 	division = {

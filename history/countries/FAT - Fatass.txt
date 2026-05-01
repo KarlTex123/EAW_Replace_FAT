@@ -137,7 +137,6 @@ set_politics = {
 set_country_flag = has_custom_advisors
 set_country_flag = has_custom_spymaster
 add_ideas = {
-
 	###修改
 	FAT_walk_on_cloud_army_school_idea
 	###

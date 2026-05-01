@@ -9,10 +9,16 @@ country_event = {
     option = { # 正常难度
         name = REP_FAT_Difficult_Select.1.a
 		custom_effect_tooltip = REP_FAT_Difficult_Select.1.a.desc
+		hidden_effect = {
+			country_lock_all_division_template = no
+		}
 	}
 	option = { # 烙馍难度
         name = REP_FAT_Difficult_Select.2.a
 		custom_effect_tooltip = REP_FAT_Difficult_Select.2.a.desc
+		hidden_effect = {
+			country_lock_all_division_template = no
+		}
 		GRI = {
 			add_ideas = REP_FAT_GRI_UP_1
     	}
@@ -20,6 +26,9 @@ country_event = {
 	option = { # 小羊难度
         name = REP_FAT_Difficult_Select.3.a
 		custom_effect_tooltip = REP_FAT_Difficult_Select.3.a.desc
+		hidden_effect = {
+			country_lock_all_division_template = no
+		}
 		GRI = {
 			add_ideas = REP_FAT_GRI_UP_2
     	}
@@ -27,6 +36,9 @@ country_event = {
 	option = { # 好孩子难度
         name = REP_FAT_Difficult_Select.4.a
 		custom_effect_tooltip = REP_FAT_Difficult_Select.4.a.desc
+		hidden_effect = {
+			country_lock_all_division_template = no
+		}
 		GRI = {
 			add_ideas = REP_FAT_GRI_UP_3
 			annex_country = {
