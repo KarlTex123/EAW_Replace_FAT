@@ -92,7 +92,7 @@ FAT_liberty = {
 
 FAT_prosperity_f = {
 	enable = { always = yes }
-	icon = GFX_modifiers_FAT_liberty
+	icon = GFX_modifiers_FAT_prosperity_f
 	
 				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR
 				production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor

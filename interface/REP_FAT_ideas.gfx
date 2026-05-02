@@ -4,8 +4,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FAT_Reduce_rent_and_interest.png" 
 	}	
 	SpriteType = { 
-		name = "GFX_idea_FAT_minsheng_0"
-		texturefile = "gfx/interface/ideas/FAT_minsheng.png" 
+		name = "GFX_modifiers_FAT_prosperity_f"
+		texturefile = "gfx/interface/ideas/FAT_prosperity_f.png" 
 	}	
 	SpriteType = { 
 		name = "GFX_idea_FAT_Reduce_rent_and_interest_1"
@@ -135,6 +135,10 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_modifiers_FAT_liberty"
 		texturefile = "gfx/interface/ideas/FAT_liberty.png" 
+	}
+	SpriteType = { 
+		name = "GFX_modifiers_FAT_democracy_f"
+		texturefile = "gfx/interface/ideas/FAT_democracy_f.png" 
 	}
 	SpriteType = { 
 		name = "GFX_idea_Proclamation_of_Civil_War_Mobilization"
