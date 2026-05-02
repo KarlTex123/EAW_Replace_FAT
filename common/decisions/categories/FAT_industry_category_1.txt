@@ -5,6 +5,5 @@ FAT_industry_decision_category_1 = {
 		has_idea = FAT_FP_jingji_idea
 	}
 	visible_when_empty = yes
-	scripted_gui = 	FAT_industry_decision_category_1_ui 
 	priority = 10
 }
