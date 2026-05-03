@@ -56,7 +56,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FAT_education_reform_idea.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_FAT_industrialization"
+		name = "GFX_idea_FAT_industrialization_1"
 		texturefile = "gfx/interface/ideas/FAT_industrialization.png" 
 	}	
 	SpriteType = { 

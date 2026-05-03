@@ -1445,7 +1445,7 @@ country_event = { #工会模式
 
 	option = {
 		name = FAT_FP.37.a
-		set_country_flag = gonghuimoshi_1
+		add_ideas = FAT_industrialization_1
 		F02 = {
 			set_variable = {
 				support_ideology = 4
@@ -1460,7 +1460,7 @@ country_event = { #工会模式
 	}
 	option = {
 		name = FAT_FP.37.b
-		set_country_flag = gonghuimoshi_2
+		add_ideas = FAT_industrialization_2
 		set_variable = {
 			F02_gonghuimoshi_2_var = 1
 		}

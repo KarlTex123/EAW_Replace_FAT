@@ -1049,18 +1049,6 @@ focus_tree = {
 		relative_position_id = FAT_gonghuifa
 		completion_reward = {
 			increase_society_development_gradual = yes
-			if = {
-				limit = {
-					has_country_flag = gonghuimoshi_1
-				}
-				add_ideas = FAT_industrialization_1
-			}
-			if = {
-				limit = {
-					has_country_flag = gonghuimoshi_2
-				}
-				add_ideas = FAT_industrialization_2
-			}
 		}
 	}
 	focus = { #工伤保险及失业保障
