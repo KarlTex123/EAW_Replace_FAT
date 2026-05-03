@@ -29,7 +29,7 @@ FAT_manyun_city_modifier = { #漫云地区修正
 	icon = GFX_modifiers_generic_railways
 
 	production_speed_buildings_factor = 0.2
-	LOCAL_BUILDING_SLOTS_FACTOR = 0.15
+	global_building_slots_factor = 0.15
 }
 FAT_other_city_modifier = { #非漫云地区修正
 	enable = { always = yes }

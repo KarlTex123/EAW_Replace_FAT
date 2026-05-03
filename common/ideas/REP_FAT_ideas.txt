@@ -394,7 +394,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				monthly_population = 0.3
 				political_power_gain = -0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 				experience_loss_factor = -0.2
 			}			
 		}	
@@ -408,7 +408,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				monthly_population = 0.3
 				political_power_gain = -0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 				experience_loss_factor = -0.2
 			}			
 		}
@@ -417,7 +417,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 			}				
 		}
 		FAT_Land_collectivization_1 = {
@@ -425,7 +425,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -434,7 +434,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 				consumer_goods_factor = -0.05
 				local_resources_factor = 0.1
 			}
@@ -444,7 +444,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 				local_resources_factor = 0.1			
 			}				
 		}
@@ -453,7 +453,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 			}
 		}	
 		FAT_Reduce_rent_and_interest_1 = { #减租减息 #农业2
@@ -461,7 +461,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 				local_resources_factor = 0.1
 			}
 		}	

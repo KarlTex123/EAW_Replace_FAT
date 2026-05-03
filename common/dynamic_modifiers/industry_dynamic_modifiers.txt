@@ -3,7 +3,7 @@ industry_modifier_1 = {
 	icon = GFX_modifiers_increased_metal_production
 
 	local_building_slots = 3 #最大工业值
-	local_building_slots_factor = 0.5 #最大工业值百分比
+	global_building_slots_factor = 0.5 #最大工业值百分比
 	state_production_speed_buildings_factor = -0.1 #建造速度
 	local_factories = 0.2 #本地工厂数
 }
@@ -12,7 +12,7 @@ industry_modifier_2 = {
 	enable = { always = yes }
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
 
-	local_building_slots_factor = -0.6 #最大工业值百分比
+	global_building_slots_factor = -0.6 #最大工业值百分比
 	local_resources_factor = 0.3
 }
 
