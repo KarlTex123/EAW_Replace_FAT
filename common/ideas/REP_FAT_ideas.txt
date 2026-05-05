@@ -929,7 +929,7 @@ ideas = {
 			}
 		}
 		Industrial_heart = { #心脏
-			picture = Industrial_heart
+			picture = GFX_idea_Industrial_heart
 			allowed = {
 				always = no
 			}
@@ -1074,7 +1074,7 @@ ideas = {
 			}			
 		}
 		FAT_Language_confusion = { #文化多元
-			picture = unhappy_army_3
+			picture = GFX_idea_FAT_Language_confusion
 			allowed = {
 				always = no
 			}

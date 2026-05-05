@@ -1,8 +1,45 @@
 spriteTypes = {
 	SpriteType = { 
+		name = "GFX_idea_FAT_shiduquanlixiafang_idea"
+		texturefile = "gfx/interface/ideas/FAT_shiduquanlixiafan.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_heerzhizhi_idea"
+		texturefile = "gfx/interface/ideas/FAT_heerzhizhi.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_heerbutong_idea"
+		texturefile = "gfx/interface/ideas/FAT_heerbutong.png" 
+	}	
+	SpriteType = { 
+		name = "GFX_idea_FAT_Language_confusion"
+		texturefile = "gfx/interface/ideas/FAT_Language_confusion.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_guofujingshen_idea"
+		texturefile = "gfx/interface/ideas/FAT_guofujingshen.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_Industrial_heart"
+		texturefile = "gfx/interface/ideas/Industrial_heart.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_fanshijiulixiang_idea"
+		texturefile = "gfx/interface/ideas/FAT_fanshijiulixiang.png" 
+	}	
+	SpriteType = { 
+		name = "GFX_idea_FAT_Language_confusion"
+		texturefile = "gfx/interface/ideas/FAT_Language_confusion.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_1"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	#################################################################################
+	SpriteType = { 
 		name = "GFX_idea_FAT_Reduce_rent_and_interest"
 		texturefile = "gfx/interface/ideas/FAT_Reduce_rent_and_interest.png" 
-	}	
+	}		
 	SpriteType = { 
 		name = "GFX_modifiers_FAT_prosperity_f"
 		texturefile = "gfx/interface/ideas/FAT_prosperity_f.png" 
