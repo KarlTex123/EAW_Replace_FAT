@@ -16,7 +16,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FAT_Language_confusion.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_FAT_guofujingshen_idea"
+		name = "GFX_idea_FAT_guofujingshen"
 		texturefile = "gfx/interface/ideas/FAT_guofujingshen.png" 
 	}
 	SpriteType = { 
@@ -27,6 +27,14 @@ spriteTypes = {
 		name = "GFX_idea_FAT_fanshijiulixiang_idea"
 		texturefile = "gfx/interface/ideas/FAT_fanshijiulixiang.png" 
 	}	
+	SpriteType = { 
+		name = "GFX_idea_FAT_fanshijiulixiang_idea_2"
+		texturefile = "gfx/interface/ideas/FAT_fanshijiulixiang.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_fanshijiulixiang_idea_3"
+		texturefile = "gfx/interface/ideas/FAT_fanshijiulixiang.png" 
+	}
 	SpriteType = { 
 		name = "GFX_idea_FAT_Language_confusion"
 		texturefile = "gfx/interface/ideas/FAT_Language_confusion.png" 
