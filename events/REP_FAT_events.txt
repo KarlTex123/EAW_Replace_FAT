@@ -2132,6 +2132,91 @@ country_event = { #体制龃龉
 		name = FAT_FP.75.a
 	}
 }
+country_event = { #少校与画匠
+	id = FAT_FP.76
+	title = FAT_FP.76.t
+	desc = FAT_FP.76.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.76.a
+		country_event = {
+			id = FAT_FP.77
+			days = 60
+		}		
+	}
+}
+
+country_event = { #少校与画匠
+	id = FAT_FP.77
+	title = FAT_FP.77.t
+	desc = FAT_FP.77.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.77.a
+		country_event = {
+			id = FAT_FP.78
+			days = 60
+		}
+	}
+}
+
+country_event = { #少校与画匠
+	id = FAT_FP.78
+	title = FAT_FP.78.t
+	desc = FAT_FP.78.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.78.a
+		country_event = {
+			id = FAT_FP.79
+			days = 60
+		}
+	}
+}
+
+country_event = { #少校与画匠
+	id = FAT_FP.79
+	title = FAT_FP.79.t
+	desc = FAT_FP.79.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.79.a
+		country_event = {
+			id = FAT_FP.80
+			days = 60
+		}
+	}
+}
+
+country_event = { #少校与画匠
+	id = FAT_FP.80
+	title = FAT_FP.80.t
+	desc = FAT_FP.80.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_FP.80.a
+	}
+}
 
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1

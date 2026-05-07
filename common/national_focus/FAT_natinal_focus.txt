@@ -261,7 +261,11 @@ focus_tree = {
 		}
 		relative_position_id = FAT_guominzhuquan
 		completion_reward = {
-			country_event = FAT_FP.18
+			country_event = { id = FAT_FP.18}
+			country_event = {
+				id = FAT_FP.76
+				days = 30
+			}
 		}
 	}
 	focus = { #选举大法官
