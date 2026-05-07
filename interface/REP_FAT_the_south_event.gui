@@ -1,6 +1,17 @@
 guiTypes = {
 
 	containerWindowType = {
+		name = "REP_FAT_the_south_event_ui_button"
+		position = { x = 500 y = 255 }
+		size = { width = 100%% height = 100%% }
+		buttonType = {
+		    name = "REP_FAT_the_south_event_ui_button_icon" #占位符
+		    spriteType = "x"
+		    position = { x = 0 y = 0 }
+		}
+	}
+
+	containerWindowType = {
 		name = "REP_FAT_the_south_event_ui_window"
 		position = { x = 0 y = 0 }
 		size = { width = 2000 height = 1300 } 
@@ -13,27 +24,27 @@ guiTypes = {
 			quadTextureSprite ="GFX_REP_FAT_the_south_event_ui_window_background"
 		}
 
-		buttonType = { #换页按钮
-			name = "REP_FAT_the_south_decisions_change_page_button_1" #按钮框名称
-			position = { x = -250 y = -380 } #位置 
-			orientation= CENTER
-			quadTextureSprite ="GFX_button_221x34_anim"
-			clicksound = click_default 
-		}
-		buttonType = { #换页按钮
-			name = "REP_FAT_the_south_decisions_change_page_button_2" #按钮框名称
-			position = { x = -250 y = -380 } #位置 
-			orientation= CENTER
-			quadTextureSprite ="GFX_button_221x34_anim"
-			clicksound = click_default 
-		}
-		buttonType = { #换页按钮
-			name = "REP_FAT_the_south_decisions_change_page_button_3" #按钮框名称
-			position = { x = -250 y = -380 } #位置 
-			orientation= CENTER
-			quadTextureSprite ="GFX_button_221x34_anim"
-			clicksound = click_default 
-		}
+#		buttonType = { #换页按钮
+#			name = "REP_FAT_the_south_decisions_change_page_button_1" #按钮框名称
+#			position = { x = -250 y = -380 } #位置 
+#			orientation= CENTER
+#			quadTextureSprite ="GFX_button_221x34_anim"
+#			clicksound = click_default 
+#		}
+#		buttonType = { #换页按钮
+#			name = "REP_FAT_the_south_decisions_change_page_button_2" #按钮框名称
+#			position = { x = -250 y = -380 } #位置 
+#			orientation= CENTER
+#			quadTextureSprite ="GFX_button_221x34_anim"
+#			clicksound = click_default 
+#		}
+#		buttonType = { #换页按钮
+#			name = "REP_FAT_the_south_decisions_change_page_button_3" #按钮框名称
+#			position = { x = -250 y = -380 } #位置 
+#			orientation= CENTER
+#			quadTextureSprite ="GFX_button_221x34_anim"
+#			clicksound = click_default 
+#		}
 
 		icontype = {
 			name = "REP_FAT_the_south_decisions_picture"
@@ -77,97 +88,6 @@ guiTypes = {
 			clicksound = click_default 
 			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_1_PT"
 		}	
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_5" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_5_PT"
-		}	
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_6" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_6_PT"
-		}
-##########################################第二个省份#############################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_9" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_1_PT"
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_10" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_5_PT"
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_14" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_9_PT"
-		}
-############################################第三个省份############################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_17" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_1_PT"
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_21" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_5_PT"
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_22" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_12_PT"
-		}
-############################################第四个省份############################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_25" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_1_PT"
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_28" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_5_PT"
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_30" #按钮框名称
-			position = { x = -265 y = -320 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_15_PT"
-		}
 ########################################################################################################
 		instantTextBoxType = { #决议文本
 			name = "REP_FAT_the_south_decisions_text_1" 
@@ -180,7 +100,6 @@ guiTypes = {
 			format = left #对齐方式
 		} 	
 #########################################################第二个按钮################################################
-##########################################################第一个省份###############################################
 		buttonType = { #按钮
 			name = "REP_FAT_the_south_decisions_selete_button_2" #按钮框名称
 			position = { x = -265 y = -240 } #位置 
@@ -188,65 +107,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
 			clicksound = click_default
 			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_2_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_7" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_7_PT"
-		}	
-########################################################第二个省份#######################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_11" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_2_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_15" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_10_PT"
-		}
-#####################################################第三个省份###########################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_18" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_2_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_23" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_13_PT"
-		}
-#####################################################第四个省份###########################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_26" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_2_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_31" #按钮框名称
-			position = { x = -265 y = -240 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_16_PT"
 		}
 ###########################################################################################################
 		instantTextBoxType = { #决议文本
@@ -260,7 +120,6 @@ guiTypes = {
 			format = left #对齐方式
 		} 
 ####################################################第三个按钮##############################################################
-####################################################第一个省份########################################################
 		buttonType = { #按钮
 			name = "REP_FAT_the_south_decisions_selete_button_3" #按钮框名称
 			position = { x = -265 y = -160 } #位置 
@@ -268,65 +127,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
 			clicksound = click_default 
 			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_3_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_8" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_8_PT"
-		}
-######################################################第二个省份##########################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_12" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_3_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_16" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_11_PT"
-		}
-####################################################第三个省份############################################################ 
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_19" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_3_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_24" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_14_PT"
-		}
-####################################################第四个省份############################################################ 
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_27" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_3_PT" 
-		}
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_32" #按钮框名称
-			position = { x = -265 y = -160 } #位置 
-			orientation= CENTER
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_17_PT"
 		}
 ################################################################################################################
 		instantTextBoxType = { #决议文本
@@ -349,33 +149,6 @@ guiTypes = {
 			clicksound = click_default 
 			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_4_PT" 
 		}
-################################################################################################################	
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_13" #按钮框名称
-			position = { x = -265 y = -80 } #位置 
-			orientation= center
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_4_PT" 
-		}
-####################################################################################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_20" #按钮框名称
-			position = { x = -265 y = -80 } #位置 
-			orientation= center
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_4_PT" 
-		}
-####################################################################################################################
-		buttonType = { #按钮
-			name = "REP_FAT_the_south_decisions_selete_button_29" #按钮框名称
-			position = { x = -265 y = -80 } #位置 
-			orientation= center
-			quadTextureSprite = "GFX_REP_FAT_the_south_decisons_selet_button" 
-			clicksound = click_default 
-			pdx_tooltip = "REP_FAT_the_south_decisions_selete_button_4_PT" 
-		}
 ###############################################################################################################
 		instantTextBoxType = { #决议文本
 			name = "REP_FAT_the_south_decisions_text_4" 
@@ -391,8 +164,8 @@ guiTypes = {
 		iconType = { #南方领导人肖像
 			name = "REP_FAT_the_south_leader_porits_picture"
 			centerposition = no 
-			position = { x = -670 y = -875 } 
-			Orientation = CENTER 
+			position = { x = 328 y = 125 } 
+			Orientation = LEFT 
 		}
 
 		iconType = { #罗马拆分

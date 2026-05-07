@@ -125,13 +125,38 @@ REP_FAT_political_billing = { #政治宣传栏
 	scripted_gui = REP_FAT_propaganda_campaigns_ui 
 }
 
-REP_FAT_core_the_state = { #整合地区决议
+# REP_FAT_core_the_state = { #整合地区决议
+# 
+# 	icon = x
+# 	allowed = {
+# 		original_tag = FAT   
+# 	}
+# 	priority = 10000
+# 	visible_when_empty = no
+# }
 
+ REP_FAT_core_the_state_NEW = { #泛狮鹫尼亚理想
+ 
+ 	icon = x
+ 	allowed = {
+ 		original_tag = FAT   
+ 	}
+	visible = {
+		has_country_flag = FAT_core_the_state_NEW_flag
+	}
+ 	priority = 10000
+ 	visible_when_empty = yes
+ }
+
+ REP_FAT_SouthREP_decision_categories = { #南方共和党决议
 	icon = x
 	allowed = {
-		original_tag = FAT   
+		original_tag = FAT
 	}
-	priority = 10000
+	visible = {
+		has_country_flag = REP_FAT_the_SouthREP_flag
+	}
+	priority = 12000
 	visible_when_empty = no
 }
 

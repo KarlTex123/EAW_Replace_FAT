@@ -1,4 +1,11 @@
-﻿division_template = {
+﻿#开局进行国策
+focus = {
+	current = "FAT_sanshiniangonghemeng"
+	progress = 10
+}
+
+
+division_template = {
 	name = "国民革命军主力师"			#Infantry Division - kek
 	division_names_group = FAT_Inf_01
 	regiments = {

@@ -190,6 +190,28 @@ on_actions = {
 			FAT_check_and_remove = yes
 		}
 	}
+
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					382 = {
+						is_owned_by = FAT
+					}
+					GRI = {
+						exists = no
+					}
+				}
+				FAT = {
+					country_event = {
+						id = FAT_DIP_Focus.13
+					}
+				}
+				clr_country_flag = REP_FAT_the_south_event_ui_window_flag
+				clr_country_flag = REP_FAT_the_SouthREP_flag
+			}
+		}
+	}
 }
 
 

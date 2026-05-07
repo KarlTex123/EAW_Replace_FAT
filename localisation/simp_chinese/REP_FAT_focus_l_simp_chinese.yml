@@ -286,15 +286,27 @@ FAT_Priority_support_desc:0 "共和空军最重要的不是拿着仅有的战斗
 FAT_Maintain_deterrence_desc:0 "将战斗机浪费在不合适的任务中是不明智的，空中的战斗必须优先保证自己的生存。我们需要确保机队的数量，时刻保持空中威慑以限制敌人的空中活动。"
 FAT_Ideal_touches_the_sky_desc:0 "我们的空军将会把我们的理想带入蓝天之上！共和空军羽翼丰满战备充足，飞行员斗志昂扬，时刻准备对抗任何来犯敌人。"
 
+####################第一阶段善后################
+FAT_HUANGGUANLUODI:0 "皇冠落地"
+FAT_HUANGGUANLUODI_desc:0 "这一天终于到来了，随着狮鹫帝国这一反动堡垒的彻底解放，我们已经确保了革命的胜利，是时候展望未来了"
 
+FAT_HEZILANLANDIAO:0 "赫兹兰蓝调"
+FAT_HEZILANLANDIAO_desc:0 "狮鹫帝国被解放以后，曾经的帝国公约领土已经尽数被我们控制，我们需要清除君主制和落后思想的遗毒，将民主共和思想散播在这片曾经被乌云笼罩的土地上。“
 
+FAT_GUIZUZHIMINGYUN:0 "贵族之命运"
+FAT_GUIZUZHIMINGYUN_desc:0 "我们不能忘记这些贵族给赫兹兰鹫民带来的深重压迫，她们只凭血统就可以高鹫一等，发动对贵族的清算，彻底抹除这种不平等。”
 
+FAT_SHENGUANZHIMINGYUN:0 "神官之命运"
+FAT_SHENGUANZHIMINGYUN_desc:0 "神官，这个职业作为皇帝的喉舌已经犯下了数不清的罪孽，帝国的倒台让他们再也无所遁形，是时候清算他们了。"
 
+FAT_GELUOFUZHIMINGYUN:0 "格罗弗之命运"
+FAT_GELUOFUZHIMINGYUN_desc:0 "格罗弗家族，作为绵延了数百年的皇帝世家，其对于整片大陆犯下的罪行已经无法估量，然而讽刺的是，这个家族的直系血脉只剩下了一个没有成年的小鹫，我们应该如何处置他呢？"
 
+FAT_HEZILANDEGEMING:0 "赫兹兰的革命"
+FAT_HEZILANDEGEMING_desc:0 "随着赫兹兰各地区的逐渐稳定，我们推行的革命国策也得到了保障，接下来只需要处理好各派系的关系，共和国的未来一片光明！"
 
-
-
-
+FAT_GONGHEGUODEWEILAI:0 "共和国的未来"
+FAT_GONGHEGUODEWEILAI_desc:0 "虽然各派系都在蠢蠢欲动试图让自己更加接近权力的巅峰，但是大总统克梅斯凯的个鹫声望仍然可以压制住他们，我们需要尽快召开国会，举行民主选举，来决定共和国的未来。"
 
 
 

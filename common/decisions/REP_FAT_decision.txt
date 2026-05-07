@@ -650,8 +650,450 @@ REP_FAT_annex_NTR_1 = {
 	}
 }
 
+########泛狮鹫尼亚理想########
+REP_FAT_core_the_state_NEW = {
+	annex_griffon_country = {
+		icon = x
+		cost = 50
+		days_remove = 150
+		fire_only_once = yes
+		target_non_existing = yes
+		target_trigger = {
+			 
+			FROM = {
+				is_griffon_race = yes
+				all_core_state = {
+					is_owned_and_controlled_by = FAT
+					NOT = {
+						is_core_of = FAT
+					}
+				}
+				check_variable = {
+					core_states > 0
+				}
+			}
 
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = FROM
+				}
+				add_core_of = FAT
+			}
+		}
+	}
+}
 
+########南方共和党决议########
+REP_FAT_SouthREP_decision_categories = {
+	SouthREP_state_number_2_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_2_1
+		}
+	}
+	SouthREP_state_number_2_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_2_2
+		}
+	}
+	SouthREP_state_number_2_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_2_3
+		}
+	}
+	SouthREP_state_number_3_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_3_1
+		}
+	}
+	SouthREP_state_number_3_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_3_2
+		}
+	}
+	SouthREP_state_number_3_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_3_3
+		}
+	}
+	SouthREP_state_number_4_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_4_1
+		}
+	}
+	SouthREP_state_number_4_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_4_2
+		}
+	}
+	SouthREP_state_number_4_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_4_3
+		}
+	}
+	SouthREP_state_number_5_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_5_1
+		}
+	}
+	SouthREP_state_number_5_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_5_2
+		}
+	}
+	SouthREP_state_number_5_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_5_3
+		}
+	}
+	SouthREP_state_number_6_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_6_1
+		}
+	}
+	SouthREP_state_number_6_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_6_2
+		}
+	}
+	SouthREP_state_number_6_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_6_3
+		}
+	}
+	SouthREP_state_number_8_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_8_1
+		}
+	}
+	SouthREP_state_number_8_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_8_2
+		}
+	}
+	SouthREP_state_number_8_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_8_3
+		}
+	}
+	SouthREP_state_number_9_1_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_9_1
+		}
+	}
+	SouthREP_state_number_9_2_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_9_2
+		}
+	}
+	SouthREP_state_number_9_3_mission = {
+		icon = x
+		allowed = {}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_global_flag = SouthREP_state_number_9_3
+		}
+	}
 
+	SouthREP_Select_Leader_Bluhm = { #激活布鲁姆成为领导人
+		icon = x
+		visible = {
+			has_country_flag = REP_FAT_the_SouthREP_flag
+			NOT = {
+				check_variable = {
+					FAT_REP_THE_S_L = 1
+				}
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = FAT_SouthREP_leader_locked
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				FAT_REP_THE_S_L = 1
+			}
+			set_country_flag = {
+				flag = FAT_SouthREP_leader_locked
+				days = 200
+				value = 1
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = FAT_SouthREP_leader_1_locked
+					}
+				}
+				country_event = {
+					id = FAT_DIP_SouthREP.4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_HEZILANDESANMINZHUYI
+						has_idea = FAT_HEZILANDEKEMEISIKAI
+					}
+				}
+				add_ideas = {
+					FAT_HEZILANDESANMINZHUYI
+				}
+			}
+			else = {
+				swap_ideas = {
+			    remove_idea = FAT_HEZILANDEKEMEISIKAI
+			    add_idea = FAT_HEZILANDESANMINZHUYI
+				}
+			}
+		}
+	}
+
+	SouthREP_Select_Leader_Gabriella = { #激活嘉比蕾拉成为领导人
+		icon = x
+		visible = {
+			has_country_flag = REP_FAT_the_SouthREP_flag
+			NOT = {
+				check_variable = {
+					FAT_REP_THE_S_L = 2
+				}
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = FAT_SouthREP_leader_locked
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				FAT_REP_THE_S_L = 2
+			}
+			set_country_flag = {
+				flag = FAT_SouthREP_leader_locked
+				days = 200
+				value = 1
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = FAT_SouthREP_leader_2_locked
+					}
+				}
+				country_event = {
+					id = FAT_DIP_SouthREP.5
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_HEZILANDESANMINZHUYI
+						has_idea = FAT_HEZILANDEKEMEISIKAI
+					}
+				}
+				add_ideas = {
+					FAT_HEZILANDESANMINZHUYI
+				}
+			}
+			else = {
+				swap_ideas = {
+			    remove_idea = FAT_HEZILANDESANMINZHUYI
+			    add_idea = FAT_HEZILANDEKEMEISIKAI
+				}
+			}
+		}
+	}
+
+}
 
 

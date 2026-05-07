@@ -1816,6 +1816,7 @@ l_simp_chinese:
  FAW_military_council:0 "军政委员会"
  FAW_corbin_redfluff:0 "科尔宾·红绒"
  FAT_alexander_kemerskai_jr:0 "小亚历山大·克梅斯凯"
+ FAT_alexander_kemerskai_jr_desc:0 "小克梅斯凯既没有他父亲的威望，也没有他父亲的能力，他的上台完全就是各方派系在风暴之前临时妥协产物，所有鹫和马都知道，在大总统克梅斯凯去世以后，小克梅斯凯就是一个政治吉祥物，大帐篷里面的三大派系几乎是无视着他进行登顶权力巅峰的准备。虽然他竭力得维护着他父亲的政治遗产，但是没有鹫相信他能完成这个任务，共和国的未来永远不在他爪中。"
  FAT_schnabel_sunglider:0 "施纳贝尔·翔日"
  FAT_claus_rosewing:0 "克劳斯·瑰翼"
  FAT_chiron_stormfeather:0 "喀戎·暴风羽"
@@ -2306,3 +2307,10 @@ l_simp_chinese:
 
  FAT_Kemsky_Comments_on_the_Regent_Gabriella_of_the_Griffin_Empire:0 "克梅斯凯评论狮鹫帝国摄政嘉比蕾拉"
  FAT_Kemsky_Comments_on_the_Regent_Gabriella_of_the_Griffin_Empire_desc:0 "嘉比蕾拉,当年反革命军队中最有号召力的一位狮鹫,成为了帝国的摄政王,我们需要尽快决定我们的立场。"
+
+ FAT_gemingdegaochao_flag:0 "狮鹫帝国已经彻底落败"
+ FAT_GONGHEGUODEWEILAI_tt:0 "共和国将会在克梅斯凯和军队的监督下举行民主选举来决定他的命运。"
+ FAT_core_the_state_NEW_flag_tt:0 "泛狮鹫尼亚理想机制将会可用！\n将可以整合所有以狮鹫种族为主体的国家。"
+
+ FAT_SouthREP_Revolution_tt:0 "革命的愈演愈烈"
+ FAT_SouthREP_RevolutionFire_idea_tt:0 "革命怒焰"

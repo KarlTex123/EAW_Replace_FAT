@@ -2082,6 +2082,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = { #击碎皇冠
 		id = FAT_JISUIHUANGGUAN
 		icon = GFX_goal_FAT_JISUIHUANGGUAN
@@ -2101,7 +2102,161 @@ focus_tree = {
 			}
 		}
 	}
-	#focus = { #小马大陆的朋友
+
+	focus = { #皇冠落地
+		id = FAT_HUANGGUANLUODI
+		icon = GFX_goal_FAT_HUANGGUANLUODI
+		cost = 2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_JISUIHUANGGUAN
+		}
+		available = {
+			has_country_flag = FAT_gemingdegaochao_flag
+			382 = {
+				is_owned_by = FAT
+			}
+		}
+		relative_position_id = FAT_JISUIHUANGGUAN
+		allow_branch = { ROOT = { has_country_flag = FAT_gemingdegaochao_flag } }
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 50
+		}
+	}
+
+	focus = { #赫兹兰蓝调
+		id = FAT_HEZILANLANDIAO
+		icon = GFX_goal_FAT_HEZILANLANDIAO
+		cost = 2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_HUANGGUANLUODI
+		}
+		available = {
+		}
+		relative_position_id = FAT_HUANGGUANLUODI
+		completion_reward = {
+			set_country_flag = FAT_core_the_state_NEW_flag
+			custom_effect_tooltip = FAT_core_the_state_NEW_flag_tt
+		}
+	}
+
+	focus = { #贵族之命运
+		id = FAT_GUIZUZHIMINGYUN
+		icon = GFX_goal_FAT_GUIZUZHIMINGYUN
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = FAT_HEZILANLANDIAO
+		}
+		available = {
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.14
+			}
+		}
+	}
+
+	focus = { #格罗弗之命运
+		id = FAT_GELUOFUZHIMINGYUN
+		icon = GFX_goal_FAT_GELUOFUZHIMINGYUN
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FAT_HEZILANLANDIAO
+		}
+		bypass = {
+			has_global_flag = GRI_grover_vi_dead
+		}
+		available = {
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.16
+			}
+		}
+	}
+
+	focus = { #神官之命运
+		id = FAT_SHENGUANZHIMINGYUN
+		icon = GFX_goal_FAT_SHENGUANZHIMINGYUN
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FAT_HEZILANLANDIAO
+		}
+		available = {
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.15
+			}
+		}
+	}
+
+	focus = { #赫兹兰的革命
+		id = FAT_HEZILANDEGEMING
+		icon = GFX_goal_FAT_HEZILANDEGEMING
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FAT_GUIZUZHIMINGYUN
+		}
+		prerequisite = {
+			focus = FAT_GELUOFUZHIMINGYUN
+		}
+		prerequisite = {
+			focus = FAT_SHENGUANZHIMINGYUN
+		}
+		available = {
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+		completion_reward = { 
+			add_political_power = 100
+			add_stability = 0.2
+		}
+	}
+
+	focus = { #共和国的未来
+		id = FAT_GONGHEGUODEWEILAI
+		icon = GFX_goal_FAT_GONGHEGUODEWEILAI
+		cost = 6.5
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = FAT_HEZILANDEGEMING
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = FAT_GONGHEGUODEWEILAI_flag } 
+			}
+		}
+
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = FAT_START_LEVELTWO.1 days = 10 }
+			}
+
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+		completion_reward = {
+			custom_effect_tooltip = FAT_GONGHEGUODEWEILAI_tt
+
+		}
+		cancelable = no
+	}
+
 	#	id = FAT_XIAOMAPENGYOU
 	#	icon = GFX_goal_FAT_XIAOMAPENGYOU
 	#	cost = 5

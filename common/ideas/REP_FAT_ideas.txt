@@ -1027,7 +1027,37 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}			
 		}
+		
+		FAT_SouthREP_RevolutionFire_idea = { #革命怒焰
+			picture = ger_mefo_bills #占位符
+
+			removal_cost = -1
+			modifier = {
+				army_claim_attack_factor = 0.1
+				army_claim_defence_factor = 0.1
+			}
+		}
+
+		#(赫兹兰的)克梅斯凯
+		FAT_HEZILANDEKEMEISIKAI = {
+			picture = ger_mefo_bills #占位符
+			removal_cost = -1
+			modifier = {
+				compliance_growth_on_our_occupied_states = 0.2
+				weekly_manpower = 300
+				supply_consumption_factor = -0.1
+			}
+		}
+
+		#(赫兹兰的)三民主义
+		FAT_HEZILANDESANMINZHUYI = {
+			picture = ger_mefo_bills #占位符
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.05
+				planning_speed = 0.2
+				max_planning_factor = 0.1
+			}
+		}
 	}
 }
-
-

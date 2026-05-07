@@ -4,8 +4,10 @@ add_namespace = FAT_FP
 add_namespace = test_FAT_start
 add_namespace = FAT_alexander_kemerskai_trait
 add_namespace = FAT_DIP_Focus
+add_namespace = FAT_DIP_SouthREP
 add_namespace = FAT_VED_REV
 add_namespace = FAT_DIP_News
+add_namespace = FAT_START_LEVELTWO
 news_event = {
 	id = test_FAT_start.1 
 	title = test_FAT_start.1.title 
@@ -375,11 +377,19 @@ country_event = { #
 	option = {
 		name = REP_FAT_history.9.1
 		set_country_flag = REP_FAT_the_south_event_ui_window_flag
+		set_country_flag = REP_FAT_the_SouthREP_flag
+		set_variable = {SouthREP_state_number_2 = 0 }
+		set_variable = {SouthREP_state_number_3 = 0 }
+		set_variable = {SouthREP_state_number_4 = 0 }
+		set_variable = {SouthREP_state_number_5 = 0 }
+		set_variable = {SouthREP_state_number_6 = 0 }
+		set_variable = {SouthREP_state_number_8 = 0 }
+		set_variable = {SouthREP_state_number_9 = 0 }
 	}
 }
 
 
-country_event = { #来自狮鹫共和国的最后通牒
+country_event = { #来自狮鹫共和国的最后通令
 	id = FAT_FP.1
 	picture = FAT_FP.1.p
 	title = FAT_FP.1.t
@@ -2521,6 +2531,185 @@ country_event = { #维迪纳选项2
     		target = VED 
     		type = annex_everything 
 		}
+	}
+}
+
+country_event = { #革命的高潮
+	id = FAT_DIP_Focus.13
+	picture = FAT_DIP_Focus.13.p
+	title = FAT_DIP_Focus.13.t
+	desc = FAT_DIP_Focus.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.13.1
+		FAT = {
+			set_country_flag = FAT_gemingdegaochao_flag
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = { #贵族的命运
+	id = FAT_DIP_Focus.14
+	picture = FAT_DIP_Focus.14.p
+	title = FAT_DIP_Focus.14.t
+	desc = FAT_DIP_Focus.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.14.1
+	}
+}
+
+country_event = { #神官的命运
+	id = FAT_DIP_Focus.15
+	picture = FAT_DIP_Focus.15.p
+	title = FAT_DIP_Focus.15.t
+	desc = FAT_DIP_Focus.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.15.1
+	}
+}
+
+country_event = { #格罗弗家族的命运
+	id = FAT_DIP_Focus.16
+	picture = FAT_DIP_Focus.16.p
+	title = FAT_DIP_Focus.16.t
+	desc = FAT_DIP_Focus.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_DIP_Focus.16.1
+	}
+}
+
+country_event = { #时代的终结
+	id = FAT_START_LEVELTWO.1
+	picture = GFX_FAT_DIP_STARTTWOLEVEL
+	title = FAT_START_LEVELTWO.1.t
+	desc = FAT_START_LEVELTWO.1.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = FAT_GONGHEGUODEWEILAI_flag
+	}
+
+	option = {
+		name = FAT_START_LEVELTWO.1.1
+		country_event = {
+			id = FAT_START_LEVELTWO.2
+		}
+		add_political_power = -400
+		retire_character = FAT_alexander_kemerskai
+		hidden_effect = {
+			retire_character = FAT_alexander_kemerskai_2
+			retire_character = FAT_alexander_kemerskai_3
+		}
+
+		add_country_leader_role = {
+			character = FAT_alexander_kemerskai_jr
+    		promote_leader = yes
+			country_leader = {
+        		ideology = republicanism
+        		expire = "1965.1.1.1"
+    		}
+		}
+	}
+}
+
+country_event = { #风暴将临
+	id = FAT_START_LEVELTWO.2
+	picture = GFX_FAT_DIP_STARTTWOLEVEL
+	title = FAT_START_LEVELTWO.2.t
+	desc = FAT_START_LEVELTWO.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = FAT_START_LEVELTWO.2.1
+		custom_effect_tooltip = FAT_START_LEVELTWO.2.1_tt
+	}
+}
+
+country_event = { #铜陵反动堡垒的铁壁
+	id = FAT_DIP_SouthREP.1
+	title = FAT_DIP_SouthREP.1.t
+	desc = FAT_DIP_SouthREP.1.d
+	picture = GFX_REP_FAT_SHIJILICI
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FAT_DIP_SouthREP.1.1
+	}
+}
+
+country_event = { #帝国心脏地的铁壁
+	id = FAT_DIP_SouthREP.2
+	title = FAT_DIP_SouthREP.2.t
+	desc = FAT_DIP_SouthREP.2.d
+	picture = GFX_REP_FAT_SHIJILICI
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FAT_DIP_SouthREP.2.1
+	}
+}
+
+country_event = { #隐藏事件——给予FAT民族精神
+	id = FAT_DIP_SouthREP.3
+	title = FAT_DIP_SouthREP.3.t
+	desc = FAT_DIP_SouthREP.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		add_ideas = {
+			FAT_SouthREP_RevolutionFire_idea
+		}
+	}
+
+	option = {
+		name = FAT_DIP_SouthREP.3.1
+	}
+}
+
+country_event = { #安江的会面
+	id = FAT_DIP_SouthREP.4
+	title = FAT_DIP_SouthREP.4.t
+	desc = FAT_DIP_SouthREP.4.d
+	picture = GFX_REP_FAT_Little_Kemerskai
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = FAT_SouthREP_leader_1_locked
+	}
+
+	option = {
+		name = FAT_DIP_SouthREP.4.1
+	}
+}
+
+country_event = { #罗马坞的会面
+	id = FAT_DIP_SouthREP.5
+	title = FAT_DIP_SouthREP.5.t
+	desc = FAT_DIP_SouthREP.5.d
+	picture = GFX_REP_FAT_Gabriella
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = FAT_SouthREP_leader_2_locked
+	}
+
+	option = {
+		name = FAT_DIP_SouthREP.5.1
 	}
 }
 
