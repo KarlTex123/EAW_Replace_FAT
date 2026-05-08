@@ -2112,6 +2112,37 @@ focus_tree = {
 		available = {
 			date > 1010.07.31	
 		}
+		bypass = {
+			AND = {
+	            STW = {
+                	exists = no
+            	}      
+            	FEA = {
+                	exists = no
+            	} 
+				PYT = {
+            	    exists = no
+            	} 
+				BRZ = {
+             	   exists = no
+            	} 
+				GRI = {
+             	   exists = no
+            	} 
+				YAL = {
+            	    exists = no
+            	} 
+				KAT = {
+            	    exists = no
+            	} 
+				ANG = {
+             	   exists = no
+            	} 
+            	ROU = {
+                	exists = no
+            	} 
+			}
+        }
 		completion_reward = {
 			country_event = {
 				id = FAT_DIP_Focus.8
