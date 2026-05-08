@@ -1,0 +1,104 @@
+state_groups = {
+    schema = {
+        any_key = yes
+        array = state
+    }
+
+    FAT_Faction_goal_territories = {
+        # Skynavia
+        522
+        542
+        561
+        585
+        601
+        # Vedina
+        430
+        483
+        575
+        584
+        482
+        484
+        576
+        404
+        403
+        429
+        431
+        # Haukland
+        658
+        659
+        660
+        # Griffonian Republic
+        583
+        474
+        480
+        449
+        450
+        582
+        548
+        432
+        485
+        557
+        556
+        # Sunstriker
+        459
+        475
+        476
+        581
+        477
+        # Feathisia
+        433
+        538
+        520
+        498
+        497
+        434
+        441
+        440
+        666
+        # Strawberry
+        486
+        546
+        545
+        458
+        443
+        # Bronzehill
+        539
+        568
+        492
+        479
+        424
+        # Griffonian Empire
+        555
+        405
+        437
+        397
+        382
+        # Romau
+        674
+        # Greifenmarschen
+        399
+        378
+        447
+        # Katerin
+        423
+        554
+        506
+        # Yale
+        665
+        402
+        439
+        398
+        # Angriver
+        411
+        547
+        422
+        # 北方部落
+        573
+        563
+        574
+        602
+        567
+        562
+        677
+    }
+}

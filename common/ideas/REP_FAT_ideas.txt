@@ -54,6 +54,105 @@ ideas = {
 			}
 		}
 ###############################################################
+		FAT_fanshijiulixiang_idea_1 = {
+			picture = GFX_idea_FAT_fanshijiulixiang_idea
+
+			remove_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				conscription = 0.05
+			}
+		}
+		FAT_fanshijiulixiang_idea_2 = {
+			picture = GFX_idea_FAT_fanshijiulixiang_idea_2
+
+			remove_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				weekly_manpower = 500
+				political_power_gain = -0.05
+				conscription = 0.05
+			}
+		}
+		FAT_fanshijiulixiang_idea_3 = {
+			picture = GFX_idea_FAT_fanshijiulixiang_idea_3
+
+			remove_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.05
+				weekly_manpower = 500
+				political_power_gain = -0.1
+				conscription = 0.05
+			}
+		}
+		FAT_guofujingshen = {
+			picture = GFX_idea_FAT_guofujingshen
+
+			remove_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}			
+		FAT_heerzhizhi = {
+			picture = GFX_idea_FAT_heerzhizhi_idea
+
+			remove_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				conscription_factor = -0.05
+			}			
+		}
+		FAT_heerzhizhi_2 = {
+			picture = GFX_idea_FAT_heerzhizhi_idea
+
+			remove_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				conscription_factor = -0.05
+				war_support_factor = 0.1
+			}			
+		}
+		FAT_heerzhizhi_3 = {
+			picture = GFX_idea_FAT_heerzhizhi_idea
+
+			remove_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				conscription_factor = -0.05
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+			}			
+		}
+		FAT_heerbutong = {
+			picture = GFX_idea_FAT_heerbutong_idea
+
+			remove_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.05
+			}						
+		}
+		FAT_shiduquanlixiafang = {
+			picture = GFX_idea_FAT_shiduquanlixiafang_idea
+
+			remove_cost = -1
+
+			modifier = {
+				stability_factor = 0.2
+				political_power_gain = -0.02
+			}			
+		}
 		FAT_kuodayanlunziyou_idea = { #扩大言论自由
 			picture = GFX_idea_FAT_kuodayanlunziyou_idea
 
@@ -270,7 +369,7 @@ ideas = {
 			}			
 		}	
 		FAT_industrialization_1 = { #工业化1
-			picture = GFX_idea_FAT_industrialization
+			picture = GFX_idea_FAT_industrialization_1
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.1
@@ -295,7 +394,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				monthly_population = 0.3
 				political_power_gain = -0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 				experience_loss_factor = -0.2
 			}			
 		}	
@@ -309,7 +408,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				monthly_population = 0.3
 				political_power_gain = -0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 				experience_loss_factor = -0.2
 			}			
 		}
@@ -318,7 +417,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 			}				
 		}
 		FAT_Land_collectivization_1 = {
@@ -326,7 +425,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -335,7 +434,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 				consumer_goods_factor = -0.05
 				local_resources_factor = 0.1
 			}
@@ -345,7 +444,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				local_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2
 				local_resources_factor = 0.1			
 			}				
 		}
@@ -354,7 +453,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 			}
 		}	
 		FAT_Reduce_rent_and_interest_1 = { #减租减息 #农业2
@@ -362,7 +461,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.1
-				local_building_slots_factor = 0.1
+				global_building_slots_factor = 0.1
 				local_resources_factor = 0.1
 			}
 		}	
@@ -830,7 +929,7 @@ ideas = {
 			}
 		}
 		Industrial_heart = { #心脏
-			picture = Industrial_heart
+			picture = GFX_idea_Industrial_heart
 			allowed = {
 				always = no
 			}
@@ -974,8 +1073,8 @@ ideas = {
 				research_speed_factor = -0.05
 			}			
 		}
-		FAT_Language_confusion = { #语言混乱
-			picture = unhappy_army_3
+		FAT_Language_confusion = { #文化多元
+			picture = GFX_idea_FAT_Language_confusion
 			allowed = {
 				always = no
 			}
@@ -991,25 +1090,6 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				conscription_factor = -0.06
-			}	
-		}	
-		FAT_Language_confusion2 = { #语言混乱
-			picture = unhappy_army_3
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			available = {
-			    NOT = {
-				    has_country_flag = JER_puppet
-				}
-			}		
-			removal_cost = -1
-			modifier = {
-				stability_factor = -0.1
-				research_speed_factor = -0.05
 			}	
 		}	
 

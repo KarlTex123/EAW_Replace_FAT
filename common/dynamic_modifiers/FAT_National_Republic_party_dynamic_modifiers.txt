@@ -29,7 +29,7 @@ FAT_manyun_city_modifier = { #漫云地区修正
 	icon = GFX_modifiers_generic_railways
 
 	production_speed_buildings_factor = 0.2
-	LOCAL_BUILDING_SLOTS_FACTOR = 0.15
+	global_building_slots_factor = 0.15
 }
 FAT_other_city_modifier = { #非漫云地区修正
 	enable = { always = yes }
@@ -46,7 +46,6 @@ FAT_democracy_f = {
 	mobilization_laws_cost_factor = FAT_democracy_f_mobilization_laws_cost_factor
 	trade_laws_cost_factor = FAT_democracy_f_trade_laws_cost_factor
 	economy_cost_factor = FAT_democracy_f_economy_cost_factor
-	max_command_power = FAT_democracy_f_max_command_power
 	global_building_slots_factor = FAT_democracy_f_global_building_slots_factor
 	command_power_gain_mult = FAT_democracy_f_command_power_gain_mult
 	production_speed_buildings_factor = FAT_democracy_f_production_speed_buildings_factor
@@ -55,6 +54,19 @@ FAT_democracy_f = {
 	political_power_factor = FAT_democracy_f_political_power_factor
 	weekly_manpower = FAT_democracy_f_weekly_manpower
 	MINIMUM_TRAINING_LEVEL = FAT_democracy_f_MINIMUM_TRAINING_LEVEL
+	consumer_goods_factor = FAT_democracy_f_consumer_goods_factor
+	industrial_capacity_factory = FAT_democracy_f_industrial_capacity_factory
+
+	planning_speed = FAT_democracy_f_planning_speed
+	max_planning = FAT_democracy_f_max_planning
+	stability_weekly = FAT_democracy_f_stability_weekly
+	factory_max_efficiency_factor = FAT_democracy_f_factory_max_efficiency_factor
+	communism_drift = FAT_democracy_f_communism_drift
+	fascism_drift = FAT_democracy_f_fascism_drift
+	democratic_drift = FAT_democracy_f_democratic_drift
+	enemy_operative_capture_chance_factor = FAT_democracy_f_enemy_operative_capture_chance_factor
+	OPINION_GAIN_MONTHLY_FACTOR = FAT_democracy_f_OPINION_GAIN_MONTHLY_FACTOR
+
 }
 FAT_liberty = {
 	enable = { always = yes }
@@ -78,9 +90,9 @@ FAT_liberty = {
 	training_time_army_factor = FAT_liberty_training_time_army_factor
 }
 
-FAT_minsheng_0 = {
+FAT_prosperity_f = {
 	enable = { always = yes }
-	icon = GFX_modifiers_FAT_liberty
+	icon = GFX_modifiers_FAT_prosperity_f
 	
 				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR
 				production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor

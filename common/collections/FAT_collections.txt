@@ -1,0 +1,13 @@
+FAT_Faction_goal_territories = {
+	input = constant:state_groups.FAT_Faction_goal_territories
+	name = COLLECTION_FAT_Faction_goal_territories
+} 
+controlled_FAT_Faction_goal_territories = {
+	input = collection:FAT_Faction_goal_territories
+	name = COLLECTION_controlled_FAT_Faction_goal_territories
+	operators = {
+		limit = {
+			is_controlled_by_ROOT_or_ally = yes 
+		}
+	}
+}

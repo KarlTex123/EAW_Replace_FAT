@@ -14,7 +14,6 @@ on_actions = {
 				set_variable = {FAT_democracy_f_mobilization_laws_cost_factor = 0}
 				set_variable = {FAT_democracy_f_trade_laws_cost_factor = 0}
 				set_variable = {FAT_democracy_f_economy_cost_factor = 0}
-				set_variable = {FAT_democracy_f_max_command_power = 0}
 				set_variable = {FAT_democracy_f_global_building_slots_factor = 0}
 				set_variable = {FAT_democracy_f_command_power_gain_mult = 0}
 				set_variable = {FAT_democracy_f_production_speed_buildings_factor = 0}
@@ -23,6 +22,18 @@ on_actions = {
 				set_variable = {FAT_democracy_f_political_power_factor = 0}
 				set_variable = {FAT_democracy_f_weekly_manpower = 0}
 				set_variable = {FAT_democracy_f_MINIMUM_TRAINING_LEVEL = 0}
+				set_variable = {FAT_democracy_f_consumer_goods_factor = 0 }
+				set_variable = {FAT_democracy_f_industrial_capacity_factory = 0}
+				set_variable = {FAT_democracy_f_planning_speed = 0 }
+				set_variable = {FAT_democracy_f_max_planning = 0}
+				set_variable = { FAT_democracy_f_stability_weekly = 0}
+				set_variable = { FAT_democracy_f_factory_max_efficiency_factor = 0}
+				set_variable = { FAT_democracy_f_communism_drift = 0}
+				set_variable = { FAT_democracy_f_fascism_drift = 0}
+				set_variable = { FAT_democracy_f_democratic_drift = 0}
+				set_variable = { FAT_democracy_f_enemy_operative_capture_chance_factor = 0}
+				set_variable = { FAT_democracy_f_OPINION_GAIN_MONTHLY_FACTOR = 0}
+
 
 				####################民权##################################
 				set_variable = { FAT_liberty_stability_factor_factor = 0}

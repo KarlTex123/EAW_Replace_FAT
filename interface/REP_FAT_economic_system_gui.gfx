@@ -1,14 +1,4 @@
-spriteTypes = {
-	SpriteType = { 
-		name = "GFX_FAT_industry_decision_category_1_bg"
-		texturefile = "gfx/interface/FAT_industry_decision_category_1/FAT_industry_decision_category_1_bg.png" 
-	} 
-	SpriteType = { 
-		name = "GFX_bop_FAT_nationalism_side"
-		texturefile = "gfx/interface/FAT_industry_decision_category_1/FAT_right_side.png"    
-	}
-	
-}
+
 
 
 

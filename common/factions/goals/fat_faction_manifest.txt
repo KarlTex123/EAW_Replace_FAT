@@ -1,0 +1,26 @@
+@manifest_fulfilled_value = 0.75
+
+faction_manifest_FAT_Faction = {
+	name = FAT_Faction_goal_name #章程名字
+	description = FAT_Faction_goal_desc #章程描述
+	is_manifest = yes
+	ratio_progress = { #总进度
+		total_amount_collection = collection:FAT_Faction_goal_territories
+		completed_amount_collection = collection:controlled_FAT_Faction_goal_territories
+
+		scale = { #按照章程满足的比例给的修正。在这里，就是当章程进度为100%时，完全给予下列修正。
+			compliance_gain = 0.20
+			army_attack_factor = 0.10
+			army_defence_factor = 0.10
+		}
+			
+		progress_sections = { #进度阶段
+			manifest_fulfilled = { #章程已达成
+				min = @manifest_fulfilled_value #最小值。这里是声明了一个名为manifest_fulfilled_value的常量，值为0.75。也就是当章程进度在75%-100%中间时，得到下列修正。如果你没有声明这个常量，不要写这个。
+				modifier = { 
+					compliance_growth = 0.10
+				}
+			}
+		}
+	}
+}

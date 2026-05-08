@@ -115,7 +115,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_ideas = FAT_FP_jingji_idea
-				add_dynamic_modifier = { modifier = FAT_minsheng_0}
+				add_dynamic_modifier = { modifier = FAT_prosperity_f}
 			}
 			custom_effect_tooltip = FAT_minsheng_tt
 		}
@@ -157,6 +157,7 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = FAT_democracy_f}
 			}
 			custom_effect_tooltip = FAT_minzhu_tt
+			country_event = { id = FAT_FP.73 }
 		}
 	}
 	focus = { #打破天花板
@@ -169,9 +170,7 @@ focus_tree = {
 			focus = FAT_minzhu
 		}
 		available = {
-			NOT = {
-				has_completed_focus = FAT_fanshijiuzhilu
-			}
+			has_country_flag = FAT_dapotianhuaban_flag
 		}
 		#mutually_exclusive = {
 		#	focus = FAT_fanshijiuzhilu
@@ -179,10 +178,7 @@ focus_tree = {
 		relative_position_id = FAT_minzhu
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea
-				add_idea = FAT_The_Cloudburian_Minority_idea6
-			}
+			add_ideas = FAT_heerzhizhi
 		}
 	}
 	focus = { #共和银行
@@ -265,7 +261,11 @@ focus_tree = {
 		}
 		relative_position_id = FAT_guominzhuquan
 		completion_reward = {
-			country_event = FAT_FP.18
+			country_event = { id = FAT_FP.18}
+			country_event = {
+				id = FAT_FP.76
+				days = 30
+			}
 		}
 	}
 	focus = { #选举大法官
@@ -422,20 +422,16 @@ focus_tree = {
 			focus = FAT_minzhu
 		}
 		available = {
-			NOT = {
-				has_completed_focus = FAT_dapotianhuaban
-			}
+			has_country_flag = FAT_fanshijiuzhilu_flag
 		}
 		#mutually_exclusive = {
 		#	focus = FAT_dapotianhuaban
 		#}
+
 		relative_position_id = FAT_minzhu
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea
-				add_idea = FAT_The_Cloudburian_Minority_idea3
-			}
+			add_ideas = FAT_fanshijiulixiang_idea_1
 		}
 	}
 	focus = { #新革命党
@@ -470,6 +466,12 @@ focus_tree = {
 			focus = FAT_xingemingdang
 		}
 		relative_position_id = FAT_xingemingdang
+
+		completion_reward = {
+			custom_effect_tooltip = FAT_yuanlaopingyihui_tt			
+			add_to_variable = {FAT_democracy_f_enemy_operative_capture_chance_factor = 0.25}
+			add_to_variable = {FAT_democracy_f_OPINION_GAIN_MONTHLY_FACTOR = 0.5}
+		}		
 	}
 	focus = { #中央执政委员会
 		id = FAT_zhongyangzhiweihui #现在是执行委员会
@@ -483,8 +485,9 @@ focus_tree = {
 		relative_position_id = FAT_xingemingdang
 		completion_reward = {
 			custom_effect_tooltip = FAT_FAT_zhongyangzhiweihui_tt
-			add_to_variable = {FAT_democracy_f_max_command_power = 50}
-			add_to_variable = {FAT_democracy_f_global_building_slots_factor = 0.1}
+			add_to_variable = {FAT_democracy_f_consumer_goods_factor = -0.1}
+			add_to_variable = {FAT_democracy_f_industrial_capacity_factory = 0.1}
+			country_event = { id = FAT_FP.74}
 		}		
 	}
 	focus = { #三民主义研究会
@@ -499,9 +502,9 @@ focus_tree = {
 		relative_position_id = FAT_yuanlaopingyihui
 		completion_reward = {
 			custom_effect_tooltip = FAT_yanjiuhui_tt
-			unlock_decision_category_tooltip = REP_FAT_political_billing
-			add_to_variable = {FAT_democracy_f_weekly_manpower = 200}
-			add_to_variable = {FAT_democracy_f_MINIMUM_TRAINING_LEVEL = -0.2}			
+			add_to_variable = {FAT_democracy_f_consumer_goods_factor = -0.05}
+			add_to_variable = {FAT_democracy_f_political_power_factor = 0.1}		
+			add_political_power = 100	
 		}
 	}
 	focus = { #军事委员会
@@ -516,9 +519,8 @@ focus_tree = {
 		relative_position_id = FAT_zhongyangzhiweihui
 		completion_reward = {
 			custom_effect_tooltip = FAT_junweihui_tt
-			unlock_decision_tooltip = bevelive_nationalism_love_country
-			add_to_variable = {FAT_democracy_f_command_power_gain_mult = 1.5}
-			add_to_variable = {FAT_democracy_f_global_building_slots_factor = 0.1}
+			add_to_variable = {FAT_democracy_f_planning_speed = 0.1}
+			add_to_variable = {FAT_democracy_f_max_planning = 0.1}
 		}
 	}
 	focus = { #改造或改组
@@ -536,6 +538,7 @@ focus_tree = {
 		relative_position_id = FAT_yanjiuhui
 		completion_reward = {
 			custom_effect_tooltip = FAT_gaizaohuogaizu_tt
+			add_to_variable = { FAT_democracy_f_stability_weekly = 0.005}
 			add_to_variable = {FAT_democracy_f_production_speed_buildings_factor = 0.1}
 			add_to_variable = {FAT_democracy_f_production_factory_efficiency_gain_factor = 0.1}
 			add_to_variable = {FAT_democracy_f_line_change_production_efficiency_factor = 0.2}
@@ -552,11 +555,11 @@ focus_tree = {
 		}
 		relative_position_id = FAT_fanshijiuzhilu
 
-		completion_reward = {
+		completion_reward = {			
 			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea3
-				add_idea = FAT_The_Cloudburian_Minority_idea4
-			}
+				remove_idea = FAT_fanshijiulixiang_idea_1
+				add_idea = FAT_fanshijiulixiang_idea_2
+			}		
 		}
 	}
 	focus = { #泛狮鹫国家框架
@@ -572,6 +575,10 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = { id = FAT_FP.59}
+			swap_ideas = {
+				remove_idea = FAT_fanshijiulixiang_idea_2
+				add_idea = FAT_fanshijiulixiang_idea_3
+			}			
 		}
 	}
 	focus = { #编篡克梅斯凯文集
@@ -586,10 +593,7 @@ focus_tree = {
 		relative_position_id = FAT_gonghegdiantai
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea4
-				add_idea = FAT_The_Cloudburian_Minority_idea5
-			}
+			add_ideas = FAT_guofujingshen
 		}
 	}
 	
@@ -626,11 +630,8 @@ focus_tree = {
 		relative_position_id = FAT_biancuanwenji
 
 		completion_reward = {
-			remove_ideas = FAT_The_Cloudburian_Minority_idea5
-			add_timed_idea = {
-				idea = FAT_Language_confusion
-				days = 365
-			}	
+			remove_ideas = FAT_The_Cloudburian_Minority_idea
+			add_ideas = FAT_Language_confusion	#文化多元
 		}
 	}
 	focus = { #重审瑰翼叛乱
@@ -645,11 +646,11 @@ focus_tree = {
 		relative_position_id = FAT_dapotianhuaban
 
 		completion_reward = {
-			add_political_power = 200
 			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea6
-				add_idea = FAT_The_Cloudburian_Minority_idea7
+				remove_idea = FAT_heerzhizhi
+				add_idea = FAT_heerzhizhi_2
 			}
+			add_political_power = 50
 		}
 	}
 	focus = { #扩大省议会权力
@@ -664,17 +665,7 @@ focus_tree = {
 		relative_position_id = FAT_chongshenpanluan
 
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					NOT = {
-						state = 485
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_dynamic_modifier = { modifier = FAT_other_city_modifier scope = FAT }
-				add_manpower = 3000
-			}
-			custom_effect_tooltip = FAT_kuodashengyihuiquanli_tt
+			add_ideas = FAT_shiduquanlixiafang
 		}
 	}
 	focus = { #漫云文化协会
@@ -690,8 +681,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = FAT_The_Cloudburian_Minority_idea7
-				add_idea = FAT_The_Cloudburian_Minority_idea8
+				remove_idea = FAT_heerzhizhi_2
+				add_idea = FAT_heerzhizhi_3
 			}
 		}		
 	}
@@ -707,11 +698,8 @@ focus_tree = {
 		relative_position_id = FAT_wenxiehui
 
 		completion_reward = {
-			remove_ideas = FAT_The_Cloudburian_Minority_idea8
-			add_timed_idea = {
-				idea = FAT_Language_confusion2
-				days = 365
-			}	
+			remove_ideas = FAT_The_Cloudburian_Minority_idea
+			add_ideas = FAT_heerbutong	
 		}
 	}
 	focus = { #补选流亡议会
@@ -724,6 +712,10 @@ focus_tree = {
 			focus = FAT_kuodashengquanli
 		}
 		relative_position_id = FAT_kuodashengquanli
+
+		completion_reward = {
+			country_event = { id = FAT_FP.60}
+		}
 	}
 	focus = { #漫云体制
 		id = FAT_manyuntizhi
@@ -731,26 +723,31 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
-		prerequisite = {
-			focus = FAT_manyuntebieshi
-		}
-		prerequisite = {
-			focus = FAT_bianzhunyu
-		}
+
+		prerequisite = {focus = FAT_manyuntebieshi focus = FAT_bianzhunyu focus = FAT_jiyufangyandiwei focus = FAT_buxuanliuwangyihui} 
 		prerequisite = {
 			focus = FAT_gaizaohuogaizu
 		}
-		prerequisite = {
-			focus = FAT_jiyufangyandiwei
-		}
-		prerequisite = {
-			focus = FAT_buxuanliuwangyihui
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = FAT_manyuntebieshi
+					has_completed_focus = FAT_bianzhunyu
+				}
+				AND = {
+					has_completed_focus = FAT_jiyufangyandiwei
+					has_completed_focus = FAT_buxuanliuwangyihui					
+				}
+			}
 		}
 		relative_position_id = FAT_gaizaohuogaizu
 		completion_reward = {
 			custom_effect_tooltip = FAT_manyuntizhi_tt
-			add_to_variable = {FAT_democracy_f_political_power_factor = 0.15}
-			add_to_variable = {FAT_democracy_f_stability_factor = 0.1}
+			add_to_variable = {FAT_democracy_f_factory_max_efficiency_factor = 0.15}
+			add_to_variable = { FAT_democracy_f_communism_drift = 0.1 }
+			add_to_variable = { FAT_democracy_f_fascism_drift = 0.1 }
+			add_to_variable = { FAT_democracy_f_democratic_drift = 0.1 }
+			country_event = { id = FAT_FP.75}
 		}
 	}
 	focus = { #社会主义者的联盟
@@ -1056,18 +1053,6 @@ focus_tree = {
 		relative_position_id = FAT_gonghuifa
 		completion_reward = {
 			increase_society_development_gradual = yes
-			if = {
-				limit = {
-					has_country_flag = gonghuimoshi_1
-				}
-				add_ideas = FAT_industrialization_1
-			}
-			if = {
-				limit = {
-					has_country_flag = gonghuimoshi_2
-				}
-				add_ideas = FAT_industrialization_2
-			}
 		}
 	}
 	focus = { #工伤保险及失业保障
@@ -1942,7 +1927,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_faction = FAT_GONGHEGUOGONGYUE
+			create_faction_from_template = FAT_GONGHEGUOGONGYUE
 			add_threat = 5
 			country_event = {
 				id = FAT_DIP_Focus.1
@@ -1980,6 +1965,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FAT_LIANLUENANFANG
 		}
+		bypass = {
+			MNC = {
+				exists = no
+			}
+		}
 		relative_position_id = FAT_LIANLUENANFANG
 
 		completion_reward = {
@@ -1999,7 +1989,6 @@ focus_tree = {
 		}
 		available = {
 			RCT = {
-				is_faction_leader = yes
 				OR = {
 					has_country_leader = {
 						ruling_only = yes
@@ -2008,6 +1997,27 @@ focus_tree = {
 					has_country_leader = {
 						ruling_only = yes
 						character = RCT_nova_whirl
+					}
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				RCT = {
+					exists = no
+				}
+				RCT = {
+					OR = {
+						NOT = {
+							has_country_leader = {
+								ruling_only = yes
+								character = RCT_river_swirl
+							}
+							has_country_leader = {
+								ruling_only = yes
+								character = RCT_nova_whirl
+							}
+						}
 					}
 				}
 			}
@@ -2041,6 +2051,11 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = FAT_DIP_ITSTIME	
+		}
+		bypass = {
+			VED = {
+				exists = no
+			}
 		}
 		relative_position_id = FAT_LIANLUENANFANG
 
