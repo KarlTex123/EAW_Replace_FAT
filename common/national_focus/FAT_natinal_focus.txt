@@ -1966,6 +1966,7 @@ focus_tree = {
 			country_event = {
 				id = FAT_DIP_Focus.2
 			}
+			custom_effect_tooltip = SouthREP_Enable_tt
 		}
 
 		
