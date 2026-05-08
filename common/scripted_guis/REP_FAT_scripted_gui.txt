@@ -283,16 +283,19 @@ scripted_gui = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					422 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					547 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_2_complete
 				}
@@ -305,21 +308,25 @@ scripted_gui = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					665 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					402 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					398 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_3_complete
 				}
@@ -332,16 +339,19 @@ scripted_gui = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					554 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					506 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_4_complete
 				}		
@@ -353,6 +363,7 @@ scripted_gui = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_5_complete
 				}		
@@ -364,16 +375,19 @@ scripted_gui = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					447 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					399 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_6_complete
 				}		
@@ -385,26 +399,31 @@ scripted_gui = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					546 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					458 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					545 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					443 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_8_complete
 				}		
@@ -413,50 +432,59 @@ scripted_gui = {
 					limit = {
 						check_variable = { cheak_the_state_number = 9 } #433 497 498 538 434 441 666 440 520
 					}
-					443 = {
+					433 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					497 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					498 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					538 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					434 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					441 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					666 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					440 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					520 = {
 						add_dynamic_modifier = {
 							modifier = FAT_SouthREP_Revolution
 						}
+						add_claim_by = FAT
 					}
 					set_global_flag = SouthREP_state_number_9_complete
 				}
