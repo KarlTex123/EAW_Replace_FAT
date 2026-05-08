@@ -17,8 +17,8 @@ leader_traits = {
 	}
 	FAT_the_Shadow = {
 		random = no
-		CONSUMER_GOODS_FACTOR = -0.05
-		min_export = 0.2
+		CONSUMER_GOODS_FACTOR = -0.2
+		min_export = 0.1
 		stability_factor = -0.1
 		custom_modifier_tooltip = FAT_the_Shadow_tt
 	}
