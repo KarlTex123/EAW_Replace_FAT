@@ -212,7 +212,11 @@ on_actions = {
 					GRI = {
 						exists = no
 					}
+					NOT = {
+						has_global_flag = GRI_was_Surrender
+					}
 				}
+				set_global_flag = GRI_was_Surrender
 				FAT = {
 					country_event = {
 						id = FAT_DIP_Focus.13
@@ -220,6 +224,23 @@ on_actions = {
 				}
 				clr_country_flag = REP_FAT_the_south_event_ui_window_flag
 				clr_country_flag = REP_FAT_the_SouthREP_flag
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						has_dynamic_modifier = FAT_SouthREP_Revolution
+					}
+				}
+				FROM.FROM = {
+					remove_dynamic_modifier = {
+						modifier = FAT_SouthREP_Revolution
+					}
+				}
 			}
 		}
 	}

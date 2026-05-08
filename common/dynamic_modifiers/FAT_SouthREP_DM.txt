@@ -1,14 +1,10 @@
 FAT_SouthREP_Revolution = { #革命的愈演愈烈
 	icon = ger_mefo_bills
 	enable = {
-		NOT = {
-			ROOT = {
-				is_controlled_by = FAT
-			}
-		}
+		always = yes
 	}
-	local_manpower = -0.05
-	local_resources = -0.05
-	industrial_capacity_factory = -0.025
-	cic_construction_boost_factor = -0.05
+	mobilization_speed = -0.15
+	local_resources = -0.10
+	local_factories = -0.2
+	state_production_speed_buildings_factor = -0.33
 }

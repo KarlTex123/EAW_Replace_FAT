@@ -267,7 +267,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/political_factions/14.png" 
 	}
 	
-	
+	#临时放在这
+	SpriteType = {
+		name = "GFX_FAT_alexander_kemerskai"
+		texturefile = "gfx/interface/ideas/Kerensky.png"
+	}
 }
 
 

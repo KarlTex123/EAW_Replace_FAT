@@ -39,6 +39,23 @@ country_event = {
 		hidden_effect = {
 			country_lock_all_division_template = no
 		}
+		every_state = {
+			limit = {
+			THIS = {
+				OR = {
+				is_owned_by = KAT
+				is_owned_by = ANG
+				is_owned_by = PYT
+				is_owned_by = FEA
+				is_owned_by = STW
+				is_owned_by = BRZ
+				is_owned_by = YAL
+				is_owned_by = ROU
+				}
+			}
+			}
+			add_core_of = GRI
+		}
 		GRI = {
 			add_ideas = REP_FAT_GRI_UP_3
 			annex_country = {

@@ -2680,6 +2680,7 @@ country_event = { #革命的高潮
 	desc = FAT_DIP_Focus.13.d
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = FAT_DIP_Focus.13.1
@@ -2731,7 +2732,7 @@ country_event = { #格罗弗家族的命运
 
 country_event = { #时代的终结
 	id = FAT_START_LEVELTWO.1
-	picture = GFX_FAT_DIP_STARTTWOLEVEL
+	picture = GFX_FAT_alexander_kemerskai
 	title = FAT_START_LEVELTWO.1.t
 	desc = FAT_START_LEVELTWO.1.d
 
@@ -2766,7 +2767,7 @@ country_event = { #时代的终结
 
 country_event = { #风暴将临
 	id = FAT_START_LEVELTWO.2
-	picture = GFX_FAT_DIP_STARTTWOLEVEL
+	picture = GFX_FAT_alexander_kemerskai
 	title = FAT_START_LEVELTWO.2.t
 	desc = FAT_START_LEVELTWO.2.d
 
