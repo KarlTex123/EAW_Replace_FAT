@@ -1,6 +1,6 @@
 FAT_National_Republic_party = { #民族共和党
 	enable = { always = yes }
-	icon = GFX_idea_Twilight_theory
+	icon = GFX_idea_FAT_National_Republic_party_modifier
 	#stability_factor = FAT_National_Republic_party_union_democratic
 	#line_change_production_efficiency_factor = FAT_National_Republic_party_union_neutrality
 	#political_power_gain = FAT_National_Republic_party_union_communism
@@ -60,7 +60,7 @@ FAT_democracy_f = {
 	planning_speed = FAT_democracy_f_planning_speed
 	max_planning = FAT_democracy_f_max_planning
 	stability_weekly = FAT_democracy_f_stability_weekly
-	factory_max_efficiency_factor = FAT_democracy_f_factory_max_efficiency_factor
+	production_factory_max_efficiency_factor = FAT_democracy_f_factory_max_efficiency_factor
 	communism_drift = FAT_democracy_f_communism_drift
 	fascism_drift = FAT_democracy_f_fascism_drift
 	democratic_drift = FAT_democracy_f_democratic_drift
@@ -75,7 +75,6 @@ FAT_liberty = {
 	stability_factor = FAT_liberty_stability_factor_factor
 	drift_defence_factor = FAT_liberty_drift_defence_factor
 	political_advisor_cost_factor = FAT_liberty_political_advisor_cost_factor
-	compliance_growth = FAT_liberty_compliance_growth
 	production_speed_buildings_factor = FAT_liberty_production_speed_buildings_factor
 	war_stability_factor = FAT_liberty_war_stability_factor
 	mobilization_laws_cost_factor = FAT_liberty_mobilization_laws_cost_factor
@@ -94,18 +93,32 @@ FAT_prosperity_f = {
 	enable = { always = yes }
 	icon = GFX_modifiers_FAT_prosperity_f
 	
-				PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR
-				production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor
-				line_change_production_efficiency_factor = FAT_minsheng_0_line_change_production_efficiency_factor
-				production_speed_buildings_factor = FAT_minsheng_0_production_speed_buildings_factor
-				industrial_capacity_factory = FAT_minsheng_0_industrial_capacity_factory
-				consumer_goods_factor = FAT_minsheng_0_consumer_goods_factor
-				communism_drift = FAT_minsheng_0_communism_drift
-				mobilization_speed = FAT_minsheng_0_mobilization_speed
-				resistance_target = FAT_minsheng_0_resistance_target
-				compliance_gain = FAT_minsheng_0_compliance_gain
-				monthly_population = FAT_minsheng_0_monthly_population
-				democratic_drift = FAT_minsheng_0_democratic_drift
+	PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR
+	production_factory_efficiency_gain_factor = FAT_minsheng_0_production_factory_efficiency_gain_factor
+	line_change_production_efficiency_factor = FAT_minsheng_0_line_change_production_efficiency_factor
+	production_speed_buildings_factor = FAT_minsheng_0_production_speed_buildings_factor
+	industrial_capacity_factory = FAT_minsheng_0_industrial_capacity_factory
+	consumer_goods_factor = FAT_minsheng_0_consumer_goods_factor
+	communism_drift = FAT_minsheng_0_communism_drift
+	mobilization_speed = FAT_minsheng_0_mobilization_speed
+	resistance_target = FAT_minsheng_0_resistance_target
+	compliance_gain = FAT_minsheng_0_compliance_gain
+	monthly_population = FAT_minsheng_0_monthly_population
+	democratic_drift = FAT_minsheng_0_democratic_drift
+}
+
+FAT_cooperative = {#合作社
+	enable = { always = yes }
+	icon = GFX_idea_FAT_industrialization_5 #GFX_modifiers_FAT_cooperative
+	
+	hidden = yes
+	
+	modifier = {
+		consumer_goods_factor = FAT_cooperative_consumer_goods_factor
+		stability_factor = FAT_cooperative_stability_factor
+		industrial_capacity_factory = FAT_cooperative_industrial_capacity_factory
+		production_speed_buildings_factor = FAT_cooperative_production_speed_buildings_factor
+	}
 }
 
 

@@ -8,6 +8,7 @@ add_namespace = FAT_DIP_SouthREP
 add_namespace = FAT_VED_REV
 add_namespace = FAT_DIP_News
 add_namespace = FAT_START_LEVELTWO
+add_namespace = FAT_hidden
 news_event = {
 	id = test_FAT_start.1 
 	title = test_FAT_start.1.title 
@@ -1203,16 +1204,19 @@ country_event = { #任命新总理？
 		name = FAT_FP.27.a
 		deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor
 		activate_advisor = FAT_political_idealist
+		set_country_flag = shijian_unlock_advisor_flag_2
 	}
 	option = {
 		name = FAT_FP.27.b
 		deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor
 		activate_advisor = FAT_political_pragmatist
+		set_country_flag = shijian_unlock_advisor_flag_3
 	}
 	option = {
 		name = FAT_FP.27.c
 		deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor
 		activate_advisor = FAT_yizhan_advisor
+		set_country_flag = shijian_unlock_advisor_flag_1
 	}
 }
 
@@ -2226,6 +2230,63 @@ country_event = { #少校与画匠
 
 	option = {
 		name = FAT_FP.80.a
+	}
+}
+
+country_event = { #加效果
+	id = FAT_hidden.1
+	title = FAT_hidden.1.t
+	desc = FAT_hidden.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		name = FAT_hidden.1.a
+		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
+		add_to_variable = {FAT_cooperative_production_speed_buildings_factor = 0.1}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.1}
+	}
+}
+
+country_event = { #加效果
+	id = FAT_hidden.2
+	title = FAT_hidden.2.t
+	desc = FAT_hidden.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		name = FAT_hidden.2.a
+		add_to_variable = {FAT_cooperative_consumer_goods_factor = -0.1}
+		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
+	}
+}
+
+country_event = { #加效果
+	id = FAT_hidden.3
+	title = FAT_hidden.3.t
+	desc = FAT_hidden.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		name = FAT_hidden.3.a
+		add_to_variable = {FAT_cooperative_production_speed_buildings_factor = 0.1}
+		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
+		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
 	}
 }
 

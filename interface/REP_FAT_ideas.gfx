@@ -117,6 +117,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FAT_industrialization.png" 
 	}	
 	SpriteType = { 
+		name = "GFX_idea_FAT_industrialization_5" ###合作社
+		texturefile = "gfx/interface/ideas/FAT_industrialization.png" 
+	}	
+	SpriteType = { 
 		name = "GFX_idea_The_Republican_Home"
 		texturefile = "gfx/interface/ideas/The_Republican_Home.png" 
 	}	
@@ -190,7 +194,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Proclamation_of_Civil_War_Mobilization.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_Twilight_theory"
+		name = "GFX_idea_FAT_National_Republic_party_modifier"
 		texturefile = "gfx/interface/ideas/政党联盟.png" 
 	}
 	SpriteType = { 

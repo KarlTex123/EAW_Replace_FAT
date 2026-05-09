@@ -66,6 +66,12 @@ on_actions = {
 				set_variable = {FAT_minsheng_0_compliance_gain = 0}
 				set_variable = {FAT_minsheng_0_monthly_population = 0}
 				set_variable = {FAT_minsheng_0_democratic_drift = 0}
+#########################################合作社##########################################################################
+
+				set_variable = { FAT_cooperative_consumer_goods_factor = 0}
+				set_variable = { FAT_cooperative_stability_factor = 0}
+				set_variable = { FAT_cooperative_industrial_capacity_factory = 0}
+				set_variable = { FAT_cooperative_production_speed_buildings_factor = 0}
 			}
 		}
 	}

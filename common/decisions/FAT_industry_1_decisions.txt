@@ -236,10 +236,10 @@ FAT_industry_decision_category_1= {
 			add_manpower = -10000
 		}
 		remove_effect = {
+			hidden_effect = {
+				country_event = { id = FAT_hidden.1}
+			}
 			custom_effect_tooltip = develop_522_561_601_585_tt
-			add_to_variable = {FAT_cooperative_stability_factor = 0.05}
-			add_to_variable = {FAT_production_speed_buildings_factor = 0.1}
-			add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.1}
 			522 = {#天际纳维亚
 				add_building_construction = {
 					type = industrial_complex 
@@ -505,11 +505,9 @@ FAT_industry_decision_category_1= {
 		hidden_effect = {
 			add_dynamic_modifier = {
 				modifier = FAT_cooperative
-			}		
+			}
+			country_event = { id = FAT_hidden.2}		
 		}
-		add_to_variable = {FAT_cooperative_consumer_goods_factor = -0.1}
-		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
-		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
 		add_manpower = 1000
 		set_country_flag = FAT_hezuoshe_flag
 	}
@@ -549,10 +547,10 @@ FAT_industry_decision_category_1= {
 				instant_build = yes
 			}
 		}
+		hidden_effect = {
+			country_event = { id = FAT_hidden.3}
+		}
 		custom_effect_tooltip = FAT_establish_cooperative_2_tt
-		add_to_variable = {FAT_cooperative_production_speed_buildings_factor = 0.1}
-		add_to_variable = {FAT_cooperative_stability_factor = 0.05}
-		add_to_variable = {FAT_cooperative_industrial_capacity_factory = 0.05}
 		add_manpower = 5000
 	}	
 	days_remove = 50

@@ -45,14 +45,4 @@ FAT_loan_modifier = {
 	consumer_goods_factor = FAT_loan_consumer_goods_factor
 
 }
-FAT_cooperative = {#合作社
-	#			picture = 
-	
-				modifier = {
-					consumer_goods_factor = FAT_cooperative_consumer_goods_factor
-					stability_factor = FAT_cooperative_stability_factor
-					industrial_capacity_factory = FAT_cooperative_industrial_capacity_factory
-					production_speed_buildings_factor = FAT_cooperative_production_speed_buildings_factor
-				}
-}
 
