@@ -2569,18 +2569,46 @@ country_event = { #击碎暴君的皇冠
 			scoped_play_song = JISUIHUANGGUAN
 		}
 		every_country = {
-			limit = {
-			    is_in_faction_with = GRI
+			if = {
+				limit = {
+				    GRI = { exists = yes }
+				    is_in_faction_with = GRI
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
 			}
-        	FAT = {
-            	declare_war_on = {
-            	    target = PREV
-            	    type = annex_everything
-            	}
-        	}
+			if = {
+				limit = {
+				    GRD = { exists = yes }
+				    is_in_faction_with = GRD
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    GR1 = { exists = yes }
+				    is_in_faction_with = GR1
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
 		}
 	}
 }
+
 news_event = { #击碎暴君的皇冠的新闻
 	id = FAT_DIP_News.3
 	picture = GFX_FAT_DIP_News.3
