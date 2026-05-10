@@ -2365,8 +2365,10 @@ country_event = { #共和国公约的宣言
 
 	option = {
 		name = FAT_DIP_Focus.1.1
-		news_event = {
-			id = FAT_DIP_News.1
+		every_country = {
+			news_event = {
+				id = FAT_DIP_News.1
+			}
 		}
 	}
 }
@@ -2479,8 +2481,10 @@ country_event = { #卡梅莉塔歌后在河间地的巡回演出
 
 	option = {
 		name = FAT_DIP_Focus.5.1
-		news_event = {
-			id = FAT_DIP_News.2
+		every_country = {
+			news_event = {
+				id = FAT_DIP_News.2
+			}
 		}
 	}
 }
@@ -2622,14 +2626,120 @@ country_event = { #击碎暴君的皇冠
 
 	option = {
 		name = FAT_DIP_Focus.8.1
-		news_event = {
-			id = FAT_DIP_News.3
-		}
-		FAT = {
+		every_country = {
+			news_event = {
+				id = FAT_DIP_News.3
+			}
 			set_country_flag = FAT_JISUIHUANGGUAN_SuperEvent
 			scoped_play_song = JISUIHUANGGUAN
-		}
-		every_country = {
+			if = {
+				limit = {
+				    STW = { exists = yes }
+				    is_in_faction_with = STW
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    FEA = { exists = yes }
+				    is_in_faction_with = FEA
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    PYT = { exists = yes }
+				    is_in_faction_with = PYT
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    BRZ = { exists = yes }
+				    is_in_faction_with = BRZ
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    ROU = { exists = yes }
+				    is_in_faction_with = ROU
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    YAL = { exists = yes }
+				    is_in_faction_with = YAL
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    ANG = { exists = yes }
+				    is_in_faction_with = ANG
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    KAT = { exists = yes }
+				    is_in_faction_with = KAT
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
+			if = {
+				limit = {
+				    GRI = { exists = yes }
+				    is_in_faction_with = GRI
+				}
+        		FAT = {
+            		declare_war_on = {
+            		    target = PREV
+           		 	    type = annex_everything
+           		 	}
+        		}
+			}
 			if = {
 				limit = {
 				    GRI = { exists = yes }
