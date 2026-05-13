@@ -476,7 +476,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_3 = { ###3
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_3
 
 			removal_cost = -1
 
@@ -487,7 +487,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_4 = { ###4
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_4
 
 			removal_cost = -1
 
@@ -500,7 +500,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_5 = { ###5
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_5
 
 			removal_cost = -1
 
@@ -513,7 +513,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_6 = { ###6
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_6
 
 			removal_cost = -1
 
@@ -530,7 +530,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_7 = { ###7
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_7
 
 			removal_cost = -1
 
@@ -545,7 +545,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_8 = { ###8
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_8
 
 			removal_cost = -1
 
@@ -564,7 +564,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_9 = { ###9
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_9
 
 			removal_cost = -1
 
@@ -583,7 +583,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_10 = { ###10
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_10
 
 			removal_cost = -1
 
@@ -604,7 +604,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_11 = { ###11
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_11
 
 			removal_cost = -1
 
@@ -638,7 +638,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_12 = { ###12
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_12
 
 			removal_cost = -1
 
@@ -674,7 +674,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_13 = { ###13
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_13
 
 			removal_cost = -1
 
@@ -686,7 +686,7 @@ ideas = {
 			}
 		}
 		FAT_National_Revolutionary_Army_14 = { ###14
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_14
 
 			removal_cost = -1
 
@@ -698,7 +698,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_15 = { ###15
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_15
 
 			removal_cost = -1
 
@@ -712,7 +712,7 @@ ideas = {
 		}
 
 		FAT_National_Revolutionary_Army_16 = { ###16
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_16
 
 			removal_cost = -1
 
@@ -727,7 +727,7 @@ ideas = {
 			}
 		}
 		FAT_National_Revolutionary_Army_17 = { ###17
-			picture = GFX_idea_FAT_National_Revolutionary_Army_1
+			picture = GFX_idea_FAT_National_Revolutionary_Army_17
 
 			removal_cost = -1
 
