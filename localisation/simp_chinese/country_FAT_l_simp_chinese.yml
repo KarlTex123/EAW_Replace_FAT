@@ -2313,7 +2313,7 @@ l_simp_chinese:
  FAT_core_the_state_NEW_flag_tt:0 "泛狮鹫尼亚理想机制将会可用！\n将可以整合所有以狮鹫种族为主体的国家。"
 
 
- SouthREP_Enable_tt:0 "启用南方共和党机制——你可以在政治页面找到它。"
+ SouthREP_Enable_tt:0 "启用南方共和党机制——你可以在政治页面找到它。\n注意：该机制窗口较大，如果出现显示问题，请自行调整gui缩放倍率和分辨率。"
  SouthREP_Button_tt:0 "南方共和党"
  FAT_SouthREP_Revolution_tt:0 "革命的愈演愈烈"
  FAT_SouthREP_RevolutionFire_idea_tt:0 "革命怒焰"

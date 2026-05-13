@@ -114,7 +114,7 @@ scripted_gui = {
 #############################################################################################
 			#点击决议的效果
 			REP_FAT_the_south_decisions_selete_button_1_click = {
-				add_political_power = -50
+				add_political_power = -25
 				if = {
 					limit = {
 						check_variable = { cheak_the_state_number = 2 } #411 422 547
@@ -171,7 +171,7 @@ scripted_gui = {
 
 			}
 			REP_FAT_the_south_decisions_selete_button_2_click = {
-				add_political_power = -50
+				add_political_power = -25
 				if = {
 					limit = {
 						check_variable = { cheak_the_state_number = 2 } #411 422 547
@@ -223,7 +223,7 @@ scripted_gui = {
 				}
 			}
 			REP_FAT_the_south_decisions_selete_button_3_click = {
-				add_political_power = -50
+				add_political_power = -25
 				if = {
 					limit = {
 						check_variable = { cheak_the_state_number = 2 } #411 422 547
@@ -274,7 +274,7 @@ scripted_gui = {
 				}
 			}
 			REP_FAT_the_south_decisions_selete_button_4_click = {
-				add_political_power = -50
+				add_political_power = -25
 				if = {
 					limit = {
 						check_variable = { cheak_the_state_number = 2 } #411 422 547
@@ -507,7 +507,7 @@ scripted_gui = {
 					OR = {
 					check_variable = { cheak_the_state_number = 1 }
 					check_variable = { cheak_the_state_number = 7 }
-					has_political_power < 50
+					has_political_power < 25
 					}
 				}
 			}
@@ -600,7 +600,7 @@ scripted_gui = {
 					OR = {
 					check_variable = { cheak_the_state_number = 1 }
 					check_variable = { cheak_the_state_number = 7 }
-					has_political_power < 50
+					has_political_power < 25
 					}
 				}	
 			}
@@ -692,7 +692,7 @@ scripted_gui = {
 					OR = {
 					check_variable = { cheak_the_state_number = 1 }
 					check_variable = { cheak_the_state_number = 7 }
-					has_political_power < 50
+					has_political_power < 25
 					}
 				}
 			}
@@ -784,7 +784,7 @@ scripted_gui = {
 					OR = {
 					check_variable = { cheak_the_state_number = 1 }
 					check_variable = { cheak_the_state_number = 7 }
-					has_political_power < 50
+					has_political_power < 25
 					}
 				}
 			OR = {
