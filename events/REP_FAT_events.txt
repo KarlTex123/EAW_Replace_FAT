@@ -2775,6 +2775,21 @@ country_event = { #风暴将临
 
 	option = {
 		name = FAT_START_LEVELTWO.2.1
+		set_party_name = {
+			ideology = communism
+			long_name = FAT_communism_party_2_long
+			name = FAT_communism_party_2
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = FAT_democratic_party_2_long
+			name = FAT_democratic_party_2
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = FAT_fascism_party_2_long
+			name = FAT_fascism_party_2
+		}
 		custom_effect_tooltip = FAT_START_LEVELTWO.2.1_tt
 	}
 }
