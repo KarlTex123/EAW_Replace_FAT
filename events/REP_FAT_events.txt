@@ -2740,6 +2740,12 @@ country_event = { #时代的终结
 
 	immediate = {
 		set_country_flag = FAT_GONGHEGUODEWEILAI_flag
+		promote_character = FAT_alexander_kemerskai_jr
+		retire_character = FAT_alexander_kemerskai
+		hidden_effect = {
+			retire_character = FAT_alexander_kemerskai_2
+			retire_character = FAT_alexander_kemerskai_3
+		}
 	}
 
 	option = {
@@ -2749,19 +2755,7 @@ country_event = { #时代的终结
 		}
 		add_political_power = -400
 		retire_character = FAT_alexander_kemerskai
-		hidden_effect = {
-			retire_character = FAT_alexander_kemerskai_2
-			retire_character = FAT_alexander_kemerskai_3
-		}
 
-		add_country_leader_role = {
-			character = FAT_alexander_kemerskai_jr
-    		promote_leader = yes
-			country_leader = {
-        		ideology = republicanism
-        		expire = "1965.1.1.1"
-    		}
-		}
 	}
 }
 

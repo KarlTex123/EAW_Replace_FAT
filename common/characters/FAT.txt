@@ -159,19 +159,26 @@ characters={
 			}
 			can_be_fired = no
 			on_add = {
-				ROOT = {
-					hidden_effect = {
-						country_event = { id = FAT_alexander_kemerskai_trait.1 }
+				if = {
+					limit = { has_country_leader = FAT_alexander_kemerskai }
+					ROOT = {
+						hidden_effect = {
+							country_event = { id = FAT_alexander_kemerskai_trait.1 }
+						}
 					}
 				}
 			}
 			on_remove = {
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
+				
 				ROOT = {
+					if = {
+						limit = { has_country_leader = FAT_alexander_kemerskai }
 					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
 					}
+				}
 				}
 			}
 		}
@@ -219,16 +226,20 @@ characters={
 				
 			}
 			on_add = {
+				if = {
+					limit = { has_country_leader = FAT_alexander_kemerskai }
 				ROOT = {
-					
-					hidden_effect = {
-						country_event = { id = FAT_alexander_kemerskai_trait.1 }
+						hidden_effect = {
+							country_event = { id = FAT_alexander_kemerskai_trait.1 }
+						}
 					}
 				}
 			}
 			on_remove = {
 				
 				ROOT = {
+					if = {
+						limit = { has_country_leader = FAT_alexander_kemerskai }
 					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
@@ -236,6 +247,7 @@ characters={
 					
 				}
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
+				}
 			}
 		}
 	}
@@ -257,20 +269,26 @@ characters={
 			}
 			can_be_fired = no
 			on_add = {
+				if = {
+					limit = { has_country_leader = FAT_alexander_kemerskai }
 				ROOT = {
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.1 }
+					}
 					}
 				}
 			}
 			on_remove = {
 				ROOT = {
+					if = {
+						limit = { has_country_leader = FAT_alexander_kemerskai }
 					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
 					}
 				}
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
+			}
 			}
 		}
 		
@@ -508,6 +526,12 @@ characters={
 				large="gfx/leaders/FAT/KemerskaiJr.dds"
 				small=GFX_idea_FAT_army_chief3
 			}
+		}
+		country_leader={
+			desc="FAT_alexander_kemerskai_jr_desc"
+			ideology=republicanism
+			expire="1965.1.1.1"
+			id=-1
 		}
 		field_marshal={
 			traits={ politically_connected promising_general griffon_race_trait inspirational_leader }

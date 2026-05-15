@@ -495,30 +495,55 @@ REP_FAT_core_the_state_NEW = {
 	annex_griffon_country = {
 		icon = x
 		cost = 50
-		days_remove = 150
+		days_remove = 5
 		target_non_existing = yes
 		target_trigger = {
-			 
-			FROM = {
-				is_griffon_race = yes
-				any_core_state = {
-					is_owned_and_controlled_by = FAT
-					NOT = {
-						is_core_of = FAT
+		FROM = {
+			OR = {
+				AND = {
+					is_griffon_race = yes
+					any_core_state = {
+						is_owned_and_controlled_by = FAT
+						NOT = {
+							is_core_of = FAT
+						}
+					}
+					check_variable = {
+						core_states > 0
 					}
 				}
-				check_variable = {
-					core_states > 0
+				AND = { #强行判定赫兹兰国家
+					OR = {
+						TAG = KAT
+						TAG = ANG
+						TAG = PYT
+						TAG = FEA
+						TAG = STW
+						TAG = YAL
+						TAG = ROU
+					}
+					any_core_state = {
+						is_owned_and_controlled_by = FAT
+						NOT = {
+							is_core_of = FAT
+						}
+					}
+					check_variable = {
+						core_states > 0
+					}
 				}
 			}
-
 		}
-		complete_effect = {
+			
+		}
+		remove_effect = {
+		ROOT = {
 			every_owned_state = {
 				limit = {
 					is_core_of = FROM
 				}
 				add_core_of = FAT
+				}
 			}
 		}
 	}
