@@ -57,9 +57,9 @@ bookmarks = {
 				FAT_walk_on_cloud_army_school_idea
 			}
 			focuses = {
-				FAT_liberty
-				FAT_democracy_f
-				FAT_prosperity_f
+				FAT_minzhu
+				FAT_minquan
+				FAT_minsheng
 			}
 		}
 		"RCT"={
