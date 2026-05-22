@@ -12,6 +12,8 @@ focus_tree = {
 		x = 1000
 		y = 3000
 	}
+	shared_focus = FAT_republic_navy
+	shared_focus = FAT_republic_airforce
 	focus = { #三十年共和之梦
 		id = FAT_sanshiniangonghemeng
 		icon = GFX_goal_FAT_sanshiniangonghemeng

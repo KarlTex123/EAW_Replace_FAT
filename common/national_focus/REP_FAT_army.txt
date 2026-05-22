@@ -1,0 +1,478 @@
+# ===================================================
+# 国策树：共和国海军（Republic Navy）
+# 类型：共享国策（shared_focus）
+# 说明：共和国海军建设三大分支 — 远洋海军 / 海岸防御 / 商业护航
+# ===================================================
+
+# ===================================================
+# 国策：共和国海军
+# 所属：FAT / 海军
+# 时间线：建国初期
+# 前置：无（顶层国策）
+# 效果概要：奠定海军建设的基石
+# 关联本地化：FAT_republic_navy
+# ===================================================
+shared_focus = {
+    id = FAT_republic_navy
+    icon = GFX_focus_generic_navy_battleship2
+    cost = 10
+    x = 15
+    y = 9
+    completion_reward = { }
+}
+
+# ===================================================
+# 分支：远洋海军线（左侧分支）
+# ===================================================
+
+# ===================================================
+# 国策：扩建船坞
+# 所属：FAT / 海军 / 远洋海军线
+# 时间线：建国初期
+# 前置：FAT_republic_navy
+# 效果概要：扩建海军船坞设施，提升造船产能
+# 关联本地化：FAT_expand_dockyard
+# ===================================================
+shared_focus = {
+    id = FAT_expand_dockyard
+    icon = GFX_focus_generic_industry_3
+    cost = 10
+    relative_position_id = FAT_republic_navy
+    prerequisite = {
+        focus = FAT_republic_navy
+    }
+    x = -2
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：眺望蓝海
+# 所属：FAT / 海军 / 远洋海军线
+# 时间线：建国初期
+# 前置：FAT_expand_dockyard
+# 互斥：FAT_mercantile_direction
+# 效果概要：制定远洋海军战略，从近岸防御转向蓝水海军
+# 关联本地化：FAT_look_to_blue_sea
+# ===================================================
+shared_focus = {
+    id = FAT_look_to_blue_sea
+    icon = GFX_focus_generic_diplomatic_treaty
+    cost = 10
+    relative_position_id = FAT_expand_dockyard
+    prerequisite = {
+        focus = FAT_expand_dockyard
+    }
+    mutually_exclusive = {
+        focus = FAT_mercantile_direction
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：海上斗士
+# 所属：FAT / 海军 / 远洋海军线
+# 时间线：建国初期
+# 前置：FAT_look_to_blue_sea
+# 效果概要：强化海军作战训练，提升水面舰艇战斗效能
+# 关联本地化：FAT_sea_fighter
+# ===================================================
+shared_focus = {
+    id = FAT_sea_fighter
+    icon = GFX_focus_generic_destroyer
+    cost = 10
+    relative_position_id = FAT_look_to_blue_sea
+    prerequisite = {
+        focus = FAT_look_to_blue_sea
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：移动岛屿
+# 所属：FAT / 海军 / 远洋海军线
+# 时间线：建国中期
+# 前置：FAT_sea_fighter
+# 效果概要：启动航空母舰建造计划，将共和国力量投射至远洋
+# 关联本地化：FAT_moving_island
+# ===================================================
+shared_focus = {
+    id = FAT_moving_island
+    icon = GFX_focus_generic_cruiser2
+    cost = 10
+    relative_position_id = FAT_sea_fighter
+    prerequisite = {
+        focus = FAT_sea_fighter
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 分支：海岸防御线（中间分支）
+# ===================================================
+
+# ===================================================
+# 国策：巩固海岸防线
+# 所属：FAT / 海军 / 海岸防御线
+# 时间线：建国初期
+# 前置：FAT_republic_navy
+# 效果概要：强化沿海防御工事与岸防体系建设
+# 关联本地化：FAT_strengthen_coastal_defense
+# ===================================================
+shared_focus = {
+    id = FAT_strengthen_coastal_defense
+    icon = GFX_focus_generic_military_mission
+    cost = 10
+    relative_position_id = FAT_republic_navy
+    prerequisite = {
+        focus = FAT_republic_navy
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 分支：商业护航线（右侧分支）
+# ===================================================
+
+# ===================================================
+# 国策：扩张贸易船队
+# 所属：FAT / 海军 / 商业护航线
+# 时间线：建国初期
+# 前置：FAT_republic_navy
+# 效果概要：发展商船队以支撑海外贸易与物资运输
+# 关联本地化：FAT_expand_trade_fleet
+# ===================================================
+shared_focus = {
+    id = FAT_expand_trade_fleet
+    icon = GFX_focus_generic_license_production
+    cost = 10
+    relative_position_id = FAT_republic_navy
+    prerequisite = {
+        focus = FAT_republic_navy
+    }
+    x = 2
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：重商方向
+# 所属：FAT / 海军 / 商业护航线
+# 时间线：建国初期
+# 前置：FAT_expand_trade_fleet
+# 互斥：FAT_look_to_blue_sea
+# 效果概要：以护航与商船武装化为导向的海军建设方针
+# 关联本地化：FAT_mercantile_direction
+# ===================================================
+shared_focus = {
+    id = FAT_mercantile_direction
+    icon = GFX_focus_mex_privatisation
+    cost = 10
+    relative_position_id = FAT_expand_trade_fleet
+    prerequisite = {
+        focus = FAT_expand_trade_fleet
+    }
+    mutually_exclusive = {
+        focus = FAT_look_to_blue_sea
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：海岸防御
+# 所属：FAT / 海军 / 商业护航线
+# 时间线：建国初期
+# 前置：FAT_mercantile_direction
+# 效果概要：建造近岸防御舰艇，守护本土水域安全
+# 关联本地化：FAT_coastal_defense
+# ===================================================
+shared_focus = {
+    id = FAT_coastal_defense
+    icon = GFX_focus_hol_the_foundations_of_defense
+    cost = 10
+    relative_position_id = FAT_mercantile_direction
+    prerequisite = {
+        focus = FAT_mercantile_direction
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：袭击贸易
+# 所属：FAT / 海军 / 商业护航线（左侧子分支）
+# 时间线：建国中期
+# 前置：FAT_coastal_defense
+# 互斥：FAT_expand_route
+# 效果概要：以破交战切断敌方海上补给线与商路
+# 关联本地化：FAT_raid_trade
+# ===================================================
+shared_focus = {
+    id = FAT_raid_trade
+    icon = GFX_focus_strike_griffonstone
+    cost = 10
+    relative_position_id = FAT_coastal_defense
+    prerequisite = {
+        focus = FAT_coastal_defense
+    }
+    mutually_exclusive = {
+        focus = FAT_expand_route
+    }
+    x = -1
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：拓展航线
+# 所属：FAT / 海军 / 商业护航线（右侧子分支）
+# 时间线：建国中期
+# 前置：FAT_coastal_defense
+# 互斥：FAT_raid_trade
+# 效果概要：保护并拓宽海上交通线，确保贸易畅通无阻
+# 关联本地化：FAT_expand_route
+# ===================================================
+shared_focus = {
+    id = FAT_expand_route
+    icon = GFX_focus_SAF_colonialist_crusade
+    cost = 10
+    relative_position_id = FAT_coastal_defense
+    prerequisite = {
+        focus = FAT_coastal_defense
+    }
+    mutually_exclusive = {
+        focus = FAT_raid_trade
+    }
+    x = 1
+    y = 1
+    completion_reward = { }
+}
+
+
+# ===================================================
+# 国策树：共和国空军（Republic Air Force）
+# 类型：共享国策（shared_focus）
+# 说明：共和国空军建设三大分支 — 本土防空 / 自主研发 / 技术引进
+# ===================================================
+
+# ===================================================
+# 国策：共和国空军
+# 所属：FAT / 空军
+# 时间线：建国初期
+# 前置：无（顶层国策）
+# 效果概要：奠定空军建设的基石
+# 关联本地化：FAT_republic_airforce
+# ===================================================
+shared_focus = {
+    id = FAT_republic_airforce
+    icon = GFX_focus_usa_escort_fighters
+    cost = 10
+    x = 22
+    y = 9
+    completion_reward = { }
+}
+
+# ===================================================
+# 分支：本土防空线（左侧分支）
+# ===================================================
+
+# ===================================================
+# 国策：扩建机场
+# 所属：FAT / 空军 / 本土防空线
+# 时间线：建国初期
+# 前置：FAT_republic_airforce
+# 效果概要：扩建空军基地，提升航空容量与作战半径
+# 关联本地化：FAT_expand_airfield
+# ===================================================
+shared_focus = {
+    id = FAT_expand_airfield
+    icon = GFX_focus_generic_industry_3
+    cost = 10
+    relative_position_id = FAT_republic_airforce
+    prerequisite = {
+        focus = FAT_republic_airforce
+    }
+    x = -2
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：保卫天空
+# 所属：FAT / 空军 / 本土防空线
+# 时间线：建国初期
+# 前置：FAT_expand_airfield
+# 效果概要：建立本土防空体系，确保共和国领空不受侵犯
+# 关联本地化：FAT_defend_sky
+# ===================================================
+shared_focus = {
+    id = FAT_defend_sky
+    icon = GFX_focus_chi_flying_tigers
+    cost = 10
+    relative_position_id = FAT_expand_airfield
+    prerequisite = {
+        focus = FAT_expand_airfield
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：理想触及天空
+# 所属：FAT / 空军
+# 时间线：建国中期
+# 前置：FAT_air_module_progress + FAT_air_death + FAT_air_tangle
+# 效果概要：发展战略空军力量，实现共和国的航空理想
+# 关联本地化：FAT_ideal_touches_sky
+# ===================================================
+shared_focus = {
+    id = FAT_ideal_touches_sky
+    icon = GFX_focus_rocketry
+    cost = 10
+    relative_position_id = FAT_air_death
+    prerequisite = { focus = FAT_air_module_progress focus = FAT_air_death focus = FAT_air_tangle }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 分支：自主研发线（中间分支）
+# ===================================================
+
+# ===================================================
+# 国策：自主创新
+# 所属：FAT / 空军 / 自主研发线
+# 时间线：建国初期
+# 前置：FAT_republic_airforce
+# 互斥：FAT_rely_on_foreign_tech
+# 效果概要：发展独立自主的航空工业与科研体系
+# 关联本地化：FAT_independent_innovation
+# ===================================================
+shared_focus = {
+    id = FAT_independent_innovation
+    icon = GFX_focus_Computer_2
+    cost = 10
+    relative_position_id = FAT_republic_airforce
+    prerequisite = {
+        focus = FAT_republic_airforce
+    }
+    mutually_exclusive = {
+        focus = FAT_rely_on_foreign_tech
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：航空模块化发展
+# 所属：FAT / 空军 / 自主研发线
+# 时间线：建国中期
+# 前置：FAT_independent_innovation
+# 效果概要：推进飞机设计的模块化与标准化生产
+# 关联本地化：FAT_air_module_progress
+# ===================================================
+shared_focus = {
+    id = FAT_air_module_progress
+    icon = GFX_focus_wonderweapons
+    cost = 10
+    relative_position_id = FAT_independent_innovation
+    prerequisite = {
+        focus = FAT_independent_innovation
+    }
+    x = 0
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 分支：技术引进线（右侧分支）
+# ===================================================
+
+# ===================================================
+# 国策：依赖外国科技
+# 所属：FAT / 空军 / 技术引进线
+# 时间线：建国初期
+# 前置：FAT_republic_airforce
+# 互斥：FAT_independent_innovation
+# 效果概要：引进外国航空技术以填补本土空白
+# 关联本地化：FAT_rely_on_foreign_tech
+# ===================================================
+shared_focus = {
+    id = FAT_rely_on_foreign_tech
+    icon = GFX_focus_generic_license_production
+    cost = 10
+    relative_position_id = FAT_republic_airforce
+    prerequisite = {
+        focus = FAT_republic_airforce
+    }
+    mutually_exclusive = {
+        focus = FAT_independent_innovation
+    }
+    x = 3
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：空中死神
+# 所属：FAT / 空军 / 技术引进线（左侧子分支）
+# 时间线：建国中期
+# 前置：FAT_rely_on_foreign_tech
+# 互斥：FAT_air_tangle
+# 效果概要：发展战术轰炸力量，对敌方要害实施致命打击
+# 关联本地化：FAT_air_death
+# ===================================================
+shared_focus = {
+    id = FAT_air_death
+    icon = GFX_focus_generic_strike_at_democracy2
+    cost = 10
+    relative_position_id = FAT_rely_on_foreign_tech
+    prerequisite = {
+        focus = FAT_rely_on_foreign_tech
+    }
+    mutually_exclusive = {
+        focus = FAT_air_tangle
+    }
+    x = -1
+    y = 1
+    completion_reward = { }
+}
+
+# ===================================================
+# 国策：空中缠斗
+# 所属：FAT / 空军 / 技术引进线（右侧子分支）
+# 时间线：建国中期
+# 前置：FAT_rely_on_foreign_tech
+# 互斥：FAT_air_death
+# 效果概要：专注于制空战斗机研发，夺取战场制空权
+# 关联本地化：FAT_air_tangle
+# ===================================================
+shared_focus = {
+    id = FAT_air_tangle
+    icon = GFX_focus_jap_zero
+    cost = 10
+    relative_position_id = FAT_rely_on_foreign_tech
+    prerequisite = {
+        focus = FAT_rely_on_foreign_tech
+    }
+    mutually_exclusive = {
+        focus = FAT_air_death
+    }
+    x = 1
+    y = 1
+    completion_reward = { }
+}
