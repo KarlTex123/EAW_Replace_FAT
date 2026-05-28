@@ -99,3 +99,19 @@ FAT_SouthREP_Revolution:0 "革命愈演愈烈"
 FAT_HEZILANDESANMINZHUYI:0 "(赫兹兰的)三民主义"
 
 FAT_HEZILANDEKEMEISIKAI:0 "(赫兹兰的)克梅斯凯"
+
+########################空军国策相关民族精神########################
+FAT_independent_innovation_idea:0 "自主创新"
+FAT_independent_innovation_idea_desc:0 "依赖外国装备终非长久之计，独立的航空科研体系是国家空中力量的根基。共和国将倾注资源用于发动机、气动布局与航电设备等核心技术研发，逐步摆脱对外部的依赖，掌握航空工业的自主命脉。"
+
+FAT_air_death_idea:0 "空中死神"
+FAT_air_death_idea_desc:0 "轰炸机是天空中的死神，从云层之上倾泻而下的毁灭将击溃一切顽抗。共和国将重点发展对地攻击力量，让每一架战机都能精准地将火力投送至敌人头顶，使敌军在地面上无处藏身。"
+
+FAT_air_tangle_idea:0 "狗斗之王"
+FAT_air_tangle_idea_desc:0 "空中缠斗考验的不仅是战机的性能，更是飞行员的技艺与意志。共和国的战斗机飞行员将以精湛的空中格斗技巧夺取制空权，在蓝天之上将敌机一架架击落，确保共和国的天空永远湛蓝。"
+
+FAT_efficient_production_idea:0 "高效生产物流"
+FAT_efficient_production_idea_desc:0 "战争不仅是前线将士的较量，更是后方工业产能的比拼。通过优化生产流程、统一零部件标准、建立高效的物流调配体系，共和国将大幅降低飞机制造成本，使更多战机能够以更快的速度列装部队。"
+
+FAT_ideal_touches_sky_idea:0 "天空的理想"
+FAT_ideal_touches_sky_idea_desc:0 "从漫云的荒地到翱翔蓝天的钢铁之翼，共和国追逐天空的梦想从未止步。全体空军人员怀着对航空事业的热忱与对共和理想的忠诚，在短期内迸发出前所未有的进取精神，加速空军学说的完善与革新。"
