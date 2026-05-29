@@ -8,6 +8,16 @@ music = {
 	file = "SuperEvents/JISUIHUANGGUAN.ogg"
 	volume = 2
 }
+music = {
+	name = "moon_means_my_heart"
+	file = "SuperEvents/moon_means_my_heart.ogg"
+	volume = 2
+}
+music = {
+	name = "FINAL ATTACK"
+	file = "SuperEvents/FINAL_ATTACK.ogg"
+	volume = 2
+}
 
 
 

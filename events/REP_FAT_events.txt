@@ -2501,6 +2501,7 @@ news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 		trigger = {
 			original_tag = FAT
 		}
+		play_song = "moon_means_my_heart"
 	}
 	option = {
 		name = FAT_DIP_News.2.2
