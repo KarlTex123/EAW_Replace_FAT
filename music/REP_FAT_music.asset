@@ -1,0 +1,52 @@
+### REP_FAT - Main Radio Station
+### This file tells other files how to find the songs, and what volume to play them at (the volume here is independent of the in game music player)
+##电台音乐
+	music = {
+		name = "Empire_Is_Karma"
+		file = "帝国即业障.ogg"
+		volume = 2
+	}
+	music = {
+		name = "Stroll_Through_Life"
+		file = "漫步人生路.ogg"
+		volume = 2
+	}
+	music = {
+		name = "Skal_Song_Queen"
+		file = "斯卡尔歌后.ogg"
+		volume = 2
+	}
+	music = {
+		name = "Berlin_West_East"
+		file = "Berlin之西东.ogg"
+		volume = 2
+	}
+	music = {
+		name = "Cogwork_Dancers"
+		file = "Cogwork Dancers.ogg"
+		volume = 2
+	}
+
+##超事件音乐
+	music = {
+		name = "Song_of_Civil_Revolution"
+		file = "SuperEvents/Song of Civil Revolution.ogg"
+		volume = 2
+	}
+	music = {
+		name = "JISUIHUANGGUAN"
+		file = "SuperEvents/JISUIHUANGGUAN.ogg"
+		volume = 2
+	}
+	music = {
+		name = "moon_means_my_heart"
+		file = "SuperEvents/moon_means_my_heart.ogg"
+		volume = 2
+	}
+	music = {
+		name = "FINAL ATTACK"
+		file = "SuperEvents/FINAL_ATTACK.ogg"
+		volume = 2
+	}
+
+	
