@@ -43,6 +43,66 @@ spriteTypes = {
 		name = "GFX_idea_FAT_National_Revolutionary_Army_1"
 		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
 	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_3"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_4"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_5"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_6"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_7"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_8"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_9"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_10"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_11"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_12"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_13"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_14"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_15"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_16"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
+	SpriteType = { 
+		name = "GFX_idea_FAT_National_Revolutionary_Army_17"
+		texturefile = "gfx/interface/ideas/FAT_National_Revolutionary_Army_1.png" 
+	}
 	#################################################################################
 	SpriteType = { 
 		name = "GFX_idea_FAT_Reduce_rent_and_interest"
@@ -114,6 +174,10 @@ spriteTypes = {
 	}	
 	SpriteType = { 
 		name = "GFX_idea_FAT_industrialization_4"
+		texturefile = "gfx/interface/ideas/FAT_industrialization.png" 
+	}	
+	SpriteType = { 
+		name = "GFX_idea_FAT_industrialization_5" ###合作社
 		texturefile = "gfx/interface/ideas/FAT_industrialization.png" 
 	}	
 	SpriteType = { 
@@ -190,7 +254,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Proclamation_of_Civil_War_Mobilization.png" 
 	}
 	SpriteType = { 
-		name = "GFX_idea_Twilight_theory"
+		name = "GFX_idea_FAT_National_Republic_party_modifier"
 		texturefile = "gfx/interface/ideas/政党联盟.png" 
 	}
 	SpriteType = { 

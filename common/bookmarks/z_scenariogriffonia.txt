@@ -54,12 +54,12 @@ bookmarks = {
 			ideas = {
 				FAT_republican_struggle
 				FAT_The_Cloudburian_Minority_idea
-				FAT_unruly_army_idea
+				FAT_walk_on_cloud_army_school_idea
 			}
 			focuses = {
-				FAT_sanshiniangonghemeng
-				FAT_The_Harmonic_Crusade
-				FAT_JISUIHUANGGUAN
+				FAT_minzhu
+				FAT_minquan
+				FAT_minsheng
 			}
 		}
 		"RCT"={

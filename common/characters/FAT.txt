@@ -101,7 +101,7 @@ characters={
 			slot = political_advisor
 			allowed = { original_tag = FAT }
 			available = {
-				has_country_flag = shijian_unlock_advisor_flag
+				has_country_flag = shijian_unlock_advisor_flag_1
 			}
 			traits = { FAT_Tri_FAT_yizhan }
 			ai_will_do = { factor = 1 }
@@ -155,8 +155,6 @@ characters={
 		advisor = {
 			slot = army_chief
 			idea_token = FAT_alexander_kemerskai_army_chief
-			traits = { 
-			}
 			can_be_fired = no
 			on_add = {
 				if = {
@@ -172,9 +170,6 @@ characters={
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
 				
 				ROOT = {
-					if = {
-						limit = { has_country_leader = FAT_alexander_kemerskai }
-					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
 					}
@@ -209,7 +204,6 @@ characters={
 		
 	}
 	FAT_alexander_kemerskai_2={
-		
 		portraits={
 			civilian={
 				large="gfx/leaders/FAT/Kerensky.tga"
@@ -222,9 +216,6 @@ characters={
 			slot = theorist
 			idea_token = FAT_alexander_kemerskai_2_theorist
 			can_be_fired = no
-			traits = { 
-				
-			}
 			on_add = {
 				if = {
 					limit = { has_country_leader = FAT_alexander_kemerskai }
@@ -235,8 +226,7 @@ characters={
 					}
 				}
 			}
-			on_remove = {
-				
+			on_remove = {				
 				ROOT = {
 					if = {
 						limit = { has_country_leader = FAT_alexander_kemerskai }
@@ -264,10 +254,12 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = FAT_alexander_kemerskai_3_political_advisor
-			traits = { 
-				
-			}
 			can_be_fired = no
+			available = {
+				NOT = {
+					has_country_flag = lock_kemeisikai_flag
+				}
+			}
 			on_add = {
 				if = {
 					limit = { has_country_leader = FAT_alexander_kemerskai }
@@ -279,13 +271,11 @@ characters={
 				}
 			}
 			on_remove = {
-				ROOT = {
-					if = {
-						limit = { has_country_leader = FAT_alexander_kemerskai }
-					
+				ROOT = {					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
 					}
+					set_country_flag = lock_kemeisikai_flag
 				}
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
 			}
@@ -603,7 +593,7 @@ characters={
 						ruling_only = yes
 					}
 				}
-				has_country_flag = shijian_unlock_advisor_flag
+				has_country_flag = shijian_unlock_advisor_flag_2
 			}
 			traits = {
 				ideological_crusader war_industrialist
@@ -636,7 +626,7 @@ characters={
 						ruling_only = yes
 					}
 				}
-				has_country_flag = shijian_unlock_advisor_flag
+				has_country_flag = shijian_unlock_advisor_flag_3
 			}
 			traits = {
 				captain_of_industry silent_workgriffon

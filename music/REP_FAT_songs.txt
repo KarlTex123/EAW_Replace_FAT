@@ -1,0 +1,32 @@
+music_station = "rep_fat_music"
+
+music = {
+	song = "Empire_Is_Karma"
+	chance = {
+		base = 1
+	}
+}
+music = {
+	song = "Stroll_Through_Life"
+	chance = {
+		base = 1
+	}
+}
+music = {
+	song = "Skal_Song_Queen"
+	chance = {
+		base = 1
+	}
+}
+music = {
+	song = "Berlin_West_East"
+	chance = {
+		base = 1
+	}
+}
+music = {
+	song = "Cogwork_Dancers"
+	chance = {
+		base = 1
+	}
+}
