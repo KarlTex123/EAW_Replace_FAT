@@ -157,23 +157,18 @@ characters={
 			idea_token = FAT_alexander_kemerskai_army_chief
 			can_be_fired = no
 			on_add = {
-				if = {
-					limit = { has_country_leader = FAT_alexander_kemerskai }
-					ROOT = {
-						hidden_effect = {
-							country_event = { id = FAT_alexander_kemerskai_trait.1 }
-						}
+				ROOT = {
+					hidden_effect = {
+						country_event = { id = FAT_alexander_kemerskai_trait.1 }
 					}
 				}
 			}
 			on_remove = {
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
-				
 				ROOT = {
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
 					}
-				}
 				}
 			}
 		}
@@ -217,19 +212,15 @@ characters={
 			idea_token = FAT_alexander_kemerskai_2_theorist
 			can_be_fired = no
 			on_add = {
-				if = {
-					limit = { has_country_leader = FAT_alexander_kemerskai }
 				ROOT = {
-						hidden_effect = {
-							country_event = { id = FAT_alexander_kemerskai_trait.1 }
-						}
+					
+					hidden_effect = {
+						country_event = { id = FAT_alexander_kemerskai_trait.1 }
 					}
 				}
 			}
 			on_remove = {				
 				ROOT = {
-					if = {
-						limit = { has_country_leader = FAT_alexander_kemerskai }
 					
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.2 }
@@ -237,7 +228,6 @@ characters={
 					
 				}
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
-				}
 			}
 		}
 	}
@@ -261,12 +251,9 @@ characters={
 				}
 			}
 			on_add = {
-				if = {
-					limit = { has_country_leader = FAT_alexander_kemerskai }
 				ROOT = {
 					hidden_effect = {
 						country_event = { id = FAT_alexander_kemerskai_trait.1 }
-					}
 					}
 				}
 			}
@@ -278,7 +265,6 @@ characters={
 					set_country_flag = lock_kemeisikai_flag
 				}
 				custom_effect_tooltip = alexander_kemerskai_on_remove_tt
-			}
 			}
 		}
 		
@@ -516,12 +502,6 @@ characters={
 				large="gfx/leaders/FAT/KemerskaiJr.dds"
 				small=GFX_idea_FAT_army_chief3
 			}
-		}
-		country_leader={
-			desc="FAT_alexander_kemerskai_jr_desc"
-			ideology=republicanism
-			expire="1965.1.1.1"
-			id=-1
 		}
 		field_marshal={
 			traits={ politically_connected promising_general griffon_race_trait inspirational_leader }
