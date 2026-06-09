@@ -186,7 +186,7 @@ REP_FAT_political_decision: "共和国派系政治"
   faction_14_loc_desc: ""
 
  REP_FAT_political_billing: "国家政治宣传栏"
-  REP_FAT_political_billing_desc: "烙馍说，要有狮鹫尼亚，于是就有了狮鹫尼亚；烙馍说，要搞政治宣传，于是就有了这个决议。"
+  REP_FAT_political_billing_desc: "在革命与建设的各个历史阶段，宣传始终发挥着教育公民、凝聚共识、抵御敌对意识形态渗透的关键作用。选择适当的宣传主题并配置于宣传栏位中，将在一定时期内为国家带来显著的政治与社会效益。\n" 
   billing_slots_number_trigger: "仍有空余宣传栏位（[?how_many_billing_slots_using]/3）" 
   clear_political_billing: "清空宣传栏"
   clear_political_billing_flag: "选择§R清空宣传栏§!" 

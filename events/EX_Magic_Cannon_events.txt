@@ -43,11 +43,10 @@ country_event = { # 大获成功
     desc = EX_Magic_Cannon.3.desc
     picture = GFX_EX_Magic_Cannon_3
     is_triggered_only = yes
-    hidden = no
     timeout_days = 14
     option = { # “测试结果：成功”
         name = EX_Magic_Cannon.3.a
-        ai_chance = { factor = 1 }
+        ai_chance = { base = 1 }
         set_technology = {
             EX_Magic_Cannon = 1
             popup = no

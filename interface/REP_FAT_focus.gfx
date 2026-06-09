@@ -442,10 +442,6 @@ spriteTypes={
 	}
 
 	SpriteType={
-	name="GFX_goal_FAT_XIAOMAPENGYOU"
-	texturefile="gfx/interface/goals/FAT/小马大陆的朋友.png"
-	}
-	SpriteType={
 	name="GFX_goal_FAT_HEIJIANPOBIN" 
 	texturefile="gfx/interface/goals/FAT/河间破冰.png"
 	}

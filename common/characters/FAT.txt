@@ -79,7 +79,8 @@ characters={
 					if = {
 						limit = { NOT = { has_country_flag = EX_Magic_Cannon } }
 						hidden_effect = {
-							country_event = { id = EX_Magic_Cannon.1 } set_country_flag = EX_Magic_Cannon
+							country_event = { id = EX_Magic_Cannon.1 } 
+							set_country_flag = EX_Magic_Cannon
 						}
 						custom_effect_tooltip = EX_Magic_Cannon_tt
 					}

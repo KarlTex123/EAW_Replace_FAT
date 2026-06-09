@@ -1,0 +1,28 @@
+technologies = {
+	EX_Magic_Cannon = {
+		enable_equipments = {
+			fensuier_magic_pao
+		}
+
+		research_cost = 1.5
+
+		start_year = 1000
+
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 2 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+			mio_cat_artillery
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+

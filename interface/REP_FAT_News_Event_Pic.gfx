@@ -1,21 +1,21 @@
 spriteTypes = {
 	SpriteType = { 
 		name = "GFX_FAT_DIP_News.1"
-		texturefile = "gfx\interface\News_Event_Pic\FAT_DIP_News.1.dds" 
+		texturefile = "gfx/interface/News_Event_Pic/FAT_DIP_News.1.dds" 
 	}
 	SpriteType = { 
 		name = "GFX_FAT_DIP_News.2"
-		texturefile = "gfx\interface\News_Event_Pic\FAT_DIP_News.2.dds"    
+		texturefile = "gfx/interface/News_Event_Pic/FAT_DIP_News.2.dds"    
 	}
 
 	SpriteType = {
 		name = "GFX_FAT_DIP_STARTTWOLEVEL"
-		texturefile = "gfx\interface\News_Event_Pic\FAT_DIP_STARTTWOLEVEL.dds"
+		texturefile = "gfx/interface/News_Event_Pic/FAT_DIP_STARTTWOLEVEL.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_REP_FAT_SHIJILICI"
-		texturefile = "gfx\interface\the_south_public\SHIJILICI.dds"
+		texturefile = "gfx/interface/the_south_public/SHIJILICI.dds"
 	}
 }
 
