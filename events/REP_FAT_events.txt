@@ -2965,6 +2965,12 @@ country_event = { #时代的终结
 
 	immediate = {
 		set_country_flag = FAT_GONGHEGUODEWEILAI_flag
+		promote_character = FAT_alexander_kemerskai_jr
+		retire_character = FAT_alexander_kemerskai
+		hidden_effect = {
+			retire_character = FAT_alexander_kemerskai_2
+			retire_character = FAT_alexander_kemerskai_3
+		}
 	}
 
 	option = {
@@ -2974,19 +2980,7 @@ country_event = { #时代的终结
 		}
 		add_political_power = -400
 		retire_character = FAT_alexander_kemerskai
-		hidden_effect = {
-			retire_character = FAT_alexander_kemerskai_2
-			retire_character = FAT_alexander_kemerskai_3
-		}
 
-		add_country_leader_role = {
-			character = FAT_alexander_kemerskai_jr
-    		promote_leader = yes
-			country_leader = {
-        		ideology = republicanism
-        		expire = "1965.1.1.1"
-    		}
-		}
 	}
 }
 
@@ -3000,6 +2994,21 @@ country_event = { #风暴将临
 
 	option = {
 		name = FAT_START_LEVELTWO.2.1
+		set_party_name = { #修改执政党名字
+			ideology = communism
+			long_name = FAT_communism_party_2_long
+			name = FAT_communism_party_2
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = FAT_democratic_party_2_long
+			name = FAT_democratic_party_2
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = FAT_fascism_party_2_long
+			name = FAT_fascism_party_2
+		}
 		custom_effect_tooltip = FAT_START_LEVELTWO.2.1_tt
 	}
 }

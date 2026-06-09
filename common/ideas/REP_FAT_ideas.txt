@@ -495,7 +495,7 @@ ideas = {
 				army_artillery_attack_factor = 0.05 
 				army_artillery_defence_factor = 0.05 
 				supply_consumption_factor = -0.15 #1
-				initiative_factor = 0.02 #1
+				conscription_factor = 0.025 #1
 			}
 		}
 
@@ -538,7 +538,7 @@ ideas = {
 				army_artillery_attack_factor = 0.05 
 				army_artillery_defence_factor = 0.05 
 				supply_consumption_factor = -0.15 #1
-				initiative_factor = 0.02 #1
+				conscription_factor = 0.025 #1
 				land_reinforce_rate = 0.05 #2
 				COORDINATION_BONUS = 0.05 #2				
 			}
@@ -553,7 +553,7 @@ ideas = {
 				army_artillery_attack_factor = 0.1 #3
 				army_artillery_defence_factor = 0.05 
 				supply_consumption_factor = -0.15 #1
-				initiative_factor = 0.02 #1	
+				conscription_factor = 0.025 #1	
 			}
 			equipment_bonus = { #3
 				artillery = {
@@ -591,7 +591,7 @@ ideas = {
 				army_artillery_attack_factor = 0.1 #3
 				army_artillery_defence_factor = 0.05 
 				supply_consumption_factor = -0.15 #1
-				initiative_factor = 0.02 #1
+				conscription_factor = 0.025 #1
 				land_reinforce_rate = 0.05 #2
 				COORDINATION_BONUS = 0.05 #2		
 			}
@@ -613,7 +613,7 @@ ideas = {
 				army_artillery_defence_factor = 0.05 
 				attrition = -0.2
 				supply_consumption_factor = -0.15 #1
-				initiative_factor = 0.02 #1
+				conscription_factor = 0.025 #1
 				land_reinforce_rate = 0.05 #2
 				COORDINATION_BONUS = 0.05 #2						
 			}
@@ -648,7 +648,7 @@ ideas = {
 				army_artillery_defence_factor = 0.05 
 				attrition = -0.2
 				supply_consumption_factor = -0.15 #1
-				initiative_factor = 0.02 #1
+				conscription_factor = 0.025 #1
 				land_reinforce_rate = 0.05 #2
 				COORDINATION_BONUS = 0.05 #2	
 				custom_modifier_tooltip = FAT_National_Revolutionary_Army_12_tt
@@ -693,7 +693,7 @@ ideas = {
 			modifier = {
 				ARMY_ARMOR_ATTACK_FACTOR = 0.05 #2
 				ARMY_ARMOR_DEFENCE_FACTOR = 0.05 #2
-				INITIATIVE_FACTOR = 0.1         #2
+				conscription_factor = 0.05         #2
 			}
 		}
 
@@ -707,7 +707,7 @@ ideas = {
 				ARMY_ARMOR_DEFENCE_FACTOR = 0.1 #3
 				ARMY_SPEED_FACTOR = 0.1 #1
 				land_reinforce_rate = 0.02 #1
-				INITIATIVE_FACTOR = 0.1         #2
+				conscription_factor = 0.05         #2
 			}
 		}
 
@@ -721,7 +721,7 @@ ideas = {
 				ARMY_ARMOR_DEFENCE_FACTOR = 0.1 #3
 				ARMY_SPEED_FACTOR = 0.1 #1
 				land_reinforce_rate = 0.02 #1
-				INITIATIVE_FACTOR = 0.2         #2
+				conscription_factor = 0.10         #2
 				supply_consumption_factor = -0.1
 				org_loss_when_moving = -0.1
 			}
@@ -736,14 +736,14 @@ ideas = {
 				ARMY_ARMOR_DEFENCE_FACTOR = 0.15 #3
 				ARMY_SPEED_FACTOR = 0.1 #1
 				land_reinforce_rate = 0.02 #1
-				INITIATIVE_FACTOR = 0.2         #2
+				conscription_factor = 0.10         #2
 				supply_consumption_factor = -0.1
 				org_loss_when_moving = -0.1
-				custom_modifier_tooltip = FAT_National_Revolutionary_Army_17_tt
 			}
 			equipment_bonus = { 
 				armor = {
 					build_cost_ic = -0.15
+					armor_value = 0.10
 					instant = yes
 				}
 			}

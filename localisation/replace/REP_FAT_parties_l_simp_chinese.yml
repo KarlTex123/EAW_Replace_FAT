@@ -17,3 +17,11 @@
 
 
  CHARACTER_ADVISOR_CANT_BE_FIRED: "§R顾问不可被解雇，仅可通过事件等效果解雇§!"
+
+ #一阶段结束后
+ FAT_communism_party_2:0 "狮鹫尼亚共产党"
+ FAT_communism_party_2_long:0 "狮鹫尼亚共产党"
+ FAT_democratic_party_2:0 "狮鹫尼亚国民党"
+ FAT_democratic_party_2_long:0 "狮鹫尼亚国民党"
+ FAT_fascism_party_2:0 "狮鹫尼亚黑衣社"
+ FAT_fascism_party_2_long:0 "狮鹫尼亚黑衣社"
