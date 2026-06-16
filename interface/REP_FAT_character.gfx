@@ -1,0 +1,11 @@
+spriteTypes = {
+	SpriteType = {  #总背板
+		name = "GFX_shitelici_xuanfeng"
+		texturefile = "gfx/leaders/FAT/FAT_whirlwind.png" 
+	}
+	
+}
+
+
+
+

@@ -47,6 +47,7 @@ characters={
 				large = "gfx/leaders/FAT/Portrait_Garibaldi_Giuseppe.png"
 			}
 		}
+		can_be_captured = no
 		corps_commander = {
 			desc = "FAT_Garibaldi_Giuseppe_desc"
 			skill = 3
@@ -132,6 +133,7 @@ characters={
 	    		small = GFX_portrait_FAT_star_wind_small
 	    	}
 	    }
+		can_be_captured = no
 		corps_commander = {
 			desc = "FAT_star_wind_desc"
             traits = { panzer_leader panzer_expert kirin_race_trait nirik }
@@ -280,6 +282,7 @@ characters={
 				large="gfx/leaders/FAT/warlord_1.tga"
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			traits={ old_guard brilliant_strategist harsh_leader infantry_leader griffon_race_trait }
 			skill=4
@@ -622,6 +625,7 @@ characters={
 				small=GFX_idea_FAT_political_9
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			traits={ old_guard inflexible_strategist trait_mountaineer griffon_race_trait }
 			skill=3
@@ -662,6 +666,7 @@ characters={
 				small=GFX_idea_FAT_army_chief4
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			traits={ media_personality infantry_officer commando griffon_race_trait }
 			skill=2
@@ -731,6 +736,7 @@ characters={
 				small=GFX_idea_FAT_army_chief2
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			desc="FAT_max_whitefeather_desc"
 			traits={ old_guard trait_engineer career_officer griffon_race_trait }
@@ -774,6 +780,7 @@ characters={
 				small=GFX_idea_FAT_high_command5
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			desc="FAT_otto_gremmersen_desc"
 			traits={ inflexible_strategist winter_specialist griffon_race_trait }
@@ -808,6 +815,7 @@ characters={
 				small=GFX_idea_FAT_high_command1
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			traits={ infantry_officer griffon_race_trait }
 			skill=1
@@ -857,6 +865,7 @@ characters={
 				small=GFX_idea_FAT_high_command3
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			traits={ old_guard cavalry_officer griffon_race_trait }
 			skill=2
@@ -898,6 +907,7 @@ characters={
 				small=GFX_idea_FAT_high_command4
 			}
 		}
+		can_be_captured = no
 		corps_commander={
 			desc="FAT_simon_rigstag_desc"
 			traits={ griffon_race_trait panzer_leader }

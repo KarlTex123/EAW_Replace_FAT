@@ -571,3 +571,24 @@ FAT_check_set_buff_ideo_factor = yes
 FAT_set_faction_buff = yes
 check_has_focus_tree_to_switch_to_communism = no
 
+
+
+create_operative_leader = {
+	name = "施季里茨·旋风"
+	bypass_recruitment = yes
+	available_to_spy_master = yes
+	nationalities = {
+		FAT
+	}
+	GFX = GFX_shitelici_xuanfeng
+	traits = {
+		operative_seducer
+		operative_linguist
+		operative_safe_cracker
+		operative_well_groomed
+		operative_commando
+		operative_tough
+	}
+
+}
+
