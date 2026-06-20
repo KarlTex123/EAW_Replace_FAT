@@ -336,6 +336,12 @@ spriteTypes = {
 		name = "GFX_FAT_alexander_kemerskai"
 		texturefile = "gfx/interface/ideas/Kerensky.png"
 	}
+
+	SpriteType = { #情报部门logo
+		name = "GFX_intelligence_agency_logo_rep_fat"
+		texturefile = "gfx/interface/bop/fat_intelligence_agency_logo.png"
+		noOfFrames = 2 
+	}
 }
 
 
