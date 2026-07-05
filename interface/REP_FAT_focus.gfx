@@ -1,5 +1,33 @@
 spriteTypes={
-
+	###################################国策的#############################################################
+	SpriteType = {
+		name = "GFX_goal_FAT_HUANGGUANLUODI"
+		texturefile = "gfx/interface/goals/newone/FAT_HUANGGUANLUODI.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_HEZILANLANDIAO"
+		texturefile = "gfx/interface/goals/newone/FAT_HEZILANLANDIAO.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_GUIZUZHIMINGYUN"
+		texturefile = "gfx/interface/goals/newone/FAT_GUIZUZHIMINGYUN.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_SHENGUANZHIMINGYUN"
+		texturefile = "gfx/interface/goals/newone/FAT_SHENGUANZHIMINGYUN.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_GELUOFUZHIMINGYUN"
+		texturefile = "gfx/interface/goals/newone/FAT_GELUOFUZHIMINGYUN.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_HEZILANDEGEMING"
+		texturefile = "gfx/interface/goals/newone/FAT_HEZILANDEGEMING.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_GONGHEGUODEWEILAI"
+		texturefile = "gfx/interface/goals/newone/FAT_GONGHEGUODEWEILAI.png"			
+	}
 	####################################军事线########################################################
 
 	SpriteType = {
