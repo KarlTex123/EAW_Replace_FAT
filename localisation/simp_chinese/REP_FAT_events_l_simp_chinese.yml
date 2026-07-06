@@ -1,4 +1,6 @@
 ﻿l_simp_chinese:
+event_has_active_effect: "--------------------------------\n§g以下效果已经发生：§!"
+
 FAT_start.1.t: "共和国的现状"
 FAT_start.1.d: ""
 FAT_start.1.1: "关于现有势力"

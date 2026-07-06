@@ -507,6 +507,15 @@ characters={
 				small=GFX_idea_FAT_army_chief3
 			}
 		}
+		country_leader = {
+			ideology = republicanism
+			desc = FAT_alexander_kemerskai_jr_desc
+			traits = {
+				
+			}
+			expire="2000.1.1.1"
+			
+		}
 		field_marshal={
 			traits={ politically_connected promising_general griffon_race_trait inspirational_leader }
 			skill=1

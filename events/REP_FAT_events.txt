@@ -2956,32 +2956,44 @@ country_event = { #格罗弗家族的命运
 }
 
 country_event = { #时代的终结
-	id = FAT_START_LEVELTWO.1
-	picture = GFX_FAT_alexander_kemerskai
-	title = FAT_START_LEVELTWO.1.t
-	desc = FAT_START_LEVELTWO.1.d
+    id = FAT_START_LEVELTWO.1
+    picture = GFX_FAT_alexander_kemerskai
+    title = FAT_START_LEVELTWO.1.t
+    desc = FAT_START_LEVELTWO.1.d
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	immediate = {
-		set_country_flag = FAT_GONGHEGUODEWEILAI_flag
-		promote_character = FAT_alexander_kemerskai_jr
-		retire_character = FAT_alexander_kemerskai
-		hidden_effect = {
-			retire_character = FAT_alexander_kemerskai_2
-			retire_character = FAT_alexander_kemerskai_3
+    immediate = {
+        set_country_flag = FAT_GONGHEGUODEWEILAI_flag
+        hidden_effect = {
+			retire_character = FAT_alexander_kemerskai
+            retire_character = FAT_alexander_kemerskai_2
+            retire_character = FAT_alexander_kemerskai_3
+			promote_character = FAT_alexander_kemerskai_jr
+        }
+    }
+
+    option = {
+        name = FAT_START_LEVELTWO.1.1
+        country_event = {
+            id = FAT_START_LEVELTWO.2
+        }
+        add_political_power = -400
+		effect_tooltip = {
+			custom_effect_tooltip = event_has_active_effect
+			retire_character = FAT_alexander_kemerskai
+			promote_character = FAT_alexander_kemerskai_jr
+			add_country_leader_role = {
+				character = FAT_alexander_kemerskai_jr
+				promote_leader = yes
+				country_leader = {
+				ideology = republicanism
+				traits = {  }
+				}
+			}
 		}
-	}
 
-	option = {
-		name = FAT_START_LEVELTWO.1.1
-		country_event = {
-			id = FAT_START_LEVELTWO.2
-		}
-		add_political_power = -400
-		retire_character = FAT_alexander_kemerskai
-
-	}
+    }
 }
 
 country_event = { #风暴将临
