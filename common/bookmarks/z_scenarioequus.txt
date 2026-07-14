@@ -6,7 +6,6 @@ bookmarks = {
 		picture = "GFX_bookmark_equus"
 		default_country = "EQS"
 		default = yes
-
 		"EQS"={
 			history = "EQS_GATHERING_STORM_DESC"
 			ideology = democratic

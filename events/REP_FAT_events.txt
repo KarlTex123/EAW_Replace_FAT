@@ -2493,15 +2493,16 @@ news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 	picture = GFX_FAT_DIP_News.2
 	title = FAT_DIP_News.2.t
 	desc = FAT_DIP_News.2.d
-
+	major = yes
 	is_triggered_only = yes
-
-		option = {
+	option = {
 		name = FAT_DIP_News.2.1
 		trigger = {
 			original_tag = FAT
 		}
-		play_song = "moon_means_my_heart"
+		ROOT = {
+			scoped_play_song = "moon_means_my_heart"
+		}
 	}
 	option = {
 		name = FAT_DIP_News.2.2
