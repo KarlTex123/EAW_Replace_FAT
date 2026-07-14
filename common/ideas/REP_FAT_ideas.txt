@@ -10,12 +10,10 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.50
 				supply_consumption_factor = -0.30
 
-			}
-			targeted_modifier = {
-				tag = FAT
-				attack_bonus_against = 0.30
-				breakthrough_bonus_against = 0.30
-				defense_bonus_against = 0.30
+			
+				army_attack_factor = 0.30
+				breakthrough_factor = 0.30
+				army_defence_factor = 0.30
 			}
 		}
 		REP_FAT_GRI_UP_2 = {
@@ -27,12 +25,10 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.75
 				supply_consumption_factor = -0.50
 
-			}
-			targeted_modifier = {
-				tag = FAT
-				attack_bonus_against = 0.50
-				breakthrough_bonus_against = 0.50
-				defense_bonus_against = 0.50
+			
+				army_attack_factor = 0.50
+				breakthrough_factor = 0.50
+				army_defence_factor = 0.50
 			}
 
 		}
@@ -45,12 +41,9 @@ ideas = {
 				production_factory_max_efficiency_factor = 1
 				supply_consumption_factor = -0.7
 
-			}
-			targeted_modifier = {
-				tag = FAT
-				attack_bonus_against = 0.70
-				breakthrough_bonus_against = 0.70
-				defense_bonus_against = 0.70
+				army_attack_factor = 0.70
+				breakthrough_factor = 0.70
+				army_defence_factor = 0.70
 			}
 		}
 ###############################################################
@@ -829,7 +822,7 @@ ideas = {
 			}
 			targeted_modifier = {
     				tag = GRI   
-    				attack_bonus_against = 0.1
+    				army_attack_factor = 0.1
 				}
 			modifier = {
 				conscription = 0.02
