@@ -3,8 +3,6 @@ FAT_SouthREP_Revolution = { #革命的愈演愈烈
 	enable = {
 		always = yes
 	}
-	mobilization_speed = -0.15
-	local_resources = -0.10
-	local_factories = -0.2
-	state_production_speed_buildings_factor = -0.33
+	local_manpower = -0.40
+	state_production_speed_buildings_factor = -0.50
 }
