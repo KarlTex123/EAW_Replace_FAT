@@ -1,197 +1,3582 @@
 focus_tree = {
-	id = FAT_start_tree #第一阶段国策树
+	id = FAT_natinal_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 15
 			tag = FAT
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2600 y = 2050 }
+	continuous_focus_position = {
+		x = 1000
+		y = 3000
+	}
+	shared_focus = FAT_republic_navy
+	shared_focus = FAT_republic_airforce
 	focus = {
-		id = damn_our_country_die #共和国之殇
-		icon = GFX_focu_damn_our_country_die
-		cost = 0
+		id = FAT_sanshiniangonghemeng
+		x = 21
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_sanshiniangonghemeng
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#三十年共和之梦
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 150
+			country_event = FAT_FP.10			#克梅斯凯的新年致辞
+		}
+	}
+	focus = {
+		id = FAT_minquan
+		x = 6
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_minquan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#民权
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_sanshiniangonghemeng
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_minquan_tt
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_liberty
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_guominzhuquan
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_guominzhuquan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#国民主权
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minquan
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_guominzhuquan_tt
+			add_to_variable = {
+				FAT_liberty_political_power_gain = 0.1
+			}
+			add_to_variable = {
+				FAT_liberty_ARMY_CORE_DEFENCE_FACTOR = 0.1
+			}
+		}
+		relative_position_id = FAT_minquan
+	}
+	focus = {
+		id = FAT_zongtongyuanshuai
+		x = -3
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_zongtongyuanshuai
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#总统元帅
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minquan
+		}
+		completion_reward = {
+			country_event = FAT_FP.11			#总统权力讨论
+		}
+		relative_position_id = FAT_minquan
+	}
+	focus = {
+		id = FAT_kanluandongyuanfaling
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_kanluandongyuanfaling
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#戡乱动员法令
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_zongtongyuanshuai
+		}
+		completion_reward = {
+			country_event = FAT_FP.17
+		}
+		relative_position_id = FAT_zongtongyuanshuai
+	}
+	focus = {
+		id = FAT_lixinghuazhengfu
+		x = 3
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_lixinghuazhengfu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#理性化政府
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minquan
+		}
+		completion_reward = {
+			add_to_variable = {
+				FAT_liberty_political_advisor_cost_factor = -0.1
+			}
+			add_to_variable = {
+				FAT_liberty_compliance_growth = 0.1
+			}
+			add_to_variable = {
+				FAT_liberty_production_speed_buildings_factor = 0.05
+			}
+			custom_effect_tooltip = FAT_lixinghuazhengfu_tt
+			country_event = FAT_FP.21
+		}
+		relative_position_id = FAT_minquan
+	}
+	focus = {
+		id = FAT_minsheng
+		x = 42
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_minsheng
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#民生
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_sanshiniangonghemeng
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_ideas = FAT_FP_jingji_idea
+				add_dynamic_modifier = {
+					modifier = FAT_prosperity_f
+				}
+			}
+			custom_effect_tooltip = FAT_minsheng_tt
+		}
+	}
+	focus = {
+		id = FAT_jingjijihuaweiyuanhui
 		x = 4
-		y = 0
-		completion_reward = { 
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_jingjijihuaweiyuanhui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#
+		#现在是经济计划委员会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = FAT_gongheyinhang
+		}
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		completion_reward = {
+			add_ideas = FAT_jingjijihuaweiyuanhui_idea
+			decrease_poverty = yes
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_minzhu
+		x = 21
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_minzhu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#民主
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_sanshiniangonghemeng
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_democracy_f
+				}
+			}
+			custom_effect_tooltip = FAT_minzhu_tt
 			country_event = {
-				id = FAT_start.2
-				days = 1
+				id = FAT_FP.73
+			}
+		}
+	}
+	focus = {
+		id = FAT_dapotianhuaban
+		x = 4
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_dapotianhuaban
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#打破天花板
+		available = {
+			has_country_flag = FAT_dapotianhuaban_flag
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		#mutually_exclusive = {
+		#	focus = FAT_fanshijiuzhilu
+		#}
+		prerequisite = {
+			focus = FAT_minzhu
+		}
+		completion_reward = {
+			add_ideas = FAT_heerzhizhi
+		}
+		relative_position_id = FAT_minzhu
+	}
+	focus = {
+		id = FAT_gongheyinhang
+		x = 6
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gongheyinhang
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和银行
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = FAT_jingjijihuaweiyuanhui
+		}
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism				#霸权
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality				#中立
+				popularity = 0.1
+			}
+			country_event = {
+				id = FAT_FP.36
+			}
+			custom_effect_tooltip = FAT_gongheyinhang_tt
+			add_to_variable = {
+				FAT_minsheng_0_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05
+			}
+			add_to_variable = {
+				FAT_minsheng_0_production_factory_efficiency_gain_factor = 0.05
+			}
+			add_to_variable = {
+				FAT_minsheng_0_line_change_production_efficiency_factor = 0.025
+			}
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_xinjianzhongxiaoxue
+		x = 9
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xinjianzhongxiaoxue
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#新建中小学
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_ideas = FAT_education_reform_idea
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_xunzhengqixian
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xunzhengqixian
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#训政期限
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_zongtongyuanshuai
+		}
+		completion_reward = {
+			country_event = FAT_FP.12			#训政争论
+		}
+		relative_position_id = FAT_zongtongyuanshuai
+	}
+	focus = {
+		id = FAT_zhongzuzhengce
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_zhongzuzhengce
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#种族政策
+		available = {
+			NTR = {
+				exists = yes
+			}
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		bypass = {
+			NTR = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = FAT_guominzhuquan
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.18
+			}
+			country_event = {
+				id = FAT_FP.76
+				days = 30
+			}
+		}
+		relative_position_id = FAT_guominzhuquan
+	}
+	focus = {
+		id = FAT_xuanjudafaguan
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xuanjudafaguan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#选举大法官
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_lixinghuazhengfu
+		}
+		completion_reward = {
+			add_to_variable = {
+				FAT_liberty_stability_factor_factor = 0.05
+			}
+			add_to_variable = {
+				FAT_liberty_drift_defence_factor = 0.15
+			}
+			custom_effect_tooltip = FAT_xuanjudafaguan_tt
+			country_event = FAT_FP.22
+		}
+		relative_position_id = FAT_lixinghuazhengfu
+	}
+	focus = {
+		id = FAT_zonglifu
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_zonglifu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#总理府
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_lixinghuazhengfu
+		}
+		completion_reward = {
+			country_event = FAT_FP.27
+		}
+		relative_position_id = FAT_lixinghuazhengfu
+	}
+	focus = {
+		id = FAT_gemingkongbu
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gemingkongbu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#革命恐怖
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xunzhengqixian
+		}
+		completion_reward = {
+			add_ideas = Revolutionary_Terror
+			country_event = {
+				id = FAT_FP.45
+			}
+			#断头台下
+		}
+		relative_position_id = FAT_xunzhengqixian
+	}
+	focus = {
+		id = FAT_chongshenlingtuwanzheng
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_chongshenlingtuwanzheng
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#重申领土完整
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_kanluandongyuanfaling
+		}
+		prerequisite = {
+			focus = FAT_xunzhengqixian
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.2
+			add_to_variable = {
+				FAT_liberty_training_time_army_factor = -0.1
+			}
+			custom_effect_tooltip = FAT_chongshenlingtuwanzheng_tt
+		}
+		relative_position_id = FAT_kanluandongyuanfaling
+	}
+	focus = {
+		id = FAT_xuanjuquan
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xuanjuquan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#选举权
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_zhongzuzhengce
+		}
+		completion_reward = {
+			add_political_power = 150
+			country_event = FAT_FP.20
+		}
+		relative_position_id = FAT_zhongzuzhengce
+	}
+	focus = {
+		id = FAT_jianchilifatongyi
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_jianchilifatongyi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#坚持立法统一
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_zonglifu
+		}
+		prerequisite = {
+			focus = FAT_xuanjudafaguan
+		}
+		completion_reward = {
+			add_to_variable = {
+				FAT_liberty_war_stability_factor = 0.4
+			}
+			add_to_variable = {
+				FAT_liberty_mobilization_laws_cost_factor = -0.25
+			}
+			add_to_variable = {
+				FAT_liberty_trade_laws_cost_factor = -0.25
+			}
+			add_to_variable = {
+				FAT_liberty_economy_cost_factor = -0.25
+			}
+			custom_effect_tooltip = FAT_jianchilifatongyi_tt
+		}
+		relative_position_id = FAT_xuanjudafaguan
+	}
+	focus = {
+		id = FAT_jianchayuan
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_jianchayuan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#监察院
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_zonglifu
+		}
+		completion_reward = {
+			add_to_variable = {
+				FAT_liberty_intel_network_gain_factor = 0.25
+			}
+			add_to_variable = {
+				FAT_liberty_drift_defence_factor = 0.15
+			}
+			add_to_variable = {
+				FAT_liberty_LOCAL_INTEL_TO_ENEMIES = -0.25
+			}
+			country_event = FAT_FP.25
+			custom_effect_tooltip = FAT_jianchayuan_tt
+		}
+		relative_position_id = FAT_zonglifu
+	}
+	focus = {
+		id = FAT_xianfacaoan
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_xianfacaoan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#狮鹫共和国宪法草案
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xuanjuquan
+		}
+		prerequisite = {
+			focus = FAT_jianchilifatongyi
+		}
+		prerequisite = {
+			focus = FAT_chongshenlingtuwanzheng
+		}
+		completion_reward = {
+			country_event = FAT_FP.26
+		}
+		relative_position_id = FAT_xuanjuquan
+	}
+	focus = {
+		id = FAT_fanshijiuzhilu
+		x = -4
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_fanshijiuzhilu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#泛狮鹫之路
+		available = {
+			has_country_flag = FAT_fanshijiuzhilu_flag
+		}
+		#mutually_exclusive = {
+		#	focus = FAT_dapotianhuaban
+		#}
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minzhu
+		}
+		completion_reward = {
+			add_ideas = FAT_fanshijiulixiang_idea_1
+		}
+		relative_position_id = FAT_minzhu
+	}
+	focus = {
+		id = FAT_xingemingdang
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xingemingdang
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#新革命党
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minzhu
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_xingemingdang_tt
+			hidden_effect = {
+				add_ideas = FAT_minzhu_unlock
+			}
+			add_to_variable = {
+				FAT_democracy_f_stability_factor = 0.15
+			}
+			add_to_variable = {
+				FAT_democracy_f_mobilization_laws_cost_factor = -0.15
+			}
+			add_to_variable = {
+				FAT_democracy_f_trade_laws_cost_factor = -0.15
+			}
+			add_to_variable = {
+				FAT_democracy_f_economy_cost_factor = -0.15
+			}
+		}
+		relative_position_id = FAT_minzhu
+	}
+	focus = {
+		id = FAT_yuanlaopingyihui
+		x = -1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_yuanlaopingyihui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#元老评议会
+		#现在是监察委员会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xingemingdang
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_yuanlaopingyihui_tt
+			add_to_variable = {
+				FAT_democracy_f_enemy_operative_capture_chance_factor = 0.25
+			}
+			add_to_variable = {
+				FAT_democracy_f_OPINION_GAIN_MONTHLY_FACTOR = 0.5
+			}
+		}
+		relative_position_id = FAT_xingemingdang
+	}
+	focus = {
+		id = FAT_zhongyangzhiweihui
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_zhongyangzhiweihui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#中央执政委员会
+		#现在是执行委员会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xingemingdang
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_FAT_zhongyangzhiweihui_tt
+			add_to_variable = {
+				FAT_democracy_f_consumer_goods_factor = -0.1
+			}
+			add_to_variable = {
+				FAT_democracy_f_industrial_capacity_factory = 0.1
+			}
+			country_event = {
+				id = FAT_FP.74
+			}
+		}
+		relative_position_id = FAT_xingemingdang
+	}
+	focus = {
+		id = FAT_yanjiuhui
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_yanjiuhui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#三民主义研究会
+		#现在是民众运动部
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_yuanlaopingyihui
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_yanjiuhui_tt
+			add_to_variable = {
+				FAT_democracy_f_consumer_goods_factor = -0.05
+			}
+			add_to_variable = {
+				FAT_democracy_f_political_power_factor = 0.1
 			}
 			add_political_power = 100
 		}
+		relative_position_id = FAT_yuanlaopingyihui
 	}
-	focus = {  
-		id = control_news_media #控制新闻媒体
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = damn_our_country_die 
-		prerequisite = {
-			focus = damn_our_country_die
-		}
-		mutually_exclusive = {
-		}
-		x = 0
-		y = 2
-		completion_reward = { 
-			add_political_power = 50
-			add_stability = 0.05
-			unlock_decision_tooltip = publication_benefit_to_us
-		}
-	}
-
-
-	##左线
 	focus = {
-		id = my_mind_my_heart #理想与本心
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = damn_our_country_die
+		id = FAT_junweihui
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_junweihui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#军事委员会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
 		prerequisite = {
-			focus = damn_our_country_die
+			focus = FAT_zhongyangzhiweihui
 		}
-		mutually_exclusive = {
-			focus = realism_political
+		completion_reward = {
+			custom_effect_tooltip = FAT_junweihui_tt
+			add_to_variable = {
+				FAT_democracy_f_planning_speed = 0.1
+			}
+			add_to_variable = {
+				FAT_democracy_f_max_planning = 0.1
+			}
 		}
+		relative_position_id = FAT_zhongyangzhiweihui
+	}
+	focus = {
+		id = FAT_gaizaohuogaizu
+		x = 1
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gaizaohuogaizu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#改造或改组
+		#现在是强化基层党部
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_yanjiuhui
+		}
+		prerequisite = {
+			focus = FAT_junweihui
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_gaizaohuogaizu_tt
+			add_to_variable = {
+				FAT_democracy_f_stability_weekly = 0.005
+			}
+			add_to_variable = {
+				FAT_democracy_f_production_speed_buildings_factor = 0.1
+			}
+			add_to_variable = {
+				FAT_democracy_f_production_factory_efficiency_gain_factor = 0.1
+			}
+			add_to_variable = {
+				FAT_democracy_f_line_change_production_efficiency_factor = 0.2
+			}
+		}
+		relative_position_id = FAT_yanjiuhui
+	}
+	focus = {
+		id = FAT_gonghegdiantai
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gonghegdiantai
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#狮鹫共和电台
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_fanshijiuzhilu
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_fanshijiulixiang_idea_1
+				add_idea = FAT_fanshijiulixiang_idea_2
+			}
+		}
+		relative_position_id = FAT_fanshijiuzhilu
+	}
+	focus = {
+		id = FAT_guojiakuangjia
 		x = -2
 		y = 1
-		completion_reward = { 
-			add_political_power = 25
-			add_stability = 0.05
-			unlock_decision_tooltip = recall_revolution_idea
-		}
-	}
-	focus = {
-		id = friendship_can_solve_all #与艾勒斯特和解
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = my_mind_my_heart
-		prerequisite = {
-			focus = my_mind_my_heart
-		}
-		x = 0
-		y = 1
-		completion_reward = { 
-			add_popularity = { 
-				ideology = communism
-				popularity = 0.03 
-			}
-			add_political_power = 25
-			add_stability = -0.02
-			country_event = FAT_start.7
-			unlock_decision_tooltip = with_socialism_together
-
-		}
-	}
-	focus = {
-		id = hit_bad_army_leader #降职不忠诚军官
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = friendship_can_solve_all
-		prerequisite = {
-			focus = friendship_can_solve_all
-		}
-		x = 0
-		y = 1
-		completion_reward = { 
-			add_timed_idea = {
-				idea = FAT_unstable_army_idea
-				days = 180
-			}
-			unlock_decision_tooltip = slow_down_army_please
-		}
-	}
-	focus = {
-		id = future_of_our_country #共和国的未来
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = control_news_media
+		cost = 5
+		icon = GFX_goal_FAT_guojiakuangjia
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#泛狮鹫国家框架
 		available = {
-			has_country_flag = sure_FAT_political #该country_flag在权利平衡达到规定数值后获得
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
 		}
 		prerequisite = {
-			focus = hit_bad_army_leader
-			focus = threat_government_official
+			focus = FAT_gonghegdiantai
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.59
+			}
+			swap_ideas = {
+				remove_idea = FAT_fanshijiulixiang_idea_2
+				add_idea = FAT_fanshijiulixiang_idea_3
+			}
+		}
+		relative_position_id = FAT_gonghegdiantai
+	}
+	focus = {
+		id = FAT_biancuanwenji
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_biancuanwenji
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#编篡克梅斯凯文集
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
 		}
 		prerequisite = {
-			focus = control_news_media
+			focus = FAT_gonghegdiantai
 		}
+		completion_reward = {
+			add_ideas = FAT_guofujingshen
+		}
+		relative_position_id = FAT_gonghegdiantai
+	}
+	focus = {
+		id = FAT_manyuntebieshi
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_manyuntebieshi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#漫云特别市
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_guojiakuangjia
+		}
+		completion_reward = {
+			485 = {
+				add_extra_state_shared_building_slots = 4
+				add_dynamic_modifier = {
+					modifier = FAT_manyun_city_modifier
+					scope = FAT
+				}
+				add_manpower = 20000
+			}
+			custom_effect_tooltip = FAT_manyuntebieshi_tt
+		}
+		relative_position_id = FAT_guojiakuangjia
+	}
+	focus = {
+		id = FAT_bianzhunyu
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_bianzhunyu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#狮鹫尼亚标准语
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_biancuanwenji
+		}
+		completion_reward = {
+			remove_ideas = FAT_The_Cloudburian_Minority_idea
+			add_ideas = FAT_Language_confusion			#文化多元
+		}
+		relative_position_id = FAT_biancuanwenji
+	}
+	focus = {
+		id = FAT_chongshenpanluan
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_chongshenpanluan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#重审瑰翼叛乱
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_dapotianhuaban
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_heerzhizhi
+				add_idea = FAT_heerzhizhi_2
+			}
+			add_political_power = 50
+		}
+		relative_position_id = FAT_dapotianhuaban
+	}
+	focus = {
+		id = FAT_kuodashengquanli
+		x = 2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_kuodashengquanli
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#扩大省议会权力
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_chongshenpanluan
+		}
+		completion_reward = {
+			add_ideas = FAT_shiduquanlixiafang
+		}
+		relative_position_id = FAT_chongshenpanluan
+	}
+	focus = {
+		id = FAT_wenxiehui
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_wenxiehui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#漫云文化协会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_chongshenpanluan
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_heerzhizhi_2
+				add_idea = FAT_heerzhizhi_3
+			}
+		}
+		relative_position_id = FAT_chongshenpanluan
+	}
+	focus = {
+		id = FAT_jiyufangyandiwei
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_jiyufangyandiwei
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#给予方言地位
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_wenxiehui
+		}
+		completion_reward = {
+			remove_ideas = FAT_The_Cloudburian_Minority_idea
+			add_ideas = FAT_heerbutong
+		}
+		relative_position_id = FAT_wenxiehui
+	}
+	focus = {
+		id = FAT_buxuanliuwangyihui
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_buxuanliuwangyihui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#补选流亡议会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_kuodashengquanli
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.60
+			}
+		}
+		relative_position_id = FAT_kuodashengquanli
+	}
+	focus = {
+		id = FAT_manyuntizhi
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_manyuntizhi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#漫云体制
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = FAT_manyuntebieshi
+					has_completed_focus = FAT_bianzhunyu
+				}
+				AND = {
+					has_completed_focus = FAT_jiyufangyandiwei
+					has_completed_focus = FAT_buxuanliuwangyihui
+				}
+			}
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_manyuntebieshi
+			focus = FAT_bianzhunyu
+			focus = FAT_jiyufangyandiwei
+			focus = FAT_buxuanliuwangyihui
+		}
+		prerequisite = {
+			focus = FAT_gaizaohuogaizu
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_manyuntizhi_tt
+			add_to_variable = {
+				FAT_democracy_f_factory_max_efficiency_factor = 0.15
+			}
+			add_to_variable = {
+				FAT_democracy_f_communism_drift = 0.1
+			}
+			add_to_variable = {
+				FAT_democracy_f_fascism_drift = 0.1
+			}
+			add_to_variable = {
+				FAT_democracy_f_democratic_drift = 0.1
+			}
+			country_event = {
+				id = FAT_FP.75
+			}
+		}
+		relative_position_id = FAT_gaizaohuogaizu
+	}
+	focus = {
+		id = FAT_shehzhuyilianmeng
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_shehzhuyilianmeng
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#社会主义者的联盟
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		completion_reward = {
+			set_country_flag = FAT_shengchanxianfa_flag
+			custom_effect_tooltip = FAT_shengchanxianfa_flag_tt
+			add_popularity = {
+				ideology = communism				#社会主义
+				popularity = 0.1
+			}
+			country_event = {
+				id = FAT_FP.32
+			}
+			add_to_variable = {
+				FAT_minsheng_0_production_speed_buildings_factor = 0.025
+			}
+			add_to_variable = {
+				FAT_minsheng_0_industrial_capacity_factory = 0.025
+			}
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_kuodayanlunziyou
+		x = -6
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_kuodayanlunziyou
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#扩大自由言论
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = FAT_gonghezuojialianmeng
+		}
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+			add_ideas = FAT_kuodayanlunziyou_idea
+			add_popularity = {
+				ideology = fascism				#霸权
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic				#谐律主义
+				popularity = 0.1
+			}
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_gonghezuojialianmeng
+		x = -4
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gonghezuojialianmeng
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和作家联盟
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = FAT_kuodayanlunziyou
+		}
+		prerequisite = {
+			focus = FAT_minsheng
+		}
+		completion_reward = {
+			add_ideas = FAT_gonghezuojialianmeng_idea
+		}
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_nongxiediwei
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_nongxiediwei
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#农协地位
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_shehzhuyilianmeng
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.38
+			}
+		}
+		relative_position_id = FAT_shehzhuyilianmeng
+	}
+	focus = {
+		id = FAT_guligemingwenxue
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_guligemingwenxue
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#鼓励革命文学
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_gonghezuojialianmeng
+		}
+		completion_reward = {
+			decrease_illiteracy = yes
+			swap_ideas = {
+				remove_idea = FAT_gonghezuojialianmeng_idea
+				add_idea = FAT_gonghezuojialianmeng_idea_1
+			}
+		}
+		relative_position_id = FAT_gonghezuojialianmeng
+	}
+	focus = {
+		id = FAT_gonghuifa
+		x = 2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gonghuifa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#工会法
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_shehzhuyilianmeng
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.37
+			}
+		}
+		relative_position_id = FAT_shehzhuyilianmeng
+	}
+	focus = {
+		id = FAT_shehuizhuyizhediwei
 		x = 0
 		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_shehuizhuyizhediwei
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#社会主义者地位
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_shehzhuyilianmeng
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.33
+			}
+		}
+		relative_position_id = FAT_shehzhuyilianmeng
+	}
+	focus = {
+		id = FAT_shengchanxianfa
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_shengchanxianfa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#生产宪法
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_jingjijihuaweiyuanhui
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_jingjijihuaweiyuanhui_idea
+				add_idea = FAT_jingjijihuaweiyuanhui_idea_1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+		relative_position_id = FAT_jingjijihuaweiyuanhui
+	}
+	focus = {
+		id = FAT_xinkeben
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xinkeben
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#新课本
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xinjianzhongxiaoxue
+		}
+		completion_reward = {
+			add_ideas = FAT_Literacy_Campaign
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_research_slot = 1
+		}
+		relative_position_id = FAT_xinjianzhongxiaoxue
+	}
+	focus = {
+		id = FAT_liuwanggongjiaoshi
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_liuwanggongjiaoshi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#流亡共和派教师
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xinjianzhongxiaoxue
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_education_reform_idea
+				add_idea = FAT_education_reform_idea_1
+			}
+		}
+		relative_position_id = FAT_xinjianzhongxiaoxue
+	}
+	focus = {
+		id = FAT_tongyikaoshi
+		x = 2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_tongyikaoshi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#统一高校考试
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xinjianzhongxiaoxue
+		}
+		completion_reward = {
+			add_ideas = FAT_college_system_idea
+		}
+		relative_position_id = FAT_xinjianzhongxiaoxue
+	}
+	focus = {
+		id = FAT_kuozhangongjiuyexiao
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_kuozhangongjiuyexiao
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#拓展工鹫夜校
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xinkeben
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_Literacy_Campaign
+				add_idea = FAT_Literacy_Campaign_1
+			}
+			decrease_illiteracy = yes
+		}
+		relative_position_id = FAT_xinkeben
+	}
+	focus = {
+		id = FAT_gonghexueshenglianhehui
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gonghexueshenglianhehui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和学生联合会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_liuwanggongjiaoshi
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_education_reform_idea_1
+				add_idea = FAT_education_reform_idea_2
+			}
+		}
+		relative_position_id = FAT_liuwanggongjiaoshi
+	}
+	focus = {
+		id = FAT_guolidaxue
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_guolidaxue
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#国立漫云大学
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_tongyikaoshi
+		}
+		completion_reward = {
+			add_research_slot = 1
+			increase_science_base = yes
+			557 = {
+				add_building_construction = {
+					type = magical_facility
+					level = 1
+					instant_build = yes
+					province = 4778
+				}
+			}
+		}
+		relative_position_id = FAT_tongyikaoshi
+	}
+	focus = {
+		id = FAT_xiangcunjiansheyundong
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_xiangcunjiansheyundong
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#乡村建设运动
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_nongxiediwei
+		}
+		completion_reward = {
+			decrease_poverty = yes
+			add_political_power = 50
+		}
+		relative_position_id = FAT_nongxiediwei
+	}
+	focus = {
+		id = FAT_xiudingtudifa
+		x = -2
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_xiudingtudifa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#修订土地法
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_nongxiediwei
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_FP.41
+			}
+		}
+		relative_position_id = FAT_nongxiediwei
+	}
+	focus = {
+		id = FAT_gongyejianshefa
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_gongyejianshefa
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#工业发展法
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_gonghuifa
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+		relative_position_id = FAT_gonghuifa
+	}
+	focus = {
+		id = FAT_gongshangbaoxiejishiyebaozheng
+		x = 2
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_gongshangbaoxiejishiyebaozheng
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#工伤保险及失业保障
+		available = {
+			has_completed_focus = FAT_gongyejianshefa
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_gonghuifa
+		}
 		completion_reward = {
 			if = {
 				limit = {
-					has_country_flag = FAT_democratic_win
+					has_idea = FAT_industrialization_1
 				}
-				country_event = FAT_start.3
+				swap_ideas = {
+					remove_idea = FAT_industrialization_1
+					add_idea = FAT_industrialization_3
+				}
+				add_war_support = 0.1
 			}
-			else_if = {
+			if = {
 				limit = {
-					has_country_flag = FAT_nationalism_win
+					has_idea = FAT_industrialization_2
 				}
-				country_event = FAT_start.4
-			}
-			else = {
-				custom_effect_tooltip = future_of_our_country_t
+				swap_ideas = {
+					remove_idea = FAT_industrialization_2
+					add_idea = FAT_industrialization_4
+				}
+				add_stability = 0.1
 			}
 		}
+		relative_position_id = FAT_gonghuifa
 	}
-
-	#右线
 	focus = {
-		id = realism_political #现实政治
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = damn_our_country_die
+		id = FAT_xinshenghuoyundong
+		x = -9
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_xinshenghuoyundong
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#新生活运动
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
 		prerequisite = {
-			focus = damn_our_country_die
+			focus = FAT_minsheng
 		}
-		mutually_exclusive = {
-			focus = my_mind_my_heart
+		completion_reward = {
+			add_ideas = The_New_Life_Movement
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 		}
-		mutually_exclusive = {
-
+		relative_position_id = FAT_minsheng
+	}
+	focus = {
+		id = FAT_gonghejiatingguanxi
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gonghejiatingguanxi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和家庭关系
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
 		}
+		prerequisite = {
+			focus = FAT_xinshenghuoyundong
+		}
+		completion_reward = {
+			add_ideas = The_Republican_Home
+		}
+		relative_position_id = FAT_xinshenghuoyundong
+	}
+	focus = {
+		id = FAT_yuyangaige
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_yuyangaige
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#语言改革
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xinshenghuoyundong
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = The_New_Life_Movement
+				add_idea = The_New_Life_Movement_1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+		relative_position_id = FAT_xinshenghuoyundong
+	}
+	focus = {
+		id = FAT_zhiyuaninkun
 		x = 2
 		y = 1
-		completion_reward = { }
+		cost = 5
+		icon = GFX_goal_FAT_zhiyuaninkun
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#支援贫困
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_xinshenghuoyundong
+		}
+		completion_reward = {
+			add_ideas = FAT_social_transformation
+			decrease_poverty = yes
+		}
+		relative_position_id = FAT_xinshenghuoyundong
 	}
 	focus = {
-		id = come_here_radical_army #拉拢军队激进派
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = realism_political
-		prerequisite = {
-			focus = realism_political
-		}
-		mutually_exclusive = {
-			
-		}
+		id = FAT_tongzijun
 		x = 0
 		y = 1
-		completion_reward = { }
+		cost = 5
+		icon = GFX_goal_FAT_tongzijun
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#狮鹫童子军
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_gonghejiatingguanxi
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = The_Republican_Home
+				add_idea = The_Republican_Home_1
+			}
+		}
+		relative_position_id = FAT_gonghejiatingguanxi
 	}
 	focus = {
-		id = threat_government_official #恐吓政府官员
-		icon = GFX_focu_unknown
-		cost = 0
-		relative_position_id = come_here_radical_army
-		prerequisite = {
-			focus = come_here_radical_army
-		}
-		mutually_exclusive = {
-			
-		}
+		id = FAT_gemingyishi
 		x = 0
 		y = 1
-		completion_reward = { }
+		cost = 5
+		icon = GFX_goal_FAT_gemingyishi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#革命仪式
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_yuyangaige
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = The_New_Life_Movement_1
+				add_idea = The_New_Life_Movement_2
+			}
+		}
+		relative_position_id = FAT_yuyangaige
 	}
-	
-	
-	
+	focus = {
+		id = FAT_qimengshehui
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_qimengshehui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#启蒙社会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_zhiyuaninkun
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_social_transformation
+				add_idea = FAT_social_transformation_1
+			}
+			decrease_illiteracy = yes
+		}
+		relative_position_id = FAT_zhiyuaninkun
+	}
+	focus = {
+		id = FAT_gonghexinyang
+		x = -2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_gonghexinyang
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和信仰
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_tongzijun
+		}
+		prerequisite = {
+			focus = FAT_gemingyishi
+		}
+		prerequisite = {
+			focus = FAT_qimengshehui
+		}
+		completion_reward = {
+			add_ideas = Republican_faith
+		}
+		relative_position_id = FAT_qimengshehui
+	}
+	focus = {
+		id = FAT_heweimishengzhuyi
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_heweimishengzhuyi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#何为民生主义
+		available = {
+			AND = {
+				OR = {
+					has_completed_focus = FAT_gongheyinhang
+					has_completed_focus = FAT_shengchanxianfa
+				}
+				has_completed_focus = FAT_shelikaoshiyuan
+				has_completed_focus = FAT_gonghexinyang
+			}
+		}
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_shehuizhuyizhediwei
+		}
+		prerequisite = {
+			focus = FAT_xiangcunjiansheyundong
+		}
+		prerequisite = {
+			focus = FAT_xiudingtudifa
+		}
+		prerequisite = {
+			focus = FAT_gongyejianshefa
+		}
+		prerequisite = {
+			focus = FAT_gongshangbaoxiejishiyebaozheng
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_heweimishengzhuyi_tt
+			if = {
+				limit = {
+					has_country_flag = sanminzhuyi
+				}
+				country_event = {
+					id = FAT_FP.42
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = zhengdundangwu
+				}
+				country_event = {
+					id = FAT_FP.44
+				}
+			}
+		}
+		relative_position_id = FAT_shehuizhuyizhediwei
+	}
+	focus = {
+		id = FAT_shelikaoshiyuan
+		x = 2
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_shelikaoshiyuan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#设立考试院 
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_kuozhangongjiuyexiao
+		}
+		prerequisite = {
+			focus = FAT_gonghexueshenglianhehui
+		}
+		prerequisite = {
+			focus = FAT_guolidaxue
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_education_reform_idea_2
+				add_idea = FAT_education_reform_idea_3
+			}
+		}
+		relative_position_id = FAT_kuozhangongjiuyexiao
+	}
+	focus = {
+		id = FAT_guomingonghedangquanhui
+		x = 21
+		y = 8
+		cost = 5
+		icon = GFX_goal_FAT_guomingonghedangquanhui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#国民共和党全会
+		available = {
+			has_country_leader = {
+				character = FAT_alexander_kemerskai
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FAT_manyuntizhi
+		}
+		prerequisite = {
+			focus = FAT_xianfacaoan
+		}
+		prerequisite = {
+			focus = FAT_heweimishengzhuyi
+		}
+	}
+	#########################军事线###################
+	focus = {
+		id = FAT_National_Revolutionary_Army
+		x = 6
+		y = 9
+		cost = 2
+		icon = GFX_goal_FAT_National_Revolutionary_Army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#国民革命军
+		completion_reward = {
+			country_event = FAT_FP.28
+			add_ideas = FAT_National_Revolutionary_Army_1
+			army_experience = 50
+			add_command_power = 30
+		}
+	}
+	focus = {
+		id = FAT_Expand_the_Manyun_Military_Academy
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_goal_FAT_Expand_the_Manyun_Military_Academy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#拓展漫云军校
+		prerequisite = {
+			focus = FAT_National_Revolutionary_Army
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_walk_on_cloud_army_school_idea
+				add_idea = FAT_walk_on_cloud_army_school_idea_1
+			}
+		}
+		relative_position_id = FAT_National_Revolutionary_Army
+	}
+	focus = {
+		id = FAT_The_establishment_of_the_General_Staff_Headquarters
+		x = 0
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_The_establishment_of_the_General_Staff_Headquarters
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#参谋总部的建立
+		prerequisite = {
+			focus = FAT_Expand_the_Manyun_Military_Academy
+		}
+		completion_reward = {
+			country_event = FAT_FP.29
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		relative_position_id = FAT_Expand_the_Manyun_Military_Academy
+	}
+	focus = {
+		id = FAT_The_Advantage_of_Artillery
+		x = -3
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_The_Advantage_of_Artillery
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#火炮之利
+		available = {
+			has_country_flag = route_artillery
+		}
+		mutually_exclusive = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+		prerequisite = {
+			focus = FAT_The_establishment_of_the_General_Staff_Headquarters
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+				producer = FAT
+			}
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_1
+				add_idea = FAT_National_Revolutionary_Army_3
+			}
+			add_mastery_bonus = {
+				name = JUNO_invite_american_army_advisors
+				bonus = 0.2
+				days = 400
+				track = combat_support
+			}
+		}
+		relative_position_id = FAT_The_establishment_of_the_General_Staff_Headquarters
+	}
+	focus = {
+		id = FAT_Precise_fire_control
+		x = -2
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_Precise_fire_control
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#精准火控
+		prerequisite = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+		completion_reward = {
+			mio:FAT_broby_armaments_organization = {
+				add_mio_funds = 500
+				add_mio_funds_gain_factor = 0.15
+				add_mio_research_bonus = 0.05
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_5
+						has_idea = FAT_National_Revolutionary_Army_6
+						has_idea = FAT_National_Revolutionary_Army_9
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_3
+					add_idea = FAT_National_Revolutionary_Army_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_5
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_5
+					add_idea = FAT_National_Revolutionary_Army_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_6
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_6
+					add_idea = FAT_National_Revolutionary_Army_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_9
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_9
+					add_idea = FAT_National_Revolutionary_Army_10
+				}
+			}
+		}
+		relative_position_id = FAT_The_Advantage_of_Artillery
+	}
+	focus = {
+		id = FAT_Establish_a_rapid_collaborative_force
+		x = 0
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_Establish_a_rapid_collaborative_force
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#建立快速协同部队
+		prerequisite = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_tech
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_4
+						has_idea = FAT_National_Revolutionary_Army_6
+						has_idea = FAT_National_Revolutionary_Army_8
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_3
+					add_idea = FAT_National_Revolutionary_Army_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_4
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_4
+					add_idea = FAT_National_Revolutionary_Army_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_6
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_6
+					add_idea = FAT_National_Revolutionary_Army_9
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_8
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_8
+					add_idea = FAT_National_Revolutionary_Army_10
+				}
+			}
+		}
+		relative_position_id = FAT_The_Advantage_of_Artillery
+	}
+	focus = {
+		id = FAT_Emphasize_artillery_technology
+		x = 2
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_Emphasize_artillery_technology
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#重视火炮科技
+		prerequisite = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+				producer = FAT
+			}
+			add_tech_bonus = {
+				bonus = 0.75				#研究加成100%
+				ahead_reduction = 2				#超前研究2年
+				uses = 2
+				category = artillery
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_4
+						has_idea = FAT_National_Revolutionary_Army_5
+						has_idea = FAT_National_Revolutionary_Army_7
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_3
+					add_idea = FAT_National_Revolutionary_Army_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_4
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_4
+					add_idea = FAT_National_Revolutionary_Army_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_5
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_5
+					add_idea = FAT_National_Revolutionary_Army_9
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_7
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_7
+					add_idea = FAT_National_Revolutionary_Army_10
+				}
+			}
+		}
+		relative_position_id = FAT_The_Advantage_of_Artillery
+	}
+	focus = {
+		id = FAT_Kemeskey_s_artillery_theory
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_Kemeskey_s_artillery_theory
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#克梅斯凯的火炮理论
+		prerequisite = {
+			focus = FAT_Emphasize_artillery_technology
+		}
+		prerequisite = {
+			focus = FAT_Establish_a_rapid_collaborative_force
+		}
+		prerequisite = {
+			focus = FAT_Precise_fire_control
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+				producer = FAT
+			}
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_10
+				add_idea = FAT_National_Revolutionary_Army_11
+			}
+		}
+		relative_position_id = FAT_The_Advantage_of_Artillery
+	}
+	focus = {
+		id = FAT_The_Harmonic_Crusade
+		x = 0
+		y = 3
+		cost = 5
+		icon = GFX_goal_FAT_The_Harmonic_Crusade
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#谐律十字军
+		prerequisite = {
+			focus = FAT_Kemeskey_s_artillery_theory
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			country_event = FAT_FP.30
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					The_Harmonic_Crusade = 1
+				}
+			}
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_11
+				add_idea = FAT_National_Revolutionary_Army_12
+			}
+		}
+		relative_position_id = FAT_The_Advantage_of_Artillery
+	}
+	########################右#####################
+	focus = {
+		id = FAT_The_Might_of_the_Tank
+		x = 3
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_The_Might_of_the_Tank
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#坦克之威
+		available = {
+			has_country_flag = route_tank
+		}
+		mutually_exclusive = {
+			focus = FAT_The_Advantage_of_Artillery
+		}
+		prerequisite = {
+			focus = FAT_The_establishment_of_the_General_Staff_Headquarters
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5				#研究加成100%
+				ahead_reduction = 1				#超前研究1年
+				uses = 1
+				category = artillery
+			}
+			army_experience = 30
+		}
+		relative_position_id = FAT_The_establishment_of_the_General_Staff_Headquarters
+	}
+	focus = {
+		id = FAT_Establish_a_new_type_of_armored_unit
+		x = -2
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_Establish_a_new_type_of_armored_unit
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#组建新式装甲部队
+		prerequisite = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1				#研究加成100%
+				uses = 1
+				category = armor
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_14
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_1
+					add_idea = FAT_National_Revolutionary_Army_13
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_14
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_14
+					add_idea = FAT_National_Revolutionary_Army_15
+				}
+			}
+		}
+		relative_position_id = FAT_The_Might_of_the_Tank
+	}
+	focus = {
+		id = FAT_Emphasize_armored_technology
+		x = 0
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_Emphasize_armored_technology
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#重视装甲科技
+		prerequisite = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+		completion_reward = {
+			army_experience = 30
+			country_event = FAT_FP.31
+			add_mastery_bonus = {
+				bonus = 0.2
+				days = 180
+				track = armor
+			}
+			add_mastery = {
+				amount = 50
+				track = armor
+			}
+		}
+		relative_position_id = FAT_The_Might_of_the_Tank
+	}
+	focus = {
+		id = FAT_Learning_from_stalliongrad
+		x = 2
+		y = 1
+		cost = 3
+		icon = GFX_goal_FAT_Learning_from_stalliongrad
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#学习嘶大林格勒
+		prerequisite = {
+			focus = FAT_The_Might_of_the_Tank
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1				#研究加成100%
+				uses = 1
+				category = armor
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = FAT_National_Revolutionary_Army_13
+					}
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_1
+					add_idea = FAT_National_Revolutionary_Army_14
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FAT_National_Revolutionary_Army_13
+				}
+				swap_ideas = {
+					remove_idea = FAT_National_Revolutionary_Army_13
+					add_idea = FAT_National_Revolutionary_Army_15
+				}
+			}
+		}
+		relative_position_id = FAT_The_Might_of_the_Tank
+	}
+	focus = {
+		id = FAT_suntail_s_Armor_Theory
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_goal_FAT_suntail_s_Armor_Theory
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#曜尾的装甲理论
+		prerequisite = {
+			focus = FAT_Establish_a_new_type_of_armored_unit
+		}
+		prerequisite = {
+			focus = FAT_Emphasize_armored_technology
+		}
+		prerequisite = {
+			focus = FAT_Learning_from_stalliongrad
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_15
+				add_idea = FAT_National_Revolutionary_Army_16
+			}
+			mio:FAT_cockade_factory_organization = {
+				add_mio_funds = 500
+			}
+			mio:FAT_ring_motors_organization = {
+				add_mio_funds = 500
+			}
+			mio:FAT_squark_tank_factory_organization = {
+				add_mio_funds = 500
+			}
+			mio:SRS_punch_a_hole_organization = {
+				add_mio_funds = 500
+			}
+		}
+		relative_position_id = FAT_The_Might_of_the_Tank
+	}
+	focus = {
+		id = FAT_The_Harmonic_Crusade_1
+		x = 0
+		y = 3
+		cost = 5
+		icon = GFX_goal_FAT_The_Harmonic_Crusade_1
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#谐律十字军
+		prerequisite = {
+			focus = FAT_suntail_s_Armor_Theory
+		}
+		completion_reward = {
+			add_equipment_bonus = {
+				bonus = {
+					armor = {
+						#Valid for BBA and not BBA
+						armor_value = 0.1						# HP = BASE_TRAIN_HP + armor_value
+						instant = yes
+					}
+				}
+			}
+			add_war_support = 0.1
+			country_event = FAT_FP.50
+			swap_ideas = {
+				remove_idea = FAT_National_Revolutionary_Army_16
+				add_idea = FAT_National_Revolutionary_Army_17
+			}
+		}
+		relative_position_id = FAT_The_Might_of_the_Tank
+	}
+	#
+	focus = {
+		id = FAT_XINSHIJIEZHIEMENG
+		x = 58
+		y = 1
+		cost = 2
+		icon = GFX_goal_FAT_XINSHIJIEZHIEMENG
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#新世界之梦
+		available = {
+			date > 1007.12.31
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+			unlock_decision_category_tooltip = FAT_Foreign_decision_categories
+			set_country_flag = FAT_Foreign_decision_categories
+			country_event = {
+				id = FAT_FP.7
+			}
+		}
+	}
+	focus = {
+		id = FAT_GONGHEGUOGONGYUE
+		x = 0
+		y = 1
+		cost = 1
+		icon = GFX_goal_FAT_GONGHEGUOGONGYUE
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和国公约
+		prerequisite = {
+			focus = FAT_XINSHIJIEZHIEMENG
+		}
+		completion_reward = {
+			create_faction_from_template = FAT_GONGHEGUOGONGYUE
+			add_threat = 5
+			country_event = {
+				id = FAT_DIP_Focus.1
+			}
+		}
+		relative_position_id = FAT_XINSHIJIEZHIEMENG
+	}
+	focus = {
+		id = FAT_LIANLUENANFANG
+		x = 0
+		y = 1
+		cost = 3.5
+		icon = GFX_goal_FAT_LIANLUENANFANG
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#联络南方共和党
+		prerequisite = {
+			focus = FAT_GONGHEGUOGONGYUE
+		}
+		completion_reward = {
+			#解锁南方共和党机制
+			add_political_power = 50
+			country_event = {
+				id = FAT_DIP_Focus.2
+			}
+			custom_effect_tooltip = SouthREP_Enable_tt
+		}
+		relative_position_id = FAT_GONGHEGUOGONGYUE
+	}
+	focus = {
+		id = FAT_JIRIZHEMINGYUN
+		x = 2
+		y = 1
+		cost = 3.5
+		icon = GFX_goal_FAT_JIRIZHEMINGYUN
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#击日者的命运
+		bypass = {
+			MNC = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = FAT_LIANLUENANFANG
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.3
+			}
+		}
+		relative_position_id = FAT_LIANLUENANFANG
+	}
+	focus = {
+		id = FAT_HEIJIANPOBIN
+		x = -2
+		y = 1
+		cost = 3.5
+		icon = GFX_goal_FAT_HEIJIANPOBIN
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#河间破冰
+		available = {
+			RCT = {
+				OR = {
+					has_country_leader = {
+						ruling_only = yes
+						character = RCT_river_swirl
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = RCT_nova_whirl
+					}
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				RCT = {
+					exists = no
+				}
+				RCT = {
+					OR = {
+						NOT = {
+							has_country_leader = {
+								ruling_only = yes
+								character = RCT_river_swirl
+							}
+							has_country_leader = {
+								ruling_only = yes
+								character = RCT_nova_whirl
+							}
+						}
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = FAT_LIANLUENANFANG
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.5
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = RCT
+				}
+				diplomatic_relation = {
+					country = FAT
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
+		}
+		relative_position_id = FAT_LIANLUENANFANG
+	}
+	focus = {
+		id = FAT_WEIDINAGAIGE
+		x = 0
+		y = 1
+		cost = 3.5
+		icon = GFX_goal_FAT_WEIDINAGAIGE
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#韦迪纳的革命
+		available = {
+			has_country_flag = FAT_DIP_ITSTIME
+		}
+		bypass = {
+			VED = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = FAT_LIANLUENANFANG
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.6
+			}
+		}
+		relative_position_id = FAT_LIANLUENANFANG
+	}
+	focus = {
+		id = FAT_XIELVZHIBEI
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_goal_FAT_XIELVZHIBEI
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#协律之北
+		prerequisite = {
+			focus = FAT_HEIJIANPOBIN
+		}
+		prerequisite = {
+			focus = FAT_JIRIZHEMINGYUN
+		}
+		prerequisite = {
+			focus = FAT_WEIDINAGAIGE
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.2
+			add_political_power = 50
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = VED
+						is_core_of = MNC
+					}
+				}
+				add_core_of = FAT
+				remove_core_of = VED
+				remove_core_of = MNC
+			}
+		}
+		relative_position_id = FAT_WEIDINAGAIGE
+	}
+	focus = {
+		id = FAT_JISUIHUANGGUAN
+		x = 0
+		y = 2
+		cost = 7
+		icon = GFX_goal_FAT_JISUIHUANGGUAN
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#击碎皇冠
+		available = {
+			date > 1010.07.31
+		}
+		bypass = {
+			AND = {
+				STW = {
+					exists = no
+				}
+				FEA = {
+					exists = no
+				}
+				PYT = {
+					exists = no
+				}
+				BRZ = {
+					exists = no
+				}
+				GRI = {
+					exists = no
+				}
+				YAL = {
+					exists = no
+				}
+				KAT = {
+					exists = no
+				}
+				ANG = {
+					exists = no
+				}
+				ROU = {
+					exists = no
+				}
+			}
+		}
+		prerequisite = {
+			focus = FAT_XIELVZHIBEI
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.8
+			}
+		}
+		relative_position_id = FAT_WEIDINAGAIGE
+	}
+	focus = {
+		id = FAT_HUANGGUANLUODI
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_goal_FAT_HUANGGUANLUODI
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#皇冠落地
+		available = {
+			has_country_flag = FAT_gemingdegaochao_flag
+			382 = {
+				is_owned_by = FAT
+			}
+		}
+		allow_branch = {
+			ROOT = {
+				has_country_flag = FAT_gemingdegaochao_flag
+			}
+		}
+		prerequisite = {
+			focus = FAT_JISUIHUANGGUAN
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 50
+		}
+		relative_position_id = FAT_JISUIHUANGGUAN
+	}
+	focus = {
+		id = FAT_HEZILANLANDIAO
+		x = 0
+		y = 1
+		cost = 2
+		icon = GFX_goal_FAT_HEZILANLANDIAO
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#赫兹兰蓝调
+		available = {
+		}
+		prerequisite = {
+			focus = FAT_HUANGGUANLUODI
+		}
+		completion_reward = {
+			set_country_flag = FAT_core_the_state_NEW_flag
+			custom_effect_tooltip = FAT_core_the_state_NEW_flag_tt
+		}
+		relative_position_id = FAT_HUANGGUANLUODI
+	}
+	focus = {
+		id = FAT_GUIZUZHIMINGYUN
+		x = -2
+		y = 1
+		cost = 1
+		icon = GFX_goal_FAT_GUIZUZHIMINGYUN
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#贵族之命运
+		available = {
+		}
+		prerequisite = {
+			focus = FAT_HEZILANLANDIAO
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.14
+			}
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+	}
+	focus = {
+		id = FAT_GELUOFUZHIMINGYUN
+		x = 0
+		y = 1
+		cost = 1
+		icon = GFX_goal_FAT_GELUOFUZHIMINGYUN
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#格罗弗之命运
+		bypass = {
+			has_global_flag = GRI_grover_vi_dead
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = FAT_HEZILANLANDIAO
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.16
+			}
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+	}
+	focus = {
+		id = FAT_SHENGUANZHIMINGYUN
+		x = 2
+		y = 1
+		cost = 1
+		icon = GFX_goal_FAT_SHENGUANZHIMINGYUN
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#神官之命运
+		available = {
+		}
+		prerequisite = {
+			focus = FAT_HEZILANLANDIAO
+		}
+		completion_reward = {
+			country_event = {
+				id = FAT_DIP_Focus.15
+			}
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+	}
+	focus = {
+		id = FAT_HEZILANDEGEMING
+		x = 0
+		y = 2
+		cost = 1
+		icon = GFX_goal_FAT_HEZILANDEGEMING
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#赫兹兰的革命
+		available = {
+		}
+		prerequisite = {
+			focus = FAT_GUIZUZHIMINGYUN
+		}
+		prerequisite = {
+			focus = FAT_GELUOFUZHIMINGYUN
+		}
+		prerequisite = {
+			focus = FAT_SHENGUANZHIMINGYUN
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.2
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+	}
+	focus = {
+		id = FAT_GONGHEGUODEWEILAI
+		x = 0
+		y = 3
+		cost = 6.5
+		icon = GFX_goal_FAT_GONGHEGUODEWEILAI
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		#共和国的未来
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = FAT_GONGHEGUODEWEILAI_flag
+				}
+			}
+		}
+		select_effect = {
+			hidden_effect = {
+				country_event = {
+					id = FAT_START_LEVELTWO.1
+					days = 10
+				}
+			}
+		}
+		cancelable = no
+		prerequisite = {
+			focus = FAT_HEZILANDEGEMING
+		}
+		completion_reward = {
+			custom_effect_tooltip = FAT_GONGHEGUODEWEILAI_tt
+		}
+		relative_position_id = FAT_HEZILANLANDIAO
+	}
+	#	id = FAT_XIAOMAPENGYOU
+	#	icon = GFX_goal_FAT_XIAOMAPENGYOU
+	#	cost = 5
+	#	x = -4
+	#	y = 1
+	#	prerequisite = {
+	#		focus = FAT_XINSHIJIEZHIEMENG
+	#	}
+	#	relative_position_id = FAT_XINSHIJIEZHIEMENG
+	#	completion_reward = {
+	#		unlock_decision_tooltip = FAT_YUSIDALINGELEHEZUO
+	#		unlock_decision_tooltip = FAT_HUIMIANLINGDAOREN
+	#		unlock_decision_tooltip = FAT_YOUYIXUANYAN
+	#		set_country_flag = FAT_YUSIDALINGELEHEZUO
+	#		set_country_flag = FAT_HUIMIANLINGDAOREN
+	#		set_country_flag = FAT_YOUYIXUANYAN
+	#	}
+	#}
+	focus = {
+		id = FAT_the_victory_of_the_army
+		icon = GFX_goal_FAT_the_victory_of_the_army
+		x = 22
+		y = 16
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+	}
+	focus = {
+		id = FAT_establish_the_NDC
+		icon = GFX_goal_FAT_establish_the_NDC
+		x = -2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_the_victory_of_the_army
+		prerequisite = {
+			focus = FAT_the_victory_of_the_army
+		}
+	}
+	focus = {
+		id = FAT_the_relaxation_of_martial_law
+		icon = GFX_goal_FAT_the_relaxation_of_martial_law
+		x = 2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_the_victory_of_the_army
+		prerequisite = {
+			focus = FAT_the_victory_of_the_army
+		}
+	}
+	focus = {
+		id = FAT_Calm_citizens_anic
+		icon = GFX_goal_FAT_Calm_citizens_anic
+		x = 2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_establish_the_NDC
+		prerequisite = {
+			focus = FAT_the_relaxation_of_martial_law
+		}
+		prerequisite = {
+			focus = FAT_establish_the_NDC
+		}
+	}
+	focus = {
+		id = FAT_Republican_tutelage
+		icon = GFX_goal_FAT_Republican_tutelage
+		x = -2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_establish_the_NDC
+		prerequisite = {
+			focus = FAT_establish_the_NDC
+		}
+	}
+	focus = {
+		id = FAT_May_no_vulture_be_abandoned
+		icon = GFX_goal_FAT_May_no_vulture_be_abandoned
+		x = 2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_the_relaxation_of_martial_law
+		prerequisite = {
+			focus = FAT_the_relaxation_of_martial_law
+		}
+	}
+	focus = {
+		id = FAT_Reward_the_loyal
+		icon = GFX_goal_FAT_Reward_the_loyal
+		x = 2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Calm_citizens_anic
+		prerequisite = {
+			focus = FAT_Calm_citizens_anic
+		}
+		prerequisite = {
+			focus = FAT_May_no_vulture_be_abandoned
+		}
+	}
+	focus = {
+		id = FAT_Military_benefits
+		icon = GFX_goal_FAT_Military_benefits
+		x = -2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Calm_citizens_anic
+		prerequisite = {
+			focus = FAT_Republican_tutelage
+		}
+		prerequisite = {
+			focus = FAT_Calm_citizens_anic
+		}
+	}
+	focus = {
+		id = FAT_Trial_implementation_of_provincial_self-governance_supervision
+		icon = GFX_goal_FAT_Trial_implementation_of_provincial_self-governance_supervision
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Calm_citizens_anic
+		prerequisite = {
+			focus = FAT_Calm_citizens_anic
+		}
+	}
+	focus = {
+		id = FAT_Remember_the_teachings_of_the_Founding_Father
+		icon = GFX_goal_FAT_Remember_the_teachings_of_the_Founding_Father
+		x = -2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Military_benefits
+		prerequisite = {
+			focus = FAT_Republican_tutelage
+		}
+		prerequisite = {
+			focus = FAT_Military_benefits
+		}
+	}
+	focus = {
+		id = FAT_For_the_future_of_the_republic
+		icon = GFX_goal_FAT_For_the_future_of_the_republic
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Trial_implementation_of_provincial_self-governance_supervision
+		prerequisite = {
+			focus = FAT_Trial_implementation_of_provincial_self-governance_supervision
+		}
+		prerequisite = {
+			focus = FAT_Reward_the_loyal
+		}
+		prerequisite = {
+			focus = FAT_Military_benefits
+		}
+	}
+	focus = {
+		id = FAT_Every_living_being_has_a_purpose
+		icon = GFX_goal_FAT_Every_living_being_has_a_purpose
+		x = 2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Reward_the_loyal
+		prerequisite = {
+			focus = FAT_May_no_vulture_be_abandoned
+		}
+		prerequisite = {
+			focus = FAT_Reward_the_loyal
+		}
+	}
+	focus = {
+		id = FAT_The_Republic_Guard
+		icon = GFX_goal_FAT_The_Republic_Guard
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_For_the_future_of_the_republic
+		prerequisite = {
+			focus = FAT_Every_living_being_has_a_purpose
+		}
+		prerequisite = {
+			focus = FAT_For_the_future_of_the_republic
+		}
+		prerequisite = {
+			focus = FAT_Remember_the_teachings_of_the_Founding_Father
+		}
+	}
+	focus = {
+		id = FAT_The_Republic_Lion
+		icon = GFX_goal_FAT_The_Republic_Lion
+		x = 40
+		y = 16
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+	}
+	focus = {
+		id = FAT_Mechanized_Forces_Practice
+		icon = GFX_goal_FAT_Mechanized_Forces_Practice
+		x = -2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_The_Republic_Lion
+		prerequisite = {
+			focus = FAT_The_Republic_Lion
+		}
+	}
+	focus = {
+		id = FAT_The_Legacy_of_the_National_Revolutionary_Army
+		icon = GFX_goal_FAT_The_Legacy_of_the_National_Revolutionary_Army
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_The_Republic_Lion
+		prerequisite = {
+			focus = FAT_The_Republic_Lion
+		}
+	}
+	focus = {
+		id = FAT_Incorporate_advanced_equipment
+		icon = GFX_goal_FAT_Incorporate_advanced_equipment
+		x = 2
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_The_Republic_Lion
+		prerequisite = {
+			focus = FAT_The_Republic_Lion
+		}
+	}
+	focus = {
+		id = FAT_Continue_expanding_the_Manyun_Military_Academy
+		icon = GFX_goal_FAT_Continue_expanding_the_Manyun_Military_Academy
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_The_Legacy_of_the_National_Revolutionary_Army
+		prerequisite = {
+			focus = FAT_The_Legacy_of_the_National_Revolutionary_Army
+		}
+	}
+	focus = {
+		id = FAT_Shield_of_the_Republic
+		icon = GFX_goal_FAT_Shield_of_the_Republic
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Continue_expanding_the_Manyun_Military_Academy
+		prerequisite = {
+			focus = FAT_Continue_expanding_the_Manyun_Military_Academy
+		}
+	}
+	focus = {
+		id = FAT_The_Wisdom_of_the_Little_Horse
+		icon = GFX_goal_FAT_The_Wisdom_of_the_Little_Horse
+		x = 0
+		y = 2
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Mechanized_Forces_Practice
+		prerequisite = {
+			focus = FAT_Mechanized_Forces_Practice
+		}
+	}
+	focus = {
+		id = FAT_The_Perseverance_of_the_Griffin
+		icon = GFX_goal_FAT_The_Perseverance_of_the_Griffin
+		x = 0
+		y = 2
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Incorporate_advanced_equipment
+		prerequisite = {
+			focus = FAT_Incorporate_advanced_equipment
+		}
+	}
+	focus = {
+		id = FAT_You_are_invincible_and_thus_can_be_called_a_legend
+		icon = GFX_goal_FAT_You_are_invincible_and_thus_can_be_called_a_legend
+		x = 0
+		y = 1
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = FAT_Shield_of_the_Republic
+		prerequisite = {
+			focus = FAT_The_Perseverance_of_the_Griffin
+		}
+		prerequisite = {
+			focus = FAT_Shield_of_the_Republic
+		}
+		prerequisite = {
+			focus = FAT_The_Wisdom_of_the_Little_Horse
+		}
+	}
+	focus = {
+		id = FAT_gongheguozhiji
+		x = 6
+		y = -2
+		cost = 10
+		icon = GFX_goal_FAT_gongheguozhiji
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_May_no_vulture_be_abandoned
+		#共和国之基
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = FAT_tongyihuobitixi
+		x = -2
+		y = 1
+		cost = 70
+		icon = GFX_goal_FAT_tongyihuobitixi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_gongheguozhiji
+		#统一货币体系
+		prerequisite = {
+			focus = FAT_gongheguozhiji
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_tongyihuobitixi_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_huangjinshiniandeyichan
+		x = 0
+		y = 1
+		cost = 70
+		icon = GFX_goal_FAT_huangjinshiniandeyichan
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_gongheguozhiji
+		#黄金十年的遗产
+		prerequisite = {
+			focus = FAT_gongheguozhiji
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_huangjinshiniandeyichan_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_xietiaogonghuizuzhi
+		x = 2
+		y = 1
+		cost = 70
+		icon = GFX_goal_FAT_xietiaogonghuizuzhi
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_gongheguozhiji
+		#协调工会组织
+		prerequisite = {
+			focus = FAT_gongheguozhiji
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_xietiaogonghuizuzhi_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_hebinggaodengdaxue
+		x = 0
+		y = 1
+		cost = 70
+		icon = GFX_goal_FAT_hebinggaodengdaxue
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_huangjinshiniandeyichan
+		#合并高等大学
+		prerequisite = {
+			focus = FAT_huangjinshiniandeyichan
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_hebinggaodengdaxue_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_hezelandecaifu
+		x = 0
+		y = 2
+		cost = 70
+		icon = GFX_goal_FAT_hezelandecaifu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_tongyihuobitixi
+		#赫兹兰的财富
+		prerequisite = {
+			focus = FAT_tongyihuobitixi
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_hezelandecaifu_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_qiyejiaodehuoyue
+		x = 0
+		y = 1
+		cost = 70
+		icon = GFX_goal_FAT_qiyejiaodehuoyue
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_hebinggaodengdaxue
+		#企业家的活跃
+		prerequisite = {
+			focus = FAT_hebinggaodengdaxue
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_qiyejiaodehuoyue_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_manyundezhihui
+		x = 0
+		y = 2
+		cost = 70
+		icon = GFX_goal_FAT_manyundezhihui
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_xietiaogonghuizuzhi
+		#漫云的智慧
+		prerequisite = {
+			focus = FAT_xietiaogonghuizuzhi
+		}
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_manyundezhihui_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_luyumadehezo
+		x = 0
+		y = 1
+		cost = 105
+		icon = GFX_goal_FAT_luyumadehezo
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_qiyejiaodehuoyue
+		#鹭与马的合奏
+		prerequisite = {
+			focus = FAT_hezelandecaifu
+		}
+		prerequisite = {
+			focus = FAT_qiyejiaodehuoyue
+		}
+		prerequisite = {
+			focus = FAT_manyundezhihui
+		}
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = FAT_luyumadehezo_mod
+				}
+			}
+		}
+	}
+	focus = {
+		id = FAT_maixiangmeihaoweilai
+		x = 0
+		y = 1
+		cost = 140
+		icon = GFX_goal_FAT_maixiangmeihaoweilai
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = FAT_luyumadehezo
+		#迈向美好未来
+		prerequisite = {
+			focus = FAT_luyumadehezo
+		}
+		completion_reward = {
+			add_political_power = 200
+			country_event = FAT_FP.99
+		}
+	}
 }
+
 
 #通用模板
 focus = {
