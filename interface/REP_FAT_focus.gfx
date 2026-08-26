@@ -487,91 +487,131 @@ spriteTypes={
 	}
 	SpriteType={
 	name="GFX_goal_FAT_the_victory_of_the_army"
-	texturefile="gfx/interface/goals/FAT/军队之胜.png"
+	texturefile="gfx/interface/goals/FAT/军队之胜.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Republican_tutelage"
-	texturefile="gfx/interface/goals/FAT/共和国训政.png"
+	texturefile="gfx/interface/goals/FAT/共和国训政.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_establish_the_NDC"
-	texturefile="gfx/interface/goals/FAT/立国防理事会.png"
+	texturefile="gfx/interface/goals/FAT/立国防理事会.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_the_relaxation_of_martial_law"
-	texturefile="gfx/interface/goals/FAT/放松战乱法案.png"
+	texturefile="gfx/interface/goals/FAT/放松战乱法案.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Calm_citizens_anic"
-	texturefile="gfx/interface/goals/FAT/安抚公民恐慌.png"
+	texturefile="gfx/interface/goals/FAT/安抚公民恐慌.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_The_Republic_Guard"
-	texturefile="gfx/interface/goals/FAT/共和国的哨卫.png"
+	texturefile="gfx/interface/goals/FAT/共和国的哨卫.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Trial_implementation_of_provincial_self-governance_supervision"
-	texturefile="gfx/interface/goals/FAT/试行省级自治督管.png"
+	texturefile="gfx/interface/goals/FAT/试行省级自治督管.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_For_the_future_of_the_republic"
-	texturefile="gfx/interface/goals/FAT/为了共和国的未来.png"
+	texturefile="gfx/interface/goals/FAT/为了共和国的未来.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_May_no_vulture_be_abandoned"
-	texturefile="gfx/interface/goals/FAT/愿无一鹫被抛弃.png"
+	texturefile="gfx/interface/goals/FAT/愿无一鹫被抛弃.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Every_living_being_has_a_purpose"
-	texturefile="gfx/interface/goals/FAT/每个生灵都有用.png"
+	texturefile="gfx/interface/goals/FAT/每个生灵都有用.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Military_benefits"
-	texturefile="gfx/interface/goals/FAT/兵役福利.png"
+	texturefile="gfx/interface/goals/FAT/兵役福利.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Remember_the_teachings_of_the_Founding_Father"
-	texturefile="gfx/interface/goals/FAT/铭记国父的教导.png"
+	texturefile="gfx/interface/goals/FAT/铭记国父的教导.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Reward_the_loyal"
-	texturefile="gfx/interface/goals/FAT/奖励忠诚者.png"
+	texturefile="gfx/interface/goals/FAT/奖励忠诚者.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_The_Republic_Lion"
-	texturefile="gfx/interface/goals/FAT/共和国的雄狮.png"
+	texturefile="gfx/interface/goals/FAT/共和国的雄狮.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_You_are_invincible_and_thus_can_be_called_a_legend"
-	texturefile="gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.png"
+	texturefile="gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Shield_of_the_Republic"
-	texturefile="gfx/interface/goals/FAT/共和国之盾.png"
+	texturefile="gfx/interface/goals/FAT/共和国之盾.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_The_Legacy_of_the_National_Revolutionary_Army"
-	texturefile="gfx/interface/goals/FAT/革命军遗产.png"
+	texturefile="gfx/interface/goals/FAT/革命军遗产.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Continue_expanding_the_Manyun_Military_Academy"
-	texturefile="gfx/interface/goals/FAT/继续扩展漫云军校.png"
+	texturefile="gfx/interface/goals/FAT/继续扩展漫云军校.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Mechanized_Forces_Practice"
-	texturefile="gfx/interface/goals/FAT/机械化部队实践.png"
+	texturefile="gfx/interface/goals/FAT/机械化部队实践.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_Incorporate_advanced_equipment"
-	texturefile="gfx/interface/goals/FAT/吸纳先进装备.png"
+	texturefile="gfx/interface/goals/FAT/吸纳先进装备.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_The_Wisdom_of_the_Little_Horse"
-	texturefile="gfx/interface/goals/FAT/小马的智慧.png"
+	texturefile="gfx/interface/goals/FAT/小马的智慧.dds"
 	}
 	SpriteType={
 	name="GFX_goal_FAT_The_Perseverance_of_the_Griffin"
-	texturefile="gfx/interface/goals/FAT/狮鹫的毅力.png"
+	texturefile="gfx/interface/goals/FAT/狮鹫的毅力.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_gongheguozhiji"
+	texturefile="gfx/interface/goals/FAT/FAT_gongheguozhiji.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_tongyihuobitixi"
+	texturefile="gfx/interface/goals/FAT/FAT_tongyihuobitixi.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_huangjinshiniandeyichan"
+	texturefile="gfx/interface/goals/FAT/FAT_huangjinshiniandeyichan.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_xietiaogonghuizuzhi"
+	texturefile="gfx/interface/goals/FAT/FAT_xietiaogonghuizuzhi.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_hebinggaodengdaxue"
+	texturefile="gfx/interface/goals/FAT/FAT_hebinggaodengdaxue.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_hezelandecaifu"
+	texturefile="gfx/interface/goals/FAT/FAT_hezelandecaifu.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_qiyejiaodehuoyue"
+	texturefile="gfx/interface/goals/FAT/FAT_qiyejiaodehuoyue.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_manyundezhihui"
+	texturefile="gfx/interface/goals/FAT/FAT_manyundezhihui.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_luyumadehezo"
+	texturefile="gfx/interface/goals/FAT/FAT_luyumadehezo.dds"
+	}
+	SpriteType={
+	name="GFX_goal_FAT_maixiangmeihaoweilai"
+	texturefile="gfx/interface/goals/FAT/FAT_maixiangmeihaoweilai.dds"
 	}
 
 }

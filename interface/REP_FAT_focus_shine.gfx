@@ -3160,10 +3160,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_the_victory_of_the_army_shine"
-		texturefile = "gfx/interface/goals/FAT/军队之胜.png"
+		texturefile = "gfx/interface/goals/FAT/军队之胜.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/军队之胜.png"
+			animationmaskfile = "gfx/interface/goals/FAT/军队之胜.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3175,7 +3175,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/军队之胜.png"
+			animationmaskfile = "gfx/interface/goals/FAT/军队之胜.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3190,10 +3190,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Republican_tutelage_shine"
-		texturefile = "gfx/interface/goals/FAT/共和国训政.png"
+		texturefile = "gfx/interface/goals/FAT/共和国训政.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国训政.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国训政.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3205,7 +3205,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国训政.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国训政.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3220,10 +3220,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_establish_the_NDC_shine"
-		texturefile = "gfx/interface/goals/FAT/立国防理事会.png"
+		texturefile = "gfx/interface/goals/FAT/立国防理事会.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/立国防理事会.png"
+			animationmaskfile = "gfx/interface/goals/FAT/立国防理事会.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3235,7 +3235,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/立国防理事会.png"
+			animationmaskfile = "gfx/interface/goals/FAT/立国防理事会.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3250,10 +3250,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_the_relaxation_of_martial_law_shine"
-		texturefile = "gfx/interface/goals/FAT/放松战乱法案.png"
+		texturefile = "gfx/interface/goals/FAT/放松战乱法案.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/放松战乱法案.png"
+			animationmaskfile = "gfx/interface/goals/FAT/放松战乱法案.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3265,7 +3265,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/放松战乱法案.png"
+			animationmaskfile = "gfx/interface/goals/FAT/放松战乱法案.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3280,10 +3280,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Calm_citizens_anic_shine"
-		texturefile = "gfx/interface/goals/FAT/安抚公民恐慌.png"
+		texturefile = "gfx/interface/goals/FAT/安抚公民恐慌.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/安抚公民恐慌.png"
+			animationmaskfile = "gfx/interface/goals/FAT/安抚公民恐慌.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3295,7 +3295,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/安抚公民恐慌.png"
+			animationmaskfile = "gfx/interface/goals/FAT/安抚公民恐慌.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3310,10 +3310,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_The_Republic_Guard_shine"
-		texturefile = "gfx/interface/goals/FAT/共和国的哨卫.png"
+		texturefile = "gfx/interface/goals/FAT/共和国的哨卫.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国的哨卫.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国的哨卫.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3325,7 +3325,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国的哨卫.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国的哨卫.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3340,10 +3340,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Trial_implementation_of_provincial_self-governance_supervision_shine"
-		texturefile = "gfx/interface/goals/FAT/试行省级自治督管.png"
+		texturefile = "gfx/interface/goals/FAT/试行省级自治督管.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/试行省级自治督管.png"
+			animationmaskfile = "gfx/interface/goals/FAT/试行省级自治督管.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3355,7 +3355,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/试行省级自治督管.png"
+			animationmaskfile = "gfx/interface/goals/FAT/试行省级自治督管.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3370,10 +3370,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_For_the_future_of_the_republic_shine"
-		texturefile = "gfx/interface/goals/FAT/为了共和国的未来.png"
+		texturefile = "gfx/interface/goals/FAT/为了共和国的未来.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/为了共和国的未来.png"
+			animationmaskfile = "gfx/interface/goals/FAT/为了共和国的未来.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3385,7 +3385,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/为了共和国的未来.png"
+			animationmaskfile = "gfx/interface/goals/FAT/为了共和国的未来.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3400,10 +3400,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_May_no_vulture_be_abandoned_shine"
-		texturefile = "gfx/interface/goals/FAT/愿无一鹫被抛弃.png"
+		texturefile = "gfx/interface/goals/FAT/愿无一鹫被抛弃.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/愿无一鹫被抛弃.png"
+			animationmaskfile = "gfx/interface/goals/FAT/愿无一鹫被抛弃.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3415,7 +3415,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/愿无一鹫被抛弃.png"
+			animationmaskfile = "gfx/interface/goals/FAT/愿无一鹫被抛弃.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3430,10 +3430,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Every_living_being_has_a_purpose_shine"
-		texturefile = "gfx/interface/goals/FAT/每个生灵都有用.png"
+		texturefile = "gfx/interface/goals/FAT/每个生灵都有用.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/每个生灵都有用.png"
+			animationmaskfile = "gfx/interface/goals/FAT/每个生灵都有用.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3445,7 +3445,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/每个生灵都有用.png"
+			animationmaskfile = "gfx/interface/goals/FAT/每个生灵都有用.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3460,10 +3460,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Military_benefits_shine"
-		texturefile = "gfx/interface/goals/FAT/兵役福利.png"
+		texturefile = "gfx/interface/goals/FAT/兵役福利.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/兵役福利.png"
+			animationmaskfile = "gfx/interface/goals/FAT/兵役福利.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3475,7 +3475,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/兵役福利.png"
+			animationmaskfile = "gfx/interface/goals/FAT/兵役福利.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3490,10 +3490,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Remember_the_teachings_of_the_Founding_Father_shine"
-		texturefile = "gfx/interface/goals/FAT/铭记国父的教导.png"
+		texturefile = "gfx/interface/goals/FAT/铭记国父的教导.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/铭记国父的教导.png"
+			animationmaskfile = "gfx/interface/goals/FAT/铭记国父的教导.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3505,7 +3505,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/铭记国父的教导.png"
+			animationmaskfile = "gfx/interface/goals/FAT/铭记国父的教导.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3520,10 +3520,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Reward_the_loyal_shine"
-		texturefile = "gfx/interface/goals/FAT/奖励忠诚者.png"
+		texturefile = "gfx/interface/goals/FAT/奖励忠诚者.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/奖励忠诚者.png"
+			animationmaskfile = "gfx/interface/goals/FAT/奖励忠诚者.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3535,7 +3535,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/奖励忠诚者.png"
+			animationmaskfile = "gfx/interface/goals/FAT/奖励忠诚者.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3550,10 +3550,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_The_Republic_Lion_shine"
-		texturefile = "gfx/interface/goals/FAT/共和国的雄狮.png"
+		texturefile = "gfx/interface/goals/FAT/共和国的雄狮.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国的雄狮.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国的雄狮.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3565,7 +3565,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国的雄狮.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国的雄狮.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3580,10 +3580,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_You_are_invincible_and_thus_can_be_called_a_legend_shine"
-		texturefile = "gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.png"
+		texturefile = "gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.png"
+			animationmaskfile = "gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3595,7 +3595,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.png"
+			animationmaskfile = "gfx/interface/goals/FAT/你从不可战胜，亦可谓传奇.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3610,10 +3610,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Shield_of_the_Republic_shine"
-		texturefile = "gfx/interface/goals/FAT/共和国之盾.png"
+		texturefile = "gfx/interface/goals/FAT/共和国之盾.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国之盾.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国之盾.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3625,7 +3625,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/共和国之盾.png"
+			animationmaskfile = "gfx/interface/goals/FAT/共和国之盾.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3640,10 +3640,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_The_Legacy_of_the_National_Revolutionary_Army_shine"
-		texturefile = "gfx/interface/goals/FAT/革命军遗产.png"
+		texturefile = "gfx/interface/goals/FAT/革命军遗产.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/革命军遗产.png"
+			animationmaskfile = "gfx/interface/goals/FAT/革命军遗产.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3655,7 +3655,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/革命军遗产.png"
+			animationmaskfile = "gfx/interface/goals/FAT/革命军遗产.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3670,10 +3670,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Continue_expanding_the_Manyun_Military_Academy_shine"
-		texturefile = "gfx/interface/goals/FAT/继续扩展漫云军校.png"
+		texturefile = "gfx/interface/goals/FAT/继续扩展漫云军校.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/继续扩展漫云军校.png"
+			animationmaskfile = "gfx/interface/goals/FAT/继续扩展漫云军校.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3685,7 +3685,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/继续扩展漫云军校.png"
+			animationmaskfile = "gfx/interface/goals/FAT/继续扩展漫云军校.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3700,10 +3700,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Mechanized_Forces_Practice_shine"
-		texturefile = "gfx/interface/goals/FAT/机械化部队实践.png"
+		texturefile = "gfx/interface/goals/FAT/机械化部队实践.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/机械化部队实践.png"
+			animationmaskfile = "gfx/interface/goals/FAT/机械化部队实践.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3715,7 +3715,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/机械化部队实践.png"
+			animationmaskfile = "gfx/interface/goals/FAT/机械化部队实践.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3730,10 +3730,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_Incorporate_advanced_equipment_shine"
-		texturefile = "gfx/interface/goals/FAT/吸纳先进装备.png"
+		texturefile = "gfx/interface/goals/FAT/吸纳先进装备.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/吸纳先进装备.png"
+			animationmaskfile = "gfx/interface/goals/FAT/吸纳先进装备.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3745,7 +3745,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/吸纳先进装备.png"
+			animationmaskfile = "gfx/interface/goals/FAT/吸纳先进装备.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3760,10 +3760,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_The_Wisdom_of_the_Little_Horse_shine"
-		texturefile = "gfx/interface/goals/FAT/小马的智慧.png"
+		texturefile = "gfx/interface/goals/FAT/小马的智慧.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/小马的智慧.png"
+			animationmaskfile = "gfx/interface/goals/FAT/小马的智慧.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3775,7 +3775,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/小马的智慧.png"
+			animationmaskfile = "gfx/interface/goals/FAT/小马的智慧.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3790,10 +3790,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_FAT_The_Perseverance_of_the_Griffin_shine"
-		texturefile = "gfx/interface/goals/FAT/狮鹫的毅力.png"
+		texturefile = "gfx/interface/goals/FAT/狮鹫的毅力.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/狮鹫的毅力.png"
+			animationmaskfile = "gfx/interface/goals/FAT/狮鹫的毅力.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3805,7 +3805,307 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FAT/狮鹫的毅力.png"
+			animationmaskfile = "gfx/interface/goals/FAT/狮鹫的毅力.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_gongheguozhiji_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_gongheguozhiji.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_gongheguozhiji.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_gongheguozhiji.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_tongyihuobitixi_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_tongyihuobitixi.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_tongyihuobitixi.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_tongyihuobitixi.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_huangjinshiniandeyichan_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_huangjinshiniandeyichan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_huangjinshiniandeyichan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_huangjinshiniandeyichan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_xietiaogonghuizuzhi_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_xietiaogonghuizuzhi.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_xietiaogonghuizuzhi.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_xietiaogonghuizuzhi.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_hebinggaodengdaxue_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_hebinggaodengdaxue.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_hebinggaodengdaxue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_hebinggaodengdaxue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_hezelandecaifu_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_hezelandecaifu.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_hezelandecaifu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_hezelandecaifu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_qiyejiaodehuoyue_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_qiyejiaodehuoyue.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_qiyejiaodehuoyue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_qiyejiaodehuoyue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_manyundezhihui_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_manyundezhihui.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_manyundezhihui.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_manyundezhihui.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_luyumadehezo_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_luyumadehezo.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_luyumadehezo.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_luyumadehezo.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_FAT_maixiangmeihaoweilai_shine"
+		texturefile = "gfx/interface/goals/FAT/FAT_maixiangmeihaoweilai.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_maixiangmeihaoweilai.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FAT/FAT_maixiangmeihaoweilai.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
