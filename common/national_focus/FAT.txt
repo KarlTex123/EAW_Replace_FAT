@@ -2085,8 +2085,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = FAT_FP.29
-			add_tech_bonus = {
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
