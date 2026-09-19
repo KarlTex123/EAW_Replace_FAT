@@ -2476,7 +2476,6 @@ country_event = { #卡梅莉塔歌后在河间地的巡回演出
 	picture = FAT_DIP_Focus.5.p
 	title = FAT_DIP_Focus.5.t
 	desc = FAT_DIP_Focus.5.d
-
 	is_triggered_only = yes
 
 	option = {
@@ -2494,6 +2493,7 @@ news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 	title = FAT_DIP_News.2.t
 	desc = FAT_DIP_News.2.d
 	major = yes
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = FAT_DIP_News.2.1
