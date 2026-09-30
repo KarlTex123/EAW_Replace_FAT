@@ -31,6 +31,47 @@ shared_focus = { # 军队之胜
         set_variable = { FAT_military_global_building_slots_factor = 0 }
         add_dynamic_modifier = { modifier = FAT_military_stable_republic }
         news_event = { id = FAT_MilitaryGov.100 }
+        hidden_effect = {
+            # =========================
+            # 移除国家理念：军事线 / 军校线 / 其他非三民理念
+            # =========================
+            remove_ideas = FAT_National_Revolutionary_Army_1
+            remove_ideas = FAT_National_Revolutionary_Army_2
+            remove_ideas = FAT_National_Revolutionary_Army_3
+            remove_ideas = FAT_National_Revolutionary_Army_4
+            remove_ideas = FAT_National_Revolutionary_Army_5
+            remove_ideas = FAT_National_Revolutionary_Army_6
+            remove_ideas = FAT_National_Revolutionary_Army_7
+            remove_ideas = FAT_National_Revolutionary_Army_8
+            remove_ideas = FAT_National_Revolutionary_Army_9
+            remove_ideas = FAT_National_Revolutionary_Army_10
+            remove_ideas = FAT_National_Revolutionary_Army_11
+            remove_ideas = FAT_National_Revolutionary_Army_12
+            remove_ideas = FAT_National_Revolutionary_Army_13
+            remove_ideas = FAT_National_Revolutionary_Army_14
+            remove_ideas = FAT_National_Revolutionary_Army_15
+            remove_ideas = FAT_National_Revolutionary_Army_16
+            remove_ideas = FAT_National_Revolutionary_Army_17
+
+            remove_ideas = FAT_walk_on_cloud_army_school_idea
+            remove_ideas = FAT_walk_on_cloud_army_school_idea_1
+
+            # 负面/其他非三民理念
+            remove_ideas = FAT_The_Cloudburian_Minority_idea
+
+            # =========================
+            # 移除动态修正：非民权/民主/民生直接分支
+            # 注意：FAT_liberty、FAT_democracy_f、FAT_prosperity_f、FAT_manyun_city_modifier 保留
+            # =========================
+            remove_dynamic_modifier = { modifier = FAT_tongyihuobitixi_mod }
+            remove_dynamic_modifier = { modifier = FAT_huangjinshiniandeyichan_mod }
+            remove_dynamic_modifier = { modifier = FAT_xietiaogonghuizuzhi_mod }
+            remove_dynamic_modifier = { modifier = FAT_hebinggaodengdaxue_mod }
+            remove_dynamic_modifier = { modifier = FAT_hezelandecaifu_mod }
+            remove_dynamic_modifier = { modifier = FAT_qiyejiaodehuoyue_mod }
+            remove_dynamic_modifier = { modifier = FAT_manyundezhihui_mod }
+            remove_dynamic_modifier = { modifier = FAT_luyumadehezo_mod }
+        }
     }
 }
 
