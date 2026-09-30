@@ -1,0 +1,14 @@
+# 稳定的共和国：由军政府政治国策逐步累积。
+FAT_military_stable_republic = {
+    enable = { always = yes }
+    icon = GFX_idea_FAT_National_Republic_party_modifier
+    conscription_factor = FAT_military_conscription_factor
+    production_speed_buildings_factor = FAT_military_production_speed_buildings_factor
+    stability_weekly = FAT_military_stability_weekly
+    production_factory_efficiency_gain_factor = FAT_military_production_factory_efficiency_gain_factor
+    production_factory_max_efficiency_factor = FAT_military_production_factory_max_efficiency_factor
+    weekly_manpower = FAT_military_weekly_manpower
+    consumer_goods_factor = FAT_military_consumer_goods_factor
+    monthly_population = FAT_military_monthly_population
+    global_building_slots_factor = FAT_military_global_building_slots_factor
+}

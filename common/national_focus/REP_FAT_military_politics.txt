@@ -1,0 +1,265 @@
+# 军政府政治线：依据《军政府政治国策效果》；cost 每点为七天。
+# 由两个现存 FAT 国策树入口引用同一组共享国策，避免重复维护。
+
+shared_focus = { # 军队之胜
+    id = FAT_the_victory_of_the_army
+    icon = GFX_goal_FAT_the_victory_of_the_army
+    x = 22
+    y = 16
+    cost = 1
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    completion_reward = {
+        add_political_power = 50
+        add_stability = 0.15
+        remove_dynamic_modifier = { modifier = FAT_National_Republic_party }
+        set_country_flag = FAT_military_government
+        set_popularities = { communism = 5 democratic = 5 fascism = 5 neutrality = 85 }
+        set_politics = { ruling_party = neutrality }
+        set_party_name = { ideology = communism name = FAT_communism_party_2 long_name = FAT_communism_party_2_long }
+        set_party_name = { ideology = democratic name = FAT_democratic_party_2 long_name = FAT_democratic_party_2_long }
+        set_party_name = { ideology = fascism name = FAT_fascism_party_2 long_name = FAT_fascism_party_2_long }
+        set_party_name = { ideology = neutrality name = FAT_military_ruling_party long_name = FAT_military_ruling_party }
+        set_variable = { FAT_military_conscription_factor = 0 }
+        set_variable = { FAT_military_production_speed_buildings_factor = 0 }
+        set_variable = { FAT_military_stability_weekly = 0 }
+        set_variable = { FAT_military_production_factory_efficiency_gain_factor = 0 }
+        set_variable = { FAT_military_production_factory_max_efficiency_factor = 0 }
+        set_variable = { FAT_military_weekly_manpower = 0 }
+        set_variable = { FAT_military_consumer_goods_factor = 0 }
+        set_variable = { FAT_military_monthly_population = 0 }
+        set_variable = { FAT_military_global_building_slots_factor = 0 }
+        add_dynamic_modifier = { modifier = FAT_military_stable_republic }
+        news_event = { id = FAT_MilitaryGov.100 }
+    }
+}
+
+shared_focus = { # 建立国防理事会
+    id = FAT_establish_the_NDC
+    icon = GFX_goal_FAT_establish_the_NDC
+    x = 20
+    y = 17
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_the_victory_of_the_army }
+    completion_reward = {
+        custom_effect_tooltip = FAT_military_stable_change_tt
+        custom_effect_tooltip = FAT_military_conscription_factor_0p05_tt
+        custom_effect_tooltip = FAT_military_production_speed_buildings_factor_0p1_tt
+        hidden_effect = {
+            add_to_variable = { FAT_military_conscription_factor = 0.05 }
+            add_to_variable = { FAT_military_production_speed_buildings_factor = 0.1 }
+        }
+        country_event = { id = FAT_MilitaryGov.1 }
+    }
+}
+
+shared_focus = { # 放松戡乱法案
+    id = FAT_the_relaxation_of_martial_law
+    icon = GFX_goal_FAT_the_relaxation_of_martial_law
+    x = 24
+    y = 17
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_the_victory_of_the_army }
+    completion_reward = {
+        custom_effect_tooltip = FAT_military_stable_change_tt
+        custom_effect_tooltip = FAT_military_stability_weekly_0p005_tt
+        hidden_effect = {
+            add_to_variable = { FAT_military_stability_weekly = 0.005 }
+        }
+        country_event = { id = FAT_MilitaryGov.2 }
+    }
+}
+
+shared_focus = { # 安抚公民恐慌
+    id = FAT_Calm_citizens_anic
+    icon = GFX_goal_FAT_Calm_citizens_anic
+    x = 22
+    y = 18
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_establish_the_NDC }
+    prerequisite = { focus = FAT_the_relaxation_of_martial_law }
+    completion_reward = {
+        add_stability = 0.1
+        custom_effect_tooltip = FAT_military_stable_change_tt
+        custom_effect_tooltip = FAT_military_production_factory_efficiency_gain_factor_0p05_tt
+        custom_effect_tooltip = FAT_military_production_factory_max_efficiency_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_military_production_factory_efficiency_gain_factor = 0.05 }
+            add_to_variable = { FAT_military_production_factory_max_efficiency_factor = 0.05 }
+        }
+        country_event = { id = FAT_MilitaryGov.4 }
+    }
+}
+
+shared_focus = { # 共和国训政
+    id = FAT_Republican_tutelage
+    icon = GFX_goal_FAT_Republican_tutelage
+    x = 18
+    y = 18
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_establish_the_NDC }
+    completion_reward = {
+        add_stability = -0.05
+        add_political_power = -100
+        country_event = { id = FAT_MilitaryGov.3 }
+    }
+}
+
+shared_focus = { # 愿无一鹫被抛弃
+    id = FAT_May_no_vulture_be_abandoned
+    icon = GFX_goal_FAT_May_no_vulture_be_abandoned
+    x = 26
+    y = 18
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_the_relaxation_of_martial_law }
+    completion_reward = {
+        add_ideas = FAT_military_rural_autonomy
+        country_event = { id = FAT_MilitaryGov.5 }
+    }
+}
+
+shared_focus = { # 奖励忠诚者
+    id = FAT_Reward_the_loyal
+    icon = GFX_goal_FAT_Reward_the_loyal
+    x = 24
+    y = 19
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Calm_citizens_anic }
+    prerequisite = { focus = FAT_May_no_vulture_be_abandoned }
+    completion_reward = {
+        custom_effect_tooltip = FAT_military_stable_change_tt
+        custom_effect_tooltip = FAT_military_consumer_goods_factor_0p05_tt
+        custom_effect_tooltip = FAT_military_stability_weekly_0p005_tt
+        hidden_effect = {
+            add_to_variable = { FAT_military_consumer_goods_factor = 0.05 }
+            add_to_variable = { FAT_military_stability_weekly = 0.005 }
+        }
+        country_event = { id = FAT_MilitaryGov.8 }
+    }
+}
+
+shared_focus = { # 兵役福利
+    id = FAT_Military_benefits
+    icon = GFX_goal_FAT_Military_benefits
+    x = 20
+    y = 19
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Republican_tutelage }
+    prerequisite = { focus = FAT_Calm_citizens_anic }
+    completion_reward = {
+        add_manpower = 30000
+        custom_effect_tooltip = FAT_military_stable_change_tt
+        custom_effect_tooltip = FAT_military_weekly_manpower_500_tt
+        custom_effect_tooltip = FAT_military_conscription_factor_0p05_tt
+        custom_effect_tooltip = FAT_military_consumer_goods_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_military_weekly_manpower = 500 }
+            add_to_variable = { FAT_military_conscription_factor = 0.05 }
+            add_to_variable = { FAT_military_consumer_goods_factor = 0.05 }
+        }
+        country_event = { id = FAT_MilitaryGov.7 }
+    }
+}
+
+shared_focus = { # 试行省级自治督管
+    id = FAT_Trial_implementation_of_provincial_self-governance_supervision
+    icon = GFX_goal_FAT_Trial_implementation_of_provincial_self-governance_supervision
+    x = 22
+    y = 19
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Calm_citizens_anic }
+    completion_reward = {
+        add_political_power = 100
+        country_event = { id = FAT_MilitaryGov.6 }
+    }
+}
+
+shared_focus = { # 铭记国父教导
+    id = FAT_Remember_the_teachings_of_the_Founding_Father
+    icon = GFX_goal_FAT_Remember_the_teachings_of_the_Founding_Father
+    x = 18
+    y = 20
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Republican_tutelage }
+    prerequisite = { focus = FAT_Military_benefits }
+    completion_reward = {
+        add_ideas = FAT_military_founding_father
+        country_event = { id = FAT_MilitaryGov.9 }
+    }
+}
+
+shared_focus = { # 为了共和国的未来
+    id = FAT_For_the_future_of_the_republic
+    icon = GFX_goal_FAT_For_the_future_of_the_republic
+    x = 22
+    y = 20
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Trial_implementation_of_provincial_self-governance_supervision }
+    prerequisite = { focus = FAT_Reward_the_loyal }
+    prerequisite = { focus = FAT_Military_benefits }
+    completion_reward = {
+        custom_effect_tooltip = FAT_military_stable_change_tt
+        custom_effect_tooltip = FAT_military_monthly_population_0p5_tt
+        custom_effect_tooltip = FAT_military_global_building_slots_factor_0p15_tt
+        hidden_effect = {
+            add_to_variable = { FAT_military_monthly_population = 0.5 }
+            add_to_variable = { FAT_military_global_building_slots_factor = 0.15 }
+        }
+    }
+}
+
+shared_focus = { # 每个生灵都有用
+    id = FAT_Every_living_being_has_a_purpose
+    icon = GFX_goal_FAT_Every_living_being_has_a_purpose
+    x = 26
+    y = 20
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_May_no_vulture_be_abandoned }
+    prerequisite = { focus = FAT_Reward_the_loyal }
+    completion_reward = {
+        add_stability = 0.2
+        add_war_support = 0.2
+        country_event = { id = FAT_MilitaryGov.10 }
+    }
+}
+
+shared_focus = { # 共和国的哨卫
+    id = FAT_The_Republic_Guard
+    icon = GFX_goal_FAT_The_Republic_Guard
+    x = 22
+    y = 22
+    cost = 1
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Every_living_being_has_a_purpose }
+    prerequisite = { focus = FAT_For_the_future_of_the_republic }
+    prerequisite = { focus = FAT_Remember_the_teachings_of_the_Founding_Father }
+    completion_reward = {
+        country_event = { id = FAT_MilitaryGov.11 }
+        news_event = { id = FAT_MilitaryGov.101 }
+        set_country_flag = FAT_military_form_republic_unlocked
+        unlock_decision_tooltip = FAT_military_form_creature_republic
+    }
+}
