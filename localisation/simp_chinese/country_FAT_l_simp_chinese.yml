@@ -2317,3 +2317,6 @@ l_simp_chinese:
  SouthREP_Button_tt:0 "南方共和党"
  FAT_SouthREP_Revolution_tt:0 "革命的愈演愈烈"
  FAT_SouthREP_RevolutionFire_idea_tt:0 "革命怒焰"
+
+ Political_Tutelage:0 "训政"
+ Political_Tutelage_desc:0 "由已逝的克梅斯凯提出的共和革命三步走中其中一步，在完成军政统一后，接下来的威权政府需要以督导者的身份监控极端分子和保护国家的安全，同时训练公民行使选举、罢免、创制、复决等权利 ，为最后一步的宪政打下良好的民主素质基础。"

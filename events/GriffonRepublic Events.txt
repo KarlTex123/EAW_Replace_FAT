@@ -5625,6 +5625,7 @@ country_event = {#Free Elections no Commies Allowed Tho
 			promote_leader = yes
 		}
 		add_popularity = { ideology = democratic popularity = 0.05 }
+
 	}
 	option = {
 		name = griffonRepublic.270.b
@@ -5648,6 +5649,7 @@ country_event = {#Free Elections no Commies Allowed Tho
 			promote_leader = yes
 		}
 		add_popularity = { ideology = democratic popularity = 0.05 }
+
 	}
 	option = {
 		name = griffonRepublic.270.c
@@ -5671,6 +5673,7 @@ country_event = {#Free Elections no Commies Allowed Tho
 			promote_leader = yes
 		}
 		add_popularity = { ideology = democratic popularity = 0.05 }
+
 	}
 }
 

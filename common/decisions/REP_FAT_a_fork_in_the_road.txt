@@ -1,0 +1,413 @@
+REP_FAT_a_fork_in_the_road = { #命运分歧
+#XXX在行动	
+AFITR_suntail_action = { #民族阵线在行动！（总是自动进行，机制结束后停止循环）
+    icon = x
+    days_mission_timeout = 30
+	activation = {
+        OR = {
+            has_country_flag = AFITR_route_astunglider
+            has_country_flag = AFITR_route_astler
+        }
+        NOT = {
+            has_country_flag = AFITR_route_suntail #曜尾是玩家阵营时不该循环
+            has_country_flag = AFITR_mechanism_over
+        }
+	}  
+    available = {
+		always = no
+	}
+    timeout_effect = {
+        IF = {
+            limit = {
+                NOT = {
+                    has_country_flag = AFITR_mechanism_over
+                }
+            }
+            activate_mission = AFITR_suntail_action
+            IF = {
+                limit = {
+                    NOT = {
+                        has_variable = AFITR_suntail_power
+                    }
+                }
+                set_variable = {
+                    AFITR_suntail_power = 5
+                }
+            }
+            ELSE = {
+                add_to_variable = {
+                    AFITR_suntail_power = 5
+                }
+            }
+        }
+    }
+}
+
+AFITR_sunglider_action = { #谐律同盟在行动！（总是自动进行，机制结束后停止循环）
+    icon = x
+    days_mission_timeout = 30
+	activation = {
+        OR = {
+            has_country_flag = AFITR_route_astunglider
+            has_country_flag = AFITR_route_astler
+        }
+        NOT = {
+            has_country_flag = AFITR_route_sunglider #翔日是玩家阵营时不该循环
+            has_country_flag = AFITR_mechanism_over
+        }
+	}  
+    available = {
+		always = no
+	}
+    timeout_effect = {
+        IF = {
+            limit = {
+                NOT = {
+                    has_country_flag = AFITR_mechanism_over
+                }
+            }
+            activate_mission = AFITR_sunglider_action
+            IF = {
+                limit = {
+                    NOT = {
+                        has_variable = AFITR_sunglider_power
+                    }
+                }
+                set_variable = {
+                    AFITR_sunglider_power = 5
+                }
+            }
+            ELSE = {
+                add_to_variable = {
+                    AFITR_sunglider_power = 5
+                }
+            }
+        }
+    }
+}
+
+AFITR_astler_action = { #鹫民阵线在行动（翔日/曜尾路线使用，总是自动进行，机制结束后停止循环）
+    icon = x
+    days_mission_timeout = 30
+	activation = {
+        OR = {
+            has_country_flag = AFITR_route_astunglider
+            has_country_flag = AFITR_route_astler
+        }
+        NOT = {
+            has_country_flag = AFITR_route_astler #艾斯特勒是玩家阵营时不该循环
+            has_country_flag = AFITR_mechanism_over
+        }
+	}  
+    available = {
+		always = no
+	}
+    timeout_effect = {
+        IF = {
+            limit = {
+                NOT = {
+                    has_country_flag = AFITR_mechanism_over
+                }
+            }
+            activate_mission = AFITR_astler_action
+            IF = {
+                limit = {
+                    NOT = {
+                        has_variable = AFITR_astler_power
+                    }
+                }
+                set_variable = {
+                    AFITR_astler_power = 5
+                }
+            }
+            ELSE = {
+                add_to_variable = {
+                    AFITR_astler_power = 5
+                }
+            }
+        }
+    }
+}
+
+#决议3.会见基层组织（艾斯特勒路线，25PP，可反复使用，直到机制结束）
+AFITR_meet_the_grassroots = {
+    icon = x
+    cost = 25
+    days_remove = 10
+    allowed = {
+        original_tag = FAT
+    }
+    fire_only_once = no
+    available = {
+		has_country_flag = AFITR_route_astler
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+	}
+    visible = {
+        has_country_flag = AFITR_route_astler
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+    }
+    remove_effect = {
+        IF = {
+            limit = {
+                NOT = {
+                    has_variable = AFITR_astler_power
+                }
+            }
+            set_variable = {
+                AFITR_astler_power = 5
+            }
+        }
+        ELSE = {
+            add_to_variable = {
+                AFITR_astler_power = 5
+            }
+        }
+    }
+}
+
+#决议4.压制敌对派系（艾斯特勒路线，50PP，可反复使用，直到机制结束）
+AFITR_suppress_factions = {
+    icon = x
+    cost = 50
+    days_remove = 20
+    allowed = {
+        original_tag = FAT
+    }
+    fire_only_once = no
+    available = {
+		has_country_flag = AFITR_route_astler
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+	}
+    visible = {
+        has_country_flag = AFITR_route_astler
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+    }
+    remove_effect = {
+        add_to_variable = {
+            AFITR_suntail_power = -5
+        }
+        add_to_variable = {
+            AFITR_sunglider_power = -5
+        }
+        clamp_variable = {
+            var = AFITR_suntail_power
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = AFITR_sunglider_power
+            min = 0
+            max = 100
+        }
+        add_to_variable = {
+            AFITR_suppression_count = 1 #累计压制次数，3次触发军队干涉
+        }
+    }
+}
+
+#决议3.会见基层组织（翔日路线）
+AFITR_meet_the_grassroots_sunglider = {
+    icon = x
+    cost = 25
+    days_remove = 10
+    allowed = {
+        original_tag = FAT
+    }
+    fire_only_once = no
+    available = {
+		has_country_flag = AFITR_route_sunglider
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+	}
+    visible = {
+        has_country_flag = AFITR_route_sunglider
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+    }
+    remove_effect = {
+        IF = {
+            limit = {
+                NOT = {
+                    has_variable = AFITR_sunglider_power
+                }
+            }
+            set_variable = {
+                AFITR_sunglider_power = 5
+            }
+        }
+        ELSE = {
+            add_to_variable = {
+                AFITR_sunglider_power = 5
+            }
+        }
+    }
+}
+
+#决议3.会见基层组织（曜尾路线）
+AFITR_meet_the_grassroots_suntail = {
+    icon = x
+    cost = 25
+    days_remove = 10
+    allowed = {
+        original_tag = FAT
+    }
+    fire_only_once = no
+    available = {
+		has_country_flag = AFITR_route_suntail
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+	}
+    visible = {
+        has_country_flag = AFITR_route_suntail
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+    }
+    remove_effect = {
+        IF = {
+            limit = {
+                NOT = {
+                    has_variable = AFITR_suntail_power
+                }
+            }
+            set_variable = {
+                AFITR_suntail_power = 5
+            }
+        }
+        ELSE = {
+            add_to_variable = {
+                AFITR_suntail_power = 5
+            }
+        }
+    }
+}
+
+#决议4.压制敌对派系（翔日路线：压制曜尾与艾斯特勒）
+AFITR_suppress_factions_sunglider = {
+    icon = x
+    cost = 50
+    days_remove = 20
+    allowed = {
+        original_tag = FAT
+    }
+    fire_only_once = no
+    available = {
+		has_country_flag = AFITR_route_sunglider
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+	}
+    visible = {
+        has_country_flag = AFITR_route_sunglider
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+    }
+    remove_effect = {
+        add_to_variable = {
+            AFITR_suntail_power = -5
+        }
+        add_to_variable = {
+            AFITR_astler_power = -5
+        }
+        clamp_variable = {
+            var = AFITR_suntail_power
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = AFITR_astler_power
+            min = 0
+            max = 100
+        }
+        add_to_variable = {
+            AFITR_suppression_count = 1 #累计压制次数，3次触发军队干涉
+        }
+    }
+}
+
+#决议4.压制敌对派系（曜尾路线：压制翔日与艾斯特勒）
+AFITR_suppress_factions_suntail = {
+    icon = x
+    cost = 50
+    days_remove = 20
+    allowed = {
+        original_tag = FAT
+    }
+    fire_only_once = no
+    available = {
+		has_country_flag = AFITR_route_suntail
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+	}
+    visible = {
+        has_country_flag = AFITR_route_suntail
+        NOT = {
+            has_country_flag = AFITR_mechanism_over
+        }
+    }
+    remove_effect = {
+        add_to_variable = {
+            AFITR_sunglider_power = -5
+        }
+        add_to_variable = {
+            AFITR_astler_power = -5
+        }
+        clamp_variable = {
+            var = AFITR_sunglider_power
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = AFITR_astler_power
+            min = 0
+            max = 100
+        }
+        add_to_variable = {
+            AFITR_suppression_count = 1 #累计压制次数，3次触发军队干涉
+        }
+    }
+}
+
+#选举倒计时（180天，完成时触发最高清算或共和国的死局，机制结束）
+AFITR_election_countdown = {
+    icon = x
+    days_mission_timeout = 180
+    available = {
+		always = no
+	}
+    activation = {
+        has_country_flag = FAT_a_fork_in_the_road
+		NOT = {
+			has_country_flag = AFITR_mechanism_over
+		}
+	}
+        timeout_effect = {
+            custom_effect_tooltip = AFITR_election_countdown_tt
+            hidden_effect = {
+            IF = {
+                limit = {
+                    check_variable = { AFITR_suppression_count > 2 } #只要完成过三次压制，无论谁赢，军队都会干涉
+                }
+                country_event = { id = FAT_AFITR.5 } #共和国的死局：军队发动军事政变
+            }
+            ELSE = {
+                country_event = { id = FAT_AFITR.4 } #最高清算：势力最高的派系夺下共和国的遗产
+            }
+        }
+    }
+}
+
+}

@@ -3056,7 +3056,11 @@ focus_tree = {
 		cost = 0
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-
+		allow_branch = {
+			ROOT = {
+				has_country_flag = FAT_AFITR_junta_focus_unlocked
+			}
+		}
 	}
 	focus = {
 		id = FAT_establish_the_NDC
@@ -3249,7 +3253,11 @@ focus_tree = {
 		cost = 0
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-
+		allow_branch = {
+			ROOT = {
+				has_country_flag = FAT_AFITR_junta_focus_unlocked
+			}
+		}
 	}
 	focus = {
 		id = FAT_Mechanized_Forces_Practice
@@ -3369,6 +3377,11 @@ focus_tree = {
 		icon = GFX_goal_FAT_gongheguozhiji
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		allow_branch = {
+			ROOT = {
+				has_country_flag = FAT_AFITR_junta_focus_unlocked
+			}
+		}
 		relative_position_id = FAT_May_no_vulture_be_abandoned
 		#共和国之基
 		completion_reward = {

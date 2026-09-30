@@ -172,6 +172,20 @@ REP_FAT_annex_NTR_1 = {
 	visible_when_empty = no
 }
 
+REP_FAT_a_fork_in_the_road = { #命运分歧
+	allowed = {
+		original_tag = FAT
+	}
+	visible = {
+		has_country_flag = FAT_a_fork_in_the_road
+		NOT = {
+			has_country_flag = AFITR_mechanism_over
+		}
+	}
+	priority = 10000
+	visible_when_empty = yes
+}
+
 
 
 

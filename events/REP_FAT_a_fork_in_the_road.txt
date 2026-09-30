@@ -1,0 +1,143 @@
+add_namespace = FAT_AFITR
+
+country_event = { #耀尾势力在行动事件占位符
+    id = FAT_AFITR.1
+    title = AFITR_suntail_action
+    
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = AFITR.1.1
+    }
+    immediate = { activate_mission = AFITR_suntail_action }
+}
+
+country_event = { #翔日势力在行动事件占位符
+    id = FAT_AFITR.2
+    title = AFITR_sunglider_action
+    
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = AFITR.2.1
+    }
+    immediate = { activate_mission = AFITR_sunglider_action }
+}
+
+country_event = { #选举倒计时激活占位符
+    id = FAT_AFITR.3
+    title = AFITR_election_countdown
+    
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = AFITR.3.1
+    }
+    immediate = { activate_mission = AFITR_election_countdown }
+}
+
+country_event = { #艾斯特勒势力在行动事件占位符
+    id = FAT_AFITR.8
+    title = AFITR_astler_action
+    
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = AFITR.8.1
+    }
+    immediate = { activate_mission = AFITR_astler_action }
+}
+
+country_event = { #最高清算：势力最高的派系将夺下共和国的遗产
+    id = FAT_AFITR.4
+    title = FAT_AFITR.4.t
+    desc = FAT_AFITR.4.d
+    
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = AFITR_mechanism_over #机制结束
+        clr_country_flag = FAT_a_fork_in_the_road #收起命运分歧决议组
+        hidden_effect = { #哪个派系赢了就切换对应的领导人
+            if = {
+                limit = {
+                    check_variable = { AFITR_astler_power > AFITR_suntail_power }
+                    check_variable = { AFITR_astler_power > AFITR_sunglider_power }
+                }
+                set_politics = { ruling_party = communism } #鹫民阵线（民主社会主义）属共产主义组
+                promote_character = FAT_rikard_astler #艾斯特勒
+            }
+            else_if = {
+                limit = {
+                    check_variable = { AFITR_suntail_power > AFITR_sunglider_power }
+                }
+                set_politics = { ruling_party = fascism } #民族阵线（极端民族主义）属霸权主义组
+                promote_character = FAT_reinhard_suntail #曜尾
+            }
+            else = {
+                set_politics = { ruling_party = democratic } #谐律同盟（自由主义）属谐律组
+                promote_character = FAT_schnabel_sunglider #翔日
+            }
+        }
+    }
+    option = {
+        name = FAT_AFITR.4.1
+        custom_effect_tooltip = AFITR_victory_wip_tt #悬停提示：内容未完成
+        load_focus_tree = generic_griffon_focus #移除整个国策树，切换为狮鹫尼亚通用国策树
+    }
+}
+
+country_event = { #共和国的死局：选举倒计时结束，军队发动军事政变，军政府胜利
+    id = FAT_AFITR.5
+    title = FAT_AFITR.5.t
+    desc = FAT_AFITR.5.d
+    
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = AFITR_mechanism_over #机制结束
+        clr_country_flag = FAT_a_fork_in_the_road #收起命运分歧决议组
+    }
+    option = {
+        name = FAT_AFITR.5.1
+        hidden_effect = {
+            country_event = { id = FAT_AFITR.6 days = 5 } #5天后：必要蹄段
+        }
+    }
+}
+
+country_event = { #必要蹄段：接管政府（军政府线）
+    id = FAT_AFITR.6
+    title = FAT_AFITR.6.t
+    desc = FAT_AFITR.6.d
+    
+    is_triggered_only = yes
+    option = {
+        name = FAT_AFITR.6.1
+        custom_effect_tooltip = AFITR_junta_takeover_tt #悬停提示：加里波第上台
+        hidden_effect = {
+            #国防军接管：加里波第上台，军政府建立（幂等：已有角色则直接晋升）
+            set_politics = { ruling_party = neutrality } #军政府（khakistocracy）属中立主义组
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_leader = {
+                            character = FAT_Garibaldi_Giuseppe
+                            ruling_only = no
+                        }
+                    }
+                }
+                add_country_leader_role = {
+                    character = FAT_Garibaldi_Giuseppe
+                    country_leader = {
+                        ideology = Political_Tutelage
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+            }
+            promote_character = FAT_Garibaldi_Giuseppe #晋升为国家领导人
+            #解锁隐藏的军政府国策树：树做好后在此用 load_focus_tree 接入
+            set_country_flag = FAT_AFITR_junta_focus_unlocked
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+}
