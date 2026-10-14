@@ -1,0 +1,10 @@
+FAT_refresh_military_liberation_targets = {
+    clear_array = FAT_military_liberation_targets
+    every_country = {
+        limit = {
+            NOT = { tag = FAT }
+            any_owned_state = { is_on_continent = asia }
+        }
+        add_to_array = { array = ROOT.FAT_military_liberation_targets value = THIS }
+    }
+}

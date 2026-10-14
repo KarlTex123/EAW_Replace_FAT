@@ -1,0 +1,21 @@
+ideas = {
+    country = {
+        FAT_military_rural_autonomy = { # 乡村自治计划
+            picture = GFX_idea_FAT_shiduquanlixiafang_idea
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.2
+                communism_drift = 0.2
+                supply_factor = 0.2
+            }
+        }
+        FAT_military_founding_father = { # 国父崇拜
+            picture = GFX_idea_FAT_guofujingshen
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.1
+                political_advisor_cost_factor = -0.15
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+REP_FAT_military_republic_category = {
+    FAT_military_form_creature_republic = { # 成立狮鹫尼亚生灵共和国
+        icon = generic_form_nation
+        visible = { has_country_flag = FAT_military_form_republic_unlocked }
+        cost = 150
+        fire_only_once = yes
+        available = {
+            has_completed_focus = FAT_The_Republic_Guard
+            # 沿用现有成立国家决议的大陆州数组；先确认非空，防止空集合满足条件。
+            check_variable = { var = FAT.REP_formables_states_array^num value = 0 compare = greater_than }
+            custom_trigger_tooltip = {
+                tooltip = FAT_military_form_creature_republic_requirements_tt
+                all_of_scopes = {
+                    array = FAT.REP_formables_states_array
+                    is_owned_by = ROOT
+                    is_controlled_by = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_cosmetic_tag = FAT_CREATURE_REPUBLIC
+            every_state = {
+                limit = {
+                    is_in_array = { array = FAT.REP_formables_states_array value = THIS.id }
+                    is_owned_by = ROOT
+                    NOT = { is_core_of = ROOT }
+                }
+                add_core_of = ROOT
+            }
+            set_country_flag = FAT_military_creature_republic_formed
+        }
+        ai_will_do = { factor = 200 }
+    }
+    FAT_military_liberate_country = { # 解放狮鹫尼亚的其他国家
+        icon = generic_prepare_civil_war
+        target_array = FAT_military_liberation_targets
+        target_root_trigger = { has_country_flag = FAT_military_liberation_unlocked }
+        target_trigger = {
+            FROM = {
+                exists = yes
+                NOT = { tag = FAT }
+                any_owned_state = { is_on_continent = asia }
+                NOT = { is_in_faction_with = ROOT }
+                NOT = { is_subject_of = ROOT }
+            }
+        }
+        visible = { has_country_flag = FAT_military_liberation_unlocked }
+        available = {
+            NOT = { has_war_with = FROM }
+            NOT = { has_wargoal_against = FROM }
+        }
+        cost = 50
+        days_remove = 30
+        fire_only_once = yes
+        remove_effect = { create_wargoal = { type = puppet target = FROM } }
+        ai_will_do = { factor = 10 }
+    }
+}

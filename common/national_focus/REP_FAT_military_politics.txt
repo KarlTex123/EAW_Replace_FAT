@@ -7,6 +7,8 @@ shared_focus = { # 军队之胜
     x = 22
     y = 16
     cost = 1
+    prerequisite = { focus = FAT_GONGHEGUODEWEILAI }
+    available = { has_country_flag = FAT_GONGHEGUODEWEILAI_flag }
     cancel_if_invalid = yes
     continue_if_invalid = no
     completion_reward = {

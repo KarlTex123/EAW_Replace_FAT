@@ -1,0 +1,186 @@
+# 军政府第二阶段：同名修正使用变量累计，每点 cost 为七天。
+
+shared_focus = { # 共和国的雄狮
+    id = FAT_The_Republic_Lion
+    icon = GFX_goal_FAT_The_Republic_Lion
+    x = 26
+    y = 24
+    cost = 1
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Republic_Guard }
+    completion_reward = {
+        army_experience = 100
+        air_experience = 50
+        navy_experience = 50
+        set_variable = { FAT_lion_army_attack_factor = 0 }
+        set_variable = { FAT_lion_army_defence_factor = 0 }
+        set_variable = { FAT_lion_initiative_factor = 0 }
+        set_variable = { FAT_lion_coordination_bonus = 0 }
+        set_variable = { FAT_lion_breakthrough_factor = 0 }
+        set_variable = { FAT_lion_army_armor_attack_factor = 0 }
+        set_variable = { FAT_lion_dig_in_speed_factor = 0 }
+        set_variable = { FAT_lion_max_dig_in = 0 }
+        set_variable = { FAT_lion_army_org_factor = 0 }
+        set_variable = { FAT_lion_supply_consumption_factor = 0 }
+        set_variable = { FAT_lion_planning_speed = 0 }
+        add_dynamic_modifier = { modifier = FAT_military_republic_lion }
+        country_event = { id = FAT_MilitaryGov.20 }
+    }
+}
+
+shared_focus = { # 机械化部队实践
+    id = FAT_Mechanized_Forces_Practice
+    icon = GFX_goal_FAT_Mechanized_Forces_Practice
+    x = 24
+    y = 25
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Republic_Lion }
+    completion_reward = {
+        add_tech_bonus = { name = FAT_military_armor_research_bonus bonus = 1.0 ahead_reduction = 2.0 uses = 2 category = armor }
+        custom_effect_tooltip = FAT_lion_change_tt
+        custom_effect_tooltip = FAT_lion_army_armor_attack_factor_0p1_tt
+        custom_effect_tooltip = FAT_lion_breakthrough_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_lion_breakthrough_factor = 0.05 }
+            add_to_variable = { FAT_lion_army_armor_attack_factor = 0.1 }
+        }
+    }
+}
+
+shared_focus = { # 国民革命军的遗产
+    id = FAT_The_Legacy_of_the_National_Revolutionary_Army
+    icon = GFX_goal_FAT_The_Legacy_of_the_National_Revolutionary_Army
+    x = 26
+    y = 25
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Republic_Lion }
+    completion_reward = {
+        custom_effect_tooltip = FAT_lion_change_tt
+        custom_effect_tooltip = FAT_lion_army_defence_factor_0p05_tt
+        custom_effect_tooltip = FAT_lion_army_attack_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_lion_army_attack_factor = 0.05 }
+            add_to_variable = { FAT_lion_army_defence_factor = 0.05 }
+        }
+        country_event = { id = FAT_MilitaryGov.21 }
+    }
+}
+
+shared_focus = { # 吸纳先进装备
+    id = FAT_Incorporate_advanced_equipment
+    icon = GFX_goal_FAT_Incorporate_advanced_equipment
+    x = 28
+    y = 25
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Republic_Lion }
+    completion_reward = {
+        add_tech_bonus = { name = FAT_military_artillery_research_bonus bonus = 1.0 ahead_reduction = 2.0 uses = 2 category = artillery }
+        custom_effect_tooltip = FAT_lion_change_tt
+        custom_effect_tooltip = FAT_lion_coordination_bonus_0p05_tt
+        custom_effect_tooltip = FAT_lion_initiative_factor_0p02_tt
+        hidden_effect = {
+            add_to_variable = { FAT_lion_initiative_factor = 0.02 }
+            add_to_variable = { FAT_lion_coordination_bonus = 0.05 }
+        }
+    }
+}
+
+shared_focus = { # 继续扩展漫云军校
+    id = FAT_Continue_expanding_the_Manyun_Military_Academy
+    icon = GFX_goal_FAT_Continue_expanding_the_Manyun_Military_Academy
+    x = 26
+    y = 26
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Legacy_of_the_National_Revolutionary_Army }
+    completion_reward = {
+        add_research_slot = 1
+    }
+}
+
+shared_focus = { # 小马的智慧
+    id = FAT_The_Wisdom_of_the_Little_Horse
+    icon = GFX_goal_FAT_The_Wisdom_of_the_Little_Horse
+    x = 24
+    y = 27
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Mechanized_Forces_Practice }
+    completion_reward = {
+        custom_effect_tooltip = FAT_lion_change_tt
+        custom_effect_tooltip = FAT_lion_max_dig_in_5p0_tt
+        custom_effect_tooltip = FAT_lion_dig_in_speed_factor_0p2_tt
+        hidden_effect = {
+            add_to_variable = { FAT_lion_dig_in_speed_factor = 0.2 }
+            add_to_variable = { FAT_lion_max_dig_in = 5.0 }
+        }
+    }
+}
+
+shared_focus = { # 共和国之盾
+    id = FAT_Shield_of_the_Republic
+    icon = GFX_goal_FAT_Shield_of_the_Republic
+    x = 26
+    y = 27
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Continue_expanding_the_Manyun_Military_Academy }
+    completion_reward = {
+        custom_effect_tooltip = FAT_lion_change_tt
+        custom_effect_tooltip = FAT_lion_army_org_factor_0p15_tt
+        custom_effect_tooltip = FAT_lion_army_defence_factor_0p15_tt
+        hidden_effect = {
+            add_to_variable = { FAT_lion_army_defence_factor = 0.15 }
+            add_to_variable = { FAT_lion_army_org_factor = 0.15 }
+        }
+    }
+}
+
+shared_focus = { # 狮鹫的毅力
+    id = FAT_The_Perseverance_of_the_Griffin
+    icon = GFX_goal_FAT_The_Perseverance_of_the_Griffin
+    x = 28
+    y = 27
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_Incorporate_advanced_equipment }
+    completion_reward = {
+        custom_effect_tooltip = FAT_lion_change_tt
+        custom_effect_tooltip = FAT_lion_planning_speed_0p2_tt
+        custom_effect_tooltip = FAT_lion_supply_consumption_factor_m0p2_tt
+        hidden_effect = {
+            add_to_variable = { FAT_lion_supply_consumption_factor = -0.2 }
+            add_to_variable = { FAT_lion_planning_speed = 0.2 }
+        }
+    }
+}
+
+shared_focus = { # 你从不可战胜，亦可谓传奇
+    id = FAT_You_are_invincible_and_thus_can_be_called_a_legend
+    icon = GFX_goal_FAT_You_are_invincible_and_thus_can_be_called_a_legend
+    x = 26
+    y = 28
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Wisdom_of_the_Little_Horse }
+    prerequisite = { focus = FAT_Shield_of_the_Republic }
+    prerequisite = { focus = FAT_The_Perseverance_of_the_Griffin }
+    completion_reward = {
+        country_event = { id = FAT_MilitaryGov.22 }
+        set_country_flag = FAT_military_liberation_unlocked
+        FAT_refresh_military_liberation_targets = yes
+        unlock_decision_tooltip = FAT_military_liberate_country
+    }
+}
