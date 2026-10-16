@@ -1,4 +1,4 @@
-add_namespace = griffonRepublic
+﻿add_namespace = griffonRepublic
 add_namespace = kemerskaiSpeech
 add_namespace = griffonRepublic_history
 
@@ -1727,7 +1727,7 @@ country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.80" }
 	title = griffonRepublic.80.t
 	desc = griffonRepublic.80.d
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_REP_FAT_event
 	is_triggered_only = yes
 	option = {
 		name = griffonRepublic.80.a

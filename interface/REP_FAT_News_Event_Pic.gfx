@@ -17,6 +17,12 @@ spriteTypes = {
 		name = "GFX_REP_FAT_SHIJILICI"
 		texturefile = "gfx/interface/the_south_public/SHIJILICI.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_REP_FAT_event"
+		texturefile = "gfx/interface/REP_FAT_event.png"
+		legacy_lazy_load = no
+	}
 }
 
 

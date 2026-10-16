@@ -4,6 +4,7 @@ country_event = {
 	id = REP_FAT_Difficult_Select.1
     title = REP_FAT_Difficult_Select.1.t
     desc = REP_FAT_Difficult_Select.1.desc
+    picture = GFX_REP_FAT_event
     is_triggered_only = yes
     hidden = no
     option = { # 正常难度

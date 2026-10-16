@@ -52,7 +52,7 @@ country_event = { #最高清算：势力最高的派系将夺下共和国的遗�
     id = FAT_AFITR.4
     title = FAT_AFITR.4.t
     desc = FAT_AFITR.4.d
-    
+    picture = GFX_REP_FAT_event
     is_triggered_only = yes
     immediate = {
         set_country_flag = AFITR_mechanism_over #机制结束
@@ -90,7 +90,7 @@ country_event = { #共和国的死局：选举倒计时结束，军队发动军�
     id = FAT_AFITR.5
     title = FAT_AFITR.5.t
     desc = FAT_AFITR.5.d
-    
+    picture = GFX_REP_FAT_event
     is_triggered_only = yes
     immediate = {
         set_country_flag = AFITR_mechanism_over #机制结束
@@ -108,7 +108,7 @@ country_event = { #必要蹄段：接管政府（军政府线）
     id = FAT_AFITR.6
     title = FAT_AFITR.6.t
     desc = FAT_AFITR.6.d
-    
+    picture = GFX_REP_FAT_event
     is_triggered_only = yes
     option = {
         name = FAT_AFITR.6.1
