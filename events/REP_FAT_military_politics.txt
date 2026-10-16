@@ -1,0 +1,220 @@
+# 事件标题来自方案；正文为配套补写。国策效果直接结算，事件选项不重复发放。
+add_namespace = FAT_MilitaryGov
+
+country_event = { # 国防理事会
+    id = FAT_MilitaryGov.1
+    title = FAT_MilitaryGov.1.t
+    desc = FAT_MilitaryGov.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.1.a }
+}
+
+country_event = { # 再无戡乱
+    id = FAT_MilitaryGov.2
+    title = FAT_MilitaryGov.2.t
+    desc = FAT_MilitaryGov.2.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.2.a }
+}
+
+country_event = { # 民主的承诺
+    id = FAT_MilitaryGov.3
+    title = FAT_MilitaryGov.3.t
+    desc = FAT_MilitaryGov.3.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.3.a }
+}
+
+country_event = { # 无声的稳定
+    id = FAT_MilitaryGov.4
+    title = FAT_MilitaryGov.4.t
+    desc = FAT_MilitaryGov.4.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.4.a }
+}
+
+country_event = { # 赤色之褪
+    id = FAT_MilitaryGov.5
+    title = FAT_MilitaryGov.5.t
+    desc = FAT_MilitaryGov.5.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.5.a }
+}
+
+country_event = { # 公民与权力
+    id = FAT_MilitaryGov.6
+    title = FAT_MilitaryGov.6.t
+    desc = FAT_MilitaryGov.6.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.6.a }
+}
+
+country_event = { # 我们为何而战
+    id = FAT_MilitaryGov.7
+    title = FAT_MilitaryGov.7.t
+    desc = FAT_MilitaryGov.7.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.7.a }
+}
+
+country_event = { # 再无民族
+    id = FAT_MilitaryGov.8
+    title = FAT_MilitaryGov.8.t
+    desc = FAT_MilitaryGov.8.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.8.a }
+}
+
+country_event = { # 克梅斯凯的最终遗产
+    id = FAT_MilitaryGov.9
+    title = FAT_MilitaryGov.9.t
+    desc = FAT_MilitaryGov.9.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.9.a }
+}
+
+country_event = { # 团结就是魔法
+    id = FAT_MilitaryGov.10
+    title = FAT_MilitaryGov.10.t
+    desc = FAT_MilitaryGov.10.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.10.a }
+}
+
+country_event = { # 新时代的展望
+    id = FAT_MilitaryGov.11
+    title = FAT_MilitaryGov.11.t
+    desc = FAT_MilitaryGov.11.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.11.a }
+}
+
+news_event = { # 共和国的剧变
+    id = FAT_MilitaryGov.100
+    title = FAT_MilitaryGov.100.t
+    desc = FAT_MilitaryGov.100.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    major = yes
+    option = { name = FAT_MilitaryGov.100.a }
+}
+
+news_event = { # 世界解放宣言
+    id = FAT_MilitaryGov.101
+    title = FAT_MilitaryGov.101.t
+    desc = FAT_MilitaryGov.101.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    major = yes
+    option = { name = FAT_MilitaryGov.101.a }
+}
+
+country_event = { # 国民革命军的改组
+    id = FAT_MilitaryGov.20
+    title = FAT_MilitaryGov.20.t
+    desc = FAT_MilitaryGov.20.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.20.a }
+}
+
+country_event = { # 克梅斯凯的遗赠
+    id = FAT_MilitaryGov.21
+    title = FAT_MilitaryGov.21.t
+    desc = FAT_MilitaryGov.21.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.21.a }
+}
+
+country_event = { # 忠于国家，忠于宪法，忠于理想
+    id = FAT_MilitaryGov.22
+    title = FAT_MilitaryGov.22.t
+    desc = FAT_MilitaryGov.22.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.22.a }
+}
+
+country_event = { # 赫兹兰的经济现状
+    id = FAT_MilitaryGov.30
+    title = FAT_MilitaryGov.30.t
+    desc = FAT_MilitaryGov.30.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.30.a }
+}
+
+country_event = { # 货币的统一
+    id = FAT_MilitaryGov.31
+    title = FAT_MilitaryGov.31.t
+    desc = FAT_MilitaryGov.31.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.31.a }
+}
+
+country_event = { # 国父时代的经济奇迹余波
+    id = FAT_MilitaryGov.32
+    title = FAT_MilitaryGov.32.t
+    desc = FAT_MilitaryGov.32.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.32.a }
+}
+
+country_event = { # 重生的工会
+    id = FAT_MilitaryGov.33
+    title = FAT_MilitaryGov.33.t
+    desc = FAT_MilitaryGov.33.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.33.a }
+}
+
+country_event = { # 克劳迪娅的矿业帝国
+    id = FAT_MilitaryGov.34
+    title = FAT_MilitaryGov.34.t
+    desc = FAT_MilitaryGov.34.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.34.a }
+}
+
+country_event = { # 企业家大会
+    id = FAT_MilitaryGov.35
+    title = FAT_MilitaryGov.35.t
+    desc = FAT_MilitaryGov.35.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.35.a }
+}
+
+country_event = { # 青柠慕斯的汽水帝国
+    id = FAT_MilitaryGov.36
+    title = FAT_MilitaryGov.36.t
+    desc = FAT_MilitaryGov.36.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.36.a }
+}
+
+country_event = { # 经济奇迹
+    id = FAT_MilitaryGov.37
+    title = FAT_MilitaryGov.37.t
+    desc = FAT_MilitaryGov.37.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.37.a }
+}

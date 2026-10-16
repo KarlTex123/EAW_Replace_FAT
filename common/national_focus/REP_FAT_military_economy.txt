@@ -1,0 +1,213 @@
+# 军政府第二阶段：同名修正使用变量累计，每点 cost 为七天。
+
+shared_focus = { # 共和国之基
+    id = FAT_gongheguozhiji
+    icon = GFX_goal_FAT_gongheguozhiji
+    x = 18
+    y = 24
+    cost = 1
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_The_Republic_Guard }
+    completion_reward = {
+        set_variable = { FAT_foundation_production_factory_efficiency_gain_factor = 0 }
+        set_variable = { FAT_foundation_production_speed_buildings_factor = 0 }
+        set_variable = { FAT_foundation_global_building_slots_factor = 0 }
+        set_variable = { FAT_foundation_industrial_capacity_factory = 0 }
+        set_variable = { FAT_foundation_production_factory_max_efficiency_factor = 0 }
+        set_variable = { FAT_foundation_research_speed_factor = 0 }
+        set_variable = { FAT_foundation_line_change_production_efficiency_factor = 0 }
+        set_variable = { FAT_foundation_local_resources_factor = 0 }
+        set_variable = { FAT_foundation_local_resources_coal_factor = 0 }
+        set_variable = { FAT_foundation_consumer_goods_factor = 0 }
+        add_dynamic_modifier = { modifier = FAT_military_republic_foundation }
+        country_event = { id = FAT_MilitaryGov.30 }
+    }
+}
+
+shared_focus = { # 统一货币体系
+    id = FAT_tongyihuobitixi
+    icon = GFX_goal_FAT_tongyihuobitixi
+    x = 16
+    y = 25
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_gongheguozhiji }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_production_speed_buildings_factor_0p1_tt
+        custom_effect_tooltip = FAT_foundation_production_factory_efficiency_gain_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_production_factory_efficiency_gain_factor = 0.05 }
+            add_to_variable = { FAT_foundation_production_speed_buildings_factor = 0.1 }
+        }
+        country_event = { id = FAT_MilitaryGov.31 }
+    }
+}
+
+shared_focus = { # 黄金十年的遗产
+    id = FAT_huangjinshiniandeyichan
+    icon = GFX_goal_FAT_huangjinshiniandeyichan
+    x = 18
+    y = 25
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_gongheguozhiji }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_global_building_slots_factor_0p15_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_global_building_slots_factor = 0.15 }
+        }
+        country_event = { id = FAT_MilitaryGov.32 }
+    }
+}
+
+shared_focus = { # 协调工会组织
+    id = FAT_xietiaogonghuizuzhi
+    icon = GFX_goal_FAT_xietiaogonghuizuzhi
+    x = 20
+    y = 25
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_gongheguozhiji }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_production_factory_max_efficiency_factor_0p05_tt
+        custom_effect_tooltip = FAT_foundation_industrial_capacity_factory_0p1_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_industrial_capacity_factory = 0.1 }
+            add_to_variable = { FAT_foundation_production_factory_max_efficiency_factor = 0.05 }
+        }
+        country_event = { id = FAT_MilitaryGov.33 }
+    }
+}
+
+shared_focus = { # 合并高等大学
+    id = FAT_hebinggaodengdaxue
+    icon = GFX_goal_FAT_hebinggaodengdaxue
+    x = 18
+    y = 26
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_huangjinshiniandeyichan }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_line_change_production_efficiency_factor_0p2_tt
+        custom_effect_tooltip = FAT_foundation_research_speed_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_research_speed_factor = 0.05 }
+            add_to_variable = { FAT_foundation_line_change_production_efficiency_factor = 0.2 }
+        }
+    }
+}
+
+shared_focus = { # 赫兹兰的财富
+    id = FAT_hezelandecaifu
+    icon = GFX_goal_FAT_hezelandecaifu
+    x = 16
+    y = 27
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_tongyihuobitixi }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_local_resources_coal_factor_0p1_tt
+        custom_effect_tooltip = FAT_foundation_local_resources_factor_0p15_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_local_resources_factor = 0.15 }
+            add_to_variable = { FAT_foundation_local_resources_coal_factor = 0.1 }
+        }
+        country_event = { id = FAT_MilitaryGov.34 }
+    }
+}
+
+shared_focus = { # 企业家的活跃
+    id = FAT_qiyejiaodehuoyue
+    icon = GFX_goal_FAT_qiyejiaodehuoyue
+    x = 18
+    y = 27
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_hebinggaodengdaxue }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_consumer_goods_factor_0p1_tt
+        custom_effect_tooltip = FAT_foundation_production_speed_buildings_factor_0p15_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_production_speed_buildings_factor = 0.15 }
+            add_to_variable = { FAT_foundation_consumer_goods_factor = 0.1 }
+        }
+        country_event = { id = FAT_MilitaryGov.35 }
+    }
+}
+
+shared_focus = { # 漫云的智慧
+    id = FAT_manyundezhihui
+    icon = GFX_goal_FAT_manyundezhihui
+    x = 20
+    y = 27
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_xietiaogonghuizuzhi }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_production_speed_buildings_factor_0p05_tt
+        custom_effect_tooltip = FAT_foundation_research_speed_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_research_speed_factor = 0.05 }
+            add_to_variable = { FAT_foundation_production_speed_buildings_factor = 0.05 }
+        }
+        country_event = { id = FAT_MilitaryGov.36 }
+    }
+}
+
+shared_focus = { # 鹫与马的合奏
+    id = FAT_luyumadehezo
+    icon = GFX_goal_FAT_luyumadehezo
+    x = 18
+    y = 28
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_hezelandecaifu }
+    prerequisite = { focus = FAT_qiyejiaodehuoyue }
+    prerequisite = { focus = FAT_manyundezhihui }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_industrial_capacity_factory_0p1_tt
+        custom_effect_tooltip = FAT_foundation_global_building_slots_factor_0p1_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_global_building_slots_factor = 0.1 }
+            add_to_variable = { FAT_foundation_industrial_capacity_factory = 0.1 }
+        }
+    }
+}
+
+shared_focus = { # 迈向美好未来
+    id = FAT_maixiangmeihaoweilai
+    icon = GFX_goal_FAT_maixiangmeihaoweilai
+    x = 18
+    y = 29
+    cost = 2
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    prerequisite = { focus = FAT_luyumadehezo }
+    completion_reward = {
+        custom_effect_tooltip = FAT_foundation_change_tt
+        custom_effect_tooltip = FAT_foundation_production_factory_max_efficiency_factor_0p05_tt
+        custom_effect_tooltip = FAT_foundation_production_speed_buildings_factor_0p05_tt
+        hidden_effect = {
+            add_to_variable = { FAT_foundation_production_speed_buildings_factor = 0.05 }
+            add_to_variable = { FAT_foundation_production_factory_max_efficiency_factor = 0.05 }
+        }
+        country_event = { id = FAT_MilitaryGov.37 }
+    }
+}

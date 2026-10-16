@@ -1,0 +1,7 @@
+REP_FAT_military_republic_category = {
+    icon = generic_political_actions
+    allowed = { original_tag = FAT }
+    visible = { has_country_flag = FAT_military_form_republic_unlocked }
+    visible_when_empty = no
+    priority = 100
+}

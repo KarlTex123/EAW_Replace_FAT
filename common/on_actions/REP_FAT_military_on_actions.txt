@@ -1,0 +1,10 @@
+on_actions = {
+    on_monthly_FAT = {
+        effect = {
+            if = {
+                limit = { has_country_flag = FAT_military_liberation_unlocked }
+                FAT_refresh_military_liberation_targets = yes
+            }
+        }
+    }
+}
