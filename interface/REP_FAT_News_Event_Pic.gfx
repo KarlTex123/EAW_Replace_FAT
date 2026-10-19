@@ -19,7 +19,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_REP_FAT_event"
+		name = "GFX_REP_FAT_event" #待补图
 		texturefile = "gfx/interface/REP_FAT_event.png"
 		legacy_lazy_load = no
 	}
