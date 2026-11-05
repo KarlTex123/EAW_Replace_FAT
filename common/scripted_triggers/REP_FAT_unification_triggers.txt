@@ -1,0 +1,34 @@
+# 国家作用域。EaW 的 asia 表示狮鹫尼亚大陆；只认首都，避免海外殖民者误入吞并名单。
+FAT_unification_neighbor = {
+    exists = yes
+    NOT = { tag = FAT }
+    is_neighbor_of = FAT
+    NOT = { has_war_with = FAT }
+}
+FAT_unification_target = {
+    FAT_unification_neighbor = yes
+    capital_scope = { is_on_continent = asia }
+}
+FAT_unification_friendship_target = {
+    FAT_unification_neighbor = yes
+    OR = {
+        original_tag = HLR
+        AND = { original_tag = EQC has_government = democratic }
+        is_in_array = { array = global.river_coalition_members value = THIS }
+        is_river_fed_member = yes
+    }
+}
+FAT_unification_war_possible = {
+    FAT_unification_target = yes
+    NOT = { has_government = democratic }
+    NOT = { is_in_faction_with = FAT }
+    NOT = { is_subject_of = FAT }
+    NOT = { has_non_aggression_pact_with = FAT }
+}
+FAT_unification_unlocked = {
+    original_tag = FAT
+    OR = {
+        has_country_flag = FAT_military_liberation_unlocked
+        has_completed_focus = FAT_You_are_invincible_and_thus_can_be_called_a_legend
+    }
+}

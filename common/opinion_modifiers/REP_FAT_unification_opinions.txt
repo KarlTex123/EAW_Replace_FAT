@@ -1,0 +1,3 @@
+opinion_modifiers = {
+    FAT_unification_friendship_opinion = { value = 200 }
+}

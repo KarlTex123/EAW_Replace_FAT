@@ -8,7 +8,19 @@ shared_focus = { # 军队之胜
     y = 16
     cost = 1
     prerequisite = { focus = FAT_GONGHEGUODEWEILAI }
-    available = { has_country_flag = FAT_GONGHEGUODEWEILAI_flag }
+    available = {
+        has_country_flag = FAT_GONGHEGUODEWEILAI_flag
+        OR = {
+            has_country_flag = FAT_AFITR_junta_focus_unlocked
+            has_country_flag = FAT_military_government
+        }
+    }
+    allow_branch = {
+        OR = {
+            has_country_flag = FAT_AFITR_junta_focus_unlocked
+            has_country_flag = FAT_military_government # 兼容已经进入军政府路线的旧档
+        }
+    }
     cancel_if_invalid = yes
     continue_if_invalid = no
     completion_reward = {
@@ -32,6 +44,11 @@ shared_focus = { # 军队之胜
         set_variable = { FAT_military_monthly_population = 0 }
         set_variable = { FAT_military_global_building_slots_factor = 0 }
         add_dynamic_modifier = { modifier = FAT_military_stable_republic }
+        # 新小游戏已在 FAT_AFITR.6 展示“必要蹄段”，不再重复弹同篇政变剧情。
+        if = {
+            limit = { NOT = { has_country_flag = FAT_AFITR_junta_focus_unlocked } }
+            country_event = { id = FAT_MilitaryGov.12 }
+        }
         news_event = { id = FAT_MilitaryGov.100 }
         hidden_effect = {
             # =========================

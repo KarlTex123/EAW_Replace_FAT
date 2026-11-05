@@ -6,6 +6,12 @@ shared_focus = { # 共和国的雄狮
     x = 26
     y = 24
     cost = 1
+    allow_branch = {
+        OR = {
+            has_country_flag = FAT_AFITR_junta_focus_unlocked
+            has_country_flag = FAT_military_government # 兼容已经进入军政府路线的旧档
+        }
+    }
     cancel_if_invalid = yes
     continue_if_invalid = no
     prerequisite = { focus = FAT_The_Republic_Guard }
@@ -181,6 +187,6 @@ shared_focus = { # 你从不可战胜，亦可谓传奇
         country_event = { id = FAT_MilitaryGov.22 }
         set_country_flag = FAT_military_liberation_unlocked
         FAT_refresh_military_liberation_targets = yes
-        unlock_decision_tooltip = FAT_military_liberate_country
+        custom_effect_tooltip = FAT_unification_unlock_tt
     }
 }

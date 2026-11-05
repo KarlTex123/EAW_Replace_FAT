@@ -5,3 +5,11 @@ REP_FAT_military_republic_category = {
     visible_when_empty = no
     priority = 100
 }
+
+REP_FAT_unification_category = {
+    icon = generic_political_actions
+    allowed = { original_tag = FAT }
+    visible = { FAT_unification_unlocked = yes }
+    visible_when_empty = yes
+    priority = 110
+}
