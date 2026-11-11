@@ -1,0 +1,59 @@
+GAL_clear_alignment_arrays = {
+    # Clear every backing scope before rebuilding, including an old save's groups.
+    FAT = { clear_array = GAL_alignment_members }
+    RCT = { clear_array = GAL_alignment_members }
+    EQS = { clear_array = GAL_alignment_members }
+    GRI = { clear_array = GAL_alignment_members }
+    clear_array = GAL_alignment_leaders
+}
+
+GAL_calculate_alignment_arrays = {
+    GAL_clear_alignment_arrays = yes
+    FAT = { set_variable = { GAL_alignment_group = 1 } }
+    RCT = { set_variable = { GAL_alignment_group = 2 } }
+    # Keep group 3 for the independent card, preserving existing save variables.
+    EQS = { set_variable = { GAL_alignment_group = 3 } }
+    GRI = { set_variable = { GAL_alignment_group = 4 } }
+
+    every_country = {
+        limit = { exists = yes GAL_is_griffonia_country = yes }
+        # Actual Reichspakt membership takes precedence over obsolete idea flags.
+        if = {
+            limit = { GAL_is_reichspakt_country = yes }
+            add_to_array = { GRI.GAL_alignment_members = THIS }
+        }
+        else_if = {
+            limit = { GAL_is_republican_pact_country = yes }
+            add_to_array = { FAT.GAL_alignment_members = THIS }
+        }
+        else_if = {
+            limit = { GAL_is_river_federation_country = yes }
+            add_to_array = { RCT.GAL_alignment_members = THIS }
+        }
+        else = { add_to_array = { EQS.GAL_alignment_members = THIS } }
+    }
+
+    # Empty blocs are hidden. Backing scopes identify cards, not current leaders.
+    FAT = {
+        if = {
+            limit = { check_variable = { GAL_alignment_members^num > 0 } }
+            add_to_array = { PREV.GAL_alignment_leaders = THIS }
+        }
+    }
+    RCT = {
+        if = {
+            limit = { check_variable = { GAL_alignment_members^num > 0 } }
+            add_to_array = { PREV.GAL_alignment_leaders = THIS }
+        }
+    }
+    GRI = {
+        if = {
+            limit = { check_variable = { GAL_alignment_members^num > 0 } }
+            add_to_array = { PREV.GAL_alignment_leaders = THIS }
+        }
+    }
+    # Always retain the independent card, even when its current list is empty.
+    add_to_array = { GAL_alignment_leaders = EQS }
+}
+
+GAL_refresh_alignment_gui = { set_variable_to_random = GAL_alignment_gui_update }

@@ -1,0 +1,40 @@
+# Reuses EaW's native regional scripted triggers instead of maintaining a tag list.
+GAL_is_griffonia_country = {
+	OR = {
+		is_northern_griffonia_country = yes
+		is_central_griffonia_country = yes
+		is_eastern_griffonia_country = yes
+		is_southern_griffonia_country = yes
+		is_western_griffonia_country = yes
+	}
+}
+
+# The actual faction template survives renaming, government and leader changes.
+# Sharing GRI's current faction or its icon is not sufficient to be Reichspakt.
+GAL_is_reichspakt_country = {
+    has_faction_template = faction_template_reichspakt
+}
+
+# The overhaul creates a real pact without necessarily adding the legacy idea.
+GAL_is_republican_pact_country = {
+    OR = {
+        has_idea = FAT_republican_pact
+        has_faction_template = FAT_GONGHEGUOGONGYUE
+        has_faction_template = faction_template_republican_pact_moderate
+        has_faction_template = faction_template_republican_pact_supremacist
+    }
+}
+
+# Cover both military alliances while retaining EaW's political membership.
+GAL_is_river_federation_country = {
+    OR = {
+        has_faction_template = faction_template_river_coalition
+        has_faction_template = faction_template_river_united_faction
+        is_river_fed_member = yes
+    }
+}
+
+# Query completion directly so existing saves need no new unlock flag.
+GAL_alignment_unlocked = {
+    has_completed_focus = FAT_GONGHEGUOGONGYUE
+}

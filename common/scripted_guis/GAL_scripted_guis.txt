@@ -1,0 +1,37 @@
+scripted_gui = {
+	GAL_alignment_button_gui = {
+		context_type = player_context
+		window_name = "GAL_alignment_button_window"
+		parent_window_token = politics_tab
+		dirty = GAL_alignment_gui_update
+		ai_enabled = { always = no }
+		visible = { is_ai = no GAL_alignment_unlocked = yes }
+		effects = {
+			GAL_alignment_open_button_click = {
+				if = {
+					limit = { GAL_alignment_unlocked = yes }
+					if = { limit = { has_country_flag = GAL_alignment_gui_open } clr_country_flag = GAL_alignment_gui_open GAL_clear_alignment_arrays = yes }
+					else = { set_country_flag = GAL_alignment_gui_open GAL_calculate_alignment_arrays = yes }
+					GAL_refresh_alignment_gui = yes
+				}
+			}
+		}
+	}
+	GAL_alignment_gui = {
+		context_type = player_context
+		window_name = "GAL_alignment_window"
+		dirty = GAL_alignment_gui_update
+		ai_enabled = { always = no }
+		visible = { GAL_alignment_unlocked = yes has_country_flag = GAL_alignment_gui_open }
+		effects = { GAL_alignment_close_button_click = { clr_country_flag = GAL_alignment_gui_open GAL_refresh_alignment_gui = yes } }
+		dynamic_lists = {
+			GAL_alignment_leaders_grid = { array = GAL_alignment_leaders entry_container = GAL_alignment_leaders_entry value = GAL_alignment_leader index = GAL_alignment_index change_scope = yes }
+			GAL_alignment_members = { array = GAL_alignment_leader:GAL_alignment_members entry_container = GAL_alignment_members_entry change_scope = yes }
+		}
+		properties = {
+			GAL_alignment_leaders_flag = { image = "[GALGetAlignmentIcon]" }
+			GAL_alignment_flag = { image = "[THIS.GetFlag]" }
+			GAL_alignment_faction_info = { image = "[GALGetAlignmentTenetIcon]" }
+		}
+	}
+}
