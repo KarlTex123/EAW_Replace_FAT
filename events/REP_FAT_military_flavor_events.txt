@@ -6,7 +6,7 @@ country_event = {
     id = FAT_MilitaryFlavor.1
     title = FAT_MilitaryFlavor.1.t
     desc = FAT_MilitaryFlavor.1.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_01
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_1_seen }
@@ -17,7 +17,7 @@ country_event = {
     id = FAT_MilitaryFlavor.2
     title = FAT_MilitaryFlavor.2.t
     desc = FAT_MilitaryFlavor.2.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_02
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_2_seen }
@@ -28,7 +28,7 @@ country_event = {
     id = FAT_MilitaryFlavor.3
     title = FAT_MilitaryFlavor.3.t
     desc = FAT_MilitaryFlavor.3.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_03
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_3_seen }
@@ -39,7 +39,7 @@ country_event = {
     id = FAT_MilitaryFlavor.4
     title = FAT_MilitaryFlavor.4.t
     desc = FAT_MilitaryFlavor.4.d
-    picture = GFX_report_event_generic_army
+    picture = GFX_REP_FAT_military_flavor_04
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_4_seen }
@@ -50,7 +50,7 @@ country_event = {
     id = FAT_MilitaryFlavor.5
     title = FAT_MilitaryFlavor.5.t
     desc = FAT_MilitaryFlavor.5.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_05
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_5_seen }
@@ -61,7 +61,7 @@ country_event = {
     id = FAT_MilitaryFlavor.6
     title = FAT_MilitaryFlavor.6.t
     desc = FAT_MilitaryFlavor.6.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_06
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_6_seen }
@@ -72,7 +72,7 @@ country_event = {
     id = FAT_MilitaryFlavor.7
     title = FAT_MilitaryFlavor.7.t
     desc = FAT_MilitaryFlavor.7.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_07
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_7_seen }
@@ -83,7 +83,7 @@ country_event = {
     id = FAT_MilitaryFlavor.8
     title = FAT_MilitaryFlavor.8.t
     desc = FAT_MilitaryFlavor.8.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_08
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_8_seen }
@@ -94,7 +94,7 @@ country_event = {
     id = FAT_MilitaryFlavor.9
     title = FAT_MilitaryFlavor.9.t
     desc = FAT_MilitaryFlavor.9.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_09
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_9_seen }
@@ -105,7 +105,7 @@ country_event = {
     id = FAT_MilitaryFlavor.10
     title = FAT_MilitaryFlavor.10.t
     desc = FAT_MilitaryFlavor.10.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_10
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_10_seen }
@@ -116,7 +116,7 @@ country_event = {
     id = FAT_MilitaryFlavor.11
     title = FAT_MilitaryFlavor.11.t
     desc = FAT_MilitaryFlavor.11.d
-    picture = GFX_report_event_generic_army
+    picture = GFX_REP_FAT_military_flavor_11
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_11_seen }
@@ -127,7 +127,7 @@ country_event = {
     id = FAT_MilitaryFlavor.12
     title = FAT_MilitaryFlavor.12.t
     desc = FAT_MilitaryFlavor.12.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_12
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_12_seen }
@@ -138,7 +138,7 @@ country_event = {
     id = FAT_MilitaryFlavor.13
     title = FAT_MilitaryFlavor.13.t
     desc = FAT_MilitaryFlavor.13.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_REP_FAT_military_flavor_13
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_13_seen }
@@ -149,7 +149,7 @@ country_event = {
     id = FAT_MilitaryFlavor.14
     title = FAT_MilitaryFlavor.14.t
     desc = FAT_MilitaryFlavor.14.d
-    picture = GFX_report_event_generic_army
+    picture = GFX_REP_FAT_military_flavor_14
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_14_seen }
@@ -160,7 +160,7 @@ country_event = {
     id = FAT_MilitaryFlavor.15
     title = FAT_MilitaryFlavor.15.t
     desc = FAT_MilitaryFlavor.15.d
-    picture = GFX_report_event_generic_army
+    picture = GFX_REP_FAT_military_flavor_15
     fire_only_once = yes
     is_triggered_only = yes
     immediate = { set_country_flag = FAT_military_flavor_15_seen }
@@ -171,11 +171,14 @@ country_event = {
     id = FAT_MilitaryFlavor.16
     title = FAT_MilitaryFlavor.16.t
     desc = FAT_MilitaryFlavor.16.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_event_republican_dream_book
     fire_only_once = yes
     is_triggered_only = yes
     # 由成立狮鹫尼亚生灵共和国决议调用；暂不预设民选总统和选举结算。
-    option = { name = FAT_MilitaryFlavor.16.a }
+    option = {
+        name = FAT_MilitaryFlavor.16.a
+        custom_effect_tooltip = FAT_MilitaryFlavor.16.a.tt
+    }
 }
 
 # 隐藏调度器：只由启动效果和自身续排调用，不使用随机触发。
