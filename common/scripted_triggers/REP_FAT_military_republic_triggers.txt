@@ -1,0 +1,98 @@
+# 州作用域：狮鹫尼亚大陆减去指定国家的开局领土。
+# 固定排除历史州ID，避免吞并、变更阵营或添加核心后范围漂移。
+FAT_military_republic_required_state = {
+    is_on_continent = asia
+    NOT = {
+        OR = {
+            # RCT：河间联盟初始成员国
+            state = 577
+            state = 619
+            state = 620
+            state = 646
+            state = 682
+            # LCT：河间联盟初始成员国
+            state = 387
+            state = 499
+            state = 541
+            state = 550
+            state = 551
+            state = 560
+            # NIM：河间联盟初始成员国
+            state = 452
+            state = 587
+            state = 622
+            state = 645
+            # WIT：河间联盟初始成员国
+            state = 614
+            state = 615
+            state = 616
+            state = 617
+            state = 627
+            state = 628
+            state = 629
+            # BAK：河间联盟初始成员国
+            state = 438
+            state = 461
+            state = 648
+            state = 649
+            # DEP：河间联盟初始成员国
+            state = 491
+            state = 543
+            state = 544
+            state = 586
+            # FRE：河间联盟初始成员国
+            state = 580
+            state = 618
+            state = 621
+            state = 681
+            # DMT：河间联盟初始成员国
+            state = 635
+            state = 637
+            state = 638
+            state = 647
+            # HLR：阿克图里亚骑士团（恐惧联盟旁）
+            state = 425
+            state = 426
+            state = 427
+            state = 428
+            state = 451
+            state = 456
+            state = 564
+            state = 565
+            state = 566
+            # DED：恐惧联盟
+            state = 415
+            state = 416
+            state = 417
+            state = 418
+            state = 419
+            state = 420
+            # EQC：新马尔兰
+            state = 354
+            state = 355
+            state = 356
+            state = 357
+            state = 358
+            state = 359
+            state = 360
+            state = 361
+            state = 362
+            state = 363
+            state = 364
+            state = 365
+            state = 675
+            state = 676
+        }
+    }
+}
+
+# 国家作用域：只要求完整控制，允许战时占领，不要求领土所有权。
+FAT_military_controls_required_griffonia = {
+    any_state = { FAT_military_republic_required_state = yes }
+    NOT = {
+        any_state = {
+            FAT_military_republic_required_state = yes
+            NOT = { is_fully_controlled_by = ROOT }
+        }
+    }
+}

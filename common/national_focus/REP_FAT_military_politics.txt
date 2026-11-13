@@ -90,6 +90,7 @@ shared_focus = { # 军队之胜
             remove_dynamic_modifier = { modifier = FAT_qiyejiaodehuoyue_mod }
             remove_dynamic_modifier = { modifier = FAT_manyundezhihui_mod }
             remove_dynamic_modifier = { modifier = FAT_luyumadehezo_mod }
+            FAT_start_military_flavor_sequence = yes
         }
     }
 }

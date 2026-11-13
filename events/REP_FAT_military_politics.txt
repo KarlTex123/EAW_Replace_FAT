@@ -105,7 +105,7 @@ news_event = { # 共和国的剧变
     id = FAT_MilitaryGov.100
     title = FAT_MilitaryGov.100.t
     desc = FAT_MilitaryGov.100.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_news_event_generic_parliament
     is_triggered_only = yes
     major = yes
     option = { name = FAT_MilitaryGov.100.a }
@@ -115,7 +115,7 @@ news_event = { # 世界解放宣言
     id = FAT_MilitaryGov.101
     title = FAT_MilitaryGov.101.t
     desc = FAT_MilitaryGov.101.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_news_event_generic_parliament
     is_triggered_only = yes
     major = yes
     option = { name = FAT_MilitaryGov.101.a }

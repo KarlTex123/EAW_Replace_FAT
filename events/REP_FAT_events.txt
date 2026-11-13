@@ -1,4 +1,4 @@
-﻿add_namespace = FAT_start
+add_namespace = FAT_start
 add_namespace = REP_FAT_history
 add_namespace = FAT_FP
 add_namespace = test_FAT_start
@@ -2810,7 +2810,7 @@ country_event = { #击碎暴君的皇冠
 
 news_event = { #击碎暴君的皇冠的新闻
 	id = FAT_DIP_News.3
-	picture = GFX_FAT_DIP_News.3
+	picture = GFX_news_event_generic_army
 	title = FAT_DIP_News.3.t
 	desc = FAT_DIP_News.3.d
 

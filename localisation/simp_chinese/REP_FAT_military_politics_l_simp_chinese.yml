@@ -19,8 +19,8 @@
  REP_FAT_military_republic_category:0 "共和国的新纪元"
  REP_FAT_military_republic_category_desc:0 "巩固解放成果，建立属于所有生灵的共和国。"
  FAT_military_form_creature_republic:0 "成立狮鹫尼亚生灵共和国"
- FAT_military_form_creature_republic_desc:0 "在完成大陆领土整合之后，以全体生灵之名宣布共和国的新生，并将整合地区确立为共和国的核心领土。"
- FAT_military_form_creature_republic_requirements_tt:0 "拥有并控制现有狮鹫尼亚成立决议要求的全部大陆地区。"
+ FAT_military_form_creature_republic_desc:0 "随着革命的稳步推进和解放的地区越来越多，我们是时候将狮鹫尼亚所有的生灵都纳入革命体系，我们应该成立一个崭新的国家来代表我们的更进一步。"
+ FAT_military_form_creature_republic_requirements_tt:0 "完全控制狮鹫尼亚大陆除以下国家开局领土以外的全部地区：河间联盟八个初始成员国、阿克图里亚骑士团、恐惧联盟、新马尔兰。"
  FAT_CREATURE_REPUBLIC:0 "狮鹫尼亚生灵共和国"
  FAT_CREATURE_REPUBLIC_DEF:0 "狮鹫尼亚生灵共和国"
  FAT_CREATURE_REPUBLIC_ADJ:0 "狮鹫尼亚"
@@ -70,10 +70,10 @@
  FAT_MilitaryGov.11.d:0 "共和国已经走过最危险的动荡，却还没有抵达理想的终点。政府将继续建设国防与民生，并准备以一个属于所有生灵的共和国之名，宣告新的时代。"
  FAT_MilitaryGov.11.a:0 "我们将守望共和国的未来。"
  FAT_MilitaryGov.100.t:0 "共和国的剧变"
- FAT_MilitaryGov.100.d:0 "狮鹫共和国的政治斗争以军方的胜利告终。维系不同派别的大帐篷政府被新的统治秩序取代，国民共和党重新占据了压倒性的优势。新政府承诺恢复稳定，并继续承担保卫共和国的责任。"
+ FAT_MilitaryGov.100.d:0 "[This.GetNewspaperHeader]狮鹫共和国的政治斗争以军方的胜利告终。维系不同派别的大帐篷政府被新的统治秩序取代，国民共和党重新占据了压倒性的优势。新政府承诺恢复稳定，并继续承担保卫共和国的责任。"
  FAT_MilitaryGov.100.a:0 "新的秩序已经形成。"
  FAT_MilitaryGov.101.t:0 "世界解放宣言"
- FAT_MilitaryGov.101.d:0 "狮鹫共和国政府发表宣言，宣布共和理想应当属于所有生灵。宣言重申了对旧有特权的反对，并将建立狮鹫尼亚生灵共和国列为下一步目标。这份宣言将在大陆上引起怎样的回应，仍有待观察。"
+ FAT_MilitaryGov.101.d:0 "[This.GetNewspaperHeader]狮鹫共和国政府发表宣言，宣布共和理想应当属于所有生灵。宣言重申了对旧有特权的反对，并将建立狮鹫尼亚生灵共和国列为下一步目标。这份宣言将在大陆上引起怎样的回应，仍有待观察。"
  FAT_MilitaryGov.101.a:0 "宣言将传遍大陆。"
 
 # 第二阶段军事与经济分支

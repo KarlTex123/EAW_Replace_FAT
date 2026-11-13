@@ -1,0 +1,38 @@
+# 完成“军队之胜”时启动；同一效果也供已完成国策的旧档补启动。
+FAT_start_military_flavor_sequence = {
+    if = {
+        limit = {
+            tag = FAT
+            NOT = { has_country_flag = FAT_military_flavor_sequence_started }
+        }
+        set_country_flag = FAT_military_flavor_sequence_started
+        FAT_queue_next_military_flavor_tick = yes
+    }
+}
+
+# months 是 country_event 原生延迟字段；3个月固定等于90天。
+FAT_queue_next_military_flavor_tick = {
+    if = {
+        limit = {
+            has_country_flag = FAT_military_flavor_1_seen
+            has_country_flag = FAT_military_flavor_2_seen
+            has_country_flag = FAT_military_flavor_3_seen
+            has_country_flag = FAT_military_flavor_4_seen
+            has_country_flag = FAT_military_flavor_5_seen
+            has_country_flag = FAT_military_flavor_6_seen
+            has_country_flag = FAT_military_flavor_7_seen
+            has_country_flag = FAT_military_flavor_8_seen
+            has_country_flag = FAT_military_flavor_9_seen
+            has_country_flag = FAT_military_flavor_10_seen
+            has_country_flag = FAT_military_flavor_11_seen
+            has_country_flag = FAT_military_flavor_12_seen
+            has_country_flag = FAT_military_flavor_13_seen
+            has_country_flag = FAT_military_flavor_14_seen
+            has_country_flag = FAT_military_flavor_15_seen
+        }
+        set_country_flag = FAT_military_flavor_sequence_done
+    }
+    else = {
+        country_event = { id = FAT_MilitaryFlavor.100 months = 3 }
+    }
+}
