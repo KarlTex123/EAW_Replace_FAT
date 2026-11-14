@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = { name = "GFX_GAL_alignment_button_compact" texturefile = "gfx/interface/sort_button_83x29.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_GAL_republican_pact" texturefile = "gfx/interface/gui/GAL/GAL_republican_pact.dds" }
+    spriteType = { name = "GFX_GAL_river_federation" texturefile = "gfx/interface/gui/GAL/GAL_river_federation.dds" }
+    spriteType = { name = "GFX_GAL_imperial_pact" texturefile = "gfx/interface/gui/GAL/GAL_imperial_pact.dds" }
+}

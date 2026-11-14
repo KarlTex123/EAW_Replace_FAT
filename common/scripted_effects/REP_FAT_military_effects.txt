@@ -1,10 +1,14 @@
 FAT_refresh_military_liberation_targets = {
     clear_array = FAT_military_liberation_targets
+    clear_array = FAT_unification_friendship_targets
     every_country = {
-        limit = {
-            NOT = { tag = FAT }
-            any_owned_state = { is_on_continent = asia }
+        if = {
+            limit = { FAT_unification_target = yes }
+            add_to_array = { array = FAT.FAT_military_liberation_targets value = THIS }
         }
-        add_to_array = { array = ROOT.FAT_military_liberation_targets value = THIS }
+        if = {
+            limit = { FAT_unification_friendship_target = yes }
+            add_to_array = { array = FAT.FAT_unification_friendship_targets value = THIS }
+        }
     }
 }

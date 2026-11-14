@@ -1,0 +1,62 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_01"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_01.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_02"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_02.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_03"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_03.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_04"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_04.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_05"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_05.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_06"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_06.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_07"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_07.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_08"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_08.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_09"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_09.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_10"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_10.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_11"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_11.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_12"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_12.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_13"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_13.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_14"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_14.tga"
+    }
+    SpriteType = {
+        name = "GFX_REP_FAT_military_flavor_15"
+        texturefile = "gfx/event_pictures/REP_FAT_military_flavor_15.tga"
+    }
+}

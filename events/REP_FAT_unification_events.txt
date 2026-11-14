@@ -1,0 +1,58 @@
+add_namespace = FAT_Unification
+
+country_event = { # 相逢一笑：仅对仍然接壤且首都在狮鹫尼亚的谐律国家合并。
+    id = FAT_Unification.1
+    title = FAT_Unification.1.t
+    desc = FAT_Unification.1.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = {
+        name = FAT_Unification.1.a
+        ai_chance = { factor = 100 }
+        if = {
+            limit = {
+                FAT_unification_unlocked = yes
+                event_target:FAT_unification_event_target = {
+                    FAT_unification_target = yes
+                    has_government = democratic
+                }
+            }
+            event_target:FAT_unification_event_target = { clr_country_flag = FAT_unification_pending }
+            # 谈判无拒绝选项，成功率 100%；不调用 add_core_of 等自动核心化效果。
+            annex_country = { target = event_target:FAT_unification_event_target transfer_troops = yes }
+            FAT_refresh_military_liberation_targets = yes
+        }
+        else = {
+            # 打开事件后若对方灭亡、迁都、失去边界或变更政体，取消并退回原决议费用。
+            event_target:FAT_unification_event_target = { clr_country_flag = FAT_unification_pending }
+            add_political_power = 50
+            custom_effect_tooltip = FAT_unification_target_changed_tt
+        }
+    }
+}
+
+country_event = { # 必要之战：仅对仍符合条件且无条约限制的非谐律邻国宣战。
+    id = FAT_Unification.2
+    title = FAT_Unification.2.t
+    desc = FAT_Unification.2.d
+    picture = GFX_report_event_generic_army
+    is_triggered_only = yes
+    option = {
+        name = FAT_Unification.2.a
+        ai_chance = { factor = 100 }
+        if = {
+            limit = {
+                FAT_unification_unlocked = yes
+                event_target:FAT_unification_event_target = { FAT_unification_war_possible = yes }
+            }
+            event_target:FAT_unification_event_target = { clr_country_flag = FAT_unification_pending }
+            declare_war_on = { target = event_target:FAT_unification_event_target type = annex_everything }
+            FAT_refresh_military_liberation_targets = yes
+        }
+        else = {
+            event_target:FAT_unification_event_target = { clr_country_flag = FAT_unification_pending }
+            add_political_power = 50
+            custom_effect_tooltip = FAT_unification_target_changed_tt
+        }
+    }
+}

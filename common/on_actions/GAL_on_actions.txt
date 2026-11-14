@@ -1,0 +1,20 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            if = {
+                limit = { has_country_flag = GAL_alignment_gui_open }
+                if = {
+                    limit = { GAL_alignment_unlocked = yes }
+                    GAL_calculate_alignment_arrays = yes
+                    GAL_refresh_alignment_gui = yes
+                }
+                else = {
+                    # Remove stale open state from pre-unlock or debug saves.
+                    clr_country_flag = GAL_alignment_gui_open
+                    GAL_clear_alignment_arrays = yes
+                    GAL_refresh_alignment_gui = yes
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
-# 事件标题来自方案；正文为配套补写。国策效果直接结算，事件选项不重复发放。
+# 《军政府事件》文稿中的正文与选项已接入；未提供新稿的事件保留原文。
+# 国策奖励由原国策结算，叙事事件选项不重复发放。
 add_namespace = FAT_MilitaryGov
 
 country_event = { # 国防理事会
@@ -104,7 +105,7 @@ news_event = { # 共和国的剧变
     id = FAT_MilitaryGov.100
     title = FAT_MilitaryGov.100.t
     desc = FAT_MilitaryGov.100.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_news_event_generic_parliament
     is_triggered_only = yes
     major = yes
     option = { name = FAT_MilitaryGov.100.a }
@@ -114,7 +115,7 @@ news_event = { # 世界解放宣言
     id = FAT_MilitaryGov.101
     title = FAT_MilitaryGov.101.t
     desc = FAT_MilitaryGov.101.d
-    picture = GFX_report_event_generic_parliament
+    picture = GFX_news_event_generic_parliament
     is_triggered_only = yes
     major = yes
     option = { name = FAT_MilitaryGov.101.a }
@@ -165,7 +166,7 @@ country_event = { # 货币的统一
     option = { name = FAT_MilitaryGov.31.a }
 }
 
-country_event = { # 国父时代的经济奇迹余波
+country_event = { # 国父时代的经济奇迹时代余波
     id = FAT_MilitaryGov.32
     title = FAT_MilitaryGov.32.t
     desc = FAT_MilitaryGov.32.d
@@ -217,4 +218,13 @@ country_event = { # 经济奇迹
     picture = GFX_report_event_generic_parliament
     is_triggered_only = yes
     option = { name = FAT_MilitaryGov.37.a }
+}
+
+country_event = { # 必要蹄段
+    id = FAT_MilitaryGov.12
+    title = FAT_MilitaryGov.12.t
+    desc = FAT_MilitaryGov.12.d
+    picture = GFX_report_event_generic_parliament
+    is_triggered_only = yes
+    option = { name = FAT_MilitaryGov.12.a }
 }

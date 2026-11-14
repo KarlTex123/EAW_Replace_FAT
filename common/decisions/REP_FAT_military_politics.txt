@@ -2,57 +2,78 @@ REP_FAT_military_republic_category = {
     FAT_military_form_creature_republic = { # 成立狮鹫尼亚生灵共和国
         icon = generic_form_nation
         visible = { has_country_flag = FAT_military_form_republic_unlocked }
-        cost = 150
+        cost = 0
         fire_only_once = yes
         available = {
             has_completed_focus = FAT_The_Republic_Guard
-            # 沿用现有成立国家决议的大陆州数组；先确认非空，防止空集合满足条件。
-            check_variable = { var = FAT.REP_formables_states_array^num value = 0 compare = greater_than }
             custom_trigger_tooltip = {
                 tooltip = FAT_military_form_creature_republic_requirements_tt
-                all_of_scopes = {
-                    array = FAT.REP_formables_states_array
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                }
+                FAT_military_controls_required_griffonia = yes
             }
         }
         complete_effect = {
             set_cosmetic_tag = FAT_CREATURE_REPUBLIC
-            every_state = {
-                limit = {
-                    is_in_array = { array = FAT.REP_formables_states_array value = THIS.id }
-                    is_owned_by = ROOT
-                    NOT = { is_core_of = ROOT }
-                }
-                add_core_of = ROOT
-            }
             set_country_flag = FAT_military_creature_republic_formed
+            country_event = { id = FAT_MilitaryFlavor.16 }
         }
         ai_will_do = { factor = 200 }
     }
-    FAT_military_liberate_country = { # 解放狮鹫尼亚的其他国家
+
+}
+
+# 特殊国家同时保留普通扩张和友好外交两种决议，不互相排除。
+REP_FAT_unification_category = {
+    FAT_military_liberate_country = { # 处理[FROM.GetName]问题；保留已发布的决议 ID。
         icon = generic_prepare_civil_war
         target_array = FAT_military_liberation_targets
-        target_root_trigger = { has_country_flag = FAT_military_liberation_unlocked }
-        target_trigger = {
-            FROM = {
-                exists = yes
-                NOT = { tag = FAT }
-                any_owned_state = { is_on_continent = asia }
-                NOT = { is_in_faction_with = ROOT }
-                NOT = { is_subject_of = ROOT }
+        target_root_trigger = { FAT_unification_unlocked = yes }
+        target_trigger = { FROM = { FAT_unification_target = yes } }
+        visible = { FAT_unification_unlocked = yes }
+        available = {
+            FROM = { NOT = { has_country_flag = FAT_unification_pending } }
+            custom_trigger_tooltip = {
+                tooltip = FAT_unification_can_process_tt
+                FROM = {
+                    OR = {
+                        has_government = democratic
+                        FAT_unification_war_possible = yes
+                    }
+                }
             }
         }
-        visible = { has_country_flag = FAT_military_liberation_unlocked }
-        available = {
-            NOT = { has_war_with = FROM }
-            NOT = { has_wargoal_against = FROM }
-        }
         cost = 50
-        days_remove = 30
+        fire_only_once = no
+        complete_effect = {
+            # 本地事件目标随各自事件链保存，多国事件同时打开时不互相覆盖。
+            FROM = {
+                save_event_target_as = FAT_unification_event_target
+                set_country_flag = FAT_unification_pending
+            }
+            if = {
+                limit = { FROM = { has_government = democratic } }
+                country_event = { id = FAT_Unification.1 }
+            }
+            else = { country_event = { id = FAT_Unification.2 } }
+        }
+        ai_will_do = { factor = 10 }
+    }
+    FAT_unification_offer_friendship = { # 向[FROM.GetName]伸出友谊的橄榄枝
+        icon = generic_political_discourse
+        target_array = FAT_unification_friendship_targets
+        target_root_trigger = { FAT_unification_unlocked = yes }
+        target_trigger = { FROM = { FAT_unification_friendship_target = yes } }
+        visible = { FAT_unification_unlocked = yes }
+        available = { FROM = { NOT = { has_country_flag = FAT_unification_friendship_completed } } }
+        cost = 0
         fire_only_once = yes
-        remove_effect = { create_wargoal = { type = puppet target = FROM } }
+        complete_effect = {
+            add_opinion_modifier = { target = FROM modifier = FAT_unification_friendship_opinion }
+            FROM = {
+                add_opinion_modifier = { target = ROOT modifier = FAT_unification_friendship_opinion }
+                set_country_flag = FAT_unification_friendship_completed
+            }
+            diplomatic_relation = { country = FROM relation = non_aggression_pact active = yes }
+        }
         ai_will_do = { factor = 10 }
     }
 }

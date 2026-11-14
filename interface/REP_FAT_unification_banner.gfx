@@ -1,0 +1,8 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_REP_FAT_unification_banner"
+        texturefile = "gfx/interface/decisions/REP_FAT_unification_banner.dds"
+        noOfFrames = 1
+        legacy_lazy_load = no
+    }
+}

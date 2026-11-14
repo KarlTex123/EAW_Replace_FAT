@@ -1,0 +1,15 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            # 只补启动旧档一次；不重置计时，也不在每日扫描或随机播放正文。
+            if = {
+                limit = {
+                    tag = FAT
+                    has_completed_focus = FAT_the_victory_of_the_army
+                    NOT = { has_country_flag = FAT_military_flavor_sequence_started }
+                }
+                FAT_start_military_flavor_sequence = yes
+            }
+        }
+    }
+}

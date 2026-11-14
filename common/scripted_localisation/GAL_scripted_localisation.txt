@@ -1,0 +1,28 @@
+defined_text = {
+    name = GALGetAlignmentTitleName
+    text = { trigger = { check_variable = { GAL_alignment_group = 1 } } localization_key = GAL_republican_pact_title }
+    text = { trigger = { check_variable = { GAL_alignment_group = 2 } } localization_key = GAL_river_federation_title }
+    text = { trigger = { check_variable = { GAL_alignment_group = 4 } } localization_key = GAL_imperial_pact_title }
+    text = { localization_key = GAL_independent_title }
+}
+defined_text = {
+    name = GALGetAlignmentDesc
+    text = { trigger = { check_variable = { GAL_alignment_group = 1 } } localization_key = GAL_republican_pact_desc }
+    text = { trigger = { check_variable = { GAL_alignment_group = 2 } } localization_key = GAL_river_federation_desc }
+    text = { trigger = { check_variable = { GAL_alignment_group = 4 } } localization_key = GAL_imperial_pact_desc }
+    text = { localization_key = GAL_independent_desc }
+}
+defined_text = {
+    name = GALGetAlignmentIcon
+    text = { trigger = { check_variable = { GAL_alignment_group = 1 } } localization_key = GFX_GAL_republican_pact }
+    text = { trigger = { check_variable = { GAL_alignment_group = 2 } } localization_key = GFX_GAL_river_federation }
+    text = { trigger = { check_variable = { GAL_alignment_group = 4 } } localization_key = GFX_GAL_imperial_pact }
+    text = { localization_key = GFX_idea_unknown }
+}
+defined_text = {
+    name = GALGetAlignmentTenetIcon
+    text = { trigger = { check_variable = { GAL_alignment_group = 1 } } localization_key = GFX_GAL_republican_pact }
+    text = { trigger = { check_variable = { GAL_alignment_group = 2 } } localization_key = GFX_GAL_river_federation }
+    text = { trigger = { check_variable = { GAL_alignment_group = 4 } } localization_key = GFX_GAL_imperial_pact }
+    text = { localization_key = GFX_idea_unknown }
+}
