@@ -127,6 +127,81 @@ FAT_billing_icon_frame_use_effect = {
 		}
 	}
 }
+#命运分歧：解雇全部顾问（含军事顾问），保留职位，之后仍可再次雇佣。
+#没写过类似的效果，是AI写的。目前只能撤下表内的顾问
+AFITR_clear_all_advisors = {
+
+	if = { limit = { has_idea = FAT_Lime_Mousse_advisor } deactivate_advisor = FAT_Lime_Mousse_advisor }
+	if = { limit = { has_idea = FAT_Rosa_Claudia_advisor } deactivate_advisor = FAT_Rosa_Claudia_advisor }
+	if = { limit = { has_idea = FAT_Blue_Time_advisor } deactivate_advisor = FAT_Blue_Time_advisor }
+	if = { limit = { has_idea = FAT_yizhan_advisor } deactivate_advisor = FAT_yizhan_advisor }
+	if = { limit = { has_idea = XUR_weiguang_advisor } deactivate_advisor = XUR_weiguang_advisor }
+	if = { limit = { has_idea = FAT_alexander_kemerskai_army_chief } deactivate_advisor = FAT_alexander_kemerskai_army_chief }
+	if = { limit = { has_idea = FAT_alexander_kemerskai_2_theorist } deactivate_advisor = FAT_alexander_kemerskai_2_theorist }
+	if = { limit = { has_idea = FAT_alexander_kemerskai_3_political_advisor } deactivate_advisor = FAT_alexander_kemerskai_3_political_advisor }
+	if = { limit = { has_idea = FAT_reinhard_suntail_FAT_political_6 } deactivate_advisor = FAT_reinhard_suntail_FAT_political_6 }
+	if = { limit = { has_idea = FAT_rikard_astler_FAT_political_3 } deactivate_advisor = FAT_rikard_astler_FAT_political_3 }
+	if = { limit = { has_idea = FAT_army_chief1 } deactivate_advisor = FAT_army_chief1 }
+	if = { limit = { has_idea = FAT_political_1 } deactivate_advisor = FAT_political_1 }
+	if = { limit = { has_idea = FAT_political_7 } deactivate_advisor = FAT_political_7 }
+	if = { limit = { has_idea = FAT_army_chief3 } deactivate_advisor = FAT_army_chief3 }
+	if = { limit = { has_idea = FAT_political_idealist } deactivate_advisor = FAT_political_idealist }
+	if = { limit = { has_idea = FAT_political_pragmatist } deactivate_advisor = FAT_political_pragmatist }
+	if = { limit = { has_idea = FAT_political_9 } deactivate_advisor = FAT_political_9 }
+	if = { limit = { has_idea = FAT_political_11 } deactivate_advisor = FAT_political_11 }
+	if = { limit = { has_idea = FAT_army_chief4 } deactivate_advisor = FAT_army_chief4 }
+	if = { limit = { has_idea = FAT_army_chief2 } deactivate_advisor = FAT_army_chief2 }
+	if = { limit = { has_idea = FAT_high_command5 } deactivate_advisor = FAT_high_command5 }
+	if = { limit = { has_idea = FAT_high_command1 } deactivate_advisor = FAT_high_command1 }
+	if = { limit = { has_idea = FAT_high_command3 } deactivate_advisor = FAT_high_command3 }
+	if = { limit = { has_idea = FAT_high_command4 } deactivate_advisor = FAT_high_command4 }
+	if = { limit = { has_idea = FAT_high_command6 } deactivate_advisor = FAT_high_command6 }
+	if = { limit = { has_idea = FAT_political_10 } deactivate_advisor = FAT_political_10 }
+	if = { limit = { has_idea = FAT_navy_chief1 } deactivate_advisor = FAT_navy_chief1 }
+	if = { limit = { has_idea = FAT_navy_chief2 } deactivate_advisor = FAT_navy_chief2 }
+	if = { limit = { has_idea = FAT_political_2 } deactivate_advisor = FAT_political_2 }
+	if = { limit = { has_idea = FAT_political_4 } deactivate_advisor = FAT_political_4 }
+	if = { limit = { has_idea = FAT_political_8 } deactivate_advisor = FAT_political_8 }
+	if = { limit = { has_idea = FAT_iris } deactivate_advisor = FAT_iris }
+	if = { limit = { has_idea = FAT_kemerskai_lackey_1 } deactivate_advisor = FAT_kemerskai_lackey_1 }
+	if = { limit = { has_idea = FAT_kemerskai_lackey_2 } deactivate_advisor = FAT_kemerskai_lackey_2 }
+	if = { limit = { has_idea = FAT_spymaster } deactivate_advisor = FAT_spymaster }
+	if = { limit = { has_idea = FAT_air_chief1 } deactivate_advisor = FAT_air_chief1 }
+	if = { limit = { has_idea = FAT_air_chief2 } deactivate_advisor = FAT_air_chief2 }
+	if = { limit = { has_idea = FAT_air_chief3 } deactivate_advisor = FAT_air_chief3 }
+	if = { limit = { has_idea = FAT_high_command2 } deactivate_advisor = FAT_high_command2 }
+	if = { limit = { has_idea = FAT_theorist } deactivate_advisor = FAT_theorist }
+	if = { limit = { has_idea = warmaster_dawnclaw } deactivate_advisor = warmaster_dawnclaw }
+	if = { limit = { has_idea = gael_barghest } deactivate_advisor = gael_barghest }
+	if = { limit = { has_idea = metzger } deactivate_advisor = metzger }
+	if = { limit = { has_idea = riga_talonova } deactivate_advisor = riga_talonova }
+	if = { limit = { has_idea = savtak } deactivate_advisor = savtak }
+	if = { limit = { has_idea = vaik_mitschuld } deactivate_advisor = vaik_mitschuld }
+	if = { limit = { has_idea = oglogoth } deactivate_advisor = oglogoth }
+	if = { limit = { has_idea = chaos_suntail } deactivate_advisor = chaos_suntail }
+	if = { limit = { has_idea = chaos_rosewing } deactivate_advisor = chaos_rosewing }
+
+	# 工业企业（industrial_concern 槽的设计公司）
+	remove_ideas = {
+		FAT_cloudburi_industrial_union
+		FAT_republican_radio_network
+		FAT_republican_railroads
+		FAT_windford_mines
+		FAT_bob_the_builder
+	}
+
+	# 调试自检：若清单未覆盖的顾问仍处于雇佣状态，输出警告
+	if = {
+		limit = {
+			is_debug = yes
+			any_character = {
+				is_hired_as_advisor = yes
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: AFITR_clear_all_advisors 仍有未列入清单的已雇佣顾问"
+	}
+}
+
 FAT_billing_icon_frame_over_effect = {
 	if = {
 		limit = {

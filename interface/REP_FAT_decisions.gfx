@@ -1,0 +1,8 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_a_fork_in_the_road"
+		texturefile = "gfx/interface/decisions/FAT_a_fork_in_the_road.dds" 
+		legacy_lazy_load = no
+	}
+	
+}

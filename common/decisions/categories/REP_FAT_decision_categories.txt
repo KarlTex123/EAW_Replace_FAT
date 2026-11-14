@@ -173,6 +173,7 @@ REP_FAT_annex_NTR_1 = {
 }
 
 REP_FAT_a_fork_in_the_road = { #命运分歧
+	#picture = GFX_a_fork_in_the_road
 	allowed = {
 		original_tag = FAT
 	}

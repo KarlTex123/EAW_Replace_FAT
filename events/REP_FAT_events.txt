@@ -3051,6 +3051,7 @@ country_event = {
 			AFITR_sunglider_power = 5
 		}
 		hidden_effect = {
+			AFITR_clear_all_advisors = yes
 			country_event = {
 				id = FAT_AFITR.1
 			}
@@ -3075,6 +3076,7 @@ country_event = {
 			AFITR_astler_power = 5
 		}
 		hidden_effect = {
+			AFITR_clear_all_advisors = yes
 			country_event = {
 				id = FAT_AFITR.1
 			}
@@ -3100,6 +3102,7 @@ country_event = {
 			AFITR_astler_power = 5
 		}
 		hidden_effect = {
+			AFITR_clear_all_advisors = yes
 			country_event = {
 				id = FAT_AFITR.2
 			}

@@ -275,7 +275,7 @@ SouthREP_Select_Leader_Gabriella:0 "激活嘉比蕾拉成为领导人"
 FAT_SouthREP_leader_locked:0 "南方共和党的领导人近日才发生变化"
 
 REP_FAT_a_fork_in_the_road:0 "命运分歧"
-REP_FAT_a_fork_in_the_road_desc:0 "铁血领袖总有离去的那一天，随着共和国的国父，克梅斯凯的去世，他所留下的的大帐篷式政党也走到了尽头，失去了共同的目标和能够凝聚所有派系的领袖之后，共和国的政治环境开始撕裂，社会主义者，民族主义者，谐律主义者纷纷开始了他们的行动，共和国的命运，将会走向何方？\n曜尾势力：[?ROOT.AFITR_suntail_power|0]\n翔日势力：[?ROOT.AFITR_sunglider_power|0]\n艾斯特勒势力：[?ROOT.AFITR_astler_power|0]"
+REP_FAT_a_fork_in_the_road_desc:0 "\n\n\n\n\n\n£GFX_a_fork_in_the_road\n\n\n\n\n\n\n\n\n\n铁血领袖总有离去的那一天，随着共和国的国父，克梅斯凯的去世，他所留下的的大帐篷式政党也走到了尽头，失去了共同的目标和能够凝聚所有派系的领袖之后，共和国的政治环境开始撕裂，社会主义者，民族主义者，谐律主义者纷纷开始了他们的行动，共和国的命运，将会走向何方？\n曜尾势力：[?ROOT.AFITR_suntail_power|0]\n翔日势力：[?ROOT.AFITR_sunglider_power|0]\n艾斯特勒势力：[?ROOT.AFITR_astler_power|0]"
 AFITR_suntail_power:0 "曜尾势力"
 AFITR_sunglider_power:0 "翔日势力"
 AFITR_astler_power:0 "艾斯特勒势力"
