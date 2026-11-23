@@ -184,6 +184,7 @@ country_event = {
 # 隐藏调度器：只由启动效果和自身续排调用，不使用随机触发。
 country_event = {
     id = FAT_MilitaryFlavor.100
+    picture = GFX_REP_FAT_event
     hidden = yes
     is_triggered_only = yes
     trigger = {

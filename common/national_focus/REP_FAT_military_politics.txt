@@ -7,9 +7,9 @@ shared_focus = { # 军队之胜
     x = 22
     y = 16
     cost = 1
-    prerequisite = { focus = FAT_GONGHEGUODEWEILAI }
     available = {
         has_country_flag = FAT_GONGHEGUODEWEILAI_flag
+        has_completed_focus = FAT_GONGHEGUODEWEILAI
         OR = {
             has_country_flag = FAT_AFITR_junta_focus_unlocked
             has_country_flag = FAT_military_government

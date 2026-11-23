@@ -2310,7 +2310,7 @@ l_simp_chinese:
 
  FAT_gemingdegaochao_flag:0 "狮鹫帝国已经彻底落败"
  FAT_GONGHEGUODEWEILAI_tt:0 "共和国将会在克梅斯凯和军队的监督下举行民主选举来决定他的命运。"
- FAT_core_the_state_NEW_flag_tt:0 "泛狮鹫尼亚理想机制将会可用！\n将可以整合所有以狮鹫种族为主体的国家。"
+ FAT_core_the_state_NEW_flag_tt:0 "泛狮鹫尼亚理想机制将会可用！"
 
 
  SouthREP_Enable_tt:0 "启用南方共和党机制——你可以在政治页面找到它。\n注意：该机制窗口较大，如果出现显示问题，请自行调整gui缩放倍率和分辨率。"
@@ -2319,4 +2319,4 @@ l_simp_chinese:
  FAT_SouthREP_RevolutionFire_idea_tt:0 "革命怒焰"
 
  Political_Tutelage:0 "训政"
- Political_Tutelage_desc:0 "由已逝的克梅斯凯提出的共和革命三步走中其中一步，在完成军政统一后，接下来的威权政府需要以督导者的身份监控极端分子和保护国家的安全，同时训练公民行使选举、罢免、创制、复决等权利 ，为最后一步的宪政打下良好的民主素质基础。"
+ Political_Tutelage_desc:0 "训政\n已逝的克梅斯凯提出的共和革命三步走中其中一步，在完成军政统一后，接下来的威权政府需要以督导者的身份监控极端分子和保护国家的安全，同时训练公民行使选举、罢免、创制、复决等权利 ，为最后一步的宪政打下良好的民主素质基础。"

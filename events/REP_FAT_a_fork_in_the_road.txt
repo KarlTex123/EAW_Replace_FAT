@@ -2,6 +2,7 @@ add_namespace = FAT_AFITR
 
 country_event = { #耀尾势力在行动事件占位符
     id = FAT_AFITR.1
+    picture = GFX_REP_FAT_event
     title = AFITR_suntail_action
     
     is_triggered_only = yes
@@ -14,6 +15,7 @@ country_event = { #耀尾势力在行动事件占位符
 
 country_event = { #翔日势力在行动事件占位符
     id = FAT_AFITR.2
+    picture = GFX_REP_FAT_event
     title = AFITR_sunglider_action
     
     is_triggered_only = yes
@@ -26,6 +28,7 @@ country_event = { #翔日势力在行动事件占位符
 
 country_event = { #选举倒计时激活占位符
     id = FAT_AFITR.3
+    picture = GFX_REP_FAT_event
     title = AFITR_election_countdown
     
     is_triggered_only = yes
@@ -38,6 +41,7 @@ country_event = { #选举倒计时激活占位符
 
 country_event = { #艾斯特勒势力在行动事件占位符
     id = FAT_AFITR.8
+    picture = GFX_REP_FAT_event
     title = AFITR_astler_action
     
     is_triggered_only = yes

@@ -3004,8 +3004,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FAT_GONGHEGUODEWEILAI
-		x = 0
-		y = 3
+		x = 58
+		y = 11
 		cost = 6.5
 		icon = GFX_goal_FAT_GONGHEGUODEWEILAI
 		continue_if_invalid = yes

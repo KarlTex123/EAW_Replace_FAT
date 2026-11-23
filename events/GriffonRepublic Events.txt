@@ -649,6 +649,7 @@ country_event = {
 #Uprising 1
 country_event = {
 	id = griffonRepublic.14
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.14" }
 	hidden = yes
 	is_triggered_only = yes
@@ -769,6 +770,7 @@ country_event = {
 #Uprising 2 - This will spawn as a generic CW (D01 or equivalent)
 country_event = {
 	id = griffonRepublic.16
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.16" }
 	hidden = yes
 	is_triggered_only = yes
@@ -1709,6 +1711,7 @@ country_event = {#a dream realized
 
 country_event = {
 	id = griffonRepublic.79
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.79" }
 	hidden = yes
 	is_triggered_only = yes
@@ -1824,6 +1827,7 @@ country_event = {
 
 country_event = {
 	id = griffonRepublic.81
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.81" }
 	hidden = yes
 	trigger = {
@@ -1897,6 +1901,7 @@ country_event = {
 #verany leaves
 country_event = {
 	id = griffonRepublic.84
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.84" }
 	hidden = yes
 	fire_only_once = yes
@@ -2613,6 +2618,7 @@ country_event = {
 
 country_event = {#trial of meyer
 	id = griffonRepublic.98
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.98" }
 	title = griffonRepublic.98.t
 	desc = griffonRepublic.98.d
@@ -2647,6 +2653,7 @@ country_event = {#trial of meyer
 
 country_event = {#establish diplomatic channels, JER
 	id = griffonRepublic.99
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.99.t
 	desc = griffonRepublic.99.d
 	is_triggered_only = yes
@@ -2673,6 +2680,7 @@ country_event = {#establish diplomatic channels, JER
 
 country_event = {#establish diplomatic channels, FAT
 	id = griffonRepublic.100
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.100.t
 	desc = griffonRepublic.100.d
 	is_triggered_only = yes
@@ -2684,6 +2692,7 @@ country_event = {#establish diplomatic channels, FAT
 
 country_event = {#trade deals, JER
 	id = griffonRepublic.101
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.101.t
 	desc = griffonRepublic.101.d
 	is_triggered_only = yes
@@ -2696,6 +2705,7 @@ country_event = {#trade deals, JER
 
 country_event = {#trade deals, FAT
 	id = griffonRepublic.102
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.102.t
 	desc = griffonRepublic.102.d
 	is_triggered_only = yes
@@ -2711,6 +2721,7 @@ country_event = {#trade deals, FAT
 
 country_event = {#Herzland civil war
 	id = griffonRepublic.103
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.103" }
 	title = griffonRepublic.103.t
 	desc = griffonRepublic.103.d
@@ -2770,6 +2781,7 @@ country_event = {#Herzland civil war
 
 country_event = {#kemmy victorious
 	id = griffonRepublic.104
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.104" }
 	title = griffonRepublic.104.t
 	desc = griffonRepublic.104.d
@@ -2795,6 +2807,7 @@ country_event = {#kemmy victorious
 
 country_event = {#choose a Zebrican trade partner
 	id = griffonRepublic.105
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.105.t
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.105" }
 	desc = griffonRepublic.105.d
@@ -2848,6 +2861,7 @@ country_event = {#choose a Zebrican trade partner
 
 country_event = {#republic wants to trade with you plz
 	id = griffonRepublic.106
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.106.t
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.106" }
 	desc = griffonRepublic.106.d
@@ -2866,6 +2880,7 @@ country_event = {#republic wants to trade with you plz
 
 country_event = {#invite Hellquill owner as autonomous region
 	id = griffonRepublic.107
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.107.t
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.107" }
 	is_triggered_only = yes
@@ -2919,6 +2934,7 @@ country_event = {#invite Hellquill owner as autonomous region
 
 country_event = {#HL1 says yes
 	id = griffonRepublic.108
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.108" }
 	title = griffonRepublic.108.t
 	desc = griffonRepublic.108.d
@@ -2937,6 +2953,7 @@ country_event = {#HL1 says yes
 
 country_event = {#HL1 says no
 	id = griffonRepublic.109
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.109" }
 	title = griffonRepublic.109.t
 	desc = griffonRepublic.109.d
@@ -2954,6 +2971,7 @@ country_event = {#HL1 says no
 
 country_event = {#FAT succeeds in New Mareland
 	id = griffonRepublic.110
+	picture = GFX_REP_FAT_event
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event griffonRepublic.110"
 		hidden_effect = {
@@ -2987,6 +3005,7 @@ country_event = {#FAT succeeds in New Mareland
 
 country_event = {#FAT fails in New Mareland
 	id = griffonRepublic.111
+	picture = GFX_REP_FAT_event
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event griffonRepublic.111"
 		hidden_effect = {
@@ -3020,6 +3039,7 @@ country_event = {#FAT fails in New Mareland
 
 country_event = {#make friends with riverpones
 	id = griffonRepublic.112
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.112" }
 	title = griffonRepublic.112.t
 	desc = griffonRepublic.112.d
@@ -3037,6 +3057,7 @@ country_event = {#make friends with riverpones
 
 country_event = {#RI1 and FAT final meeting
 	id = griffonRepublic.113
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.113" }
 	title = griffonRepublic.113.t
 	desc = griffonRepublic.113.d
@@ -3048,6 +3069,7 @@ country_event = {#RI1 and FAT final meeting
 
 country_event = {#first legislative session
 	id = griffonRepublic.114
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.114.t
 	desc = griffonRepublic.114.d
 	is_triggered_only = yes
@@ -3059,6 +3081,7 @@ country_event = {#first legislative session
 
 country_event = {#FAT anime outro
 	id = griffonRepublic.115
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.115.t
 	is_triggered_only = yes
 	desc = {
@@ -3105,6 +3128,7 @@ country_event = {#FAT anime outro
 
 country_event = {#FAT helps out GRF
 	id = griffonRepublic.116
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.116.t
 	desc = griffonRepublic.116.d
 	is_triggered_only = yes
@@ -3116,6 +3140,7 @@ country_event = {#FAT helps out GRF
 
 country_event = {#reconstruction crisis 1 - dead or living constitution
 	id = griffonRepublic.117
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.117.t
 	desc = griffonRepublic.117.d
 	is_triggered_only = yes
@@ -3147,6 +3172,7 @@ country_event = {#reconstruction crisis 1 - dead or living constitution
 
 country_event = {#reconstruction crisis 2 - Mirabelle Convention
 	id = griffonRepublic.118
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.118.t
 	desc = griffonRepublic.118.d
 	is_triggered_only = yes
@@ -3212,6 +3238,7 @@ country_event = {#reconstruction crisis 2 - Mirabelle Convention
 
 country_event = {#reconstruction crisis 3 - general strike
 	id = griffonRepublic.119
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.119.t
 	desc = griffonRepublic.119.d
 	is_triggered_only = yes
@@ -3260,6 +3287,7 @@ country_event = {#reconstruction crisis 3 - general strike
 
 country_event = {#reconstruction crisis 4 - the university affair
 	id = griffonRepublic.120
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.120.t
 	desc = griffonRepublic.120.d
 	is_triggered_only = yes
@@ -3302,6 +3330,7 @@ country_event = {#reconstruction crisis 4 - the university affair
 
 country_event = {#who let the dogs out
 	id = griffonRepublic.121
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.121.t
 	desc = griffonRepublic.121.d
 	is_triggered_only = yes
@@ -3377,6 +3406,7 @@ country_event = {#who let the dogs out
 
 country_event = {#suntail kills meyer
 	id = griffonRepublic.122
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.122.t
 	desc = griffonRepublic.122.d
 	is_triggered_only = yes
@@ -3388,6 +3418,7 @@ country_event = {#suntail kills meyer
 
 country_event = {#suntail kills sickleclaw
 	id = griffonRepublic.123
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.123.t
 	desc = griffonRepublic.123.d
 	is_triggered_only = yes
@@ -3399,6 +3430,7 @@ country_event = {#suntail kills sickleclaw
 
 country_event = {#no, junior, we cant name a holiday after your dad
 	id = griffonRepublic.124
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.124.t
 	desc = griffonRepublic.124.d
 	is_triggered_only = yes
@@ -3409,6 +3441,7 @@ country_event = {#no, junior, we cant name a holiday after your dad
 
 country_event = {
 	id = griffonRepublic.125
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.125.t
 	is_triggered_only = yes
 	desc = {
@@ -3441,6 +3474,7 @@ country_event = {
 
 country_event = {#Rosewing tries to influence Grover
 	id = griffonRepublic.126
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.126" }
 	title = griffonRepublic.126.t
 	desc = griffonRepublic.126.d
@@ -3452,6 +3486,7 @@ country_event = {#Rosewing tries to influence Grover
 
 country_event = {#deliver Meyer and Asper to the Empire
 	id = griffonRepublic.127
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.127" }
 	title = griffonRepublic.127.t
 	is_triggered_only = yes
@@ -3477,6 +3512,7 @@ country_event = {#deliver Meyer and Asper to the Empire
 
 country_event = {#FAW Imperial Duchy endgame outro
 	id = griffonRepublic.128
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.128" }
 	title = griffonRepublic.128.t
 	desc = griffonRepublic.128.d
@@ -3489,6 +3525,7 @@ country_event = {#FAW Imperial Duchy endgame outro
 
 country_event = {#GRD receives Ophelia
 	id = griffonRepublic.129
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.129" }
 	title = griffonRepublic.129.t
 	desc = griffonRepublic.129.d
@@ -3505,6 +3542,7 @@ country_event = {#GRD receives Ophelia
 
 country_event = {#Rosewing owns the lib
 	id = griffonRepublic.130
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.130" }
 	title = griffonRepublic.130.t
 	desc = griffonRepublic.130.d
@@ -3516,6 +3554,7 @@ country_event = {#Rosewing owns the lib
 
 country_event = {#gib Skyfall plz
 	id = griffonRepublic.131
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.131" }
 	title = griffonRepublic.131.t
 	desc = griffonRepublic.131.d
@@ -3541,6 +3580,7 @@ country_event = {#gib Skyfall plz
 
 country_event = {#GRD said yes
 	id = griffonRepublic.132
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.132" }
 	title = griffonRepublic.132.t
 	desc = griffonRepublic.132.d
@@ -3569,6 +3609,7 @@ country_event = {#GRD said yes
 
 country_event = {#GRD said no
 	id = griffonRepublic.133
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.133" }
 	title = griffonRepublic.133.t
 	desc = griffonRepublic.133.d
@@ -3580,6 +3621,7 @@ country_event = {#GRD said no
 
 country_event = {#Otto adventures in Zebrica
 	id = griffonRepublic.134
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.134" }
 	title = griffonRepublic.134.t
 	is_triggered_only = yes
@@ -3604,6 +3646,7 @@ country_event = {#Otto adventures in Zebrica
 
 country_event = {#Ophelia becomes Duchess
 	id = griffonRepublic.135
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.135" }
 	title = griffonRepublic.135.t
 	desc = griffonRepublic.135.d
@@ -3656,6 +3699,7 @@ country_event = {#Ophelia becomes Duchess
 
 country_event = {#Sickleclaw comes back
 	id = griffonRepublic.136
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.136" }
 	title = griffonRepublic.136.t
 	desc = griffonRepublic.136.d
@@ -3670,6 +3714,7 @@ country_event = {#Sickleclaw comes back
 
 country_event = {#grand duke oskar dies
 	id = griffonRepublic.137
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.137" }
 	title = griffonRepublic.137.t
 	desc = griffonRepublic.137.d
@@ -3684,6 +3729,7 @@ country_event = {#grand duke oskar dies
 
 country_event = {#Rosewing says sowwy
 	id = griffonRepublic.138
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.138" }
 	title = griffonRepublic.138.t
 	desc = griffonRepublic.138.d
@@ -3699,6 +3745,7 @@ country_event = {#Rosewing says sowwy
 
 country_event = {#NTR republic event
 	id = griffonRepublic.139
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.139" }
 	title = griffonRepublic.139.t
 	desc = griffonRepublic.139.d
@@ -3721,6 +3768,7 @@ country_event = {#NTR republic event
 
 country_event = {#assembly of everfrost
 	id = griffonRepublic.140
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.140" }
 	title = griffonRepublic.140.t
 	desc = griffonRepublic.140.d
@@ -3732,6 +3780,7 @@ country_event = {#assembly of everfrost
 
 country_event = {#ponies, at the ready!
 	id = griffonRepublic.141
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.141" }
 	title = griffonRepublic.141.t
 	desc = griffonRepublic.141.d
@@ -3743,6 +3792,7 @@ country_event = {#ponies, at the ready!
 
 country_event = {#everfrost is industrialized
 	id = griffonRepublic.142
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.142" }
 	title = griffonRepublic.142.t
 	desc = griffonRepublic.142.d
@@ -3754,6 +3804,7 @@ country_event = {#everfrost is industrialized
 
 country_event = {#everfrost stays strapped in these streets
 	id = griffonRepublic.143
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.143" }
 	title = griffonRepublic.143.t
 	desc = griffonRepublic.143.d
@@ -3792,6 +3843,7 @@ country_event = {#kemerskais little ponies
 
 country_event = {#President Visits Canterlot
 	id = griffonRepublic.145
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.145.t
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.145" }
 	desc = griffonRepublic.145.d
@@ -3810,6 +3862,7 @@ country_event = {#President Visits Canterlot
 
 country_event = {#Kemmy and Junior wander their empty house
 	id = griffonRepublic.146
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.146.t
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.146" }
 	desc = griffonRepublic.146.d
@@ -3822,6 +3875,7 @@ country_event = {#Kemmy and Junior wander their empty house
 
 country_event = {
 	id = griffonRepublic.147
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.147.t
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.147" }
 	desc = griffonRepublic.147.d
@@ -3908,6 +3962,7 @@ country_event = {#well, this is awkward
 
 country_event = {
 	id = griffonRepublic.149
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.149" }
 	is_triggered_only = yes
 	title = griffonRepublic.149.t
@@ -6077,6 +6132,7 @@ country_event = {
 
 country_event = {#wholesome 100 Oskar-Fianna event, Everfrost restoration
 	id = griffonRepublic.289
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.289" }
 	title = griffonRepublic.289.t
 	desc = griffonRepublic.289.d
@@ -6121,6 +6177,7 @@ country_event = {#The Merger of the Factions - join Suntail?
 
 country_event = {#begin republic balkanization - cloudbury secession
 	id = griffonRepublic.291
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.291" }
 	title = griffonRepublic.291.t
 	desc = griffonRepublic.291.d
@@ -6330,6 +6387,7 @@ country_event = {#begin republic balkanization - cloudbury secession
 
 country_event = {#spawns Archonic League
 	id = griffonRepublic.292
+	picture = GFX_REP_FAT_event
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event griffonRepublic.292"
 		hidden_effect = {
@@ -6383,6 +6441,7 @@ country_event = {#spawns Archonic League
 
 country_event = {#spawns Herzland Popular Army
 	id = griffonRepublic.293
+	picture = GFX_REP_FAT_event
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event griffonRepublic.293"
 		hidden_effect = {
@@ -6442,6 +6501,7 @@ country_event = {#spawns Herzland Popular Army
 
 country_event = {#spawns Imperial Restoration Front
 	id = griffonRepublic.294
+	picture = GFX_REP_FAT_event
 	is_triggered_only = yes
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event griffonRepublic.294"
@@ -6506,6 +6566,7 @@ country_event = {#spawns Imperial Restoration Front
 
 country_event = {#kemmy's glorious return
 	id = griffonRepublic.295
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.295.t
 	desc = griffonRepublic.295.d
 	is_triggered_only = yes
@@ -6548,6 +6609,7 @@ country_event = {#kemmy's glorious return
 
 country_event = {#Aquileian invite to the Griffonian Republic
 	id = griffonRepublic.296
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.296.t
 	desc = griffonRepublic.296.d
 	is_triggered_only = yes
@@ -6613,6 +6675,7 @@ country_event = {#Aquileian invite to the Griffonian Republic
 
 country_event = {#JED said yes
 	id = griffonRepublic.297
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.297.t
 	desc = griffonRepublic.297.d
 	is_triggered_only = yes
@@ -6632,6 +6695,7 @@ country_event = {#JED said yes
 
 country_event = {#JED said no
 	id = griffonRepublic.298
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.298.t
 	desc = griffonRepublic.298.d
 	is_triggered_only = yes
@@ -6644,6 +6708,7 @@ country_event = {#JED said no
 
 country_event = {#JED joins Pact
 	id = griffonRepublic.299
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.299.t
 	desc = griffonRepublic.299.d
 	is_triggered_only = yes
@@ -6687,6 +6752,7 @@ country_event = {#JED joins Pact
 
 country_event = {#get in, loser, we're going to save Griffonian republicanism
 	id = griffonRepublic.300
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.300.t
 	desc = griffonRepublic.300.d
 	is_triggered_only = yes
@@ -6723,6 +6789,7 @@ country_event = {#get in, loser, we're going to save Griffonian republicanism
 
 country_event = {#invite_target said yes
 	id = griffonRepublic.301
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.301.t
 	desc = griffonRepublic.301.d
 	is_triggered_only = yes
@@ -6734,6 +6801,7 @@ country_event = {#invite_target said yes
 
 country_event = {#invite_target said no
 	id = griffonRepublic.302
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.302.t
 	desc = griffonRepublic.302.d
 	is_triggered_only = yes
@@ -6745,6 +6813,7 @@ country_event = {#invite_target said no
 
 country_event = {
 	id = griffonRepublic.303
+	picture = GFX_REP_FAT_event
 	title = griffonRepublic.303.t
 	desc = griffonRepublic.303.d
 	is_triggered_only = yes
@@ -6794,6 +6863,7 @@ country_event = {
 
 country_event = {#JEZ plz come back
 	id = griffonRepublic.304
+	picture = GFX_REP_FAT_event
 	immediate = { log = "[GetDateText]: [Root.GetName]: event griffonRepublic.304" }
 	title = griffonRepublic.304.t
 	desc = griffonRepublic.304.d

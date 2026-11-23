@@ -1,4 +1,4 @@
-add_namespace = FAT_start
+﻿add_namespace = FAT_start
 add_namespace = REP_FAT_history
 add_namespace = FAT_FP
 add_namespace = test_FAT_start
@@ -394,7 +394,7 @@ country_event = { #
 
 country_event = { #来自狮鹫共和国的最后通令
 	id = FAT_FP.1
-	picture = FAT_FP.1.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.1.t
 	desc = FAT_FP.1.d
 
@@ -428,7 +428,7 @@ country_event = { #来自狮鹫共和国的最后通令
 
 country_event = { #北方小马拥抱共和
 	id = FAT_FP.2
-	picture = FAT_FP.2.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.2.t
 	desc = FAT_FP.2.d
 
@@ -449,7 +449,7 @@ country_event = { #北方小马拥抱共和
 
 country_event = { #北方小马的顽抗
 	id = FAT_FP.3
-	picture = FAT_FP.3.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.3.t
 	desc = FAT_FP.3.d
 
@@ -469,7 +469,7 @@ country_event = { #北方小马的顽抗
 
 country_event = { #来自狮鹫共和国的最后通牒
 	id = FAT_FP.4
-	picture = FAT_FP.4.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.4.t
 	desc = FAT_FP.4.d
 	
@@ -500,7 +500,7 @@ country_event = { #来自狮鹫共和国的最后通牒
 
 country_event = { #韦迪纳和平革命
 	id = FAT_FP.5
-	picture = FAT_FP.5.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.5.t
 	desc = FAT_FP.5.d
 
@@ -525,7 +525,7 @@ country_event = { #韦迪纳和平革命
 
 country_event = { #韦迪纳暴力革命
 	id = FAT_FP.6
-	picture = FAT_FP.6.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.6.t
 	desc = FAT_FP.6.d
 
@@ -554,7 +554,7 @@ country_event = { #韦迪纳暴力革命
 
 country_event = { #瞬息万变的世界格局
 	id = FAT_FP.7
-	picture = FAT_FP.7.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.7.t
 	desc = FAT_FP.7.d
 
@@ -567,7 +567,7 @@ country_event = { #瞬息万变的世界格局
 
 country_event = { #卢娜的公开叛乱
 	id = FAT_FP.8
-	picture = FAT_FP.8.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.8.t
 	desc = FAT_FP.8.d
 	immediate = {
@@ -597,7 +597,7 @@ country_event = { #卢娜的公开叛乱
 
 country_event = { #二阶段结局
 	id = FAT_FP.9
-	picture = FAT_FP.9.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.9.t
 	desc = FAT_FP.9.d
 
@@ -844,7 +844,7 @@ country_event = { #二阶段结局
 
 country_event = { #克梅斯凯的新年致辞
 	id = FAT_FP.10
-	picture = FAT_FP.10.p
+	picture = GFX_FAT_alexander_kemerskai
 	title = FAT_FP.10.t
 	desc = FAT_FP.10.d
 
@@ -857,7 +857,7 @@ country_event = { #克梅斯凯的新年致辞
 
 country_event = { #总统权力讨论
 	id = FAT_FP.11
-	picture = FAT_FP.11.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.11.t
 	desc = FAT_FP.11.d
 
@@ -877,7 +877,7 @@ country_event = { #总统权力讨论
 
 country_event = { #训政争论
 	id = FAT_FP.12
-	picture = FAT_FP.12.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.12.t
 	desc = FAT_FP.12.d
 
@@ -905,7 +905,7 @@ country_event = { #训政争论
 
 country_event = { #克梅斯凯就小马内战发表演讲
 	id = FAT_FP.13
-	picture = FAT_FP.13.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.13.t
 	desc = FAT_FP.13.d
 
@@ -918,7 +918,7 @@ country_event = { #克梅斯凯就小马内战发表演讲
 
 country_event = { #克梅斯凯就暗月帝国获得胜利发表演讲
 	id = FAT_FP.14
-	picture = FAT_FP.14.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.14.t
 	desc = FAT_FP.14.d
 
@@ -931,7 +931,7 @@ country_event = { #克梅斯凯就暗月帝国获得胜利发表演讲
 
 country_event = { #克梅斯凯就伟大战争发表演讲
 	id = FAT_FP.15
-	picture = FAT_FP.15.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.15.t
 	desc = FAT_FP.15.d
 
@@ -946,7 +946,7 @@ country_event = { #克梅斯凯就伟大战争发表演讲
 
 country_event = { #克梅斯凯评论狮鹫帝国摄政嘉比蕾拉
 	id = FAT_FP.16
-	picture = FAT_FP.16.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.16.t
 	desc = FAT_FP.16.d
 
@@ -961,7 +961,7 @@ country_event = { #克梅斯凯评论狮鹫帝国摄政嘉比蕾拉
 
 country_event = { #签署戡乱动员令
 	id = FAT_FP.17
-	picture = FAT_FP.17.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.17.t
 	desc = FAT_FP.17.d
 
@@ -975,7 +975,7 @@ country_event = { #签署戡乱动员令
 
 country_event = { #事件：执委会种族问题会议
 	id = FAT_FP.18
-	picture = FAT_FP.18.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.18.t
 	desc = FAT_FP.18.d
 
@@ -1016,7 +1016,7 @@ country_event = { #事件：执委会种族问题会议
 
 country_event = { #有名无实的选举
 	id = FAT_FP.20
-	picture = FAT_FP.20.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.20.t
 	desc = FAT_FP.20.d
 
@@ -1029,7 +1029,7 @@ country_event = { #有名无实的选举
 
 country_event = { #焕然一新
 	id = FAT_FP.21
-	picture = FAT_FP.21.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.21.t
 	desc = FAT_FP.21.d
 
@@ -1042,7 +1042,7 @@ country_event = { #焕然一新
 
 country_event = { #选举大法官
 	id = FAT_FP.22
-	picture = FAT_FP.221.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.22.t
 	desc = FAT_FP.22.d
 
@@ -1066,7 +1066,7 @@ country_event = { #选举大法官
 
 country_event = { #曜尾来访
 	id = FAT_FP.23
-	picture = FAT_FP.23.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.23.t
 	desc = FAT_FP.23.d
 
@@ -1083,7 +1083,7 @@ country_event = { #曜尾来访
 
 country_event = { #法院的助力
 	id = FAT_FP.24
-	picture = FAT_FP.24.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.24.t
 	desc = FAT_FP.24.d
 
@@ -1100,7 +1100,7 @@ country_event = { #法院的助力
 
 country_event = { #履行职务
 	id = FAT_FP.25
-	picture = FAT_FP.25.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.25.t
 	desc = FAT_FP.25.d
 
@@ -1113,7 +1113,7 @@ country_event = { #履行职务
 
 country_event = { #制宪定稿
 	id = FAT_FP.26
-	picture = FAT_FP.26.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.26.t
 	desc = FAT_FP.26.d
 
@@ -1195,7 +1195,7 @@ country_event = { #制宪定稿
 
 country_event = { #任命新总理？
 	id = FAT_FP.27
-	picture = FAT_FP.27.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.27.t
 	desc = FAT_FP.27.d
 
@@ -1223,7 +1223,7 @@ country_event = { #任命新总理？
 
 country_event = { #军队的现状
 	id = FAT_FP.28
-	picture = FAT_FP.28.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.28.t
 	desc = FAT_FP.28.d
 
@@ -1235,7 +1235,7 @@ country_event = { #军队的现状
 }
 country_event = { #国民革命军的未来
 	id = FAT_FP.29
-	picture = FAT_FP.29.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.29.t
 	desc = FAT_FP.29.d
 
@@ -1253,7 +1253,7 @@ country_event = { #国民革命军的未来
 
 country_event = { #新时代的骑士
 	id = FAT_FP.30
-	picture = FAT_FP.30.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.30.t
 	desc = FAT_FP.30.d
 
@@ -1266,7 +1266,7 @@ country_event = { #新时代的骑士
 
 country_event = { #装甲的主攻方向
 	id = FAT_FP.31
-	picture = FAT_FP.31.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.31.t
 	desc = FAT_FP.31.d
 
@@ -1294,7 +1294,7 @@ country_event = { #装甲的主攻方向
 
 country_event = { #共产主义者的膨胀
 	id = FAT_FP.32
-	picture = FAT_FP.32.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.32.t
 	desc = FAT_FP.32.d
 
@@ -1308,7 +1308,7 @@ country_event = { #共产主义者的膨胀
 
 country_event = { #共和党第六届党员大会
 	id = FAT_FP.33
-	picture = FAT_FP.33.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.33.t
 	desc = FAT_FP.33.d
 
@@ -1368,6 +1368,7 @@ country_event = { #共和党第六届党员大会
 
 country_event = { #新三民主义诠释成为主流
 	id = FAT_FP.34
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.34.t
 	desc = FAT_FP.34.d
 
@@ -1400,6 +1401,7 @@ country_event = { #新三民主义诠释成为主流
 
 country_event = { #整理党务决议
 	id = FAT_FP.35
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.35.t
 	desc = FAT_FP.35.d
 
@@ -1435,6 +1437,7 @@ country_event = { #整理党务决议
 
 country_event = { #银行业密会
 	id = FAT_FP.36
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.36.t
 	desc = FAT_FP.36.d
 
@@ -1454,6 +1457,7 @@ country_event = { #银行业密会
 
 country_event = { #工会模式
 	id = FAT_FP.37
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.37.t
 	desc = FAT_FP.37.d
 
@@ -1488,6 +1492,7 @@ country_event = { #工会模式
 
 country_event = { #农协暴力案
 	id = FAT_FP.38
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.38.t
 	desc = FAT_FP.38.d
 
@@ -1509,6 +1514,7 @@ country_event = { #农协暴力案
 
 country_event = { #农协抗议
 	id = FAT_FP.39
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.39.t
 	desc = FAT_FP.39.d
 
@@ -1522,6 +1528,7 @@ country_event = { #农协抗议
 
 country_event = { #地主外逃
 	id = FAT_FP.40
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.40.t
 	desc = FAT_FP.40.d
 
@@ -1539,6 +1546,7 @@ country_event = { #地主外逃
 
 country_event = { #土地争议法
 	id = FAT_FP.41
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.41.t
 	desc = FAT_FP.41.d
 
@@ -1593,6 +1601,7 @@ country_event = { #土地争议法
 
 country_event = { #民生主义的内涵
 	id = FAT_FP.42
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.42.t
 	desc = FAT_FP.42.d
 
@@ -1611,7 +1620,7 @@ country_event = { #民生主义的内涵
 
 country_event = { #与镰爪的会谈
 	id = FAT_FP.43
-	picture = FAT_FP.43.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.43.t
 	desc = FAT_FP.43.d
 
@@ -1624,7 +1633,7 @@ country_event = { #与镰爪的会谈
 
 country_event = { #民生主义的内涵
 	id = FAT_FP.44
-	picture = FAT_FP.44.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.44.t
 	desc = FAT_FP.44.d
 
@@ -1642,6 +1651,7 @@ country_event = { #民生主义的内涵
 
 country_event = { #断头台下
 	id = FAT_FP.45
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.45.t
 	desc = FAT_FP.45.d
 
@@ -1654,6 +1664,7 @@ country_event = { #断头台下
 
 country_event = { #棋局之中
 	id = FAT_FP.46
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.46.t
 	desc = FAT_FP.46.d
 
@@ -1671,6 +1682,7 @@ country_event = { #棋局之中
 
 country_event = { #乡村怪鹫
 	id = FAT_FP.47
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.47.t
 	desc = FAT_FP.47.d
 
@@ -1688,6 +1700,7 @@ country_event = { #乡村怪鹫
 
 country_event = { #隔阂
 	id = FAT_FP.48
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.48.t
 	desc = FAT_FP.48.d
 
@@ -1705,6 +1718,7 @@ country_event = { #隔阂
 
 country_event = { #天际纳维亚之光
 	id = FAT_FP.49
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.49.t
 	desc = FAT_FP.49.d
 
@@ -1722,7 +1736,7 @@ country_event = { #天际纳维亚之光
 
 country_event = { #新时代的骑士_2
 	id = FAT_FP.50
-	picture = FAT_FP.50.p
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.50.t
 	desc = FAT_FP.50.d
 
@@ -1735,6 +1749,7 @@ country_event = { #新时代的骑士_2
 
 country_event = { # 友谊何处去
 	id = FAT_FP.51
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.51.t
 	desc = FAT_FP.51.d
 
@@ -1752,6 +1767,7 @@ country_event = { # 友谊何处去
 
 country_event = { # 宣传攻势
 	id = FAT_FP.52
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.52.t
 	desc = FAT_FP.52.d
 
@@ -1769,6 +1785,7 @@ country_event = { # 宣传攻势
 
 country_event = { # 歌曲的力量
 	id = FAT_FP.53
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.53.t
 	desc = FAT_FP.53.d
 
@@ -1786,6 +1803,7 @@ country_event = { # 歌曲的力量
 
 country_event = { #一场悲剧
 	id = FAT_FP.54
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.54.t
 	desc = FAT_FP.54.d
 
@@ -1804,6 +1822,7 @@ country_event = { #一场悲剧
 
 country_event = { #爪停喙停
 	id = FAT_FP.55
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.55.t
 	desc = FAT_FP.55.d
 
@@ -1821,6 +1840,7 @@ country_event = { #爪停喙停
 
 country_event = { #一场悲剧
 	id = FAT_FP.56
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.56.t
 	desc = FAT_FP.56.d
 
@@ -1837,6 +1857,7 @@ country_event = { #一场悲剧
 }
 country_event = { #一场悲剧
 	id = FAT_FP.57
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.57.t
 	desc = FAT_FP.57.d
 
@@ -1853,6 +1874,7 @@ country_event = { #一场悲剧
 }
 country_event = { #一场悲剧
 	id = FAT_FP.58
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.58.t
 	desc = FAT_FP.58.d
 
@@ -1870,6 +1892,7 @@ country_event = { #一场悲剧
 
 country_event = { #单一制的共和国
 	id = FAT_FP.59
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.59.t
 	desc = FAT_FP.59.d
 
@@ -1883,6 +1906,7 @@ country_event = { #单一制的共和国
 
 country_event = { #议员
 	id = FAT_FP.60
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.60.t
 	desc = FAT_FP.60.d
 
@@ -1895,6 +1919,7 @@ country_event = { #议员
 
 country_event = { #漫云喊话
 	id = FAT_FP.61
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.61.t
 	desc = FAT_FP.61.d
 
@@ -1912,6 +1937,7 @@ country_event = { #漫云喊话
 
 country_event = { #送别
 	id = FAT_FP.62
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.62.t
 	desc = FAT_FP.62.d
 
@@ -1930,6 +1956,7 @@ country_event = { #送别
 
 country_event = { #安江社民党真面目
 	id = FAT_FP.63
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.63.t
 	desc = FAT_FP.63.d
 
@@ -1944,6 +1971,7 @@ country_event = { #安江社民党真面目
 
 country_event = { #布鲁姆宣誓服从中央
 	id = FAT_FP.64
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.64.t
 	desc = FAT_FP.64.d
 
@@ -1958,6 +1986,7 @@ country_event = { #布鲁姆宣誓服从中央
 
 country_event = { #布鲁姆抵达漫云城
 	id = FAT_FP.65
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.65.t
 	desc = FAT_FP.65.d
 
@@ -1984,6 +2013,7 @@ country_event = { #布鲁姆抵达漫云城
 
 country_event = { #加地图外工厂
 	id = FAT_FP.66
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.66.t
 	desc = FAT_FP.66.d
 
@@ -2005,6 +2035,7 @@ country_event = { #加地图外工厂
 
 country_event = { #一日
 	id = FAT_FP.67
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.67.t
 	desc = FAT_FP.67.d
 
@@ -2022,6 +2053,7 @@ country_event = { #一日
 
 country_event = { #一日
 	id = FAT_FP.68
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.68.t
 	desc = FAT_FP.68.d
 
@@ -2039,6 +2071,7 @@ country_event = { #一日
 
 country_event = { #一日
 	id = FAT_FP.69
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.69.t
 	desc = FAT_FP.69.d
 
@@ -2053,6 +2086,7 @@ country_event = { #一日
 
 country_event = { #边境冲突
 	id = FAT_FP.70
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.70.t
 	desc = FAT_FP.70.d
 
@@ -2070,6 +2104,7 @@ country_event = { #边境冲突
 
 country_event = { #军队中的演唱会
 	id = FAT_FP.71
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.71.t
 	desc = FAT_FP.71.d
 
@@ -2087,6 +2122,7 @@ country_event = { #军队中的演唱会
 
 country_event = { #共和国特色议会
 	id = FAT_FP.72
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.72.t
 	desc = FAT_FP.72.d
 
@@ -2104,6 +2140,7 @@ country_event = { #共和国特色议会
 
 country_event = { #民主与民族问题
 	id = FAT_FP.73
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.73.t
 	desc = FAT_FP.73.d
 
@@ -2124,6 +2161,7 @@ country_event = { #民主与民族问题
 }
 country_event = { #执行委员会的讨论
 	id = FAT_FP.74
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.74.t
 	desc = FAT_FP.74.d
 
@@ -2137,6 +2175,7 @@ country_event = { #执行委员会的讨论
 }
 country_event = { #体制龃龉
 	id = FAT_FP.75
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.75.t
 	desc = FAT_FP.75.d
 
@@ -2150,6 +2189,7 @@ country_event = { #体制龃龉
 }
 country_event = { #少校与画匠
 	id = FAT_FP.76
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.76.t
 	desc = FAT_FP.76.d
 
@@ -2168,6 +2208,7 @@ country_event = { #少校与画匠
 
 country_event = { #少校与画匠
 	id = FAT_FP.77
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.77.t
 	desc = FAT_FP.77.d
 
@@ -2186,6 +2227,7 @@ country_event = { #少校与画匠
 
 country_event = { #少校与画匠
 	id = FAT_FP.78
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.78.t
 	desc = FAT_FP.78.d
 
@@ -2204,6 +2246,7 @@ country_event = { #少校与画匠
 
 country_event = { #少校与画匠
 	id = FAT_FP.79
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.79.t
 	desc = FAT_FP.79.d
 
@@ -2222,6 +2265,7 @@ country_event = { #少校与画匠
 
 country_event = { #少校与画匠
 	id = FAT_FP.80
+	picture = GFX_REP_FAT_event
 	title = FAT_FP.80.t
 	desc = FAT_FP.80.d
 
@@ -2236,6 +2280,7 @@ country_event = { #少校与画匠
 
 country_event = { #加效果
 	id = FAT_hidden.1
+	picture = GFX_REP_FAT_event
 	title = FAT_hidden.1.t
 	desc = FAT_hidden.1.d
 
@@ -2255,6 +2300,7 @@ country_event = { #加效果
 
 country_event = { #加效果
 	id = FAT_hidden.2
+	picture = GFX_REP_FAT_event
 	title = FAT_hidden.2.t
 	desc = FAT_hidden.2.d
 
@@ -2274,6 +2320,7 @@ country_event = { #加效果
 
 country_event = { #加效果
 	id = FAT_hidden.3
+	picture = GFX_REP_FAT_event
 	title = FAT_hidden.3.t
 	desc = FAT_hidden.3.d
 
@@ -2293,6 +2340,7 @@ country_event = { #加效果
 
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.1
+	picture = GFX_REP_FAT_event
 	hidden = yes
 	is_triggered_only = yes
 
@@ -2325,6 +2373,7 @@ country_event = {
 
 country_event = { 
 	id = FAT_alexander_kemerskai_trait.2
+	picture = GFX_REP_FAT_event
 	hidden = yes
 	is_triggered_only = yes
 
@@ -2358,7 +2407,7 @@ country_event = {
 #外交国策树事件
 country_event = { #共和国公约的宣言
 	id = FAT_DIP_Focus.1
-	picture = FAT_DIP_Focus.1.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.1.t
 	desc = FAT_DIP_Focus.1.d
 
@@ -2399,7 +2448,7 @@ news_event = { #共和国公约的宣言的新闻
 
 country_event = { #赫兹兰的同志
 	id = FAT_DIP_Focus.2
-	picture = FAT_DIP_Focus.2.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.2.t
 	desc = FAT_DIP_Focus.2.d
 
@@ -2418,7 +2467,7 @@ country_event = { #赫兹兰的同志
 
 country_event = { #将革命带入群山
 	id = FAT_DIP_Focus.3
-	picture = FAT_DIP_Focus.3.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.3.t
 	desc = FAT_DIP_Focus.3.d
 
@@ -2436,7 +2485,7 @@ country_event = { #将革命带入群山
 
 country_event = { #革命将至
 	id = FAT_DIP_Focus.4
-	picture = FAT_DIP_Focus.4.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.4.t
 	desc = FAT_DIP_Focus.4.d
 
@@ -2474,17 +2523,15 @@ country_event = { #革命将至
 
 country_event = { #卡梅莉塔歌后在河间地的巡回演出
 	id = FAT_DIP_Focus.5
-	picture = FAT_DIP_Focus.5.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.5.t
 	desc = FAT_DIP_Focus.5.d
 	is_triggered_only = yes
 
 	option = {
 		name = FAT_DIP_Focus.5.1
-		every_country = {
-			news_event = {
-				id = FAT_DIP_News.2
-			}
+		news_event = {
+			id = FAT_DIP_News.2
 		}
 	}
 }
@@ -2494,7 +2541,6 @@ news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 	title = FAT_DIP_News.2.t
 	desc = FAT_DIP_News.2.d
 	major = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = FAT_DIP_News.2.1
@@ -2517,7 +2563,7 @@ news_event = { #卡梅莉塔歌后在河间地的巡回演出的新闻
 
 country_event = { #致韦迪纳帝国政府及诸邦之最后通牒
 	id = FAT_DIP_Focus.6
-	picture = FAT_DIP_Focus.6.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.6.t
 	desc = FAT_DIP_Focus.6.d
 
@@ -2535,7 +2581,7 @@ country_event = { #致韦迪纳帝国政府及诸邦之最后通牒
 
 country_event = { #韦迪纳的革命事件链
 	id = FAT_VED_REV.1
-	picture = FAT_VED_REV.1.p
+	picture = GFX_REP_FAT_event
 	title = FAT_VED_REV.1.t
 	desc = FAT_VED_REV.1.d
 
@@ -2554,7 +2600,7 @@ country_event = { #韦迪纳的革命事件链
 
 country_event = { #韦迪纳的革命事件链
 	id = FAT_VED_REV.2
-	picture = FAT_VED_REV.2.p
+	picture = GFX_REP_FAT_event
 	title = FAT_VED_REV.2.t
 	desc = FAT_VED_REV.2.d
 
@@ -2573,7 +2619,7 @@ country_event = { #韦迪纳的革命事件链
 
 country_event = { #韦迪纳的革命事件链
 	id = FAT_VED_REV.3
-	picture = FAT_VED_REV.3.p
+	picture = GFX_REP_FAT_event
 	title = FAT_VED_REV.3.t
 	desc = FAT_VED_REV.3.d
 
@@ -2589,7 +2635,7 @@ country_event = { #韦迪纳的革命事件链
 
 country_event = { #来自狮鹫共和国的最后通牒
 	id = FAT_DIP_Focus.7
-	picture = FAT_DIP_Focus.7.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.7.t
 	desc = FAT_DIP_Focus.7.d
 
@@ -2621,7 +2667,7 @@ country_event = { #来自狮鹫共和国的最后通牒
 
 country_event = { #击碎暴君的皇冠
 	id = FAT_DIP_Focus.8
-	picture = FAT_DIP_Focus.8.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.8.t
 	desc = FAT_DIP_Focus.8.d
 
@@ -2834,7 +2880,7 @@ news_event = { #击碎暴君的皇冠的新闻
 
 country_event = { #击日者选项1
 	id = FAT_DIP_Focus.9
-	picture = FAT_DIP_Focus.9.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.9.t
 	desc = FAT_DIP_Focus.9.d
 
@@ -2851,7 +2897,7 @@ country_event = { #击日者选项1
 
 country_event = { #击日者选项2
 	id = FAT_DIP_Focus.10
-	picture = FAT_DIP_Focus.10.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.10.t
 	desc = FAT_DIP_Focus.10.d
 
@@ -2868,7 +2914,7 @@ country_event = { #击日者选项2
 
 country_event = { #维迪纳选项1
 	id = FAT_DIP_Focus.11
-	picture = FAT_DIP_Focus.11.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.11.t
 	desc = FAT_DIP_Focus.11.d
 
@@ -2885,7 +2931,7 @@ country_event = { #维迪纳选项1
 
 country_event = { #维迪纳选项2
 	id = FAT_DIP_Focus.12
-	picture = FAT_DIP_Focus.12.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.12.t
 	desc = FAT_DIP_Focus.12.d
 
@@ -2902,7 +2948,7 @@ country_event = { #维迪纳选项2
 
 country_event = { #革命的高潮
 	id = FAT_DIP_Focus.13
-	picture = FAT_DIP_Focus.13.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.13.t
 	desc = FAT_DIP_Focus.13.d
 
@@ -2920,7 +2966,7 @@ country_event = { #革命的高潮
 
 country_event = { #贵族的命运
 	id = FAT_DIP_Focus.14
-	picture = FAT_DIP_Focus.14.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.14.t
 	desc = FAT_DIP_Focus.14.d
 
@@ -2933,7 +2979,7 @@ country_event = { #贵族的命运
 
 country_event = { #神官的命运
 	id = FAT_DIP_Focus.15
-	picture = FAT_DIP_Focus.15.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.15.t
 	desc = FAT_DIP_Focus.15.d
 
@@ -2946,7 +2992,7 @@ country_event = { #神官的命运
 
 country_event = { #格罗弗家族的命运
 	id = FAT_DIP_Focus.16
-	picture = FAT_DIP_Focus.16.p
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_Focus.16.t
 	desc = FAT_DIP_Focus.16.d
 
@@ -3034,6 +3080,7 @@ country_event = { #风暴将临
 
 country_event = {
 	id = FAT_LVTWO.1 #共和国之命运
+	picture = GFX_REP_FAT_event
 	title = FAT_LVTWO.1.t
 	desc = FAT_LVTWO.1.d
 	is_triggered_only = yes
@@ -3144,6 +3191,7 @@ country_event = { #帝国心脏地的铁壁
 
 country_event = { #隐藏事件——给予FAT民族精神
 	id = FAT_DIP_SouthREP.3
+	picture = GFX_REP_FAT_event
 	title = FAT_DIP_SouthREP.3.t
 	desc = FAT_DIP_SouthREP.3.d
 	is_triggered_only = yes

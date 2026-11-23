@@ -341,7 +341,7 @@ ideologies = {
 			constitutional_monarchism = {
 				can_be_randomly_selected = no
 			}
-			Political_Tutelage = {
+			Political_Tutelage = { #训政没有子意识形态名字的原因是因为没有加scripted localisation；但是加了scripted localisation后兼容性存疑，故不加。
 				can_be_randomly_selected = no
 			}
 		}
